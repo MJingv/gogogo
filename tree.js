@@ -43,22 +43,35 @@ class BinarySearchTree {
     }
 
     min() {
-        this.minNode(this.root)
+        return this.minNode(this.root)
     }
 
     minNode(node) {
         if (node) {
-            node.left ? this.minNode(node.left) : console.log(node.key)
+            return node.left ? this.minNode(node.left) : node.key
         }
     }
 
     max() {
-        this.maxNode(this.root)
+        return this.maxNode(this.root)
     }
 
     maxNode(node) {
         if (node) {
-            node.right ? this.maxNode(node.right):console.log(node.key)
+            return node.right ? this.maxNode(node.right) : node.key
+        }
+    }
+
+    search(val) {
+        return this.searchNode(this.root, val)
+    }
+
+    searchNode(node, val) {
+        if (node) {
+            if (node.key === val) return true
+            return node.key < val ? this.searchNode(node.right, val) : this.searchNode(node.left, val)
+        } else {
+            return false
         }
     }
 }
@@ -74,5 +87,7 @@ t.insert(11)
 const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
 // t.min()
-const res = t.max()
+// t.max()
+const res = t.search(0)
+
 console.log(res)
