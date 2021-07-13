@@ -27,7 +27,19 @@ class BinarySearchTree {
         } else {
             node.left ? this.insertNode(node.left, key) : node.left = new Node(key)
         }
+    }
 
+    inOrderTraverseNode(node, fn) {
+        if (node) {
+            this.inOrderTraverseNode(node.left,fn)
+            fn(node.key)
+            this.inOrderTraverseNode(node.right,fn)
+        }
+    }
+
+    inOrderTraverse(fn) {
+        //访问者模式
+        this.inOrderTraverseNode(this.root, fn)
     }
 }
 
@@ -36,4 +48,6 @@ t.insert(5)
 t.insert(1)
 t.insert(9)
 t.insert(7)
-console.log(JSON.stringify(t))
+const printFn = (val) => console.log(val)
+const res = t.inOrderTraverse(printFn)
+console.log(res)
