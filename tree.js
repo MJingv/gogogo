@@ -48,7 +48,7 @@ class BinarySearchTree {
 
     minNode(node) {
         if (node) {
-            return node.left ? this.minNode(node.left) : node.key
+            return node.left ? this.minNode(node.left) : node
         }
     }
 
