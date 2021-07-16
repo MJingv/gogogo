@@ -100,22 +100,16 @@ class BinarySearchTree {
             }
             //case2:node有2个节点：用右边最小节点替换node
             if (node.left && node.right) {
-                let aux = this.minNode(node.right)
-                node.key = aux.key
-                node.right = this.removeNode(node.right, aux.key)
+                let rightMin = this.minNode(node.right)
+                node.key = rightMin.key
+                node.right = this.removeNode(node.right, rightMin.key)
                 return node
+
             }
-            //case3:node只有left子节点
-            if (!node.right) {
-                node = node.left
-                this.removeNode(node, key)
-                return node
-            }
-            //case4:node只有right子节点
-            if (!node.left) {
-                node = node.right
-                return node
-            }
+            //case3:node只有1个子节点
+            node = node.right ? node.right : node.left
+            this.removeNode(node, key)
+            return node
         }
     }
 }
@@ -131,6 +125,6 @@ const printFn = (val) => console.log(val)
 // t.min()
 // t.max()
 // t.search(0)
-t.remove(9)
+t.remove(5)
 const res = JSON.stringify(t)
 console.log(res)
