@@ -48,6 +48,16 @@ class LinkList {
         }
         this.count--
     }
+
+    getEelementAt(index) {
+        if (index < 0 || index >= this.count) return undefined
+        if (index === 0) return this.head
+        let current = this.head
+        for (let i = 0; i < index; i++) {
+            current = current.next
+        }
+        return current
+    }
 }
 
 const l = new LinkList()
@@ -55,6 +65,6 @@ l.push(5)
 l.push(2)
 l.push(10)
 l.push(6)
-l.removeAt(2)
-
-console.log(JSON.stringify(l))
+// l.remove(2)
+const res = l.getEelementAt(3)
+console.log(res)
