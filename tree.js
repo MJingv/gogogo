@@ -114,17 +114,50 @@ class BinarySearchTree {
     }
 }
 
-const t = new BinarySearchTree()
-t.insert(5)
-t.insert(1)
-t.insert(9)
-t.insert(7)
+// const t = new BinarySearchTree()
+// t.insert(5)
+// t.insert(1)
+// t.insert(9)
+// t.insert(7)
 
-const printFn = (val) => console.log(val)
+// const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
 // t.min()
 // t.max()
 // t.search(0)
-t.remove(5)
-const res = JSON.stringify(t)
-console.log(res)
+// t.remove(5)
+// const res = JSON.stringify(t)
+// console.log(res)
+
+class AVLTree extends BinarySearchTree {
+    constructor(compareFn) {
+        super(compareFn);
+        this.compareFn = compareFn
+        this.root = null
+    }
+
+    getNodeHeight(node) {
+        if (!node) return -1
+        return Math.max(this.getNodeHeight(node.left), this.getNodeHeight(node.right)) + 1
+    }
+}
+
+// const t = new AVLTree()
+// t.insert(5)
+// t.insert(1)
+// t.insert(9)
+// t.insert(7)
+// t.insert(11)
+// t.insert(10)
+//
+//
+// const res = t.getNodeHeight(t.root)
+// console.log(res)
+
+
+
+
+
+
+
+
