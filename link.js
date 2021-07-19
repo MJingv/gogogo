@@ -51,6 +51,25 @@ class LinkList {
         }
         return current
     }
+
+    insert(element, index) {
+        if (index < 0 || index >= this.count) return false
+        const node = new Node(element)
+        if (index === 0) {
+            //首位插入
+            node.next = this.head
+            this.head = node
+
+        } else {
+            const previous = this.getEelementAt(index - 1)
+            const current = previous.next
+            previous.next = node
+            node.next = current
+        }
+        this.count++
+        return true
+
+    }
 }
 
 const l = new LinkList()
@@ -58,5 +77,6 @@ l.push(5)
 l.push(2)
 l.push(10)
 l.push(6)
-l.removeAt(2)
+
+l.insert(99, 0)
 console.log(JSON.stringify(l))
