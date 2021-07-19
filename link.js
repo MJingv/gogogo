@@ -70,6 +70,22 @@ class LinkList {
         return true
 
     }
+
+    indexOf() {
+
+    }
+
+    getHead() {
+        return this.head
+    }
+
+    isEmpty() {
+        return this.size() === 0
+    }
+
+    size() {
+        return this.count
+    }
 }
 
 const l = new LinkList()
