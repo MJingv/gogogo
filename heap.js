@@ -81,10 +81,6 @@ class MinHeap {
                 index = this.heap.left
             }
         }
-
-    }
-    findMin() {
-
     }
 }
 
@@ -95,6 +91,6 @@ h.insert(4)
 h.insert(5)
 h.insert(1)
 
-h.extract(0)
+h.extract(1)
 console.log(h)
 
