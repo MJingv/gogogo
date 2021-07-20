@@ -71,8 +71,18 @@ class LinkList {
 
     }
 
-    indexOf() {
-
+    indexOf(node) {
+        let index = -1
+        if (!node) return index
+        let current = this.head
+        for (let i = 0; i < this.count; i++) {
+            if (current.element === node.element) {
+                index = i
+                return index
+            } else {
+                current = current.next
+            }
+        }
     }
 
     getHead() {
@@ -93,6 +103,6 @@ l.push(5)
 l.push(2)
 l.push(10)
 l.push(6)
+const n = new Node(10)
 
-l.insert(99, 0)
-console.log(JSON.stringify(l))
+console.log(l.indexOf(n))
