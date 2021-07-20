@@ -83,6 +83,7 @@ class LinkList {
                 current = current.next
             }
         }
+        return -1
     }
 
     getHead() {
@@ -103,6 +104,6 @@ l.push(5)
 l.push(2)
 l.push(10)
 l.push(6)
-const n = new Node(10)
+const n = new Node(11)
 
 console.log(l.indexOf(n))
