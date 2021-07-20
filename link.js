@@ -86,6 +86,11 @@ class LinkList {
         return -1
     }
 
+    remove(node) {
+        const index = this.indexOf(node)
+        this.removeAt(index)
+    }
+
     getHead() {
         return this.head
     }
