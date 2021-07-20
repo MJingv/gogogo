@@ -1,11 +1,13 @@
-export class Node {
+'use strict';
+
+ class Node {
     constructor(element) {
         this.element = element
         this.next = undefined
     }
 }
 
-export class LinkList {
+class LinkList {
     constructor() {
         this.head = null
         this.count = null //长度
@@ -103,6 +105,11 @@ export class LinkList {
         return this.count
     }
 }
+
+module.exports = {
+    Node,
+    LinkList
+};
 
 const l = new LinkList()
 l.push(5)
