@@ -36,7 +36,6 @@ class DoublyLinkList extends LinkList {
                 current.next = node
                 node.prev = current
                 this.tail = node
-
             } else {
                 const aux = this.getEelementAt(index - 1)
                 current = aux.next
@@ -51,11 +50,41 @@ class DoublyLinkList extends LinkList {
             return false
         }
     }
+
+    removeAt(index) {
+        if (index >= 0 && index < this.count) {
+            const node = this.getEelementAt(index)
+            if (index === 0) {
+                //首位
+                const next = node.next
+                node.next = node.prev = undefined
+                next.prev = undefined
+                this.head = next
+            } else if (index === this.count - 1) {
+                //末尾
+                const current = this.tail
+                this.tail = current.prev
+                this.tail.next = undefined
+            } else {
+                const prev = this.getEelementAt(index - 1)
+                const current = prev.next
+                prev.next = current.next
+                current.next.prev = current.prev
+            }
+            this.count--
+            return true
+
+        } else {
+            return false
+        }
+
+    }
 }
 
 const l = new DoublyLinkList()
 l.insert(5)
-l.insert(11, 1)
-l.insert(99, 1)
+l.insert(6, 1)
+l.insert(7, 2)
+l.removeAt(1)
 
 console.log(l)
