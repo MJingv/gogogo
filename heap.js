@@ -1,6 +1,9 @@
 // 二叉堆
 // - 完全二叉树
 // - 最大/小树，父恒大/小于子
+
+// 堆排序
+// - 不稳定
 const defaultCompareFn = (a, b) => a === b
 const swap = (array, a, b) => {
     const tmp = array[a]
@@ -94,7 +97,7 @@ h.insert(5)
 h.insert(1)
 h.insert(0)
 h.extract()
-h.extract()
 
-console.log(h.heap)
+
+
 
