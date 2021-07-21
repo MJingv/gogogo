@@ -36,7 +36,7 @@ class MinHeap {
     }
 
     insert(val) {
-        if (!val) return false
+        if (val === undefined) return false
         this.heap.push(val)
         this.siftUp(this.heap.length - 1)
         return true
@@ -70,16 +70,18 @@ class MinHeap {
     }
 
     siftDown(index) {
-        while (index < this.size()) {
-            let right = this.getRightIndex(index)
-            let left = this.getLeftIndex(index)
-            if (this.heap[index] > this.heap[right]) {
-                swap(this.heap, index, right)
-                index = this.heap.right
-            } else {
-                swap(this.heap, index, left)
-                index = this.heap.left
-            }
+        //要用递归
+        let right = this.getRightIndex(index)
+        let left = this.getLeftIndex(index)
+        //递归终止条件
+        if (!left && !right || this.heap[right] >= this.heap[index] && this.heap[left] >= this.heap[index]) return
+        if (this.heap[right] < this.heap[index]) {
+            swap(this.heap, index, right)
+            this.siftDown(right)
+        }
+        if (this.heap[left] < this.heap[index]) {
+            swap(this.heap, index, left)
+            this.siftDown(left)
         }
     }
 }
@@ -90,7 +92,9 @@ h.insert(3)
 h.insert(4)
 h.insert(5)
 h.insert(1)
+h.insert(0)
+h.extract()
+h.extract()
 
-h.extract(1)
-console.log(h)
+console.log(h.heap)
 
