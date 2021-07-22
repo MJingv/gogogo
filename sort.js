@@ -1,8 +1,6 @@
 //冒泡排序
 const swap = (array, a, b) => {
-    const tmp = array[a]
-    array[a] = array[b]
-    array[b] = tmp
+    [array[a], array[b]] = [array[b], array[a]]
 }
 const fn = (array) => {
     if (!array || !array.length) return
@@ -14,6 +12,6 @@ const fn = (array) => {
     return array
 }
 
-const list = [5, 2, 10, 99, 0, 1]
+const list = [5, 4, 3, 2]
 const res = fn(list)
 console.log(res)
