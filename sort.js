@@ -44,7 +44,7 @@ const fn2 = (array) => {
     return array
 }
 
-//归并排序
+//归并排序(🔨)
 //O(nlog^n)
 const merge = (left = [], right = []) => {
     let res = []
@@ -67,8 +67,52 @@ const fn3 = (array) => {
     return array
 }
 
+//快速排序
+//O(nlog^n)
+const parition = (array, left, right) => {
+    let pivot = Math.floor((left + right) / 2)
+    let i = left
+    let j = right
+    while (i <= j) {
+        while (array[i] < array[pivot]) i++
+        while (array[j] > array[pivot]) j--
+        if (i <= j) swap(array, i++, j--)
+    }
+    return i
+}
+const fn4 = (array, left = 0, right = array.length - 1) => {
+    if (array.length > 1) {
+        const index = parition(array, left, right)
+        if (left < index - 1) fn4(array, left, index - 1)
+        if (right > index) fn4(array, index, right)
+    }
+    return array
+}
 
-const list = [3, 5, 1, 4, 2]
-const res = fn3(list)
+//计数排序
+//O(n+k)
+const fn5 = (array) => {
+    const res = []
+    if (array.length > 1) {
+        const maxVal = Math.max(...array)
+        const tmpList = new Array(maxVal + 1)
+        tmpList.fill(0)
+        array.map(i => {
+            tmpList[i]++
+        })
+
+        tmpList.map((item, index) => {
+            while (item > 0) {
+                res.push(index)
+                item--
+            }
+        })
+        return res
+    }
+}
+
+
+const list = [3, 0, 5, 2, 4, 1, 1, 4, 99]
+const res = fn5(list)
 console.log(res)
 
