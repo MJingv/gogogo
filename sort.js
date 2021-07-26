@@ -111,8 +111,17 @@ const fn5 = (array) => {
     }
 }
 
+//桶排序
+const fn6 = () => {
+
+}
+//基数排序
+const fn7 = () => {
+
+}
+
 
 const list = [3, 0, 5, 2, 4, 1, 1, 4, 99]
-const res = fn5(list)
+const res = fn6(list)
 console.log(res)
 
