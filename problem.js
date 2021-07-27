@@ -19,8 +19,23 @@ const minCoinChange = (array, sum, res = {}) => {
         }
     }
 }
+
+
+const minCoinChange1 = (array, sum) => {
+    const res = []
+    for (let i = array.length - 1; i >= 0; i--) {
+        const max = array[i]
+        while (sum >= max) {
+            sum = sum - max
+            res.push(max)
+        }
+    }
+    return res
+}
+
 const list1 = [1, 3, 4]
-const res1 = minCoinChange(list1, 6)
+const res1 = minCoinChange1(list1, 6)
+
 console.log(res1)
 
 //背包问题
