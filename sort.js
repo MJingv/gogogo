@@ -125,3 +125,5 @@ const list = [3, 0, 5, 2, 4, 1, 1, 4, 99]
 const res = fn6(list)
 console.log(res)
 
+
+module.exports = {swap}
