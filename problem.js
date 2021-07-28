@@ -54,13 +54,39 @@ const bag = (capacity, weights, values) => {
             }
         }
     }
-
     console.log(res)
     return res
 }
+
 const values = [3, 4, 5]
 const weights = [2, 3, 4]
 const capacity = 5
 
-const res = bag(capacity, weights, values)
+// const res = bag(capacity, weights, values)
 // console.log(res)
+
+
+//最长公共子序列(有问题)
+const lcs = (a, b) => {
+    if (!a || !b) return false
+    const listA = a.split('')
+    const listB = a.split('')
+    let res = []
+    for (let i = 0; i <= listA.length; i++) {
+        res[i] = []
+        for (let j = 0; j <= listB.length; j++) {
+            res[i][j] = 0
+            if (i === 0 || j === 0) {
+            } else if (listA[i - 1] === listB[j - 1]) {
+                res[i][j] = res[i - 1][j - 1] + 1
+            } else {
+                res[i][j] = Math.max(res[i - 1][j], res[i][j - 1])
+            }
+        }
+    }
+    console.log(res)
+    // return res.join('')
+}
+
+lcs('acbaed', 'abcadf')
+
