@@ -36,6 +36,31 @@ const minCoinChange1 = (array, sum) => {
 const list1 = [1, 3, 4]
 const res1 = minCoinChange1(list1, 6)
 
-console.log(res1)
+// console.log(res1)
 
-//背包问题
+//01背包问题（选0或1）
+const bag = (capacity, weights, values) => {
+    const res = []
+
+    for (let i = 0; i <= values.length; i++) {
+        res[i] = []
+        for (let w = 0; w <= capacity; w++) {
+            res[i][w] = 0
+            if (i === 0 || w === 0) {
+            } else if (weights[i - 1] <= w) {
+                res[i][w] = Math.max(res[i - 1][w], values[i - 1] + res[i - 1][w - weights[i - 1]])
+            } else {
+                res[i][w] = res[i - 1][w]
+            }
+        }
+    }
+
+    console.log(res)
+    return res
+}
+const values = [3, 4, 5]
+const weights = [2, 3, 4]
+const capacity = 5
+
+const res = bag(capacity, weights, values)
+// console.log(res)
