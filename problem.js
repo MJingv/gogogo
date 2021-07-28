@@ -1,7 +1,7 @@
 //coins 找零
 const minCoinChange = (array, sum, res = {}) => {
     if (sum <= 0 || !array.length) {
-        console.log(res)
+        // console.log(res)
         return res
     }
     const max = array[array.length - 1]
@@ -54,7 +54,7 @@ const bag = (capacity, weights, values) => {
             }
         }
     }
-    console.log(res)
+    // console.log(res)
     return res
 }
 
@@ -84,9 +84,62 @@ const lcs = (a, b) => {
             }
         }
     }
-    console.log(res)
+    // console.log(res)
     // return res.join('')
 }
 
-lcs('acbaed', 'abcadf')
+// lcs('acbaed', 'abcadf')
 
+const isSafe = (maze, x, y) => {
+    const n = maze.length
+    if (x < n && y < n && x >= 0 && y >= 0 && maze[x][y] !== 0) {
+        return true
+    }
+    return false
+}
+
+
+const findPath = (maze = [], res = [], x = 0, y = 0) => {
+    const n = maze.length
+    if (x === n - 1 && y === n - 1) {
+        res[x][y] = 1
+        console.log(res)
+        return true
+    }
+
+    if (isSafe(maze, x, y)) {
+        res[x][y] = 1
+
+        if (findPath(maze, res, x + 1, y)) {
+            return true
+        }
+        if (findPath(maze, res, x, y + 1)) {
+            return true
+        }
+        res[x][y] = 0
+        return false
+    }
+    return false
+}
+//回溯（递归）
+const mazeGame = (maze) => {
+    if (!maze.length) return false
+    const res = []
+    const n = maze.length
+    //初始化path矩阵
+    for (let i = 0; i < n; i++) {
+        res[i] = []
+        for (let j = 0; j < n; j++) {
+            res[i][j] = 0
+        }
+    }
+    findPath(maze, res)
+}
+
+const maze = [
+    [1, 0, 0, 0],
+    [1, 1, 1, 1],
+    [0, 0, 1, 0],
+    [0, 1, 1, 1],
+]
+mazeGame(maze)
