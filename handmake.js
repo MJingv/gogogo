@@ -33,6 +33,14 @@ const getname = function () {
 }
 // getname.mycall(k, '999')
 
+Function.prototype.mybind = function (ctx, ...res) {
+    ctx.foo = this
+    return () => {
+        ctx.foo(res)
+        delete ctx.foo
+    }
+}
+
 //手写new
 const myNew = function (Foo, ...res) {
     const obj = {}
