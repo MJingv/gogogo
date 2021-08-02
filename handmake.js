@@ -53,5 +53,28 @@ function Foo(name) {
     this.name = name + '999'
 }
 
-const kk = myNew(Foo, 'kkkk')
-console.log(kk.name)
+// const kk = myNew(Foo, 'kkkk')
+// console.log(kk.name)
+
+//继承
+
+function Parent() {
+    this.name = 'p'
+
+}
+
+Parent.prototype.say = function () {
+    console.log(this.name, '---p')
+}
+
+
+function Child() {
+    Parent.call(this)
+    this.name = 'c'
+}
+
+Child.prototype = Object.create(Parent.prototype)
+Child.prototype.constructor = Child
+
+const c = new Child()
+console.log(c.say())
