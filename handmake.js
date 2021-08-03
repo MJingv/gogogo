@@ -98,12 +98,10 @@ const ajax = (type, url, data) => new Promise((res, rej) => {
             rej(xhr)
         }
     })
-
     if (type === 'GET') {
         xhr.send()
     } else if (type === 'POST') {
         xhr.setRequestHeader("Content-type", 'application/x-wwww-form-urlencoded')
         xhr.send(formate(data))
     }
-
 })
