@@ -1,6 +1,6 @@
 'use strict';
 
- class Node {
+class Node {
     constructor(element) {
         this.element = element
         this.next = undefined
@@ -104,6 +104,26 @@ class LinkList {
     size() {
         return this.count
     }
+
+    reverseList(head) {
+        let pre = null
+        let cur = null
+        while (head.next) {
+            pre = head.next
+            cur = head
+            head = head.next
+        }
+        return head
+    }
+
+    printLink(head) {
+        while (head.next) {
+            console.log(`${head.element}->`)
+            head = head.next
+        }
+        console.log(`${head.element}->`)
+
+    }
 }
 
 module.exports = {
@@ -116,6 +136,7 @@ l.push(5)
 l.push(2)
 l.push(10)
 l.push(6)
-const n = new Node(11)
-
-console.log(l.indexOf(n))
+const n = new Node(5)
+l.printLink(l.head)
+// const res = l.reverseList(n)
+// console.log(res)
