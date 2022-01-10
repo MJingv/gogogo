@@ -106,15 +106,30 @@ class LinkList {
     }
 
     reverseList(head) {
-        let pre = null
-        let cur = null
-        while (head.next) {
-            pre = head.next
-            cur = head
-            head = head.next
+        while (!head) {
+            return null
         }
-        return head
+        let pre = null
+        let cur = head
+        while (cur) {
+            let next = cur.next
+            cur.next = pre //不太懂
+            pre = cur
+            cur = next
+        }
+        return pre
     }
+
+    reverseListRecursion(head) {
+        const fun = (cur, pre = null) => {
+            if (!cur) return pre
+            let next = cur.next
+            cur.next = pre
+            return fun(next, cur)
+        }
+        return fun(head, null)
+    }
+
 
     printLink(head) {
         while (head.next) {
@@ -138,5 +153,7 @@ l.push(10)
 l.push(6)
 const n = new Node(5)
 l.printLink(l.head)
-// const res = l.reverseList(n)
-// console.log(res)
+const res = l.reverseListRecursion(l.head)
+console.log('---after---')
+l.printLink(res)
+
