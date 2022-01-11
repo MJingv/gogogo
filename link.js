@@ -105,21 +105,22 @@ class LinkList {
         return this.count
     }
 
+    // 反转链表
     reverseList(head) {
-        while (!head) {
-            return null
-        }
-        let pre = null
-        let cur = head
+        if (!head) return null
+        let cur = head, pre = null
         while (cur) {
             let next = cur.next
-            cur.next = pre //不太懂
+            cur.next = pre
             pre = cur
             cur = next
+
         }
         return pre
+
     }
 
+    // 反转链表-递归
     reverseListRecursion(head) {
         const fun = (cur, pre = null) => {
             if (!cur) return pre
@@ -127,7 +128,33 @@ class LinkList {
             cur.next = pre
             return fun(next, cur)
         }
-        return fun(head, null)
+
+        return fun(head)
+    }
+
+    // 区间反转
+    reverseIntervalList(head, m, n) {
+        let count = n - m - 1
+        if (count === 0) {
+            return null
+        }
+        if (count === 1) {
+            return head
+        }
+        let pre = null, cur = head
+
+        for (let i = 0; i < n; i++) {
+            if (i < m + 1) {
+                cur = cur.next
+            } else {
+                //反转
+                let next = cur.next
+                cur.next = pre
+                pre = cur
+                cur = next
+            }
+        }
+        return pre
     }
 
 
@@ -147,13 +174,17 @@ module.exports = {
 };
 
 const l = new LinkList()
-l.push(5)
+l.push(1)
 l.push(2)
-l.push(10)
+l.push(3)
+l.push(4)
+l.push(5)
 l.push(6)
+l.push(7)
+
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.reverseListRecursion(l.head)
+const res = l.reverseIntervalList(l.head, 1, 5)
 console.log('---after---')
 l.printLink(res)
 
