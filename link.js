@@ -133,28 +133,34 @@ class LinkList {
     }
 
     // 区间反转
+    // 输入: 1->2->3->4->5->NULL, m = 2, n = 4
+    // 输出: 1->4->3->2->5->NULL
     reverseIntervalList(head, m, n) {
-        let count = n - m - 1
+        let count = n - m + 1
         if (count === 0) {
             return null
         }
         if (count === 1) {
             return head
         }
-        let pre = null, cur = head
+        let pre = null, cur = head, start = null
 
-        for (let i = 0; i < n; i++) {
-            if (i < m + 1) {
-                cur = cur.next
-            } else {
-                //反转
-                let next = cur.next
-                cur.next = pre
-                pre = cur
-                cur = next
-            }
+        for (let i = 1; i < m; i++) {
+            start = cur
+            cur = cur.next
         }
-        return pre
+        let end = start.next
+
+        for (let i = m; i < n + 1; i++) {
+            let next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+            end.next = cur
+        }
+
+        start.next = pre
+        return start
     }
 
 
@@ -181,10 +187,12 @@ l.push(4)
 l.push(5)
 l.push(6)
 l.push(7)
+l.push(8)
+
 
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.reverseIntervalList(l.head, 1, 5)
+const res = l.reverseIntervalList(l.head, 2, 4)
 console.log('---after---')
 l.printLink(res)
 
