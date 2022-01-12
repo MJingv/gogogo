@@ -137,7 +137,7 @@ class LinkList {
     // 输出: 1->4->3->2->5->NULL
     reverseIntervalList(head, m, n) {
         let count = n - m + 1
-        if (count === 0) {
+        if (count <= 0) {
             return null
         }
         if (count === 1) {
@@ -163,6 +163,39 @@ class LinkList {
         return start
     }
 
+    // 区间反转递归
+    // 输入: 1->2->3->4->5->NULL, m = 2, n = 4
+    // 输出: 1->4->3->2->5->NULL
+    reverseIntervalListRecursion(head, m, n) {
+        const fun = (pre = null, cur, count) => {
+            if (!count) return pre
+            let next = cur.next
+            cur.next = pre
+            return fun(cur, next, --count)
+        }
+
+        let count = n - m + 1
+        if (count <= 0) {
+            return null
+        }
+        if (count === 1) {
+            return head
+        }
+
+        let start = null, end = head, cur = head
+
+        for (let i = 1; i < n + 1; i++) {
+            end = end.next
+        }
+        for (let i = 1; i < m; i++) {
+            start = cur
+            cur = cur.next
+        }
+        const link = fun(end, cur, count) //4 3 2
+        start.next = link
+        return start
+    }
+
 
     printLink(head) {
         while (head.next) {
@@ -185,14 +218,11 @@ l.push(2)
 l.push(3)
 l.push(4)
 l.push(5)
-l.push(6)
-l.push(7)
-l.push(8)
 
 
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.reverseIntervalList(l.head, 2, 4)
+const res = l.reverseIntervalListRecursion(l.head, 2, 4)
 console.log('---after---')
 l.printLink(res)
 
