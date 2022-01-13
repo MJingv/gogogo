@@ -196,6 +196,30 @@ class LinkList {
         return start
     }
 
+    // 两个一组翻转链表
+    // 给定 1->2->3->4, 你应该返回 2->1->4->3.
+    group2Reverse(head) {
+        if (!head || !head.next) return null
+        let dummyHead = new Node()
+        let p = dummyHead
+        let node1 = null, node2 = null
+        dummyHead.next = head
+
+        while (p.next && p.next.next) {
+            node1 = p.next
+            node2 = p.next.next
+
+            node1.next = node2.next
+            node2.next = node1
+            p.next = node2
+            p = node1
+        }
+
+
+        return dummyHead.next
+
+    }
+
 
     printLink(head) {
         while (head.next) {
@@ -218,11 +242,12 @@ l.push(2)
 l.push(3)
 l.push(4)
 l.push(5)
+l.push(6)
 
 
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.reverseIntervalListRecursion(l.head, 2, 4)
+const res = l.group2Reverse(l.head)
 console.log('---after---')
 l.printLink(res)
 
