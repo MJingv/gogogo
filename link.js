@@ -239,9 +239,34 @@ class LinkList {
     group2ReverseRecursion2(head) {
         if (!head || !head.next) return head
         let node1 = head, node2 = head.next
-        node1.next = this.group2ReverseRecursion2(node2.next)
+        node1.next = this.group2ReverseRecursion2(node2.next) //当前case
         node2.next = node1
         return node2
+    }
+
+    // 给定这个链表：1->2->3->4->5
+    // 当 k = 2 时，应当返回: 2->1->4->3->5
+    // 当 k = 3 时，应当返回: 3->2->1->4->5
+    groupKReverseRecursion(head, k = 3) {
+
+        let pre = null, p = head, cur = head
+
+
+        for (let i = 0; i < k; i++) {
+            if (!p) return head
+            p = p.next
+        }
+
+        for (let i = 0; i < k; i++) {
+            let next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+        }
+
+        head.next = this.groupKReverse(cur, k)
+        return pre
+
     }
 
 
@@ -271,7 +296,7 @@ l.push(6)
 
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.group2ReverseRecursion2(l.head)
+const res = l.groupKReverseRecursion(l.head)
 console.log('---after---')
 l.printLink(res)
 
