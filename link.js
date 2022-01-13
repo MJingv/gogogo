@@ -264,7 +264,7 @@ class LinkList {
             cur = next
         }
 
-        head.next = this.groupKReverse(cur, k)
+        head.next = this.groupKReverseRecursion(cur, k)
         return pre
 
     }
