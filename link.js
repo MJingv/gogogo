@@ -248,15 +248,12 @@ class LinkList {
     // 当 k = 2 时，应当返回: 2->1->4->3->5
     // 当 k = 3 时，应当返回: 3->2->1->4->5
     groupKReverseRecursion(head, k = 3) {
-
-        let pre = null, p = head, cur = head
-
-
+        //指针p来判断是否进行循环
+        let cur = head, pre = null, p = head
         for (let i = 0; i < k; i++) {
-            if (!p) return head
+            if (!p) return head //停止转
             p = p.next
         }
-
         for (let i = 0; i < k; i++) {
             let next = cur.next
             cur.next = pre
@@ -264,9 +261,8 @@ class LinkList {
             cur = next
         }
 
-        head.next = this.groupKReverseRecursion(cur, k)
+        head.next = this.groupKReverseRecursion(p)
         return pre
-
     }
 
 
@@ -291,7 +287,7 @@ l.push(2)
 l.push(3)
 l.push(4)
 l.push(5)
-l.push(6)
+// l.push(6)
 
 
 const n = new Node(5)
