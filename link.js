@@ -200,24 +200,48 @@ class LinkList {
     // 给定 1->2->3->4, 你应该返回 2->1->4->3.
     group2Reverse(head) {
         if (!head || !head.next) return null
-        let dummyHead = new Node()
-        let p = dummyHead
+
         let node1 = null, node2 = null
+        let dummyHead = new Node()
         dummyHead.next = head
+        let p = dummyHead//指针
 
-        while (p.next && p.next.next) {
-            node1 = p.next
-            node2 = p.next.next
-
+        while ((node1 = p.next) && (node2 = p.next.next)) {
             node1.next = node2.next
             node2.next = node1
             p.next = node2
             p = node1
         }
-
-
         return dummyHead.next
+    }
 
+    group2ReverseRecursion1(head) {
+        if (!head.next || !head) return null
+        let dummyHead = new Node()
+        dummyHead.next = head
+        let p = dummyHead
+        let node1 = null, node2 = null
+
+        const fun = (p) => {
+            if ((node1 = p.next) && (node2 = p.next.next)) {
+                node1.next = node2.next
+                node2.next = node1
+                p.next = node2
+                p = node1
+                fun(p)
+            }
+            return
+        }
+        fun(p, p.next, p.next.next)
+        return dummyHead.next
+    }
+
+    group2ReverseRecursion2(head) {
+        if (!head || !head.next) return head
+        let node1 = head, node2 = head.next
+        node1.next = this.group2ReverseRecursion2(node2.next)
+        node2.next = node1
+        return node2
     }
 
 
@@ -247,7 +271,7 @@ l.push(6)
 
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.group2Reverse(l.head)
+const res = l.group2ReverseRecursion2(l.head)
 console.log('---after---')
 l.printLink(res)
 
