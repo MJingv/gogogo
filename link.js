@@ -261,8 +261,41 @@ class LinkList {
             cur = next
         }
 
-        head.next = this.groupKReverseRecursion(p)
+        head.next = this.groupKReverseRecursion(p, k)
         return pre
+    }
+
+    groupKReverse(head, k = 3) {
+        let p = head, dummyHead = new Node(), start = null
+        dummyHead.next = head
+        let n = 0
+
+        while (p) {
+            p = p.next
+            ++n
+        }
+
+
+        const group = Math.floor(n / k)
+        let pp = dummyHead
+        let cur = pp.next, pre = null
+
+        for (let i = 0; i < group; i++) {
+
+            for (let m = 0; m < k; m++) {
+                let next = cur.next
+                cur.next = pre
+                pre = cur
+                cur = next
+            }
+            let start = p.next
+            start.next = cur
+
+            //todo 无法理解
+
+        }
+
+        return dummyHead.next
     }
 
 
@@ -287,12 +320,12 @@ l.push(2)
 l.push(3)
 l.push(4)
 l.push(5)
-// l.push(6)
+l.push(6)
 
 
 const n = new Node(5)
 l.printLink(l.head)
-const res = l.groupKReverseRecursion(l.head)
+const res = l.groupKReverse(l.head)
 console.log('---after---')
 l.printLink(res)
 
