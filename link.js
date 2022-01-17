@@ -298,7 +298,7 @@ class LinkList {
 
     // 输入：1->2->4, 1->3->4
     // 输出：1->1->2->3->4->4
-    merge2Link(head1, head2) {
+    merge2LinkRecursion(head1, head2) {
         const fun = (l1, l2) => {
             if (!l1) return l2
             if (!l2) return l1
@@ -311,6 +311,25 @@ class LinkList {
             }
         }
         return fun(head1, head2)
+    }
+
+    merge2Link(head1, head2) {
+        let res = new Node()
+        let p = res
+
+        while (head1 && head2) {
+            if (head1.element < head2.element) {
+                p.next = head1
+                head1 = head1.next
+            } else {
+                p.next = head2
+                head2 = head2.next
+            }
+            p = p.next
+        }
+        if (!head1) p.next = head2
+        if (!head2) p.next = head1
+        return res.next
     }
 
 
