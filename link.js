@@ -334,6 +334,38 @@ class LinkList {
         return res.next
     }
 
+    // 输入:[1->4->5,1->3->4,2->6]
+    // 输出:1->1->2->3->4->4->5->6
+
+    mergeKLinkRecursion(list) {
+        const merge2 = (l1, l2) => {
+            if (!l1) return l2
+            if (!l2) return l1
+
+            if (l1.element < l2.element) {
+                l1.next = merge2(l1.next, l2)
+                return l1
+            } else {
+                l2.next = merge2(l1, l2.next)
+                return l2
+            }
+        }
+
+        const _mergeLists = (list, start = 0, end = list.length - 1) => {
+            if (end < start) return null
+            if (end === start) return list[end]
+
+            const mid = Math.floor(start + (end - start) / 2)
+            return merge2(_mergeLists(list, start, mid), _mergeLists(list, mid + 1, end))
+
+        }
+        return _mergeLists(list)
+    }
+
+    mergeKLink(list) {
+
+    }
+
 
     printLink(head) {
         while (head.next) {
@@ -360,10 +392,14 @@ l2.push(2)
 l2.push(3)
 l2.push(9)
 
+const l3 = new LinkList()
+l3.push(0)
+l3.push(10)
+
 const n = new Node(5)
 
 l.printLink(l.head)
-const res = l.merge2Link(l.head, l2.head)
+const res = l.mergeKLinkRecursion([l.head, l2.head, l3.head])
 console.log('---after---')
 l.printLink(res)
 
