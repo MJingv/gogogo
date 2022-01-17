@@ -324,11 +324,13 @@ class LinkList {
             } else {
                 p.next = head2
                 head2 = head2.next
+
             }
             p = p.next
         }
         if (!head1) p.next = head2
         if (!head2) p.next = head1
+
         return res.next
     }
 
