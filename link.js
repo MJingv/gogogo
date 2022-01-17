@@ -274,8 +274,6 @@ class LinkList {
             p = p.next
             ++n
         }
-
-
         const group = Math.floor(n / k)
         let pp = dummyHead
         let cur = pp.next, pre = null
@@ -298,6 +296,23 @@ class LinkList {
         return dummyHead.next
     }
 
+    // 输入：1->2->4, 1->3->4
+    // 输出：1->1->2->3->4->4
+    merge2Link(head1, head2) {
+        const fun = (l1, l2) => {
+            if (!l1) return l2
+            if (!l2) return l1
+            if (l1.element > l2.element) {
+                l2.next = fun(l1, l2.next)
+                return l2
+            } else {
+                l1.next = fun(l1.next, l2)
+
+            }
+        }
+        return fun(head1, head2)
+    }
+
 
     printLink(head) {
         while (head.next) {
@@ -316,16 +331,18 @@ module.exports = {
 
 const l = new LinkList()
 l.push(1)
-l.push(2)
 l.push(3)
 l.push(4)
-l.push(5)
-l.push(6)
 
+const l2 = new LinkList()
+l2.push(2)
+l2.push(3)
+l2.push(9)
 
 const n = new Node(5)
+
 l.printLink(l.head)
-const res = l.groupKReverse(l.head)
+const res = l.merge2Link(l.head, l2.head)
 console.log('---after---')
 l.printLink(res)
 
