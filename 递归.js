@@ -1,6 +1,6 @@
 let res = 0
 
-//********* 1.阶乘 *********
+//********* 阶乘 *********
 const fn = (n) => {
     //终止条件
     if (n === 1) return 1
@@ -19,7 +19,7 @@ res = fn1(5)//120
 console.log(res)
 
 
-//********* 1.斐波那契 *********
+//********* 斐波那契 *********
 const fn2 = (n) => {
     if (n === 0) return 0
     if (n === 1 || n === 2) return 1
@@ -36,3 +36,23 @@ const fn3 = (n) => {
 }
 res = fn3(9)
 console.log(res, 'fn3')
+
+
+//********* 二分查找 *********
+
+const findOne = (list, k, start = 0, end = list.length - 1) => {
+    if (start > end) return -1
+
+    let mid =Math.floor( start +(end - start) / 2)
+    if (k === list[mid]) {
+        return mid
+    } else if (k < list[mid]) {
+        return findOne(list, k, start, mid)
+    } else if (k > list[mid]) {
+        return findOne(list, k, mid + 1, end)
+    }
+}
+
+const list1 = [1, 3, 5, 7, 100]
+const res1 = findOne(list1, 3)
+console.log(res1)

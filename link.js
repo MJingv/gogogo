@@ -363,6 +363,20 @@ class LinkList {
     }
 
     mergeKLink(list) {
+        const merge2 = (l1, l2) => {
+            if (!l1) return l2
+            if (!l2) return l1
+
+            if (l1.element < l2.element) {
+                l1.next = merge2(l1.next, l2)
+                return l1
+            } else {
+                l2.next = merge2(l1, l2.next)
+                return l2
+            }
+        }
+
+        //todo 看不懂
 
     }
 
@@ -399,7 +413,8 @@ l3.push(10)
 const n = new Node(5)
 
 l.printLink(l.head)
-const res = l.mergeKLinkRecursion([l.head, l2.head, l3.head])
+const res = l.mergeKLink([l.head, l2.head, l3.head])
 console.log('---after---')
 l.printLink(res)
+
 
