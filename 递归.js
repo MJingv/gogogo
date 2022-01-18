@@ -70,3 +70,24 @@ const myFlat = (list = [], res = []) => {
 const l = [1, [2, [3, [4, 5]]], 6]
 const res2 = myFlat(l)
 console.log(res2)
+
+//********* 有效括号 *********
+// 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+const quoteFn = (list = []) => {
+    const tmpList = []
+    const array = ['(', '{', '[']
+    let res = true
+    if (!list.length) return res = false
+    list.map(i => array.includes(i) ? tmpList.push(i) : null)
+    if (!tmpList.length) return res = false
+
+    tmpList.map(i => {
+        let ch = list.pop()
+        if (i === '[' && ch !== ']' || i === '(' && ch !== ')' || i === '{' && ch !== '}') {
+            return res = false
+        }
+    })
+    return res
+
+}
+console.log(quoteFn(['[', '(', ')', ']']))
