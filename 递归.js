@@ -43,7 +43,7 @@ console.log(res, 'fn3')
 const findOne = (list, k, start = 0, end = list.length - 1) => {
     if (start > end) return -1
 
-    let mid =Math.floor( start +(end - start) / 2)
+    let mid = Math.floor(start + (end - start) / 2)
     if (k === list[mid]) {
         return mid
     } else if (k < list[mid]) {
@@ -56,3 +56,17 @@ const findOne = (list, k, start = 0, end = list.length - 1) => {
 const list1 = [1, 3, 5, 7, 100]
 const res1 = findOne(list1, 3)
 console.log(res1)
+
+//********* 扁平化 *********
+//[1, [2, [3, [4, 5]]], 6] -> [1, 2, 3, 4, 5, 6]
+const myFlat = (list = [], res = []) => {
+    if (list.length) {
+        list.map(i => {
+            typeof i == "number" ? res.push(i) : myFlat(i, res)
+        })
+    }
+    return res
+}
+const l = [1, [2, [3, [4, 5]]], 6]
+const res2 = myFlat(l)
+console.log(res2)
