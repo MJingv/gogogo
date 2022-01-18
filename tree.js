@@ -112,22 +112,47 @@ class BinarySearchTree {
             return node
         }
     }
+
+    levelOrder(node = this.root) {
+        const res = []
+        let level = 0
+        const queue = []
+        queue.push(node)//当前层的数组
+        while (queue.length) {
+            let size = queue.length//当前层的数量
+            res[level] = []
+            while (size--) {
+                let cur = queue.shift()//从前面出
+                res[level].push(cur.key)
+                if (cur.left) {
+                    queue.push(cur.left)
+                }
+                if (cur.right) {
+                    queue.push(cur.right)
+                }
+            }
+            level++
+        }
+        return res
+    }
 }
 
-// const t = new BinarySearchTree()
-// t.insert(5)
-// t.insert(1)
-// t.insert(9)
-// t.insert(7)
+const t = new BinarySearchTree()
+t.insert(5)
+t.insert(1)
+t.insert(9)
+t.insert(7)
 
-// const printFn = (val) => console.log(val)
+const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
 // t.min()
 // t.max()
 // t.search(0)
 // t.remove(5)
-// const res = JSON.stringify(t)
-// console.log(res)
+const l = t.levelOrder(t.root)
+const res = JSON.stringify(l)
+console.log(res)
+
 
 class AVLTree extends BinarySearchTree {
     constructor(compareFn) {
