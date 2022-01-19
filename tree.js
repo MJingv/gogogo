@@ -162,6 +162,35 @@ class BinarySearchTree {
         }
         return res
     }
+
+    rightSideView(node) {
+        if (!node) return []
+        const res = []
+        let level = 0
+        const queue = [node]
+        const rightRes = []
+
+        while (queue.length) {
+            let size = queue.length
+            res[level] = []
+            while (size--) {
+                let cur = queue.shift()
+                res[level].push(cur.key)
+                if (cur.left) {
+                    queue.push(cur.left)
+                }
+                if (cur.right) {
+                    queue.push(cur.right)
+                }
+            }
+            const l = res[level].length
+            rightRes.push(res[level][l - 1])
+            level++
+        }
+
+
+        return rightRes
+    }
 }
 
 const t = new BinarySearchTree()
@@ -179,7 +208,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.zigzagLevelOrder(t.root)
+const l = t.rightSideView(t.root)
 const res = JSON.stringify(l)
 console.log(res)
 
