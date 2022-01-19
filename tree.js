@@ -141,30 +141,22 @@ class BinarySearchTree {
         const res = []
         let level = 0
         let queue = [node]
+
         while (queue.length) {
             let size = queue.length
             res[level] = []
-
             while (size--) {
                 let cur = queue.shift()
                 res[level].push(cur.key)
-                if (level % 2 === 0) {
-                    //偶数 left -> right
-                    if (cur.right) {
-                        queue.push(cur.right)
-                    }
-                    if (cur.left) {
-                        queue.push(cur.left)
-                    }
-                } else {
-                    //奇数 right -> left
-                    if (cur.left) {
-                        queue.push(cur.left)
-                    }
-                    if (cur.right) {
-                        queue.push(cur.right)
-                    }
+                if (cur.left) {
+                    queue.push(cur.left)
                 }
+                if (cur.right) {
+                    queue.push(cur.right)
+                }
+            }
+            if (level % 2) {
+                res[level].reverse()
             }
             level++
         }
