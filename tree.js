@@ -166,30 +166,22 @@ class BinarySearchTree {
     rightSideView(node) {
         if (!node) return []
         const res = []
-        let level = 0
         const queue = [node]
-        const rightRes = []
 
         while (queue.length) {
             let size = queue.length
-            res[level] = []
+            res.push(queue[0].key)
             while (size--) {
                 let cur = queue.shift()
-                res[level].push(cur.key)
+                if (cur.right) {//先右后左
+                    queue.push(cur.right)
+                }
                 if (cur.left) {
                     queue.push(cur.left)
                 }
-                if (cur.right) {
-                    queue.push(cur.right)
-                }
             }
-            const l = res[level].length
-            rightRes.push(res[level][l - 1])
-            level++
         }
-
-
-        return rightRes
+        return res
     }
 }
 
