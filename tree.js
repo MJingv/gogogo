@@ -135,13 +135,51 @@ class BinarySearchTree {
         }
         return res
     }
+
+    zigzagLevelOrder(node) {
+        if (!node) return []
+        const res = []
+        let level = 0
+        let queue = [node]
+        while (queue.length) {
+            let size = queue.length
+            res[level] = []
+
+            while (size--) {
+                let cur = queue.shift()
+                res[level].push(cur.key)
+                if (level % 2 === 0) {
+                    //偶数 left -> right
+                    if (cur.right) {
+                        queue.push(cur.right)
+                    }
+                    if (cur.left) {
+                        queue.push(cur.left)
+                    }
+                } else {
+                    //奇数 right -> left
+                    if (cur.left) {
+                        queue.push(cur.left)
+                    }
+                    if (cur.right) {
+                        queue.push(cur.right)
+                    }
+                }
+            }
+            level++
+        }
+        return res
+    }
 }
 
 const t = new BinarySearchTree()
 t.insert(5)
 t.insert(1)
+
 t.insert(9)
+
 t.insert(7)
+t.insert(17)
 
 const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
@@ -149,7 +187,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.levelOrder(t.root)
+const l = t.zigzagLevelOrder(t.root)
 const res = JSON.stringify(l)
 console.log(res)
 
