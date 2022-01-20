@@ -38,17 +38,14 @@ const maxSlidingWindow = (nums = [], k = 0) => {
             window.shift()//删除滑动窗口之外（前）的
         }
         while (nums[window[window.length - 1]] < nums[i]) {
-            window.pop()
+            window.pop()//保证 队首 始终是最大值
         }
         window.push(i)
-        if (i >= k - 1) {
+        if (i >= k - 1) {//窗口满了
             res.push(nums[window[0]])
-
         }
         console.log(window)
     }
-
-
     return res
 }
 
