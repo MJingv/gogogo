@@ -198,7 +198,16 @@ class BinarySearchTree {
     }
 
     preorderTraversal(node = this.root) {
-
+        if (!node) return []
+        const res = []
+        const tmp = [node]
+        while (tmp.length) {
+            let cur = tmp.shift()
+            res.push(cur.key)
+            if (cur.left) tmp.push(cur.left)
+            if (cur.right) tmp.push(cur.right)
+        }
+        return res
     }
 }
 
@@ -217,7 +226,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.preorderTraversalRecursion(t.root)
+const l = t.preorderTraversal(t.root)
 // const res = JSON.stringify(l)
 console.log(l)
 
