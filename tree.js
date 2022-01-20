@@ -183,6 +183,23 @@ class BinarySearchTree {
         }
         return res
     }
+
+    preorderTraversalRecursion(node = this.root) {
+        // 中-左-右
+        const res = []
+        const fun = (tree) => {
+            if (!tree) return
+            res.push(tree.key)
+            if (tree.left) fun(tree.left)
+            if (tree.right) fun(tree.right)
+        }
+        fun(node)
+        return res
+    }
+
+    preorderTraversal(node = this.root) {
+
+    }
 }
 
 const t = new BinarySearchTree()
@@ -200,9 +217,9 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.rightSideView(t.root)
-const res = JSON.stringify(l)
-console.log(res)
+const l = t.preorderTraversalRecursion(t.root)
+// const res = JSON.stringify(l)
+console.log(l)
 
 
 class AVLTree extends BinarySearchTree {
