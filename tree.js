@@ -337,16 +337,49 @@ class BinarySearchTree {
         }
         return level
     }
+
+    isSymmetricRecursion(node = {
+        root: {
+            key: 5,
+            left: {left: null, right: null, key: 1},
+            right: {left: null, right: null, key: 1}
+        }
+    }.root) {
+        if (!node) return true
+        const fun = (node1, node2) => {
+            if (!node1 && !node2) return true //叶子节点
+            if (!node1 || !node2 || node1.key !== node2.key) return false
+            return fun(node1.left, node2.right) && fun(node1.right, node2.left)
+        }
+
+        return fun(node.left, node.right)
+    }
+
+    isSymmetric(node = this.root) {
+        //记住吧，看不懂
+        if (!node) return true
+        const query = [node.left, node.right]
+        while (query.length) {
+            let node1 = query.shift()
+            let node2 = query.shift()
+            if (!node1 || !node2) continue //叶子节点
+            if (!node1 || !node2 || node1.key !== node2.key) return false
+            query.push(node1.left)
+            query.push(node2.right)
+            query.push(node1.right)
+            query.push(node2.left)
+        }
+        return true
+    }
 }
 
 const t = new BinarySearchTree()
 t.insert(5)
 t.insert(1)
-
-t.insert(9)
-
-t.insert(7)
-t.insert(17)
+t.insert(1)
+//
+// t.insert(7)
+// t.insert(17)
 
 const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
@@ -354,7 +387,8 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.minDepth(t.root)
+
+const l = t.isSymmetricRecursion()
 // const res = JSON.stringify(l)
 console.log(l)
 
@@ -362,7 +396,7 @@ console.log(l)
 class AVLTree extends BinarySearchTree {
     constructor(compareFn) {
         super(compareFn);
-        this.compareFn = compareFn
+        this.compareFn = comparFn
         this.root = null
     }
 
