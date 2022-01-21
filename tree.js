@@ -290,10 +290,18 @@ class BinarySearchTree {
 
     maxDepth(node = this.root) {
         if (!node) return 0
-        let size = 0
         let level = 0
         let queue = [node]
 
+        while (queue.length) {
+            let size = queue.length
+            while (size--) {
+                let cur = queue.pop()
+                if (cur.left) queue.push(cur.left)
+                if (cur.right) queue.push(cur.right)
+            }
+            level++
+        }
         return level
     }
 }
@@ -313,7 +321,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.maxDepthRecursion(t.root)
+const l = t.maxDepth(t.root)
 // const res = JSON.stringify(l)
 console.log(l)
 
