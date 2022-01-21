@@ -304,6 +304,39 @@ class BinarySearchTree {
         }
         return level
     }
+
+    minDepthRecursion(node = this.root) {
+        // 左右孩子都有Math.min
+        // 叶子节点返回1
+        if (!node) return 0
+        if (node.left && node.right) {
+            return Math.min(this.minDepthRecursion(node.left), this.minDepthRecursion(node.right)) + 1
+        } else if (node.left) {
+            return this.minDepthRecursion(node.left) + 1
+        } else if (node.right) {
+            return this.minDepthRecursion(node.right) + 1
+        } else {
+            return 1
+        }
+    }
+
+    minDepth(node = this.root) {
+        //找到第一个叶子节点的层数
+        if (!node) return 0
+        const queue = [node]
+        let level = 0
+        while (queue.length) {
+            let size = queue.length
+            while (size--) {
+                let cur = queue.pop()
+                if (!cur.left && !cur.right) return level + 1
+                if (cur.left) queue.push(cur.left)
+                if (cur.right) queue.push(cur.right)
+            }
+            level++
+        }
+        return level
+    }
 }
 
 const t = new BinarySearchTree()
@@ -321,7 +354,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.maxDepth(t.root)
+const l = t.minDepth(t.root)
 // const res = JSON.stringify(l)
 console.log(l)
 
