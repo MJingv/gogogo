@@ -225,18 +225,25 @@ class BinarySearchTree {
     }
 
     inorderTraversal(node = this.root) {
-        //左-中-右
-        if (!node) return []
+        //左-中-右 记住吧，理解不了
+        //stack里放 mid left 先pop左边，再mid，最后right
         const res = []
-        const fun = (tree) => {
-            if (!tree) return null
-            if (tree.left) fun(tree.left)
-            res.push(tree.key)
-            if (tree.right) fun(tree.right)
+        const stack = []
+        let p = node
+
+        while (p || stack.length) {
+            while (p) {
+                stack.push(p)
+                p = p.left
+            }
+            let cur = stack.pop()//left
+            res.push(cur.key)//mid
+            p = cur.right//right
         }
-        fun(node)
         return res
+
     }
+
     postorderTraversalRecursion(node = this.root) {
         //左-中-右
         if (!node) return []
@@ -249,6 +256,9 @@ class BinarySearchTree {
         }
         fun(node)
         return res
+    }
+
+    postorderTraversal() {
     }
 }
 
@@ -267,7 +277,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.postorderTraversalRecursion(t.root)
+const l = t.inorderTraversal(t.root)
 // const res = JSON.stringify(l)
 console.log(l)
 
