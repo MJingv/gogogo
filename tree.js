@@ -258,7 +258,29 @@ class BinarySearchTree {
         return res
     }
 
-    postorderTraversal() {
+    postorderTraversal(node = this.root) {
+        //左-右-中 记住吧，理解不了
+        //未被访问过的右孩子
+        const res = []
+        const stack = []
+        let p = node
+        let visited = new Set()
+
+        while (p || stack.length) {
+            while (p) {
+                stack.push(p)
+                p = p.left
+            }
+            let cur = stack[stack.length - 1]
+            if (cur.right && !visited.has(cur.right)) {
+                p = cur.right
+                visited.add(cur.right)
+            } else {
+                res.push(cur.key)
+                stack.pop()
+            }
+        }
+        return res
     }
 }
 
@@ -277,7 +299,7 @@ const printFn = (val) => console.log(val)
 // t.max()
 // t.search(0)
 // t.remove(5)
-const l = t.inorderTraversal(t.root)
+const l = t.postorderTraversal(t.root)
 // const res = JSON.stringify(l)
 console.log(l)
 
