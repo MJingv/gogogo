@@ -355,7 +355,13 @@ class BinarySearchTree {
         return fun(node.left, node.right)
     }
 
-    isSymmetric(node = this.root) {
+    isSymmetric(node = {
+        root: {
+            key: 5,
+            left: {left: null, right: null, key: 1},
+            right: {left: null, right: null, key: 1}
+        }
+    }.root) {
         //记住吧，看不懂
         if (!node) return true
         const query = [node.left, node.right]
@@ -371,15 +377,24 @@ class BinarySearchTree {
         }
         return true
     }
+
+    lowestCommonAncestor(node = this.root, p = 7, q = 17) {
+        // 深度遍历，如果当前节点是p或q，遍历它的孩子
+        if (!node || node == p || node == q) return node
+        let left = this.lowestCommonAncestor(node.left, p, q)
+        let right = this.lowestCommonAncestor(node.right, p, q)
+        if (!left) return right
+        else if (!right) return left
+        return node
+    }
 }
 
 const t = new BinarySearchTree()
 t.insert(5)
 t.insert(1)
-t.insert(1)
-//
-// t.insert(7)
-// t.insert(17)
+t.insert(9)
+t.insert(7)
+t.insert(17)
 
 const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
@@ -388,7 +403,7 @@ const printFn = (val) => console.log(val)
 // t.search(0)
 // t.remove(5)
 
-const l = t.isSymmetricRecursion()
+const l = t.lowestCommonAncestor()
 // const res = JSON.stringify(l)
 console.log(l)
 
