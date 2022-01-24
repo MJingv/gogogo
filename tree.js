@@ -406,14 +406,13 @@ class BinarySearchTree {
 
     binaryTreePaths(node = this.root) {
         // 二叉树的所有路径
-        if (!node) return []
-        let path = []
-        let res = []
-        const fun = (tree) => {
+        const res = []
+        if (!node) return res
+        const fun = (tree, path = []) => {
             if (!tree) return
             path.push(tree.key)
-            fun(tree.left)
-            fun(tree.right)
+            fun(tree.left, path)
+            fun(tree.right, path)
             if (!tree.left && !tree.right) {
                 res.push(path.join('->'))
             }
