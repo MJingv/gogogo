@@ -380,12 +380,28 @@ class BinarySearchTree {
 
     lowestCommonAncestor(node = this.root, p = 7, q = 17) {
         // 深度遍历，如果当前节点是p或q，遍历它的孩子
+        // 3个case
+        // 1.root为p/q，返回root
+        // 2.左右孩子为p和q，返回root
+        // 3.p/q同在左/右，递归来查找
+
+        //看不懂，以后多看看吧，非递归的方法也看不懂
         if (!node || node == p || node == q) return node
         let left = this.lowestCommonAncestor(node.left, p, q)
         let right = this.lowestCommonAncestor(node.right, p, q)
         if (!left) return right
         else if (!right) return left
         return node
+    }
+
+    diameterOfBinaryTree(node = this.root) {
+        //求直径==左右孩子的最大长度合
+        if (!node) return 0
+        const max = (tree, level = 0) => {
+            if (!tree) return level
+            return Math.max(max(tree.left), max(tree.right)) + 1
+        }
+        return max(node.left) + max(node.right)
     }
 }
 
@@ -396,6 +412,7 @@ t.insert(9)
 t.insert(7)
 t.insert(17)
 
+
 const printFn = (val) => console.log(val)
 // t.inOrderTraverse(printFn)
 // t.min()
@@ -403,7 +420,7 @@ const printFn = (val) => console.log(val)
 // t.search(0)
 // t.remove(5)
 
-const l = t.lowestCommonAncestor()
+const l = t.diameterOfBinaryTree()
 // const res = JSON.stringify(l)
 console.log(l)
 
