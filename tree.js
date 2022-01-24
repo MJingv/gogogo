@@ -403,6 +403,24 @@ class BinarySearchTree {
         }
         return max(node.left) + max(node.right)
     }
+
+    binaryTreePaths(node = this.root) {
+        // 二叉树的所有路径
+        if (!node) return res
+        let path = []
+        let res = []
+        const fun = (tree) => {
+            if (!tree) return
+            path.push(tree.key)
+            fun(tree.left)
+            fun(tree.right)
+            if (!tree.left && !tree.right) {
+                res.push(path.join('->'))
+            }
+        }
+        fun(node)
+        return res
+    }
 }
 
 const t = new BinarySearchTree()
@@ -420,7 +438,7 @@ const printFn = (val) => console.log(val)
 // t.search(0)
 // t.remove(5)
 
-const l = t.diameterOfBinaryTree()
+const l = t.binaryTreePaths()
 // const res = JSON.stringify(l)
 console.log(l)
 
