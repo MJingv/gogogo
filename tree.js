@@ -406,7 +406,7 @@ class BinarySearchTree {
 
     binaryTreePaths(node = this.root) {
         // 二叉树的所有路径
-        if (!node) return res
+        if (!node) return []
         let path = []
         let res = []
         const fun = (tree) => {
