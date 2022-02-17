@@ -1,4 +1,4 @@
-//二分
+//二分查找
 const binarySearch = (arr, target) => {
     let begin = 0;
     let end = arr.length - 1 //最后一位index
@@ -18,5 +18,23 @@ const binarySearch = (arr, target) => {
     return -1
 }
 
-const res = binarySearch([1, 3, 8, 9, 14, 99], 14)
-console.log(res)
+const res1 = binarySearch([1, 3, 8, 9, 14, 99], 14)
+console.log(res1)
+
+//二分查找边界
+
+const searchRange = (arr,target) => {
+    //找到left/right，求长度
+    //arr[left] < target
+    //arr[right] > target
+
+    let begin=0
+    let end=arr.length-1
+
+
+
+
+}
+
+const res2 = searchRange([1, 3, 8, 9, 14, 14, 14, 99], 14)
+console.log(res2)
