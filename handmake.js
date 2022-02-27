@@ -18,23 +18,39 @@ const binarySearch = (arr, target) => {
     return -1
 }
 
-const res1 = binarySearch([1, 3, 8, 9, 14, 99], 14)
-console.log(res1)
+// const res1 = binarySearch([1, 3, 8, 9, 14, 99], 14)
+// console.log(res1)
 
 //二分查找边界
 
-const searchRange = (arr,target) => {
+const searchRange = (arr, target) => {
     //找到left/right，求长度
     //arr[left] < target
     //arr[right] > target
 
-    let begin=0
-    let end=arr.length-1
-
-
-
+    let begin = 0
+    let end = arr.length - 1
 
 }
 
-const res2 = searchRange([1, 3, 8, 9, 14, 14, 14, 99], 14)
-console.log(res2)
+// const res2 = searchRange([1, 3, 8, 9, 14, 14, 14, 99], 14)
+// console.log(res2)
+
+
+//求平方根
+const mySqrt = function (x) {
+    let begin = 0
+    let end = x
+    while (begin <= end) {
+        let mid = begin + ((end - begin)>> 1)
+        if (mid * mid <= x) {
+            begin = mid + 1
+        } else {
+            end = mid - 1
+        }
+    }
+
+    return end
+};
+const res = mySqrt(49)
+console.log(res)
