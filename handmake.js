@@ -42,7 +42,7 @@ const mySqrt = function (x) {
     let begin = 0
     let end = x
     while (begin <= end) {
-        let mid = begin + ((end - begin)>> 1)
+        let mid = begin + ((end - begin) >> 1)
         if (mid * mid <= x) {
             begin = mid + 1
         } else {
@@ -52,5 +52,21 @@ const mySqrt = function (x) {
 
     return end
 };
-const res = mySqrt(49)
+// const res = mySqrt(49)
+// console.log(res)
+
+const isSubsequence = function (s, t) {
+//双指针
+    let i = 0, j = 0
+
+    while (i < s.length && j < t.length) {
+        if (s[i] === t[j]) i++
+        j++
+    }
+    return i === s.length
+
+
+};
+
+const res = isSubsequence('abc', 'kjlajlkbjlfdjc')
 console.log(res)
