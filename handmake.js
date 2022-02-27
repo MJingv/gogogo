@@ -65,8 +65,25 @@ const isSubsequence = function (s, t) {
     }
     return i === s.length
 
-
 };
 
-const res = isSubsequence('abc', 'kjlajlkbjlfdjc')
+// const res = isSubsequence('abc', 'kjlajlkbjlfdjc')
+// console.log(res)
+
+
+const minArray = function (numbers) {
+    //旋转数组的最小数字
+    // 双指针
+    let i = 0, j = numbers.length - 1
+    while (i <= j) {
+        if (numbers[i] <= numbers[j]) {
+            j--
+        } else {
+            i++
+        }
+
+    }
+    return numbers[i]
+};
+const res = minArray([4, 5, 1, 2, 3])
 console.log(res)
