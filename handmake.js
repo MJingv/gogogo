@@ -111,9 +111,8 @@ const twoSum2 = function (numbers, target) {
     // end 为 i右边
 
     for (let i = 0; i < numbers.length; i++) {
-
         let end = numbers.length - 1
-        let begin = i
+        let begin = i + 1
 
         let key = target - numbers[i]
         while (begin <= end) {
@@ -132,5 +131,26 @@ const twoSum2 = function (numbers, target) {
     }
     return []
 }
-const res = twoSum2([2, 3, 4], 6)//[1,3]
+// const res = twoSum2([1, 2, 3, 4, 4, 9, 56, 90], 8)//[4,5]
+// console.log(res)
+
+const findPeakElement = (nums) => {
+    //跟谁比
+    //可二分并缩小范围
+    if (!nums || !nums.length) return -1
+    let begin = 0
+    let end = nums.length - 1
+    while (begin < end) {
+        let mid = begin + ((end - begin) >> 1)
+        if (nums[mid] > nums[mid + 1]) {
+            end = mid
+        } else {
+            begin = mid + 1
+        }
+    }
+
+    return begin
+
+}
+const res = findPeakElement([1, 2])
 console.log(res)
