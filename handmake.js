@@ -148,9 +148,15 @@ const findPeakElement = (nums) => {
             begin = mid + 1
         }
     }
-
     return begin
 
 }
-const res = findPeakElement([1, 2])
+// const res = findPeakElement([1, 2])
+// console.log(res)
+
+const lengthOfLIS = function (nums) {
+  //动态规划再做把
+
+};
+const res = lengthOfLIS([0, 1, 0, 3, 2, 3])
 console.log(res)
