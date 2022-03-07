@@ -155,8 +155,41 @@ const findPeakElement = (nums) => {
 // console.log(res)
 
 const lengthOfLIS = function (nums) {
-  //动态规划再做把
+    //动态规划再做把
 
 };
-const res = lengthOfLIS([0, 1, 0, 3, 2, 3])
+// const res = lengthOfLIS([0, 1, 0, 3, 2, 3])
+// console.log(res)
+
+const findLength = function (nums1, nums2) {
+    if (!nums1.length || !nums2.length) return []
+    const compareFn = (l1, l2) => {
+        let res = true
+        l1.map(i => {
+            if (l1[i] !== l2[i]) {
+                res = false
+            }
+        })
+        return res
+    }
+
+    for (let i = 1; i <= nums2.length + nums1.length - 1; i++) {
+
+
+        let l1 = nums1.slice(0, i)
+        if (i >=nums1.length) {
+            l1 = nums1.slice(i - l1.length )
+        }
+
+
+
+        console.log(l1)
+
+
+    }
+
+
+};
+
+const res = findLength([3, 2, 1, 4, 7], [1, 2, 3, 2, 1])
 console.log(res)
