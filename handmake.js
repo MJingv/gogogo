@@ -162,33 +162,33 @@ const lengthOfLIS = function (nums) {
 // console.log(res)
 
 const findLength = function (nums1, nums2) {
+    //滑动窗口
     if (!nums1.length || !nums2.length) return []
-    const compareFn = (l1, l2) => {
-        let res = true
+
+    const compareLength = (l1, l2) => {
+        let count = 0
         l1.map(i => {
-            if (l1[i] !== l2[i]) {
-                res = false
+            if (l1[i] === l2[i]) {
+                count++
             }
         })
-        return res
+        return count
     }
+    const resList = []
 
     for (let i = 1; i <= nums2.length + nums1.length - 1; i++) {
 
-
         let l1 = nums1.slice(0, i)
-        if (i >=nums1.length) {
-            l1 = nums1.slice(i - l1.length )
+        if (i >= nums1.length) {
+            l1 = nums1.slice(i - l1.length)
         }
-
-
-
-        console.log(l1)
-
-
+        let l2 = nums2.slice(nums2.length - i)
+        if (i > nums2.length) {
+            l2 = nums2.slice(0, nums2.length - (i - nums2.length))
+        }
+        resList.push(compareLength(l1, l2))
     }
-
-
+    return Math.max(...resList)
 };
 
 const res = findLength([3, 2, 1, 4, 7], [1, 2, 3, 2, 1])
