@@ -191,5 +191,34 @@ const findLength = function (nums1, nums2) {
     return Math.max(...resList)
 };
 
-const res = findLength([3, 2, 1, 4, 7], [1, 2, 3, 2, 1])
+// const res = findLength([3, 2, 1, 4, 7], [1, 2, 3, 2, 1])
+// console.log(res)
+
+const searchRange2 = function (nums, target) {
+    // 34. 在排序数组中查找元素的第一个和最后一个位置
+    if (!nums.length) return [-1, -1]
+    let begin = 0, end = nums.length
+    const res = [-1,-1]
+    while (begin <= end) {
+        let mid = begin + ((end - begin) >> 1)
+        if (nums[mid] === target) {
+            res[0] = res[1] = mid
+            while (nums[--mid] === target) {
+                res[0] = mid
+            }
+            while (nums[++mid] === target) {
+                res[1] = mid
+            }
+            return res
+
+        } else if (target > nums[mid]) {
+            begin = mid + 1
+        } else {
+            end = mid - 1
+        }
+    }
+    return res
+};
+
+const res = searchRange2([5,7,7,8,8,10], 6)
 console.log(res)
