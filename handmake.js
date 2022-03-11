@@ -1,4 +1,8 @@
 //二分查找
+//条件：
+// 1。递增/减有序数组
+// 2。可逐步减少范围
+
 const binarySearch = (arr, target) => {
     let begin = 0;
     let end = arr.length - 1 //最后一位index
