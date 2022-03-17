@@ -420,6 +420,12 @@ class BinarySearchTree {
         fun(node)
         return res
     }
+
+    isBalanced(node, res = true) {
+
+
+    }
+
 }
 
 const t = new BinarySearchTree()
@@ -437,7 +443,7 @@ const printFn = (val) => console.log(val)
 // t.search(0)
 // t.remove(5)
 
-const l = t.binaryTreePaths()
+const l = t.isBalanced()
 // const res = JSON.stringify(l)
 console.log(l)
 
