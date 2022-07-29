@@ -14,5 +14,25 @@ const mySqrt = (x) => {
     }
     return res
 };
-const res = mySqrt(24)
+const res1 = mySqrt(24)
+
+const searchInsert = (nums, target) => {
+    if (!nums.length || !target) return -1
+    let low = 0, high = nums.length - 1, res = nums.length
+    while (low <= high) {
+        let mid = low + Math.floor((high - low) / 2)
+        let cur = nums[mid]
+        if (cur === target) {
+            res = mid
+        } else if (cur < target) {
+            low = mid + 1
+        } else {
+            high = low - 1
+        }
+    }
+    return res
+};
+const res = searchInsert([1, 3, 5, 6, 9, 12], 19)
+
+
 console.log(res)
