@@ -32,7 +32,42 @@ const searchInsert = (nums, target) => {
     }
     return res
 };
-const res = searchInsert([1, 3, 5, 6, 9, 12], 19)
+const res2 = searchInsert([1, 3, 5, 6, 9, 12], 19)
 
 
+// 二维数组中的查找
+const findNumberIn2DArray = (matrix, target) => {
+    //右上角
+    if (!matrix.length || !target) return null
+    let res = false, j = matrix.length - 1, i = 0
+    while (j >= 0) {
+        if (matrix[0][j] === target) {
+            return res = true
+        } else if (matrix[0][j] > target) {
+            j--
+        } else {
+            break
+        }
+    }
+    while (i < matrix.length) {
+        if (matrix[i][j] === target) {
+            return res = true
+        } else if (matrix[i][j] < target) {
+            i++
+        } else {
+            break
+        }
+    }
+    return res
+
+};
+const matrix = [
+    [1, 4, 7, 11, 15],
+    [2, 5, 8, 12, 19],
+    [3, 6, 9, 16, 22],
+    [10, 13, 14, 17, 24],
+    [18, 21, 23, 26, 30]
+]
+
+const res = findNumberIn2DArray(matrix, 5)
 console.log(res)
