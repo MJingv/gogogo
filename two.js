@@ -69,5 +69,12 @@ const matrix = [
     [18, 21, 23, 26, 30]
 ]
 
-const res = findNumberIn2DArray(matrix, 5)
+const res = findNumberIn2DArray(matrix, -1)
+
+
+const quickSort = () => {
+
+}
+
+
 console.log(res)
