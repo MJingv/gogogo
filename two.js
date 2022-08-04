@@ -97,6 +97,34 @@ const minArray = (list = []) => {
     return list[low]
 
 }
+// const res = minArray([1, 1, 1, 1, 0, 1, 1])
 
-const res = minArray([1, 1, 1, 1, 0, 1, 1])
+// 在排序数组中查找数字 I
+// 统计一个数字在排序数组中出现的次数。
+//是一个非递减数组
+const search = (list, target) => {
+    if (!list.length) return -1
+    let [low, high, flag] = [0, list.length - 1, null]
+    while (low <= high) {
+        const mid = (low + high) >> 1
+        if (list[mid] < target) {
+            low = mid + 1
+        } else if (list[mid] > target) {
+            high = mid - 1
+        } else {
+            flag = mid
+            break
+        }
+    }
+    if (!flag) return 0
+    low = high = flag;
+    while (list[low - 1] === target) {
+        low--
+    }
+    while (list[high + 1] === target) {
+        high++
+    }
+    return high - low + 1
+}
+const res = search([5, 7, 7, 8, 8, 10], 8)
 console.log(res)
