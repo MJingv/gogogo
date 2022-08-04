@@ -69,12 +69,29 @@ const matrix = [
     [18, 21, 23, 26, 30]
 ]
 
-const res = findNumberIn2DArray(matrix, -1)
-
+// const res = findNumberIn2DArray(matrix, -1)
 
 const quickSort = () => {
 
 }
 
+// 旋转数组的最小数字
+// mid值和high值分情况做对比
+const minArray = (list = []) => {
+    if (!list.length) return null
+    let [low, high] = [0, list.length - 1]
+    while (low <= high) {
+        let mid = (low + high) >> 1
+        if (list[mid] === list[high]) {
+            high-- //[1,1,0,1,1,1]多重复的case
+        } else if (list[mid] > list[high]) {
+            low = mid + 1 //[3,4,5,1,2]常见case
+        } else {
+            high = mid //[1,2,3,4,5]旋转0的case
+        }
+    }
+    return list[low]
+}
 
+const res = minArray([3, 3, 3, 3, 4, 5, 1, 2])
 console.log(res)
