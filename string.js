@@ -17,7 +17,7 @@ const fun = (s = '') => {
             res.push(first + i)
         })
     }
-    return res
+    return new Set(...res)
 }
 const res = fun('abc')
 console.log(res)
