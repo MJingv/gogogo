@@ -116,7 +116,7 @@ const search = (list, target) => {
             break
         }
     }
-    if (!flag) return 0
+    if (flag === null) return 0
     low = high = flag;
     while (list[low - 1] === target) {
         low--
@@ -126,5 +126,5 @@ const search = (list, target) => {
     }
     return high - low + 1
 }
-const res = search([5, 7, 7, 8, 8, 10], 8)
+const res = search([8], 8)
 console.log(res)
