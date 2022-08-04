@@ -81,17 +81,22 @@ const minArray = (list = []) => {
     if (!list.length) return null
     let [low, high] = [0, list.length - 1]
     while (low <= high) {
-        let mid = (low + high) >> 1
+        const mid = (low + high) >> 1
         if (list[mid] === list[high]) {
-            high-- //[1,1,0,1,1,1]多重复的case
-        } else if (list[mid] > list[high]) {
-            low = mid + 1 //[3,4,5,1,2]常见case
+            //[1,1,0,1,1,1,1]
+            //[1,1,1,1,0,1,1]
+            high--
+        } else if (list[mid] < list[high]) {
+            //[1,2,3,4,5]
+            high = mid
         } else {
-            high = mid //[1,2,3,4,5]旋转0的case
+            //[2,3,4,5,1]
+            low = mid + 1
         }
     }
     return list[low]
+
 }
 
-const res = minArray([3, 3, 3, 3, 4, 5, 1, 2])
+const res = minArray([1, 1, 1, 1, 0, 1, 1])
 console.log(res)
