@@ -126,5 +126,27 @@ const search = (list, target) => {
     }
     return high - low + 1
 }
-const res = search([8], 8)
+// const res = search([2, 2], 3)
+
+
+//0～n-1中缺失的数字
+// 一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内。在范围0～n-1内的n个数字中有且只有一个数字不在该数组中，请找出这个数字。
+
+//比较 list[mid]与mid
+const missingNumber = (list = []) => {
+    if (!list.length) return
+    let [low, high, target] = [0, list.length - 1, -1]
+    while (low <= high) {
+        const mid = (low + high) >> 1
+        if (mid === list[mid]) {
+            //左边完整
+            low = mid + 1
+        } else {
+            //左边不完整
+            high = mid - 1
+        }
+    }
+    return low
+}
+const res = missingNumber([0, 1, 2, 3, 4, 5, 6, 7, 9])
 console.log(res)
