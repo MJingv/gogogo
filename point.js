@@ -11,9 +11,11 @@ const exchange = (list = []) => {
     if (!list.length) return []
     let [left, right] = [0, list.length - 1]
     while (left < right) {
-        while (list[left] & 1 && left < right) left++
-        while (!(list[right] & 1) && left < right) right--
-        [list[left], list[right]] = [list[right], list[left]]
+        while (list[left] & 1) left++
+        while (!(list[right] & 1)) right--
+        if (left < right) {
+            [list[left], list[right]] = [list[right], list[left]]
+        }
     }
     return list
 }
