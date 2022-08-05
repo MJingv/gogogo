@@ -50,22 +50,21 @@ const twoSum = (nums = [], target = -1) => {
 // 正整数从1开始，连续正整数序列（滑动窗口）
 const findContinuousSequence = (target) => {
     if (target <= 0) return []
-    let [res, window, sum,] = [[], [1, 2], 3]
+    let [res, window, sum] = [[], [1, 2], 3]
     while (window[0] <= target >> 1) {
-        if (sum === target) {
+        if (target === sum) {
             res.push([...window])
-            sum -= window.shift()
-        } else if (sum < target) {
-            const num = window[window.length - 1] + 1
-            sum += num
-            window.push(num)
-        } else {
+            sum -= window.shift()//老忘，记住
+        } else if (target > sum) {//右+1
+            const nextVal = window[window.length - 1] + 1
+            window.push(nextVal)
+            sum += nextVal
+        } else {//左-1
             sum -= window.shift()
         }
     }
     return res
 }
-
 
 const res = findContinuousSequence(15)
 
