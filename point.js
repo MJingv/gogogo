@@ -20,5 +20,53 @@ const exchange = (list = []) => {
     return list
 }
 
-const res = exchange([1, 2, 3, 4, 5])
+// const res = exchange([1, 2, 3, 4, 5])
+
+//【和为s的两个数字】
+// 输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。
+// 输入：nums = [2,7,11,15], target = 9
+// 输出：[2,7] 或者 [7,2]
+const twoSum = (nums = [], target = -1) => {
+    if (!nums.length) return []
+    let [left, right] = [0, nums.length - 1]
+    while (left < right) {
+        const sum = nums[left] + nums[right]
+        if (sum === target) return [nums[left], nums[right]]
+        if (sum > target) {
+            right--
+        } else {
+            left++
+        }
+    }
+    return []
+};
+
+// const res = twoSum([0, 2, 7, 11, 15], 9)
+
+
+// 【和为s的连续正数序列】
+// 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
+
+// 正整数从1开始，连续正整数序列（滑动窗口）
+const findContinuousSequence = (target) => {
+    if (target <= 0) return []
+    let [res, window, sum,] = [[], [1, 2], 3]
+    while (window[0] <= target >> 1) {
+        if (sum === target) {
+            res.push([...window])
+            sum -= window.shift()
+        } else if (sum < target) {
+            const num = window[window.length - 1] + 1
+            sum += num
+            window.push(num)
+        } else {
+            sum -= window.shift()
+        }
+    }
+    return res
+}
+
+
+const res = findContinuousSequence(15)
+
 console.log(res)
