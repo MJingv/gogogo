@@ -8,5 +8,37 @@ const fib = (n) => {
     }
     return dp[n]
 };
-const res = fib(5)
+// const res = fib(5)
+
+// 「剑指 Offer 10- II. 青蛙跳台阶问题」
+// 一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。
+const numWays = (n) => {
+    if (n === 0) return 1 // 为了通过，强行加的条件
+    const dp = [null, 1, 2]
+    for (let i = 3; i <= n; i++) {
+        dp[i] = (dp[i - 1] + dp[i - 2]) % 1000000007
+    }
+    return dp[n]
+}
+
+// const res = numWays(3)
+
+
+// 剑指 Offer 14- I. 剪绳子
+// 给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 k[0],k[1]...k[m-1] 。请问 k[0]*k[1]*...*k[m-1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
+
+// dp=max(dp[i],dp[i-j]*j,(i-j)*j)
+const cuttingRope = (n) => {
+    if (n <= 0) return
+    const dp = [null, null, 1]
+    for (let i = 3; i <= n; i++) {//长i的绳子
+        dp[i] = 0
+        for (let j = 1; j <= i - 1; j++) {//剪j米
+            dp[i] = Math.max(dp[i], dp[i - j] * j, (i - j) * j)
+        }
+    }
+    return dp[n]
+}
+const res = cuttingRope(10)
+
 console.log(res)
