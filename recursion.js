@@ -10,5 +10,13 @@ const mergeTwoLists = function (list1, list2) {
 };
 // 输入：l1 = [1,2,4], l2 = [1,3,4]
 // 输出：[1,1,2,3,4,4]
-const res = mergeTwoLists([1, 2, 4], [1, 3, 4])
+// const res = mergeTwoLists([1, 2, 4], [1, 3, 4])
+
+
+// 「剑指 Offer 64. 求1+2+…+n」
+const sumNums = (n) => {
+    return n && sumNums(n - 1) + n
+}
+const res = sumNums(3)
+
 console.log(res)

@@ -11,7 +11,20 @@ const firstUniqChar = (str) => {
         }
     }
     return ' '
-x
 }
-const res = firstUniqChar("loveleetcode")
+// const res = firstUniqChar("loveleetcode")
+
+//【数组中数字出现的次数 II】
+// 在一个数组 nums 中除一个数字只出现一次之外，其他数字都出现了三次。请找出那个只出现一次的数字。
+const singleNumber = (nums) => {
+    if (!nums.length) return
+    const map = new Map()
+    nums.map(i => {
+        map.set(i, (map.get(i) || 0) + 1)
+    })
+    for (let item of map) {
+        if (item[1] === 1) return item[0]
+    }
+}
+const res = singleNumber([9, 1, 7, 9, 7, 9, 7])
 console.log(res)
