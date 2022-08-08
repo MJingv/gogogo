@@ -40,5 +40,25 @@ const myPow = (x, n) => {
     return myPow(x * x, n / 2) //偶数
 
 }
-const res = myPow(0.00001, 2147483647)
+// const res = myPow(0.00001, 2147483647)
+
+
+// 剑指 Offer 38. 字符串的排列
+const permutation = (s = []) => {
+    if (s.length === 0) return ['']
+    if (s.length === 1) return [s]
+    const res = []
+
+    for (let i = 0; i < s.length; i++) {
+        const chart = s[i]
+        const newStr = s.slice(0, i) + s.slice(i + 1)
+        const list = permutation(newStr)
+        list.map(i => {
+            res.push(chart + i)
+        })
+    }
+
+    return [...new Set(res)] //去重
+}
+const res = permutation('abcd')
 console.log(res)
