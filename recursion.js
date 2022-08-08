@@ -28,16 +28,17 @@ const sumNums = (n) => {
 // 解释：2-2 = 1/22 = 1/4 = 0.25
 
 
-const pow = (x, n) => {
-    if (n === 0) return 1
+const myPow = (x, n) => {
+    if (n === 0) return 1 //output
     if (n < 0) {
-        return 1 / pow(x, -n)
+        return 1 / myPow(x, -n)
     }
     if (n & 1) {//奇数
-        return pow(x, n - 1) * x
+        return myPow(x, n - 1) * x
     }
-    //偶数
-    return pow(x * x, n / 2)
+
+    return myPow(x * x, n / 2) //偶数
+
 }
-const res = pow(2.00000, 4)
+const res = myPow(0.00001, 2147483647)
 console.log(res)
