@@ -114,10 +114,8 @@ class LinkList {
             cur.next = pre
             pre = cur
             cur = next
-
         }
         return pre
-
     }
 
     // 反转链表-递归
