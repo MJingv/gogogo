@@ -73,11 +73,29 @@ const maxValue = (grid) => {
     }
     return dp[m - 1][n - 1]
 }
-const res = maxValue([
-    [1, 3, 1],
-    [1, 5, 1],
-    [4, 2, 1]
-])
+// const res = maxValue([
+//     [1, 3, 1],
+//     [1, 5, 1],
+//     [4, 2, 1]
+// ])
+
+
+// 「剑指 Offer 63. 股票的最大利润」
+// 假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
+
+// 输入: [7,1,5,3,6,4]
+// 输出: 5
+// 解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+//      注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+const maxProfit = (prices) => {
+    let min = prices[0], dp = [0] // dp[i] 代表以 prices[i]为结尾的子数组的最大"利润"
+    for (let i = 1; i < prices.length; i++) {
+        if (prices[i] < min) min = prices[i] //找到最低价格
+        dp[i] = Math.max(dp[i - 1], prices[i] - min)
+    }
+    return dp[dp.length - 1]
+}
+const res = maxProfit([7, 1, 5, 3, 6, 4])
 
 console.log(res)
 
