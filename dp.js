@@ -88,10 +88,11 @@ const maxValue = (grid) => {
 // 解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
 //      注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
 const maxProfit = (prices) => {
-    let min = prices[0], dp = [0] // dp[i] 代表以 prices[i]为结尾的子数组的最大"利润"
-    for (let i = 1; i < prices.length; i++) {
-        if (prices[i] < min) min = prices[i] //找到最低价格
-        dp[i] = Math.max(dp[i - 1], prices[i] - min)
+    let min = prices[0]
+    const dp = [0]//第i天的利润
+    for (let i = 1; i < prices.length; i++) {//买卖不能同一天
+        if (prices[i] < min) min = prices[i]
+        dp[i] = Math.max(dp[i - 1], prices[i] - min) //利润最大：前一天的利润 or 当前价格-min
     }
     return dp[dp.length - 1]
 }
