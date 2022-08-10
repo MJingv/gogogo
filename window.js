@@ -14,8 +14,7 @@ const lengthOfLongestSubstring = (s) => {
     let [window, len, max] = [[], s.length, 0]
     for (let i = 0; i < len; i++) {
         const index = window.indexOf(s[i])
-        if (index !== -1) {
-            // window = [] 不能直接为空！
+        if (index !== -1) {//子串里有重复
             window.splice(0, index + 1)
         }
         window.push(s[i])
