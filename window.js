@@ -6,17 +6,25 @@
 // 输出: 3
 // 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
 
+
+//子串是连续的部分
+//子序列不是连续的部分
+
 const lengthOfLongestSubstring = (s) => {
-    if (!s.length) return 0
+    if (s.length === 0) return 0
     let [window, len, max] = [[], s.length, 0]
     for (let i = 0; i < len; i++) {
         if (window.includes(s[i])) {
             max = Math.max(max, window.length)
             window = []
+            window.push(s[i])
+
+        }else {
+            window.push(s[i])
+            max = Math.max(max, window.length)
         }
-        window.push(s[i])
     }
     return max
 }
-const res = lengthOfLongestSubstring('abcabcbb')
+const res = lengthOfLongestSubstring('dvdf')
 console.log(res)
