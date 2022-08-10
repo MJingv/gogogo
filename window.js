@@ -11,18 +11,15 @@
 //子序列不是连续的部分
 
 const lengthOfLongestSubstring = (s) => {
-    if (s.length === 0) return 0
     let [window, len, max] = [[], s.length, 0]
     for (let i = 0; i < len; i++) {
-        if (window.includes(s[i])) {
-            max = Math.max(max, window.length)
-            window = []
-            window.push(s[i])
-
-        }else {
-            window.push(s[i])
-            max = Math.max(max, window.length)
+        const index = window.indexOf(s[i])
+        if (index !== -1) {
+            // window = [] 不能直接为空！
+            window.splice(0, index + 1)
         }
+        window.push(s[i])
+        max = Math.max(max, window.length)
     }
     return max
 }
