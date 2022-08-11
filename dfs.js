@@ -46,17 +46,22 @@ const exist = (board, word) => {
 // 输出：3
 
 const movingCount = (m, n, k) => {
-
-    const dps = (i = 0, j = 0, index = 0) => {
-        const sum = (`${i}${j}`.split('') || []).reduce((i, pre) => i + pre)
-        if (i < 0 || i > m - 1 || j < 0 || j > n - 1 || sum > k) return false
-
-        const res = dps(i + 1, j, index + 1) || dps(i - 1, j) || dps(i, j + 1) || dps(i, j - 1)
-        return res
+    let res = 0
+    const isTrue = (i, j, k) => ((`${i}${j}`.split('') || []).reduce((i, pre) => Number(i) + Number(pre))) <= k
+    const visited = new Array(m).fill(0).map(() => new Array(n).fill(false))
+    const dfs = (i = 0, j = 0) => {
+        if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j]) return
+        visited[i][j] = true
+        if (isTrue(i, j, k)) {
+            res++
+            dfs(i + 1, j)
+            dfs(i - 1, j)
+            dfs(i, j + 1)
+            dfs(i, j - 1)
+        }
     }
-    return dps(0, 0, 0)
-
-
+    dfs(0, 0)
+    return res
 }
 const res = movingCount(2, 3, 1)
 console.log(res)
