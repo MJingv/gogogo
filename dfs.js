@@ -46,11 +46,11 @@ const exist = (board, word) => {
 // 输出：3
 
 const movingCount = (m, n, k) => {
+    const isTrue = (i, j, k) => ((`${i}${j}`.split('') || []).reduce((i, p) => Number(i) + Number(p))) <= k
+    const visited = new Array(m).fill(0).map(i => new Array(n).fill(false)) //一定要map新array，直接fill空数组会引用地址一样
     let res = 0
-    const isTrue = (i, j, k) => ((`${i}${j}`.split('') || []).reduce((i, pre) => Number(i) + Number(pre))) <= k
-    const visited = new Array(m).fill(0).map(() => new Array(n).fill(false))
-    const dfs = (i = 0, j = 0) => {
-        if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j]) return
+    const dfs = (i, j) => {
+        if (i < 0 || j < 0 || i >= m || j >= n || visited[i][j]) return
         visited[i][j] = true
         if (isTrue(i, j, k)) {
             res++
