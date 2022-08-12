@@ -111,8 +111,37 @@ const numIslands = (grid) => {
 // 解释：它的周长是上面图片中的 16 个黄色的边
 
 const islandPerimeter = (grid) => {
+    if (!grid.length) return
+    const [m, n] = [grid.length, grid[0].length]
+    let p = 0
 
+    const dfs = (i, j) => {
+        if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] === 0) {
+            p += 1
+            return false
+        }
+        if (grid[i][j] === 2) return false
+        grid[i][j] = 2
+        dfs(i + 1, j)
+        dfs(i - 1, j)
+        dfs(i, j + 1)
+        dfs(i, j - 1)
+    }
+
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1) {
+                dfs(i, j)
+            }
+        }
+    }
+    return p
 }
 
-const res = islandPerimeter([[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]])
+const res = islandPerimeter([
+    [0, 1, 0, 0],
+    [1, 1, 1, 0],
+    [0, 1, 0, 0],
+    [1, 1, 0, 0]
+])
 console.log(res)
