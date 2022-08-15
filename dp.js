@@ -188,6 +188,9 @@ const trap1 = (height) => {
     const res = Array(height.length).fill(0)
     res[0] = 0
     for (let i = 1; i < height.length; i++) {
+        //关注当前i的接水量
+        //取左边最高与右边最高的较小者
+        //如果当前墙高度小于较小者则可以接到水
         const leftMax = Math.max(...height.slice(0, i))
         const rightMax = Math.max(...height.slice(i + 1))
         const min = Math.min(leftMax, rightMax)
