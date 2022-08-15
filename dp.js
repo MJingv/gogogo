@@ -58,26 +58,27 @@ const cuttingRope = (n) => {
 const maxValue = (grid) => {
     if (!grid.length) return
     const [m, n] = [grid.length, grid[0].length]
-    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    const dp = new Array(m).fill(0).map(() => new Array(n).fill(0))
     dp[0][0] = grid[0][0]
-    for (let i = 1; i < m; i++) {
-        dp[i][0] = dp[i - 1][0] + grid[i][0] //第一列，只能向下走
+    for (let i = 1; i < m; i++) { //第一列只能向下走
+        dp[i][0] = dp[i - 1][0] + grid[i][0]
     }
     for (let j = 1; j < n; j++) {
-        dp[0][j] = dp[0][j - 1] + grid[0][j] //第一行，只能向右走
+        dp[0][j] = dp[0][j - 1] + grid[0][j]
     }
     for (let i = 1; i < m; i++) {
         for (let j = 1; j < n; j++) {
-            dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]) + grid[i][j]
+            dp[i][j] = grid[i][j] + Math.max(dp[i - 1][j], dp[i][j - 1])
         }
     }
     return dp[m - 1][n - 1]
 }
-// const res = maxValue([
-//     [1, 3, 1],
-//     [1, 5, 1],
-//     [4, 2, 1]
-// ])
+const res = maxValue([
+    [1, 3, 1],
+    [1, 5, 1],
+    [4, 2, 1]
+])
+console.log(res)
 
 
 // 「剑指 Offer 63. 股票的最大利润」
@@ -119,6 +120,6 @@ const translateNum = (num) => {
     }
     return dp[dp.length - 1]
 }
-const res = translateNum(12258)
-console.log(res)
+// const res = translateNum(12258)
+// console.log(res)
 

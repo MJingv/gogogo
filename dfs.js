@@ -223,14 +223,56 @@ const largestIsland = (grid) => {
     }
     return max
 };
-const res = largestIsland([
-    [0, 0, 0, 0, 0, 0, 0],
-    [0, 1, 1, 1, 1, 0, 0],
-    [0, 1, 0, 0, 1, 0, 0],
-    [1, 0, 1, 0, 1, 0, 0],
-    [0, 1, 0, 0, 1, 0, 0],
-    [0, 1, 0, 0, 1, 0, 0],
-    [0, 1, 1, 1, 1, 0, 0]
-])
+// const res = largestIsland([
+//     [0, 0, 0, 0, 0, 0, 0],
+//     [0, 1, 1, 1, 1, 0, 0],
+//     [0, 1, 0, 0, 1, 0, 0],
+//     [1, 0, 1, 0, 1, 0, 0],
+//     [0, 1, 0, 0, 1, 0, 0],
+//     [0, 1, 0, 0, 1, 0, 0],
+//     [0, 1, 1, 1, 1, 0, 0]
+// ])
 
+
+// 给你一个 m x n 的矩阵 board ，由若干字符 'X' 和 'O' ，找到所有被 'X' 围绕的区域，并将这些区域里所有的 'O' 用 'X' 填充。
+
+const solve = (board) => {
+    if (!board.length) return
+    const [m, n] = [board.length, board[0].length]
+    let flag = false
+    const raw = new Array(m).fill(0).map(() => new Array(n).fill(0))
+
+    const dfs = (i, j) => {
+        if (i < 0 || j < 0 || i >= m || j >= n || board[i][j] === '') return false
+
+        if (board[i][j] === 'O') {
+            board[i][j] = 2
+            const res = dfs(i + 1, j) && dfs(i - 1, j) && dfs(i, j + 1) && dfs(i, j - 1)
+            if (res === false) {
+                board[i][j] = 'O'
+            } else {
+                board[i][j] = 'X'
+            }
+        }
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            raw[i][j] = board[i][j]
+            if (board[i][j] === 'X') {
+                flag = true
+            }
+            if (board[i][j] === 'O') {
+                dfs(i, j)
+            }
+        }
+    }
+    if (!flag) {
+        //全部是0
+        return raw
+    } else {
+        return board
+    }
+}
+const res = solve([["O", "O"], ["O", "O"]]
+)
 console.log(res)
