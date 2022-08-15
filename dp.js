@@ -73,12 +73,12 @@ const maxValue = (grid) => {
     }
     return dp[m - 1][n - 1]
 }
-const res = maxValue([
-    [1, 3, 1],
-    [1, 5, 1],
-    [4, 2, 1]
-])
-console.log(res)
+// const res = maxValue([
+//     [1, 3, 1],
+//     [1, 5, 1],
+//     [4, 2, 1]
+// ])
+// console.log(res)
 
 
 // 「剑指 Offer 63. 股票的最大利润」
@@ -123,3 +123,23 @@ const translateNum = (num) => {
 // const res = translateNum(12258)
 // console.log(res)
 
+
+// 杨辉三角
+// 给定一个非负整数 numRows，生成「杨辉三角」的前 numRows 行。
+//
+// 在「杨辉三角」中，每个数是它左上方和右上方的数的和。
+// 输入: numRows = 5
+// 输出: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+
+const generate = (numRows) => {
+    if (!numRows) return []
+    const dp = Array(numRows).fill(0).map((i, index) => Array(index + 1).fill(1))
+    for (let i = 2; i < numRows; i++) {
+        for (let j = 1; j < dp[i].length - 1; j++) {
+            dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j]
+        }
+    }
+    return dp
+};
+const res = generate(5)
+console.log(res)
