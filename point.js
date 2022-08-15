@@ -66,6 +66,31 @@ const findContinuousSequence = (target) => {
     return res
 }
 
-const res = findContinuousSequence(15)
+// const res = findContinuousSequence(15)
+// console.log(res)
 
+
+// 5. 最长回文子串
+// 给你一个字符串 s，找到 s 中最长的回文子串。
+// 输入：s = "babad"
+// 输出："bab"
+// 解释："aba" 同样是符合题意的答案。
+const longestPalindrome = (s) => {
+    if (!s) return
+    let max = ''
+    const helper = (l, r) => {
+        while (l >= 0 && r < s.length && s[l] === s[r]) {
+            l--
+            r++
+        }
+        const str = s.slice(l + 1, r + 1 - 1) //符合条件的最后指针多执行了一次
+        max = str.length > max.length ? str : max
+    }
+    for (let i = 0; i < s.length; i++) {
+        helper(i, i)
+        helper(i, i + 1)
+    }
+    return max
+};
+const res = longestPalindrome("cbbd")
 console.log(res)

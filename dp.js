@@ -170,9 +170,11 @@ const minPathSum = (grid) => {
     }
     return dp[m - 1][n - 1]
 }
-const res = minPathSum([
-    [1, 3, 1],
-    [1, 5, 1],
-    [4, 2, 1]
-])
-console.log(res)
+// const res = minPathSum([
+//     [1, 3, 1],
+//     [1, 5, 1],
+//     [4, 2, 1]
+// ])
+// console.log(res)
+
+
