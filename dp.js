@@ -362,6 +362,7 @@ const uniquePathsWithObstacles = function (obstacleGrid) {
 // 输出：3
 // 解释：长度最长的公共子数组是 [3,2,1] 。
 const findLength = (nums1, nums2) => {
+    //二维数组dp
     if (!nums2.length || !nums1.length) return 0
     const [m, n] = [nums1.length, nums2.length]
     // 状态转移方程：上个对角线的值+1
@@ -388,5 +389,12 @@ const findLength = (nums1, nums2) => {
     }
     return max
 }
-const res = findLength([1, 2, 3, 2, 8], [5, 6, 1, 4, 7])
+
+const findLength2 = (nums1, nums2) => {
+    //一维数组dp
+
+
+}
+
+const res = findLength2([1, 2, 3, 2, 8], [5, 6, 1, 4, 7])
 console.log(res)
