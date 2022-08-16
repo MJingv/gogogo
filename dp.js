@@ -363,10 +363,30 @@ const uniquePathsWithObstacles = function (obstacleGrid) {
 // 解释：长度最长的公共子数组是 [3,2,1] 。
 const findLength = (nums1, nums2) => {
     if (!nums2.length || !nums1.length) return 0
-    const [l1, l2] = [nums1.length, nums2.length]
+    const [m, n] = [nums1.length, nums2.length]
+    // 状态转移方程：上个对角线的值+1
+    const dp = Array(m).fill(0).map(() => Array(n).fill(0))
+    let max = 0
+    dp[0][0] = nums1[0] === nums2[0] ? 1 : 0
+    for (let i = 1; i < m; i++) {
+        dp[i][0] = nums1[i] === nums2[0] ? 1 : 0
+        max = Math.max(dp[i][0], max)
 
+    }
+    for (let j = 1; j < n; j++) {
+        dp[0][j] = nums1[0] === nums2[j] ? 1 : 0
+        max = Math.max(dp[0][j], max)
+    }
 
-
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (nums1[i] === nums2[j]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1
+                max = Math.max(dp[i][j], max)
+            }
+        }
+    }
+    return max
 }
-const res = findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])
+const res = findLength([1, 2, 3, 2, 8], [5, 6, 1, 4, 7])
 console.log(res)
