@@ -202,5 +202,86 @@ const trap1 = (height) => {
     const sum = res.reduce((i, p) => i + p)
     return sum
 }
-const res = trap1([4, 2, 0, 3, 2, 5])
+
+
+const trap2 = (height) => {
+    if (!height.length) return
+    const len = height.length
+    const res = Array(len).fill(0)
+    res[0] = 0
+    const leftMax = Array(len).fill(0)
+    const rightMax = Array(len).fill(0)
+
+    for (let i = 1; i < height.length; i++) {
+        leftMax[i] = Math.max(leftMax[i - 1], height[i - 1])
+    }
+    for (let i = height.length - 2; i >= 0; i--) {
+        rightMax[i] = Math.max(rightMax[i + 1], height[i + 1])
+    }
+    for (let i = 1; i < height.length; i++) {
+        const min = Math.min(leftMax[i], rightMax[i])
+        if (height[i] < min) {
+            const diff = Math.abs(min - height[i])
+            res[i] = diff
+        }
+    }
+    const sum = res.reduce((i, p) => i + p)
+    return sum
+}
+// const res = trap2([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])
+// console.log(res)
+
+
+// 53. 最大子数组和
+
+// 给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+// 子数组 是数组中的一个连续部分。
+const maxSubArray = (nums) => {
+    if (!nums.length) return
+    const dp = [nums[0]]
+    let cur = [nums[0]]
+    for (let i = 1; i < nums.length; i++) {
+        const sum = dp[i - 1] + nums[i]
+        if (sum > nums[i]) {
+            cur.push(nums[i])
+            dp[i] = sum
+        } else {
+            cur = [nums[i]]
+            dp[i] = nums[i]
+        }
+    }
+    return Math.max(...dp)
+};
+// const res = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+// console.log(res)
+
+
+// 62. 不同路径
+// 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。
+//
+// 机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish” ）。
+//
+// 问总共有多少条不同的路径？
+
+// 输入：m = 3, n = 2
+// 输出：3
+const uniquePaths = (m, n) => {
+    if (!m || !n) return
+    const dp = Array(m).fill(0).map(() => Array(n).fill(0))
+    dp[0][0] = 1
+    for (let i = 1; i < m; i++) {//只能向下走
+        dp[i][0] = 1
+    }
+    for (let j = 1; j < n; j++) {
+        dp[0][j] = 1
+    }
+
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+        }
+    }
+    return dp[m - 1][n - 1]
+};
+const res = uniquePaths(3, 2)
 console.log(res)
