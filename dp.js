@@ -283,5 +283,35 @@ const uniquePaths = (m, n) => {
     }
     return dp[m - 1][n - 1]
 };
-const res = uniquePaths(3, 2)
+// const res = uniquePaths(3, 2)
+// console.log(res)
+
+
+const trap3 = (height) => {
+    //每日接雨水
+    const len = height.length
+    if (!len) return
+    const res = Array(len).fill(0)
+    const leftMax = Array(len).fill(0)
+    const rightMax = Array(len).fill(0)
+    for (let i = 1; i < len; i++) {
+        leftMax[i] = Math.max(leftMax[i - 1], height[i])
+    }
+    for (let i = len - 2; i > 0; i--) { //len-2注意
+        rightMax[i] = Math.max(rightMax[i + 1], height[i])
+    }
+
+    for (let i = 1; i < len; i++) {
+        const min = Math.min(leftMax[i - 1], rightMax[i + 1])
+        if (height[i] < min) {
+            res[i] = min - height[i]
+        }
+    }
+    const sum = res.reduce((i, p) => i + p)
+    return sum
+
+}
+
+
+const res = trap3([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])
 console.log(res)
