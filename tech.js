@@ -27,8 +27,8 @@ const isStraight = (nums) => {
 // 输出: [1,2,3,4,5,6,7,8,9]
 const printNumbers = (n) => {
     if (!n) return []
-    const res = []
-    for (let i = 1; i < 10**n; i++) {
+    const res = [], max = 10 ** n
+    for (let i = 1; i < max; i++) {
         res.push(i)
     }
     return res
