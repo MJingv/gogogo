@@ -391,10 +391,23 @@ const findLength = (nums1, nums2) => {
 }
 
 const findLength2 = (nums1, nums2) => {
-    //一维数组dp
+    //一维数组dp，保存对角线的值
+    if (!nums1.length || !nums2.length) return 0
+    const [m, n] = [nums1.length, nums2.length]
+    const dp = Array(n).fill(0)
+    let max = 0
+    for (let i = 0; i < m; i++) {
+        for (let j = n - 1; j >= 0; j--) {
+            if (nums1[i] === nums2[j]) {
+                dp[j + 1] = dp[j] + 1
+                max = Math.max(max, dp[j])
+            }
+        }
+    }
+    return max
 
 
 }
 
-const res = findLength2([1, 2, 3, 2, 8], [5, 6, 1, 4, 7])
+const res = findLength2([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])
 console.log(res)
