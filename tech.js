@@ -34,5 +34,19 @@ const printNumbers = (n) => {
     return res
 }
 
-const res = printNumbers(1)
+// const res = printNumbers(1)
+// console.log(res)
+
+
+// 剑指 Offer 15. 二进制中1的个数
+// 编写一个函数，输入是一个无符号整数（以二进制串的形式），返回其二进制表达式中数字位数为 '1' 的个数（也被称为 汉明重量).）。
+const hammingWeight = (n) => {
+    let count = 0
+    while (n !== 0) {
+        n = n & (n - 1) //去掉右边的1
+        count++
+    }
+    return count
+}
+const res = hammingWeight(11)//3
 console.log(res)
