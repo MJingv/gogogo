@@ -48,5 +48,19 @@ const hammingWeight = (n) => {
     }
     return count
 }
-const res = hammingWeight(11)//3
+// const res = hammingWeight(11)//3
+// console.log(res)
+
+// 剑指 Offer 65. 不用加减乘除做加法
+// 写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号。
+// 输入: a = 1, b = 1
+// 输出: 2
+
+const add = (a, b) => {
+    // 不考虑进位的加法：a^b
+    // 进位：(a & b) << 1
+    if (!b) return a
+    return add(a ^ b, (a & b) << 1)
+}
+const res = add(1, 1)
 console.log(res)
