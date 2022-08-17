@@ -399,15 +399,15 @@ const findLength2 = (nums1, nums2) => {
     for (let i = 0; i < m; i++) {
         for (let j = n - 1; j >= 0; j--) {
             if (nums1[i] === nums2[j]) {
-                dp[j + 1] = dp[j] + 1
+                dp[j] = (dp[j - 1] || 0) + 1
                 max = Math.max(max, dp[j])
+            } else {
+                dp[j] = 0 //我只要右上角的值（重要）
             }
         }
     }
-    return max
-
-
+    return dp
 }
 
-const res = findLength2([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])
+const res = findLength2([1, 0, 0, 0, 1], [1, 0, 0, 1, 1])
 console.log(res)
