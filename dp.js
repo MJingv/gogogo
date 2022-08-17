@@ -402,7 +402,7 @@ const findLength2 = (nums1, nums2) => {
                 dp[j] = (dp[j - 1] || 0) + 1
                 max = Math.max(max, dp[j])
             } else {
-                dp[j] = 0 //我只要右上角的值（重要）
+                dp[j] = 0 //我只要右上角的值，不是这一列最大的值（重要）
             }
         }
     }
