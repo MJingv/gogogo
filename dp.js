@@ -444,13 +444,26 @@ const lengthOfLIS = (nums) => {
 // 例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
 // 输入: n = 5, m = 3
 // 输出: 3
+// 从最后两个数开始反推
+// 补全所有的数，得到的下标就是所求的数
 const lastRemaining = (n, m) => {
     if (!n || !m) return
     let res = 0
     for (let i = 2; i <= n; i++) {
+        console.log(res)
         res = (res + m) % i
     }
     return res
 }
-const res = lastRemaining(5, 3)
+
+const lastRemaining2 = (n, m) => {
+    if (!n || !m) return
+    let res = 0
+    for (let i = 2; i <= n; i++) {
+        console.log(res)
+        res = (res + m) % i
+    }
+    return res
+}
+const res = lastRemaining2(5, 3)
 console.log(res)
