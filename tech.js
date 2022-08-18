@@ -62,5 +62,7 @@ const add = (a, b) => {
     if (!b) return a
     return add(a ^ b, (a & b) << 1)
 }
-const res = add(1, 1)
-console.log(res)
+// const res = add(1, 1)
+// console.log(res)
+
+
