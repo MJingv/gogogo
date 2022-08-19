@@ -532,5 +532,32 @@ const rob2 = (nums) => {
     }
     return Math.max(dp1[dp1.length - 1], dp2[dp2.length - 1])
 };
-const res = rob2([2, 3, 2, 5])
+// const res = rob2([2, 3, 2, 5])
+// console.log(res)
+
+
+// 152. 乘积最大子数组
+// 给你一个整数数组 nums ，请你找出数组中乘积最大的非空连续子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
+// 测试用例的答案是一个 32-位 整数。子数组 是数组的连续子序列。
+// 输入: nums = [2,3,-2,4]
+// 输出: 6
+// 解释: 子数组 [2,3] 有最大乘积 6。
+const maxProduct = (nums) => {
+    const len = nums.length
+    //要维护2个dp，因为最小的遇到负负为正，可能变成最大的
+    const dpMin = Array(len).fill(0)
+    const dpMax = Array(len).fill(0)
+    let max = 0
+    max = dpMin[0] = dpMax[0] = nums[0]
+    for (let i = 1; i < len; i++) {
+        const cur = nums[i]
+        //最大可能是，自己 || cur*上一个最大 || cur*上一个最小
+        dpMin[i] = Math.min(cur, dpMin[i - 1] * cur, dpMax[i - 1] * cur)
+        dpMax[i] = Math.max(cur, dpMax[i - 1] * cur, dpMin[i - 1] * cur)
+        max = Math.max(max, dpMax[i])
+    }
+    return max
+}
+const res = maxProduct([2, 3, -2, 4])
 console.log(res)
+
