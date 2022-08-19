@@ -465,5 +465,48 @@ const lastRemaining2 = (n, m) => {
     }
     return res
 }
-const res = lastRemaining2(5, 3)
+// const res = lastRemaining2(5, 3)
+// console.log(res)
+
+
+// 121. 买卖股票的最佳时机
+// 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+// 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+// 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+// 输入：[7,1,5,3,6,4]
+// 输出：5
+// 解释：在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
+const maxProfit2 = function (prices) {
+    //利润最大：前一天的利润 or 当前价格-min
+    const len = prices.length
+    if (!len) return
+    let min = prices[0]
+    const dp = [0]
+    for (let i = 1; i < len; i++) {
+        min = Math.min(min, prices[i])
+        dp[i] = Math.max(dp[i - 1], prices[i] - min)
+    }
+    return dp[len - 1]
+};
+// const res = maxProfit2([7, 1, 5, 3, 6, 4])
+// console.log(res)
+
+// 198. 打家劫舍
+// 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+// 给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。
+//
+// 输入：[1,2,3,1]
+// 输出：4
+// 解释：偷窃 1 号房屋 (金额 = 1) ，然后偷窃 3 号房屋 (金额 = 3)。偷窃到的最高金额 = 1 + 3 = 4 。
+
+const rob = (nums) => {
+    const len = nums.length
+    if (!len) return
+    const dp = [nums[0], Math.max(nums[0], nums[1])]
+    for (let i = 2; i < len; i++) {
+        dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1])
+    }
+    return dp[len - 1]
+};
+const res = rob([2, 1])
 console.log(res)
