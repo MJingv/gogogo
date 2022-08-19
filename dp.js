@@ -567,7 +567,15 @@ const maxProduct = (nums) => {
 // 输出：3
 // 解释：12 = 4 + 4 + 4
 const numSquares = (n) => {
-
+    if (!n) return
+    const dp = Array(n + 1).fill(0)
+    for (let i = 1; i < n + 1; i++) {
+        dp[i] = i //最差的情况是 1+1+1+...
+        for (let j = 1; i - j * j >= 0; j++) {
+            dp[i] = Math.min(dp[i], dp[i - j * j] + 1)
+        }
+    }
+    return dp
 
 }
 const res = numSquares(12)
