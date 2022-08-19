@@ -458,7 +458,7 @@ const lastRemaining = (n, m) => {
 
 const lastRemaining2 = (n, m) => {
     if (!n || !m) return
-    let res = 0
+    let res = 0 //f(1) =0 长度为1剩1个就是这个删除
     for (let i = 2; i <= n; i++) {
         console.log(res)
         res = (res + m) % i
