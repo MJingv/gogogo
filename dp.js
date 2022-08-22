@@ -590,7 +590,7 @@ const numSquares = (n) => {
 const coinChange = (coins, amount) => {
     const len = coins.length
     if (!amount || !len) return 0
-    const dp = Array(amount + 1).fill(amount)
+    const dp = Array(amount + 1).fill(amount + 1)
     dp[0] = 0
     for (let i = 1; i < amount + 1; i++) {
         for (let j = 0; j < len; j++) {
@@ -599,7 +599,9 @@ const coinChange = (coins, amount) => {
             }
         }
     }
-    return dp
+    return dp[amount] === amount + 1 ? -1 : dp[amount]
 }
-const res = coinChange([ 2, 5], 12)
-console.log(res)
+// const res = coinChange([2], 3)
+// console.log(res)
+
+

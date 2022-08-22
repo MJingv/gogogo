@@ -168,5 +168,38 @@ const isPerfectSquare = (num) => {
     }
     return false
 };
-const res = isPerfectSquare(0)
+// const res = isPerfectSquare(0)
+// console.log(res)
+
+// 符合下列属性的数组 arr 称为 山峰数组（山脉数组） ：
+//
+// arr.length >= 3
+// 存在 i（0 < i < arr.length - 1）使得：
+// arr[0] < arr[1] < ... arr[i-1] < arr[i]
+// arr[i] > arr[i+1] > ... > arr[arr.length - 1]
+// 给定由整数组成的山峰数组 arr ，返回任何满足 arr[0] < arr[1] < ... arr[i - 1] < arr[i] > arr[i + 1] > ... > arr[arr.length - 1] 的下标 i ，即山峰顶部。
+// 示例 1：
+// 输入：arr = [0,1,0]
+// 输出：1
+// 示例 2：
+// 输入：arr = [1,3,5,4,2]
+// 输出：2
+const peakIndexInMountainArray = (arr) => {
+    const len = arr.length
+    if (len <= 3) return
+    let [left, right] = [0, len - 2]
+    while (left <= right) {
+        let mid = (left + right) >> 1
+        if (arr[mid] > arr[mid + 1]) {
+            //最大值在mid的左边or自己
+            right = mid - 1
+        } else {
+            //最大值在右边
+            left = mid + 1
+        }
+    }
+
+    return left
+}
+const res = peakIndexInMountainArray([1, 3, 5, 4, 2])
 console.log(res)
