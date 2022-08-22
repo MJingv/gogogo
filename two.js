@@ -186,7 +186,7 @@ const isPerfectSquare = (num) => {
 // 输出：2
 const peakIndexInMountainArray = (arr) => {
     const len = arr.length
-    if (len <= 3) return
+    if (len < 3) return
     let [left, right] = [0, len - 2]
     while (left <= right) {
         let mid = (left + right) >> 1
@@ -198,8 +198,7 @@ const peakIndexInMountainArray = (arr) => {
             left = mid + 1
         }
     }
-
     return left
 }
-const res = peakIndexInMountainArray([1, 3, 5, 4, 2])
+const res = peakIndexInMountainArray([0, 1, 0])
 console.log(res)
