@@ -191,10 +191,10 @@ const peakIndexInMountainArray = (arr) => {
     while (left <= right) {
         let mid = (left + right) >> 1
         if (arr[mid] > arr[mid + 1]) {
-            //最大值在mid的左边or自己
+            //最大值在mid的左边
             right = mid - 1
         } else {
-            //最大值在右边
+            //最大值在右边or自己
             left = mid + 1
         }
     }
