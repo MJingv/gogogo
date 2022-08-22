@@ -589,12 +589,12 @@ const numSquares = (n) => {
 
 const coinChange = (coins, amount) => {
     const len = coins.length
-    if (!amount || !len) return 0
+    if (!len) return -1
     const dp = Array(amount + 1).fill(amount + 1)
     dp[0] = 0
     for (let i = 1; i < amount + 1; i++) {
         for (let j = 0; j < len; j++) {
-            if (i >= coins[j]) {
+            if (coins[j] <= i) {
                 dp[i] = Math.min(dp[i - coins[j]] + 1, dp[i])
             }
         }
@@ -604,4 +604,42 @@ const coinChange = (coins, amount) => {
 // const res = coinChange([2], 3)
 // console.log(res)
 
+// 在一个由 '0' 和 '1' 组成的二维矩阵内，找到只包含 '1' 的最大正方形，并返回其面积。
+const maximalSquare = (matrix) => {
+    if (!matrix.length) return
+    const [m, n] = [matrix.length, matrix[0].length]
+    const dp = Array(m).fill(0).map(() => Array(n).fill(0))
+    let max = 0
+    for (let i = 0; i < m; i++) {
+        dp[i][0] = matrix[i][0]
+        if (dp[i][0] === '1') {
+            max = 1
+        }
+    }
+    for (let j = 0; j < n; j++) {
+        dp[0][j] = matrix[0][j]
+        if (dp[0][j] === '1') {
+            max = 1
+        }
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (matrix[i][j] === '1') {
+                dp[i][j] = Math.min(dp[i][j - 1], dp[i - 1][j], dp[i - 1][j - 1]) + 1
+                max = Math.max(max, dp[i][j])
+                console.log(max)
+            }
+        }
+    }
+    return dp
+}
 
+const res = maximalSquare(
+    [
+        ["1", "0", "1", "0", "0"],
+        ["1", "0", "1", "1", "1"],
+        ["1", "1", "1", "1", "1"],
+        ["1", "0", "0", "1", "0"],
+    ]
+)
+console.log(res)
