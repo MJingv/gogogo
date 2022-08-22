@@ -148,5 +148,21 @@ const missingNumber = (list = []) => {
     }
     return low
 }
-const res = missingNumber([0, 1, 2, 3, 4, 5, 6, 7, 9])
+// const res = missingNumber([0, 1, 2, 3, 4, 5, 6, 7, 9])
+// console.log(res)
+
+// 给定一个 正整数 num ，编写一个函数，如果 num 是一个完全平方数，则返回 true ，否则返回 false 。
+// 进阶：不要 使用任何内置的库函数，如 sqrt 。
+// 示例 1：
+// 输入：num = 16
+// 输出：true
+const isPerfectSquare = (num) => {
+    if (num === 1) return true
+    const mid = Math.floor(num / 2)
+    for (let i = 0; i < mid; i++) {
+        if (i * i === num) return true
+    }
+    return false
+};
+const res = isPerfectSquare(1)
 console.log(res)
