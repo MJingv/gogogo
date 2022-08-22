@@ -61,13 +61,7 @@ const findNumberIn2DArray = (matrix, target) => {
     return res
 
 };
-const matrix = [
-    [1, 4, 7, 11, 15],
-    [2, 5, 8, 12, 19],
-    [3, 6, 9, 16, 22],
-    [10, 13, 14, 17, 24],
-    [18, 21, 23, 26, 30]
-]
+const matrix = [[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]]
 
 // const res = findNumberIn2DArray(matrix, -1)
 
@@ -157,12 +151,22 @@ const missingNumber = (list = []) => {
 // 输入：num = 16
 // 输出：true
 const isPerfectSquare = (num) => {
-    if (num === 1) return true
-    const mid = Math.floor(num / 2)
-    for (let i = 0; i < mid; i++) {
-        if (i * i === num) return true
+    //二分
+    let [left, right,] = [0, num]
+    while (left <= right) {
+        let mid = (left + right) >> 1
+
+        if (mid * mid === num) {
+            return true
+        } else if (mid * mid > num) {
+            right = mid - 1
+
+        } else {
+            left = mid + 1
+
+        }
     }
     return false
 };
-const res = isPerfectSquare(1)
+const res = isPerfectSquare(0)
 console.log(res)
