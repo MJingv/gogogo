@@ -288,10 +288,28 @@ const solve = (board) => {
 // 仅有这两种组合。
 
 const combinationSum = (candidates, target) => {
+    const res = []
+    const len = candidates.length
+    if (!len) return []
 
+    const helper = (start, prevSum, prevArr) => {
+        if (prevSum > target) return
+        if (prevSum === target) {
+            res.push(prevArr)
+            return;
+        }
+        for (let i = start; i < len; i++) {
+            let first = candidates[i]
+            let sum = first + prevSum
+            let arr = [first, ...prevArr]
+            helper(i, sum, arr)
+        }
+    }
+    helper(0, 0, [])
+    return res
 }
-// const res = combinationSum([2, 3, 6, 7], 7)
-// console.log(res)
+const res = combinationSum([2, 3, 6, 7], 7)
+console.log(res)
 
 const permute = (nums) => {
     const res = []
@@ -332,5 +350,5 @@ const permuteUnique = (nums) => {
     return res
 
 }
-const res = permuteUnique([1])
-console.log(res)
+// const res = permuteUnique([1])
+// console.log(res)
