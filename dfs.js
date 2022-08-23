@@ -309,5 +309,28 @@ const permute = (nums) => {
     }
     return res
 }
-const res = permute([1, 2, 3])
+
+const permuteUnique = (nums) => {
+    const len = nums.length
+    if (!len) return []
+    if (len === 1) return [nums]
+    const res = []
+    const tmp = []
+
+    for (let i = 0; i < len; i++) {
+        const first = nums[i]
+        if (tmp.indexOf(first) === -1) {
+            tmp.push(first)
+            const left = [...nums.slice(0, i), ...nums.slice(i + 1)]
+            const list = permuteUnique(left)
+            list.forEach(i => {
+                const l = Array.isArray(i) ? i : [i]
+                res.push([first, ...l])
+            })
+        }
+    }
+    return res
+
+}
+const res = permuteUnique([1])
 console.log(res)
