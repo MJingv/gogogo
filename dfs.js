@@ -288,28 +288,51 @@ const solve = (board) => {
 // 仅有这两种组合。
 
 const combinationSum = (candidates, target) => {
-    const res = []
     const len = candidates.length
-    if (!len) return []
-
+    if (!len) return
+    const res = []
     const helper = (start, prevSum, prevArr) => {
         if (prevSum > target) return
-        if (prevSum === target) {
-            res.push(prevArr)
-            return;
-        }
+        if (prevSum === target) return res.push(prevArr)
         for (let i = start; i < len; i++) {
             let first = candidates[i]
-            let sum = first + prevSum
-            let arr = [first, ...prevArr]
+            let sum = prevSum + first
+            let arr = [...prevArr, first]
             helper(i, sum, arr)
         }
     }
     helper(0, 0, [])
     return res
 }
-const res = combinationSum([2, 3, 6, 7], 7)
+// const res = combinationSum([2, 3, 6, 7], 7)
+// console.log(res)
+
+//combinationSum2值不能重复
+const combinationSum2 = (candidates, target) => {
+    const len = candidates.length
+    if (!len) return
+    const res = []
+    candidates.sort()
+    const helper = (start, preSum, preArr) => {
+        if (preSum === target) return res.push(preArr)
+        if (preSum > target) return
+        let used = {}
+        for (let i = start; i < len; i++) {
+            const first = candidates[i]
+            if (used[first]) continue
+            used[first] = true
+            const sum = first + preSum
+            const arr = [...preArr, first]
+            helper(i + 1, sum, arr)
+        }
+    }
+    helper(0, 0, [])
+    return res
+};
+const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
 console.log(res)
+// [ [1,1,6], [1,2,5], [1,7], [2,6] ]
+
 
 const permute = (nums) => {
     const res = []
@@ -352,3 +375,4 @@ const permuteUnique = (nums) => {
 }
 // const res = permuteUnique([1])
 // console.log(res)
+
