@@ -329,10 +329,31 @@ const combinationSum2 = (candidates, target) => {
     helper(0, 0, [])
     return res
 };
-const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
-console.log(res)
+// const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
+// console.log(res)
 // [ [1,1,6], [1,2,5], [1,7], [2,6] ]
 
+
+// 找出所有相加之和为 n 的 k 个数的组合，且满足下列条件：
+// 只使用数字1到9
+// 每个数字 最多使用一次
+// 输入: k = 3, n = 7 输出: [[1,2,4]] 解释: 1 + 2 + 4 = 7 没有其他符合的组合了。
+// [[1,2,4]]
+const combinationSum3 = (k, n) => {
+    const res = []
+    const helper = (start, preSum, preArr) => {
+        if (preArr.length === k && preSum === n) return res.push(preArr)
+        if (preSum > n) return
+        for (let i = start + 1; i < 10; i++) {
+            helper(i, preSum + i, [...preArr, i])
+        }
+    }
+    helper(0, 0, [])
+    return res
+};
+
+const res = combinationSum3(3, 7)
+console.log(res)
 
 const permute = (nums) => {
     const res = []
