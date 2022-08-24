@@ -115,6 +115,41 @@ const getKthFromEnd = (head, k) => {
     }
     return p2
 };
-const res = getKthFromEnd(c([1, 2, 3, 4, 5]), 2)
-console.log(JSON.stringify(res))
+// const res = getKthFromEnd(c([1, 2, 3, 4, 5]), 2)
+// console.log(JSON.stringify(res))
 
+
+// 第 19 题「 删除链表的倒数第 N 个结点」
+// 输入：head = [1,2,3,4,5], n = 2 输出：[1,2,3,5]
+const removeNthFromEnd = (head, n) => {
+    const getKthFromEnd = (head, k) => {
+        let [p1, p2] = [head, head]
+        for (let i = 0; i < k; i++) {
+            p1 = p1.next
+        }
+        while (p1 !== null) {
+            p1 = p1.next
+            p2 = p2.next
+        }
+        return p2
+    };
+
+    const dummy = new ListNode(-1)
+    dummy.next = head
+    const k = getKthFromEnd(dummy, n + 1)
+    k.next = k.next.next
+    return dummy.next
+};
+// const res = removeNthFromEnd(c([1]), 1)
+// console.log(JSON.stringify(res))
+// 876 题「 链表的中间结点」
+var middleNode = function (head) {
+    let [fast, low] = [head, head]//快慢指针
+    while (fast !== null && fast.next) {
+        fast = fast.next.next
+        low = low.next
+    }
+    return low
+};
+const res = middleNode(c([1, 2, 3, 4, 5, 6]))
+console.log(JSON.stringify(res))
