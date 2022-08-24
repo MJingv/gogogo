@@ -343,8 +343,8 @@ const combinationSum3 = (k, n) => {
     const helper = (start, preSum, preArr) => {
         if (preArr.length === k && preSum === n) return res.push(preArr)
         if (preSum > n) return
-        for (let i = start ; i < 10; i++) {
-            helper(i+1, preSum + i, [...preArr, i])
+        for (let i = start; i < 10; i++) {
+            helper(i + 1, preSum + i, [...preArr, i])
         }
     }
     helper(0, 0, [])
@@ -396,3 +396,9 @@ const permuteUnique = (nums) => {
 // const res = permuteUnique([1])
 // console.log(res)
 
+// 输入：n = 4 输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+const solveNQueens = (n) => {
+
+};
+const res = solveNQueens(4)
+console.log(res)
