@@ -291,17 +291,18 @@ const combinationSum = (candidates, target) => {
     const len = candidates.length
     if (!len) return
     const res = []
-    const helper = (start, prevSum, prevArr) => {
-        if (prevSum > target) return
-        if (prevSum === target) return res.push(prevArr)
+
+    const helper = (start, preSum, preArr) => {
+        if (preSum === target) return res.push(preArr)
+        if (preSum > target) return
         for (let i = start; i < len; i++) {
-            let first = candidates[i]
-            let sum = prevSum + first
-            let arr = [...prevArr, first]
-            helper(i, sum, arr)
+            const first = candidates[i]
+            helper(i, preSum + first, [...preArr, first])
         }
+
     }
     helper(0, 0, [])
+
     return res
 }
 // const res = combinationSum([2, 3, 6, 7], 7)
@@ -316,14 +317,12 @@ const combinationSum2 = (candidates, target) => {
     const helper = (start, preSum, preArr) => {
         if (preSum === target) return res.push(preArr)
         if (preSum > target) return
-        let used = {}
+        const used = {}
         for (let i = start; i < len; i++) {
             const first = candidates[i]
             if (used[first]) continue
             used[first] = true
-            const sum = first + preSum
-            const arr = [...preArr, first]
-            helper(i + 1, sum, arr)
+            helper(i + 1, preSum + first, [...preArr, first])
         }
     }
     helper(0, 0, [])
@@ -344,8 +343,8 @@ const combinationSum3 = (k, n) => {
     const helper = (start, preSum, preArr) => {
         if (preArr.length === k && preSum === n) return res.push(preArr)
         if (preSum > n) return
-        for (let i = start + 1; i < 10; i++) {
-            helper(i, preSum + i, [...preArr, i])
+        for (let i = start ; i < 10; i++) {
+            helper(i+1, preSum + i, [...preArr, i])
         }
     }
     helper(0, 0, [])
