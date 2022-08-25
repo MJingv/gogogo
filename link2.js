@@ -189,10 +189,35 @@ var detectCycle = function (head) {
 // const res = detectCycle(c([1, 2, 3, 4, 5, 6]))
 // console.log(JSON.stringify(res))
 
-var isPathCrossing = function(path) {
-
+// 160 相交链表
+var getIntersectionNode = function (headA, headB) {
+    let [p1, p2] = [headA, headB]
+    while (p1 !== p2) {
+        if (!p1) {
+            p1 = headB
+        } else {
+            p1 = p1.next
+        }
+        if (!p2) {
+            p2 = headA
+        } else {
+            p2 = p2.next
+        }
+    }
+    return p1
 };
 
-// const res = detectCycle(c([1, 2, 3, 4, 5, 6]))
+// const res = getIntersectionNode(c([4, 1, 8, 4, 5]), c([5, 6, 1, 8, 4, 5]))
 // console.log(JSON.stringify(res))
 
+// 剑指offer 反转链表
+var reverseList = function (head) {
+    if (!head || !head.next) return head
+    const last = reverseList(head.next)
+    head.next.next = head
+    head.next = null
+    return last
+};
+const res = reverseList(c([1, 2, 3, 4, 5]))
+
+console.log(JSON.stringify(res))
