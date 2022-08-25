@@ -151,5 +151,48 @@ var middleNode = function (head) {
     }
     return low
 };
-const res = middleNode(c([1, 2, 3, 4, 5, 6]))
-console.log(JSON.stringify(res))
+// const res = middleNode(c([1, 2, 3, 4, 5, 6]))
+// console.log(JSON.stringify(res))
+
+
+// 141.环形链表
+var hasCycle = function (head) {
+    let [fast, low] = [head, head]
+    while (fast && fast.next && low) {
+        fast = fast.next.next
+        low = low.next
+        if (fast === low) return true
+    }
+    return false
+};
+
+// const res = hasCycle(b)
+// console.log(JSON.stringify(res))
+
+// 剑指offer 链表中环的入口节点
+var detectCycle = function (head) {
+    let [fast, slow] = [head, head]
+    while (fast && fast.next) {
+        fast = fast.next.next
+        slow = slow.next
+        if (fast === slow) break
+    }
+    if (!fast || !fast.next) return null //没有环
+    slow = head //!important
+    while (fast !== slow) {
+        fast = fast.next
+        slow = slow.next
+    }
+    return slow
+};
+
+// const res = detectCycle(c([1, 2, 3, 4, 5, 6]))
+// console.log(JSON.stringify(res))
+
+var isPathCrossing = function(path) {
+
+};
+
+// const res = detectCycle(c([1, 2, 3, 4, 5, 6]))
+// console.log(JSON.stringify(res))
+
