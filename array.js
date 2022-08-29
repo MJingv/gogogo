@@ -6,14 +6,16 @@ const removeDuplicates = (nums) => {
     if (!len) return []
     let [fast, slow] = [0, 0]
     while (fast < len) {
-        if (nums[fast] !== nums[slow]) {
+        if (nums[fast] === nums[slow]) {
+            fast++
+        } else {
             slow++
             nums[slow] = nums[fast]
-        } else {
-            fast++
         }
     }
     return slow + 1
 };
 const res = removeDuplicates([1, 2, 3, 4, 4, 5, 6, 6, 7])
 console.log(res)
+
+// 83 题「 删除排序链表中的重复元素」

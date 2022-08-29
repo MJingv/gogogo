@@ -355,6 +355,39 @@ const isPalindrome2 = function (head) {
     let left = head, right = fast
     return slow
 }
-const res = isPalindrome2(c([1, 2, 3, 2, 1]))
-console.log(JSON.stringify(res))
+// const res = isPalindrome2(c([1, 2, 3, 2, 1]))
+// console.log(JSON.stringify(res))
 
+// 83. 删除排序链表中的重复元素
+const deleteDuplicates = (head) => {
+    const dummy = new ListNode(-1)
+    dummy.next = head
+    let [fast, slow] = [head, head]
+    while (fast) {
+        if (fast.val === slow.val) {
+            let next = fast.next
+            slow.next = next
+            fast = next
+        } else {
+            slow = slow.next
+            fast = fast.next
+        }
+    }
+    return dummy.next
+};
+const deleteDuplicates2 = (head) => {
+    //看不懂
+    if (!head) return head
+    let [fast, slow] = [head, head]
+    while (fast) {
+        if (fast.val !== slow.val) {
+            slow.next = fast
+            slow = slow.next
+        }
+        fast = fast.next
+    }
+    slow.next = null
+    return head
+};
+const res = deleteDuplicates2(c([1, 2, 3, 4, 4, 5, 6, 6, 7]))
+console.log(JSON.stringify(res))
