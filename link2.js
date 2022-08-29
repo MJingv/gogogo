@@ -310,12 +310,14 @@ const reverseKGroup = function (head, k) {
         }
         return prev
     }
-    let [a, b] = [head, head]
+
+    if (!head) return head
+
+    let a = head, b = head
     for (let i = 0; i < k; i++) {
         if (!b) return head
         b = b.next
     }
-    //反转前k个
     const res = reverseAB(a, b)
     a.next = reverseKGroup(b, k)
     return res
