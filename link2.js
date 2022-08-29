@@ -353,8 +353,6 @@ const isPalindrome2 = function (head) {
         slow = slow.next //slow指向中间点，偶数后面那个，奇数中间后面那个
     }
     let left = head, right = fast
-
-
     return slow
 }
 const res = isPalindrome2(c([1, 2, 3, 2, 1]))
