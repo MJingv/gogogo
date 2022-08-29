@@ -342,8 +342,21 @@ const isPalindrome = function (head) {
 // console.log(JSON.stringify(res))
 
 const isPalindrome2 = function (head) {
+    //今天不做了，麻烦
+    let [fast, slow] = [head, head]
+    while (fast && fast.next) {
+        fast = fast.next.next
+        slow = slow.next
+    }
+    // fast是null偶数，fast非null奇数
+    if (fast) {
+        slow = slow.next //slow指向中间点，偶数后面那个，奇数中间后面那个
+    }
+    let left = head, right = fast
 
+
+    return slow
 }
-const res = isPalindrome2(c([1, 2, 3, 3, 2, 1]))
+const res = isPalindrome2(c([1, 2, 3, 2, 1]))
 console.log(JSON.stringify(res))
 
