@@ -218,6 +218,87 @@ var reverseList = function (head) {
     head.next = null
     return last
 };
-const res = reverseList(c([1, 2, 3, 4, 5]))
+var reverseList2 = function (head) {
+    let prev = null
+    let cur = head
+    while (cur) {
+        let next = cur.next
+        cur.next = prev
+        prev = cur
+        cur = next
+    }
+    return prev
+};
+// const res = reverseList2(c([1, 2, 3]))
+// console.log(JSON.stringify(res))
 
+// 将链表的前 n 个节点反转（n <= 链表长度）
+const reverseN = (head, n) => {
+    while (n === 1) {
+        const last = reverseN(head, --n)
+    }
+
+}
+// const res = reverseN(c([1, 2, 3]), 2)
+// console.log(JSON.stringify(res))
+
+// 92 反转链表2
+const reverseBetween = (head, left, right) => {
+    // 看不懂
+    const dummy = new ListNode(-1)
+    let [p1, p2, p] = [dummy, dummy, head]
+    for (let i = 0; i < left; i++) {
+        p1.next = p
+        p = p.next
+        p1 = p1.next
+    }
+    let nxt = p1.next
+    for (let i = 0; i < right - left; i++) {
+        p2.next = p
+        p = p.next
+        p2 = p2.next
+
+    }
+    return p2
+};
+// const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
+// console.log(JSON.stringify(res))
+
+const reverseBetween2 = (head, left, right) => {
+    //最basic的解法，每天一遍，记住！！！
+    const reverse = (head) => {
+        let prev = null, cur = head
+        while (cur) {
+            let next = cur.next
+            cur.next = prev
+            prev = cur
+            cur = next
+        }
+        return prev
+    }
+
+    const dummy = new ListNode(-1)
+    dummy.next = head
+    let pre = dummy
+    for (let i = 0; i < left - 1; i++) {
+        pre = pre.next
+    }
+    let leftNode = pre.next
+    let rightNode = pre
+    for (let i = 0; i < right - left + 1; i++) {
+        rightNode = rightNode.next
+    }
+    let cur = rightNode.next
+    pre.next = null
+    rightNode.next = null
+    reverse(leftNode)
+    pre.next = rightNode
+    leftNode.next = cur
+    return dummy.next
+}
+
+
+const res = reverseBetween2(c([1, 2, 3, 4, 5, 6]), 3, 5)
 console.log(JSON.stringify(res))
+
+
