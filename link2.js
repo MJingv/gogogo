@@ -322,7 +322,28 @@ const reverseKGroup = function (head, k) {
     a.next = reverseKGroup(b, k)
     return res
 };
-const res = reverseKGroup(c([1, 2, 3, 4, 5, 6]), 2)
-console.log(JSON.stringify(res))
+// const res = reverseKGroup(c([1, 2, 3, 4, 5, 6]), 2)
+// console.log(JSON.stringify(res))
 
+const isPalindrome = function (head) {
+    // 最basic的做法
+    // 想象成tree的左右边判断是否相等
+    let left = head
+    const traverse = (right) => {
+        if (!right) return true
+        let res = traverse(right.next)
+        res = res && (left.val === right.val)
+        left = left.next
+        return res
+    }
+    return traverse(head)
+}
+// const res = isPalindrome(c([1, 2, 3, 3, 2, 1]))
+// console.log(JSON.stringify(res))
+
+const isPalindrome2 = function (head) {
+
+}
+const res = isPalindrome2(c([1, 2, 3, 3, 2, 1]))
+console.log(JSON.stringify(res))
 
