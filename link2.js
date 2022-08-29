@@ -244,22 +244,39 @@ const reverseN = (head, n) => {
 
 // 92 反转链表2
 const reverseBetween = (head, left, right) => {
-    // 看不懂
-    const dummy = new ListNode(-1)
-    let [p1, p2, p] = [dummy, dummy, head]
-    for (let i = 0; i < left; i++) {
-        p1.next = p
-        p = p.next
-        p1 = p1.next
-    }
-    let nxt = p1.next
-    for (let i = 0; i < right - left; i++) {
-        p2.next = p
-        p = p.next
-        p2 = p2.next
 
+    const reverse = (head) => {
+        let [prev, cur] = [null, head]
+        while (cur) {
+            let next = cur.next
+            cur.next = prev
+            prev = cur
+            cur = next
+        }
+        return prev
     }
-    return p2
+    let [dummy, pre, leftNode, rightNode, cur] = [new ListNode(-1), null, null, null, null]
+    dummy.next = head
+    pre = dummy
+
+    for (let i = 0; i < left - 1; i++) {
+        pre = pre.next
+    }
+    leftNode = pre.next
+    rightNode = pre
+    for (let i = 0; i < right - left + 1; i++) {
+        rightNode = rightNode.next
+    }
+    cur = rightNode.next
+
+    pre.next = null
+    rightNode.next = null
+    reverse(leftNode)
+    pre.next = rightNode
+    leftNode.next = cur
+
+    return dummy.next
+
 };
 // const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
 // console.log(JSON.stringify(res))
@@ -267,6 +284,7 @@ const reverseBetween = (head, left, right) => {
 const reverseBetween2 = (head, left, right) => {
     //最basic的解法，每天一遍，记住！！！
     const reverse = (head) => {
+        //首先默写一遍反转链表
         let prev = null, cur = head
         while (cur) {
             let next = cur.next
@@ -298,7 +316,7 @@ const reverseBetween2 = (head, left, right) => {
 }
 
 
-const res = reverseBetween2(c([1, 2, 3, 4, 5, 6]), 3, 5)
+const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
 console.log(JSON.stringify(res))
 
 
