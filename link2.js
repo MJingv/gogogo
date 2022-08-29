@@ -232,16 +232,6 @@ var reverseList2 = function (head) {
 // const res = reverseList2(c([1, 2, 3]))
 // console.log(JSON.stringify(res))
 
-// 将链表的前 n 个节点反转（n <= 链表长度）
-const reverseN = (head, n) => {
-    while (n === 1) {
-        const last = reverseN(head, --n)
-    }
-
-}
-// const res = reverseN(c([1, 2, 3]), 2)
-// console.log(JSON.stringify(res))
-
 // 92 反转链表2
 const reverseBetween = (head, left, right) => {
     //最basic的解法，每天一遍，记住！！！
@@ -276,18 +266,61 @@ const reverseBetween = (head, left, right) => {
     //组装全部链表
     pre.next = rightNode
     leftNode.next = cur
-    return dummy
+    return dummy.next
 };
 // const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
 // console.log(JSON.stringify(res))
 
-const reverseBetween2 = (head, left, right) => {
-    //递归理解呀
-
+// 以n为起点的链表反转
+const reverseN = (head, n) => {
+    let successor = null
+    const fn = (head, n) => {
+        if (n === 1) {
+            successor = head.next
+            return head
+        }
+        const last = fn(head.next, n - 1)
+        head.next.next = head
+        head.next = successor
+        return last
+    }
+    return fn(head, n)
 }
 
 
-const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
+const reverseBetween2 = (head, left, right) => {
+    //递归理解呀,只关注当前的case,记住把～
+    if (left === 1) return reverseN(head, right)
+    head.next = reverseBetween2(head.next, left - 1, right - 1)
+    return head
+}
+
+// const res = reverseBetween2(c([1, 2, 3, 4, 5, 6]), 3, 4)
+// console.log(JSON.stringify(res))
+
+// 25. K 个一组翻转链表
+const reverseKGroup = function (head, k) {
+    const reverseAB = (a, b) => {
+        let prev = null, cur = a
+        while (cur !== b) {
+            let next = cur.next
+            cur.next = prev
+            prev = cur
+            cur = next
+        }
+        return prev
+    }
+    let [a, b] = [head, head]
+    for (let i = 0; i < k; i++) {
+        if (!b) return head
+        b = b.next
+    }
+    //反转前k个
+    const res = reverseAB(a, b)
+    a.next = reverseKGroup(b, k)
+    return res
+};
+const res = reverseKGroup(c([1, 2, 3, 4, 5, 6]), 2)
 console.log(JSON.stringify(res))
 
 
