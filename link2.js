@@ -244,47 +244,8 @@ const reverseN = (head, n) => {
 
 // 92 反转链表2
 const reverseBetween = (head, left, right) => {
-
-    const reverse = (head) => {
-        let [prev, cur] = [null, head]
-        while (cur) {
-            let next = cur.next
-            cur.next = prev
-            prev = cur
-            cur = next
-        }
-        return prev
-    }
-    let [dummy, pre, leftNode, rightNode, cur] = [new ListNode(-1), null, null, null, null]
-    dummy.next = head
-    pre = dummy
-
-    for (let i = 0; i < left - 1; i++) {
-        pre = pre.next
-    }
-    leftNode = pre.next
-    rightNode = pre
-    for (let i = 0; i < right - left + 1; i++) {
-        rightNode = rightNode.next
-    }
-    cur = rightNode.next
-
-    pre.next = null
-    rightNode.next = null
-    reverse(leftNode)
-    pre.next = rightNode
-    leftNode.next = cur
-
-    return dummy.next
-
-};
-// const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
-// console.log(JSON.stringify(res))
-
-const reverseBetween2 = (head, left, right) => {
     //最basic的解法，每天一遍，记住！！！
     const reverse = (head) => {
-        //首先默写一遍反转链表
         let prev = null, cur = head
         while (cur) {
             let next = cur.next
@@ -298,6 +259,7 @@ const reverseBetween2 = (head, left, right) => {
     const dummy = new ListNode(-1)
     dummy.next = head
     let pre = dummy
+    //2个循环找到要reverse的数据段
     for (let i = 0; i < left - 1; i++) {
         pre = pre.next
     }
@@ -307,12 +269,21 @@ const reverseBetween2 = (head, left, right) => {
         rightNode = rightNode.next
     }
     let cur = rightNode.next
+    //断开前后的连接
     pre.next = null
     rightNode.next = null
     reverse(leftNode)
+    //组装全部链表
     pre.next = rightNode
     leftNode.next = cur
-    return dummy.next
+    return dummy
+};
+// const res = reverseBetween(c([1, 2, 3, 4, 5, 6]), 3, 5)
+// console.log(JSON.stringify(res))
+
+const reverseBetween2 = (head, left, right) => {
+    //递归理解呀
+
 }
 
 
