@@ -18,4 +18,4 @@ const removeDuplicates = (nums) => {
 const res = removeDuplicates([1, 2, 3, 4, 4, 5, 6, 6, 7])
 console.log(res)
 
-// 83 题「 删除排序链表中的重复元素」
+// 第 27 题「 移除元素」
