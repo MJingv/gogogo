@@ -1,5 +1,5 @@
 // https://labuladong.github.io/algo/2/20/23/
-// 数组相关的双指针算法
+// 数组相关的双指针算法(快慢指针)
 // 删除有序数组中的重复项
 const removeDuplicates = (nums) => {
     const len = nums.length
@@ -57,5 +57,44 @@ const moveZeroes = (nums) => {
     }
     return nums
 };
-const res = moveZeroes([0, 0, 1])
+const moveZeroes2 = (nums) => {
+    const len = nums.length
+    if (!len) return []
+    let j = 0
+    for (let i = 0; i < len; i++) {
+        if (nums[i] !== 0) {
+            const tmp = nums[i]
+            nums[i] = nums[j]
+            nums[j++] = tmp
+        }
+    }
+    return nums
+}
+
+// const res = moveZeroes2([0, 1, 0, 3, 12])
+// console.log(res)
+
+// 数组相关的双指针算法(左右指针)
+
+//二分查找
+const two = (nums, target) => {
+    const len = nums.length
+    if (!len) return
+    let [left, right] = [0, len - 1]
+
+    while (left <= right) {
+        const mid = (right + left) >> 2
+        if (nums[mid] === target) {
+            return mid
+        }
+        if (nums[mid] > target) {
+            right = mid - 1
+        }
+        if (nums[mid] < target) {
+            left = mid + 1
+        }
+    }
+    return -1
+}
+const res = two([0, 1, 3, 7, 10, 100, 101, 102, 103], -5)
 console.log(res)
