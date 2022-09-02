@@ -96,5 +96,73 @@ const two = (nums, target) => {
     }
     return -1
 }
-const res = two([0, 1, 3, 7, 10, 100, 101, 102, 103], -5)
+// const res = two([0, 1, 3, 7, 10, 100, 101, 102, 103], -5)
+// console.log(res)
+
+// 力扣第 167 题「 两数之和 II」
+// 输入：numbers = [-1,0], target = -1 输出：[1,2] 解释：-1 与 0 之和等于目标数 -1 。因此 index1 = 1, index2 = 2 。返回 [1, 2] 。
+const twoSum = (numbers, target) => {
+    const len = numbers.length
+    if (!len) return []
+    let [left, right] = [0, len - 1]
+
+    while (left <= right) {
+        const sum = numbers[left] + numbers[right]
+        if (sum === target) {
+            return [left + 1, right + 1]
+        }
+        if (sum < target) {
+            left++
+        }
+        if (sum > target) {
+            right--
+        }
+    }
+    return []
+};
+// const res = twoSum([2, 7, 11, 15], 9)
+// console.log(res)
+
+// 力扣第 344 题「 反转字符串」
+// 不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。
+// 输入：s = ["h","e","l","l","o"]
+// 输出：["o","l","l","e","h"]
+const reverseString = (s) => {
+    const len = s.length
+    if (!len) return []
+    let [left, right] = [0, len - 1]
+
+    while (left <= right) {
+        const tmp = s[left]
+        s[left++] = s[right]
+        s[right--] = tmp
+    }
+    return s
+};
+// const res = reverseString(["h", "e", "l", "l", "o"])
+// console.log(res)
+
+var isPalindrome = function (s) {
+    const len = s.length
+    if (!len) return
+    let newList = []
+    s.split('').map(i => {
+        if (/[0-9a-zA-Z]/.test(i)) {
+            newList.push(i.toLowerCase())
+        }
+    })
+    const newStr = newList.join('')
+    let [left, right] = [0, newList.length - 1]
+    while (left <= right) {
+        if (newStr[left++] !== newStr[right--]) return false
+    }
+    return true
+};
+// const res = isPalindrome("A man, a plan, a canal: Panama")
+// console.log(res)
+// 中心扩散法
+const longestPalindrome = (s) => {
+
+};
+const res = longestPalindrome("babad")
 console.log(res)

@@ -389,5 +389,5 @@ const deleteDuplicates2 = (head) => {
     slow.next = null
     return head
 };
-const res = deleteDuplicates2(c([1, 2, 3, 4, 4, 5, 6, 6, 7]))
-console.log(JSON.stringify(res))
+// const res = deleteDuplicates2(c([1, 2, 3, 4, 4, 5, 6, 6, 7]))
+// console.log(JSON.stringify(res))
