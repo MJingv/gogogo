@@ -111,9 +111,8 @@ var generateMatrix = function (n) {
     let res = Array(n).fill(0).map(() => Array(n).fill(0))
     let [up, down, left, right] = [0, n - 1, 0, n - 1]
     let count = 1
-    while (count < n * n) {
+    while (count <= n * n) {
         if (up <= down) {
-            //l-》r
             for (let j = left; j <= right; j++) {
                 res[up][j] = count++
             }
@@ -131,7 +130,7 @@ var generateMatrix = function (n) {
             }
             down--
         }
-        if (right <= left) {
+        if (left <= right) {
             for (let i = down; i >= up; i--) {
                 res[i][left] = count++
             }
@@ -140,5 +139,6 @@ var generateMatrix = function (n) {
     }
     return res
 };
-const res = generateMatrix(3)
+// [[1,2,3,4],[11,12,13,5],[16,15,14,6],[10,9,8,7]] 期望结果:[[1,2,3,4],[12,13,14,5],[11,16,15,6],[10,9,8,7]]
+const res = generateMatrix(4)
 console.log(res)
