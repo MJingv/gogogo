@@ -74,26 +74,26 @@ var spiralOrder = function (matrix) {
     const [m, n] = [matrix.length, matrix[0].length]
     let [up, down, left, right] = [0, matrix.length - 1, 0, matrix[0].length - 1]
     while (res.length < m * n) {
-        if (left <= right) {
+        if (up <= down) {
             for (let j = left; j <= right; j++) {
                 res.push(matrix[up][j])
             }
             up++
         }
-        if (up <= down) {
+        if (left <= right) {
             for (let i = up; i <= down; i++) {
                 res.push(matrix[i][right])
             }
             right--
         }
 
-        if (left <= right) {
+        if (up <= down) {
             for (let j = right; j >= left; j--) {
                 res.push(matrix[down][j])
             }
             down--
         }
-        if (up <= down) {
+        if (left <= right) {
             for (let i = down; i >= up; i--) {
                 res.push(matrix[i][left])
             }
