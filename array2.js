@@ -102,5 +102,43 @@ var spiralOrder = function (matrix) {
     }
     return res
 };
-const res = spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+// const res = spiralOrder([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+// console.log(res)
+
+// 力扣第 59 题「 螺旋矩阵 II
+// 输入：n = 3 输出：[[1,2,3],[8,9,4],[7,6,5]]
+var generateMatrix = function (n) {
+    let res = Array(n).fill(0).map(() => Array(n).fill(0))
+    let [up, down, left, right] = [0, n - 1, 0, n - 1]
+    let count = 1
+    while (count < n * n) {
+        if (up <= down) {
+            //l-》r
+            for (let j = left; j <= right; j++) {
+                res[up][j] = count++
+            }
+            up++
+        }
+        if (left <= right) {
+            for (let i = up; i <= down; i++) {
+                res[i][right] = count++
+            }
+            right--
+        }
+        if (up <= down) {
+            for (let j = right; j >= left; j--) {
+                res[down][j] = count++
+            }
+            down--
+        }
+        if (right <= left) {
+            for (let i = down; i >= up; i--) {
+                res[i][left] = count++
+            }
+            left++
+        }
+    }
+    return res
+};
+const res = generateMatrix(3)
 console.log(res)
