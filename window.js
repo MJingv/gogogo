@@ -99,5 +99,38 @@ var minWindow = function (s, t) {
     }
     return res
 };
-const res = minWindow('ADOBECODEBANC', 'ABC')
+var minWindow2 = function (s, t) {
+    //按照模版自己写一遍
+    let [left, right, res, len] = [0, 0, '', s.length]
+    const map = new Map()
+    for (let i = 0; i < t.length; i++) {
+        map.set(t[i], (map.get(t[i]) || 0) + 1)
+    }
+    let mapSize = map.size
+    while (right < len) {
+        const c1 = s[right]
+        right++
+        if (map.has(c1)) {
+            map.set(c1, map.get(c1) - 1)
+            if (map.get(c1) === 0) mapSize--
+
+        }
+        while (mapSize === 0) {
+            const newStr = s.slice(left, right + 1)
+            if (!res || res.length > newStr.length) {
+                res = newStr
+            }
+            const c2 = s[left]
+            left++
+            if (map.has(c2)) {
+                map.set(c2, map.get(c2) + 1)
+                if (map.get(c2) === 1) mapSize++
+            }
+        }
+    }
+    return res
+}
+
+
+const res = minWindow2('ADOBECODEBANC', 'ABC')
 console.log(res)
