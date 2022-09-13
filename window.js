@@ -68,40 +68,36 @@ const findLength = (nums1, nums2) => {
 // 力扣第 76 题「 最小覆盖子串」 hard
 // 输入：s = "ADOBECODEBANC", t = "ABC" 输出："BANC"
 var minWindow = function (s, t) {
-    if (t.length > s.length) return ''
     const len = s.length
-    let [left, right, res] = [0, 0, '']
     const map = new Map()
+    let [left, right, res] = [0, 0, '']
     for (let i = 0; i < t.length; i++) {
         const c = t[i]
         map.set(c, map.get(c) ? map.get(c) + 1 : 1); //target可能会重复
     }
     let mapSize = map.size
     while (right < len) {
-        // 扩大
         const c = s[right]
-        right++
         if (map.has(c)) {
             map.set(c, map.get(c) - 1)
             if (map.get(c) === 0) mapSize--
         }
-        console.log(right, left)
         while (mapSize === 0) {
-            // 缩小
-            const newStr = s.substring(left, right + 1)
-            if (!newStr || newStr.length < t.length) {
+            const newStr = s.substring(left, right + 1);
+            if (!res || res.length > newStr.length) {
                 res = newStr
             }
             const c = s[left]
-            left++
             if (map.has(c)) {
                 map.set(c, map.get(c) + 1)
                 if (map.get(c) === 1) mapSize++
+
             }
+            left++
         }
+        right++
     }
     return res
-
 };
 const res = minWindow('ADOBECODEBANC', 'ABC')
 console.log(res)
