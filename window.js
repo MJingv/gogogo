@@ -101,25 +101,25 @@ var minWindow = function (s, t) {
 };
 var minWindow2 = function (s, t) {
     //按照模版自己写一遍
-    let [left, right, res, len, tLen] = [0, 0, '', s.length, t.length]
+    let [left, right, res,] = [0, 0, '']
+    const [len, tLen] = [s.length, t.length]
     const map = new Map()
     for (let i = 0; i < tLen; i++) {
         map.set(t[i], (map.get(t[i]) || 0) + 1)
     }
     let mapSize = map.size
     while (right < len) {
-        const c1 = s[right++]
+        const c1 = s[right]
+        right++
         if (map.has(c1)) {
             map.set(c1, map.get(c1) - 1)
             if (map.get(c1) === 0) mapSize--
         }
         while (mapSize === 0) {
-            const newStr = s.substring(left, right + 1)
-            if (!res || res.length > newStr.length) {
-                res = newStr
-            }
-
-            const c2 = s[left++]
+            const newStr = s.slice(left, right + 1)
+            if (!res || res.length > newStr.length) res = newStr
+            const c2 = s[left]
+            left++
             if (map.has(c2)) {
                 map.set(c2, map.get(c2) + 1)
                 if (map.get(c2) === 1) mapSize++
