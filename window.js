@@ -170,5 +170,43 @@ var checkInclusion = function (s1, s2) {
     return false
 
 };
-const res = checkInclusion('ab', 'eidba2oo')
+// const res = checkInclusion('ab', 'eidba2oo')
+// console.log(res)
+
+
+// 438 题「 找到字符串中所有字母异位词」
+// 给定两个字符串 s 和 p，找到 s 中所有 p 的 异位词 的子串，返回这些子串的起始索引。不考虑答案输出的顺序。异位词 指由相同字母重排列形成的字符串（包括相同的字符串）。
+// 输入: s = "cbaebabacd", p = "abc"
+// 输出: [0,6]
+// 解释:起始索引等于 0 的子串是 "cba", 它是 "abc" 的异位词。起始索引等于 6 的子串是 "bac", 它是 "abc" 的异位词。
+var findAnagrams = function (s, p) {
+    let [left, right] = [0, 0]
+    const [sLen, pLen, res] = [s.length, p.length, []]
+    const map = new Map()
+    for (let i = 0; i < pLen; i++) {
+        map.set(p[i], (map.get(p[i]) || 0) + 1)
+    }
+    let mapSize = map.size
+    while (right < sLen) {
+        const c1 = s[right]
+        right++
+        if (map.has(c1)) {
+            map.set(c1, map.get(c1) - 1)
+            if (map.get(c1) === 0) mapSize--
+        }
+        while (mapSize === 0) {
+            if (right - left === p.length) {
+                res.push(left)
+            }
+            const c2 = s[left]
+            left++
+            if (map.has(c2)) {
+                map.set(c2, map.get(c2) + 1)
+                if (map.get(c2) === 1) mapSize++
+            }
+        }
+    }
+    return res
+};
+const res = findAnagrams('cbaebabacd', 'abc')
 console.log(res)
