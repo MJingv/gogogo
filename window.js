@@ -130,5 +130,45 @@ var minWindow2 = function (s, t) {
 }
 
 
-const res = minWindow2('ADOBECODEBANC', 'ABC')
+// const res = minWindow2('ADOBECODEBANC', 'ABC')
+// console.log(res)
+
+
+// 力扣第 567 题「 字符串的排列」
+// 给你两个字符串 s1 和 s2 ，写一个函数来判断 s2 是否包含 s1 的排列。如果是，返回 true ；否则，返回 false 。换句话说，s1 的排列之一是 s2 的 子串 。
+// 输入：s1 = "ab" s2 = "eidbaooo" 输出：true
+// 解释：s2 包含 s1 的排列之一 ("ba").
+// 示例 2：
+// 输入：s1= "ab" s2 = "eidboaoo"
+// 输出：false
+var checkInclusion = function (s1, s2) {
+    let [left, right] = [0, 0]
+    const [len1, len2] = [s1.length, s2.length]
+    const map = new Map()
+    for (let i = 0; i < len1; i++) {
+        map.set(s1[i], (map.get(s1[i]) || 0) + 1)
+    }
+    let mapSize = map.size
+    while (right < len2) {
+        const c1 = s2[right]
+        right++
+        if (map.has(c1)) {
+            map.set(c1, map.get(c1) - 1)
+            if (map.get(c1) === 0) mapSize--
+        }
+
+        while (mapSize === 0) {
+            if (right - left === len1) return true
+            const c2 = s2[left]
+            left++
+            if (map.has(c2)) {
+                map.set(c2, map.get(c2) + 1)
+                if (map.get(c2) === 1) mapSize++
+            }
+        }
+    }
+    return false
+
+};
+const res = checkInclusion('ab', 'eidba2oo')
 console.log(res)
