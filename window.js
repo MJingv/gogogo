@@ -208,5 +208,33 @@ var findAnagrams = function (s, p) {
     }
     return res
 };
-const res = findAnagrams('cbaebabacd', 'abc')
+// const res = findAnagrams('cbaebabacd', 'abc')
+// console.log(res)
+
+
+// 力扣第 3 题「 无重复字符的最长子串」
+
+// 给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度。
+// 输入: s = "abcabcbb"输出: 3
+// 解释: 因为无重复字符的最长子串是"abc"，所以其长度为 3。
+// 输入: s = "bbbbb"输出: 1
+// 解释: 因为无重复字符的最长子串是"b"，所以其长度为 1。
+
+var lengthOfLongestSubstring2 = function (s) {
+    let [left, right, res, window] = [0, 0, 0, []]
+    const len = s.length
+    while (right < len) {
+        const c = s[right]
+        right++
+        if (window.indexOf(c) > -1) {
+            left++
+            window.unshift()
+        } else {
+            window.push(c)
+            res = Math.max(window.length, res)
+        }
+    }
+    return res
+};
+const res = lengthOfLongestSubstring2('bbbbb')
 console.log(res)
