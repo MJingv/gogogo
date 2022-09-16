@@ -244,7 +244,7 @@ var lengthOfLongestSubstring2 = function (s) {
 // 给定一个表示 DNA序列 的字符串 s ，返回所有在 DNA 分子中出现不止一次的 长度为 10 的序列(子字符串)。你可以按 任意顺序 返回答案。
 // 输入：s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT" 输出：["AAAAACCCCC","CCCCCAAAAA"]
 var findRepeatedDnaSequences = function (s) {
-
+//放弃
 };
 const res = findRepeatedDnaSequences('AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT')
 console.log(res)
