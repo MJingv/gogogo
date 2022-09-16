@@ -39,9 +39,9 @@ const searchRight = (nums, target) => {
     while (left <= right) {
         const mid = (right + left) >> 1
         if (nums[mid] === target) {
-            right = mid
+            left = mid + 1
         } else if (nums[mid] > target) {
-            right = mid
+            right = mid - 1
 
         } else if (nums[mid] < target) {
             left = mid + 1
@@ -50,7 +50,7 @@ const searchRight = (nums, target) => {
     return right
 }
 
-const res = searchLeft([0, 0, 1, 1, 1, 2, 2, 3, 5], 1)
+const res = searchRight([0, 0, 1, 1, 1, 2, 2, 3, 5], 1)
 console.log(res)
 
 var minEatingSpeed = function (piles, h) {
