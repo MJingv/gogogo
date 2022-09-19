@@ -92,5 +92,25 @@ const longestPalindrome = (s) => {
     }
     return max
 };
-const res = longestPalindrome("cbbd")
+// const res = longestPalindrome("cbbd")
+// console.log(res)
+
+
+// 田忌赛马 870. 优势洗牌
+// 输入：nums1 = [2,7,11,15], nums2 = [1,10,4,11] 输出：[2,11,7,15]
+var advantageCount = function (nums1, nums2) {
+    //写不出来
+    const s1 = nums1.sort((a, b) => b - a)
+    const s2 = nums2.sort((a, b) => b - a)
+    const res = []
+    for (let i = 0; i < nums1.length; i++) {
+        if (s1[i] > s2[i]) {
+            res[i] = s1[i]
+        } else {
+            res[i] = s1.pop()
+        }
+    }
+    return res
+};
+const res = advantageCount([2, 7, 11, 15], [1, 10, 4, 11])
 console.log(res)
