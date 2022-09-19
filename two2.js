@@ -69,6 +69,34 @@ var minEatingSpeed = function (piles, h) {
     }
     return res
 };
-const res = minEatingSpeed([30, 11, 23, 4, 20], 6)//输出：23
+var minEatingSpeed2 = function (piles, h) {
+    //未完成
+    const len = piles.length
+    if (h < len) return -1
+    const max = Math.max(...piles)
+    if (h === len) return max
+    let [left, right, res] = [1, max, max]
+    const getTime = (speed) => {
+        let sum = 0
+        for (let i = 0; i < len; i++) {
+            sum += Math.ceil(piles[i] / speed)
+        }
+        return sum
+    }
+
+    while (left <= right) {
+        const speed = (left + right) >> 1
+        const time = getTime(speed)
+        if (time <= h) {
+            res = speed
+            right = speed - 1
+        } else {
+            left = speed + 1
+        }
+    }
+    return res
+}
+// 输入：piles = [30,11,23,4,20], h = 6 输出：23
+const res = minEatingSpeed2([30, 11, 23, 4, 20], 8)//输出：23
 
 console.log(res)
