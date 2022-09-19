@@ -94,7 +94,53 @@ var minEatingSpeed2 = function (piles, h) {
     return res
 }
 // 输入：piles = [30,11,23,4,20], h = 6 输出：23
-const res = minEatingSpeed2([30, 11, 23, 4, 20], 6)//输出：23
-console.log(res)
+// const res = minEatingSpeed2([30, 11, 23, 4, 20], 6)//输出：23
+// console.log(res)
 
-// 解答失败: 测试用例:[312884470] 312884469 测试结果:3 期望结果:2 stdout:
+// 1011. 在 D 天内送达包裹的能力
+// 输入：weights = [1,2,3,4,5,6,7,8,9,10], days = 5 输出：15 解释： 船舶最低载重 15 就能够在 5 天内送达所有包裹，如下所示： 第 1 天：1, 2, 3, 4, 5 第 2 天：6, 7 第 3 天：8 第 4 天：9 第 5 天：10 请注意
+var shipWithinDays = function (weights, days) {
+    const [len] = [weights.length]
+    const max = Math.max(...weights)
+    let right = weights.reduce((a, b) => a + b)
+    let left = max
+    let res = 0
+
+    const getDays = (speed) => {
+        let day = 1
+        let sum = 0
+        for (let i = 0; i < len; i++) {
+            const cur = weights[i]
+            sum = sum + cur
+            if (sum > speed) {
+                sum = cur
+                day++
+            } else if (sum === speed) {
+                sum = 0
+                day++
+            } else if (sum < speed) {
+                // day++
+            }
+        }
+        return day
+    }
+
+    while (left <= right) {
+        const mid = (left + right) >> 1
+        const time = getDays(mid)
+        console.log(time)
+        if (time === days) {
+            return mid
+        } else if (time < days) {
+            res = right
+            right = mid - 1
+        } else if (time > days) {
+            left = mid + 1
+
+        }
+    }
+    return res
+};
+const res = shipWithinDays([1, 2, 3, 1, 1], 4)
+// 第 1 天：1, 2, 3, 4, 5 第 2 天：6, 7 第 3 天：8 第 4 天：9 第 5 天：10
+console.log(res)
