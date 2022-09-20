@@ -8,6 +8,7 @@ class Node {
     }
 }
 
+
 class BinarySearchTree {
     constructor() {
         this.root = null
@@ -448,11 +449,8 @@ const l = t.isBalanced()
 console.log(l)
 
 
-
-
-
-
-
-
-
+module.exports = {
+    Node,
+    BinarySearchTree
+};
 
