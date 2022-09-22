@@ -155,7 +155,19 @@ var constructMaximumBinaryTree = function (nums) {
 
 // 力扣第 105 题「 从前序和中序遍历序列构造二叉树」
 var buildTree = function (preorder, inorder) {
+    const helper = (preorder, inorder, node = null) => {
+        if (!preorder.length) return
+        const val = preorder.shift()
+        const index = inorder.indexOf(val)
+        const left = inorder.slice(0, index)
+        const right = inorder.slice(index + 1)
+        node = new Node(val)
+        node.left = helper(preorder, left, node)
+        node.right = helper(preorder, right, node)
+        return node
+    }
 
+    return helper(preorder, inorder)
 };
 const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
-console.log(res)
+console.log(JSON.stringify(res))
