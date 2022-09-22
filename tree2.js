@@ -149,5 +149,13 @@ var constructMaximumBinaryTree = function (nums) {
     }
     return JSON.stringify(helper(nums, null))
 };
-const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
+// const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
+// console.log(res)
+
+
+// 力扣第 105 题「 从前序和中序遍历序列构造二叉树」
+var buildTree = function (preorder, inorder) {
+
+};
+const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
 console.log(res)
