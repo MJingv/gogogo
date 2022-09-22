@@ -91,6 +91,7 @@ var connect = function (root) {
 
 var flatten = function (root) {
     // 新节点反转
+    // 遍历
     const dummy = new Node(-1)
     let p = dummy
 
@@ -106,21 +107,27 @@ var flatten = function (root) {
     return dummy.right
 
 };
-// 原地反转
+
 var flatten2 = function (root) {
+    // 原地反转
+    // 分解递归
     if (!root) return null
+    // 1.摆平一侧
     flatten2(root.left)
     flatten2(root.right)
+    // 2.左边的接到右边
     const left = root.left
     const right = root.right
     root.left = null
     root.right = left
+    // 3.右边后面接老右
     let p = root
+    // 找到右边最后一个
     while (p.right) {
         p = p.right
     }
     p.right = right
-    return JSON.stringify(root)
+    return root
 }
 const res = flatten2(t)
 console.log(res)
