@@ -145,7 +145,6 @@ var constructMaximumBinaryTree = function (nums) {
         node = new Node(max)
         node.left = helper(left)
         node.right = helper(right)
-
         return node
     }
     return JSON.stringify(helper(nums, null))
