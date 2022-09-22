@@ -129,5 +129,26 @@ var flatten2 = function (root) {
     p.right = right
     return root
 }
-const res = flatten2(t)
+// const res = flatten2(t)
+// console.log(res)
+
+// 力扣第 654 题「 最大二叉树」
+var constructMaximumBinaryTree = function (nums) {
+    if (!nums.length) return
+
+    const helper = (nums, node) => {
+        if (!nums.length) return null
+        const max = Math.max(...nums)
+        const index = nums.indexOf(max)
+        const left = nums.slice(0, index)
+        const right = nums.slice(index + 1)
+        node = new Node(max)
+        node.left = helper(left)
+        node.right = helper(right)
+
+        return node
+    }
+    return JSON.stringify(helper(nums, null))
+};
+const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
 console.log(res)
