@@ -88,9 +88,26 @@ var connect = function (root) {
 };
 
 // 力扣第 114 题「 将二叉树展开为链表」
-// 原地反转
+
 var flatten = function (root) {
+    // 新节点反转
+    const dummy = new Node(-1)
+    let p = dummy
+
+    const traverse = (root) => {
+        if (!root) return null
+        p.right = new Node(root.key)
+        p = p.right
+
+        traverse(root.left)
+        traverse(root.right)
+    }
+    traverse(root)
+    return dummy.right
 
 };
-const res = flatten(t)
+// 原地反转
+var flatten2 = function (root) {
+}
+const res = flatten2(t)
 console.log(res)
