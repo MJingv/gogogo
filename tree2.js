@@ -86,3 +86,11 @@ var connect = function (root) {
     traverse(root.left, root.right)
     return root
 };
+
+// 力扣第 114 题「 将二叉树展开为链表」
+// 原地反转
+var flatten = function (root) {
+
+};
+const res = flatten(t)
+console.log(res)
