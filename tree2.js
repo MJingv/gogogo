@@ -108,6 +108,19 @@ var flatten = function (root) {
 };
 // 原地反转
 var flatten2 = function (root) {
+    if (!root) return null
+    flatten2(root.left)
+    flatten2(root.right)
+    const left = root.left
+    const right = root.right
+    root.left = null
+    root.right = left
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+    p.right = right
+    return JSON.stringify(root)
 }
 const res = flatten2(t)
 console.log(res)
