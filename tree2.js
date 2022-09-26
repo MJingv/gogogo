@@ -197,19 +197,16 @@ var buildTree2 = function (inorder, postorder) {
 // 889 题「 根据前序和后序遍历构造二叉树」
 // 输入：preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1] 输出：[1,2,3,4,5,6,7]
 var constructFromPrePost = function (preorder, postorder) {
-    const helper = (preorder, postorder, node) => {
+    const helper = (preorder, postorder) => {
         if (!preorder.length || !postorder.length) return null
         const val = preorder.shift()
-        const index = postorder.indexOf(val)
-        node = new Node(val)
-        const left = postorder.slice(0, index)
-        node.left = helper(preorder, left, node)
-        node.right = helper(preorder, left, node)
-        // console.log(val,left)
-
+        postorder.pop()
+        const index = postorder.indexOf(preorder[0])  // 注意，拿的是根结点下一个（左节点）的值
+        const node = new Node(val)
+        node.left = constructFromPrePost(preorder.slice(0, index + 1), postorder.slice(0, index + 1))
+        node.right = constructFromPrePost(preorder.slice(index + 1), postorder.slice(index + 1))
         return node
     }
-
     return helper(preorder, postorder)
 };
 const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
