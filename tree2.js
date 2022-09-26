@@ -209,7 +209,8 @@ var constructFromPrePost = function (preorder, postorder) {
     }
     return helper(preorder, postorder)
 };
-const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
-console.log(JSON.stringify(res))
+// const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
+// console.log(JSON.stringify(res))
+
 
 
