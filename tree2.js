@@ -157,7 +157,7 @@ var constructMaximumBinaryTree = function (nums) {
 var buildTree = function (preorder, inorder) {
     const helper = (preorder, inorder, node = null) => {
         if (!preorder.length || !inorder.length) return null
-        const val = preorder.shift()
+        const val = preorder.shift() //遍历preload得到答案
         const index = inorder.indexOf(val)
 
         const left = inorder.slice(0, index)
@@ -174,6 +174,25 @@ var buildTree = function (preorder, inorder) {
 // const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
 // console.log(JSON.stringify(res))
 
+
+// 力扣第 106 题「 从后序和中序遍历结果构造二叉树」
+// 输入：inorder = [9,3,15,20,7], postorder = [9,15,7,20,3] 输出：[3,9,20,null,null,15,7]
+var buildTree2 = function (inorder, postorder) {
+    const helper = (inorder, postorder, node) => {
+        if (!postorder.length || !inorder.length) return null
+        const val = postorder.pop()//遍历preload得到答案
+        const index = inorder.indexOf(val)
+        node = new Node(val)
+        const right = inorder.slice(index + 1)
+        const left = inorder.slice(0, index)
+        node.right = helper(right, postorder, node)
+        node.left = helper(left, postorder, node)
+        return node
+    }
+    return helper(inorder, postorder)
+};
+// const res = buildTree2([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
+// console.log(JSON.stringify(res))
 
 // 889 题「 根据前序和后序遍历构造二叉树」
 // 输入：preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1] 输出：[1,2,3,4,5,6,7]
@@ -193,24 +212,7 @@ var constructFromPrePost = function (preorder, postorder) {
 
     return helper(preorder, postorder)
 };
-// const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
-// console.log(JSON.stringify(res))
-// 力扣第 106 题「 从后序和中序遍历结果构造二叉树」
-// 输入：inorder = [9,3,15,20,7], postorder = [9,15,7,20,3] 输出：[3,9,20,null,null,15,7]
-var buildTree2 = function (inorder, postorder) {
-    const helper = (inorder, postorder, node) => {
-        if (!postorder.length || !inorder.length) return null
-        const val = postorder.pop()
-        const index = inorder.indexOf(val)
-        node = new Node(val)
-        const right = inorder.slice(index + 1)
-        const left = inorder.slice(0, index)
-        node.right = helper(right, postorder, node)
-        node.left = helper(left, postorder,node)
-        return node
-    }
-    return helper(inorder, postorder)
-};
-const res = buildTree2([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
+const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
 console.log(JSON.stringify(res))
+
 
