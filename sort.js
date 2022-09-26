@@ -56,7 +56,6 @@ const merge = (left = [], right = []) => {
     return res.concat(i < left.length ? left.slice(i) : right.slice(j))
 }
 
-
 const fn3 = (array) => {
     if (array.length > 1) {
         const middle = Math.floor(array.length / 2)
