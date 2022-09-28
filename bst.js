@@ -62,13 +62,16 @@ var isValidBST = function (root) {
     return helper(root)
 }
 
-const t = new Node(2)
-const t2 = new Node(2)
-const t3 = new Node(2)
-t.left = t2
-t.right = t3
-const res = isValidBST(t)
-console.log(res)
+// const t = new Node(2)
+// const t2 = new Node(2)
+// const t3 = new Node(2)
+// t.left = t2
+// t.right = t3
+// const res = isValidBST(t)
+// console.log(res)
 
 
 // 力扣第 700 题「 二叉搜索树中的搜索」
+var searchBST = function(root, val) {
+
+};
