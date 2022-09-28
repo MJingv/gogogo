@@ -101,6 +101,41 @@ var insertBST = function (root, val) {
     }
     return root
 };
+const removeBST = (root, val) => {
+    if (!root) return
+
+    if (root.key === val) {
+        //删除操作
+        if (!root.left && !root.right) {
+            //叶子节点
+            return null
+        }
+        if (root.right && !root.left || root.left && !root.right) {
+            //一个孩子
+            return root.right || root.left
+        }
+        if (root.right && root.left) {
+            //两个孩子,用较大的替换
+            let max = null
+            if (root.right.key > root.left.key) {
+                max = root.right
+                max.left = root.left
+
+            } else {
+                max = root.left
+                max.left = root.right
+            }
+            return max
+        }
+    }
+    if (root.key > val) {
+        root.left = removeBST(root.left, val)
+    }
+    if (root.key < val) {
+        root.right = removeBST(root.right, val)
+    }
+    return root
+}
 
 
 const t = new Node(4)
@@ -108,10 +143,13 @@ const t2 = new Node(2)
 const t3 = new Node(1)
 const t4 = new Node(3)
 const t5 = new Node(7)
+const t6 = new Node(6)
+
 
 t.left = t2
 t.right = t5
 t2.left = t3
 t2.right = t4
-const res = insertBST(t, 10)
+t5.left = t6
+const res = removeBST(t, 2)
 console.log(JSON.stringify(res))
