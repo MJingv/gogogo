@@ -39,10 +39,39 @@ var convertBST = function (root) {
     return traverse(root)
 };
 
-const t = new Node(1)
-const t2 = new Node(0)
-const t3 = new Node(2)
+// const t = new Node(1)
+// const t2 = new Node(0)
+// const t3 = new Node(2)
+// t.left = t2
+// t.right = t3
+// const res = convertBST(t)
+// console.log(res)
+
+
+// 力扣第 98 题「 验证二叉搜索树」
+// 输入：root = [2,1,3]输出：true
+var isValidBST = function (root) {
+    let res = true
+    const helper = (node, target = 0, left = false) => {
+        if (!node) return
+        if (left && (node.key > target)) {
+            return res = false
+        }
+        if (!left && (node.key < target)) {
+            return res = false
+        }
+        node.left && helper(node.left, node.key, true)
+        node.right && helper(node.right, node.key, false)
+        return res
+    }
+
+    return helper(root, root.key)
+}
+
+const t = new Node(2)
+const t2 = new Node(1)
+const t3 = new Node(3)
 t.left = t2
 t.right = t3
-const res = convertBST(t)
+const res = isValidBST(t)
 console.log(res)
