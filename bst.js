@@ -138,18 +138,28 @@ const removeBST = (root, val) => {
 }
 
 
-const t = new Node(4)
-const t2 = new Node(2)
-const t3 = new Node(1)
-const t4 = new Node(3)
-const t5 = new Node(7)
-const t6 = new Node(6)
+// const t = new Node(4)
+// const t2 = new Node(2)
+// const t3 = new Node(1)
+// const t4 = new Node(3)
+// const t5 = new Node(7)
+// const t6 = new Node(6)
+// t.left = t2
+// t.right = t5
+// t2.left = t3
+// t2.right = t4
+// t5.left = t6
+// const res = removeBST(t, 2)
+// console.log(JSON.stringify(res))
 
 
-t.left = t2
-t.right = t5
-t2.left = t3
-t2.right = t4
-t5.left = t6
-const res = removeBST(t, 2)
-console.log(JSON.stringify(res))
+// 第 96 题「 不同的二叉搜索树」
+// 输入：n = 3 输出：5
+var numTrees = function (n) {
+
+};
+
+// 95. 不同的二叉搜索树 II
+var generateTrees = function (n) {
+
+};
