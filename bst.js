@@ -91,6 +91,18 @@ var searchBST = function (root, val) {
     return helper(root)
 };
 
+var insertBST = function (root, val) {
+    if (!root) return new Node(val)
+    if (root.key > val) {
+        root.left = insertBST(root.left, val)
+    }
+    if (root.key < val) {
+        root.right = insertBST(root.right, val)
+    }
+    return root
+};
+
+
 const t = new Node(4)
 const t2 = new Node(2)
 const t3 = new Node(1)
@@ -101,5 +113,5 @@ t.left = t2
 t.right = t5
 t2.left = t3
 t2.right = t4
-const res = searchBST(t, 2)
-console.log(res)
+const res = insertBST(t, 10)
+console.log(JSON.stringify(res))
