@@ -51,27 +51,24 @@ var convertBST = function (root) {
 // 力扣第 98 题「 验证二叉搜索树」
 // 输入：root = [2,1,3]输出：true
 var isValidBST = function (root) {
-    let res = true
-    const helper = (node, target = 0, left = false) => {
-        if (!node) return
-        if (left && (node.key > target)) {
-            return res = false
-        }
-        if (!left && (node.key < target)) {
-            return res = false
-        }
-        node.left && helper(node.left, node.key, true)
-        node.right && helper(node.right, node.key, false)
-        return res
-    }
+    // min < val < max
+    const helper = (node, min = 0, max = 0) => {
+        if (!node) return true
+        if (min && node.key <= min.key) return false
+        if (max && node.key >= max.key) return false
 
-    return helper(root, root.key)
+        return helper(node.left, min, node) && helper(node.right, node, max) //巧啊
+    }
+    return helper(root)
 }
 
 const t = new Node(2)
-const t2 = new Node(1)
-const t3 = new Node(3)
+const t2 = new Node(2)
+const t3 = new Node(2)
 t.left = t2
 t.right = t3
 const res = isValidBST(t)
 console.log(res)
+
+
+// 力扣第 700 题「 二叉搜索树中的搜索」
