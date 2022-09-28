@@ -72,6 +72,34 @@ var isValidBST = function (root) {
 
 
 // 力扣第 700 题「 二叉搜索树中的搜索」
-var searchBST = function(root, val) {
+// 输入：root = [4,2,7,1,3], val = 2 输出：[2,1,3]
+var searchBST = function (root, val) {
+    const helper = (node) => {
+        if (!node) return null
+        if (node.key === val) {
+            return node
+        }
 
+        if (node.key > val) {
+            return helper(node.left)
+        }
+        if (node.key < val) {
+            return helper(node.right)
+        }
+    }
+
+    return helper(root)
 };
+
+const t = new Node(4)
+const t2 = new Node(2)
+const t3 = new Node(1)
+const t4 = new Node(3)
+const t5 = new Node(7)
+
+t.left = t2
+t.right = t5
+t2.left = t3
+t2.right = t4
+const res = searchBST(t, 2)
+console.log(res)
