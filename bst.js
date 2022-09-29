@@ -156,10 +156,13 @@ const removeBST = (root, val) => {
 // 第 96 题「 不同的二叉搜索树」
 // 输入：n = 3 输出：5
 var numTrees = function (n) {
+    //搞不懂，放弃
 
 };
 
 // 95. 不同的二叉搜索树 II
 var generateTrees = function (n) {
+    //搞不懂，放弃
+
 
 };
