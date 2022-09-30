@@ -23,11 +23,14 @@ const t2 = new Node(2)
 const t3 = new Node(3)
 const t4 = new Node(4)
 const t5 = new Node(5)
+const t6 = new Node(6)
+
 
 t.left = t2
 t.right = t3
 t2.left = t4
 t2.right = t5
+
 // const res = lowestCommonAncestor(t, 3, 5)
 // console.log(res)
 
@@ -62,5 +65,12 @@ var lowestCommonAncestor3 = function (root, nodes) {
 
     return traverse(root, nodes)
 };
-const res = lowestCommonAncestor3(t, [t4, t5])
+// const res = lowestCommonAncestor3(t, [t4, t5])
+// console.log(res)
+
+// 力扣第 1644 题「二叉树的最近公共祖先 II」
+var lowestCommonAncestor4 = function (root, nodes) {
+
+};
+const res = lowestCommonAncestor4(t, [t6, t5])
 console.log(res)
