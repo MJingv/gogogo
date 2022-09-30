@@ -66,6 +66,9 @@ var findKthLargest = function (nums, k) {
 // console.log(res)
 
 
+
+
+// https://mp.weixin.qq.com/s/njl6nuid0aalZdH5tuDpqQ
 // 236. 二叉树的最近公共祖先
 // 剑指 Offer 68 - II. 二叉树的最近公共祖先
 var lowestCommonAncestor = function (root, p, q) {
