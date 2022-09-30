@@ -35,6 +35,7 @@ const sort = (list) => {
 // 215. 数组中的第K个最大元素
 // 输入:[3,2,1,5,6,4], k = 2 输出: 5
 var findKthLargest = function (nums, k) {
+    // 待优化
     const len = nums.length
     if (!len || len < k) return
     const swap = (l, x, y) => [l[x], l[y]] = [l[y], l[x]]
@@ -54,15 +55,25 @@ var findKthLargest = function (nums, k) {
     const sort = (nums, left, right) => {
         if (left >= right) return
         const p = partition(nums, left, right)
-        if (p === k) return nums[p]
         sort(nums, left, p - 1)
         sort(nums, p, right)
     }
-    return sort(nums, 0, len - 1)
-    return nums
+    sort(nums, 0, len - 1)
+    return nums[len - k]
 
 };
-const res = findKthLargest([3, 2, 1, 5, 6, 4], 2)
-console.log(res)
+// const res = findKthLargest([3, 2, 1, 5, 6, 4], 2)
+// console.log(res)
 
-// 剑指 Offer II 076. 数组中的第 k 大的数字
+
+// 236. 二叉树的最近公共祖先
+// 剑指 Offer 68 - II. 二叉树的最近公共祖先
+var lowestCommonAncestor = function (root, p, q) {
+
+};
+
+
+// 剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
+var lowestCommonAncestor2 = function (root, p, q) {
+
+};
