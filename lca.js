@@ -24,11 +24,24 @@ const t3 = new Node(3)
 
 t.left = t2
 t.right = t3
-const res = lowestCommonAncestor(t, 1, 2)
-console.log(res)
+// const res = lowestCommonAncestor(t, 1, 2)
+// console.log(res)
 
 
 // 剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
 var lowestCommonAncestor2 = function (root, p, q) {
 
+
 };
+const res = lowestCommonAncestor2()
+console.log(res)
+
+
+// 力扣第 1676 题「二叉树的最近公共祖先 IV」
+
+var lowestCommonAncestor3 = function (root, p, q) {
+
+
+};
+const res = lowestCommonAncestor3()
+console.log(res)
