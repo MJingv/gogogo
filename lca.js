@@ -72,5 +72,5 @@ var lowestCommonAncestor3 = function (root, nodes) {
 var lowestCommonAncestor4 = function (root, nodes) {
 
 };
-const res = lowestCommonAncestor4(t, [t6, t5])
-console.log(res)
+// const res = lowestCommonAncestor4(t, [t6, t5])
+// console.log(res)
