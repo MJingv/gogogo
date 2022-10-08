@@ -44,7 +44,7 @@ var lowestCommonAncestor2 = function (root, p, q) {
 // console.log(res)
 
 
-// 力扣第 1676 题「二叉树的最近公共祖先 IV」
+// 力扣第 1676 题「二叉树的最近公共祖先 IV」力扣第 236 题
 // 依然给你输入一棵不含重复值的二叉树，但这次不是给你输入p和q两个节点了，而是给你输入一个包含若干节点的列表nodes（这些节点都存在于二叉树中），让你算这些节点的最近公共祖先。
 var lowestCommonAncestor3 = function (root, nodes) {
     const map = new Map()
@@ -65,8 +65,8 @@ var lowestCommonAncestor3 = function (root, nodes) {
 
     return traverse(root, nodes)
 };
-// const res = lowestCommonAncestor3(t, [t4, t5])
-// console.log(res)
+const res = lowestCommonAncestor3(t, [t4, t5])
+console.log(res)
 
 // 力扣第 1644 题「二叉树的最近公共祖先 II」
 var lowestCommonAncestor4 = function (root, nodes) {
