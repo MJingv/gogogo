@@ -10,6 +10,8 @@ var lowestCommonAncestor = function (root, p, q) {
     const traverse = (node, p, q) => {
         if (!node) return
         // 一定存在p和q，所以如果等于p/q直接返回该节点
+
+        console.log(node)
         if (node.key === p || node.key === q) return node
 
         const left = traverse(node.left, p, q)
@@ -26,14 +28,12 @@ const t3 = new Node(3)
 const t4 = new Node(4)
 const t5 = new Node(5)
 const t6 = new Node(6)
-
-
 t.left = t2
 t.right = t3
 t2.left = t4
 t2.right = t5
 
-// const res = lowestCommonAncestor(t, 3, 5)
+// const res = lowestCommonAncestor(t, 4, 5)
 // console.log(res)
 
 
@@ -58,8 +58,8 @@ var lowestCommonAncestor3 = function (root, nodes) {
 
     return traverse(root, nodes)
 };
-const res = lowestCommonAncestor3(t, [t2, t3])
-console.log(res)
+// const res = lowestCommonAncestor3(t, [t2, t3])
+// console.log(res)
 
 // 力扣第 1644 题「二叉树的最近公共祖先 II」
 // 给你输入一棵不含重复值的二叉树的，以及两个节点p和q，如果p或q不存在于树中，则返回空指针，否则的话返回p和q的最近公共祖先节点。
@@ -70,6 +70,8 @@ var lowestCommonAncestor4 = function (root, p, q) {
 
         const left = find(root.left, pVal, qVal)
         const right = find(root.right, pVal, qVal)
+
+        //后序。全部都遍历完成
         if (left && right) return root
 
         if (root.val === pVal || root.val === qVal) {
@@ -88,9 +90,25 @@ var lowestCommonAncestor4 = function (root, p, q) {
 
 
 // 剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
+// 力扣第 235 题「二叉搜索树的最近公共祖先」：
 var lowestCommonAncestor2 = function (root, p, q) {
-
+    return JSON.stringify(root)
 
 };
-// const res = lowestCommonAncestor2()
-// console.log(res)
+const st1 = new Node(1)
+const st2 = new Node(2)
+const st3 = new Node(3)
+const st4 = new Node(4)
+const st5 = new Node(5)
+st4.left = st2
+st2.left = st1
+st2.right = st3
+st4.right = st5
+const res = lowestCommonAncestor2(st4, 4, 5)
+console.log(res)
+
+
+// 1650 题「二叉树的最近公共祖先 III」
+// 这次输入的二叉树节点比较特殊，包含指向父节点的指针：
+
+
