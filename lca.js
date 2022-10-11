@@ -95,7 +95,6 @@ var lowestCommonAncestor2 = function (root, p, q) {
     const find = (root, p, q) => {
         if (!root) return null
 
-
     }
     // p<q
     const s = Math.min(p, q)
