@@ -213,4 +213,22 @@ var constructFromPrePost = function (preorder, postorder) {
 // console.log(JSON.stringify(res))
 
 
+// 222. 完全二叉树的节点个数
+// 时间复杂度是 O(logN*logN)
+// 1。满二叉树（2^n-1）
+// 2。一边满，一边完全（遍历）
+var countNodes = function (root) {
+    let h = 0
+    while (root) {
+        root = root.left
+        ++h
+    }
+
+    return Math.pow(2, h) - 1
+
+
+};
+const res = countNodes(t)
+console.log(res)
+
 
