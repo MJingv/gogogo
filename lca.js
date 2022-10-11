@@ -92,11 +92,13 @@ var lowestCommonAncestor4 = function (root, p, q) {
 // 剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
 // 力扣第 235 题「二叉搜索树的最近公共祖先」：
 var lowestCommonAncestor2 = function (root, p, q) {
-    const find = (root, p, q) => {
+    const find = (root, s, l) => {
         if (!root) return null
+        if (root.key > l) return find(root.left, s, l)
+        if (root.key < s) return find(root.right, s, l)
+        return root
 
     }
-    // p<q
     const s = Math.min(p, q)
     const l = Math.max(p, q)
     return find(root, s, l)
@@ -110,7 +112,7 @@ st4.left = st2
 st2.left = st1
 st2.right = st3
 st4.right = st5
-const res = lowestCommonAncestor2(st4, 1, 3)
+const res = lowestCommonAncestor2(st4, 1, 5)
 console.log(res)
 
 
