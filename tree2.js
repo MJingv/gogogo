@@ -61,13 +61,13 @@ const t3 = new Node(1)
 const t4 = new Node(3)
 const t5 = new Node(7)
 const t6 = new Node(6)
-const t7 = new Node(9)
+// const t7 = new Node(9)
 t.left = t2
 t2.left = t3
 t2.right = t4
 t.right = t5
 t5.left = t6
-t5.right = t7
+// t5.right = t7
 
 // const res = mirrorTree(t)
 // console.log(res)
@@ -218,15 +218,25 @@ var constructFromPrePost = function (preorder, postorder) {
 // 1。满二叉树（2^n-1）
 // 2。一边满，一边完全（遍历）
 var countNodes = function (root) {
-    let h = 0
-    while (root) {
-        root = root.left
-        ++h
+    let hr = 0, hl = 0
+    let left = root, right = root
+    while (left) {
+        left = left.left
+        ++hl
     }
-
-    return Math.pow(2, h) - 1
-
-
+    while (right) {
+        right = right.right
+        ++hr
+    }
+    if (hl === hr) {
+        return Math.pow(2, hr) - 1
+    } else {
+        const traverse = (root) => {
+            if (!root) return 0
+            return traverse(root.left) + traverse(root.right) + 1
+        }
+        return traverse(root)
+    }
 };
 const res = countNodes(t)
 console.log(res)
