@@ -30,13 +30,14 @@ var allPathsSourceTarget = function (graph) {
 
 // 看到依赖问题，首先想到的就是把问题转化成「有向图」这种数据结构，只要图中存在环，那就说明存在循环依赖。
 var canFinish = function (numCourses, prerequisites) {
+    // 1.构造graph 邻接表
     const graph = new Array(numCourses).fill(0).map(i => []) //注意
     prerequisites.map((i) => {
         const from = i[1], to = i[0]
         // 学完0才能学1，0->1
         graph[from].push(to)
     })
-
+    // 2.遍历函数
     let hasCycle = false
     let visited = []
     const onPath = [] //指针
@@ -53,9 +54,9 @@ var canFinish = function (numCourses, prerequisites) {
         onPath[s] = false
     }
 
+    // 3.遍历每一个节点
     for (let i = 0; i < graph.length; i++) {
         traverse(graph, i)
-
     }
     return !hasCycle
 };
