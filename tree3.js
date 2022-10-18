@@ -116,7 +116,32 @@ const diameterOfBinaryTree1 = (root) => {
     traverse(root)
     return max
 }
+const levelTraverse = (root, level = 0) => {
+    // 层序遍历
+    if (!root) return 0
+    console.log(level, root.val)
+    levelTraverse(root.left, level + 1)
+    levelTraverse(root.right, level + 1)
+}
+const levelTraverse1 = (root, level = 0) => {
+    const res = {}
+    const traverse = (root, level = 0) => {
+        if (!root) return
+        if (!res[level]) {
+            res[level] = []
+            res[level].push(root.val)
+        } else {
+            res[level].push(root.val)
+        }
+        traverse(root.left, level + 1)
+        traverse(root.right, level + 1)
+    }
+    traverse(root)
+    return res
+}
 
-const res = diameterOfBinaryTree1(t1) //3
+const res = levelTraverse1(t1) //3
 console.log(res)
+
+
 
