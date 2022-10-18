@@ -41,7 +41,7 @@ const maxDepth2 = (root) => {
         n--
     }
     traverse(root)
-    // return res
+    return res
 }
 
 const res = maxDepth2(t1)
