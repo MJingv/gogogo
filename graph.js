@@ -53,15 +53,26 @@ var canFinish = function (numCourses, prerequisites) {
         }
         onPath[s] = false
     }
-
     // 3.遍历每一个节点
     for (let i = 0; i < graph.length; i++) {
         traverse(graph, i)
     }
     return !hasCycle
 };
-const res = canFinish(3, [[1, 0], [2, 1], [0, 2]])
-console.log(res)
+// const res = canFinish(3, [[1, 0], [2, 1], [0, 2]])
+// console.log(res)
 
 // 210. 课程表 II
+// 输入：numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
+// 输出：[0,2,1,3]
+// 解释：总共有 4 门课程。要学习课程 3，你应该先完成课程 1 和课程 2。并且课程 1 和课程 2 都应该排在课程 0 之后。因此，一个正确的课程顺序是[0,1,2,3]。另一个正确的排序是[0,2,1,3]
+
+
+// https://labuladong.github.io/algo/2/22/51/
+// 拓扑算法看不懂，二轮继续吧
+var findOrder = function (numCourses, prerequisites) {
+
+};
+const res = findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]])//[0,2,1,3] or [0,1,2,3]
+console.log()
 // 剑指 Offer II 113. 课程顺序
