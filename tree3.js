@@ -79,7 +79,44 @@ const fn1 = (root) => {
     return sum
 }
 
-const res = fn1(t1)
-console.log(res)
+// const res = fn1(t1)
+// console.log(res)
 
+// 力扣第 543 题「 二叉树的直径」
+// 现在让我求整棵树中的最长「直径」，那直截了当的思路就是遍历整棵树中的每个节点，然后通过每个节点的左右子树的最大深度算出每个节点的「直径」，最后把所有「直径」求个最大值即可。
+
+var diameterOfBinaryTree = function (root) {
+    let res = 0
+    const deep = (root) => {
+        if (!root) return 0
+        return Math.max(deep(root.left), deep(root.right)) + 1
+    }
+    const traverse = (root) => {
+        if (!root) return
+        const l = deep(root.left)
+        const r = deep(root.right)
+        res = Math.max(l + r, res)
+        traverse(root.left)
+        traverse(root.right)
+    }
+    traverse(root)
+    return res
+};
+
+const diameterOfBinaryTree1 = (root) => {
+    let max = 0
+    const traverse = (root) => {
+        // 求该节点的最大深度
+        if (!root) return 0
+        const left = traverse(root.left)
+        const right = traverse(root.right)
+        max = Math.max(right + left, max)
+        return 1 + Math.max(left, right)
+    }
+    traverse(root)
+    return max
+}
+
+const res = diameterOfBinaryTree1(t1) //3
+console.log(res)
 
