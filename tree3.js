@@ -32,7 +32,6 @@ const maxDepth2 = (root) => {
     const traverse = (root) => {
         if (!root) return null
         n++
-        console.log(n)
         if (!root.left && !root.right) {
             res = Math.max(n, res)
         }
@@ -44,5 +43,28 @@ const maxDepth2 = (root) => {
     return res
 }
 
-const res = maxDepth2(t1)
+// const res = maxDepth2(t1)
+// console.log(res)
+
+const preorderTraverse = (root) => {
+    const traverse = (root) => {
+        if (!root) return null
+        console.log(root.val)
+        traverse(root.left)
+        traverse(root.right)
+    }
+    return traverse(root)
+}
+
+// const res = preorderTraverse(t1)
+// console.log(res)
+
+// 1、如果把根节点看做第 1 层，如何打印出每一个节点所在的层数？
+const fn = (root, level) => {
+    if (!root) return null
+    console.log(level,root.val)
+    fn(root.left, level + 1)
+    fn(root.right, level + 1)
+}
+const res = fn(t1, 1)
 console.log(res)
