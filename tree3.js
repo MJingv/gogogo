@@ -140,7 +140,19 @@ const levelTraverse1 = (root, level = 0) => {
     return res
 }
 
-const res = levelTraverse1(t1) //3
+// 第 226 题「 翻转二叉树」
+var invertTree = function (root) {
+    if (!root) return null
+    let tmp = root.right
+    root.right = root.left
+    root.left = tmp
+
+    invertTree(root.left)
+    invertTree(root.right)
+    return root
+};
+
+const res = invertTree(t1) //3
 console.log(res)
 
 
