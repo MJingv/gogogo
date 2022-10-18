@@ -141,19 +141,84 @@ const levelTraverse1 = (root, level = 0) => {
 }
 
 // 第 226 题「 翻转二叉树」
-var invertTree = function (root) {
-    if (!root) return null
-    let tmp = root.right
-    root.right = root.left
-    root.left = tmp
+const invertTree = (root) => {
+    // 遍历解法，只关注当前node的做法，一般前序，回溯想后序
+    const traverse = (root) => {
+        if (!root) return null
+        const tmp = root.left
+        root.left = root.right
+        root.right = tmp
+        traverse(root.left)
+        traverse(root.right)
+    }
+    traverse(root)
+    return root
+}
 
-    invertTree(root.left)
-    invertTree(root.right)
+
+const invertTree1 = (root) => {
+    const fn = (root) => {
+        if (!root) return null
+        const right = fn(root.right)
+        const left = fn(root.left)
+        root.left = right
+        root.right = left
+        return root
+    }
+
+    fn(root)
+    return root
+}
+
+// 力扣第 116 题「 填充每个二叉树节点的右侧指针」
+var connect = function (root) {
+    // 想象成二叉树
+    const traverse = (node1, node2) => {
+        if (!node1 && !node2) return
+        node1.next = node2 //将2个node连接起来
+        traverse(node1.left, node2.right)
+        traverse(node2.left, node2.right)
+        traverse(node1.right, node2.left)
+    }
+    traverse(root.left, root.right)
     return root
 };
+// 第 114 题「 将二叉树展开为链表」
+// 需要原地拉平，不能新建节点
+// preorder
+var flatten = function (root) {
+    const dummy = new Node(-1)
+    let p = dummy
+    const traverse = (root) => {
+        if (!root) return null
+        p.right = new Node(root.val)
+        p = p.right
 
-const res = invertTree(t1) //3
-console.log(res)
+        traverse(root.left)
+        traverse(root.right)
+    }
+    s
+    traverse(root)
+    return JSON.stringify(dummy.right)
+
+};
+const flatten1 = (root) => {
+    if (!root) return null
+    flatten1(root.left)
+    flatten1(root.right)
+    const left = root.left
+    const right = root.right
+    root.right = left
+    root.left = null
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+    p.right = right
+}
+
+const res = flatten1(t1)
+console.log(JSON.stringify(t1))
 
 
 
