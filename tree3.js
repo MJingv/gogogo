@@ -62,9 +62,24 @@ const preorderTraverse = (root) => {
 // 1、如果把根节点看做第 1 层，如何打印出每一个节点所在的层数？
 const fn = (root, level) => {
     if (!root) return null
-    console.log(level,root.val)
+    console.log(level, root.val)
     fn(root.left, level + 1)
     fn(root.right, level + 1)
 }
-const res = fn(t1, 1)
+// const res = fn(t1, 1)
+// console.log(res)
+
+// 2、如何打印出每个节点的左右子树各有多少节点？
+const fn1 = (root) => {
+    if (!root) return 0
+    const left = fn1(root.left)
+    const right = fn1(root.right)
+    const sum = left + right + 1
+    console.log(root.val, sum)
+    return sum
+}
+
+const res = fn1(t1)
 console.log(res)
+
+
