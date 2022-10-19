@@ -197,22 +197,21 @@ var flatten = function (root) {
         traverse(root.left)
         traverse(root.right)
     }
-    s
     traverse(root)
     return JSON.stringify(dummy.right)
 
 };
 const flatten1 = (root) => {
     if (!root) return
-    flatten(root.left)
-    flatten(root.right)
+    flatten1(root.left)
+    flatten1(root.right)
     const left = root.left
     const right = root.right
     root.left = null
     root.right = left
     let p = root
-    while (root.right) {
-        root = root.right
+    while (p.right) {
+        p = p.right
     }
     p.right = right
 }
@@ -231,14 +230,46 @@ var increasingBST = function (root) {
     traverse(root)
     return dummy.right
 };
+var increasingBST1 = function (root) {
+    // inorder 看不懂
+    if (!root) return null
+    const left = increasingBST1(root.left)
+    root.left = null
+    const right = increasingBST1(root.right)
+    root.right = right
+    if (!left) {
+        return root
+    }
+    let p = left
+    while (p && p.right) {
+        p = p.right
+    }
+    p.right = root
+    return left
+}
+
 
 // 力扣第 654 题「 最大二叉树」
 // 输入：nums = [3,2,1,6,0,5] 输出：[6,3,5,null,2,0,null,null,1]
 // 解释：递归调用如下所示： - [3,2,1,6,0,5] 中的最大值是 6 ，左边部分是 [3,2,1] ，右边部分是 [0,5] 。 - [3,2,1] 中的最大值是 3 ，左边部分是 [] ，右边部分是 [2,1] 。 - 空数组，无子节点。 - [2,1] 中的最大值是 2 ，左边部分是 [] ，右边部分是 [1] 。 - 空数组，无子节点。 - 只有一个元素，所以子节点是一个值为 1 的节点。 - [0,5] 中的最大值是 5 ，左边部分是 [0] ，右边部分是 [] 。 - 只有一个元素，所以子节点是一个值为 0 的节点。 - 空数组，无子节点。
 var constructMaximumBinaryTree = function (nums) {
+    const len = nums.length
+    if (!len) return
+    const helper = (nums) => {
+        if (!nums.length) return null
+        const max = Math.max(...nums)
+        const maxIndex = nums.indexOf(max)
+        const node = new Node(max)
+        const left = helper(nums.slice(0, maxIndex))
+        const right = helper(nums.slice(maxIndex + 1))
+        node.left = left
+        node.right = right
+        return node
+    }
+    return helper(nums)
 
 };
-const res = increasingBST(t1)
+const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
 console.log(JSON.stringify(res))
 
 
