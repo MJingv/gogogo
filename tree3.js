@@ -203,22 +203,43 @@ var flatten = function (root) {
 
 };
 const flatten1 = (root) => {
-    if (!root) return null
-    flatten1(root.left)
-    flatten1(root.right)
+    if (!root) return
+    flatten(root.left)
+    flatten(root.right)
     const left = root.left
     const right = root.right
-    root.right = left
     root.left = null
+    root.right = left
     let p = root
-    while (p.right) {
-        p = p.right
+    while (root.right) {
+        root = root.right
     }
     p.right = right
 }
 
-const res = flatten1(t1)
-console.log(JSON.stringify(t1))
+// 剑指offer 052 展平二叉搜索树
+var increasingBST = function (root) {
+    const dummy = new Node(-1)
+    let p = dummy
+    const traverse = (root) => {
+        if (!root) return
+        traverse(root.left)
+        p.right = new Node(root.val)
+        p = p.right
+        traverse(root.right)
+    }
+    traverse(root)
+    return dummy.right
+};
+
+// 力扣第 654 题「 最大二叉树」
+// 输入：nums = [3,2,1,6,0,5] 输出：[6,3,5,null,2,0,null,null,1]
+// 解释：递归调用如下所示： - [3,2,1,6,0,5] 中的最大值是 6 ，左边部分是 [3,2,1] ，右边部分是 [0,5] 。 - [3,2,1] 中的最大值是 3 ，左边部分是 [] ，右边部分是 [2,1] 。 - 空数组，无子节点。 - [2,1] 中的最大值是 2 ，左边部分是 [] ，右边部分是 [1] 。 - 空数组，无子节点。 - 只有一个元素，所以子节点是一个值为 1 的节点。 - [0,5] 中的最大值是 5 ，左边部分是 [0] ，右边部分是 [] 。 - 只有一个元素，所以子节点是一个值为 0 的节点。 - 空数组，无子节点。
+var constructMaximumBinaryTree = function (nums) {
+
+};
+const res = increasingBST(t1)
+console.log(JSON.stringify(res))
 
 
 
