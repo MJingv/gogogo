@@ -269,8 +269,34 @@ var constructMaximumBinaryTree = function (nums) {
     return helper(nums)
 
 };
-const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
-console.log(JSON.stringify(res))
+// const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
+// console.log(JSON.stringify(res))
+
+
+// 力扣第 105 题「 从前序和中序遍历序列构造二叉树」
+// 输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] 输出: [3,9,20,null,null,15,7]
+var buildTree = function (preorder, inorder) {
+    const helper = (preorder, inorder, node = null) => {
+        if (!preorder.length || !inorder.length) return null
+
+        const val = preorder.shift()
+        const index = inorder.indexOf(val)
+
+        node = new Node(val)
+        node.left = helper(preorder, inorder.slice(0, index), node)
+        node.right = helper(preorder, inorder.slice(index + 1), node)
+
+        return node
+    }
+    const res = helper(preorder, inorder)
+    return res
+};
+const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+console.log(res)
+
+
+
+
 
 
 
