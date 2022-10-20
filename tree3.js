@@ -281,15 +281,14 @@ var buildTree = function (preorder, inorder) {
 
         const val = preorder.shift()
         const index = inorder.indexOf(val)
-
         node = new Node(val)
+
         node.left = helper(preorder, inorder.slice(0, index), node)
-        node.right = helper(preorder, inorder.slice(index + 1), node)
+        node.right = helper(preorder, inorder.slice(index + 1))
 
         return node
     }
-    const res = helper(preorder, inorder)
-    return res
+    return helper(preorder, inorder)
 };
 const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
 console.log(res)
