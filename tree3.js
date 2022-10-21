@@ -300,8 +300,8 @@ var buildTree1 = function (inorder, postorder) {
         const index = inorder.indexOf(val)
         node = new Node(val)
         // 不理解，为什么后序中序要先右后左
-        node.right = helper(postorder, inorder.slice(index + 1), node)
         node.left = helper(postorder, inorder.slice(0, index), node)
+        node.right = helper(postorder, inorder.slice(index + 1), node)
         return node
     }
     return helper(postorder, inorder)
