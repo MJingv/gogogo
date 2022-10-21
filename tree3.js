@@ -276,15 +276,15 @@ var constructMaximumBinaryTree = function (nums) {
 // 力扣第 105 题「 从前序和中序遍历序列构造二叉树」
 // 输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] 输出: [3,9,20,null,null,15,7]
 var buildTree = function (preorder, inorder) {
-    const helper = (preorder, inorder) => {
+    const helper = (preorder, inorder, node = null) => {
         if (!preorder.length || !inorder.length) return null
 
         const val = preorder.shift()
         const index = inorder.indexOf(val)
-        const node = new Node(val)
+        node = new Node(val)
 
-        node.left = helper(preorder, inorder.slice(0, index))
-        node.right = helper(preorder, inorder.slice(index + 1))
+        node.left = helper(preorder, inorder.slice(0, index), node)
+        node.right = helper(preorder, inorder.slice(index + 1), node)
 
         return node
     }
@@ -294,16 +294,17 @@ var buildTree = function (preorder, inorder) {
 // 第 106 题「 从后序和中序遍历序列构造二叉树」
 // 输入：inorder = [9,3,15,20,7], postorder = [9,15,7,20,3] 输出：[3,9,20,null,null,15,7]
 var buildTree1 = function (inorder, postorder) {
-    const helper = (inorder, postorder) => {
+    const helper = (postorder, inorder, node = null) => {
         if (!inorder.length || !postorder.length) return null
         const val = postorder.pop()
         const index = inorder.indexOf(val)
-        const node = new Node(val)
-        node.left = helper(inorder.slice(0, index), postorder)
-        node.right = helper(inorder.slice(index + 1), postorder)
+        node = new Node(val)
+        // 不理解，为什么后序中序要先右后左
+        node.right = helper(postorder, inorder.slice(index + 1), node)
+        node.left = helper(postorder, inorder.slice(0, index), node)
         return node
     }
-    return helper(inorder, postorder)
+    return helper(postorder, inorder)
 };
 const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
 const res1 = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
