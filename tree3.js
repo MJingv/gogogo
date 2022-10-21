@@ -330,10 +330,31 @@ var constructFromPrePost = function (preorder, postorder) {
     }
     return helper(preorder, postorder)
 };
-const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
+// const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
+// console.log(JSON.stringify(res))
+
+// 力扣第 652 题「 寻找重复的子树」
+// 输入：root = [2,2,2,3,null,3,null]
+// 输出：[[2,3],[3]]
+var findDuplicateSubtrees = function (root) {
+    const helper = (node, res = []) => {
+        if (!node) return true
+        const left = node.left
+        const right = node.right
+        if (right && !left || !right && left || right.val !== left.val) return false
+        if (helper(node.left) && helper(node.left)) res.push(node)
+        return res
+    }
+    return helper(root)
+
+};
+const tree = new Node(2)
+const tree1 = new Node(2)
+const tree2 = new Node(3)
+tree1.left = tree2
+tree.left = tree.right = tree1
+const res = findDuplicateSubtrees(tree)
 console.log(JSON.stringify(res))
-
-
 
 
 
