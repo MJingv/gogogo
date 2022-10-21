@@ -307,10 +307,31 @@ var buildTree1 = function (inorder, postorder) {
     }
     return helper(postorder, inorder)
 };
-const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
-const res1 = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
+// const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+// const res1 = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
 
-console.log(res, res1)
+
+// 力扣第 889 题「 根据前序和后序遍历构造二叉树」
+// 输入：preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1] 输出：[1,2,3,4,5,6,7]
+// https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/solution/you-qian-xu-bian-li-he-hou-xu-bian-li-gou-zao-er-c/
+var constructFromPrePost = function (preorder, postorder) {
+    // 要根据个数来算
+    const helper = (preorder, postorder, node = null) => {
+        if (!preorder.length || !postorder.length) return null
+        // 确定左右子树是什么就ok了 index=2 左边有3个
+        // pre  1 245 367
+        // post 452 673 1
+        const val = preorder[0]
+        const index = postorder.indexOf(preorder[1])
+        node = new Node(val)
+        node.left = helper(preorder.slice(1, index + 2), postorder.slice(0, index + 1))
+        node.right = helper(preorder.slice(index + 2), postorder.slice(index + 1, -1))
+        return node
+    }
+    return helper(preorder, postorder)
+};
+const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
+console.log(JSON.stringify(res))
 
 
 
