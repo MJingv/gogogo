@@ -296,12 +296,13 @@ var buildTree = function (preorder, inorder) {
 var buildTree1 = function (inorder, postorder) {
     const helper = (postorder, inorder, node = null) => {
         if (!inorder.length || !postorder.length) return null
+        // 不论该值在inorder里有没有，都pop，所以pop顺序是根右左
         const val = postorder.pop()
         const index = inorder.indexOf(val)
         node = new Node(val)
         // 不理解，为什么后序中序要先右后左
-        node.left = helper(postorder, inorder.slice(0, index), node)
         node.right = helper(postorder, inorder.slice(index + 1), node)
+        node.left = helper(postorder, inorder.slice(0, index), node)
         return node
     }
     return helper(postorder, inorder)
