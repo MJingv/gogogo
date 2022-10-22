@@ -367,10 +367,57 @@ const tree1 = new TreeNode(2)
 const tree2 = new TreeNode(3)
 tree1.left = tree2
 tree.left = tree.right = tree1
-const res = findDuplicateSubtrees(tree)
-console.log(JSON.stringify(res))
+// const res = findDuplicateSubtrees(tree)
+// console.log(JSON.stringify(res))
 
 
+// 力扣第 654 题 最大二叉树
+// 输入：nums = [3,2,1,6,0,5] 输出：[6,3,5,null,2,0,null,null,1]
+var constructMaximumBinaryTree = function (nums) {
+    const helper = (list, node = null) => {
+        if (!list.length) return null
+        const max = Math.max(...list)
+        const index = list.indexOf(max)
+        node = new TreeNode(max)
+        node.left = helper(list.slice(0, index), node)
+        node.right = helper(list.slice(index + 1), node)
+        return node
+    }
+    return helper(nums)
+};
+// const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
+// console.log(JSON.stringify(res))
 
+// 力扣第 297 题「二叉树的序列化与反序列化」
 
+// preorder
+var serialize = function (root) {
+    let res = []
+    const traverse = (root) => {
+        if (!root) return res.push('#')
+        res.push(root.val)
+        traverse(root.left)
+        traverse(root.right)
+        return root.val
+    }
+    traverse(root)
+    return res
+};
 
+var deserialize = function (data) {
+    if (!data) return []
+    const traverse = (data, node = null) => {
+        if (!data.length) return null
+        const val = data.shift()
+        if (val === '#') return null
+        node = new TreeNode(val)
+        node.left = traverse(data, node)
+        node.right = traverse(data, node)
+        return node
+    }
+    return traverse(data)
+};
+
+const res = deserialize([1, 0, '#', '#', 3, 2, '#', '#', 4, '#', '#',])
+const res1 = serialize(res)
+console.log(res, res1)
