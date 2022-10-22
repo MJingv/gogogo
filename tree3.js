@@ -1,7 +1,7 @@
 // 遍历 or 分解递归
 // 单独节点做什么
 
-class Node {
+class TreeNode {
     constructor(val) {
         this.val = val
         this.left = null
@@ -9,11 +9,11 @@ class Node {
     }
 }
 
-const t0 = new Node(0)
-const t1 = new Node(1)
-const t2 = new Node(2)
-const t3 = new Node(3)
-const t4 = new Node(4)
+const t0 = new TreeNode(0)
+const t1 = new TreeNode(1)
+const t2 = new TreeNode(2)
+const t3 = new TreeNode(3)
+const t4 = new TreeNode(4)
 t1.left = t0
 t1.right = t3
 t3.left = t2
@@ -187,11 +187,11 @@ var connect = function (root) {
 // 需要原地拉平，不能新建节点
 // preorder
 var flatten = function (root) {
-    const dummy = new Node(-1)
+    const dummy = new TreeNode(-1)
     let p = dummy
     const traverse = (root) => {
         if (!root) return null
-        p.right = new Node(root.val)
+        p.right = new TreeNode(root.val)
         p = p.right
 
         traverse(root.left)
@@ -218,12 +218,12 @@ const flatten1 = (root) => {
 
 // 剑指offer 052 展平二叉搜索树
 var increasingBST = function (root) {
-    const dummy = new Node(-1)
+    const dummy = new TreeNode(-1)
     let p = dummy
     const traverse = (root) => {
         if (!root) return
         traverse(root.left)
-        p.right = new Node(root.val)
+        p.right = new TreeNode(root.val)
         p = p.right
         traverse(root.right)
     }
@@ -259,7 +259,7 @@ var constructMaximumBinaryTree = function (nums) {
         if (!nums.length) return null
         const max = Math.max(...nums)
         const maxIndex = nums.indexOf(max)
-        const node = new Node(max)
+        const node = new TreeNode(max)
         const left = helper(nums.slice(0, maxIndex))
         const right = helper(nums.slice(maxIndex + 1))
         node.left = left
@@ -281,7 +281,7 @@ var buildTree = function (preorder, inorder) {
 
         const val = preorder.shift()
         const index = inorder.indexOf(val)
-        node = new Node(val)
+        node = new TreeNode(val)
 
         node.left = helper(preorder, inorder.slice(0, index), node)
         node.right = helper(preorder, inorder.slice(index + 1), node)
@@ -299,7 +299,7 @@ var buildTree1 = function (inorder, postorder) {
         // 不论该值在inorder里有没有，都pop，所以pop顺序是根右左
         const val = postorder.pop()
         const index = inorder.indexOf(val)
-        node = new Node(val)
+        node = new TreeNode(val)
         // 不理解，为什么后序中序要先右后左
         node.right = helper(postorder, inorder.slice(index + 1), node)
         node.left = helper(postorder, inorder.slice(0, index), node)
@@ -323,7 +323,7 @@ var constructFromPrePost = function (preorder, postorder) {
         // post 452 673 1
         const val = preorder[0]
         const index = postorder.indexOf(preorder[1])
-        node = new Node(val)
+        node = new TreeNode(val)
         node.left = helper(preorder.slice(1, index + 2), postorder.slice(0, index + 1))
         node.right = helper(preorder.slice(index + 2), postorder.slice(index + 1, -1))
         return node
@@ -336,21 +336,35 @@ var constructFromPrePost = function (preorder, postorder) {
 // 力扣第 652 题「 寻找重复的子树」
 // 输入：root = [2,2,2,3,null,3,null]
 // 输出：[[2,3],[3]]
+// 序列化树
+// 知道自己长什么样，知道别人长什么样，对比得到答案
 var findDuplicateSubtrees = function (root) {
-    const helper = (node, res = []) => {
-        if (!node) return true
-        const left = node.left
-        const right = node.right
-        if (right && !left || !right && left || right.val !== left.val) return false
-        if (helper(node.left) && helper(node.left)) res.push(node)
-        return res
-    }
-    return helper(root)
+    const map = new Map()
+    const res = []
+    const traverse = (node) => {
+        if (!node) return '#'
+        const left = traverse(node.left)
+        const right = traverse(node.right)
+        // 后序位置，知道自己的全部
+        const str = `${left} ${right} ${node.val}`
 
+        if (!map.has(str)) {
+            map.set(str, 1)
+        } else {
+            map.set(str, map.get(str) + 1)
+        }
+        if (map.get(str) === 2) {
+            res.push(node)
+        }
+
+        return str
+    }
+    traverse(root)
+    return res
 };
-const tree = new Node(2)
-const tree1 = new Node(2)
-const tree2 = new Node(3)
+const tree = new TreeNode(2)
+const tree1 = new TreeNode(2)
+const tree2 = new TreeNode(3)
 tree1.left = tree2
 tree.left = tree.right = tree1
 const res = findDuplicateSubtrees(tree)
