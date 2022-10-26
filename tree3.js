@@ -417,7 +417,33 @@ var deserialize = function (data) {
     }
     return traverse(data)
 };
+// const res = deserialize([1, 0, '#', '#', 3, 2, '#', '#', 4, '#', '#',])
+// const res1 = serialize(res)
 
-const res = deserialize([1, 0, '#', '#', 3, 2, '#', '#', 4, '#', '#',])
-const res1 = serialize(res)
+// postorder
+var serialize1 = function (root) {
+    const res = []
+    const traverse = (root) => {
+
+
+    }
+    traverse(root)
+    return res
+
+}
+var deserialize1 = function (data) {
+    const traverse = (data, node = null) => {
+        if (!data.length) return null
+        const val = data.pop()
+        if (val === '#') return null
+        node = new TreeNode(val)
+        node.right = traverse(data, node)
+        node.left = traverse(data, node)
+        return node
+    }
+    return traverse(data)
+}
+const res = deserialize1(['#', '#', 0, '#', '#', 2, '#', '#', 4, 3, 1])
+const res1 = serialize1(res)
+
 console.log(res, res1)
