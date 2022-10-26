@@ -424,8 +424,10 @@ var deserialize = function (data) {
 var serialize1 = function (root) {
     const res = []
     const traverse = (root) => {
-
-
+        if (!root) return res.push('#')
+        traverse(root.left)
+        traverse(root.right)
+        res.push(root.val)
     }
     traverse(root)
     return res
@@ -437,7 +439,7 @@ var deserialize1 = function (data) {
         const val = data.pop()
         if (val === '#') return null
         node = new TreeNode(val)
-        node.right = traverse(data, node)
+        node.right = traverse(data, node) //关键
         node.left = traverse(data, node)
         return node
     }
@@ -446,4 +448,4 @@ var deserialize1 = function (data) {
 const res = deserialize1(['#', '#', 0, '#', '#', 2, '#', '#', 4, 3, 1])
 const res1 = serialize1(res)
 
-console.log(res, res1)
+console.log(res1)
