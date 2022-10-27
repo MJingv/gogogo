@@ -447,5 +447,72 @@ var deserialize1 = function (data) {
 }
 const res = deserialize1(['#', '#', 0, '#', '#', 2, '#', '#', 4, 3, 1])
 const res1 = serialize1(res)
+console.log(res)
 
-console.log(res1)
+// inorder 不行
+var serialize2 = function (root) {
+    const res = []
+    const traverse = (root) => {
+        if (!root) return res.push('#')
+        traverse(root.left)
+        res.push(root.val)
+        traverse(root.right)
+    }
+    traverse(root)
+    return res
+
+}
+var deserialize2 = function (data) {
+    // 这段中序遍历的代码，root 的值被夹在两棵子树的中间，也就是在 nodes 列表的中间，我们不知道确切的索引位置，所以无法找到 root 节点，也就无法进行反序列化。
+    const traverse = (data, node = null) => {
+        if (!data.length) return null
+        const val = data.pop()
+        if (val === '#') return null
+        node = new TreeNode(val)
+        node.left = traverse(data, node)
+        node.right = traverse(data, node)
+        return node
+    }
+    return traverse(data)
+}
+
+// level traverse
+var serialize3 = function (root) {
+
+
+}
+var deserialize3 = function (data) {
+    const traverse = (data, node = null) => {
+        if (!data.length) return
+        const val = data.shift()
+        if (val === '#') return null
+        node = new TreeNode(val)
+        node.left = traverse(data, node)
+        // node.right = traverse(data, node)
+        return node
+    }
+    return traverse(data)
+}
+
+const level = (root) => {
+    const res = []
+    const q = [root]
+    while (q.length) {
+        const node = q.shift()
+        res.push(node.val)
+        if (node.left) {
+            q.push(node.left)
+        }
+        if (node.right) {
+            q.push(node.right)
+        }
+
+    }
+    return res
+}
+console.log(level(res))
+
+// const res = deserialize3([1, 0, 3, '#', '#', 2, 4, '#', '#', '#', '#',])
+// const res1 = serialize3(res)
+
+// console.log(res, res1)
