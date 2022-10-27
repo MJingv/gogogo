@@ -445,9 +445,9 @@ var deserialize1 = function (data) {
     }
     return traverse(data)
 }
-const res = deserialize1(['#', '#', 0, '#', '#', 2, '#', '#', 4, 3, 1])
-const res1 = serialize1(res)
-console.log(res)
+// const res = deserialize1(['#', '#', 0, '#', '#', 2, '#', '#', 4, 3, 1])
+// const res1 = serialize1(res)
+// console.log(res)
 
 // inorder 不行
 var serialize2 = function (root) {
@@ -476,24 +476,8 @@ var deserialize2 = function (data) {
     return traverse(data)
 }
 
+
 // level traverse
-var serialize3 = function (root) {
-
-
-}
-var deserialize3 = function (data) {
-    const traverse = (data, node = null) => {
-        if (!data.length) return
-        const val = data.shift()
-        if (val === '#') return null
-        node = new TreeNode(val)
-        node.left = traverse(data, node)
-        // node.right = traverse(data, node)
-        return node
-    }
-    return traverse(data)
-}
-
 const level = (root) => {
     const res = []
     const q = [root]
@@ -510,9 +494,46 @@ const level = (root) => {
     }
     return res
 }
-console.log(level(res))
+var serialize3 = function (root) {
+    const res = []
+    const q = [root]
 
-// const res = deserialize3([1, 0, 3, '#', '#', 2, 4, '#', '#', '#', '#',])
-// const res1 = serialize3(res)
+    while (q.length) {
+        const node = q.shift()
+        res.push(node.val)
+        if (node.left) {
+            q.push(node.left)
+        }
+        if (node.right) {
+            q.push(node.right)
+        }
+    }
+    return res
+}
+var deserialize3 = function (data) {
+    const root = new TreeNode(data[0])
+    const q = [root]
+    let index = 1
+    while (index < data.length) {
+        const node = q.shift()
+        const leftVal = data[index]
+        const rightVal = data[index+1]
+        if (leftVal !== '#') {
+            const left = new TreeNode(leftVal)
+            node.left = left
+            q.push(left)
+        }
+        if (rightVal !== '#') {
+            const right = new TreeNode(rightVal)
+            node.right = right
+            q.push(right)
+        }
+        index += 2
+    }
+    return root
+}
 
-// console.log(res, res1)
+
+const res = deserialize3([1, 0, 3, '#', '#', 2, 4, '#', '#', '#', '#',])
+// const res2 = serialize3(res)
+console.log(res)
