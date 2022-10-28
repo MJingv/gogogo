@@ -495,7 +495,7 @@ const level = (root) => {
     return res
 }
 var serialize3 = function (root) {
-    if (!root || root.val === null) return []
+    if (!root) return []
     const res = []
     const q = [root]
     while (q.length) {
@@ -511,24 +511,22 @@ var serialize3 = function (root) {
     return res
 }
 var deserialize3 = function (data) {
-    if (!data.length) return null
-
+    const len = data.length
+    if (!len) return null
     const root = new TreeNode(data[0])
-    const q = [root]
+    const q = [root] //放节点
     let index = 1
-    while (index < data.length) {
+    while (index < len) {
         const node = q.shift()
         const leftVal = data[index]
         const rightVal = data[index + 1]
         if (leftVal !== '#') {
-            const left = new TreeNode(leftVal)
-            node.left = left
-            q.push(left)
+            node.left = new TreeNode(leftVal)
+            q.push(node.left)
         }
         if (rightVal !== '#') {
-            const right = new TreeNode(rightVal)
-            node.right = right
-            q.push(right)
+            node.right = new TreeNode(rightVal)
+            q.push(node.right)
         }
         index += 2
     }
@@ -539,5 +537,5 @@ var deserialize3 = function (data) {
 // const res = deserialize3([1, 0, 3, '#', '#', 2, 4, '#', '#', '#', '#',])
 const res = deserialize3([])
 
-const res2 = serialize3(new TreeNode(null))
+const res2 = serialize3(res)
 console.log(res, res2)
