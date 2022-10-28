@@ -495,6 +495,7 @@ const level = (root) => {
     return res
 }
 var serialize3 = function (root) {
+    if (!root || root.val === null) return []
     const res = []
     const q = [root]
     while (q.length) {
@@ -503,15 +504,15 @@ var serialize3 = function (root) {
             res.push(node.val)
             q.push(node.left)
             q.push(node.right)
-
         } else {
             res.push('#')
         }
-
     }
     return res
 }
 var deserialize3 = function (data) {
+    if (!data.length) return null
+
     const root = new TreeNode(data[0])
     const q = [root]
     let index = 1
@@ -535,6 +536,8 @@ var deserialize3 = function (data) {
 }
 
 
-const res = deserialize3([1, 0, 3, '#', '#', 2, 4, '#', '#', '#', '#',])
-const res2 = serialize3(res)
+// const res = deserialize3([1, 0, 3, '#', '#', 2, 4, '#', '#', '#', '#',])
+const res = deserialize3([])
+
+const res2 = serialize3(new TreeNode(null))
 console.log(res, res2)
