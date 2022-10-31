@@ -146,5 +146,37 @@ const removeBST = (root, val) => {
     return traverse(root, val)
 }
 
-const res = removeBST(t1, 1)
+// const res = removeBST(t1, 1)
+// console.log(res)
+
+
+var findTarget = function (root, k) {
+    if (!root) return
+    const list = []
+    const traverse = (node) => {
+        if (!node) return
+        traverse(node.left)
+        list.push(node.val)
+        traverse(node.right)
+
+    }
+    traverse(root)
+
+    const len = list.length
+
+    let [low, high] = [0, len - 1]
+    while (low < high) {
+        const sum = list[low] + list[high]
+        if (sum === k) return true
+        if (sum < k) {
+            low++
+        }
+        if (sum > k) {
+            high--
+        }
+
+    }
+    return false
+};
+const res = findTarget(t1, 10)
 console.log(res)
