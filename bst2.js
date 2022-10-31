@@ -88,5 +88,29 @@ var searchBST = function (root, val) {
     }
     return traverse(root, val)
 };
-const res = searchBST(t1, 3)
+// const res = searchBST(t1, 3)
+// console.log(res)
+
+const addBST = (root, val) => {
+    if (!root) return new TreeNode(6)
+
+    const traverse = (node, val) => {
+        if (!node) return new TreeNode(val)
+
+        // if (node.val === val) {
+        //     //相同的不要
+        //     return node
+        // }
+        if (node.val > val) {
+            node.left = traverse(node.left, val)
+        }
+        if (node.val < val) {
+            node.right = traverse(node.right, val)
+        }
+        return node
+    }
+
+    return traverse(root, val)
+}
+const res = addBST(t1, 6)
 console.log(res)
