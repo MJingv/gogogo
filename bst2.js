@@ -93,7 +93,6 @@ var searchBST = function (root, val) {
 
 const addBST = (root, val) => {
     if (!root) return new TreeNode(6)
-
     const traverse = (node, val) => {
         if (!node) return new TreeNode(val)
 
@@ -112,5 +111,40 @@ const addBST = (root, val) => {
 
     return traverse(root, val)
 }
-const res = addBST(t1, 6)
+// const res = addBST(t1, 6)
+// console.log(res)
+
+const removeBST = (root, val) => {
+    const exist = searchBST(root, val)
+    if (!exist) return root
+
+    const traverse = (node, val) => {
+        if (!node) return
+
+        if (node.val === val) {
+            if (!node.left || !node.right) {
+                return node.left || node.right
+            }
+            let p = node.right
+            while (p.left) {
+                p = p.left
+            }
+            removeBST(node, p.val)
+            node.val = p.val
+            return node
+        }
+        if (node.val < val) {
+            node.right = removeBST(node.right, val)
+        }
+        if (node.val > val) {
+            node.left = removeBST(node.left, val)
+        }
+        return node
+    }
+
+
+    return traverse(root, val)
+}
+
+const res = removeBST(t1, 1)
 console.log(res)
