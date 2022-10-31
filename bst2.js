@@ -70,5 +70,23 @@ var isValidBST = function (root) {
     }
     return traverse(root)
 };
-const res = isValidBST(t1)
+// const res = isValidBST(t1)
+// console.log(res)
+
+
+// 力扣第 700 题「 二叉搜索树中的搜索」
+var searchBST = function (root, val) {
+    const traverse = (node, val) => {
+        if (!node) return null
+        if (val === node.val) return node
+        if (val < node.val) {
+            return traverse(node.left, val)
+        }
+        if (val > node.val) {
+            return traverse(node.right, val)
+        }
+    }
+    return traverse(root, val)
+};
+const res = searchBST(t1, 3)
 console.log(res)
