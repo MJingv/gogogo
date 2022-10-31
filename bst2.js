@@ -13,10 +13,13 @@ const t1 = new TreeNode(1)
 const t2 = new TreeNode(2)
 const t3 = new TreeNode(3)
 const t4 = new TreeNode(4)
+const t6 = new TreeNode(6)
+
 t1.left = t0
 t1.right = t3
 t3.left = t2
 t3.right = t4
+// t0.right = t6
 
 
 var kthSmallest = function (root, k) {
@@ -54,5 +57,18 @@ var convertBST = function (root) {
     }
     return traverse(root)
 };
-const res = convertBST(t1)
+// const res = convertBST(t1)
+// console.log(res)
+
+// 力扣第 98 题「 验证二叉搜索树」
+var isValidBST = function (root) {
+    const traverse = (node, min = null, max = null) => {
+        if (!node) return true
+        if (min && node.val <= min.val) return false
+        if (max && node.val >= max.val) return false
+        return traverse(node.left, min, node) && traverse(node.right, node, max)
+    }
+    return traverse(root)
+};
+const res = isValidBST(t1)
 console.log(res)
