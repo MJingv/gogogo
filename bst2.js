@@ -181,38 +181,10 @@ var findTarget = function (root, k) {
 // const res = findTarget(t1, 10)
 // console.log(res)
 
-// 95. 不同的二叉搜索树 II
-var generateTrees = function (n) {
-    if (!n) return 1
-    const list = []
-    const res = []
-    for (let i = 1; i <= n; i++) {
-        list.push(i)
-    }
-
-    list.map(i => traverse(list, i,))
-
-
-    const traverse = (list, val) => {
-        if (!list.length) return 1
-        const node = new TreeNode(val)
-        const index = list.indexOf(val)
-        node.left = traverse(list.slice(0, index))
-
-        res.push(node)
-
-    }
-
-    return list
-};
-// const res = generateTrees(3)
-// console.log(res)
 // 96. 不同的二叉搜索树
-
 var numTrees = function (n) {
     const memo = new Array(n + 1).fill(0).map(() => new Array(n + 1).fill(0))
     const count = (low, high) => {
-
         if (low > high) return 1
         if (memo[low][high]) {
             return memo[low][high]
@@ -228,5 +200,31 @@ var numTrees = function (n) {
     }
     return count(1, n) //闭区间求值
 };
-const res = numTrees(3)
+// const res = numTrees(3)
+// console.log(res)
+
+
+// 95. 不同的二叉搜索树 II
+var generateTrees = function (n) {
+
+    //看不懂
+    const res = []
+    const helper = (low, high) => {
+        if (low > high) {
+            res.push(null)
+            return res
+        }
+        for (let i = low; i <= high; i++) {
+            const left = helper(low, i - 1)
+            const right = helper(i + 1, high)
+            const node = new TreeNode(i)
+            node.left = left
+            node.right = right
+            res.push(node)
+        }
+    }
+    helper(1, n)
+    return res
+};
+const res = generateTrees(3)
 console.log(res)
