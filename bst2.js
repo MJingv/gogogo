@@ -178,5 +178,49 @@ var findTarget = function (root, k) {
     }
     return false
 };
-const res = findTarget(t1, 10)
+// const res = findTarget(t1, 10)
+// console.log(res)
+
+// 95. 不同的二叉搜索树 II
+var generateTrees = function (n) {
+    if (!n) return 1
+    const list = []
+    const res = []
+    for (let i = 1; i <= n; i++) {
+        list.push(i)
+    }
+
+    list.map(i => traverse(list, i,))
+
+
+    const traverse = (list, val) => {
+        if (!list.length) return 1
+        const node = new TreeNode(val)
+        const index = list.indexOf(val)
+        node.left = traverse(list.slice(0, index))
+
+        res.push(node)
+
+    }
+
+    return list
+};
+// const res = generateTrees(3)
+// console.log(res)
+// 96. 不同的二叉搜索树
+
+var numTrees = function (n) {
+    const count = (low, high) => {
+        if (low > high) return 1
+        let res = 0
+        for (let i = low; i <= high; i++) {
+            const left = count(low, i - 1)
+            const right = count(i + 1, high)
+            res += left * right
+        }
+        return res
+    }
+    return count(1, n) //闭区间求值
+};
+const res = numTrees(3)
 console.log(res)
