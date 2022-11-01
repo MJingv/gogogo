@@ -210,14 +210,20 @@ var generateTrees = function (n) {
 // 96. 不同的二叉搜索树
 
 var numTrees = function (n) {
+    const memo = new Array(n + 1).fill(0).map(() => new Array(n + 1).fill(0))
     const count = (low, high) => {
+
         if (low > high) return 1
+        if (memo[low][high]) {
+            return memo[low][high]
+        }
         let res = 0
         for (let i = low; i <= high; i++) {
             const left = count(low, i - 1)
             const right = count(i + 1, high)
             res += left * right
         }
+        memo[low][high] = res
         return res
     }
     return count(1, n) //闭区间求值
