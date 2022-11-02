@@ -227,5 +227,53 @@ var generateTrees = function (n) {
     return helper(1, n)
 
 };
-const res = generateTrees(3)
-console.log(res)
+// const res = generateTrees(3)
+// console.log(res)
+
+const lowestCommonAncestor = (root, p, q) => {
+    const traverse = (node, p, q) => {
+        if (!node) return
+        const val = node.val
+
+        if (p.val > val && q.val > val) return traverse(node.right, p, q)
+        if (p.val < val && q.val < val) return traverse(node.left, p, q)
+
+        return node
+    }
+    return traverse(root, p, q)
+}
+//
+// const res = lowestCommonAncestor(t1, new TreeNode(2), new TreeNode(4))
+// console.log(res)
+
+
+const maxDepth = (root) => {
+    const traverse = (node, res = 0) => {
+        if (!node) return 0
+        return Math.max(traverse(node.left), traverse(node.right)) + 1
+    }
+    return traverse(root)
+}
+// const res = maxDepth(t1)
+// console.log(res)
+
+
+// 给你两棵二叉树： root1 和 root2 。
+// 想象一下，当你将其中一棵覆盖到另一棵之上时，两棵树上的一些节点将会重叠（而另一些不会）。你需要将这两棵树合并成一棵新二叉树。合并的规则是：如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。
+// 返回合并后的二叉树。
+// 注意: 合并过程必须从两个树的根节点开始。
+var mergeTrees = function (root1, root2) {
+    const traverse = (node1, node2) => {
+        if (!node1 && !node2) return null
+        if (!node1) return node2
+        if (!node2) return node1
+        node2.val = node1.val + node2.val
+        node2.left = traverse(node1.left, node2.left)
+        node2.right = traverse(node1.right, node2.right)
+        return node2
+    }
+    return traverse(root1, root2)
+};
+const res = mergeTrees(t1, t2)
+console.log(JSON.stringify(res))
+
