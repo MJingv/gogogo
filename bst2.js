@@ -206,25 +206,26 @@ var numTrees = function (n) {
 
 // 95. 不同的二叉搜索树 II
 var generateTrees = function (n) {
-
-    //看不懂
     const res = []
     const helper = (low, high) => {
-        if (low > high) {
-            res.push(null)
-            return res
-        }
+        if (low > high) return [null]
         for (let i = low; i <= high; i++) {
-            const left = helper(low, i - 1)
-            const right = helper(i + 1, high)
-            const node = new TreeNode(i)
-            node.left = left
-            node.right = right
-            res.push(node)
+            const leftTree = helper(low, i - 1)
+            const rightTree = helper(i + 1, high)
+
+            for (const left of leftTree) {
+                for (const right of rightTree) {
+                    const node = new TreeNode(i)
+                    node.left = left
+                    node.right = right
+                    res.push(node)
+                }
+            }
         }
+        return res
     }
-    helper(1, n)
-    return res
+    return helper(1, n)
+
 };
 const res = generateTrees(3)
 console.log(res)
