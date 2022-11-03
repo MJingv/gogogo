@@ -294,5 +294,28 @@ var findTilt = function (root) {
     traverse(root)
     return res
 };
-const res = findTilt(t1)
+// const res = findTilt(t1)
+// console.log(res)
+
+
+var isCousins = function (root, x, y) {
+    const depth = (node) => {
+        if (!node) return 0
+        return Math.max(depth(node.left), depth(node.right)) + 1
+    }
+
+    const traverse = (node, val) => {
+        if (!node) return
+        console.log(node.val, val)
+        if (node.val === val) return node
+        traverse(node.left, val)
+        traverse(node.right, val)
+
+    }
+
+    return traverse(root, x)
+
+};
+const res = isCousins(t1, 2, 4)
 console.log(res)
+
