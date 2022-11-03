@@ -297,25 +297,32 @@ var findTilt = function (root) {
 // const res = findTilt(t1)
 // console.log(res)
 
-
+// 993
+// 在二叉树中，根节点位于深度 0 处，每个深度为 k 的节点的子节点位于深度 k+1 处。
+// 如果二叉树的两个节点深度相同，但 父节点不同 ，则它们是一对堂兄弟节点。
+// 我们给出了具有唯一值的二叉树的根节点 root ，以及树中两个不同节点的值 x 和 y 。
+// 只有与值 x 和 y 对应的节点是堂兄弟节点时，才返回 true 。否则，返回 false。
 var isCousins = function (root, x, y) {
-    const depth = (node) => {
-        if (!node) return 0
-        return Math.max(depth(node.left), depth(node.right)) + 1
-    }
-
-    const traverse = (node, val) => {
+    let [deepX, deepY, parentX, parentY] = [0, 0, null, null]
+    const traverse = (node, x, y, deep = 0, parent = null) => {
         if (!node) return
-        console.log(node.val, val)
-        if (node.val === val) return node
-        traverse(node.left, val)
-        traverse(node.right, val)
+        if (node.val === x) {
+            deepX = deep
+            parentX = parent
+        }
+        if (node.val === y) {
+            deepY = deep
+            parentY = parent
+        }
 
+        traverse(node.left, x, y, deep + 1, node)
+        traverse(node.right, x, y, deep + 1, node)
     }
 
-    return traverse(root, x)
-
+    traverse(root, x, y)
+    return (deepX === deepY) && (parentX === parentY)
 };
+
 const res = isCousins(t1, 2, 4)
 console.log(res)
 
