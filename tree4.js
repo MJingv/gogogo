@@ -230,5 +230,26 @@ var findTarget1 = function (root, k) {
     }
     return list
 };
-const res = findTarget1(t1, 6)
+// const res = findTarget1(t1, 6)
+// console.log(res)
+
+var findSecondMinimumValue = function (root) {
+    if (!root) return
+    let res = Number.MAX_SAFE_INTEGER
+    const rootVal = root.val
+
+    const traverse = (node) => {
+        if (!node) return
+        traverse(node.left)
+        if (node.val > rootVal) {
+            res = Math.min(res, node.val)
+        }
+        traverse(node.right)
+    }
+    traverse(root)
+    if (res === Number.MAX_SAFE_INTEGER) res = -1
+
+    return res
+};
+const res = findSecondMinimumValue(t1)
 console.log(res)
