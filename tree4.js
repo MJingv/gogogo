@@ -111,12 +111,13 @@ var binaryTreePaths = function (root) {
         if (!node) return
         path.push(node.val)
         if (!node.left && !node.right) {
-            // 叶子节点 把path放进list里
+            // 叶子节点
             res.push(path.join('->'))
         }
         traverse(node.left)
         traverse(node.right)
         path.pop()
+
     }
     traverse(root)
     return res
