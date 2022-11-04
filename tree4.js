@@ -122,5 +122,28 @@ var binaryTreePaths = function (root) {
     traverse(root)
     return res
 };
-const res = binaryTreePaths(t1)
+// const res = binaryTreePaths(t1)
+// console.log(res)
+
+// 637
+// 给定一个非空二叉树的根节点 root , 以数组的形式返回每一层节点的平均值。与实际答案相差 10-5 以内的答案可以被接受。
+var averageOfLevels = function (root) {
+    if (!root) return []
+    const res = []
+    let q = [root]
+
+    while (q.length) {
+        const size = q.length
+        let sum = 0
+        for (let i = 0; i < size; i++) {
+            const node = q.shift()
+            sum += node.val
+            if (node.left) q.push(node.left)
+            if (node.right) q.push(node.right)
+        }
+        res.push(sum / size)
+    }
+    return res
+};
+const res = averageOfLevels(t1)
 console.log(res)
