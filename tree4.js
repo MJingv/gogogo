@@ -145,5 +145,46 @@ var averageOfLevels = function (root) {
     }
     return res
 };
-const res = averageOfLevels(t1)
+// const res = averageOfLevels(t1)
+// console.log(res)
+
+// 938
+// 给定二叉搜索树的根结点 root，返回值位于范围 [low, high] 之间的所有结点的值的和。
+var rangeSumBST = function (root, low, high) {
+    if (!root) return
+    let sum = 0
+    const traverse = (node, low, high) => {
+        if (!node) return
+        traverse(node.left, low, high)
+        const val = node.val
+        if (val >= low && val <= high) {
+            sum += val
+        }
+        traverse(node.right, low, high)
+    }
+    traverse(root, low, high)
+    return sum
+};
+// const res = rangeSumBST(t1, 2, 4)
+// console.log(res)
+
+// 783 二叉搜索树节点最小距离
+var minDiffInBST = function (root) {
+    if (!root) return
+    let diff = Number.MAX_SAFE_INTEGER
+    let prev = null
+    const traverse = (node,) => {
+        if (!node) return
+        traverse(node.left)
+        if (prev) {
+            diff = Math.min(diff, Math.abs(node.val - prev.val))
+        }
+        prev = node
+        traverse(node.right)
+    }
+    traverse(root)
+    return diff
+
+};
+const res = minDiffInBST(t1)
 console.log(res)
