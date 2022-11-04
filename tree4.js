@@ -186,5 +186,49 @@ var minDiffInBST = function (root) {
     return diff
 
 };
-const res = minDiffInBST(t1)
+// const res = minDiffInBST(t1)
+// console.log(res)
+
+
+var findTarget = function (root, k) {
+    if (!root) return
+    const set = new Set()
+    let res = false
+    const traverse = (node, k) => {
+        if (!node) return
+        const val = node.val
+        if (set.has(k - val)) return res = true
+        set.add(val)
+        traverse(node.left, k)
+        traverse(node.right, k)
+    }
+    traverse(root, k)
+    return res
+};
+var findTarget1 = function (root, k) {
+    if (!root) return
+    const list = []
+    let res = false
+    const traverse = (node) => {
+        if (!node) return
+        traverse(node.left)
+        list.push(node.val)
+        traverse(node.right)
+    }
+    traverse(root)
+
+    let [left, right] = [0, list.length - 1]
+    while (left < right) {
+        const sum = list[left] + list[right]
+        if (sum === k) return res = true
+        if (sum > k) {
+            right--
+        }
+        if (sum < k) {
+            left++
+        }
+    }
+    return list
+};
+const res = findTarget1(t1, 6)
 console.log(res)
