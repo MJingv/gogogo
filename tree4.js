@@ -251,5 +251,47 @@ var findSecondMinimumValue = function (root) {
 
     return res
 };
-const res = findSecondMinimumValue(t1)
+// const res = findSecondMinimumValue(t1)
+// console.log(res)
+
+
+var isSubtree = function (root, subRoot) {
+    if (!root || !subRoot) return true
+    const isSame = (t1, t2) => {
+        if (!t1 && !t2) return true
+        if (!t1 || !t2) return false
+        if (t1.val === t2.val) {
+            return isSame(t1.left, t2.left) && isSame(t1.right, t2.right)
+        }
+        return false
+    }
+    const traverse = (node) => {
+        if (!node) return
+        if (isSame(node, subRoot)) return true
+        return traverse(node.left, subRoot) || traverse(node.right, subRoot)
+    }
+
+    return traverse(root)
+};
+// const res = isSubtree(t1, t3)
+// console.log(res)
+
+
+var sortedArrayToBST = function (nums) {
+    const len = nums.length
+    if (!len) return null
+    const traverse = (list) => {
+        const len = list.length
+        if (!len) return
+        if (len === 1) return new TreeNode(list[0])
+        const midIndex = (0 + len) >> 1
+        const node = new TreeNode(list[midIndex])
+        node.left = traverse(list.slice(0, midIndex))
+        node.right = traverse(list.slice(midIndex + 1))
+        return node
+    }
+    return traverse(nums)
+
+};
+const res = sortedArrayToBST([-10, -3, 0, 5, 9])
 console.log(res)
