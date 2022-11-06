@@ -17,7 +17,7 @@ t1.left = t0
 t1.right = t3
 t3.left = t2
 t3.right = t4
-t4.right = t6
+// t4.right = t6
 
 
 const maxDepth = (root) => {
@@ -404,5 +404,27 @@ p1.right = new TreeNode(0)
 p1.left = new TreeNode(0)
 
 
-const res = pruneTree(p)
+// const res = pruneTree(p)
+// console.log(res)
+
+var rightSideView = function (root) {
+    if (!root) return []
+    const res = []
+    let q = [root]
+
+    while (q.length) {
+        const size = q.length
+        for (let i = 0; i < size; i++) {
+            const node = q.shift()
+            if (i === size - 1) {
+                res.push(node.val)
+            }
+            node.left && q.push(node.left)
+            node.right && q.push(node.right)
+
+        }
+    }
+    return res
+};
+const res = rightSideView(t1)
 console.log(res)
