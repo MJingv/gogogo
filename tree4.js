@@ -468,8 +468,9 @@ var isEvenOddTree = function (root) {
 // console.log(res)
 
 var findBottomLeftValue = function (root) {
+    if (!root) return
     const res = []
-    if (!root) return res
+
     const q = [root]
     while (q.length) {
         const size = q.length
@@ -482,5 +483,24 @@ var findBottomLeftValue = function (root) {
     }
     return res[res.length - 1]
 };
-const res = findBottomLeftValue(t1)
+var findBottomLeftValue1 = function (root) {
+    // 不理解
+    if (!root) return
+    let res = null, deep = 0, maxDepth = 0
+    const traverse = (node) => {
+        if (!node) return 0
+        deep++
+        if (maxDepth < deep) {
+            maxDepth = deep
+            res = node
+        }
+        traverse(node.left)
+        traverse(node.right)
+        deep--
+    }
+    traverse(root)
+    return res
+}
+
+const res = findBottomLeftValue1(t1)
 console.log(res)
