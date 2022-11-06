@@ -426,5 +426,43 @@ var rightSideView = function (root) {
     }
     return res
 };
-const res = rightSideView(t1)
+// const res = rightSideView(t1)
+// console.log(res)
+
+// 如果一棵二叉树满足下述几个条件，则可以称为 奇偶树 ：
+// 二叉树根节点所在层下标为 0 ，根的子节点所在层下标为 1 ，根的孙节点所在层下标为 2 ，依此类推。
+// 偶数下标 层上的所有节点的值都是 奇 整数，从左到右按顺序 严格递增
+// 奇数下标 层上的所有节点的值都是 偶 整数，从左到右按顺序 严格递减
+// 给你二叉树的根节点，如果二叉树为 奇偶树 ，则返回 true ，否则返回 false 。
+var isEvenOddTree = function (root) {
+    let res = true
+    let q = [root]
+    let level = 0
+    let prev = null
+
+
+    while (q.length) {
+        const size = q.length
+        for (let i = 0; i < size; i++) {
+            const node = q.shift()
+            const val = node.val
+            if (level % 2) {//奇数层
+                if (node.val % 2 || prev && prev.val <= val) return res = false //奇数层，要偶数递减
+
+            } else {
+                //偶数层，要奇数递增
+                if (val % 2 === 0 || prev && prev.val >= val) return res = false
+
+            }
+
+            prev = node
+            node.left && q.push(node.left)
+            node.right && q.push(node.right)
+        }
+        prev = null
+        level++
+    }
+    return res
+};
+const res = isEvenOddTree(t1)
 console.log(res)
