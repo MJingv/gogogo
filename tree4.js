@@ -362,5 +362,20 @@ var isBalanced = function (root) {
     traverse(root)
     return res
 };
-const res = isBalanced(t1)
+// const res = isBalanced(t1)
+// console.log(res)
+
+var convertBiNode = function (root) {
+    if (!root) return
+    const left = convertBiNode(root.left)
+    const right = convertBiNode(root.right)
+    if (!left) return root
+    let p = left
+    while (p && p.right) {
+        p = p.right
+    }
+    p.right = root
+    return left
+};
+const res = convertBiNode(t1)
 console.log(res)
