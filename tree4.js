@@ -316,6 +316,7 @@ var leafSimilar = function (root1, root2) {
 
 
 var increasingBST = function (root) {
+    // 遍历解法，新节点
     if (!root) return
     const dummy = new TreeNode(-1)
     let p = dummy
@@ -331,5 +332,19 @@ var increasingBST = function (root) {
     return dummy.right
 };
 
-const res = increasingBST(t1)
+var increasingBST1 = function (root) {
+    if (!root) return
+    const left = increasingBST1(root.left)
+    root.left = null
+    const right = increasingBST(root.right)
+    root.right = right
+    if (!left) return root
+    let p = left
+    while (p && p.right) {
+        p = p.right
+    }
+    p.right = root
+    return left
+}
+const res = increasingBST1(t1)
 console.log(res)
