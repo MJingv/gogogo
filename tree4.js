@@ -369,6 +369,7 @@ var convertBiNode = function (root) {
     if (!root) return null
     const left = convertBiNode(root.left)
     const right = convertBiNode(root.right)
+    // postorder才知道2个节点是什么情况
     root.left = null
     root.right = right
 
@@ -382,5 +383,26 @@ var convertBiNode = function (root) {
 
 
 };
-const res = convertBiNode(t1)
+// const res = convertBiNode(t1)
+// console.log(res)
+
+var pruneTree = function (root) {
+    if (!root) return null
+    const left = pruneTree(root.left)
+    const right = pruneTree(root.right)
+    // 后序知道左右孩子的情况
+    // 只需要考虑叶子节点，因为后序把已有符合条件的叶子都剪了
+    root.left = left
+    root.right = right
+    if (root.val === 0 && !root.left && !root.right) return null
+    return root
+
+};
+const p = new TreeNode(1)
+const p1 = p.right = t0
+p1.right = new TreeNode(0)
+p1.left = new TreeNode(0)
+
+
+const res = pruneTree(p)
 console.log(res)
