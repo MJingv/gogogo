@@ -464,5 +464,23 @@ var isEvenOddTree = function (root) {
     }
     return res
 };
-const res = isEvenOddTree(t1)
+// const res = isEvenOddTree(t1)
+// console.log(res)
+
+var findBottomLeftValue = function (root) {
+    const res = []
+    if (!root) return res
+    const q = [root]
+    while (q.length) {
+        const size = q.length
+        for (let i = 0; i < size; i++) {
+            const node = q.shift()
+            res.push(node.val)
+            node.right && q.push(node.right)
+            node.left && q.push(node.left)
+        }
+    }
+    return res[res.length - 1]
+};
+const res = findBottomLeftValue(t1)
 console.log(res)
