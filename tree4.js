@@ -366,16 +366,21 @@ var isBalanced = function (root) {
 // console.log(res)
 
 var convertBiNode = function (root) {
-    if (!root) return
+    if (!root) return null
     const left = convertBiNode(root.left)
     const right = convertBiNode(root.right)
+    root.left = null
+    root.right = right
+
     if (!left) return root
-    let p = left
+    let p = root.left
     while (p && p.right) {
         p = p.right
     }
     p.right = root
     return left
+
+
 };
 const res = convertBiNode(t1)
 console.log(res)
