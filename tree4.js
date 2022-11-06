@@ -293,5 +293,23 @@ var sortedArrayToBST = function (nums) {
     return traverse(nums)
 
 };
-const res = sortedArrayToBST([-10, -3, 0, 5, 9])
+// const res = sortedArrayToBST([-10, -3, 0, 5, 9])
+// console.log(res)
+
+var leafSimilar = function (root1, root2) {
+    if (!root1 && !root2) return true
+    const [l1, l2] = [[], []]
+    const traverse = (node, list) => {
+        if (!node) return
+        if (!node.left && !node.right) {
+            list.push(node.val)
+        }
+        traverse(node.left, list)
+        traverse(node.right, list)
+    }
+    traverse(root1, l1)
+    traverse(root2, l2)
+    return l1.join(',') === l2.join(',')
+};
+const res = leafSimilar(t1, t1)
 console.log(res)
