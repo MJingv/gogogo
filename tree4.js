@@ -311,5 +311,25 @@ var leafSimilar = function (root1, root2) {
     traverse(root2, l2)
     return l1.join(',') === l2.join(',')
 };
-const res = leafSimilar(t1, t1)
+// const res = leafSimilar(t1, t1)
+// console.log(res)
+
+
+var increasingBST = function (root) {
+    if (!root) return
+    const dummy = new TreeNode(-1)
+    let p = dummy
+    const traverse = (node,) => {
+        if (!node) return
+        traverse(node.left)
+        p.right = node
+        p.right.left = null
+        p = p.right
+        traverse(node.right)
+    }
+    traverse(root)
+    return dummy.right
+};
+
+const res = increasingBST(t1)
 console.log(res)
