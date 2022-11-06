@@ -17,7 +17,7 @@ t1.left = t0
 t1.right = t3
 t3.left = t2
 t3.right = t4
-// t0.right = t6
+t4.right = t6
 
 
 const maxDepth = (root) => {
@@ -346,5 +346,21 @@ var increasingBST1 = function (root) {
     p.right = root
     return left
 }
-const res = increasingBST1(t1)
+// const res = increasingBST1(t1)
+// console.log(res)
+
+
+var isBalanced = function (root) {
+    let res = true
+    const traverse = (node) => {
+        if (!node) return 0
+        const left = traverse(node.left)
+        const right = traverse(node.right)
+        if (Math.abs(left - right) > 1) res = false
+        return Math.max(left, right) + 1
+    }
+    traverse(root)
+    return res
+};
+const res = isBalanced(t1)
 console.log(res)
