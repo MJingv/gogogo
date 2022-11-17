@@ -66,7 +66,31 @@ var lengthOfLIS = function (nums) {
     }
     return Math.max(...dp)
 };
-const res = lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])//4
-console.log(res)
+// const res = lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])//4
+// console.log(res)
 
 // 354. 俄罗斯套娃信封问题
+
+
+// 力扣第 931 题「 下降路径最小和」
+// 输入：matrix = [[2,1,3],[6,5,4],[7,8,9]] 输出：13
+var minFallingPathSum = function (matrix) {
+    const len = matrix.length
+    const memo = Array(len).fill(Infinity).map(i => Array(len).fill(Infinity))
+    const dp = (matrix, row, col) => {
+        if (row === 0) return matrix[0][col]
+        if (row < 0 || row >= len) return Infinity
+        if (col < 0 || col >= len) return Infinity
+        memo[row][col] = Math.min(dp(matrix, row - 1, col - 1), dp(matrix, row - 1, col), dp(matrix, row - 1, col + 1)) + matrix[row][col]
+        return memo[row][col]
+    }
+
+    let res = Infinity
+    for (let j = 0; j < len; j++) {
+        res = dp(matrix, len - 1, j)
+    }
+
+    return memo
+};
+const res = minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]])//13
+console.log(res)
