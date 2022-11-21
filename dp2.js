@@ -93,5 +93,26 @@ var minFallingPathSum = function (matrix) {
 
     return res
 };
-const res = minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]])//13
+// const res = minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]])//13
+// console.log(res)
+
+// 63. 不同路径 II
+// 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish”）。
+// 现在考虑网格中有障碍物。那么从左上角到右下角将会有多少条不同的路径？
+var uniquePathsWithObstacles = function (obstacleGrid) {
+    const len = obstacleGrid.length
+    let res = 0
+    const dp = (list, i, j) => {
+        if (i < 0 || i >= len) return false
+        if (j < 0 || j >= len) return false
+        if (list[i][j] === 1) return false
+        if (list[i - 1][j] === 0 || list[i][j - 1] === 0) return true
+        return false
+    }
+
+    dp(obstacleGrid, len - 1, len - 1)
+
+
+};
+const res = uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]) //2
 console.log(res)
