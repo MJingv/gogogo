@@ -114,5 +114,35 @@ var uniquePathsWithObstacles = function (obstacleGrid) {
 
 
 };
-const res = uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]) //2
+// const res = uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]]) //2
+// console.log(res)
+
+// 力扣第 72 题「 编辑距离」
+var minDistance = function (word1, word2) {
+    if (!word1.length) return word2.length
+    if (!word2.length) return word1.length
+    const memo = Array(word1.length).fill(0).map(i => Array(word2.length).fill(Infinity))
+    const dp = (s1, i, s2, j) => {
+        if (i < 0) return j + 1
+        if (j < 0) return i + 1
+        if (memo[i][j] !== Infinity) return memo[i][j]
+
+        if (s1[i] === s2[j]) {
+            memo[i][j] = dp(s1, i - 1, s2, j - 1)
+        } else {
+            memo[i][j] = Math.min(
+                dp(s1, i, s2, j - 1) + 1, //add
+                dp(s1, i - 1, s2, j) + 1,//del
+                dp(s1, i - 1, s2, j - 1) + 1 //rep
+            )
+        }
+
+        return memo[i][j]
+    }
+    dp(word1, word1.length - 1, word2, word2.length - 1)
+    return memo[word1.length - 1][word2.length - 1]
+
+};
+
+const res = minDistance('horse', 'ros')
 console.log(res)
