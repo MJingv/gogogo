@@ -225,7 +225,80 @@ const longestCommonSubsequence1 = (text1, text2) => {
     }
     return dp[len1][len2]
 }
-const res = longestCommonSubsequence1('babcde', 'ace')
-console.log(res)
+// const res = longestCommonSubsequence1('babcde', 'ace')
+// console.log(res)
+
+
 // 583. 两个字符串的删除操作
+// 给定两个单词 word1 和 word2 ，返回使得 word1 和 word2 相同所需的最小步数
+// 输入: word1 = "sea", word2 = "eat" 输出: 2 解释: 第一步将 "sea" 变为 "ea" ，第二步将 "eat "变为 "ea"
+var minDistance = function (word1, word2) {
+    const len1 = word1.length
+    const len2 = word2.length
+    if (!len1) return len2
+    if (!len2) return len1
+    const memo = Array(len1).fill(Infinity).map(i => Array(len2).fill(Infinity))
+    const dp = (word1, i, word2, j) => {
+        if (i >= len1) return len2 - j
+        if (j >= len2) return len1 - i
+        if (memo[i][j] !== Infinity) return memo[i][j]
+        if (word1[i] === word2[j]) {
+            memo[i][j] = dp(word1, i + 1, word2, j + 1)
+        } else {
+            memo[i][j] = Math.min(
+                dp(word1, i + 1, word2, j) + 1,
+                dp(word1, i, word2, j + 1) + 1,
+            )
+        }
+        return memo[i][j]
+    }
+    dp(word1, 0, word2, 0)
+    return memo[0][0]
+};
+// const res = minDistance('sea', 'eat')
+// console.log(res)
+
 // 712. 两个字符串的最小ASCII删除和
+// 给定两个字符串s1 和 s2，返回 使两个字符串相等所需删除字符的 ASCII 值的最小和 。
+// 输入: s1 = "sea", s2 = "eat" 输出: 231 解释: 在 "sea" 中删除 "s" 并将 "s" 的值(115)加入总和。 在 "eat" 中删除 "t" 并将 116 加入总和。 结束时，两个字符串相等，115 + 116 = 231 就是符合条件的最小和。
+var minimumDeleteSum = function (s1, s2) {
+    const len1 = s1.length
+    const len2 = s2.length
+    const memo = Array(len1).fill(Infinity).map(i => Array(len2).fill(Infinity))
+
+    const getSum = (str, m, n) => {
+        let sum = 0
+        for (let i = m; i < n; i++) {
+            sum += str[i].charCodeAt()
+        }
+        return sum
+    }
+    const dp = (s1, i, s2, j) => {
+        if (i >= len1) return getSum(s2, j, len2)
+        if (j >= len2) return getSum(s1, i, len1)
+
+        if (memo[i][j] !== Infinity) return memo[i][j]
+        if (s1[i] === s2[j]) {
+            memo[i][j] = dp(s1, i + 1, s2, j + 1)
+        } else {
+            const ci = s1[i].charCodeAt()
+            const cj = s2[j].charCodeAt()
+
+            memo[i][j] = Math.min(
+                dp(s1, i + 1, s2, j) + ci,
+                dp(s1, i, s2, j + 1) + cj,
+                // dp(s1, i + 1, s2, j + 1) + ci + cj
+            )
+        }
+        return memo[i][j]
+
+    }
+    dp(s1, 0, s2, 0)
+
+    return memo
+
+};
+//input_formatted:"delete""leet"
+//expected_output:403
+const res = minimumDeleteSum('delete', 'leet')
+console.log(res)
