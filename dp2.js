@@ -353,23 +353,27 @@ const minInsertions1 = (s) => {
 
 var longestPalindromeSubseq = function (s) {
     const len = s.length
-    if (!len || len === 1) return 0
+    if (len < 2) return len
     const memo = Array(len).fill(0).map(i => Array(len).fill(0))
+    for (let i = 0; i < len; i++) {
+        memo[i][i] = 1
+    }
     const dp = (s, i, j) => {
-        if (i >= j) return 0
+        if (i > j) return 0
         if (memo[i][j] !== 0) return memo[i][j]
         if (s[i] === s[j]) {
-            memo[i][j] = dp(s, i + 1, j - 1) + 1
+            memo[i][j] = dp(s, i + 1, j - 1) + 2
         } else {
             memo[i][j] = Math.max(
                 dp(s, i, j - 1),
                 dp(s, i + 1, j),
-                dp(s, i + 1, j - 1)
+                // dp(s, i + 1, j - 1),
             )
         }
+        return memo[i][j]
     }
     dp(s, 0, len - 1)
     return memo
 };
-const res = longestPalindromeSubseq('bbbb')
+const res = longestPalindromeSubseq('bbb')
 console.log(res)
