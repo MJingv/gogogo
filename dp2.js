@@ -315,7 +315,6 @@ var minInsertions = function (s) {
     // s[i...j]的值
     const dp = (s, i, j) => {
         if (i >= j) return 0
-
         // if (j < 0 || i >= len) return 0
         if (memo[i][j] !== Infinity) return memo[i][j]
         if (s[i] === s[j]) {
@@ -328,6 +327,22 @@ var minInsertions = function (s) {
     dp(s, 0, len - 1)
     return memo[0][len - 1]
 };
-const res = minInsertions('mbadm')
+
+const minInsertions1 = (s) => {
+    const len = s.length
+    if (!len || len === 1) return 0
+    const dp = Array(len).fill(0).map(i => Array(len).fill(0))
+    for (let i = len - 1; i >= 0; i--) {
+        for (let j = i + 1; j < len; j++) {
+            if (s[i] === s[j]) {
+                dp[i][j] = dp[i + 1][j - 1]
+            } else {
+                dp[i][j] = Math.min(dp[i + 1][j], dp[i][j - 1]) + 1
+            }
+        }
+    }
+    return dp[0][len - 1]
+}
+const res = minInsertions1('mbadm')
 console.log(res)
 // 516. 最长回文子序列
