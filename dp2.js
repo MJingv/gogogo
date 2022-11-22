@@ -350,8 +350,26 @@ const minInsertions1 = (s) => {
 // 516. 最长回文子序列
 // 给你一个字符串 s ，找出其中最长的回文子序列，并返回该序列的长度。
 // 输入：s = "bbbab" 输出：4 解释：一个可能的最长回文子序列为 "bbbb" 。
-var longestPalindromeSubseq = function (s) {
 
+var longestPalindromeSubseq = function (s) {
+    const len = s.length
+    if (!len || len === 1) return 0
+    const memo = Array(len).fill(0).map(i => Array(len).fill(0))
+    const dp = (s, i, j) => {
+        if (i >= j) return 0
+        if (memo[i][j] !== 0) return memo[i][j]
+        if (s[i] === s[j]) {
+            memo[i][j] = dp(s, i + 1, j - 1) + 1
+        } else {
+            memo[i][j] = Math.max(
+                dp(s, i, j - 1),
+                dp(s, i + 1, j),
+                dp(s, i + 1, j - 1)
+            )
+        }
+    }
+    dp(s, 0, len - 1)
+    return memo
 };
 const res = longestPalindromeSubseq('bbbb')
 console.log(res)
