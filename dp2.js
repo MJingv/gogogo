@@ -300,5 +300,34 @@ var minimumDeleteSum = function (s1, s2) {
 };
 //input_formatted:"delete""leet"
 //expected_output:403
-const res = minimumDeleteSum('delete', 'leet')
+// const res = minimumDeleteSum('delete', 'leet')
+// console.log(res)
+
+// 1312. 让字符串成为回文串的最少插入次数
+// 给你一个字符串 s ，每一次操作你都可以在字符串的任意位置插入任意字符。请你返回让 s 成为回文串的 最少操作次数 。「回文串」是正读和反读都相同的字符串。
+
+// 输入：s = "mbadm" 输出：2 解释：字符串可变为 "mbdadbm" 或者 "mdbabdm" 。
+var minInsertions = function (s) {
+    const len = s.length
+    if (!len) return 0
+    if (len === 1) return 0
+    const memo = Array(len).fill(Infinity).map(i => Array(len).fill(Infinity))
+    // s[i...j]的值
+    const dp = (s, i, j) => {
+        if (i >= j) return 0
+
+        // if (j < 0 || i >= len) return 0
+        if (memo[i][j] !== Infinity) return memo[i][j]
+        if (s[i] === s[j]) {
+            memo[i][j] = dp(s, i + 1, j - 1)
+        } else {
+            memo[i][j] = Math.min(dp(s, i + 1, j) + 1, dp(s, i, j - 1) + 1)
+        }
+        return memo[i][j]
+    }
+    dp(s, 0, len - 1)
+    return memo[0][len - 1]
+};
+const res = minInsertions('mbadm')
 console.log(res)
+// 516. 最长回文子序列
