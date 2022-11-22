@@ -1,7 +1,5 @@
-// bad case
-// stutus
-// choice
-// dp
+// bad case + stutus + choice + dp
+// 递归和2层遍历都可以
 
 // 509. 斐波那契数
 var fib = function (n) {
@@ -148,6 +146,7 @@ var minDistance = function (word1, word2) {
 // console.log(res)
 
 // 53. 最大子数组和
+// 剑指 Offer 42. 连续子数组的最大和
 // 给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 // 输入：nums = [-2,1,-3,4,-1,2,1,-5,4] 输出：6 解释：连续子数组 [4,-1,2,1] 的和最大，为 6 。
 var maxSubArray = function (nums) {
@@ -176,7 +175,57 @@ var maxSubArray1 = function (nums) {
     return res
 
 }
+// const res = maxSubArray1([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+// console.log(res)
 
-const res = maxSubArray1([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+// 1143. 最长公共子序列
+// 剑指 Offer II 095. 最长公共子序列
+// 给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。
+
+// 输入：text1 = "abcde", text2 = "ace" 输出：3
+var longestCommonSubsequence = function (text1, text2) {
+    const len1 = text1.length
+    const len2 = text2.length
+    if (!len1 || !len2) return 0
+    const memo = Array(len1).fill(0).map(i => Array(len2).fill(0))
+    const dp = (text1, i, text2, j) => {
+        if (i >= len1) return 0
+        if (j >= len2) return 0
+        if (memo[i][j] !== 0) {
+            return memo[i][j]
+        }
+        if (text1[i] === text2[j]) {
+            memo[i][j] = dp(text1, i + 1, text2, j + 1) + 1
+        } else {
+            memo[i][j] = Math.max(
+                dp(text1, i, text2, j + 1),
+                dp(text1, i + 1, text2, j),
+            )
+        }
+        return memo[i][j]
+    }
+    dp(text1, 0, text2, 0)
+    return memo[0][0]
+
+};
+const longestCommonSubsequence1 = (text1, text2) => {
+    const len1 = text1.length
+    const len2 = text2.length
+    if (!len1 || !len2) return 0
+    const dp = Array(len1 + 1).fill(0).map(i => Array(len2 + 1).fill(0))
+
+    for (let i = 1; i <= len1; i++) {
+        for (let j = 1; j <= len2; j++) {
+            if (text1[i - 1] === text2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
+            }
+        }
+    }
+    return dp[len1][len2]
+}
+const res = longestCommonSubsequence1('babcde', 'ace')
 console.log(res)
-// 剑指 Offer 42. 连续子数组的最大和
+// 583. 两个字符串的删除操作
+// 712. 两个字符串的最小ASCII删除和
