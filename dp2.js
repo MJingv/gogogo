@@ -375,5 +375,5 @@ var longestPalindromeSubseq = function (s) {
     dp(s, 0, len - 1)
     return memo
 };
-const res = longestPalindromeSubseq('bbb')
-console.log(res)
+// const res = longestPalindromeSubseq('bbb')
+// console.log(res)
