@@ -1,4 +1,5 @@
 // 416. 分割等和子集
+// 剑指 Offer II 101. 分割等和子集
 // 给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
 // 输入：nums = [1,5,11,5] 输出：true 解释：数组可以分割成 [1, 5, 5] 和 [11] 。
 var canPartition = function (nums) {
@@ -41,7 +42,25 @@ const canPartition1 = (nums) => {
     return dp[sum] || false
 }
 
-const res = canPartition1([1, 5, 11, 5])
-console.log(res)
+// const res = canPartition1([1, 5, 11, 5])
+// console.log(res)
 
-// 剑指 Offer II 101. 分割等和子集
+// 518. 零钱兑换 II
+// 给你一个整数数组 coins 表示不同面额的硬币，另给一个整数 amount 表示总金额。请你计算并返回可以凑成总金额的硬币组合数。如果任何硬币组合都无法凑出总金额，返回 0 。假设每一种面额的硬币有无限个。
+// 输入：amount = 5, coins = [1, 2, 5] 输出：4 解释：有四种方式可以凑成总金额： 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1
+var change = function (amount, coins) {
+    const len = coins.length
+    if (!len) return 0
+    const dp = Array(amount + 1).fill(0)
+    dp[0] = 1
+    for (let i = 0; i < len; i++) {
+        for (let j = 1; j <= amount; j++) {
+            if (j >= coins[i]) {
+                dp[j] = dp[j] + dp[j - coins[i]]
+            }
+        }
+    }
+    return dp[amount]
+};
+const res = change(5, [1, 2, 5])
+console.log(res)
