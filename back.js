@@ -62,5 +62,40 @@ var change = function (amount, coins) {
     }
     return dp[amount]
 };
-const res = change(5, [1, 2, 5])
+// const res = change(5, [1, 2, 5])
+// console.log(res)
+
+// 494. 目标和
+// 剑指 Offer II 102. 加减的目标值
+
+// 给你一个整数数组 nums 和一个整数 target 。向数组中的每个整数前添加 '+' 或 '-' ，然后串联起所有整数，可以构造一个 表达式
+// 输入：nums = [1,1,1,1,1], target = 3 输出：5
+var findTargetSumWays = function (nums, target) {
+    // 加的和a，减的和b
+    // a-b=target
+    // a=(t+s)/2
+
+    const len = nums.length
+    if (!len) return 0
+
+    const sum = nums.reduce((a, b) => a + b)
+    if ((target + sum) % 2) return 0
+    const t = (target + sum) / 2
+
+    const dp = Array(sum + 1).fill(0)
+    dp[0] = 1
+    const back = (t, nums) => {
+        for (let i = 0; i < len; i++) {
+            for (let j = t; j >= 0; j--) {
+                if (j >= nums[i]) {
+                    dp[j] = dp[j] + dp[j - nums[i]]
+                }
+            }
+        }
+    }
+
+    back(t, nums)
+    return dp[t]||0
+};
+const res = findTargetSumWays([1, 1, 1, 1, 1], 3)
 console.log(res)
