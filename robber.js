@@ -1,3 +1,12 @@
+class TreeNode {
+    constructor(val) {
+        this.val = val
+        this.left = null
+        this.right = null
+    }
+}
+
+
 // 198. 打家劫舍
 // 输入：[1,2,3,1] 输出：4
 var rob = function (nums) {
@@ -44,13 +53,43 @@ const rob2 = (nums) => {
         return dp[n]
     }
     return Math.max(hepler(0, len - 2, nums), hepler(1, len - 1, nums))
-
-
 }
-const res = rob2([1, 2, 3])
-console.log(res)
+// const res = rob2([1, 2, 3])
+// console.log(res)
 
 // 337. 打家劫舍 III
+// 输入: root = [3,2,3,null,3,null,1] 输出: 7 解释: 小偷一晚能够盗取的最高金额 3 + 3 + 1 = 7
+const rob3 = (root) => {
+    const memo = new Map()
+    const helper = (root) => {
+        if (!root) return 0
+        if (memo.has(root)) return memo.get(root)
+        let hasRoot = root.val
+        let hasNoRoot = 0
+
+        hasNoRoot = rob3(root.left) + rob3(root.right)
+        if (root.left) {
+            hasRoot += rob3(root.left.left) + rob3(root.left.right)
+        }
+        if (root.right) {
+            hasRoot += rob3(root.right.left) + rob3(root.right.right)
+        }
+        const res = Math.max(hasNoRoot, hasRoot)
+        memo.set(root, res)
+        return res
+    }
+    return helper(root)
+
+}
+
+const t = new TreeNode(3)
+t.left = new TreeNode(2)
+t.right = new TreeNode(3)
+t.left.right = new TreeNode(3)
+t.right.right = new TreeNode(1)
+
+const res = rob3(t)
+console.log(res)
 
 
 // 剑指 Offer II 089. 房屋偷盗
