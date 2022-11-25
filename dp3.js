@@ -83,5 +83,42 @@ const calculateMinimumHP1 = (dungeon) => {
     return dp
 
 }
-const res = calculateMinimumHP1([[-2, -3, 3], [-5, -10, 1], [10, 30, -5]])
+// const res = calculateMinimumHP1([[-2, -3, 3], [-5, -10, 1], [10, 30, -5]])
+// console.log(res)
+
+// 514. 自由之路
+// 输入: ring = "godding", key = "gd" 输出: 4
+var findRotateSteps = function (ring, key) {
+
+};
+// const res = findRotateSteps("godding", 'gd')
+// console.log(res)
+
+// 787. K 站中转内最便宜的航班
+// 输入: n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]] src = 0, dst = 2, k = 1 输出: 200
+var findCheapestPrice = function (n, flights, src, dst, k) {
+
+
+
+};
+// const res = findCheapestPrice(3, [[0, 1, 100], [1, 2, 100], [0, 2, 500]], 0, 2, 1)
+// console.log(res)
+
+
+// 486. 预测赢家
+// 输入：nums = [1,5,2] 输出：false
+var PredictTheWinner = function (nums) {
+
+};
+// const res = PredictTheWinner([1, 5, 2])
+// console.log(res)
+
+
+// 877. 石子游戏
+// 输入：piles = [5,3,4,5] 输出：true
+var stoneGame = function (piles) {
+
+};
+const res = stoneGame([1, 5, 2])
 console.log(res)
+
