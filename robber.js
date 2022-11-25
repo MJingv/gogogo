@@ -23,10 +23,32 @@ const rob1 = (nums) => {
     }
     return dp[len - 1]
 }
-const res = rob1([1, 2, 3, 1], 4)
-console.log(res)
+// const res = rob1([1, 2, 3, 1], 4)
+// console.log(res)
 
 // 213. 打家劫舍 II
+// 输入：nums = [2,3,2] 输出：3 解释：你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）
+const rob2 = (nums) => {
+    const len = nums.length
+    if (!len) return 0
+    if (len === 1) return nums[0]
+
+    const hepler = (m, n, nums) => {
+        if (m === n) return nums[m]
+        const dp = Array(len).fill(0)
+        dp[m] = nums[m]
+        dp[m + 1] = Math.max(nums[m], nums[m + 1])
+        for (let i = m + 2; i <= n; i++) {
+            dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i])
+        }
+        return dp[n]
+    }
+    return Math.max(hepler(0, len - 2, nums), hepler(1, len - 1, nums))
+
+
+}
+const res = rob2([1, 2, 3])
+console.log(res)
 
 // 337. 打家劫舍 III
 
