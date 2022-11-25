@@ -13,7 +13,17 @@ var rob = function (nums) {
     dp(nums, len - 1)
     return memo[len - 1]
 };
-const res = rob([1, 2, 3, 1], 4)
+const rob1 = (nums) => {
+    const len = nums.length
+    if (!len) return 0
+    const dp = [nums[0], Math.max(nums[0], nums[1])]
+
+    for (let i = 2; i < len; i++) {
+        dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1])
+    }
+    return dp[len - 1]
+}
+const res = rob1([1, 2, 3, 1], 4)
 console.log(res)
 
 // 213. 打家劫舍 II
