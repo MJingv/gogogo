@@ -1,6 +1,16 @@
 // 121. 买卖股票的最佳时机
 // 输入：[7,1,5,3,6,4] 输出：5
 var maxProfit = function (prices) {
+    const len = prices.length
+    if (!len) return 0
+    const res = []
+    for (let i = 0; i < len; i++) {
+        for (let j = len - 1; j >= 0; j--) {
+
+
+        }
+    }
+
 
 };
 const res = maxProfit([7, 1, 5, 3, 6, 4])
@@ -8,7 +18,7 @@ console.log(res)
 
 // 122. 买卖股票的最佳时机 II
 // 输入：prices = [7,1,5,3,6,4] 输出：7
-var maxProfit1 = function(prices) {
+var maxProfit1 = function (prices) {
 
 };
 
