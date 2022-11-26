@@ -60,6 +60,7 @@ const rob2 = (nums) => {
 // 337. 打家劫舍 III
 // 输入: root = [3,2,3,null,3,null,1] 输出: 7 解释: 小偷一晚能够盗取的最高金额 3 + 3 + 1 = 7
 const rob3 = (root) => {
+    // time out
     const memo = new Map()
     const helper = (root) => {
         if (!root) return 0
@@ -82,13 +83,28 @@ const rob3 = (root) => {
 
 }
 
+const rob4 = (root) => {
+    const helper = (node) => {
+        let res = [0, 0]
+        if (!node) return res
+        const left = helper(node.left)
+        const right = helper(node.right)
+        res[0] = Math.max(...left) + Math.max(...right)
+        res[1] = node.val + left[0] + right[0]
+        return res
+    }
+    const res = helper(root)
+    return Math.max(res[0], res[1])
+}
+
+
 const t = new TreeNode(3)
 t.left = new TreeNode(2)
 t.right = new TreeNode(3)
 t.left.right = new TreeNode(3)
 t.right.right = new TreeNode(1)
 
-const res = rob3(t)
+const res = rob4(t)
 console.log(res)
 
 
