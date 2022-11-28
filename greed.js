@@ -16,7 +16,7 @@ var eraseOverlapIntervals = function (intervals) {
     for (let i = 1; i < len; i++) {
         if (endUp[i][0] < end) {
             res++
-        }else {
+        } else {
             end = intervals[i][1]
         }
     }
@@ -24,8 +24,26 @@ var eraseOverlapIntervals = function (intervals) {
     return res
 
 };
-const res = eraseOverlapIntervals([[1,100],[11,22],[1,11],[2,12]])
-console.log(res)
+// const res = eraseOverlapIntervals([[1,100],[11,22],[1,11],[2,12]])
+// console.log(res)
 
 
 // 452. 用最少数量的箭引爆气球
+var findMinArrowShots = function (points) {
+    const len=points.length
+    if (!len) return 0
+    points.sort((a, b) => {
+        return a[1] - b[1]
+    })
+    let res=1
+    let end = points[0][1]
+    for (let i = 1; i < len; i++) {
+        if (end < points[i][0]) {
+            end = points[i][1]
+            res++
+        }
+    }
+    return res
+};
+const res = findMinArrowShots([[10, 16], [2, 8], [1, 6], [7, 12]])
+console.log(res)
