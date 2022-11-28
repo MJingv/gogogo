@@ -103,5 +103,50 @@ var jump = function (nums) {
     return res
 
 };
-const res = jump([2, 3, 1, 1, 4])
+// const res = jump([2, 3, 1, 1, 4])
+// console.log(res)
+
+
+// 1024. 视频拼接
+// 输入：clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], time = 10 输出：3
+var videoStitching = function (clips, time) {
+    const len = clips.length
+    if (!len || !time) return -1
+    clips.sort((a, b) => a[0] - b[0])
+    if (clips[0][0] !== 0) return -1
+    let res = 0, curEnd = 0, nextEnd = 0, i = 0
+    while (i < len && clips[i][0] <= curEnd) {
+        while (i < len && clips[i][0] <= curEnd) {
+            nextEnd = Math.max(nextEnd, clips[i][1])
+            i++
+        }
+        res++
+        curEnd = nextEnd
+        if (curEnd >= time) {
+            return res
+        }
+    }
+    return -1
+
+};
+// const res = videoStitching([[0, 2], [4, 6], [8, 10], [1, 9], [1, 5], [5, 9]], 10)
+// console.log(res)
+
+// 输入：s = "abc", t = "ahbgdc"
+var isSubsequence = function (s, t) {
+    if (!s) return true
+    if (!t) return false
+    let j = 0
+
+    for (let i = 0; i < t.length; i++) {
+        if (t[i] === s[j]) {
+            j++
+        }
+    }
+    if (j === s.length) return true
+    return false
+
+
+};
+const res = isSubsequence('abc', 'ahbgd')
 console.log(res)
