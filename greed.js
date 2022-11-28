@@ -148,5 +148,26 @@ var isSubsequence = function (s, t) {
 
 
 };
-const res = isSubsequence('abc', 'ahbgd')
+// const res = isSubsequence('abc', 'ahbgd')
+// console.log(res)
+
+// 402. 移掉K位数字
+// 输入：num = "1432219", k = 3
+var removeKdigits = function (num, k) {
+    const len = num.length
+    if (k >= len) return '0'
+    const stack = []
+    for (let c of num) {
+        while (k && stack[stack.length - 1] > c) {
+            stack.pop()
+            k--
+        }
+        if (!stack.length && c === '0') continue
+        stack.push(c)
+    }
+    k && stack.splice(-k)
+    return stack.join('')
+
+};
+const res = removeKdigits('1432219', 3)
 console.log(res)
