@@ -36,7 +36,7 @@ const eraseOverlapIntervals1 = (intervals) => {
     for (let i = 1; i < len; i++) {
         if (intervals[i][0] < end) {
             res++
-        }else {
+        } else {
             end = intervals[i][1]
         }
     }
@@ -44,8 +44,8 @@ const eraseOverlapIntervals1 = (intervals) => {
     return res
 }
 
-const res = eraseOverlapIntervals1([[1, 100], [11, 22], [1, 11], [2, 12]])
-console.log(res)
+// const res = eraseOverlapIntervals1([[1, 100], [11, 22], [1, 11], [2, 12]])
+// console.log(res)
 
 
 // 452. 用最少数量的箭引爆气球
@@ -66,4 +66,30 @@ var findMinArrowShots = function (points) {
     return res
 };
 // const res = findMinArrowShots([[10, 16], [2, 8], [1, 6], [7, 12]])
+// console.log(res)
+
+// 55. 跳跃游戏
+var canJump = function (nums) {
+    const len = nums.length
+    if (!len) return true
+    let farthest = 0
+    for (let i = 0; i < len - 1; i++) {
+        farthest = Math.max(farthest, i + nums[i])
+        if (farthest <= i) {
+            return false
+        }
+    }
+    return farthest >= len - 1
+
+
+};
+const res = canJump([3, 2, 1, 0, 4])
+console.log(res)
+
+// 45. 跳跃游戏 II
+// 输入: nums = [2,3,1,1,4] 输出: 2
+var jump = function (nums) {
+
+};
+// const res = jump([2, 3, 1, 1, 4])
 // console.log(res)
