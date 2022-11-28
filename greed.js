@@ -83,13 +83,25 @@ var canJump = function (nums) {
 
 
 };
-const res = canJump([3, 2, 1, 0, 4])
-console.log(res)
+// const res = canJump([3, 2, 1, 0, 4])
+// console.log(res)
 
 // 45. 跳跃游戏 II
 // 输入: nums = [2,3,1,1,4] 输出: 2
 var jump = function (nums) {
+    const len = nums.length
+    if (!len) return
+    let farthest = 0
+    let res = 0, end = 0
+    for (let i = 0; i < len - 1; i++) {
+        farthest = Math.max(nums[i] + i, farthest)
+        if (end === i) {
+            res++
+            end = farthest
+        }
+    }
+    return res
 
 };
-// const res = jump([2, 3, 1, 1, 4])
-// console.log(res)
+const res = jump([2, 3, 1, 1, 4])
+console.log(res)
