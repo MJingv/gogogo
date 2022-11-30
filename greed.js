@@ -169,5 +169,26 @@ var removeKdigits = function (num, k) {
     return stack.join('')
 
 };
-const res = removeKdigits('1432219', 3)
+// const res = removeKdigits('1432219', 3)
+// console.log(res)
+
+// 134. 加油站
+// 输入: gas = [1,2,3,4,5], cost = [3,4,5,1,2] 输出: 3
+var canCompleteCircuit = function (gas, cost) {
+    const len = gas.length
+    if (!len) return -1
+    let res = 0, i = 0, sum = 0, cur = 0
+    while (i < len) {
+        sum += gas[i] - cost[i]
+        cur += gas[i] - cost[i]
+        if (cur < 0) {
+            cur = 0
+            res = i + 1
+        }
+        console.log(sum, cur, res, i)
+        i++
+    }
+
+};
+const res = canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])
 console.log(res)
