@@ -190,5 +190,53 @@ var canCompleteCircuit = function (gas, cost) {
     return sum >= 0 ? res : -1
 
 };
-const res = canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])
+// const res = canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])
+// console.log(res)
+
+
+// 738. 单调递增的数字
+// 输入: n = 332 输出: 299
+var monotoneIncreasingDigits = function (n) {
+    if (n < 10) return n
+    const l = n.toString().split('')
+    const len = l.length
+    for (let i = 0; i < len - 1; i++) {
+        if (l[i + 1] < l[i]) {
+            l[i]--
+            for (let j = i + 1; j < len; j++) {
+                l[j] = 9
+            }
+            i = -1 //巧啊
+        }
+
+    }
+    return l.join('')
+
+};
+// const res = monotoneIncreasingDigits(332)
+// console.log(res)
+
+// 1658. 将 x 减到 0 的最小操作数
+// 求 和为sum - x 的最长子数组
+var minOperations = function (nums, x) {
+    const len = nums.length
+    const target = nums.reduce((a, b) => a + b) - x
+    let l = 0, r = 0, cur = 0, max = 0
+    while (r < len) {
+        cur += nums[r]
+        while (cur > target) {
+            cur -= nums[l++]
+        }
+        if (cur === target) {
+            max = Math.max(max, l - r + 1)
+        }
+        r++
+
+    }
+    return max ? len - max : -1
+
+
+};
+// 输入：nums = [3,2,20,1,1,3], x = 10 输出：5
+const res = minOperations([3, 2, 20, 1, 1, 3], 10)
 console.log(res)
