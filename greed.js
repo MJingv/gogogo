@@ -234,9 +234,30 @@ var minOperations = function (nums, x) {
 
     }
     return max ? len - max : -1
-
-
 };
 // 输入：nums = [3,2,20,1,1,3], x = 10 输出：5
-const res = minOperations([3, 2, 20, 1, 1, 3], 10)
+// const res = minOperations([3, 2, 20, 1, 1, 3], 10)
+// console.log(res)
+
+
+// 881. 救生艇
+// 输入：people = [3,2,2,1], limit = 3 输出：3 解释：3 艘船分别载 (1, 2), (2) 和 (3)
+var numRescueBoats = function (people, limit) {
+    const len = people.length
+    people.sort((a, b) => a - b)
+    let i = 0, j = len - 1, res = 0
+    while (i <= j) {
+        if (people[i] + people[j] <= limit) {
+            i++
+            j--
+            res++
+        } else {
+            j--
+            res++
+        }
+
+    }
+    return res
+};
+const res = numRescueBoats([7, 8], 8)
 console.log(res)
