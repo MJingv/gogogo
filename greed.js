@@ -185,9 +185,9 @@ var canCompleteCircuit = function (gas, cost) {
             cur = 0
             res = i + 1
         }
-        console.log(sum, cur, res, i)
         i++
     }
+    return sum >= 0 ? res : -1
 
 };
 const res = canCompleteCircuit([5, 1, 2, 3, 4], [4, 4, 1, 5, 1])
