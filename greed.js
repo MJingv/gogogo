@@ -255,9 +255,34 @@ var numRescueBoats = function (people, limit) {
             j--
             res++
         }
-
     }
     return res
 };
-const res = numRescueBoats([7, 8], 8)
+// const res = numRescueBoats([7, 8], 8)
+// console.log(res)
+
+// 621. 任务调度器
+var leastInterval = function (tasks, n) {
+    // （桶-1）*（n+1）+最后的任务
+    const len = tasks.length
+    if (n === 0) return len
+    const map = new Map()
+    let res = 0, last = 0
+    tasks.map(i => {
+        if (map.has(i)) {
+            map.set(i, map.get(i) + 1)
+        } else {
+            map.set(i, 1)
+        }
+    })
+    const counts = [...map].map(i => i[1]).sort((a, b) => b - a) //桶大小升序
+
+    for (let c of counts) {
+        if (c === counts[0]) last++
+    }
+    res = (counts[0] - 1) * (n + 1) + last
+    return Math.max(res, len)
+};
+const res = leastInterval(["A", "A", "A", "B", "B", "B"], 2)//输出：8
 console.log(res)
+
