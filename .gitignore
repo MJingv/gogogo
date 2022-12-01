@@ -17,3 +17,4 @@ yarn-error.log
 .docz
 .docm
 build
+/makeTable/img/

@@ -15,7 +15,7 @@ const puppeteer = require('puppeteer');
     const captureScreenshotsOfElements = async (elements) => {
         let i = 0;
         for (const element of elements) {
-            await element.screenshot({ path: `img/${i}.jpeg`,quality:100 });
+            await element.screenshot({ path: `img/${i}.jpeg`,quality:20 });
             i += 1;
         }
     };
