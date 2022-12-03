@@ -144,3 +144,82 @@ var nthUglyNumber = function (n) {
 // [1, 2, 3, 4, 5, 6, 8, 9, 10, 12]
 // const res = nthUglyNumber(10)//12
 // console.log(res)
+
+
+// 120. 三角形最小路径和
+// 输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]] 输出：11
+var minimumTotal = function (triangle) {
+    const len = triangle.length
+    if (len === 1) return triangle[0]
+    const dp = Array(len).fill(Infinity).map(i => Array(len).fill(Infinity))
+    dp[0][0] = triangle[0][0]
+    let min = Infinity
+    for (let i = 1; i < len; i++) {
+        dp[i][0] = dp[i - 1][0] + triangle[i][0]
+    }
+
+    for (let i = 1; i < len; i++) {
+        for (let j = 1; j < i + 1; j++) {
+            dp[i][j] = Math.min(dp[i - 1][j], dp[i - 1][j - 1]) + triangle[i][j]
+            if (i === len - 1) {
+                min = Math.min(dp[i][j], min)
+            }
+
+        }
+    }
+    return min
+
+};
+// const res = minimumTotal([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
+// console.log(res)
+
+// 343. 整数拆分
+// 输入: n = 10 输出: 36 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
+var integerBreak = function (n) {
+    const dp = Array(n + 1).fill(0)
+    dp[1] = 1
+    dp[2] = 1
+    for (let i = 3; i <= n; i++) {
+        for (let j = i - 1; j >= 1; j--) {
+            dp[i] = Math.max(dp[i], dp[i - j] * j, (i - j) * j)
+        }
+
+    }
+    return dp[n]
+};
+// const res = integerBreak(10)
+// console.log(res)
+
+// 698. 划分为k个相等的子集
+// 输入： nums = [4, 3, 2, 3, 5, 2, 1], k = 4 输出： True 说明： 有可能将其分成 4 个子集（5），（1,4），（2,3），（2,3）等于总和。
+// 输入: nums = [1,2,3,4], k = 3 输出: false
+var canPartitionKSubsets = function (nums, k) {
+    const len = nums.length
+    const sum = nums.reduce((a, b) => a + b)
+    if (sum % k) return false
+    const val = sum / k
+    const map = new Map()
+    nums.map(i => {
+        if (map.get(i)) {
+            map.set(i, map.get(i) + 1)
+        } else {
+            map.set(i, 1)
+        }
+    })
+    let n = k
+
+    for (let item of map) {
+        if (item[0] > val) return false
+        if (item[0] === val) n--
+        if (map.get(val - item[0])) {
+            map.set(item[0], map.get(item[0]) - 1)
+            map.set(val - item[0], map.get(val - item[0]) - 1)
+            n--
+        }
+
+    }
+
+    return n === 0
+};
+const res = canPartitionKSubsets([1,1,1,1,2,2,2,2], 2)
+console.log(res)
