@@ -200,7 +200,7 @@ var canPartitionKSubsets = function (nums, k) {
     const target = sum / k
     nums.sort((a, b) => b - a)
     if (nums[0] > target) return false
-    const bucket = Array(k)
+    const bucket = Array(k).fill(0)
 
 
     const backtrack = (index = 0) => {
@@ -208,6 +208,7 @@ var canPartitionKSubsets = function (nums, k) {
         for (let i = 0; i < k; i++) {
             //第几个桶
             if (bucket[i] + nums[index] > target) continue
+            if (bucket[i] === bucket[i - 1]) continue
             bucket[i] += nums[index]
             if (backtrack(index + 1)) return true
             bucket[i] -= nums[index]
@@ -217,5 +218,5 @@ var canPartitionKSubsets = function (nums, k) {
     return backtrack() //第几个求
 
 };
-const res = canPartitionKSubsets([1, 1, 1, 1, 2, 2, 2, 2], 2)
+const res = canPartitionKSubsets([2, 2, 2, 2, 3, 4, 5], 4)
 console.log(res)
