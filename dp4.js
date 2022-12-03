@@ -197,29 +197,25 @@ var canPartitionKSubsets = function (nums, k) {
     const len = nums.length
     const sum = nums.reduce((a, b) => a + b)
     if (sum % k) return false
-    const val = sum / k
-    const map = new Map()
-    nums.map(i => {
-        if (map.get(i)) {
-            map.set(i, map.get(i) + 1)
-        } else {
-            map.set(i, 1)
-        }
-    })
-    let n = k
+    const target = sum / k
+    nums.sort((a, b) => b - a)
+    if (nums[0] > target) return false
+    const bucket = Array(k)
 
-    for (let item of map) {
-        if (item[0] > val) return false
-        if (item[0] === val) n--
-        if (map.get(val - item[0])) {
-            map.set(item[0], map.get(item[0]) - 1)
-            map.set(val - item[0], map.get(val - item[0]) - 1)
-            n--
-        }
 
+    const backtrack = (index = 0) => {
+        if (index === len) return true
+        for (let i = 0; i < k; i++) {
+            //第几个桶
+            if (bucket[i] + nums[index] > target) continue
+            bucket[i] += nums[index]
+            if (backtrack(index + 1)) return true
+            bucket[i] -= nums[index]
+        }
+        return false
     }
+    return backtrack() //第几个求
 
-    return n === 0
 };
-const res = canPartitionKSubsets([1,1,1,1,2,2,2,2], 2)
+const res = canPartitionKSubsets([1, 1, 1, 1, 2, 2, 2, 2], 2)
 console.log(res)
