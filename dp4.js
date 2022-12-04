@@ -252,5 +252,22 @@ var minCostClimbingStairs = function (cost) {
     }
     return dp[len]
 };
-const res = minCostClimbingStairs([10, 15, 20])//15
+// const res = minCostClimbingStairs([10, 15, 20])//15
+// console.log(res)
+
+
+//338. 比特位计数
+// 输入：n = 2
+// 输出：[0,1,1]
+// 解释：0 --> 0 1 --> 1 2 --> 10
+var countBits = function (n) {
+    const dp = Array(n + 1).fill(0)
+
+    for (let i = 1; i <= n; i++) {
+        dp[i] = Number(i).toString(2).split('').filter(i => i === '1').length
+    }
+    return dp
+
+};
+const res = countBits(2)
 console.log(res)
