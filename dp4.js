@@ -262,12 +262,23 @@ var minCostClimbingStairs = function (cost) {
 // 解释：0 --> 0 1 --> 1 2 --> 10
 var countBits = function (n) {
     const dp = Array(n + 1).fill(0)
-
     for (let i = 1; i <= n; i++) {
         dp[i] = Number(i).toString(2).split('').filter(i => i === '1').length
     }
     return dp
 
 };
-const res = countBits(2)
+var countBits1 = function (n) {
+    const dp = Array(n + 1).fill(0)
+    for (let i = 1; i <= n; i++) {
+        if (i % 2) {
+            dp[i] = dp[(i - 1) / 2] + 1
+        } else {
+            dp[i] = dp[i / 2]
+        }
+    }
+    return dp
+
+};
+const res = countBits1(5)
 console.log(res)
