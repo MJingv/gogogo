@@ -240,36 +240,3 @@ var waysToChange = function (n) {
 // const res = waysToChange(10)
 // console.log(res)
 
-// LCP 06 拿硬币
-// 输入：[4,2,1]输出：4
-var minCount = function (coins) {
-    const len = coins.length
-    let res = 0
-    coins.map(i => {
-        if (i > 0) {
-            if (i <= 2) {
-                res++
-            } else {
-                const n = Math.floor(i / 2)
-                res += n
-                if (i % 2) res++
-            }
-        }
-    })
-    return res
-};
-// const res = minCount([4, 2, 1])
-// console.log(res)
-
-// 441 排列硬币
-var arrangeCoins = function (n) {
-    if (n === 1) return 1
-    let sum = 0
-    for (let i = 1; i <= n; i++) {
-        sum += i
-        if (n === sum) return i
-        if (n < sum) return i - 1
-    }
-};
-const res = arrangeCoins(3)
-console.log(res)
