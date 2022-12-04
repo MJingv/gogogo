@@ -78,5 +78,29 @@ var smallerNumbersThanCurrent = function (nums) {
     return res
 
 };
-const res = smallerNumbersThanCurrent([8, 1, 2, 2, 3])
+// const res = smallerNumbersThanCurrent([8, 1, 2, 2, 3])
+// console.log(res)
+
+
+// 输入：matrix = [[3,7,8],[9,11,13],[15,16,17]] 输出：[15]
+var luckyNumbers = function (matrix) {
+    const [m, n] = [matrix.length, matrix[0].length]
+    const [row, col] = [Array(m).fill(Infinity), Array(n).fill(0)]
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            row[i] = Math.min(matrix[i][j], row[i])
+            col[j] = Math.max(matrix[i][j], col[j])
+        }
+    }
+    const res = []
+    row.map(i => {
+        col.map(j => {
+            if (i === j) res.push(i)
+        })
+    })
+
+
+    return res
+};
+const res = luckyNumbers([[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]])
 console.log(res)
