@@ -288,7 +288,7 @@ var countBits1 = function (n) {
 // 输出：11
 var mincostTickets = function (days, costs) {
     const [len, min, max] = [days.length, days[0], days[days.length - 1]]
-    const dp = Array(365 + 30).fill(0) // 从i到end花的最少钱
+    const dp = Array(366 + 30).fill(0) // 从i到end花的最少钱
     dp[1] = costs[0]
     for (let i = len - 1, d = max; d >= min; d--) {
         if (d === days[i]) {
@@ -301,7 +301,7 @@ var mincostTickets = function (days, costs) {
         }
 
     }
-    return dp
+    return dp[min]
 };
 const res = mincostTickets([1, 4, 6, 7, 8, 20], [2, 7, 15])
 console.log(res)
