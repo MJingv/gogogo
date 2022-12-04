@@ -258,5 +258,18 @@ var minCount = function (coins) {
     })
     return res
 };
-const res = minCount([4, 2, 1])
+// const res = minCount([4, 2, 1])
+// console.log(res)
+
+// 441 排列硬币
+var arrangeCoins = function (n) {
+    if (n === 1) return 1
+    let sum = 0
+    for (let i = 1; i <= n; i++) {
+        sum += i
+        if (n === sum) return i
+        if (n < sum) return i - 1
+    }
+};
+const res = arrangeCoins(3)
 console.log(res)
