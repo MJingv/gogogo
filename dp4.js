@@ -280,5 +280,28 @@ var countBits1 = function (n) {
     return dp
 
 };
-const res = countBits1(5)
+// const res = countBits1(5)
+// console.log(res)
+
+// 983. 最低票价
+// 输入：days = [1,4,6,7,8,20], costs = [2,7,15] // 1 7 30
+// 输出：11
+var mincostTickets = function (days, costs) {
+    const [len, min, max] = [days.length, days[0], days[days.length - 1]]
+    const dp = Array(365 + 30).fill(0) // 从i到end花的最少钱
+    dp[1] = costs[0]
+    for (let i = len - 1, d = max; d >= min; d--) {
+        if (d === days[i]) {
+            // 出门
+            dp[d] = Math.min(dp[d + 1] + costs[0], dp[d + 7] + costs[1], dp[d + 30] + costs[2])
+            i--
+        } else {
+            // 不出门
+            dp[d] = dp[d + 1]
+        }
+
+    }
+    return dp
+};
+const res = mincostTickets([1, 4, 6, 7, 8, 20], [2, 7, 15])
 console.log(res)
