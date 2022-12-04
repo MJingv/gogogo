@@ -218,5 +218,45 @@ var canPartitionKSubsets = function (nums, k) {
     return backtrack() //第几个求
 
 };
-const res = canPartitionKSubsets([2, 2, 2, 2, 3, 4, 5], 4)
+// const res = canPartitionKSubsets([2, 2, 2, 2, 3, 4, 5], 4)
+// console.log(res)
+
+// 面试题 08.11. 硬币
+// 输入: n = 10 输出：4 解释: 有四种方式可以凑成总金额: 10=10 10=5+5 10=5+1+1+1+1+1 10=1+1+1+1+1+1+1+1+1+1
+var waysToChange = function (n) {
+    const coins = [1, 5, 10, 25]
+    const len = coins.length
+    const dp = Array(n + 1).fill(0)// i元多少种方式
+    dp[0] = 1
+    for (let j = 0; j < len; j++) {
+        for (let i = 1; i <= n; i++) {
+            if (i >= coins[j]) {
+                dp[i] = (dp[i] + dp[i - coins[j]]) % 1000000007;
+            }
+        }
+    }
+    return dp[n]
+};
+// const res = waysToChange(10)
+// console.log(res)
+
+// LCP 06 拿硬币
+// 输入：[4,2,1]输出：4
+var minCount = function (coins) {
+    const len = coins.length
+    let res = 0
+    coins.map(i => {
+        if (i > 0) {
+            if (i <= 2) {
+                res++
+            } else {
+                const n = Math.floor(i / 2)
+                res += n
+                if (i % 2) res++
+            }
+        }
+    })
+    return res
+};
+const res = minCount([4, 2, 1])
 console.log(res)
