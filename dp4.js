@@ -303,5 +303,31 @@ var mincostTickets = function (days, costs) {
     }
     return dp[min]
 };
-const res = mincostTickets([1, 4, 6, 7, 8, 20], [2, 7, 15])
+// const res = mincostTickets([1, 4, 6, 7, 8, 20], [2, 7, 15])
+// console.log(res)
+
+// 1277. 统计全为 1 的正方形子矩阵
+var countSquares = function (matrix) {
+    const [m, n] = [matrix.length, matrix[0].length]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0)) // 以0-i为边长的正方形
+    let res = 0
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (i === 0 || j === 0) {
+                dp[i][j] = matrix[i][j]
+            } else if (matrix[i][j] === 0) {
+                dp[i][j] = 0
+            } else if (matrix[i][j] === 1) {
+                dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+            }
+            res += dp[i][j]
+        }
+    }
+    return res
+};
+const res = countSquares([
+    [0, 1, 1, 1],
+    [1, 1, 1, 1],
+    [0, 1, 1, 1]
+]) //15
 console.log(res)
