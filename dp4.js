@@ -325,9 +325,68 @@ var countSquares = function (matrix) {
     }
     return res
 };
-const res = countSquares([
-    [0, 1, 1, 1],
-    [1, 1, 1, 1],
-    [0, 1, 1, 1]
-]) //15
+// const res = countSquares([
+//     [0, 1, 1, 1],
+//     [1, 1, 1, 1],
+//     [0, 1, 1, 1]
+// ]) //15
+// console.log(res)
+
+
+var largest1BorderedSquare = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    let res = 0
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (i === 0 || j === 0) {
+                dp[i][j] = grid[i][j]
+
+            } else if (dp[i - 1][j] || dp[i][j - 1] || grid[i][j]) {
+                dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + 1
+            }
+            res = Math.max(dp[i][j], res)
+        }
+    }
+    console.log(dp)
+
+    return res * res
+};
+// const res = largest1BorderedSquare([
+//         [1, 1, 1],
+//         [1, 0, 1],
+//         [1, 1, 1]
+//     ]
+// )
+// console.log(res)
+
+// 1314. 矩阵区域和
+var matrixBlockSum = function (mat, k) {
+
+};
+// const res = matrixBlockSum([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1)
+// console.log(res)
+
+// 688. 骑士在棋盘上的概率
+var knightProbability = function (n, k, row, column) {
+
+};
+// const res = knightProbability(3, 2, 0, 0)
+// console.log(res)
+
+var combinationSum4 = function (nums, target) {
+    const len = nums.length
+    const dp = Array(target + 1).fill(0)
+    dp[0] = 1
+    for (let i = 1; i <= target; i++) {
+        for (let j = 0; j < len; j++) {
+            if (i >= nums[j]) {
+                dp[i] += dp[i - nums[j]]
+            }
+        }
+    }
+    return dp[target]
+
+};
+const res = combinationSum4([1, 2, 3], 4)
 console.log(res)
