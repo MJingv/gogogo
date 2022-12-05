@@ -388,5 +388,24 @@ var combinationSum4 = function (nums, target) {
     return dp[target]
 
 };
-const res = combinationSum4([1, 2, 3], 4)
+// const res = combinationSum4([1, 2, 3], 4)
+// console.log(res)
+
+// 1262. 可被三整除的最大和
+var maxSumDivThree = function (nums) {
+    // 放弃
+    // 数组和为sum,被删数字和为del,则需del %3 == sum % 3;
+    // 若sum %3 == 1 ,则可以删除一个余数为1的数或2个余数为2的数;
+    // 若sum %3 == 2 ,则可以删除一个余数为2的数或2个余数为1的数;
+    // 故分别记录余数为1和2的最小两数;
+    const len = nums.length
+    let sum = nums.reduce((a, b) => a + b)
+    if (sum % 3 === 0) return sum
+    const a1 = nums.filter(a => a % 3 === 1).sort((a, b) => a - b)
+    const a2 = nums.filter(a => a % 3 === 2).sort((a, b) => a - b)
+    if (sum % 3 === 1) sum = Math.max(sum - a1[0], sum - a2[0] - a2[1] || 0)
+    if (sum % 3 === 2) sum = Math.max(sum - a2[0], sum - a1[0] - a1[1] || 0)
+    return sum
+};
+const res = maxSumDivThree([3, 6, 5, 1, 8])//18
 console.log(res)
