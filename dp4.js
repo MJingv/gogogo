@@ -407,5 +407,73 @@ var maxSumDivThree = function (nums) {
     if (sum % 3 === 2) sum = Math.max(sum - a2[0], sum - a1[0] - a1[1] || 0)
     return sum
 };
-const res = maxSumDivThree([3, 6, 5, 1, 8])//18
+// const res = maxSumDivThree([3, 6, 5, 1, 8])//18
+// console.log(res)
+
+// 873. 最长的斐波那契子序列的长度
+var lenLongestFibSubseq = function (arr) {
+    // arr单调递增
+    const len = arr.length
+    if (len < 3) return 0
+    const dp = Array(len).fill(0).map(i => Array(len).fill(2)) // [i,j] 为fib的长度
+    const map = new Map()
+    for (let i = 0; i < len; i++) {
+        map.set(arr[i], i)
+    }
+    let res = 0
+    for (let i = 0; i < len; i++) { //第二个数
+        for (let j = i + 1; j < len; j++) {  //第三个数
+            const first = arr[j] - arr[i]
+            if (first < arr[i] && map.has(first)) {
+                dp[i][j] = Math.max(dp[i][j], dp[map.get(first)][i] + 1)
+                res = Math.max(res, dp[i][j])
+            }
+        }
+    }
+    return res
+};
+// const res = lenLongestFibSubseq([1, 2, 3, 4, 5, 6, 7, 8]) //5
+// console.log(res)
+
+var lastStoneWeightII = function (stones) {
+    const len = stones.length
+    if (len === 1) return stones[0]
+    if (len === 2) return Math.abs(stones[0] - stones[1])
+    const sum = stones.reduce((a, b) => a + b)
+    const back = Math.floor(sm / 2)
+    const dp = Array(back + 1).fill(0)
+
+    for (let i = 0; i < len; i++) {
+        for (let j = back; j >= stones[i]; j--) {
+            dp[j] = Math.max(dp[j], dp[j - stones[i]] + stones[i])
+        }
+    }
+    return sum - 2 * dp[back]
+};
+// const res = lastStoneWeightII([2, 7, 4, 1, 8, 1])
+// console.log(res)
+
+// 1155. 掷骰子的N种方法
+var numRollsToTarget = function (n, k, target) {
+    const mod = 1e9 + 7;
+    const [max, min] = [n * k, n]
+    if (target > max || target < min) return 0
+    if (target === max || target === min) return 1
+    const dp = Array(target + 1).fill(0)
+    dp[0] = 1
+
+    for (let i = 1; i <= n; i++) {
+        for (let j = target; j >= 0; j--) {
+            dp[j] = 0;
+            for (let l = 1; l <= k; l++) {
+                if (l <= j) {
+                    dp[j] = (dp[j] + dp[j - l]) % mod
+
+                }
+            }
+        }
+    }
+    return dp[target]
+};
+const res = numRollsToTarget(1, 6, 3)
 console.log(res)
