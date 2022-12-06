@@ -487,29 +487,72 @@ var findMaxForm = function (strs, m, n) {
         nums[index][1] = i.split('').filter(i => i === '1').length
     })
     const dp = Array(m + 1).fill(0).map(i => Array(n + 1).fill(0))
-
-
-    for (let i = 0; i <= m; i++) {
-        for (let j = 0; j <= n; j++) {
+    let tmp1 = 0, tmp2 = 0
+    for (let i = 0; i <= m; i++) { // 没有1
+        for (let k = 0; k < len; k++) {
+            if (nums[k][1] === 0 && nums[k][0] === i) {
+                tmp1++
+                dp[i][0] = tmp1
+            }
+        }
+    }
+    for (let j = 0; j <= n; j++) { //没有0
+        for (let k = 0; k < len; k++) {
+            if (nums[k][0] === 0 && nums[k][1] === j) {
+                tmp2++
+                dp[0][j] = tmp2
+            }
+        }
+    }
+    for (let i = 1; i <= m; i++) {  // i个0
+        for (let j = 1; j <= n; j++) { // j个1
             for (let k = 0; k < len; k++) {
-                if (nums[k][0] <= i && nums[k][1] <= j) {
-                    if (i === 0 && nums[k][0] === 0 && nums[k][1] !== 0) {
-                        dp[0][j] = dp[0][j - nums[k][0][1]]
-                    }
-                    if (j === 0 && nums[k][1] === 0) {
-                        dp[i][0] = dp[i - nums[k][0]][0] + 1
-
-                    }
-
-                    // dp[i][j] =
-
+                if (nums[k][0] === i && nums[k][1] === j) {
+                    dp[i][j] += 1
                 }
             }
         }
     }
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            // dp[i][j] += dp[i - 1][j] * dp[i][j - 1]
+        }
+    }
 
 
-    return dp
+    // /dp[i][j] = dp[i - 1][j] * dp[i][j - 1]
+    let res = 0
+    for (let i = 0; i <= m; i++) {
+        for (let j = 0; j <= n; j++) {
+            if (dp[i][j] !== 0) {
+                res += dp[i][j]
+            }
+        }
+    }
+    console.log(dp)
+
+    return res
 };
-// const res = findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3)
-// console.log(res)
+var findMaxForm1 = function (strs, m, n) {
+    const len = strs.length
+    const nums = Array(len).fill(0).map(i => Array(2).fill(0))
+    strs.map((i, index) => {
+        nums[index][0] = i.split('').filter(i => i === '0').length
+        nums[index][1] = i.split('').filter(i => i === '1').length
+    })
+    const dp = Array(m + 1).fill(0).map(i => Array(n + 1).fill(0))
+    for (let k = 0; k < len; k++) {
+        const zero = nums[k][0]
+        const one = nums[k][1]
+        for (let i = m; i >= zero; i--) {
+            for (let j = n; j >= one; j--) {
+                dp[i][j] = Math.max(dp[i][j], dp[i - zero][j - one] + 1)
+
+            }
+        }
+
+    }
+    return dp[m][n]
+}
+const res = findMaxForm1(["10", "0", "1"], 1, 1)//4
+console.log(res)
