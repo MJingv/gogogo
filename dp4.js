@@ -475,5 +475,41 @@ var numRollsToTarget = function (n, k, target) {
     }
     return dp[target]
 };
-const res = numRollsToTarget(1, 6, 3)
-console.log(res)
+// const res = numRollsToTarget(1, 6, 3)
+// console.log(res)
+
+// 474. 一和零
+var findMaxForm = function (strs, m, n) {
+    const len = strs.length
+    const nums = Array(len).fill(0).map(i => Array(2).fill(0))
+    strs.map((i, index) => {
+        nums[index][0] = i.split('').filter(i => i === '0').length
+        nums[index][1] = i.split('').filter(i => i === '1').length
+    })
+    const dp = Array(m + 1).fill(0).map(i => Array(n + 1).fill(0))
+
+
+    for (let i = 0; i <= m; i++) {
+        for (let j = 0; j <= n; j++) {
+            for (let k = 0; k < len; k++) {
+                if (nums[k][0] <= i && nums[k][1] <= j) {
+                    if (i === 0 && nums[k][0] === 0 && nums[k][1] !== 0) {
+                        dp[0][j] = dp[0][j - nums[k][0][1]]
+                    }
+                    if (j === 0 && nums[k][1] === 0) {
+                        dp[i][0] = dp[i - nums[k][0]][0] + 1
+
+                    }
+
+                    // dp[i][j] =
+
+                }
+            }
+        }
+    }
+
+
+    return dp
+};
+// const res = findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3)
+// console.log(res)
