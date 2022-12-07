@@ -554,5 +554,54 @@ var findMaxForm1 = function (strs, m, n) {
     }
     return dp[m][n]
 }
-const res = findMaxForm1(["10", "0", "1"], 1, 1)//4
+// const res = findMaxForm1(["10", "0", "1"], 1, 1)
+// console.log(res)
+
+// 650. 只有两个键的键盘
+var minSteps = function (n) {
+    // 不ac
+
+    if (n === 1) return 0
+    const dp = Array(n + 1).fill(0)
+    for (let i = 1; i <= n; i++) {
+        dp[i] = i
+        if (i > 5) {
+
+            if (i % 2 === 0) {
+                dp[i] = Math.min(dp[i], dp[i / 2] + 2)
+            }
+            if (i % 3 === 0) {
+                dp[i] = Math.min(dp[i], dp[i / 3] + 3)
+            }
+            if (i % 5 === 0) {
+                dp[i] = Math.min(dp[i], dp[i / 5] + 5)
+            }
+        }
+    }
+    return dp[n]
+};
+var minSteps1 = function (n) {
+    const dp = Array(n + 1).fill(Infinity)
+    dp[1] = 0
+    for (let i = 1; i <= n; i++) {
+        for (let k = 1; k * i <= n; k++) {
+            dp[k * i] = Math.min(dp[k * i], dp[i] + k)
+        }
+    }
+
+    return dp[n]
+
+}
+var minSteps2 = function (n) {
+    if (n === 1) return 0
+    let res = 0
+    for (let i = 2; i <= n; i++) {
+        while (n % i === 0) {
+            n = n / i
+            res += i
+        }
+    }
+    return res
+}
+const res = minSteps1(10)
 console.log(res)
