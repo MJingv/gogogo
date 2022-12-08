@@ -603,5 +603,57 @@ var minSteps2 = function (n) {
     }
     return res
 }
-const res = minSteps1(10)
+// const res = minSteps1(10)
+// console.log(res)
+
+// 剑指 Offer 66. 构建乘积数组
+var constructArr = function (a) {
+    // time out
+    const len = a.length
+    const dp = Array(len).fill(1).map(i => Array(len).fill(1))
+    dp[0][0] = a[0]
+    const res = []
+
+    for (let i = 0; i < len; i++) {
+        for (let j = i; j < len; j++) {
+            if (i === j) {
+                dp[i][j] = a[i]
+            } else {
+                dp[i][j] = dp[i][j - 1] * a[j]
+
+            }
+        }
+    }
+    res.push(dp[1][len - 1])
+    for (let i = 1; i < len - 1; i++) {
+        const val = dp[0][i - 1] * dp[i + 1][len - 1]
+        res.push(val)
+    }
+    res.push(dp[0][len - 2])
+
+    return res
+};
+var constructArr1 = function (a) {
+    const len = a.length
+    const res = Array(len).fill(1)
+    if (!len) return res
+    const left = Array(len).fill(1)
+    const right = Array(len).fill(1)
+    // leftArr: dp[i] = dp[i-1]*a[i-1]  dp[i-1]不包含当前值
+    // rightArr: dp[j] = dp[j+1]*a[j+1]
+    for (let i = len; i >= 0; i--) {
+        right[i] = i === len - 1 ? 1 : right[i + 1] * a[i + 1]
+    }
+    for (let i = 0; i < len; i++) {
+        left[i] = i === 0 ? 1 : left[i - 1] * a[i - 1]
+        res[i] = left[i] * right[i]
+    }
+
+
+    return res
+
+}
+const res = constructArr1([1, 2, 3, 4, 5])
+// [120,60,40,30,24]
 console.log(res)
+
