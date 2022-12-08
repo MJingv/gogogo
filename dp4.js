@@ -653,7 +653,73 @@ var constructArr1 = function (a) {
     return res
 
 }
-const res = constructArr1([1, 2, 3, 4, 5])
+// const res = constructArr1([1, 2, 3, 4, 5])
 // [120,60,40,30,24]
-console.log(res)
+// console.log(res)
 
+// 面试题 01.05. 一次编辑
+var oneEditAway = function (first, second) {
+    // timeout
+    const [len1, len2] = [first.length, second.length]
+    const diff = Math.abs(len1 - len2)
+    if (diff > 1) return false
+    let [i, j, flag1, flag2] = [0, 0, true, true]
+    while (i < len1 && j < len2) {
+        while (first[i] && second[j] && first[i] === second[j]) {
+            i++;
+            j++
+        }
+        if (diff === 0) {
+            if (flag1) {
+                i++
+                j++
+                flag1 = false
+            }
+
+        } else {
+            if (flag2) {
+                if (len1 > len2) {
+                    i++
+                    flag2 = false
+                } else {
+                    j++
+                    flag2 = false
+                }
+            }
+
+        }
+
+    }
+    const res = i === len1 && j === len2
+    return res
+
+};
+var oneEditAway1 = function (first, second) {
+    const [len1, len2] = [first.length, second.length]
+    const diff = Math.abs(len1 - len2)
+    if (diff > 1) return false
+    let [flag, i, j] = [0, 0, 0]
+    while (i < len1 && j < len2 && flag <= 1) {
+        const [a, b] = [first[i], second[j]]
+        if (a === b) {
+            i++
+            j++
+        } else {
+            if (len1 === len2) {
+                i++
+                j++
+                flag++
+            } else {
+                if (len1 > len2) {
+                    i++
+                } else {
+                    j++
+                }
+                flag++
+            }
+        }
+    }
+    return flag <= 1
+}
+const res = oneEditAway1('pale', 'ple')
+console.log(res)

@@ -102,5 +102,12 @@ var luckyNumbers = function (matrix) {
 
     return res
 };
-const res = luckyNumbers([[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]])
+// const res = luckyNumbers([[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]])
+// console.log(res)
+
+var squareIsWhite = function (coordinates) {
+    const l=coordinates.split('')
+
+};
+const res = squareIsWhite('h3')
 console.log(res)
