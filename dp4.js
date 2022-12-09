@@ -721,5 +721,27 @@ var oneEditAway1 = function (first, second) {
     }
     return flag <= 1
 }
-const res = oneEditAway1('pale', 'ple')
+// const res = oneEditAway1('pale', 'ple')
+// console.log(res)
+
+// 面试题 08.02. 迷路的机器人
+// 设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。
+var pathWithObstacles = function (obstacleGrid) {
+    const [m, n] = [obstacleGrid.length, obstacleGrid[0].length]
+    const res = []
+    let flag = false
+    const dfs = (x, y) => {
+        if (x < 0 || y < 0 || x >= m || y >= n || obstacleGrid[x][y] === 1) return
+        res.push([x, y])
+        obstacleGrid[x][y] = 1 //只走1次，走过及焚
+        if (x === m - 1 && y === n - 1) flag = true //找到
+        if (!flag) dfs(x + 1, y)
+        if (!flag) dfs(x, y + 1)
+        if (!flag) res.pop()
+    }
+    dfs(0, 0)
+    return res
+
+};
+const res = pathWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
 console.log(res)
