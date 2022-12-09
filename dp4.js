@@ -743,5 +743,12 @@ var pathWithObstacles = function (obstacleGrid) {
     return res
 
 };
-const res = pathWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+// const res = pathWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+// console.log(res)
+
+// 1367 二叉树中的链表
+var isSubPath = function(head, root) {
+
+};
+const res = isSubPath([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
 console.log(res)
