@@ -5,21 +5,18 @@ var permute = function (nums) {
     const path = []
     if (!len) return res
 
-    const backtrack = (used) => {
-        if (path.length === len) {
-            return res.push(path.slice())
-        }
+    const helper = (used = {}) => {
+        if (path.length === len) res.push(path.slice())
         for (let i = 0; i < len; i++) {
-            if (used.get(nums[i])) continue
+            if (used[nums[i]]) continue
             path.push(nums[i])
-            used.set(nums[i], true)
-            backtrack(used)
-            used.set(nums[i], false)
+            used[nums[i]] = true
+            helper(used)
             path.pop()
+            used[nums[i]] = false
         }
     }
-    const used = new Map()
-    backtrack(used)
+    helper()
     return res
 
 };
