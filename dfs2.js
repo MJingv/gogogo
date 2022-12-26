@@ -76,9 +76,8 @@ var solveNQueens = function (n) {
     const res = []
 
     const helper = (board, row = 0) => {
-        console.log(row)
-        if (row === n - 1) {
-            return res.push(board.slice())
+        if (row === board.length) {
+            return res.push(board.map((row) => row.join("")));
         }
 
         for (let col = 0; col < n; col++) {
@@ -90,7 +89,7 @@ var solveNQueens = function (n) {
         }
 
     }
-    const b = Array(n).fill(Array(n)).map(i => i.fill('.'))
+    const b = Array(n).fill(0).map(i => Array(n).fill('.'))
     helper(b, 0)
     return res
 
