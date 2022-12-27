@@ -100,7 +100,26 @@ var solveNQueens = function (n) {
 // 784 字母大小写全排列
 // 输入: s = "3z4" 输出: ["3z4","3Z4"]
 var letterCasePermutation = function (s) {
-   dfXdS3e
+    const len = s.length
+    const res = []
+    if (!len) return res
+    const path = []
+    s = s.split('')
+    const helper = (used = {}) => {
+        if (path === len) res.push(path.join(''))
+
+        for (let i = 0; i < len; i++) {
+            if (used[s[i]]) continue
+            path.push(s[i])
+            used[s[i]] = true
+            helper(used)
+            path.pop()
+            used[s[i]] = false
+
+        }
+    }
+    helper()
+    return res
 };
 const res = letterCasePermutation('3z4')
 console.log(res)
