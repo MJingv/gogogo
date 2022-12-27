@@ -106,8 +106,7 @@ var letterCasePermutation = function (s) {
     const path = []
     s = s.split('')
     const helper = (used = {}) => {
-        if (path === len) res.push(path.join(''))
-
+        if (path.length === len) res.push(path.join(''))
         for (let i = 0; i < len; i++) {
             if (used[s[i]]) continue
             path.push(s[i])
@@ -115,7 +114,6 @@ var letterCasePermutation = function (s) {
             helper(used)
             path.pop()
             used[s[i]] = false
-
         }
     }
     helper()
