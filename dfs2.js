@@ -94,15 +94,13 @@ var solveNQueens = function (n) {
     return res
 
 };
-const res = solveNQueens(4)
-console.log(res)
+// const res = solveNQueens(4)
+// console.log(res)
 
 // 784 字母大小写全排列
 // 输入: s = "3z4" 输出: ["3z4","3Z4"]
 var letterCasePermutation = function (s) {
-    const len = s.length
-    const res = []
-    if (!len) return res
+   dfXdS3e
 };
-// const res = letterCasePermutation('3z4')
-// console.log(res)
+const res = letterCasePermutation('3z4')
+console.log(res)
