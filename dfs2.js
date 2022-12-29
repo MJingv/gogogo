@@ -116,6 +116,7 @@ var letterCasePermutation = function (s) {
             used[s[i]] = false
         }
     }
+
     helper()
     return res
 };
