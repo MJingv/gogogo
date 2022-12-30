@@ -99,6 +99,7 @@ var solveNQueens = function (n) {
 
 // 784 字母大小写全排列
 // 输入: s = "3z4" 输出: ["3z4","3Z4"]
+
 var letterCasePermutation = function (s) {
     const len = s.length
     const res = []
