@@ -199,7 +199,38 @@ const quanpailie = (s) => {
     helper()
     return res
 }
-const res = quanpailie('123')
+// const res = quanpailie('123')
+// console.log(res)
+
+// 698. 划分为k个相等的子集
+// 输入： nums = [4, 3, 2, 3, 5, 2, 1], k = 4 输出： True 说明： 有可能将其分成 4 个子集（5），（1,4），（2,3），（2,3）等于总和。
+
+const canPartitionKSubsets = function (nums, k) {
+    const sum = nums.reduce((a, b) => a + b)
+    if (sum % k) return false
+    nums = nums.sort((a, b) => b - a)
+    const target = sum / k
+    if (nums[0] > target) return false
+    const bucket = Array(k).fill(0)
+    const helper = (index = 0) => {
+        // 第index个球
+        if (index === nums.length) {
+            for (let i = 0; i < k; i++) {
+                if (bucket[i] !== target) return false
+            }
+            return true
+        }
+        for (let i = 0; i < k; i++) {
+            // 第i个桶
+            if (bucket[i] + nums[index] > target) continue
+            bucket[i] += nums[index]
+            if(helper(index + 1)) return true
+            bucket[i] -= nums[index]
+        }
+        return false
+    }
+    return helper()
+
+};
+const res = canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4)
 console.log(res)
-
-
