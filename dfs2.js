@@ -7,6 +7,28 @@
 // backtrack(...)
 // 撤销选择
 
+// 模版
+var temp = function (s) {
+    const len = s.length
+    const res = []
+    if (!len) return res
+    const path = []
+    s = s.split('')
+    const helper = (used = {}) => {
+        if (path.length === len) res.push(path.join(''))
+        for (let i = 0; i < len; i++) {
+            if (used[s[i]]) continue
+            path.push(s[i])
+            used[s[i]] = true
+            helper(used)
+            path.pop()
+            used[s[i]] = false
+        }
+    }
+    helper()
+    return res
+};
+
 
 // 力扣第 46 题「 全排列」
 var permute = function (nums) {
@@ -101,24 +123,30 @@ var solveNQueens = function (n) {
 // 输入: s = "3z4" 输出: ["3z4","3Z4"]
 
 var letterCasePermutation = function (s) {
+    const swapCase = (ch) => {
+        if (ch >= 'a' && ch <= 'z') return ch.toUpperCase()
+        if (ch >= 'A' && ch <= 'Z') return ch.toLowerCase()
+    }
+    const isLetter = (ch) => ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z'
     const len = s.length
     const res = []
-    if (!len) return res
-    const path = []
     s = s.split('')
-    const helper = (used = {}) => {
-        if (path.length === len) res.push(path.join(''))
-        for (let i = 0; i < len; i++) {
-            if (used[s[i]]) continue
-            path.push(s[i])
-            used[s[i]] = true
-            helper(used)
-            path.pop()
-            used[s[i]] = false
+
+    const helper = (path, i) => {
+        if (path.length === len) return res.push(path.join(''))
+        if (isLetter(s[i])) {
+            helper([...path, s[i]], i + 1)
+            helper([...path, swapCase(s[i])], i + 1)
+
+        } else {
+            helper([...path, s[i]], i + 1)
         }
     }
-    helper()
+    helper([], 0)
     return res
+
 };
+
+
 const res = letterCasePermutation('3z4')
 console.log(res)
