@@ -178,7 +178,28 @@ var getMaximumGold = function (grid) {
     }
     return max
 };
+// const res = getMaximumGold([[0, 6, 0], [5, 8, 7], [0, 9, 0]])//24
+// console.log(res)
 
 
-const res = getMaximumGold([[0, 6, 0], [5, 8, 7], [0, 9, 0]])//24
+const quanpailie = (s) => {
+    const [len, res, path] = [s.length, [], []]
+    if (!len) return res
+    const helper = (used = {}) => {
+        if (path.length === len) res.push(path.join(''))
+        for (let i = 0; i < len; i++) {
+            if (used[s[i]]) continue
+            path.push(s[i])
+            used[s[i]] = true
+            helper(used)
+            used[s[i]] = false
+            path.pop()
+        }
+    }
+    helper()
+    return res
+}
+const res = quanpailie('123')
 console.log(res)
+
+
