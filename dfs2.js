@@ -147,6 +147,38 @@ var letterCasePermutation = function (s) {
 
 };
 
+// const res = letterCasePermutation('3z4')
+// console.log(res)
 
-const res = letterCasePermutation('3z4')
+// 1219 黄金矿工
+// 输入：grid = [[0,6,0],[5,8,7],[0,9,0]] 输出：24
+var getMaximumGold = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+    let max = 0
+    const dirs = [[0, -1], [0, 1], [-1, 0], [1, 0]]
+
+    const helper = (x, y, sum) => {
+        sum += grid[x][y]
+        max = Math.max(max, sum)
+        let tmp = grid[x][y]
+        grid[x][y] = 0
+        for (const dir of dirs) {
+            const newX = x + dir[0]
+            const newY = y + dir[1]
+            if (newX < m && newX >= 0 && newY < n && newY >= 0 && grid[newX][newY] > 0) {
+                helper(newX, newY, sum)
+            }
+        }
+        grid[x][y] = tmp
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] !== 0) helper(i, j, 0)
+        }
+    }
+    return max
+};
+
+
+const res = getMaximumGold([[0, 6, 0], [5, 8, 7], [0, 9, 0]])//24
 console.log(res)
