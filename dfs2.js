@@ -224,7 +224,7 @@ const canPartitionKSubsets = function (nums, k) {
             // 第i个桶
             if (bucket[i] + nums[index] > target) continue
             bucket[i] += nums[index]
-            if(helper(index + 1)) return true
+            if (helper(index + 1)) return true
             bucket[i] -= nums[index]
         }
         return false
@@ -232,5 +232,36 @@ const canPartitionKSubsets = function (nums, k) {
     return helper()
 
 };
-const res = canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4)
+
+const canPartitionKSubsets1 = (nums, k) => {
+    const len = nums.length
+    const sum = nums.reduce((a, b) => a + b)
+    if (sum % k) return false
+    nums = nums.sort((a, b) => b - a)
+    const target = sum / k
+    if (nums[0] > target) return false
+
+    const helper = (n, used = {}, start = 0, bucket = 0) => {
+        if (n === 0) {
+            // 桶都装完了
+            return true
+        }
+        if (bucket === target) {
+            return helper(n - 1, used, 0, 0)
+        }
+        for (let i = start; i < len; i++) {
+            if (used[i]) continue // i必须是引用，数字可能会重复
+            if (bucket + nums[i] > target) continue
+            used[i] = true
+            bucket += nums[i]
+            if (helper(n, used, start + 1, bucket)) return true
+            bucket -= nums[i]
+            used[i] = false
+        }
+        return false
+
+    }
+    return helper(k, {}, 0, 0)
+}
+const res = canPartitionKSubsets1([4, 3, 2, 3, 5, 2, 1], 4)
 console.log(res)
