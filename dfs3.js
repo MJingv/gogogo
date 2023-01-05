@@ -159,5 +159,26 @@ var combinationSum = function (candidates, target) {
     helper()
     return res
 };
-const res = combinationSum([2, 3, 6, 7], 7)
+// const res = combinationSum([2, 3, 6, 7], 7)
+// console.log(res)
+
+// 排列（元素无重可复选）
+const fun = (nums) => {
+    const len = nums.length
+    const [path, res] = [[], []]
+
+    const helper = () => {
+        if (path.length === len) return res.push([...path])
+        for (let i = 0; i < len; i++) {
+            path.push(nums[i])
+            helper()
+            path.pop()
+        }
+    }
+    helper()
+    return res
+
+
+}
+const res = fun([1, 2, 3])
 console.log(res)
