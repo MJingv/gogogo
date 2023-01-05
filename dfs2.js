@@ -264,5 +264,33 @@ const canPartitionKSubsets1 = (nums, k) => {
     }
     return helper(k, {}, 0, 0)
 }
-const res = canPartitionKSubsets1([4, 3, 2, 3, 5, 2, 1], 4)
+
+
+const canPartitionKSubsets2 = (nums, k) => {
+    // 以球的角度，遍历桶，球选择放or不放
+    const len = nums.length
+    const sum = nums.reduce((a, b) => a + b)
+    if (sum % k) return false
+    const target = sum / k
+    nums.sort((a, b) => b - a)
+    if (nums[0] > target) return false
+    const bucket = Array(k).fill(0)
+
+    const helper = (index) => {
+        // 第index个球
+        if (index === len) return true
+        for (let i = 0; i < k; i++) {
+            if (bucket[i] === bucket[i - 1]) continue
+            if (bucket[i] + nums[index] > target) continue
+            bucket[i] += nums[index]
+            if (helper(index + 1)) return true
+            bucket[i] -= nums[index]
+        }
+        return false
+
+    }
+    return helper(0)
+
+}
+const res = canPartitionKSubsets2([4, 3, 2, 3, 5, 2, 1], 4)
 console.log(res)
