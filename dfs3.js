@@ -86,8 +86,54 @@ var subsetsWithDup = function (nums) {
 };
 
 
-const res = subsetsWithDup([1, 1, 2])
-console.log(res)
-
-
 // 力扣第 40 题「 组合总和 II」
+// candidates 中的每个数字在每个组合中只能使用 一次 。注意：解集不能包含重复的组合。
+// 输出: [ [1,1,6], [1,2,5], [1,7], [2,6] ]
+var combinationSum2 = function (candidates, target) {
+    const len = candidates.length
+    candidates.sort()
+    const [res, path] = [[], []]
+    let cur = 0
+
+    const helper = (start) => {
+        if (cur === target) res.push([...path])
+        if (cur > target) return
+        for (let i = start; i < len; i++) {
+            if (i > start && candidates[i - 1] === candidates[i]) continue
+            cur += candidates[i]
+            path.push(candidates[i])
+            helper(i + 1)
+            cur -= candidates[i]
+            path.pop()
+        }
+    }
+    helper(0)
+    return res
+};
+// const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
+// console.log(res)
+
+// 47 题「 全排列 II」
+// 给定一个可包含重复数字的序列 nums ，按任意顺序 返回所有不重复的全排列。
+// 输入：nums = [1,1,2] 输出： [[1,1,2], [1,2,1], [2,1,1]]
+var permuteUnique = function (nums) {
+    const len = nums.length
+    const [path, res] = [[], []]
+    nums = nums.sort()
+    const helper = (used = {}) => {
+        if (path.length === len) res.push([...path])
+        for (let i = 0; i < len; i++) {
+            if (used[i]) continue
+            if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue //新增剪枝逻辑
+            path.push(nums[i])
+            used[i] = true
+            helper(used)
+            path.pop()
+            used[i] = false
+        }
+    }
+    helper()
+    return res
+};
+const res = permuteUnique([1, 1, 2])
+console.log(res)
