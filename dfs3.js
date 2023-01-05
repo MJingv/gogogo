@@ -1,6 +1,6 @@
 // 回溯-排列组合问题合集
 
-// 有顺序+start
+// 有顺序+start 不重复用元素
 // 无重复+used
 
 
@@ -124,7 +124,7 @@ var permuteUnique = function (nums) {
         if (path.length === len) res.push([...path])
         for (let i = 0; i < len; i++) {
             if (used[i]) continue
-            if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue //新增剪枝逻辑
+            if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue //新增剪枝逻辑,相同的值前后顺序不变
             path.push(nums[i])
             used[i] = true
             helper(used)
@@ -135,5 +135,29 @@ var permuteUnique = function (nums) {
     helper()
     return res
 };
-const res = permuteUnique([1, 1, 2])
+// const res = permuteUnique([1, 1, 2])
+// console.log(res)
+
+// 力扣第 39 题「 组合总和」
+// 输入：candidates = [2,3,6,7], target = 7 输出：[[2,2,3],[7]]
+// candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。
+var combinationSum = function (candidates, target) {
+    const len = candidates.length
+    const [path, res] = [[], []]
+    let cur = 0
+    const helper = (start = 0) => {
+        if (cur === target) res.push([...path])
+        if (cur > target) return
+        for (let i = start; i < len; i++) {
+            cur += candidates[i]
+            path.push(candidates[i])
+            helper(i)
+            cur -= candidates[i]
+            path.pop()
+        }
+    }
+    helper()
+    return res
+};
+const res = combinationSum([2, 3, 6, 7], 7)
 console.log(res)
