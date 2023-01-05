@@ -234,6 +234,7 @@ const canPartitionKSubsets = function (nums, k) {
 };
 
 const canPartitionKSubsets1 = (nums, k) => {
+    // timeout 需要位运算优化
     const len = nums.length
     const sum = nums.reduce((a, b) => a + b)
     if (sum % k) return false
