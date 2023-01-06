@@ -113,10 +113,34 @@ const permuteUnique = (nums) => {
 // 输入：n = 4, k = 2
 // 输出：[[2, 4], [3, 4], [2, 3], [1, 2], [1, 3], [1, 4],]
 var combine = function (n, k) {
-
+    const [path, res] = [[], []]
+    const helper = (start = 1) => {
+        if (path.length === k) return res.push([...path])
+        for (let i = start; i <= n; i++) {
+            path.push(i)
+            helper(i + 1)
+            path.pop()
+        }
+    }
+    helper()
+    return res
 };
+// const res = combine(4, 2)
+// console.log(res)
 
-const res = combine(4, 2)
-console.log(res)
+
 // 力扣第 39 题「 组合总和」
+// candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。
+// 输入：candidates = [2,3,6,7], target = 7 输出：[[2,2,3],[7]]
+var combinationSum = function (candidates, target) {
+
+}
+const res = combinationSum([2, 3, 6, 7], 7)
+console.log(res)
+
 // 力扣第 40 题「 组合总和 II」
+var combinationSum2 = function (candidates, target) {
+}
+// const res = combinationSum2(4, 2)
+// console.log(res)
+
