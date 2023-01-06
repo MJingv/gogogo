@@ -198,7 +198,8 @@ var combinationSum4 = function (nums, target) {
 // 输入：digits = "23" 输出：["ad","ae","af","bd","be","bf","cd","ce","cf"]
 var letterCombinations = function (digits) {
     if (!digits) return []
-    const chs = digits.split('')
+    const nums = digits.split('')
+    const len = nums.length
     const [path, res] = [[], []]
     const maps = {
         '2': ['a', 'b', 'c'],
@@ -210,12 +211,19 @@ var letterCombinations = function (digits) {
         '8': ['t', 'u', 'v'],
         '9': ['w', 'x', 'y', 'z']
     }
-    const nums = []
-    chs.map(i => nums.push([...maps[i]]))
-    for (let i=0;)
-
-
-    return nums
+    const helper = (start = 0) => {
+        if (path.length === len) res.push(path.join(''))
+        for (let i = start; i < len; i++) {
+            const chs = maps[digits[i]]
+            for (let j = 0; j < chs.length; j++) {
+                path.push(chs[j])
+                helper(i + 1)
+                path.pop()
+            }
+        }
+    }
+    helper()
+    return res
 };
 const res = letterCombinations('23')
 console.log(res)
