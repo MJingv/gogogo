@@ -225,9 +225,47 @@ var letterCombinations = function (digits) {
     helper()
     return res
 };
-const res = letterCombinations('23')
-console.log(res)
-// 368. 最大整除子集
+// const res = letterCombinations('23')
+// console.log(res)
 
+// 368. 最大整除子集
+// answer[i] % answer[j] == 0 或 answer[j] % answer[i] == 0
+// 输入：nums = [1,2,3] 输出：[1,2] 解释：[1,3] 也会被视为正确答案。
+var largestDivisibleSubset = function (nums) {
+    const len = nums.length
+    const [path, res] = [[], []]
+    const helper = (start) => {
+        for (let i = start; i < len; i++) {
+            path.push(nums[i])
+            helper(i + 1)
+            path.pop()
+        }
+    }
+    helper()
+    return res
+};
+// const res = largestDivisibleSubset([1, 2, 3])
+// console.log(res)
 
 // 491. 递增子序列
+// 给你一个整数数组 nums ，找出并返回所有该数组中不同的递增子序列，递增子序列中 至少有两个元素 。你可以按 任意顺序 返回答案。
+// 输入：nums = [4,6,7,7] 输出：[[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
+var findSubsequences = function (nums) {
+    // 没有全过
+    const len = nums.length
+    const [path, res] = [[], []]
+    const helper = (start = 0) => {
+        if (path.length >= 2) res.push([...path])
+        for (let i = start; i < len; i++) {
+            if (nums[i] < nums[i - 1]) continue
+            if (i > start && nums[i - 1] === nums[i]) continue
+            path.push(nums[i])
+            helper(i + 1)
+            path.pop()
+        }
+    }
+    helper()
+    return res
+};
+const res = findSubsequences([4, 6, 7, 7])
+console.log(res)
