@@ -133,14 +133,49 @@ var combine = function (n, k) {
 // candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。
 // 输入：candidates = [2,3,6,7], target = 7 输出：[[2,2,3],[7]]
 var combinationSum = function (candidates, target) {
-
+    const len = candidates.length
+    const [path, res] = [[], []]
+    let cur = 0
+    const helper = (start = 0) => {
+        if (cur === target) res.push([...path])
+        if (cur > target) return
+        for (let i = start; i < len; i++) {
+            path.push(candidates[i])
+            cur += candidates[i]
+            helper(i)
+            path.pop()
+            cur -= candidates[i]
+        }
+    }
+    helper()
+    return res
 }
-const res = combinationSum([2, 3, 6, 7], 7)
-console.log(res)
+// const res = combinationSum([2, 3, 6, 7], 7)
+// console.log(res)
 
 // 力扣第 40 题「 组合总和 II」
+// 输入: candidates = [10,1,2,7,6,1,5], target = 8, 输出: [ [1,1,6], [1,2,5], [1,7], [2,6] ]
+// candidates 中的每个数字在每个组合中只能使用 一次 。
 var combinationSum2 = function (candidates, target) {
+    const len = candidates.length
+    const [path, res] = [[], []]
+    let cur = 0
+    candidates = candidates.sort()
+    const helper = (start = 0) => {
+        if (cur === target) res.push([...path])
+        if (cur > target) return
+        for (let i = start; i < len; i++) {
+            if (i > start && candidates[i - 1] === candidates[i]) continue
+            path.push(candidates[i])
+            cur += candidates[i]
+            helper(i + 1)
+            path.pop()
+            cur -= candidates[i]
+        }
+    }
+    helper()
+    return res
 }
-// const res = combinationSum2(4, 2)
-// console.log(res)
+const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)
+console.log(res)
 
