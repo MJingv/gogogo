@@ -251,21 +251,20 @@ var largestDivisibleSubset = function (nums) {
 // 给你一个整数数组 nums ，找出并返回所有该数组中不同的递增子序列，递增子序列中 至少有两个元素 。你可以按 任意顺序 返回答案。
 // 输入：nums = [4,6,7,7] 输出：[[4,6],[4,6,7],[4,6,7,7],[4,7],[4,7,7],[6,7],[6,7,7],[7,7]]
 var findSubsequences = function (nums) {
-    // 没有全过
+    // 不能sort剪枝
     const len = nums.length
-    const [path, res] = [[], []]
+    const [path, set] = [[], new Set()]
     const helper = (start = 0) => {
-        if (path.length >= 2) res.push([...path])
+        if (path.length >= 2) set.add(path.join(''))
         for (let i = start; i < len; i++) {
-            if (nums[i] < nums[i - 1]) continue
-            if (i > start && nums[i - 1] === nums[i]) continue
+            if (nums[i] < path[path.length - 1]) continue
             path.push(nums[i])
             helper(i + 1)
             path.pop()
         }
     }
     helper()
-    return res
+    return Array.from(set, str => str.split(',').map(char => Number(char)))
 };
-const res = findSubsequences([4, 6, 7, 7])
+const res = findSubsequences([4, 4, 3, 2, 1])
 console.log(res)
