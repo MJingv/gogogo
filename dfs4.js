@@ -232,20 +232,18 @@ var letterCombinations = function (digits) {
 // answer[i] % answer[j] == 0 或 answer[j] % answer[i] == 0
 // 输入：nums = [1,2,3] 输出：[1,2] 解释：[1,3] 也会被视为正确答案。
 var largestDivisibleSubset = function (nums) {
+    // dp
     const len = nums.length
-    const [path, res] = [[], []]
-    const helper = (start) => {
-        for (let i = start; i < len; i++) {
-            path.push(nums[i])
-            helper(i + 1)
-            path.pop()
-        }
-    }
-    helper()
-    return res
+    if (len === 1) return nums
+    if (len === 0) return []
+    const dp = Array(len)
+    dp[0] = nums[0]
+    let maxLen = 0
+    let index = -1
+
 };
-// const res = largestDivisibleSubset([1, 2, 3])
-// console.log(res)
+const res = largestDivisibleSubset([1, 2, 4, 8, 16])
+console.log(res)
 
 // 491. 递增子序列
 // 给你一个整数数组 nums ，找出并返回所有该数组中不同的递增子序列，递增子序列中 至少有两个元素 。你可以按 任意顺序 返回答案。
@@ -265,6 +263,7 @@ var findSubsequences = function (nums) {
     }
     helper()
     return Array.from(set, str => str.split(',').map(char => Number(char)))
+
 };
-const res = findSubsequences([4, 4, 3, 2, 1])
-console.log(res)
+// const res = findSubsequences([4, 4, 3, 2, 1])
+// console.log(res)
