@@ -77,7 +77,29 @@ var largestValues = function (root) {
     }
     return res
 };
-const res = largestValues(t1)
+// const res = largestValues(t1)
+// console.log(res)
+
+// 剑指 Offer 32 - II. 从上到下打印二叉树 II
+var levelOrder = function (root) {
+    if (!root) return []
+    const [res, q] = [[], [root]]
+    let path = []
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            if (cur.left) q.push(cur.left)
+            if (cur.right) q.push(cur.right)
+        }
+        res.push([...path])
+        path = []
+
+    }
+    return res
+};
+const res = levelOrder(t1)
 console.log(res)
 
 
@@ -86,7 +108,6 @@ console.log(res)
 // 542. 01 矩阵
 // 773. 滑动谜题
 // 863. 二叉树中所有距离为 K 的结点
-// 剑指 Offer 32 - II. 从上到下打印二叉树 II
 
 
 // 力扣第 752 题「 打开转盘锁」
