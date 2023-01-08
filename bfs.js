@@ -36,5 +36,19 @@ var minDepth = function (root) {
     return min
 };
 const t = new TreeNode()
-const res = minDepth(t1)
-console.log(res)
+// const res = minDepth(t1)
+// console.log(res)
+
+
+// 力扣第 752 题「 打开转盘锁」
+var openLock = function(deadends, target) {
+
+};
+// 剑指 Offer II 109. 开密码锁
+// 102. 二叉树的层序遍历
+// 1091. 二进制矩阵中的最短路径
+// 117. 填充每个节点的下一个右侧节点指针 II
+// 542. 01 矩阵
+// 773. 滑动谜题
+// 863. 二叉树中所有距离为 K 的结点
+// 剑指 Offer 32 - II. 从上到下打印二叉树 II
