@@ -35,20 +35,62 @@ var minDepth = function (root) {
     }
     return min
 };
-const t = new TreeNode()
 // const res = minDepth(t1)
 // console.log(res)
 
-
-// 力扣第 752 题「 打开转盘锁」
-var openLock = function(deadends, target) {
-
-};
-// 剑指 Offer II 109. 开密码锁
 // 102. 二叉树的层序遍历
+var levelOrder = function (root) {
+    if (!root) return []
+    const [q, res] = [[root], []]
+    let path = []
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            // if (!cur.left && !cur.right) return
+            if (cur.left) q.push(cur.left)
+            if (cur.right) q.push(cur.right)
+        }
+        res.push([...path])
+        path = []
+    }
+    return res
+};
+// const res = levelOrder(t1)
+// console.log(res)
+
+var largestValues = function (root) {
+    if (!root) return []
+    const [res, q] = [[], [root]]
+    let max = -Infinity
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            if (cur.val > max) max = cur.val
+            if (cur.left) q.push(cur.left)
+            if (cur.right) q.push(cur.right)
+        }
+        res.push(max)
+        max = -Infinity
+    }
+    return res
+};
+const res = largestValues(t1)
+console.log(res)
+
+
 // 1091. 二进制矩阵中的最短路径
 // 117. 填充每个节点的下一个右侧节点指针 II
 // 542. 01 矩阵
 // 773. 滑动谜题
 // 863. 二叉树中所有距离为 K 的结点
 // 剑指 Offer 32 - II. 从上到下打印二叉树 II
+
+
+// 力扣第 752 题「 打开转盘锁」
+var openLock = function (deadends, target) {
+
+};
+// 剑指 Offer II 109. 开密码锁
