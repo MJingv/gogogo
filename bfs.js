@@ -104,25 +104,58 @@ var levelOrder = function (root) {
 
 // 863. 二叉树中所有距离为 K 的结点
 var distanceK = function (root, target, k) {
+    // 未完成
+    if (!root) return []
+    const map = new Map()
+    const getParent = (node, pNode = null) => {
+        const val = node.val
+        map.set(val, pNode)
+        if (!node.left && !node.right) return
+        if (node.left) getParent(node.left, node)
+        if (node.right) getParent(node.right, node)
+    }
+    getParent(root)
+    return map
+    const [q, res] = [[target], []]
+    let step = 0
+    const visited = new Set()
+    visited.add(target)
 
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            if (step === k) res.push(cur.val)
+            const parent = map.get(cur.val)
+            if (parent && !visited.has(parent.val)) {
+                q.push(parent)
+                visited.add(parent.val)
+            }
+            if (cur.left && !visited.has(cur.left.val)) {
+                q.push(cur.left)
+                visited.add(cur.left.val)
+            }
+            if (cur.right && !visited.has(cur.right.val)) {
+                q.push(cur.right)
+                visited.add(cur.right.val)
+            }
+        }
+        step++
+    }
+    return res
 };
-// const res = distanceK(t1)
-// console.log(res)
+
+const res = distanceK(t1, new TreeNode(3), 2)
+console.log(res)
 
 // 1091. 二进制矩阵中的最短路径
 var shortestPathBinaryMatrix = function (grid) {
     const n = grid.length
-    const [res, q] = [[], []]
 
 
 };
 // const res = shortestPathBinaryMatrix([[0, 1], [1, 0]])
 // console.log(res)
-
-// 117. 填充每个节点的下一个右侧节点指针 II
-// 542. 01 矩阵
-// 773. 滑动谜题
-
 
 // 力扣第 752 题「 打开转盘锁」
 // 剑指 Offer II 109. 开密码锁
@@ -179,3 +212,8 @@ var openLock = function (deadends, target) {
 };
 // const res = openLock(["0201", "0101", "0102", "1212", "2002"], '0202')
 // console.log(res)
+
+// 117. 填充每个节点的下一个右侧节点指针 II
+
+// 542. 01 矩阵
+// 773. 滑动谜题
