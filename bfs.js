@@ -116,8 +116,8 @@ var shortestPathBinaryMatrix = function (grid) {
 
 
 };
-const res = shortestPathBinaryMatrix([[0, 1], [1, 0]])
-console.log(res)
+// const res = shortestPathBinaryMatrix([[0, 1], [1, 0]])
+// console.log(res)
 
 // 117. 填充每个节点的下一个右侧节点指针 II
 // 542. 01 矩阵
@@ -125,7 +125,57 @@ console.log(res)
 
 
 // 力扣第 752 题「 打开转盘锁」
-var openLock = function (deadends, target) {
-
-};
 // 剑指 Offer II 109. 开密码锁
+// 输入：deadends = ["0201","0101","0102","1212","2002"], target = "0202" 输出：6
+var openLock = function (deadends, target) {
+    const q = ['0000']
+    let step = 0
+    const set = new Set()
+    const up = (str, i) => {
+        str = str.split('')
+        let num = Number(str[i])
+        if (num === 9) {
+            num = 0
+        } else {
+            num++
+        }
+        str[i] = num + ''
+        return str.join('')
+    }
+    const down = (str, i) => {
+        str = str.split('')
+        let num = Number(str[i])
+        if (num === 0) {
+            num = 9
+        } else {
+            num--
+        }
+        str[i] = num + ''
+        return str.join('')
+    }
+
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            if (deadends.includes(cur)) continue
+            if (cur === target) return step
+            for (let j = 0; j < 4; j++) {
+                const downStr = down(cur, j)
+                if (!set.has(downStr)) {
+                    q.push(downStr)
+                    set.add(downStr)
+                }
+                const upStr = up(cur, j)
+                if (!set.has(upStr)) {
+                    q.push(upStr)
+                    set.add(upStr)
+                }
+            }
+        }
+        step++
+    }
+    return -1
+};
+// const res = openLock(["0201", "0101", "0102", "1212", "2002"], '0202')
+// console.log(res)
