@@ -99,15 +99,29 @@ var levelOrder = function (root) {
     }
     return res
 };
-const res = levelOrder(t1)
-console.log(res)
+// const res = levelOrder(t1)
+// console.log(res)
 
+// 863. 二叉树中所有距离为 K 的结点
+var distanceK = function (root, target, k) {
+
+};
+// const res = distanceK(t1)
+// console.log(res)
 
 // 1091. 二进制矩阵中的最短路径
+var shortestPathBinaryMatrix = function (grid) {
+    const n = grid.length
+    const [res, q] = [[], []]
+
+
+};
+const res = shortestPathBinaryMatrix([[0, 1], [1, 0]])
+console.log(res)
+
 // 117. 填充每个节点的下一个右侧节点指针 II
 // 542. 01 矩阵
 // 773. 滑动谜题
-// 863. 二叉树中所有距离为 K 的结点
 
 
 // 力扣第 752 题「 打开转盘锁」
