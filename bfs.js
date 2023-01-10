@@ -117,20 +117,34 @@ var distanceK = function (root, target, k) {
     // bfs从target节点开始
     const [q, res, visited] = [[target], [], new Set()]
     visited.add(target.val)
+    let step = 0
+
     while (q.length) {
         const len = q.length
         for (let i = 0; i < len; i++) {
             const curNode = q.shift()
-            if (visited.has(curNode.val)) continue
-            if (map.get(curNode.val) && visited.has(curNode.val)) {
-
+            if (step === k) res.push(curNode.val)
+            const parentNode = map.get(curNode.val)
+            if (parentNode && !visited.has(parentNode.val)) {
+                q.push(parentNode)
+                visited.add(parentNode.val)
+            }
+            if (curNode.left && !visited.has(curNode.left.val)) {
+                q.push(curNode.left)
+                visited.add(curNode.left.val)
+            }
+            if (curNode.right && !visited.has(curNode.right.val)) {
+                q.push(curNode.right)
+                visited.add(curNode.right.val)
             }
         }
+        step++
     }
     return res
+
 };
 
-const res = distanceK(t1, new TreeNode(3), 2)
+const res = distanceK(t1, t3, 2)
 console.log(res)
 
 // 1091. 二进制矩阵中的最短路径
