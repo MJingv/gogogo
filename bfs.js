@@ -170,10 +170,8 @@ var shortestPathBinaryMatrix = function (grid) {
     }
     return res
 };
-
-
-const res = shortestPathBinaryMatrix([[0, 0, 0], [1, 1, 0], [1, 1, 0]])
-console.log(res)
+// const res = shortestPathBinaryMatrix([[0, 0, 0], [1, 1, 0], [1, 1, 0]])
+// console.log(res)
 
 // 力扣第 752 题「 打开转盘锁」
 // 剑指 Offer II 109. 开密码锁
