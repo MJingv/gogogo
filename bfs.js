@@ -104,43 +104,28 @@ var levelOrder = function (root) {
 
 // 863. 二叉树中所有距离为 K 的结点
 var distanceK = function (root, target, k) {
-    // 未完成
     if (!root) return []
     const map = new Map()
-    const getParent = (node, pNode = null) => {
-        const val = node.val
-        map.set(val, pNode)
-        if (!node.left && !node.right) return
-        if (node.left) getParent(node.left, node)
-        if (node.right) getParent(node.right, node)
+    // 先拿到父节点map
+    const getParent = (root, pNode = null) => {
+        if (!root) return
+        map.set(root.val, pNode)
+        if (root.left) getParent(root.left, root)
+        if (root.right) getParent(root.right, root)
     }
     getParent(root)
-    return map
-    const [q, res] = [[target], []]
-    let step = 0
-    const visited = new Set()
-    visited.add(target)
-
+    // bfs从target节点开始
+    const [q, res, visited] = [[target], [], new Set()]
+    visited.add(target.val)
     while (q.length) {
         const len = q.length
         for (let i = 0; i < len; i++) {
-            const cur = q.shift()
-            if (step === k) res.push(cur.val)
-            const parent = map.get(cur.val)
-            if (parent && !visited.has(parent.val)) {
-                q.push(parent)
-                visited.add(parent.val)
-            }
-            if (cur.left && !visited.has(cur.left.val)) {
-                q.push(cur.left)
-                visited.add(cur.left.val)
-            }
-            if (cur.right && !visited.has(cur.right.val)) {
-                q.push(cur.right)
-                visited.add(cur.right.val)
+            const curNode = q.shift()
+            if (visited.has(curNode.val)) continue
+            if (map.get(curNode.val) && visited.has(curNode.val)) {
+
             }
         }
-        step++
     }
     return res
 };
