@@ -141,20 +141,39 @@ var distanceK = function (root, target, k) {
         step++
     }
     return res
-
 };
-
-const res = distanceK(t1, t3, 2)
-console.log(res)
+// const res = distanceK(t1, t3, 2)
+// console.log(res)
 
 // 1091. 二进制矩阵中的最短路径
 var shortestPathBinaryMatrix = function (grid) {
-    const n = grid.length
-
-
+    const [m, n] = [grid.length, grid[0].length]
+    if (grid[0][0] !== 0 || grid[m - 1][n - 1] !== 0) return -1
+    const dirs = [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [-1, -1], [1, -1], [-1, 1]]
+    const [q, visited] = [[[0, 0]], new Set()]
+    visited.add('0,0')
+    let step = 1
+    let res = -1
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const [row, col] = q.shift()
+            if (row === m - 1 && col === n - 1) return res = step
+            for (const [r, c] of dirs) {
+                const [a, b] = [row + r, col + c]
+                if (a < 0 || a >= m || b < 0 || b >= n || grid[a][b] === 1 || visited.has(`${a},${b}`)) continue
+                q.push([a, b])
+                visited.add(`${a},${b}`)
+            }
+        }
+        step++
+    }
+    return res
 };
-// const res = shortestPathBinaryMatrix([[0, 1], [1, 0]])
-// console.log(res)
+
+
+const res = shortestPathBinaryMatrix([[0, 0, 0], [1, 1, 0], [1, 1, 0]])
+console.log(res)
 
 // 力扣第 752 题「 打开转盘锁」
 // 剑指 Offer II 109. 开密码锁
