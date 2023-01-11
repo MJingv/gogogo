@@ -234,24 +234,32 @@ var openLock = function (deadends, target) {
 // 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
 var updateMatrix = function (mat) {
     const [m, n] = [mat.length, mat[0].length]
-    const [q, visited, res] = [[[0, 0]], new Set(), Array(m).fill(0).map(i => Array(n).fill(0))]
+    const [q, res] = [[], Array(m).fill(-1).map(i => Array(n).fill(-1))]
     const dir = [[1, 0], [-1, 0], [0, 1], [0, -1]]
-    let step = 0
-    visited.add('0,0')
-    while (q.length) {
-        const len = q.length
-        for (let i = 0; i < len; i++) {
-            const [row, col] = q.shift()
-            for (let d = 0; d < dir.length; d++) {
-                const [r, c] = [row + dir[d][0], col + dir[d][1]]
-                if (r < 0 || r >= m || c < 0 || c >= n || visited.has(`${r},${c}`)) continue
-                if (mat[r][c] === 1) res[row][col] = mat[r][c] + 1
-                console.log([r, c])
-                q.push([r, c])
-                visited.add(`${r},${c}`)
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (mat[i][j] === 0) {
+                res[i][j] = 0
+                // 找0到1的距离
+                q.push([i, j])
             }
         }
     }
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const [x, y] = q.shift()
+            for (let d = 0; d < dir.length; d++) {
+                const newX = dir[d][0] + x
+                const newY = dir[d][1] + y
+                // 越位+visited 剪枝
+                if (newX >= m || newX < 0 || newY >= n || newY < 0 || res[newX][newY] !== -1) continue
+                res[newX][newY] = res[x][y] + 1
+                q.push([newX, newY])
+            }
+        }
+    }
+
     return res
 };
 const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
