@@ -229,7 +229,6 @@ var openLock = function (deadends, target) {
 // const res = openLock(["0201", "0101", "0102", "1212", "2002"], '0202')
 // console.log(res)
 
-
 // 542. 01 矩阵
 // 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
 var updateMatrix = function (mat) {
@@ -262,8 +261,30 @@ var updateMatrix = function (mat) {
 
     return res
 };
-const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
-console.log(res)
-// 773. 滑动谜题
+// const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
+// console.log(res)
+
+// 773. 滑动谜题 hard
+
 // 117. 填充每个节点的下一个右侧节点指针 II
+var connect = function (root) {
+    if (!root) return root
+    const [q, path] = [[root], []]
+    root.next = null
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            if (cur.left) path.push(cur.left)
+            if (cur.right) path.push(cur.right)
+        }
+        for (let i = 0; i < path.length - 1; i++) {
+            path[i].next = path[i + 1] ? path[i + 1] : null
+        }
+
+    }
+    return JSON.stringify(root)
+};
+const res = connect(t1)
+console.log(res)
 
