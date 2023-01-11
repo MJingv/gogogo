@@ -68,7 +68,26 @@ var closedIsland = function (grid) {
 // 力扣第 1020 题「 飞地的数量」
 var numEnclaves = function (grid) {
     const [m, n] = [grid.length, grid[0].length]
+    let res = 0
+    const helper = (i, j) => {
+        if (i < 0 || i >= m || j < 0 || j >= n) return
+        if (grid[i][j] === 0) return;
+        grid[i][j] = 0
+        helper(i + 1, j)
+        helper(i - 1, j)
+        helper(i, j + 1)
+        helper(i, j - 1)
+    }
 
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1) {
+                res++
+                helper(i, j)
+            }
+        }
+    }
+    return res - 1
 };
 const res = numEnclaves([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]])
 console.log(res)
