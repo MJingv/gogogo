@@ -62,7 +62,13 @@ var closedIsland = function (grid) {
     }
     return res
 };
-const res = closedIsland([[0, 0, 1, 0, 0], [0, 1, 0, 1, 0], [0, 1, 1, 1, 0]])
-console.log(res)
+// const res = closedIsland([[0, 0, 1, 0, 0], [0, 1, 0, 1, 0], [0, 1, 1, 1, 0]])
+// console.log(res)
 
 // 力扣第 1020 题「 飞地的数量」
+var numEnclaves = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+
+};
+const res = numEnclaves([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]])
+console.log(res)
