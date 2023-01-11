@@ -229,7 +229,33 @@ var openLock = function (deadends, target) {
 // const res = openLock(["0201", "0101", "0102", "1212", "2002"], '0202')
 // console.log(res)
 
-// 117. 填充每个节点的下一个右侧节点指针 II
 
 // 542. 01 矩阵
+// 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
+var updateMatrix = function (mat) {
+    const [m, n] = [mat.length, mat[0].length]
+    const [q, visited, res] = [[[0, 0]], new Set(), Array(m).fill(0).map(i => Array(n).fill(0))]
+    const dir = [[1, 0], [-1, 0], [0, 1], [0, -1]]
+    let step = 0
+    visited.add('0,0')
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const [row, col] = q.shift()
+            for (let d = 0; d < dir.length; d++) {
+                const [r, c] = [row + dir[d][0], col + dir[d][1]]
+                if (r < 0 || r >= m || c < 0 || c >= n || visited.has(`${r},${c}`)) continue
+                if (mat[r][c] === 1) res[row][col] = mat[r][c] + 1
+                console.log([r, c])
+                q.push([r, c])
+                visited.add(`${r},${c}`)
+            }
+        }
+    }
+    return res
+};
+const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
+console.log(res)
 // 773. 滑动谜题
+// 117. 填充每个节点的下一个右侧节点指针 II
+
