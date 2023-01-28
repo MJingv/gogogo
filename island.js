@@ -124,5 +124,49 @@ var maxAreaOfIsland = function (grid) {
 
     return res
 };
-const res = maxAreaOfIsland([[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]])
+// const res = maxAreaOfIsland([[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]])
+// console.log(res)
+
+
+// 力扣第 1905 题「 统计子岛屿」
+// 2为1的子集
+var countSubIslands = function (grid1, grid2) {
+    const [m, n] = [grid1.length, grid1[0].length]
+    let res = 0
+
+    const helper = (grid, i, j) => {
+        // 淹掉函数
+        const [m, n] = [grid.length, grid[0].length]
+        if (i >= m || i < 0 || j >= n || j < 0 || grid[i][j] === 0) return
+        grid[i][j] = 0
+        helper(grid, i + 1, j)
+        helper(grid, i - 1, j)
+        helper(grid, i, j + 1)
+        helper(grid, i, j - 1)
+    }
+
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid2[i][j] === 1 && grid1[i][j] === 0) {
+                helper(grid2, i, j)
+            }
+        }
+    }
+
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid2[i][j] === 1) {
+                res++
+                helper(grid2, i, j)
+            }
+        }
+    }
+    return res
+};
+const res = countSubIslands(grid1 = [[1, 1, 1, 0, 0], [0, 1, 1, 1, 1], [0, 0, 0, 0, 0], [1, 0, 0, 0, 0], [1, 1, 0, 1, 1]], grid2 = [[1, 1, 1, 0, 0], [0, 0, 1, 1, 1], [0, 1, 0, 0, 0], [1, 0, 1, 1, 0], [0, 1, 0, 1, 0]])
 console.log(res)
+
+// 力扣第 694 题「 不同的岛屿数量」
+const numDistinctIslands = () => {
+
+}
