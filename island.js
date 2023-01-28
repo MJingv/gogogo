@@ -1,3 +1,4 @@
+// 淹掉淹掉
 // 力扣第 200 题「 岛屿数量」
 // 给你一个由 '1'（陆地）和 '0'（水）组成的的二维网格，请你计算网格中岛屿的数量。
 var numIslands = function (grid) {
@@ -69,12 +70,13 @@ var closedIsland = function (grid) {
 var numEnclaves = function (grid) {
     // 0是海
     // 返回不能上下左右离开网格的1数量
-    const [m, n, q] = [grid.length, grid[0].length, []]
+    // 不知道为什么过不了
+    const [m, n] = [grid.length, grid[0].length]
     let res = 0
     const helper = (i, j) => {
         if (i >= m || i < 0 || j >= n || j < 0) return
         if (grid[i][j] === 0) return;
-        grid[i][j] = 0
+        grid[i][j] = 0 //淹掉
         helper(i + 1, j)
         helper(i - 1, j)
         helper(i, j + 1)
@@ -94,11 +96,33 @@ var numEnclaves = function (grid) {
         for (let j = 0; j < n; j++) {
             if (grid[i][j] === 1) {
                 res++
-                helper(i, j)
+            }
+        }
+    }
+    return res
+
+};
+// const res = numEnclaves([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]])
+// console.log(res)
+
+// 力扣第 695 题「 岛屿的最大面积」
+var maxAreaOfIsland = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+    let res = 0
+    const helper = (i, j) => {
+        if (i >= m || i < 0 || j >= n || j < 0 || grid[i][j] === 0) return 0
+        grid[i][j] = 0
+        return helper(i + 1, j) + helper(i - 1, j) + helper(i, j + 1) + helper(i, j - 1) + 1
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1) {
+                res = Math.max(res, helper(i, j))
             }
         }
     }
 
+    return res
 };
-const res = numEnclaves([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]])
+const res = maxAreaOfIsland([[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]])
 console.log(res)
