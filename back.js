@@ -1,3 +1,16 @@
+// 回溯算法模版
+// result = []
+// def backtrack(路径, 选择列表):
+// if 满足结束条件:
+// result.add(路径)
+// return
+//
+// for 选择 in 选择列表:
+// 做选择
+// backtrack(路径, 选择列表)
+// 撤销选择
+
+
 // 416. 分割等和子集
 // 剑指 Offer II 101. 分割等和子集
 // 给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
@@ -109,18 +122,21 @@ var generateParenthesis = function (n) {
         if (left > right || left < 0 || right < 0) return
         if (left === 0 && right === 0) return res.push(q.join(''))
 
+
+        // 选择使用一个(
         q.push('(')
         helper(left - 1, right, q, res)
-        q.pop()
+        q.pop() //撤销选择
 
+        // 选择使用一个)
         q.push(')')
         helper(left, right - 1, q, res)
-        q.pop()
+        q.pop() //撤销选择
     }
 
     let res = []
     helper(n, n, [], res)
     return res
 };
-const res = generateParenthesis(3)// ["((()))","(()())","(())()","()(())","()()()"]
-console.log(res)
+// const res = generateParenthesis(3)// ["((()))","(()())","(())()","()(())","()()()"]
+// console.log(res)
