@@ -141,24 +141,6 @@ var generateParenthesis = function (n) {
 // const res = generateParenthesis(3)// ["((()))","(()())","(())()","()(())","()()()"]
 // console.log(res)
 
-// 306. 累加数
-var isAdditiveNumber = function (num) {
-    const len = num.length
-    if (len < 3) return false
-    if (!Number(num)) return false
-    let res = true
-    const helper = (a, b, c) => {
-        if (Number(num[a]) + Number(num[b]) !== Number(num[c])) return false
-        helper(a, b, c + 1)
-        helper(a + 1, b, c)
-
-    }
-    helper(0, 1, 2)
-    return res
-};
-// const res = isAdditiveNumber('112358')
-// console.log(res)
-
 // 93. 复原IP地址
 var restoreIpAddresses = function (s) {
     const len = s.length
@@ -179,5 +161,28 @@ var restoreIpAddresses = function (s) {
     helper()
     return res
 };
-const res = restoreIpAddresses('25525511135')
-console.log(res)
+// const res = restoreIpAddresses('25525511135')
+// console.log(res)
+
+// 306. 累加数
+var isAdditiveNumber = function (num) {
+    const len = num.length
+    if (len < 3) return false
+    if (!Number(num)) return false
+    let res = true
+
+
+
+    return res
+};
+// const res = isAdditiveNumber('112358')
+// console.log(res)
+
+
+
+
+
+
+
+
+
