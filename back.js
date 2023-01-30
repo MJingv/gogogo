@@ -178,5 +178,26 @@ var isAdditiveNumber = function (num) {
 // const res = isAdditiveNumber('112358')
 // console.log(res)
 
+// 131. 分割回文串
+var partition = function (s) {
+    // 没完成 心好累
+    const len = s.length
+    if (len === 1) return [[s]]
+    const [res, path] = [[], []]
 
-
+    const helper = (start = 0) => {
+        if (start === len) return res.push(path.slice())
+        for (let i = start; i < len; i++) {
+            const str = s.slice(start, i + 1)
+            if (str === str.split('').reverse().join('')) {
+                path.push(str)
+                helper(start + 1)
+                path.pop()
+            }
+        }
+    }
+    helper()
+    return res
+};
+const res = partition('google')
+console.log(res)
