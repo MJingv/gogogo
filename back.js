@@ -119,6 +119,7 @@ var findTargetSumWays = function (nums, target) {
 // 2、对于一个「合法」的括号字符串组合 p，必然对于任何 0 <= i < len(p) 都有：子串 p[0..i] 中左括号的数量都大于或等于右括号的数量。
 var generateParenthesis = function (n) {
     const helper = (left, right, q = [], res) => {
+        // 还有几个left
         if (left > right || left < 0 || right < 0) return
         if (left === 0 && right === 0) return res.push(q.join(''))
 
@@ -172,17 +173,10 @@ var isAdditiveNumber = function (num) {
     let res = true
 
 
-
     return res
 };
 // const res = isAdditiveNumber('112358')
 // console.log(res)
-
-
-
-
-
-
 
 
 
