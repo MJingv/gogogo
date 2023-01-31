@@ -179,19 +179,27 @@ var isAdditiveNumber = function (num) {
 // console.log(res)
 
 // 131. 分割回文串
+// google
+// [["g","o","o","g","l","e"],["g","oo","g","l","e"],["goog","l","e"]]
 var partition = function (s) {
-    // 没完成 心好累
     const len = s.length
     if (len === 1) return [[s]]
-    const [res, path] = [[], []]
 
+    const [res, path] = [[], []]
+    const isHW = (str = '') => {
+        let [start, end] = [0, str.length - 1]
+        while (start <= end) {
+            if (str[start++] !== str[end--]) return false
+        }
+        return true
+    }
     const helper = (start = 0) => {
         if (start === len) return res.push(path.slice())
         for (let i = start; i < len; i++) {
             const str = s.slice(start, i + 1)
-            if (str === str.split('').reverse().join('')) {
+            if (isHW(str)) {
                 path.push(str)
-                helper(start + 1)
+                helper(i + 1)
                 path.pop()
             }
         }
