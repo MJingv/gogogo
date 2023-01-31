@@ -179,10 +179,7 @@ var isAdditiveNumber = function (num) {
         const first = num.slice(0, a)
         const second = num.slice(a, a + b + 1)
         Number(first)+Number(second)
-
-
     }
-
     helper()
     return res
 };
