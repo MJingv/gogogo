@@ -166,13 +166,24 @@ var restoreIpAddresses = function (s) {
 // console.log(res)
 
 // 306. 累加数
+// 112358
+// 199100199
 var isAdditiveNumber = function (num) {
+    // 看不懂
     const len = num.length
     if (len < 3) return false
     if (!Number(num)) return false
     let res = true
 
+    const helper = (a = 1, b = 1) => {
+        const first = num.slice(0, a)
+        const second = num.slice(a, a + b + 1)
+        Number(first)+Number(second)
 
+
+    }
+
+    helper()
     return res
 };
 // const res = isAdditiveNumber('112358')
@@ -207,5 +218,5 @@ var partition = function (s) {
     helper()
     return res
 };
-const res = partition('google')
-console.log(res)
+// const res = partition('google')
+// console.log(res)
