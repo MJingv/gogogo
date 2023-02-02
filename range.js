@@ -12,17 +12,18 @@ var removeCoveredIntervals = function (intervals) {
     // 3个case
     for (let i = 1; i < len; i++) {
         const [l, r] = [intervals[i][0], intervals[i][1]]
-        if (l >= right) {
-            // 不相交
-            left = l
-            right = r
-        }
+
         if (r <= right && l >= left) {
             // 重合
             res++
         }
-        if (l >= left && r >= right) {
+        if (l <= right && r >= right) {
             // 部分重合
+            right = r
+        }
+        if (l > right) { // 不等 看清楚边界
+            // 不相交
+            left = l
             right = r
         }
     }
