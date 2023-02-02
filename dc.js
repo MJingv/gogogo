@@ -6,9 +6,7 @@ var diffWaysToCompute = function (expression) {
     if (/^\d+$/g.test(expression)) {
         return [Number(expression)];
     }
-
     const res = []
-
     const helper = () => {
         for (let i = 0; i < len; i++) {
             const c = expression[i]
@@ -38,5 +36,12 @@ var diffWaysToCompute = function (expression) {
     helper()
     return res
 };
-const res = diffWaysToCompute('2*3-4*5')
+const diffWaysToCompute2 = (str) => {
+    const len = str.length
+    if (len === 1) return [str]
+    if (/^\d+$/g.test(str)) return [str]
+
+
+}
+const res = diffWaysToCompute2('2*3-4*5')
 console.log(res)
