@@ -38,5 +38,5 @@ var diffWaysToCompute = function (expression) {
     return helper()
 };
 
-const res = diffWaysToCompute('2*3-4*5')
-console.log(res)
+// const res = diffWaysToCompute('2*3-4*5')
+// console.log(res)
