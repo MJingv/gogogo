@@ -29,7 +29,15 @@ var removeCoveredIntervals = function (intervals) {
     }
 
     return len - res
+};
+// const res = removeCoveredIntervals([[1, 2], [1, 4], [3, 4]])
+// console.log(res)
+
+// 力扣第 56 题 区间合并问题
+// 输入：intervals = [[1,3],[2,6],[8,10],[15,18]] 输出：[[1,6],[8,10],[15,18]]
+var merge = function (intervals) {
+    const len = intervals.length
 
 };
-const res = removeCoveredIntervals([[1, 2], [1, 4], [3, 4]])
+const res = merge([[1, 3], [2, 6], [8, 10], [15, 18]])
 console.log(res)
