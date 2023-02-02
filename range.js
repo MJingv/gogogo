@@ -37,7 +37,25 @@ var removeCoveredIntervals = function (intervals) {
 // 输入：intervals = [[1,3],[2,6],[8,10],[15,18]] 输出：[[1,6],[8,10],[15,18]]
 var merge = function (intervals) {
     const len = intervals.length
-
+    intervals.sort((a, b) => a[0] - b[0])
+    const res = [intervals[0]]
+    let [left, right] = [intervals[0][0], intervals[0][1]]
+    for (let i = 1; i < len; i++) {
+        const [l, r] = [intervals[i][0], intervals[i][1]]
+        if (l > right) {
+            // 不重合
+            left = l
+            right = r
+            res.push(intervals[i])
+        }
+        if (l <= right && r >= right) {
+            // 重合
+            left = l
+            right = r
+            res[res.length - 1][1] = r
+        }
+    }
+    return res
 };
-const res = merge([[1, 3], [2, 6], [8, 10], [15, 18]])
+const res = merge([[1, 3], [2, 6], [15, 18], [8, 10]])
 console.log(res)
