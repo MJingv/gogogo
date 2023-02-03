@@ -1,3 +1,8 @@
+// 区间问题解法
+// 1.按start排序
+// 2.循环里判断case
+
+
 // 1288 删除被覆盖区间
 // 输入：intervals = [[1,4],[3,6],[2,8]] 输出：2 解释：区间 [3,6] 被区间 [2,8] 覆盖，所以它被删除了。
 // 请你返回列表中剩余区间的数目。
@@ -57,5 +62,34 @@ var merge = function (intervals) {
     }
     return res
 };
-const res = merge([[1, 3], [2, 6], [15, 18], [8, 10]])
+// const res = merge([[1, 3], [2, 6], [15, 18], [8, 10]])
+// console.log(res)
+
+// 力扣第 986 题 区间列表的交集
+// 输入：firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]] 输出：[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
+var intervalIntersection = function (firstList, secondList) {
+    // 交集区间是有规律的！如果交集区间是[c1,c2]，那么c1=max(a1,b1)，c2=min(a2,b2)
+    const [len1, len2] = [firstList.length, secondList.length]
+    const res = []
+    let [i, j] = [0, 0]
+    while (i < len1 && j < len2) {
+        let [left1, right1, left2, right2] = [firstList[i][0], firstList[i][1], secondList[j][0], secondList[j][1]]
+        if (left2 > right1 || right2 < left1) {
+
+        } else {
+            const l = Math.max(left1, left2)
+            const r = Math.min(right1, right2)
+            res.push([l, r])
+        }
+        if (right1 >= right2) {
+            j++
+        } else {
+            i++
+        }
+    }
+
+    return res
+};
+// const res = intervalIntersection([[0, 2], [5, 10], [13, 23], [24, 25]], [[1, 5], [8, 12], [15, 24], [25, 26]])
+const res = intervalIntersection([[0, 2], [5, 10], [13, 23], [24, 25]], [[1, 5], [8, 12], [15, 24], [25, 26]])
 console.log(res)
