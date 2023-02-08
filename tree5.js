@@ -159,5 +159,18 @@ var isSameTree = function (p, q) {
     helper(p, q)
     return res
 };
-const res = isSameTree(t1, t3)
+// const res = isSameTree(t1, t3)
+// console.log(res)
+
+// 101. 对称二叉树
+var isSymmetric = function (root) {
+    const helper = (l, r) => {
+        if (!l && !r) return true
+        if (!l || !r) return false
+        return l.val === r.val && helper(l.left, r.right) && helper(l.right, r.left)
+    }
+    return helper(root.left, root.right)
+
+};
+const res = isSymmetric(t1)
 console.log(res)
