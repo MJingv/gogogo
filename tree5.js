@@ -67,17 +67,17 @@ const traverse1 = (root) => {
 
 // 1、如果把根节点看做第 1 层，如何打印出每一个节点所在的层数？
 const fn1 = (root) => {
-    const helper = (node) => {
-        if (!node) return 0
-        helper(node.left)
-        helper(node.right)
-        console.log(node.val)
+    const helper = (node, depth = 1) => {
+        if (!node) return depth
+        console.log(node.val, depth) //前序
+        helper(node.left, depth + 1)
+        helper(node.right, depth + 1)
     }
-    helper(root)
+    return helper(root)
     // return root
 }
-// const res = fn1(t1)
-// console.log(res)
+const res = fn1(t1)
+console.log(res)
 
 // 2、如何打印出每个节点的左右子树各有多少节点？
 const fn2 = (root) => {
@@ -85,11 +85,10 @@ const fn2 = (root) => {
         if (!node) return 0
         const left = helper(node.left)
         const right = helper(node.right)
-        console.log(node.val, 'left', left, 'right', right,)
+        console.log(node.val, 'left', left, 'right', right,)//后序
         return left + right + 1
     }
     helper(root)
-    // return root
 }
-const res = fn2(t1)
-console.log(res)
+// const res = fn2(t1)
+// console.log(res)
