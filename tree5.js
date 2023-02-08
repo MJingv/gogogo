@@ -76,8 +76,8 @@ const fn1 = (root) => {
     return helper(root)
     // return root
 }
-const res = fn1(t1)
-console.log(res)
+// const res = fn1(t1)
+// console.log(res)
 
 // 2、如何打印出每个节点的左右子树各有多少节点？
 const fn2 = (root) => {
@@ -92,3 +92,24 @@ const fn2 = (root) => {
 }
 // const res = fn2(t1)
 // console.log(res)
+
+// 力扣第 543 题「 二叉树的直径」
+// 不一定过根结点，不等于根的左最大+右最大
+var diameterOfBinaryTree = function (root) {
+    // 求每个节点的直径
+    const maxDepth = (node) => {
+        if (!node) return 0
+        return Math.max(maxDepth(node.left), maxDepth(node.right)) + 1
+    }
+    let max = 0
+    const helper = (node) => {
+        if (!node) return
+        max = Math.max(maxDepth(node.right) + maxDepth(node.left) , max)
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return max
+};
+const res = diameterOfBinaryTree(t1)
+console.log(res)
