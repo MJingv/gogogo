@@ -64,6 +64,24 @@ const traverse1 = (root) => {
 // const res = traverse1(t1)
 // console.log(res)
 
+const levelTraverse = (root) => {
+    if (!root) return
+    const [q, res] = [[root], []]
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const node = q.shift()
+            path.push(node.val)
+            node.left && q.push(node.left)
+            node.right && q.push(node.right)
+        }
+        res.push(path)
+    }
+    return res
+}
+const res = levelTraverse(t1)
+console.log(res)
 
 // 1、如果把根节点看做第 1 层，如何打印出每一个节点所在的层数？
 const fn1 = (root) => {
@@ -104,12 +122,26 @@ var diameterOfBinaryTree = function (root) {
     let max = 0
     const helper = (node) => {
         if (!node) return
-        max = Math.max(maxDepth(node.right) + maxDepth(node.left) , max)
+        max = Math.max(maxDepth(node.right) + maxDepth(node.left), max)
         helper(node.left)
         helper(node.right)
     }
     helper(root)
     return max
 };
-const res = diameterOfBinaryTree(t1)
-console.log(res)
+var diameterOfBinaryTree1 = function (root) {
+    if (!root) return
+    let max = 0
+    const helper = (node) => {
+        if (!node) return 0
+        const leftMax = helper(node.left)
+        const rightMax = helper(node.right)
+        const maxD = leftMax + rightMax
+        max = Math.max(max, maxD)
+        return 1 + Math.max(leftMax, rightMax) // 算maxdepth
+    }
+    helper(root)
+    return max
+}
+// const res = diameterOfBinaryTree1(t1)
+// console.log(res)
