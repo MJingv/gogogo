@@ -80,8 +80,8 @@ const levelTraverse = (root) => {
     }
     return res
 }
-const res = levelTraverse(t1)
-console.log(res)
+// const res = levelTraverse(t1)
+// console.log(res)
 
 // 1、如果把根节点看做第 1 层，如何打印出每一个节点所在的层数？
 const fn1 = (root) => {
@@ -145,3 +145,19 @@ var diameterOfBinaryTree1 = function (root) {
 }
 // const res = diameterOfBinaryTree1(t1)
 // console.log(res)
+
+// 100. 相同的树
+var isSameTree = function (p, q) {
+    let res = true
+    const helper = (node1, node2) => {
+        if (!node1 && node2 || node1 && !node2) return res = false
+        if (!node1 && !node2) return
+        if (node1.val !== node2.val) return res = false
+        helper(node1.left, node2.left)
+        helper(node1.right, node2.right)
+    }
+    helper(p, q)
+    return res
+};
+const res = isSameTree(t1, t3)
+console.log(res)
