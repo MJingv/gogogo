@@ -172,5 +172,27 @@ var isSymmetric = function (root) {
     return helper(root.left, root.right)
 
 };
-const res = isSymmetric(t1)
+// const res = isSymmetric(t1)
+// console.log(res)
+
+// 113. 路径总和 II
+var pathSum = function (root, targetSum) {
+    const path = []
+    const res = []
+    const helper = (node) => {
+        if (!node) return res.push(path)
+        path.push(node.val)
+        helper(node.left)
+        path.pop()
+        //
+        // path.push(node.val)
+        // helper(node.right)
+        // path.pop()
+
+    }
+    helper(root)
+    return res
+
+};
+const res = pathSum(t1, 1)
 console.log(res)
