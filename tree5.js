@@ -179,20 +179,28 @@ var isSymmetric = function (root) {
 var pathSum = function (root, targetSum) {
     const path = []
     const res = []
+    let sum = 0
     const helper = (node) => {
-        if (!node) return res.push(path)
+        if (!node) return
+
         path.push(node.val)
+        sum += node.val
+        if (!node.left && !node.right && sum === targetSum) res.push(path.slice())
+
         helper(node.left)
         path.pop()
-        //
-        // path.push(node.val)
-        // helper(node.right)
-        // path.pop()
+        sum -= node.val
+
+        path.push(node.val)
+        sum += node.val
+        helper(node.right)
+        path.pop()
+        sum -= node.val
 
     }
     helper(root)
     return res
 
 };
-const res = pathSum(t1, 1)
+const res = pathSum(t1, 8)
 console.log(res)
