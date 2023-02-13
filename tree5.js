@@ -202,5 +202,48 @@ var pathSum = function (root, targetSum) {
     return res
 
 };
-const res = pathSum(t1, 8)
+// const res = pathSum(t1, 8)
+// console.log(res)
+
+
+// 129. 求根节点到叶节点数字之和
+var sumNumbers = function (root) {
+    // 回溯
+    if (!root) return 0
+    if (!root.left && !root.right && root.val === 0) return 0
+    let res = 0
+    const path = []
+    const helper = (node) => {
+        if (!node) return
+        path.push(node.val)
+        if (!node.left && !node.right) res += Number(path.slice().join(''))
+
+        helper(node.left)
+        path.pop()
+
+        path.push(node.val)
+        helper(node.right)
+        path.pop()
+
+    }
+    helper(root)
+    return res
+}
+const sumNumbers1 = (root) => {
+    if (!root) return 0
+    if (!root.left && !root.right && root.val === 0) return 0
+    let res = 0
+
+    const helper = (node, c = '') => {
+        if (!node) return
+        c += node.val
+        if (!node.left && !node.right) res += Number(c)
+        helper(node.left, c)
+        helper(node.right, c)
+    }
+    helper(root)
+    return res
+
+}
+const res = sumNumbers1(t1)
 console.log(res)
