@@ -8,7 +8,7 @@ function TreeNode(val, left, right) {
     this.right = (right === undefined ? null : right)
 }
 
-const t1 = new TreeNode(1)
+const t1 = new TreeNode(2)
 t1.left = new TreeNode(0)
 const t3 = new TreeNode(3)
 t3.left = new TreeNode(2)
@@ -245,5 +245,45 @@ const sumNumbers1 = (root) => {
     return res
 
 }
-const res = sumNumbers1(t1)
+// const res = sumNumbers1(t1)
+// console.log(res)
+
+// 1315. 祖父节点值为偶数的节点和
+var sumEvenGrandparent = function (root) {
+    // 没有a
+    if (!root) return 0
+    let res = 0
+    const helper = (node, p = null) => {
+        if (!node) return
+        if (p && p.val % 2 === 0) {
+            res += node.val
+        }
+        if (node.left) {
+            helper(node.left.left, node)
+            helper(node.left.right, node)
+        }
+        if (node.right) {
+            helper(node.right.left, node)
+            helper(node.right.right, node)
+        }
+    }
+    helper(root)
+    return res
+
+};
+var sumEvenGrandparent1 = function (root) {
+    if (!root) return
+    let res = 0
+    const helper = (node, parent = null, grandParent = null) => {
+        if (!node) return
+        if (grandParent && grandParent.val % 2 === 0) {
+            res += node.val
+        }
+        helper(node.left, node, parent)
+        helper(node.right, node, parent)
+    }
+    helper(root)
+    return res
+}
+const res = sumEvenGrandparent1(t1)
 console.log(res)
