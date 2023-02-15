@@ -312,6 +312,24 @@ var flatten = function (root) {
 // console.log(t1)
 
 // 116. 填充每个节点的下一个右侧节点指针
+var connect = function (root) {
+    if (!root) return null
+    const helper = (left = null, right = null) => {
+        if (!left) return null
+        right.next = null
+        left.next = right
+        helper(left.left, left.right)
+        helper(left.right, right.left)
+        helper(right.left, right.right)
+
+    }
+    helper(root.left, root.right)
+    return root
+};
+const res = connect(t1)
+console.log(res)
+
+
 // 404. 左叶子之和
 // 437. 路径总和 III
 
