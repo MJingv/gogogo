@@ -8,7 +8,7 @@ function TreeNode(val, left, right) {
     this.right = (right === undefined ? null : right)
 }
 
-const t1 = new TreeNode(2)
+const t1 = new TreeNode(1)
 t1.left = new TreeNode(0)
 const t3 = new TreeNode(3)
 t3.left = new TreeNode(2)
@@ -287,3 +287,41 @@ var sumEvenGrandparent1 = function (root) {
 }
 // const res = sumEvenGrandparent1(t1)
 // console.log(res)
+
+
+// 114. 二叉树展开为链表
+// 给你二叉树的根结点 root ，请你将它展开为一个单链表：展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。展开后的单链表应该与二叉树 先序遍历 顺序相同。
+var flatten = function (root) {
+    // 分解 相信函数名字
+    if (!root) return
+    flatten(root.left)
+    flatten(root.right)
+    // 后序位置，左右都flat了
+    const [left, right] = [root.left, root.right]
+    // 将左放到右
+    root.left = null
+    root.right = left
+    // 找到最右，把原右放过去
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+    p.right = right
+};
+// const res = flatten(t1)
+// console.log(t1)
+
+// 116. 填充每个节点的下一个右侧节点指针
+// 404. 左叶子之和
+// 437. 路径总和 III
+
+// 501. 二叉搜索树中的众数
+// 508. 出现次数最多的子树元素和
+// 513. 找树左下角的值
+// 515. 在每个树行中找最大值
+
+// 1080. 根到叶路径上的不足节点
+
+// 1325. 删除给定值的叶子节点
+
+// 1339. 分裂二叉树的最大乘积
