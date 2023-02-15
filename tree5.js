@@ -326,11 +326,25 @@ var connect = function (root) {
     helper(root.left, root.right)
     return root
 };
-const res = connect(t1)
-console.log(res)
-
+// const res = connect(t1)
+// console.log(res)
 
 // 404. 左叶子之和
+var sumOfLeftLeaves = function (root) {
+    if (!root) return
+    let res = 0
+    const helper = (node) => {
+        if (!node) return
+        if (node.left && !node.left.left && !node.left.right) res += node.left.val
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return res
+
+};
+const res = sumOfLeftLeaves(t1)
+console.log(res)
 // 437. 路径总和 III
 
 // 501. 二叉搜索树中的众数
