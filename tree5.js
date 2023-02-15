@@ -285,5 +285,5 @@ var sumEvenGrandparent1 = function (root) {
     helper(root)
     return res
 }
-const res = sumEvenGrandparent1(t1)
-console.log(res)
+// const res = sumEvenGrandparent1(t1)
+// console.log(res)
