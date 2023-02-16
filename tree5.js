@@ -343,11 +343,36 @@ var sumOfLeftLeaves = function (root) {
     return res
 
 };
-const res = sumOfLeftLeaves(t1)
-console.log(res)
+// const res = sumOfLeftLeaves(t1)
+// console.log(res)
 // 437. 路径总和 III
+var pathSum = function (root, targetSum) {
+    if (!root) return
+    let res = 0
+    let sum = 0
+    const path = []
+    const helper = (node) => {
+        if (!node) return
+        if (sum === targetSum) res++
+
+
+    }
+    helper(root)
+    return res
+
+
+};
+// const res = pathSum()
+// console.log(res)
 
 // 501. 二叉搜索树中的众数
+var findMode = function (root) {
+    if (!root) return
+
+};
+const res = findMode(t1)
+console.log(res)
+
 // 508. 出现次数最多的子树元素和
 // 513. 找树左下角的值
 // 515. 在每个树行中找最大值
