@@ -368,7 +368,21 @@ var pathSum = function (root, targetSum) {
 // 501. 二叉搜索树中的众数
 var findMode = function (root) {
     if (!root) return
-
+    const map = new Map()
+    const res = []
+    let maxLen = 0
+    const helper = (node) => {
+        if (!node) return
+        map.set(node.val, (map.get(node.val) || 0) + 1)
+        maxLen = Math.max(maxLen, map.get(node.val))
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    for (const [key, value] of map) {
+        if (value === maxLen) res.push(key)
+    }
+    return res
 };
 const res = findMode(t1)
 console.log(res)
