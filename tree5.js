@@ -435,11 +435,31 @@ var findBottomLeftValue = function (root) {
     }
     return res
 };
-const res = findBottomLeftValue(t1)
-console.log(res)
-
+// const res = findBottomLeftValue(t1)
+// console.log(res)
 
 // 515. 在每个树行中找最大值
+// 给定一棵二叉树的根节点 root ，请找出该二叉树中每一层的最大值。
+var largestValues = function (root) {
+    if (!root) return
+    const [q, res] = [[root], []]
+    while (q.length) {
+        const size = q.length
+        const path = []
+        let max = -Infinity
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            max = Math.max(max, cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.push(max)
+    }
+    return res
+};
+const res = largestValues(t1)
+console.log(res)
+
 
 // 1080. 根到叶路径上的不足节点
 
