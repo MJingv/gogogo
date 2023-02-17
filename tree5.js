@@ -419,7 +419,21 @@ var findFrequentTreeSum = function (root) {
 // 最底层最左边的值
 var findBottomLeftValue = function (root) {
     if (!root) return
+    const q = [root]
+    let res = 0
 
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            if (i === 0) res = cur.val
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+    }
+    return res
 };
 const res = findBottomLeftValue(t1)
 console.log(res)
