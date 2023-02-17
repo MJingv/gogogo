@@ -345,8 +345,11 @@ var sumOfLeftLeaves = function (root) {
 };
 // const res = sumOfLeftLeaves(t1)
 // console.log(res)
+
+
 // 437. 路径总和 III
 var pathSum = function (root, targetSum) {
+    // unfinish
     if (!root) return
     let res = 0
     let sum = 0
@@ -384,10 +387,35 @@ var findMode = function (root) {
     }
     return res
 };
-const res = findMode(t1)
-console.log(res)
+// const res = findMode(t1)
+// console.log(res)
 
 // 508. 出现次数最多的子树元素和
+var findFrequentTreeSum = function (root) {
+    if (!root) return
+    let res = []
+    let maxLen = 0
+    const map = new Map()
+    const helper = (node) => {
+        if (!node) return 0
+        const sum = helper(node.left) + helper(node.right) + node.val
+        map.set(sum, (map.get(sum) || 0) + 1)
+        const n = map.get(sum)
+        if (n > maxLen) {
+            maxLen = n
+            res = [sum]
+        } else if (n === maxLen) {
+            res.push(sum)
+        }
+        return sum
+    }
+    helper(root)
+    return res
+};
+const res = findFrequentTreeSum(t1)
+console.log(res)
+
+
 // 513. 找树左下角的值
 // 515. 在每个树行中找最大值
 
@@ -396,3 +424,5 @@ console.log(res)
 // 1325. 删除给定值的叶子节点
 
 // 1339. 分裂二叉树的最大乘积
+
+
