@@ -412,11 +412,19 @@ var findFrequentTreeSum = function (root) {
     helper(root)
     return res
 };
-const res = findFrequentTreeSum(t1)
+// const res = findFrequentTreeSum(t1)
+// console.log(res)
+
+// 513. 找树左下角的值
+// 最底层最左边的值
+var findBottomLeftValue = function (root) {
+    if (!root) return
+
+};
+const res = findBottomLeftValue(t1)
 console.log(res)
 
 
-// 513. 找树左下角的值
 // 515. 在每个树行中找最大值
 
 // 1080. 根到叶路径上的不足节点
