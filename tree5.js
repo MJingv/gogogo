@@ -461,14 +461,28 @@ var largestValues = function (root) {
 // console.log(res)
 
 // 1080. 根到叶路径上的不足节点
+// 假如通过节点 node 的每种可能的 “根-叶” 路径上值的总和全都小于给定的 limit，则该节点被称之为「不足节点」，需要被删除。
 var sufficientSubset = function (root, limit) {
     if (!root) return null
-    const helper = () => {
+    const helper = (node, sum = 0) => {
+        // 返回符合条件的节点
+        if (!node) return null
+        sum += node.val
+        // 如果我是叶子节点并且和小于limit
+        if (!node.left && !node.right) {
+            return sum < limit ? null : node
+        }
+        node.left = helper(node.left, sum)
+        node.right = helper(node.right, sum)
+        // 后序：如果我的孩子都没有，我也不要了
+        if (!node.left && !node.right) return null
+
+        return node
     }
-    helper()
+    root = helper(root)
     return root
 };
-const res = sufficientSubset()
+const res = sufficientSubset(t1, 4)
 console.log(res)
 
 // 1325. 删除给定值的叶子节点
