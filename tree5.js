@@ -482,10 +482,26 @@ var sufficientSubset = function (root, limit) {
     root = helper(root)
     return root
 };
-const res = sufficientSubset(t1, 4)
-console.log(res)
+// const res = sufficientSubset(t1, 4)
+// console.log(res)
 
 // 1325. 删除给定值的叶子节点
+var removeLeafNodes = function (root, target) {
+    if (!root) return
+    const helper = (node) => {
+        if (!node) return null
+        if (!node.left && !node.right && node.val === target) return null
+        node.left = helper(node.left)
+        node.right = helper(node.right)
+        if (!node.left && !node.right && node.val === target) return null
+
+        return node
+    }
+    root = helper(root)
+    return root
+};
+const res = removeLeafNodes(t1, 0)
+console.log(res)
 
 // 1339. 分裂二叉树的最大乘积
 
