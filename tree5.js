@@ -507,11 +507,23 @@ var removeLeafNodes = function (root, target) {
 var maxProduct = function (root) {
     if (!root) return
     let res = 0
-    const helper = () => {
-
+    let sum = 0
+    const helper = (node) => {
+        if (!node) return
+        sum += node.val
+        helper(node.left)
+        helper(node.right)
     }
     helper(root)
-    return res % (10 ^ 9 + 7)
+    const maxSum = (node) => {
+        if (!node) return 0
+        const leftVal = maxSum(node.left)
+        const rightVal = maxSum(node.right)
+        res = Math.max(leftVal * (sum - leftVal), rightVal * (sum - rightVal), res)
+        return leftVal + rightVal + node.val
+    }
+    maxSum(root)
+    return res % (1000000007)
 };
 const res = maxProduct(t1)
 console.log(res)
