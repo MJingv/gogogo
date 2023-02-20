@@ -9,7 +9,9 @@ function TreeNode(val, left, right) {
 }
 
 const t1 = new TreeNode(1)
-t1.left = new TreeNode(0)
+const t0 = new TreeNode(0)
+t1.left = t0
+t0.left = new TreeNode(-1)
 const t3 = new TreeNode(3)
 t3.left = new TreeNode(2)
 t3.right = new TreeNode(4)
@@ -525,6 +527,38 @@ var maxProduct = function (root) {
     maxSum(root)
     return res % (1000000007)
 };
-const res = maxProduct(t1)
-console.log(res)
+// const res = maxProduct(t1)
+// console.log(res)
 
+// 662. 二叉树最大宽度
+// 每一层的 宽度 被定义为该层最左和最右的非空节点（即，两个端点）之间的长度。
+// 将这个二叉树视作与满二叉树结构相同，两端点间会出现一些延伸到这一层的 null 节点，这些 null 节点也计入长度。
+var widthOfBinaryTree = function (root) {
+    // 看不懂
+    if (!root) return
+    let res = []
+    const q = [root]
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+            path.push(cur.val)
+        }
+        res.push(path.slice())
+
+    }
+
+    return res
+};
+// const res = widthOfBinaryTree(t1)
+// console.log(res)
+
+// 958. 二叉树的完全性检验
+var isCompleteTree = function (root) {
+
+};
+const res = isCompleteTree(t1)
+console.log(res)
