@@ -500,9 +500,19 @@ var removeLeafNodes = function (root, target) {
     root = helper(root)
     return root
 };
-const res = removeLeafNodes(t1, 0)
-console.log(res)
+// const res = removeLeafNodes(t1, 0)
+// console.log(res)
 
 // 1339. 分裂二叉树的最大乘积
+var maxProduct = function (root) {
+    if (!root) return
+    let res = 0
+    const helper = () => {
 
+    }
+    helper(root)
+    return res % (10 ^ 9 + 7)
+};
+const res = maxProduct(t1)
+console.log(res)
 
