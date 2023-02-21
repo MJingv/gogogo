@@ -745,6 +745,7 @@ var connect = function (root) {
 // 117. 填充每个节点的下一个右侧节点指针2
 var connect1 = function (root) {
     // levelorder
+    if (!root) return null
     const q = [root]
     while (q.length) {
         const size = q.length
@@ -760,5 +761,12 @@ var connect1 = function (root) {
     }
     return root
 };
-const res = connect1(t1)
+// const res = connect1(t1)
+// console.log(res)
+
+// 669 修剪二叉搜索树
+var trimBST = function (root, low, high) {
+
+};
+const res = trimBST(t1)
 console.log(res)
