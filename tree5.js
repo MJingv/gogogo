@@ -590,5 +590,26 @@ const isCompleteTree1 = (root) => {
     return true
 
 }
-const res = isCompleteTree1(t1)
+// const res = isCompleteTree1(t1)
+// console.log(res)
+
+// 606 根据二叉树创建字符串
+// 给你二叉树的根节点 root ，请你采用前序遍历的方式，将二叉树转化为一个由括号和整数组成的字符串，返回构造出的字符串。
+// 空节点使用一对空括号对 "()" 表示，转化后需要省略所有不影响字符串与原始二叉树之间的一对一映射关系的空括号对。
+// 输出："1(2(4))(3)" 解释：初步转化后得到 "1(2(4)())(3()())" ，
+var tree2str = function (root) {
+    // 题看不懂
+    if (!root) return ''
+    let res = ''
+    const helper = (node) => {
+        if (!node) return ''
+        if (node.left || node.right) {
+            res += `(${node.val})`
+        }
+
+    }
+    helper(root)
+    return res
+};
+const res = tree2str(t1)
 console.log(res)
