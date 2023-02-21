@@ -699,10 +699,18 @@ var deleteNode = function (root, key) {
         if (node.val === key) {
             if (!node.left && !node.right) return null
             if (node.left && node.right) {
+                const left = node.left
+                const right = node.right
+                let p = right
+                while (p.left) {
+                    p = p.left
+                }
+                p.left = left
+                return right
             }
-            if (node.right || node.left) {
-                return node.right || node.right
-            }
+            if (node.right) return node.right
+            if (node.left) return node.left
+
         }
         node.left = helper(node.left)
         node.right = helper(node.right)
@@ -711,5 +719,5 @@ var deleteNode = function (root, key) {
     root = helper(root)
     return root
 };
-const res = deleteNode(t1, 1)
+const res = deleteNode(t1,)
 console.log(res)
