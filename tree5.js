@@ -638,5 +638,29 @@ var pathSum = function (root, target) {
     helper(root)
     return res
 };
-const res = pathSum(t1, 8)
+// const res = pathSum(t1, 8)
+// console.log(res)
+
+// LCP 34 二叉树染色
+// 小扣有一个根结点为 root 的二叉树模型，初始所有结点均为白色，可以用蓝色染料给模型结点染色，模型的每个结点有一个 val 价值。
+// 小扣出于美观考虑，希望最后二叉树上每个蓝色相连部分的结点个数不能超过k个，求所有染成蓝色的结点价值总和最大是多少？
+var maxValue = function (root, k) {
+    // 看不懂
+    if (!root) return
+    let res = 0
+    const helper = (node, blue = k) => {
+        if (!node) return 0
+
+        if (!blue) {
+            res = Math.max(helper(node.left), helper(node.right))
+        } else {
+
+
+        }
+    }
+    helper(root)
+    return res
+
+};
+const res = maxValue(t1, 2)
 console.log(res)
