@@ -11,7 +11,7 @@ function TreeNode(val, left, right) {
 const t1 = new TreeNode(1)
 const t0 = new TreeNode(0)
 t1.left = t0
-t0.left = new TreeNode(0)
+// t0.left = new TreeNode(0)
 const t3 = new TreeNode(3)
 t3.left = new TreeNode(2)
 t3.right = new TreeNode(4)
@@ -313,23 +313,6 @@ var flatten = function (root) {
 // const res = flatten(t1)
 // console.log(t1)
 
-// 116. 填充每个节点的下一个右侧节点指针
-var connect = function (root) {
-    if (!root) return null
-    const helper = (left = null, right = null) => {
-        if (!left) return null
-        right.next = null
-        left.next = right
-        helper(left.left, left.right)
-        helper(left.right, right.left)
-        helper(right.left, right.right)
-
-    }
-    helper(root.left, root.right)
-    return root
-};
-// const res = connect(t1)
-// console.log(res)
 
 // 404. 左叶子之和
 var sumOfLeftLeaves = function (root) {
@@ -722,6 +705,7 @@ var deleteNode = function (root, key) {
 // const res = deleteNode(t1, 1)
 // console.log(res)
 
+// 687 最长同值路径
 var longestUnivaluePath = function (root) {
     if (!root) return 0
     let max = 0
@@ -736,5 +720,45 @@ var longestUnivaluePath = function (root) {
     helper(root)
     return max
 };
-const res = longestUnivaluePath(t1)
+// const res = longestUnivaluePath(t1)
+// console.log(res)
+
+
+// 116. 填充每个节点的下一个右侧节点指针
+// 给定一个 完美二叉树 ，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：
+var connect = function (root) {
+    if (!root) return null
+    const helper = (left = null, right = null) => {
+        if (!left) return null
+        right.next = null
+        left.next = right
+        helper(left.left, left.right)
+        helper(left.right, right.left)
+        helper(right.left, right.right)
+    }
+    helper(root.left, root.right)
+    return root
+};
+// const res = connect(t1)
+// console.log(res)
+
+// 117. 填充每个节点的下一个右侧节点指针2
+var connect1 = function (root) {
+    // levelorder
+    const q = [root]
+    while (q.length) {
+        const size = q.length
+        let last = null
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            console.log(cur.val, last?.val)
+            cur.next = last
+            last = cur
+            cur.right && q.push(cur.right)
+            cur.left && q.push(cur.left)
+        }
+    }
+    return root
+};
+const res = connect1(t1)
 console.log(res)
