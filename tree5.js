@@ -11,7 +11,7 @@ function TreeNode(val, left, right) {
 const t1 = new TreeNode(1)
 const t0 = new TreeNode(0)
 t1.left = t0
-t0.left = new TreeNode(-1)
+// t0.left = new TreeNode(-1)
 const t3 = new TreeNode(3)
 t3.left = new TreeNode(2)
 t3.right = new TreeNode(4)
@@ -613,5 +613,30 @@ var tree2str = function (t) {
     }
     return res
 };
-const res = tree2str(t1)
+// const res = tree2str(t1)
+// console.log(res)
+
+// 面试题04.12 求和路径
+// 思路就是把所有节点都当作根节点
+var pathSum = function (root, target) {
+    if (!root) return 0
+    let res = 0
+    const helper = (node) => {
+        if (!node) return
+        getSum(node)
+        helper(node.left)
+        helper(node.right)
+    }
+    const getSum = (node, sum = 0) => {
+        if (!node) return
+        sum += node.val
+        if (sum === target) res++
+        getSum(node.left, sum)
+        getSum(node.right, sum)
+    }
+
+    helper(root)
+    return res
+};
+const res = pathSum(t1, 8)
 console.log(res)
