@@ -11,7 +11,7 @@ function TreeNode(val, left, right) {
 const t1 = new TreeNode(1)
 const t0 = new TreeNode(0)
 t1.left = t0
-// t0.left = new TreeNode(-1)
+t0.left = new TreeNode(0)
 const t3 = new TreeNode(3)
 t3.left = new TreeNode(2)
 t3.right = new TreeNode(4)
@@ -719,5 +719,22 @@ var deleteNode = function (root, key) {
     root = helper(root)
     return root
 };
-const res = deleteNode(t1,)
+// const res = deleteNode(t1, 1)
+// console.log(res)
+
+var longestUnivaluePath = function (root) {
+    if (!root) return 0
+    let max = 0
+    const helper = (node, pVal = 0) => {
+        if (!node) return 0
+        const left = helper(node.left, node.val)
+        const right = helper(node.right, node.val)
+        max = Math.max(max, left + right)
+        if (pVal !== node.val) return 0
+        if (pVal === node.val) return Math.max(left, right) + 1
+    }
+    helper(root)
+    return max
+};
+const res = longestUnivaluePath(t1)
 console.log(res)
