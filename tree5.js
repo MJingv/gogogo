@@ -662,5 +662,31 @@ var maxValue = function (root, k) {
     return res
 
 };
-const res = maxValue(t1, 2)
+// const res = maxValue(t1, 2)
+// console.log(res)
+
+// 429 N叉树的层序遍历
+var levelOrder = function (root) {
+    if (!root) return []
+    const q = [root]
+    const res = []
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            const children = cur.children
+            if (children) {
+                for (let j = 0; j < children.length; j++) {
+                    q.push(children[j])
+                }
+            }
+
+        }
+        res.push(path.slice())
+    }
+    return res
+};
+const res = levelOrder()
 console.log(res)
