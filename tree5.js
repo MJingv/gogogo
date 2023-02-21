@@ -534,20 +534,16 @@ var maxProduct = function (root) {
 // 每一层的 宽度 被定义为该层最左和最右的非空节点（即，两个端点）之间的长度。
 // 将这个二叉树视作与满二叉树结构相同，两端点间会出现一些延伸到这一层的 null 节点，这些 null 节点也计入长度。
 var widthOfBinaryTree = function (root) {
-    // 看不懂
     if (!root) return
     let res = []
-    const q = [root]
+    const q = [[root, 0]]
     while (q.length) {
         const size = q.length
-        const path = []
         for (let i = 0; i < size; i++) {
-            const cur = q.shift()
-            cur.left && q.push(cur.left)
-            cur.right && q.push(cur.right)
-            path.push(cur.val)
+            const [curVal, pos] = q.shift()
+
+
         }
-        res.push(path.slice())
 
     }
 
@@ -558,6 +554,24 @@ var widthOfBinaryTree = function (root) {
 
 // 958. 二叉树的完全性检验
 var isCompleteTree = function (root) {
+    // 如果出现了空节点,之后再出现非空节点就不是完全二叉树
+    if (!root) return
+    const q = [root]
+    let isFindNull = false
+    while (q.length) {
+        const size = q.length
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            if (!cur) {
+                isFindNull = true
+            } else {
+                if (isFindNull) return false
+                q.push(cur.left)
+                q.push(cur.right)
+            }
+        }
+    }
+    return isFindNull
 
 };
 const res = isCompleteTree(t1)
