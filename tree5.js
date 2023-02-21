@@ -688,5 +688,28 @@ var levelOrder = function (root) {
     }
     return res
 };
-const res = levelOrder()
+// const res = levelOrder()
+// console.log(res)
+
+// 450删除二叉搜索树中的节点
+var deleteNode = function (root, key) {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        if (node.val === key) {
+            if (!node.left && !node.right) return null
+            if (node.left && node.right) {
+            }
+            if (node.right || node.left) {
+                return node.right || node.right
+            }
+        }
+        node.left = helper(node.left)
+        node.right = helper(node.right)
+        return node
+    }
+    root = helper(root)
+    return root
+};
+const res = deleteNode(t1, 1)
 console.log(res)
