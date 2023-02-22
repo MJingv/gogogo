@@ -766,7 +766,27 @@ var connect1 = function (root) {
 
 // 669 修剪二叉搜索树
 var trimBST = function (root, low, high) {
+    if (!root) return
+    const helper = (node) => {
+        if (!node) return null
+
+        if (node.val < low) {
+            return helper(node.right)
+        }
+        if (node.val > high) {
+            return helper(node.left)
+        }
+        node.left = helper(node.left)
+        node.right = helper(node.right)
+        return node
+    }
+    root = helper(root)
+    return root
+};
+const res = trimBST(t1, 3, 4)
+console.log(res)
+
+// 987二叉树的吹序遍历
+var verticalTraversal = function (root) {
 
 };
-const res = trimBST(t1)
-console.log(res)
