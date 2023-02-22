@@ -832,5 +832,21 @@ var insertIntoBST = function (root, val) {
     root = helper(root)
     return root
 };
-const res = insertIntoBST(t1, -1)
+// const res = insertIntoBST(t1, -1)
+// console.log(res)
+
+var bstFromPreorder = function (preorder) {
+    const len = preorder.length
+    if (!len) return null
+    const helper = (list = preorder) => {
+        if (!list.length) return null
+        const val = list.shift()
+        const node = new TreeNode(val)
+        node.left = helper(list.filter(i => i < val))
+        node.right = helper(list.filter(i => i >= val))
+        return node
+    }
+    return helper()
+};
+const res = bstFromPreorder([8, 5, 1, 7, 10, 12])
 console.log(res)
