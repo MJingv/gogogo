@@ -783,10 +783,40 @@ var trimBST = function (root, low, high) {
     root = helper(root)
     return root
 };
-const res = trimBST(t1, 3, 4)
-console.log(res)
+// const res = trimBST(t1, 3, 4)
+// console.log(res)
 
-// 987二叉树的吹序遍历
+// 987二叉树的垂序遍历
+// 对位于 (row, col) 的每个结点而言，其左右子结点分别位于 (row + 1, col - 1) 和 (row + 1, col + 1) 。树的根结点位于 (0, 0) 。
 var verticalTraversal = function (root) {
+    if (!root) return
+    const map = new Map()
+    const res = []
+    const helper = (node, [row = 0, col = 0]) => {
+        if (!node) return
+        map.set(col, map.get(col) ? [...map.get(col), {row, val: node.val}] : [{row, val: node.val}])
+        node.left && helper(node.left, [row + 1, col - 1])
+        node.right && helper(node.right, [row + 1, col + 1])
+    }
+    helper(root, [0, 0])
+
+    const list = [...map].sort((a, b) => a[0] - b[0])
+    const list1 = list.map(i => i[1].sort((a, b) => {
+        if (b.row !== a.row) return a.row - b.row
+        return a.val - b.val
+
+    }))
+
+    list1.map(i => {
+        const path = []
+        i.map(item => {
+            path.push(item.val)
+        })
+        res.push(path.slice())
+    })
+
+    return res
 
 };
+const res = verticalTraversal(t1)
+console.log(res)
