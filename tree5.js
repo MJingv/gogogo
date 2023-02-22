@@ -818,5 +818,19 @@ var verticalTraversal = function (root) {
     return res
 
 };
-const res = verticalTraversal(t1)
+// const res = verticalTraversal(t1)
+// console.log(res)
+
+var insertIntoBST = function (root, val) {
+    if (!root) return new TreeNode(val)
+    const helper = (node) => {
+        if (!node) return new TreeNode(val)
+        if (val < node.val) node.left = helper(node.left)
+        if (val > node.val) node.right = helper(node.right)
+        return node
+    }
+    root = helper(root)
+    return root
+};
+const res = insertIntoBST(t1, -1)
 console.log(res)
