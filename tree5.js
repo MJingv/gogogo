@@ -848,5 +848,25 @@ var bstFromPreorder = function (preorder) {
     }
     return helper()
 };
-const res = bstFromPreorder([8, 5, 1, 7, 10, 12])
+// const res = bstFromPreorder([8, 5, 1, 7, 10, 12])
+// console.log(res)
+
+// 1022 从根到叶的二进制之和
+var sumRootToLeaf = function (root) {
+    if (!root) return 0
+    let res = []
+    const helper = (node, path = '') => {
+        if (!node) return ''
+        path += `${node.val}`
+        console.log(path)
+        if (!node.left && !node.right) {
+            res += parseInt(path, 2)
+        }
+        helper(node.left, path)
+        helper(node.right, path)
+    }
+    helper(root)
+    return res
+};
+const res = sumRootToLeaf(t1)
 console.log(res)
