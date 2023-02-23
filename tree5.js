@@ -909,5 +909,30 @@ var isSubPath = function (head, root) {
 
 
 };
-const res = isSubPath()
+// const res = isSubPath()
+// console.log(res)
+
+var delNodes = function (root, to_delete) {
+    if (!root) return null
+    const len = to_delete.length
+    if (!len) return root
+    const res = []
+    const helper = (node, p = null) => {
+        // 函数定义 返回处理好的节点
+        if (!node) return null
+        node.left = helper(node.left)
+        node.right = helper(node.right)
+
+        if (to_delete.includes(node.val)) {
+            node.left && res.push(node.left)
+            node.right && res.push(node.right)
+            return null //把自己当null 返回了
+        }
+        return node
+    }
+    if (helper(root)) res.push(root) //不太懂
+    return res
+
+};
+const res = delNodes(t1, [3])
 console.log(res)
