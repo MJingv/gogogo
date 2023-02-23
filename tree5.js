@@ -982,5 +982,26 @@ var distributeCoins = function (root) {
     // 看不懂
 
 };
-const res = distributeCoins(t1)
+// const res = distributeCoins(t1)
+// console.log(res)
+
+
+var subtreeWithAllDeepest = function (root) {
+    if (!root) return
+    if (!root.left && !root.right) return root
+    const max_list = []
+    const helper = (node) => {
+        if (!node) return 0
+        return Math.max(helper(node.left), helper(node.right)) + 1
+    }
+    helper(root)
+
+    const helper1 = (node) => {
+
+    }
+    helper1(root)
+    return res
+
+};
+const res = subtreeWithAllDeepest(t1)
 console.log(res)
