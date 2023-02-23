@@ -890,5 +890,24 @@ var deepestLeavesSum = function (root) {
     const res = tmp.reduce((i, p) => i + p)
     return res
 };
-const res = deepestLeavesSum(t1)
+// const res = deepestLeavesSum(t1)
+// console.log(res)
+
+// 1367 二叉树的链表
+var isSubPath = function (head, root) {
+    // 不知道为什么a不了
+    if (!root) return false
+
+    const helper = (node, p) => {
+        if (!p) return true
+        if (!node) return false
+        if (node.val === p.val) return helper(node.left, p.next) || helper(node.right, p.next)
+        return false
+    }
+    if (root.val === head.val && helper(root, head)) return true
+    return helper(root.left, head) || helper(root.right, head)
+
+
+};
+const res = isSubPath()
 console.log(res)
