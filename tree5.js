@@ -975,5 +975,12 @@ var maxAncestorDiff = function (root) {
     helper(root)
     return res
 };
-const res = maxAncestorDiff(t1)
+// const res = maxAncestorDiff(t1)
+// console.log(res)
+
+var distributeCoins = function (root) {
+    // 看不懂
+
+};
+const res = distributeCoins(t1)
 console.log(res)
