@@ -954,5 +954,26 @@ var smallestFromLeaf = function (root) {
 
 }
 
-const res = smallestFromLeaf(t1)
+// const res = smallestFromLeaf(t1)
+// console.log(res)
+
+
+var maxAncestorDiff = function (root) {
+    if (!root) return
+    let res = 0
+    const helper = (node) => {
+        // 返回含节点的最大/小值
+        if (!node) return []
+        const [leftMin = node.val, leftMax = node.val] = helper(node.left)
+        const [rightMin = node.val, rightMax = node.val] = helper(node.right)
+        const max = Math.max(leftMax, rightMax)
+        const min = Math.min(leftMin, rightMin)
+        res = Math.max(res, Math.abs(node.val - max), Math.abs(node.val - min))
+        return [Math.min(node.val, min), Math.max(node.val, max)]
+    }
+
+    helper(root)
+    return res
+};
+const res = maxAncestorDiff(t1)
 console.log(res)
