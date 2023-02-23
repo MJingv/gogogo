@@ -935,5 +935,24 @@ var delNodes = function (root, to_delete) {
     return res
 
 };
-const res = delNodes(t1, [3])
+// const res = delNodes(t1, [3])
+// console.log(res)
+
+
+var smallestFromLeaf = function (root) {
+    if (!root) return
+    const res = []
+    const helper = (node, tmp = '') => {
+        if (!node) return ''
+        tmp = `${String.fromCharCode(Number(node.val) + 97)}${tmp}`
+        if (!node.left && !node.right) res.push(tmp)
+        node.left && helper(node.left, tmp)
+        node.right && helper(node.right, tmp)
+    }
+    helper(root)
+    return res.sort()[0]
+
+}
+
+const res = smallestFromLeaf(t1)
 console.log(res)
