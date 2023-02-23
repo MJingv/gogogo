@@ -868,5 +868,27 @@ var sumRootToLeaf = function (root) {
     helper(root)
     return res
 };
-const res = sumRootToLeaf(t1)
+// const res = sumRootToLeaf(t1)
+// console.log(res)
+
+// 1302 层数最深叶子节点的和
+var deepestLeavesSum = function (root) {
+    if (!root) return 0
+    const q = [root]
+    let tmp = []
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        tmp = path
+    }
+    const res = tmp.reduce((i, p) => i + p)
+    return res
+};
+const res = deepestLeavesSum(t1)
 console.log(res)
