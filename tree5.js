@@ -922,7 +922,7 @@ var delNodes = function (root, to_delete) {
         if (!node) return null
         node.left = helper(node.left)
         node.right = helper(node.right)
-
+        // 后序 孩子放不放
         if (to_delete.includes(node.val)) {
             node.left && res.push(node.left)
             node.right && res.push(node.right)
@@ -930,7 +930,8 @@ var delNodes = function (root, to_delete) {
         }
         return node
     }
-    if (helper(root)) res.push(root) //不太懂
+    helper(root)
+    if (helper(root)) res.push(root) //自己放入
     return res
 
 };
