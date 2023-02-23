@@ -102,5 +102,27 @@ var multiply = function (A, B) {
     }
     return helper(A > B ? A : B, A > B ? B : A)
 };
-const res = multiply(4, 3)
+// const res = multiply(4, 3)
+// console.log(res)
+
+
+var kthGrammar = function (n, k) {
+    // 内存溢出 没有a
+    if (!n || !k) return 0
+    const helper = (row, lastStr) => {
+        if (row === n) return lastStr[k - 1]
+        let tmp = ''
+        while (lastStr.length) {
+            const val = lastStr[0]
+            lastStr = lastStr.slice(1)
+            if (val === '0') tmp += '01'
+            if (val === '1') tmp += '10'
+        }
+
+        return helper(row + 1, tmp)
+    }
+
+    return helper(1, '0')
+};
+const res = kthGrammar(2, 2)
 console.log(res)
