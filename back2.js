@@ -29,6 +29,7 @@ t3.right = new TreeNode(4)
 t1.right = t3
 
 // 力扣第 46 题「 全排列」
+// 剑指 Offer II 083. 没有重复元素集合的全排列
 var permute = function (nums) {
     const len = nums.length
     const [res, path] = [[], []]
@@ -83,9 +84,34 @@ var pathSum = function (root, target) {
     return res
 
 };
-const res = pathSum(t1, 1)
+// const res = pathSum(t1, 1)
+// console.log(res)
+
+// 剑指 Offer II 079. 所有子集
+// 给定一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。解集 不能 包含重复的子集。你可以按 任意顺序 返回解集。
+// 输入：nums = [1,2,3]
+// 输出：[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+var subsets = function (nums) {
+    const len = nums.length
+    if (!len) return []
+    const [res, path] = [[], []]
+    const helper = (start = 0) => {
+        res.push(path.slice())
+        for (let i = start; i < len; i++) {
+            path.push(nums[i])
+            helper(i + 1)
+            path.pop()
+        }
+    }
+    helper()
+    return res
+};
+const res = subsets([1, 2, 3])
 console.log(res)
 
+// 剑指 Offer II 080. 含有 k 个元素的组合
+// 剑指 Offer II 081. 允许重复选择元素的组合
+// 剑指 Offer II 083. 没有重复元素集合的全排列
 // 113. 路径总和 II
 
 // 131. 分割回文串
@@ -95,6 +121,8 @@ console.log(res)
 // 17. 电话号码的字母组合
 
 // 22. 括号生成
+// 剑指 Offer II 085. 生成匹配的括号
+
 
 // 39. 组合总和
 
@@ -103,3 +131,5 @@ console.log(res)
 // 77. 组合
 
 // 78. 子集
+
+// 93. 复原 IP 地址
