@@ -70,6 +70,7 @@ var hasPathSum = function (root, targetSum) {
 // console.log(res)
 
 
+// 113. 路径总和 II
 // 剑指 Offer 34. 二叉树中和为某一值的路径
 var pathSum = function (root, target) {
     if (!root) return []
@@ -106,13 +107,41 @@ var subsets = function (nums) {
     helper()
     return res
 };
-const res = subsets([1, 2, 3])
-console.log(res)
+// const res = subsets([1, 2, 3])
+// console.log(res)
+
 
 // 剑指 Offer II 080. 含有 k 个元素的组合
+// 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
+// 输入: n = 4, k = 2
+// 输出:
+//     [
+//         [2,4],
+//         [3,4],
+//         [2,3],
+//         [1,2],
+//         [1,3],
+//         [1,4],
+//     ]
+var combine = function (n, k) {
+    if (!k) return []
+    const [res, path] = [[], []]
+    const helper = (start = 0) => {
+        if (path.length === k) res.push(path.slice())
+        for (let i = start; i <= n; i++) {
+            path.push(i)
+            helper(i + 1)
+            path.pop()
+        }
+    }
+    helper(1)
+    return res
+};
+const res = combine(4, 2)
+console.log(res)
+
 // 剑指 Offer II 081. 允许重复选择元素的组合
-// 剑指 Offer II 083. 没有重复元素集合的全排列
-// 113. 路径总和 II
+
 
 // 131. 分割回文串
 
