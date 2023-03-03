@@ -65,5 +65,41 @@ var hasPathSum = function (root, targetSum) {
     helper(root, root.val)
     return res
 };
-const res = hasPathSum(t1, 1)
+// const res = hasPathSum(t1, 1)
+// console.log(res)
+
+
+// 剑指 Offer 34. 二叉树中和为某一值的路径
+var pathSum = function (root, target) {
+    if (!root) return []
+    const res = []
+    const helper = (node, path, sum) => {
+        if (!node) return
+        if (!node.left && !node.right && sum === target) res.push(path.slice())
+        node.left && helper(node.left, [...path, node.left.val], sum + node.left.val)
+        node.right && helper(node.right, [...path, node.right.val], sum + node.right.val)
+    }
+    helper(root, [root.val], root.val)
+    return res
+
+};
+const res = pathSum(t1, 1)
 console.log(res)
+
+// 113. 路径总和 II
+
+// 131. 分割回文串
+
+// 140. 单词拆分 II
+
+// 17. 电话号码的字母组合
+
+// 22. 括号生成
+
+// 39. 组合总和
+
+// 698. 划分为k个相等的子集
+
+// 77. 组合
+
+// 78. 子集
