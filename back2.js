@@ -55,11 +55,14 @@ var permute = function (nums) {
 var hasPathSum = function (root, targetSum) {
     if (!root) return false
     let res = false
-    const helper = (node) => {
-        if(!node) return
+    const helper = (node, sum) => {
+        if (!node) return
+        if (!node.left && !node.right && sum === targetSum) return res = true
+        node.left && helper(node.left, sum + node.left.val)
+        node.right && helper(node.right, sum + node.right.val)
 
     }
-    helper(root)
+    helper(root, root.val)
     return res
 };
 const res = hasPathSum(t1, 1)
