@@ -137,10 +137,32 @@ var combine = function (n, k) {
     helper(1)
     return res
 };
-const res = combine(4, 2)
-console.log(res)
+// const res = combine(4, 2)
+// console.log(res)
 
 // 剑指 Offer II 081. 允许重复选择元素的组合
+// 输入: candidates = [2,3,6,7], target = 7 输出: [[7],[2,2,3]]
+var combinationSum = function (candidates, target) {
+    const len = candidates.length
+    if (!len) return []
+    const [res, path] = [[], []]
+    let sum = 0
+    const helper = (start = 0) => {
+        if (sum === target) res.push(path.slice())
+        if (sum > target) return
+        for (let i = start; i < len; i++) {
+            sum += candidates[i]
+            path.push(candidates[i])
+            helper(i)
+            path.pop()
+            sum -= candidates[i]
+        }
+    }
+    helper()
+    return res
+};
+const res = combinationSum([2, 3, 6, 7], 7)
+console.log(res)
 
 
 // 131. 分割回文串
