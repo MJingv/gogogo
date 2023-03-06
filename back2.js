@@ -173,11 +173,14 @@ var partition = function (s) {
     const [res, path] = [[], []]
 
     const helper = (start = 0) => {
-        if (isHW(path.join(''))) res.push(path.join(''))
+        if (start === len) res.push(path.slice())
         for (let i = start; i < len; i++) {
-            path.push(s[i])
-            helper(i++)
+            const tmp = s.slice(start, i + 1)
+            if (!isHW(tmp)) continue
+            path.push(tmp)
+            helper(i + 1)
             path.pop()
+
         }
     }
     helper()
