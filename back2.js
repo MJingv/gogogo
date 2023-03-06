@@ -207,15 +207,65 @@ var restoreIpAddresses = function (s) {
             path.push(tmp)
             helper(i + 1)
             path.pop()
-
         }
     }
     helper()
     return res
 };
 
-const res = restoreIpAddresses('25525511135')
-console.log(res)
+// const res = restoreIpAddresses('25525511135')
+// console.log(res)
+
+// 77. 组合
+// 给定两个整数 n 和 k，返回范围 [1, n] 中所有可能的 k 个数的组合。你可以按 任何顺序 返回答案。
+// 输入：n = 4, k = 2
+// 输出：
+// [
+//     [2,4],
+//     [3,4],
+//     [2,3],
+//     [1,2],
+//     [1,3],
+//     [1,4],
+// ]
+var combine = function (n, k) {
+    const [res, path] = [[], []]
+    const helper = (start = 1) => {
+        if (path.length === k) return res.push(path.slice())
+        for (let i = start; i <= n; i++) {
+            path.push(i)
+            helper(i + 1)
+            path.pop()
+        }
+    }
+    helper()
+    return res
+};
+// const res = combine(4, 2)
+// console.log(res)
+
+// 78. 子集
+// 给你一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。
+// 输入：nums = [1,2,3]
+// 输出：[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+var subsets = function (nums) {
+    const len = nums.length
+    const [res, path] = [[], []]
+    const helper = (start = 0) => {
+        if (path.length <= len) res.push(path.slice())
+        for (let i = start; i < len; i++) {
+            path.push(nums[i])
+            helper(i + 1)
+            path.pop()
+        }
+
+    }
+    helper()
+    return res
+
+};
+// const res = subsets([1, 2, 3])
+// console.log(res)
 
 
 // 140. 单词拆分 II
@@ -228,7 +278,4 @@ console.log(res)
 
 // 698. 划分为k个相等的子集
 
-// 77. 组合
-
-// 78. 子集
 
