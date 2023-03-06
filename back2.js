@@ -184,11 +184,40 @@ var partition = function (s) {
         }
     }
     helper()
-
     return res
 };
-const res = partition('aab')
+// const res = partition('aab')
+// console.log(res)
+
+// 93. 复原 IP 地址
+// 有效 IP 地址 正好由四个整数（每个整数位于 0 到 255 之间组成，且不能含有前导 0），整数之间用 '.' 分隔。
+var restoreIpAddresses = function (s) {
+    const len = s.length
+    const [res, path] = [[], []]
+
+    const helper = (start = 0) => {
+        if (path.length > 4) return
+        if (start === len && path.length === 4) res.push(path.slice().join('.'))
+        for (let i = start; i < len; i++) {
+            const tmp = s.slice(start, i + 1)
+            const n = Number(tmp)
+            if (tmp.length > 3 || n > 255) break
+            if (tmp.length > 1 && tmp[0] === '0') break
+
+            path.push(tmp)
+            helper(i + 1)
+            path.pop()
+
+        }
+    }
+    helper()
+    return res
+};
+
+const res = restoreIpAddresses('25525511135')
 console.log(res)
+
+
 // 140. 单词拆分 II
 
 // 17. 电话号码的字母组合
@@ -203,4 +232,3 @@ console.log(res)
 
 // 78. 子集
 
-// 93. 复原 IP 地址
