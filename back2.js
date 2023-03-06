@@ -161,12 +161,31 @@ var combinationSum = function (candidates, target) {
     helper()
     return res
 };
-const res = combinationSum([2, 3, 6, 7], 7)
-console.log(res)
-
+// const res = combinationSum([2, 3, 6, 7], 7)
+// console.log(res)
 
 // 131. 分割回文串
+// 输入：s = "aab" 输出：[["a","a","b"],["aa","b"]]
+var partition = function (s) {
+    const len = s.length
+    if (!len) return []
+    const isHW = (s = '') => s.split('').reverse().join('') === s
+    const [res, path] = [[], []]
 
+    const helper = (start = 0) => {
+        if (isHW(path.join(''))) res.push(path.join(''))
+        for (let i = start; i < len; i++) {
+            path.push(s[i])
+            helper(i++)
+            path.pop()
+        }
+    }
+    helper()
+
+    return res
+};
+const res = partition('aab')
+console.log(res)
 // 140. 单词拆分 II
 
 // 17. 电话号码的字母组合
@@ -174,8 +193,6 @@ console.log(res)
 // 22. 括号生成
 // 剑指 Offer II 085. 生成匹配的括号
 
-
-// 39. 组合总和
 
 // 698. 划分为k个相等的子集
 
