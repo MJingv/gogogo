@@ -268,9 +268,40 @@ var subsets = function (nums) {
 // console.log(res)
 
 
-// 140. 单词拆分 II
+// 140. 单词拆分 II hard
 
 // 17. 电话号码的字母组合
+var letterCombinations = function (digits) {
+    const len = digits.length
+    if (!len) return []
+    const [res, path] = [[], []]
+    const maps = {
+        '2': ['a', 'b', 'c'],
+        '3': ['d', 'e', 'f'],
+        '4': ['g', 'h', 'i'],
+        '5': ['j', 'k', 'l'],
+        '6': ['m', 'n', 'o'],
+        '7': ['p', 'q', 'r', 's'],
+        '8': ['t', 'u', 'v'],
+        '9': ['w', 'x', 'y', 'z'],
+    }
+    const helper = (start = 0) => {
+        if (path.length === len) res.push(path.slice().join(''))
+        for (let i = start; i < len; i++) {
+            const chs = maps[digits[i]]
+            for (let j = 0; j < chs.length; j++) {
+                path.push(chs[j])
+                helper(i + 1)
+                path.pop()
+            }
+        }
+    }
+    helper()
+    return res
+};
+// 输入：digits = "23" 输出：["ad","ae","af","bd","be","bf","cd","ce","cf"]
+const res = letterCombinations('23')
+console.log(res)
 
 // 22. 括号生成
 // 剑指 Offer II 085. 生成匹配的括号
