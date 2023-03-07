@@ -300,13 +300,56 @@ var letterCombinations = function (digits) {
     return res
 };
 // 输入：digits = "23" 输出：["ad","ae","af","bd","be","bf","cd","ce","cf"]
-const res = letterCombinations('23')
-console.log(res)
+// const res = letterCombinations('23')
+// console.log(res)
 
 // 22. 括号生成
 // 剑指 Offer II 085. 生成匹配的括号
+// 数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
+var generateParenthesis = function (n) {
+    const [res, path] = [[], []]
+    const helper = (left = 0, right = 0) => {
+        if (left > n || right > n || left < right) return
+        if (left === n && right === n) res.push(path.join(''))
+        path.push('(')
+        helper(left + 1, right)
+        path.pop()
+        path.push(')')
+        helper(left, right + 1)
+        path.pop()
+    }
+    helper()
+    return res
 
+};
+// const res = generateParenthesis(3)
+// console.log(res)
 
 // 698. 划分为k个相等的子集
+// 给定一个整数数组 nums 和一个正整数 k，找出是否有可能把这个数组分成 k 个非空子集，其总和都相等。
+var canPartitionKSubsets = function (nums, k) {
+    const sum = nums.reduce((i, p) => i + p)
+    if (sum % k) return false
+    const avg = sum / k
+    nums.sort()
+    if (nums[nums.length] > avg) return false
+    const len = nums.length
+    const bucket = Array(k).fill(0)
+    const helper = (index = 0) => {
+        if (index === len) return true
+        for (let i = 0; i < k; i++) {
+            if (bucket[i] === bucket[i - 1]) continue
+            if (bucket[i] + nums[index] > avg) continue
+            bucket[i] += nums[index]
+            if (helper(index + 1)) return true
+            bucket[i] -= nums[index]
+        }
+        return false
+    }
+
+    return helper()
+};
+const res = canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4)
+console.log(res)
 
 
