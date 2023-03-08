@@ -349,7 +349,39 @@ var canPartitionKSubsets = function (nums, k) {
 
     return helper()
 };
-const res = canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4)
+// const res = canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4)
+// console.log(res)
+
+// 79 单词搜索
+// 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+var exist = function (board, word) {
+    const [m, n] = [board.length, board[0].length]
+
+
+    const used = Array(m).fill(false).map(i => Array(n).fill(false))
+    const helper = (row, col, i) => {
+        // row col 当前点的坐标，i当前考察的word字符索引
+        if (i === word.length) return true
+        if (row >= m || col >= n || row < 0 || col < 0) return false
+        if (used[row][col] || word[i] !== board[row][col]) return false
+        used[row][col] = true
+        const res = helper(row + 1, col, i + 1) || helper(row, col + 1, i + 1) || helper(row - 1, col, i + 1) || helper(row, col - 1, i + 1)
+        if (res) return true
+        used[row][col] = false
+        return false
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (board[i][j] === word[0] && helper(i, j, 0)) {
+                // 找到第一个字母
+                return true
+            }
+        }
+    }
+    return false
+
+};
+const res = exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED")
 console.log(res)
 
 
