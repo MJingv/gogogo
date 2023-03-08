@@ -356,8 +356,6 @@ var canPartitionKSubsets = function (nums, k) {
 // 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
 var exist = function (board, word) {
     const [m, n] = [board.length, board[0].length]
-
-
     const used = Array(m).fill(false).map(i => Array(n).fill(false))
     const helper = (row, col, i) => {
         // row col 当前点的坐标，i当前考察的word字符索引
@@ -381,7 +379,62 @@ var exist = function (board, word) {
     return false
 
 };
-const res = exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED")
+// const res = exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED")
+// console.log(res)
+
+// 306 累加数
+// 输入："112358" 输出：true 解释：累加序列为: 1, 1, 2, 3, 5, 8 。1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
+var isAdditiveNumber = function (num) {
+// 看不懂
+};
+// const res = isAdditiveNumber('112358')
+// console.log(res)
+
+// 967 连续差相同的数字
+// 输入：n = 3, k = 7 输出：[181,292,707,818,929] 解释：注意，070 不是一个有效的数字，因为它有前导零。
+var numsSameConsecDiff = function (n, k) {
+    const [res, path] = [[], []]
+    const helper = () => {
+        if (path.length === n) {
+            if (path[0] !== 0) {
+                return res.push(path.join(''))
+            }
+            return
+        }
+        for (let i = 0; i < 10; i++) {
+            if (!path.length || Math.abs(path[path.length - 1] - i) === k) {
+                path.push(i)
+                helper()
+                path.pop()
+            }
+        }
+    }
+    helper()
+    return res
+};
+// const res = numsSameConsecDiff(3, 7)
+// console.log(res)
+
+// 357 统计各数数字都不同的数字个数
+// 输入：n = 2 输出：91 解释：答案应为除去 11、22、33、44、55、66、77、88、99 外，在 0 ≤ x < 100 范围内的所有数字。
+// int[] f = {1,10,91,739,5275,32491,168571,712891,2345851};
+var countNumbersWithUniqueDigits = function (n) {
+    if (!n) return 1
+    if (n === 1) return 10
+    // 怎么搞都不对的回溯
+    const [res, path] = [[], []]
+    const helper = () => {
+        if (path.length === n) return res.push(path.slice().join(''))
+        for (let i = 0; i < 10; i++) {
+            if (!path.includes(i) || (i === 0 && !Number(path.join('')))) {
+                path.push(i)
+                helper()
+                path.pop()
+            }
+        }
+    }
+    helper()
+    return res.length
+};
+const res = countNumbersWithUniqueDigits(3)
 console.log(res)
-
-
