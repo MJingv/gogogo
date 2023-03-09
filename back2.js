@@ -436,5 +436,5 @@ var countNumbersWithUniqueDigits = function (n) {
     helper()
     return res.length
 };
-const res = countNumbersWithUniqueDigits(3)
-console.log(res)
+// const res = countNumbersWithUniqueDigits(3)
+// console.log(res)
