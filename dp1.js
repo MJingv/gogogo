@@ -52,9 +52,25 @@ var coinChange = function (coins, amount) {
 // console.log(res)
 
 // 剑指 Offer 10- II. 青蛙跳台阶问题
+// 一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。
+// 答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
+var numWays = function (n) {
+    if (!n) return 1
+    const dp = Array(n + 1).fill(0)
+    dp[1] = 1
+    dp[2] = 2
+    for (let i = 3; i <= n; i++) {
+        dp[i] = (dp[i - 1] + dp[i - 2]) % 1000000007
+    }
 
+    return dp[n] % 1000000007
+};
+const res = numWays(7)
+console.log(res)
 
 // 70. 爬楼梯
+
+
 // 面试题 三步问题
 // 三步问题。有个小孩正在上楼梯，楼梯有n阶台阶，小孩一次可以上1阶、2阶或3阶。实现一种方法，计算小孩有多少种上楼梯的方式。结果可能很大，你需要对结果模1000000007。
 var waysToStep = function (n) {
@@ -70,8 +86,8 @@ var waysToStep = function (n) {
     return dp[n] % 1000000007
 
 };
-const res = waysToStep(5) //4
-console.log(res)
+// const res = waysToStep(5) //4
+// console.log(res)
 
 // 剑指 Offer 14- I. 剪绳子
 // 112. 路径总和
