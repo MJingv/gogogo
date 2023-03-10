@@ -29,6 +29,7 @@ const fib1 = (n) => {
 // console.log(res)
 
 // 322. 零钱兑换
+// 剑指 Offer II 103. 最少的硬币数目
 // 输入：coins = [1, 2, 5], amount = 11 输出：3 解释：11 = 5 + 5 + 1
 // 计算并返回可以凑成总金额所需的 最少的硬币个数
 var coinChange = function (coins, amount) {
@@ -47,12 +48,30 @@ var coinChange = function (coins, amount) {
     }
     return dp[amount] === Infinity ? -1 : dp[amount]
 };
-const res = coinChange([1, 2, 5], 11)
-console.log(res)
-// 剑指 Offer II 103. 最少的硬币数目
+// const res = coinChange([1, 2, 5], 11)
+// console.log(res)
 
 // 剑指 Offer 10- II. 青蛙跳台阶问题
+
+
 // 70. 爬楼梯
+// 面试题 三步问题
+// 三步问题。有个小孩正在上楼梯，楼梯有n阶台阶，小孩一次可以上1阶、2阶或3阶。实现一种方法，计算小孩有多少种上楼梯的方式。结果可能很大，你需要对结果模1000000007。
+var waysToStep = function (n) {
+    const dp = Array(n + 1).fill(0)
+    dp[1] = 1
+    dp[2] = 2
+    dp[3] = 4
+
+    for (let i = 4; i <= n; i++) {
+        dp[i] = (dp[i - 1] + dp[i - 2] + dp[i - 3]) % 1000000007
+    }
+
+    return dp[n] % 1000000007
+
+};
+const res = waysToStep(5) //4
+console.log(res)
 
 // 剑指 Offer 14- I. 剪绳子
 // 112. 路径总和
