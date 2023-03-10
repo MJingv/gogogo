@@ -65,10 +65,25 @@ var numWays = function (n) {
 
     return dp[n] % 1000000007
 };
-const res = numWays(7)
-console.log(res)
+// const res = numWays(7)
+// console.log(res)
 
 // 70. 爬楼梯
+// 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
+var climbStairs = function (n) {
+    if (!n) return 1
+    if (n === 1) return 1
+    if (n === 2) return 2
+    let [a, b] = [1, 2]
+    for (let i = 3; i <= n; i++) {
+        const tmp = a + b
+        a = b
+        b = tmp
+    }
+    return b
+};
+const res = climbStairs(3)
+console.log(res)
 
 
 // 面试题 三步问题
