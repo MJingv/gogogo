@@ -156,13 +156,35 @@ var hasPathSum = function (root, targetSum) {
     helper(root, root.val)
     return res
 };
-const res = hasPathSum(t1, 8)
-console.log(res)
+// const res = hasPathSum(t1, 8)
+// console.log(res)
 
-// 115. 不同的子序列
+// 115. 不同的子序列 hard
 
 // 139. 单词拆分
+// 输入: s = "applepenapple", wordDict = ["apple", "pen"] 输出: true 解释: 返回 true 因为 "applepenapple" 可以由 "apple" "pen" "apple" 拼接成。 注意，你可以重复使用字典中的单词。
+var wordBreak = function (s, wordDict) {
+    const len = wordDict.length
+    const sLen = s.length
+    if (!s && !len) return true
+    if (!s || !len) return false
+    let res = false
+    const dp = Array(sLen + 1).fill(false)
+    for (let i = 0; i < sLen; i++) {
+        for (let j = 0; j < i; j++) {
+            const str = s.slice(j, i)
+            if (dp[j] && wordDict.includes(str)) {
+                dp[i] = true
+            }
+        }
 
+    }
+
+
+    return dp
+};
+const res = wordBreak('applepenapple', ["apple", "pen"])
+console.log(res)
 // 1696. 跳跃游戏 VI
 
 // 221. 最大正方形
