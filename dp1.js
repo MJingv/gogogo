@@ -168,20 +168,16 @@ var wordBreak = function (s, wordDict) {
     const sLen = s.length
     if (!s && !len) return true
     if (!s || !len) return false
-    let res = false
     const dp = Array(sLen + 1).fill(false)
-    for (let i = 0; i < sLen; i++) {
+    dp[0] = true
+    for (let i = 1; i <= sLen; i++) {
         for (let j = 0; j < i; j++) {
             const str = s.slice(j, i)
-            if (dp[j] && wordDict.includes(str)) {
-                dp[i] = true
-            }
+            if (dp[j] && wordDict.includes(str)) dp[i] = true
         }
 
     }
-
-
-    return dp
+    return dp[sLen]
 };
 const res = wordBreak('applepenapple', ["apple", "pen"])
 console.log(res)
