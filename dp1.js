@@ -179,9 +179,30 @@ var wordBreak = function (s, wordDict) {
     }
     return dp[sLen]
 };
-const res = wordBreak('applepenapple', ["apple", "pen"])
-console.log(res)
+// const res = wordBreak('applepenapple', ["apple", "pen"])
+// console.log(res)
+
 // 1696. 跳跃游戏 VI
+// 你的目标是到达数组最后一个位置（下标为 n - 1 ），你的 得分 为经过的所有数字之和。请你返回你能得到的 最大得分 。
+// 输入：nums = [1,-1,-2,4,-7,3], k = 2 输出：7 解释：你可以选择子序列 [1,-1,4,3] （上面加粗的数字），和为 7 。
+var maxResult = function (nums, k) {
+    // timeout
+    if (k <= 0) return nums[0]
+    const len = nums.length
+    const dp = Array(len).fill(-Infinity)
+    dp[0] = nums[0]
+    for (let i = 1; i < len; i++) {
+        for (let j = 1; j <= k; j++) {
+            if (i >= j) {
+                dp[i] = Math.max(dp[i], dp[i - j] + nums[i])
+            }
+        }
+    }
+    return dp
+
+};
+const res = maxResult([1, -1, -2, 4, -7, 3], 2)
+console.log(res)
 
 // 221. 最大正方形
 
