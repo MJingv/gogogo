@@ -255,11 +255,18 @@ var searchMatrix = function (matrix, target) {
 
     return res
 };
-const res = searchMatrix([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
-console.log(res)
+// const res = searchMatrix([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
+// console.log(res)
 
 // 343. 整数拆分
+// 给定一个正整数 n ，将其拆分为 k 个 正整数 的和（ k >= 2 ），并使这些整数的乘积最大化。
+// 输入: n = 10 输出: 36 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
+var integerBreak = function (n) {
 
+
+};
+const res = integerBreak(10)
+console.log(res)
 // 542. 01 矩阵
 
 // 576. 出界的路径数
