@@ -231,10 +231,32 @@ var maximalSquare = function (matrix) {
     }
     return max * max
 };
-const res = maximalSquare([["1", "0", "1", "0", "0"], ["1", "0", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]])
-console.log(res)
+// const res = maximalSquare([["1", "0", "1", "0", "0"], ["1", "0", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]])
+// console.log(res)
 
 // 240. 搜索二维矩阵 II
+var searchMatrix = function (matrix, target) {
+    // 从右上 or 左下开始遍历
+    const [m, n] = [matrix.length, matrix[0].length]
+    if (!m && !n) return false
+    if (matrix[0][0] > target) return false
+    let res = false
+    let [i, j] = [0, n - 1]
+    while (i < m && j >= 0) {
+        const val = matrix[i][j]
+        if (target === val) return res = true
+        if (target > val) {
+            i++
+        }
+        if (target < val) {
+            j--
+        }
+    }
+
+    return res
+};
+const res = searchMatrix([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
+console.log(res)
 
 // 343. 整数拆分
 
