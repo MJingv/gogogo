@@ -201,10 +201,38 @@ var maxResult = function (nums, k) {
     return dp
 
 };
-const res = maxResult([1, -1, -2, 4, -7, 3], 2)
-console.log(res)
+// const res = maxResult([1, -1, -2, 4, -7, 3], 2)
+// console.log(res)
 
 // 221. 最大正方形
+// 在一个由 '0' 和 '1' 组成的二维矩阵内，找到只包含 '1' 的最大正方形，并返回其面积。
+var maximalSquare = function (matrix) {
+    const [m, n] = [matrix.length, matrix[0].length]
+    if (!m || !n) return 0
+
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    let max = 0
+    for (let i = 0; i < m; i++) {
+        dp[i][0] = matrix[i][0]
+        if (dp[i][0] === '1') max = 1
+    }
+    for (let j = 0; j < n; j++) {
+        dp[0][j] = matrix[0][j]
+        if (dp[0][j] === '1') max = 1
+
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (matrix[i][j] === '1') {
+                dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]) + 1
+                max = Math.max(max, dp[i][j])
+            }
+        }
+    }
+    return max * max
+};
+const res = maximalSquare([["1", "0", "1", "0", "0"], ["1", "0", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]])
+console.log(res)
 
 // 240. 搜索二维矩阵 II
 
