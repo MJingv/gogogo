@@ -337,10 +337,33 @@ var uniquePaths = function (m, n) {
     }
     return dp[m - 1][n - 1]
 };
-const res = uniquePaths(3, 7) //28
-console.log(res)
+// const res = uniquePaths(3, 7) //28
+// console.log(res)
 
 // 63. 不同路径 II
+// 输入：obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]] 输出：2 解释：3x3 网格的正中间有一个障碍物。 从左上角到右下角一共有 2 条不同的路径： 1. 向右 -> 向右 -> 向下 -> 向下 2. 向下 -> 向下 -> 向右 -> 向右
+var uniquePathsWithObstacles = function (obstacleGrid) {
+    const [m, n] = [obstacleGrid.length, obstacleGrid[0].length]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    dp[0][0] = obstacleGrid[0][0] ? 0 : 1
+    for (let i = 1; i < m; i++) {
+        dp[i][0] = obstacleGrid[i][0] ? 0 : dp[i - 1][0]
+    }
+    for (let j = 1; j < n; j++) {
+        dp[0][j] = obstacleGrid[0][j] ? 0 : dp[0][j - 1]
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (!obstacleGrid[i][j]) {
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+            }
+        }
+    }
+
+    return dp[m - 1][n - 1]
+};
+const res = uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+console.log(res)
 
 // 91. 解码方法
 
