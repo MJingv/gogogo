@@ -272,10 +272,39 @@ var integerBreak = function (n) {
     return dp[n]
 
 };
-const res = integerBreak(10)
-console.log(res)
-// 542. 01 矩阵
+// const res = integerBreak(10)
+// console.log(res)
 
+// 542. 01 矩阵
+// 给定一个由 0 和 1 组成的矩阵 mat ，请输出一个大小相同的矩阵，其中每一个格子是 mat 中对应位置元素到最近的 0 的距离。
+var updateMatrix = function (mat) {
+    const [m, n] = [mat.length, mat[0].length]
+    const dp = Array(m).fill(Infinity).map(() => Array(n).fill(Infinity))
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (mat[i][j] === 0) dp[i][j] = 0
+        }
+    }
+    // 先遍历左和上
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (i - 1 >= 0) dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j])
+            if (j - 1 >= 0) dp[i][j] = Math.min(dp[i][j - 1] + 1, dp[i][j])
+        }
+    }
+    // 再遍历右和下
+    for (let i = m - 1; i >= 0; i--) {
+        for (let j = n - 1; j >= 0; j--) {
+            if (i + 1 < m) dp[i][j] = Math.min(dp[i][j], dp[i + 1][j] + 1)
+            if (j + 1 < n) dp[i][j] = Math.min(dp[i][j], dp[i][j + 1] + 1)
+        }
+    }
+    return dp
+};
+
+// 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
+const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
+console.log(res)
 
 // 576. 出界的路径数
 
