@@ -389,10 +389,25 @@ var numDecodings = function (s) {
 
     return dp[n]
 };
-const res = numDecodings('226') //3
-console.log(res)
+// const res = numDecodings('226') //3
+// console.log(res)
 
 // 剑指 Offer 04. 二维数组中的查找
+
+var findNumberIn2DArray = function (matrix, target) {
+    if (!matrix.length) return 0
+    const [m, n] = [matrix.length, matrix[0].length]
+    let [res, i, j] = [false, 0, n - 1]
+    while (i < m && j >= 0) {
+        const val = matrix[i][j]
+        if (val === target) return res = true
+        if (target > val) i++
+        if (target < val) j--
+    }
+    return res;
+}
+const res = findNumberIn2DArray([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
+console.log(res)
 // 剑指 Offer 46. 把数字翻译成字符串
 // 剑指 Offer II 091. 粉刷房子
 // 剑指 Offer II 097. 子序列的数目
