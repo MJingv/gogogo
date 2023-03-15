@@ -362,10 +362,35 @@ var uniquePathsWithObstacles = function (obstacleGrid) {
 
     return dp[m - 1][n - 1]
 };
-const res = uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
-console.log(res)
+// const res = uniquePathsWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+// console.log(res)
 
 // 91. 解码方法
+// 输入：s = "226" 输出：3 解释：它可以解码为 "BZ" (2 26), "VF" (22 6), 或者 "BBF" (2 2 6) 。
+// 一条包含字母 A-Z 的消息通过以下映射进行了 编码 ： 'A' -> "1"'B' -> "2"'Z' -> "26"
+var numDecodings = function (s) {
+    const n = s.length
+    // 前i个字符的最值 dp[i]=dp[i-1]+dp[i-2]
+    // 2个case 1位，1-9可以，2位 10-26可以
+    const dp = Array(n + 1).fill(0)
+    s = ' ' + s
+    dp[0] = 1
+    for (let i = 1; i <= n; i++) {
+        if (Number(s[i]) >= 1) dp[i] += dp[i - 1]
+        if (i > 1) {
+            const str = s.slice(i - 1, i + 1)
+            const num = Number(str)
+            if (`${num}` === str && num >= 10 && num <= 26) {
+                dp[i] += dp[i - 2]
+            }
+
+        }
+    }
+
+    return dp[n]
+};
+const res = numDecodings('226') //3
+console.log(res)
 
 // 剑指 Offer 04. 二维数组中的查找
 // 剑指 Offer 46. 把数字翻译成字符串
