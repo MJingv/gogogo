@@ -303,12 +303,42 @@ var updateMatrix = function (mat) {
 };
 
 // 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
-const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
-console.log(res)
+// const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
+// console.log(res)
 
 // 576. 出界的路径数
+// 输入：m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0
+var findPaths = function (m, n, maxMove, startRow, startColumn) {
+    // 放弃
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    while (maxMove) {
+
+    }
+    return dp
+};
+// const res = findPaths(2, 2, 2, 0, 0)
+// console.log(res)
 
 // 62. 不同路径
+// 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish” ）。问总共有多少条不同的路径？
+var uniquePaths = function (m, n) {
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    dp[0][0] = 1
+    for (let i = 1; i < m; i++) {
+        dp[i][0] = 1
+    }
+    for (let j = 1; j < n; j++) {
+        dp[0][j] = 1
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+        }
+    }
+    return dp[m - 1][n - 1]
+};
+const res = uniquePaths(3, 7) //28
+console.log(res)
 
 // 63. 不同路径 II
 
