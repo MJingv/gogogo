@@ -262,12 +262,20 @@ var searchMatrix = function (matrix, target) {
 // 给定一个正整数 n ，将其拆分为 k 个 正整数 的和（ k >= 2 ），并使这些整数的乘积最大化。
 // 输入: n = 10 输出: 36 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
 var integerBreak = function (n) {
-
+    if (n < 2) return n
+    const dp = Array(n + 1).fill(1)
+    for (let i = 3; i <= n; i++) {
+        for (let j = i - 1; j >= 1; j--) {
+            dp[i] = Math.max(dp[i - j] * j, (i - j) * j, dp[i])
+        }
+    }
+    return dp[n]
 
 };
 const res = integerBreak(10)
 console.log(res)
 // 542. 01 矩阵
+
 
 // 576. 出界的路径数
 
