@@ -408,15 +408,33 @@ var findNumberIn2DArray = function (matrix, target) {
 }
 // const res = findNumberIn2DArray([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
 // console.log(res)
-// 剑指 Offer 46. 把数字翻译成字符串
-var translateNum = function (num) {
-    const s = ' ' + num
-    const n = num.length
-    const dp = Array(n + 1).fill(0)
-    return dp
 
+// 剑指 Offer 46. 把数字翻译成字符串
+// 给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
+// 解释: 12258有5种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
+var translateNum = function (num) {
+    // f(n)=f(n-1)+f(n-2)
+    num = ' ' + num
+    const n = num.length
+    if (!n) return 1
+    const dp = Array(n).fill(0)
+    dp[0] = 1
+    for (let i = 1; i < n; i++) {
+        dp[i] += dp[i - 1]
+        if (i > 1) {
+            const s = num.slice(i - 1, i + 1)
+            console.log(s)
+
+            const tmp = Number(s)
+            if (tmp <= 25 && tmp >= 10) {
+                dp[i] += dp[i - 2]
+
+            }
+        }
+    }
+    return dp[n-1]
 };
-const res = translateNum('12258')//5
+const res = translateNum('25')//5
 console.log(res)
 
 
