@@ -442,20 +442,13 @@ var translateNum = function (num) {
 // 输入: costs = [[17,2,17],[16,16,5],[14,3,19]] 输出: 10 解释: 将 0 号房子粉刷成蓝色，1 号房子粉刷成绿色，2 号房子粉刷成蓝色。 最少花费: 2 + 5 + 3 = 10。
 var minCost = function (costs) {
     if (!costs.length) return 0
-    const [m, n] = [costs.length, costs[0].length]
-    const dp = Array(m).fill(Infinity).map(i => Array(n).fill(Infinity))
-    for (let j = 0; j < n; j++) {
-        dp[0][j] = costs[0][j]
-    }
-
+    const m = costs.length
     for (let i = 1; i < m; i++) {
-        for (let j = 0; j < n; j++) {
-            if (j === 0) dp[i][j] = Math.min(dp[i - 1][j + 1], dp[i - 1][j + 2]) + costs[i][j]
-            if (j === 1) dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j + 1]) + costs[i][j]
-            if (j === 2) dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j - 2]) + costs[i][j]
-        }
+        costs[i][0] += Math.min(costs[i - 1][1], costs[i - 1][2])
+        costs[i][1] += Math.min(costs[i - 1][0], costs[i - 1][2])
+        costs[i][2] += Math.min(costs[i - 1][0], costs[i - 1][1])
     }
-    return Math.min(...dp[m - 1])
+    return Math.min(...costs[m - 1])
 };
 const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
 console.log(res)
