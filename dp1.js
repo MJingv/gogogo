@@ -450,8 +450,23 @@ var minCost = function (costs) {
     }
     return Math.min(...costs[m - 1])
 };
-const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
-console.log(res)
+// const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
+// console.log(res)
 
-// 剑指 Offer II 097. 子序列的数目
+// 剑指 Offer II 097. 子序列的数目 hard
+
+
 // 剑指 Offer II 098. 路径的数目
+// 输入：m = 3, n = 7 输出：28
+var uniquePaths = function (m, n) {
+    if (!m || !n) return 1
+    const dp = Array(m).fill(1).map(i => Array(n).fill(1))
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+        }
+    }
+    return dp[m - 1][n - 1]
+};
+const res = uniquePaths(3, 7)
+console.log(res)
