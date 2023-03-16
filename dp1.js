@@ -453,9 +453,6 @@ var minCost = function (costs) {
 // const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
 // console.log(res)
 
-// 剑指 Offer II 097. 子序列的数目 hard
-
-
 // 剑指 Offer II 098. 路径的数目
 // 输入：m = 3, n = 7 输出：28
 var uniquePaths = function (m, n) {
@@ -468,5 +465,23 @@ var uniquePaths = function (m, n) {
     }
     return dp[m - 1][n - 1]
 };
-const res = uniquePaths(3, 7)
+// const res = uniquePaths(3, 7)
+// console.log(res)
+
+
+// 剑指 Offer II 097. 子序列的数目
+// 给定一个字符串 s 和一个字符串 t ，计算在 s 的子序列中 t 出现的个数。字符串的一个 子序列 是指，通过删除一些（也可以不删除）字符且不干扰剩余字符相对位置所组成的新字符串。（例如，"ACE" 是 "ABCDE" 的一个子序列，而 "AEC" 不是）
+// 输入：s = "rabbbit", t = "rabbit"输出：3
+// 解释： 如下图所示, 有 3 种可以从 s 中得到 "rabbit" 的方案。 rabbbit rabbbit rabbbit
+var numDistinct = function (s, t) {
+    const sLen = s.length
+    const tLen = s.length
+    if (!sLen && !tLen) return 1
+    if (!sLen || tLen < sLen) return 0
+    let res = 0
+
+
+    return res
+};
+const res = numDistinct('rabbbit', "rabbit")
 console.log(res)
