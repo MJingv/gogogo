@@ -432,12 +432,33 @@ var translateNum = function (num) {
             }
         }
     }
-    return dp[n-1]
+    return dp[n - 1]
 };
-const res = translateNum('25')//5
-console.log(res)
-
+// const res = translateNum('25')//5
+// console.log(res)
 
 // 剑指 Offer II 091. 粉刷房子
+// 假如有一排房子，共 n 个，每个房子可以被粉刷成红色、蓝色或者绿色这三种颜色中的一种，你需要粉刷所有的房子并且使其相邻的两个房子颜色不能相同。
+// 输入: costs = [[17,2,17],[16,16,5],[14,3,19]] 输出: 10 解释: 将 0 号房子粉刷成蓝色，1 号房子粉刷成绿色，2 号房子粉刷成蓝色。 最少花费: 2 + 5 + 3 = 10。
+var minCost = function (costs) {
+    if (!costs.length) return 0
+    const [m, n] = [costs.length, costs[0].length]
+    const dp = Array(m).fill(Infinity).map(i => Array(n).fill(Infinity))
+    for (let j = 0; j < n; j++) {
+        dp[0][j] = costs[0][j]
+    }
+
+    for (let i = 1; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (j === 0) dp[i][j] = Math.min(dp[i - 1][j + 1], dp[i - 1][j + 2]) + costs[i][j]
+            if (j === 1) dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j + 1]) + costs[i][j]
+            if (j === 2) dp[i][j] = Math.min(dp[i - 1][j - 1], dp[i - 1][j - 2]) + costs[i][j]
+        }
+    }
+    return Math.min(...dp[m - 1])
+};
+const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
+console.log(res)
+
 // 剑指 Offer II 097. 子序列的数目
 // 剑指 Offer II 098. 路径的数目
