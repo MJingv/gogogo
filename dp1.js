@@ -474,14 +474,28 @@ var uniquePaths = function (m, n) {
 // 输入：s = "rabbbit", t = "rabbit"输出：3
 // 解释： 如下图所示, 有 3 种可以从 s 中得到 "rabbit" 的方案。 rabbbit rabbbit rabbbit
 var numDistinct = function (s, t) {
+    // 站在 s 视角的状态转移方程 int dp(s, i, t, j) { if (s[i] == t[j]) { return dp(s, i+1, t, j+1) + dp(s, i+1, t, j); } else { return dp(s, i+1, t, j); } }
+
+    // 看不懂
     const sLen = s.length
-    const tLen = s.length
+    const tLen = t.length
     if (!sLen && !tLen) return 1
-    if (!sLen || tLen < sLen) return 0
-    let res = 0
+    if (!sLen || tLen > sLen) return 0
+    const dp = Array(sLen).fill(0).map(i => Array(tLen).fill(0))
+    const helper = (i = 0, j = 0) => {
+        let res = 0
+        if (i > sLen || j > tLen) return 0
+        if (j === tLen-1) return 1
+        if (s[i] === t[j]) {
+            res += helper(i + 1, j + 1) + helper(i + 1, j)
+        } else {
+            res += helper(i + 1, j)
+        }
+        dp[i][j] = res
 
+    }
+    return dp
 
-    return res
 };
 const res = numDistinct('rabbbit', "rabbit")
 console.log(res)
