@@ -406,9 +406,20 @@ var findNumberIn2DArray = function (matrix, target) {
     }
     return res;
 }
-const res = findNumberIn2DArray([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
-console.log(res)
+// const res = findNumberIn2DArray([[1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9, 16, 22], [10, 13, 14, 17, 24], [18, 21, 23, 26, 30]], 5)
+// console.log(res)
 // 剑指 Offer 46. 把数字翻译成字符串
+var translateNum = function (num) {
+    const s = ' ' + num
+    const n = num.length
+    const dp = Array(n + 1).fill(0)
+    return dp
+
+};
+const res = translateNum('12258')//5
+console.log(res)
+
+
 // 剑指 Offer II 091. 粉刷房子
 // 剑指 Offer II 097. 子序列的数目
 // 剑指 Offer II 098. 路径的数目
