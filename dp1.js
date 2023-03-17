@@ -497,5 +497,22 @@ var numDistinct = function (s, t) {
     return dp
 
 };
-const res = numDistinct('rabbbit', "rabbit")
+// const res = numDistinct('rabbbit', "rabbit")
+// console.log(res)
+
+// 剑指 Offer II 003. 前n个数字二进制中1的个数
+// 输入: n = 5 输出: [0,1,1,2,1,2]
+// 解释: 0 --> 0 1 --> 1 2 --> 10 3 --> 11 4 --> 100 5 --> 101
+var countBits = function (n) {
+    const dp = Array(n + 1).fill(0)
+    for (let i = 1; i <= n; i++) {
+        const s = i
+        const s2 = s.toString(2)
+        dp[i] = s2.split('').filter(i => i === '1').length
+    }
+
+    return dp
+};
+const res = countBits(5)
 console.log(res)
+
