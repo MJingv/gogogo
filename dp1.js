@@ -535,5 +535,14 @@ var getMaximumGenerated = function (n) {
     }
     return Math.max(...dp)
 };
-const res = getMaximumGenerated(7) //3
+// const res = getMaximumGenerated(7) //3
+// console.log(res)
+
+// 526
+var countArrangement = function (n) {
+    if (n <= 2) return n
+
+
+};
+const res = countArrangement(2)
 console.log(res)
