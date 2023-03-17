@@ -544,5 +544,33 @@ var countArrangement = function (n) {
 
 
 };
-const res = countArrangement(2)
+// const res = countArrangement(2)
+// console.log(res)
+
+// 688
+// 输入: n = 3, k = 2, row = 0, column = 0 输出: 0.0625 解释: 有两步(到(1,2)，(2,1))可以让骑士留在棋盘上。 在每一个位置上，也有两种移动可以让骑士留在棋盘上。 骑士留在棋盘上的总概率是0.0625。
+var knightProbability = function (n, k, row, column) {
+    // 放弃
+    const dir = [[-2, -1], [-2, 1], [-1, -2], [-1, 2], [1, -2], [2, -1], [1, 2,], [2, 1]]
+    const sum = Math.pow(8, k)
+    let [count, i, j] = [0, row, column]
+
+    while (k >= 0) {
+        if (i < 0 || j < 0 || i >= n || j >= n) return
+        if (k === 0) {
+            if (i >= 0 && j >= 0 && i < n && j < n) count++
+        }
+        dir.map(item => {
+            i += item[0]
+            j += item[1]
+            k++
+        })
+
+    }
+    console.log(count)
+
+
+    return sum
+};
+const res = knightProbability(3, 2, 0, 0)
 console.log(res)
