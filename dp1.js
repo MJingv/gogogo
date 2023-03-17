@@ -485,7 +485,7 @@ var numDistinct = function (s, t) {
     const helper = (i = 0, j = 0) => {
         let res = 0
         if (i > sLen || j > tLen) return 0
-        if (j === tLen-1) return 1
+        if (j === tLen - 1) return 1
         if (s[i] === t[j]) {
             res += helper(i + 1, j + 1) + helper(i + 1, j)
         } else {
