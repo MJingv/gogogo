@@ -21,10 +21,24 @@ var maxProfit = function (prices) {
     }
     return dp[n - 1][0]
 };
-const res = maxProfit([7, 6, 4, 3, 1])
-console.log(res)
-// 剑指 Offer 63. 股票的最大利润
+// const res = maxProfit([7, 6, 4, 3, 1])
+// console.log(res)
 
+// 剑指 Offer 63. 股票的最大利润
+// 输出: 5 解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+var maxProfit63 = function (prices) {
+    const len = prices.length
+    if (!len) return 0
+    const dp = Array(len).fill(0)
+    let min = prices[0]
+    for (let i = 1; i < len; i++) {
+        dp[i] = Math.max(dp[i - 1], prices[i] - min)
+        min = Math.min(min, prices[i])
+    }
+    return dp[len - 1]
+};
+const res = maxProfit63([7, 1, 5, 3, 6, 4])
+console.log(res)
 
 // 122. 买卖股票的最佳时机 II
 
