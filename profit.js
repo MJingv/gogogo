@@ -60,11 +60,27 @@ var maxProfit122 = function (prices) {
     return dp[len - 1][0]
 
 };
-const res = maxProfit122([7, 1, 5, 3, 6, 4]) //7
-console.log(res)
+// const res = maxProfit122([7, 1, 5, 3, 6, 4]) //7
+// console.log(res)
 
 // 309. 最佳买卖股票时机含冷冻期
+// 冷冻期为 1 天
+// 输入: prices = [1,2,3,0,2] 输出: 3 解释: 对应的交易状态为: [买入, 卖出, 冷冻期, 买入, 卖出]
+var maxProfit309 = function (prices) {
+    const len = prices.length
+    const dp = Array(len).fill(0).map(() => Array(2).fill(0))
+    dp[0][0] = 0
+    dp[0][1] = -prices[0]
 
+    for (let i = 1; i < len; i++) {
+        dp[i][0] = Math.max()
+        dp[i][1] = Math.max()
+    }
+
+    return dp
+};
+const res = maxProfit309([1, 2, 3, 0, 2])
+console.log(res)
 
 // 714 买卖股票的最佳时机含手续费
 // 输入：prices = [1, 3, 2, 8, 4, 9], fee = 2 输出：8
