@@ -565,12 +565,10 @@ var knightProbability = function (n, k, row, column) {
             j += item[1]
             k++
         })
-
     }
     console.log(count)
-
-
     return sum
 };
-const res = knightProbability(3, 2, 0, 0)
-console.log(res)
+// const res = knightProbability(3, 2, 0, 0)
+// console.log(res)
+
