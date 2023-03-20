@@ -44,9 +44,23 @@ var maxProfit63 = function (prices) {
 // 122. 买卖股票的最佳时机 II
 // 可以交易多次
 var maxProfit122 = function (prices) {
+    const len = prices.length
+    const dp = Array(len).fill(0).map(i => Array(2).fill(0))
+    // 没有股票
+    // dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i])
+    // 有股票
+    // dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i])
+
+    dp[0][0] = 0
+    dp[0][1] = -prices[0]
+    for (let i = 1; i < len; i++) {
+        dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i])
+        dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i])
+    }
+    return dp[len - 1][0]
 
 };
-const res = maxProfit122()
+const res = maxProfit122([7, 1, 5, 3, 6, 4]) //7
 console.log(res)
 
 // 309. 最佳买卖股票时机含冷冻期
