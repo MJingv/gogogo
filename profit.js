@@ -106,17 +106,40 @@ var maxProfit714 = function (prices, fee) {
     }
     return dp[len - 1][0]
 };
-const res = maxProfit714([1, 3, 2, 8, 4, 9], 2)
-console.log(res)
-
+// const res = maxProfit714([1, 3, 2, 8, 4, 9], 2)
+// console.log(res)
 
 // 123. 买卖股票的最佳时机 III hard
+// 最多2次交易
+var maxProfit123 = function (prices) {
+    const len = prices.length
+    if (!len) return 0
+    const max_k = 2
+    const dp = Array(len).fill(0).map(i => Array(max_k + 1).fill(0).map(j => Array(2).fill(0)))
+    // dp[i][k][0] = Math.max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i])
+    // dp[i][k][1] = Math.max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i])
 
+
+    for (let i = 0; i < len; i++) {
+        for (let k = max_k; k > 0; k--) {
+            if (i === 0) {
+                dp[i][k][0] = 0
+                dp[i][k][1] = -prices[i]
+                continue
+            }
+            dp[i][k][0] = Math.max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i])
+            dp[i][k][1] = Math.max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i]) //买的时候做限制
+        }
+    }
+    return dp[len - 1][max_k][0]
+};
+const res = maxProfit123([3, 3, 5, 0, 0, 3, 1, 4])
+console.log(res)
 
 // 188. 买卖股票的最佳时机 IV hard
 // 给定一个整数数组 prices ，它的第 i 个元素 prices[i] 是一支给定的股票在第 i 天的价格。设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
-var maxProfit5 = function (k, prices) {
+var maxProfit188 = function (k, prices) {
 
 };
-// const res = maxProfit5()
+// const res = maxProfit188()
 // console.log(res)
