@@ -156,5 +156,35 @@ var maxProfit188 = function (k, prices) {
     return dp[len - 1][k][0]
 
 };
-const res = maxProfit188(2, [3, 2, 6, 5, 0, 3])
+// const res = maxProfit188(2, [3, 2, 6, 5, 0, 3])
+// console.log(res)
+
+
+// 输入股票价格数组 prices，你最多进行 max_k 次交易，每次交易需要额外消耗 fee 的手续费，而且每次交易之后需要经过 cooldown 天的冷冻期才能进行下一次交易，请你计算并返回可以获得的最大利润。
+const maxProfit_all_in_one = (max_k, prices, cooldown, fee) => {
+    const len = prices.length
+    const dp = Array(len).fill(0).map(i => Array(max_k + 1).fill(0).map(j => Array(2).fill(0)))
+    for (let i = 0; i < len; i++) {
+        for (let k = max_k; k > 0; k--) {
+            if (i === 0) {
+                dp[i][k][0] = 0
+                dp[i][k][1] = -prices[i]
+                continue
+            }
+            if (i === 1) {
+                dp[1][k][0] = Math.max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i] - fee)
+                dp[1][k][1] = Math.max(dp[i - 1][k][1], -prices[i])
+                continue
+            }
+            dp[i][k][0] = Math.max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i] - fee)
+            dp[i][k][1] = Math.max(dp[i - 1][k][1], dp[i - 2][k - 1][0] - prices[i])
+        }
+    }
+
+
+    return dp
+
+}
+
+const res = maxProfit_all_in_one(2, [3, 2, 6, 5, 0, 3], 2, 2)
 console.log(res)
