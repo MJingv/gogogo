@@ -152,6 +152,7 @@ var lastStoneWeight = function (stones) {
 // console.log(res)
 
 // 剑指 Offer II 101. 分割等和子集
+// 416. 分割等和子集
 // 输入：nums = [1,5,11,5] 输出：true 解释：nums 可以分割成 [1, 5, 5] 和 [11] 。
 var canPartition = function (nums) {
     const len = nums.length
@@ -199,11 +200,7 @@ const canPartition1 = (nums) => {
     return dp[len - 1][target]
 }
 // 输入：nums = [1,2,3,5] 输出：false
-const res = canPartition1([1, 2, 3, 5])
+// const res = canPartition1([1, 2, 3, 5])
+// console.log(res)
+const res = canPartition([1, 2, 3, 5])
 console.log(res)
-
-
-// 416. 分割等和子集
-var canPartition = function (nums) {
-
-};
