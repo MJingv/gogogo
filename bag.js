@@ -124,8 +124,29 @@ var lastStoneWeight = function (stones) {
     const len = stones.length
     if (len === 1) return stones[0]
     if (len === 2) return Math.abs(stones[0] - stones[1])
+    stones.sort((a, b) => b - a)
+    let res = 0
+// 判断数组长度是否大于1，大于1进行升序排序。
+// 取排序后的最大两个(也就是最后两个)比较：
+// 如果相同，长度减2，
+// 如果不同更新倒数第2个，长度减1
+// 最后返回第1个或0
+    let n = stones.length
+    while (n > 1) {
+        const tmp = stones[0] - stones[1]
+        if (tmp === 0) {
+            stones = stones.slice(2, stones.length)
+            n = n - 2
+        } else {
+            stones.shift()
+            stones.shift()
+            stones.unshift(tmp)
+            n--
+        }
+        stones.sort((a, b) => b - a)
 
-
+    }
+    return stones[0]
 };
-const res = lastStoneWeight([2, 7, 4, 1, 8, 1])
+const res = lastStoneWeight([3, 7, 2])
 console.log(res)
