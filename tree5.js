@@ -1003,5 +1003,20 @@ var subtreeWithAllDeepest = function (root) {
     return res
 
 };
-const res = subtreeWithAllDeepest(t1)
+// const res = subtreeWithAllDeepest(t1)
+// console.log(res)
+
+
+const test = (root) => {
+    if (!root) return
+    const [res, path1] = [[], []]
+    const helper = (left, right, path) => {
+        if (!left && !right) res.push(path)
+        left && helper(left.left, left.right, [...path, left.val])
+        right && helper(right.left, right.right, [...path, right.val])
+    }
+    helper(root.left, root.right, [root.val])
+    return res
+}
+const res = test(t1)
 console.log(res)

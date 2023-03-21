@@ -117,5 +117,15 @@ var lastStoneWeightII = function (stones) {
     }
     return sum - 2 * dp[target]
 };
-const res = lastStoneWeightII([2, 7, 4, 1, 8, 1])
+
+// 1046 最后一块石头的重量
+// 最后，最多只会剩下一块石头。返回此石头的重量。如果没有石头剩下，就返回 0。
+var lastStoneWeight = function (stones) {
+    const len = stones.length
+    if (len === 1) return stones[0]
+    if (len === 2) return Math.abs(stones[0] - stones[1])
+
+
+};
+const res = lastStoneWeight([2, 7, 4, 1, 8, 1])
 console.log(res)
