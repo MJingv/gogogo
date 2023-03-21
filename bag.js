@@ -202,5 +202,69 @@ const canPartition1 = (nums) => {
 // 输入：nums = [1,2,3,5] 输出：false
 // const res = canPartition1([1, 2, 3, 5])
 // console.log(res)
-const res = canPartition([1, 2, 3, 5])
+// const res = canPartition([1, 2, 3, 5])
+// console.log(res)
+
+// 518. 零钱兑换 II
+// 输入：amount = 5, coins = [1, 2, 5] 输出：4 解释：有四种方式可以凑成总金额： 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1
+var change = function (amount, coins) {
+    const len = coins.length
+    const dp = Array(len).fill(0).map(i => Array(amount + 1).fill(0))
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j <= amount; j++) {
+            if (i === 0) {
+                if (coins[i] === j || j % coins[i] === 0) dp[i][j] = 1
+                continue
+            }
+            if (j === 0) {
+                dp[i][j] = 0
+                continue
+            }
+            if (j - coins[i] >= 0) {
+                dp[i][j] = dp[i - 1][j] + dp[i][j - coins[i]]
+            } else {
+                dp[i][j] = dp[i - 1][j]
+            }
+        }
+    }
+
+    return dp[len - 1][amount]
+};
+const res = change(5, [1, 2, 5])
 console.log(res)
+
+// 322 零钱兑换
+// 你可以认为每种硬币的数量是无限的。
+// 计算并返回可以凑成总金额所需的 最少的硬币个数
+// 输入：coins = [1, 2, 5], amount = 11
+// 输出：3
+// 解释：11 = 5 + 5 + 1
+var coinChange = function (coins, amount) {
+    // 不对
+    const len = coins.length
+    const dp = Array(len).fill(0).map(i => Array(amount + 1).fill(Infinity))
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j <= amount; j++) {
+            if (i === 0) {
+                if (coins[i] <= j) {
+                    if (coins[i] === j) dp[i][j] = 1
+                    if (j % coins[i] === 0) dp[i][j] = j / coins[i]
+                }
+                continue
+            }
+            if (j === 0) {
+                dp[i][j] = 0
+                continue
+            }
+            if (j - coins[i] >= 0) {
+                dp[i][j] = Math.min(dp[i][j], dp[i - 1][j - coins[i]] + 1, dp[i - 1][j])
+            }
+
+        }
+    }
+
+
+    return dp
+};
+// const res = coinChange([1, 2, 5], 11)
+// console.log(res)
