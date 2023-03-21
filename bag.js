@@ -180,7 +180,7 @@ const canPartition1 = (nums) => {
     for (let i = 0; i < len; i++) {
         for (let j = 0; j <= target; j++) {
             if (i === 0) {
-                if (j >= nums[i]) dp[i][j] = true
+                if (nums[i] === j) dp[i][j] = true
                 continue
             }
             if (j === 0) {
@@ -196,9 +196,10 @@ const canPartition1 = (nums) => {
             }
         }
     }
-    return dp
+    return dp[len - 1][target]
 }
-const res = canPartition1([1, 1])
+// 输入：nums = [1,2,3,5] 输出：false
+const res = canPartition1([1, 2, 3, 5])
 console.log(res)
 
 
