@@ -148,5 +148,61 @@ var lastStoneWeight = function (stones) {
     }
     return stones[0]
 };
-const res = lastStoneWeight([3, 7, 2])
+// const res = lastStoneWeight([3, 7, 2])
+// console.log(res)
+
+// 剑指 Offer II 101. 分割等和子集
+// 输入：nums = [1,5,11,5] 输出：true 解释：nums 可以分割成 [1, 5, 5] 和 [11] 。
+var canPartition = function (nums) {
+    const len = nums.length
+    nums.sort()
+    const sum = nums.reduce((i, p) => i + p)
+    if (sum % 2) return false
+    const target = sum / 2
+    // 前i个物品重量为j最多装多少
+    const dp = Array(target + 1).fill(false)
+    dp[0] = true
+
+    for (let i = 0; i < len; i++) {
+        for (let j = target; j >= nums[i]; j--) {
+            dp[j] = dp[j] || dp[j - nums[i]]
+        }
+    }
+    return dp[target]
+};
+const canPartition1 = (nums) => {
+    const len = nums.length
+    nums.sort()
+    const sum = nums.reduce((i, p) => i + p)
+    if (sum % 2) return false
+    const target = sum / 2
+    const dp = Array(len).fill(0).map(i => Array(target + 1).fill(false))
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j <= target; j++) {
+            if (i === 0) {
+                if (j >= nums[i]) dp[i][j] = true
+                continue
+            }
+            if (j === 0) {
+                dp[i][j] = true
+                continue
+            }
+            // 第i个可以装
+            if (j - nums[i] >= 0) {
+                // 装or不装
+                dp[i][j] = dp[i - 1][j - nums[i]] || dp[i - 1][j]
+            } else {
+                dp[i][j] = dp[i - 1][j]
+            }
+        }
+    }
+    return dp
+}
+const res = canPartition1([1, 1])
 console.log(res)
+
+
+// 416. 分割等和子集
+var canPartition = function (nums) {
+
+};
