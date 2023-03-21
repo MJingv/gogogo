@@ -28,8 +28,55 @@ var canPartition = function (nums) {
     return dp[len - 1][target]
 
 };
-const res = canPartition([1, 5, 11, 5])
+// const res = canPartition([1, 5, 11, 5])
+// console.log(res)
+
+// 474 一和零
+// 请你找出并返回 strs 的最大子集的长度，该子集中 最多 有 m 个 0 和 n 个 1 。
+
+var findMaxForm = function (strs, m, n) {
+
+};
+// const res = findMaxForm()
+// console.log(res)
+
+// 494 目标和
+// 输入：nums = [1,1,1,1,1], target = 3 输出：5
+// 例如，nums = [2, 1] ，可以在 2 之前添加 '+' ，在 1 之前添加 '-' ，然后串联起来得到表达式 "+2-1"
+var findTargetSumWays = function (nums, target) {
+    const len = nums.length
+    if (!len) return 0
+    // 前i个数字组成目标是j的最大组合数量
+    const dp = Array(len).fill(0).map(i => Array(target + 1).fill(0))
+    let res = 0
+
+
+    console.log(dp)
+
+    return res
+};
+const findTargetSumWays1 = (nums, target) => {
+    const len = nums.length
+    if (!len) return 0
+    // 深度遍历
+    let res = 0
+    const helper = (i, sum) => {
+        if (i === len) {
+            if (sum === target) res++
+            return
+        }
+        helper(i + 1, sum + nums[i])
+        helper(i + 1, sum - nums[i])
+    }
+    helper(0, 0)
+    return res
+}
+
+const res = findTargetSumWays1([1, 1, 1, 1, 1], 3)
 console.log(res)
-// 474
-// 494
-// 1049
+
+
+// 1049 最后一块石头的重量2
+var lastStoneWeightII = function (stones) {
+
+};
