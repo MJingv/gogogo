@@ -33,11 +33,30 @@ var canPartition = function (nums) {
 
 // 474 一和零
 // 请你找出并返回 strs 的最大子集的长度，该子集中 最多 有 m 个 0 和 n 个 1 。
-
 var findMaxForm = function (strs, m, n) {
+    const len = strs.length
+    if (!len) return 0
+    const list = Array(len).fill(0).map(i => Array(2).fill(0))
+    strs.map((item, index) => {
+        list[index][0] = item.split('').filter(i => i === '0').length
+        list[index][1] = item.split('').filter(i => i === '1').length
+    })
+    // i个0 j个1 组成最大的子集
+    const dp = Array(m + 1).fill(0).map(i => Array(n + 1).fill(0))
 
+    for (let k = 0; k < len; k++) {
+        const zero = list[k][0]
+        const one = list[k][1]
+        for (let i = m; i >= zero; i--) {
+            for (let j = n; j >= one; j--) {
+                dp[i][j] = Math.max(dp[i][j], dp[i - zero][j - one] + 1)
+
+            }
+        }
+    }
+    return dp[m][n]
 };
-// const res = findMaxForm()
+// const res = findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3)
 // console.log(res)
 
 // 494 目标和
@@ -72,9 +91,9 @@ const findTargetSumWays1 = (nums, target) => {
     helper(0, 0)
     return res
 }
-
-const res = findTargetSumWays([1, 1, 1, 1, 1], 3)
-console.log(res)
+//
+// const res = findTargetSumWays([1, 1, 1, 1, 1], 3)
+// console.log(res)
 
 
 // 1049 最后一块石头的重量2
