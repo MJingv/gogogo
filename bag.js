@@ -44,21 +44,22 @@ var findMaxForm = function (strs, m, n) {
 // 输入：nums = [1,1,1,1,1], target = 3 输出：5
 // 例如，nums = [2, 1] ，可以在 2 之前添加 '+' ，在 1 之前添加 '-' ，然后串联起来得到表达式 "+2-1"
 var findTargetSumWays = function (nums, target) {
+    // 动态规划不太理解
     const len = nums.length
     if (!len) return 0
     // 前i个数字组成目标是j的最大组合数量
     const dp = Array(len).fill(0).map(i => Array(target + 1).fill(0))
+    // dp[i][j] = dp[i - 1][j - nums[i]] + dp[i - 1][j + nums[i]]
     let res = 0
-
 
     console.log(dp)
 
     return res
 };
 const findTargetSumWays1 = (nums, target) => {
+    // 深度遍历 bfs
     const len = nums.length
     if (!len) return 0
-    // 深度遍历
     let res = 0
     const helper = (i, sum) => {
         if (i === len) {
@@ -72,7 +73,7 @@ const findTargetSumWays1 = (nums, target) => {
     return res
 }
 
-const res = findTargetSumWays1([1, 1, 1, 1, 1], 3)
+const res = findTargetSumWays([1, 1, 1, 1, 1], 3)
 console.log(res)
 
 
