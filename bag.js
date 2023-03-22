@@ -360,14 +360,7 @@ var findTargetSumWays4 = function (nums, target) {
     return dp[len][n]
 
 }
-const res = findTargetSumWays4([1, 1, 1, 1, 1], 3)
-console.log(res)
+// const res = findTargetSumWays4([1, 1, 1, 1, 1], 3)
+// console.log(res)
 
-// [
-//     [ 1, 0, 0, 0, 0 ],
-//     [ 1, 1, 0, 0, 0 ],
-//     [ 1, 2, 1, 0, 0 ],
-//     [ 1, 3, 3, 1, 0 ],
-//     [ 1, 4, 6, 4, 1 ],
-//     [ 1, 5, 10, 10, 5 ]
-// ]
+
