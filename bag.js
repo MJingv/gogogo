@@ -230,8 +230,8 @@ var change = function (amount, coins) {
 
     return dp[len - 1][amount]
 };
-const res = change(5, [1, 2, 5])
-console.log(res)
+// const res = change(5, [1, 2, 5])
+// console.log(res)
 
 // 322 零钱兑换
 // 你可以认为每种硬币的数量是无限的。
@@ -240,33 +240,34 @@ console.log(res)
 // 输出：3
 // 解释：11 = 5 + 5 + 1
 var coinChange = function (coins, amount) {
-    // 不对
     const len = coins.length
+    if (!amount) return 0
+    if (len === 1) return amount % coins[0] === 0 ? amount / coins[0] : -1
+    // 前i个金币凑成amount的最小金币数量
     const dp = Array(len).fill(0).map(i => Array(amount + 1).fill(Infinity))
+    // dp[i][j] = min(dp[i - 1][j], dp[i ][j - coins[i]] + 1)
+
+    coins.sort()
     for (let i = 0; i < len; i++) {
         for (let j = 0; j <= amount; j++) {
             if (i === 0) {
-                if (coins[i] <= j) {
-                    if (coins[i] === j) dp[i][j] = 1
-                    if (j % coins[i] === 0) dp[i][j] = j / coins[i]
-                }
+                dp[i][j] = j % coins[0] === 0 ? j / coins[0] : Infinity
                 continue
             }
             if (j === 0) {
                 dp[i][j] = 0
-                continue
             }
             if (j - coins[i] >= 0) {
-                dp[i][j] = Math.min(dp[i][j], dp[i - 1][j - coins[i]] + 1, dp[i - 1][j])
+                dp[i][j] = Math.min(dp[i][j - coins[i]] + 1, dp[i - 1][j])
+            } else {
+                // 每次都忘了这一步！！
+                dp[i][j] = dp[i - 1][j]
             }
-
         }
     }
-
-
-    return dp
+    return dp[len - 1][amount] === Infinity ? -1 : dp[len - 1][amount]
 };
-// const res = coinChange([1, 2, 5], 11)
-// console.log(res)
+const res = coinChange([1, 2, 5], 11)
+console.log(res)
 
 
