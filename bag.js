@@ -328,6 +328,10 @@ var findTargetSumWays3 = function (nums, target) {
 };
 // 输入：nums = [1,1,1,1,1], target = 3 输出：5
 var findTargetSumWays4 = function (nums, target) {
+    // 负数不通过
+    // 不知道为什么不能i从0开始
+    // 放弃
+
     // 如果我们把 nums 划分成两个子集 A 和 B，分别代表分配 + 的数和分配 - 的数
     // sumA-sumB=target
     // sumA=target+sumB
@@ -341,39 +345,29 @@ var findTargetSumWays4 = function (nums, target) {
     const n = (target + sum) / 2
     // 前i个数字满足j的组合数量
     /* 计算 nums 中有几个子集的和为 n */
+
     const dp = Array(len + 1).fill(0).map(i => Array(n + 1).fill(0))
-
-
-    // for (let i = 1; i <= n; i++) {
-    //     for (let j = 0; j <= sum; j++) {
-    //         if (j >= nums[i - 1]) {
-    //             dp[i][j] = dp[i - 1][j] + dp[i - 1][j - nums[i - 1]];
-    //         } else {
-    //             dp[i][j] = dp[i - 1][j]
-    //         }
-    //     }
-    // }
     dp[0][0] = 1
     for (let i = 1; i <= len; i++) {
         for (let j = 0; j <= n; j++) {
-            // if (i === 0) {
-            //     //如果nums[0]在背包范围内,即第0个物品可以放入背包,有一种方法
-            //     if (j === nums[0]) dp[i][j] = 1
-            //     continue
-            // }
-            // if (j === 0) {
-            //     dp[i][j] = 1
-            //     continue
-            // }
+            dp[i][j] += dp[i - 1][j]
             if (j - nums[i - 1] >= 0) {
-                dp[i][j] = dp[i - 1][j] + dp[i - 1][j - nums[i - 1]]
-            } else {
-                dp[i][j] = dp[i - 1][j]
+                dp[i][j] += dp[i - 1][j - nums[i - 1]]
             }
         }
     }
-    return dp
+
+    return dp[len][n]
 
 }
 const res = findTargetSumWays4([1, 1, 1, 1, 1], 3)
 console.log(res)
+
+// [
+//     [ 1, 0, 0, 0, 0 ],
+//     [ 1, 1, 0, 0, 0 ],
+//     [ 1, 2, 1, 0, 0 ],
+//     [ 1, 3, 3, 1, 0 ],
+//     [ 1, 4, 6, 4, 1 ],
+//     [ 1, 5, 10, 10, 5 ]
+// ]
