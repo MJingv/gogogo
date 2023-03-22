@@ -205,34 +205,6 @@ const canPartition1 = (nums) => {
 // const res = canPartition([1, 2, 3, 5])
 // console.log(res)
 
-// 518. 零钱兑换 II
-// 输入：amount = 5, coins = [1, 2, 5] 输出：4 解释：有四种方式可以凑成总金额： 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1
-var change = function (amount, coins) {
-    const len = coins.length
-    const dp = Array(len).fill(0).map(i => Array(amount + 1).fill(0))
-    for (let i = 0; i < len; i++) {
-        for (let j = 0; j <= amount; j++) {
-            if (i === 0) {
-                if (coins[i] === j || j % coins[i] === 0) dp[i][j] = 1
-                continue
-            }
-            if (j === 0) {
-                dp[i][j] = 0
-                continue
-            }
-            if (j - coins[i] >= 0) {
-                dp[i][j] = dp[i - 1][j] + dp[i][j - coins[i]]
-            } else {
-                dp[i][j] = dp[i - 1][j]
-            }
-        }
-    }
-
-    return dp[len - 1][amount]
-};
-// const res = change(5, [1, 2, 5])
-// console.log(res)
-
 // 322 零钱兑换
 // 你可以认为每种硬币的数量是无限的。
 // 计算并返回可以凑成总金额所需的 最少的硬币个数
@@ -267,7 +239,37 @@ var coinChange = function (coins, amount) {
     }
     return dp[len - 1][amount] === Infinity ? -1 : dp[len - 1][amount]
 };
-const res = coinChange([1, 2, 5], 11)
+// const res = coinChange([1, 2, 5], 11)
+// console.log(res)
+
+
+// 518. 零钱兑换 II
+// 请你计算并返回可以凑成总金额的硬币组合数。（不是求最值，把可能都加起来就行）
+// 输入：amount = 5, coins = [1, 2, 5] 输出：4 解释：有四种方式可以凑成总金额： 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1
+var change = function (amount, coins) {
+    const len = coins.length
+    if (!amount) return 1
+    // 前i种金币总额amount时组成方式有dp[i][j]种
+    const dp = Array(len).fill(0).map(i => Array(amount + 1).fill(0))
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j <= amount; j++) {
+            if (i === 0) {
+                dp[i][j] = j % coins[0] === 0 ? 1 : 0
+                continue
+            }
+            if (j === 0) {
+                dp[i][j] = dp[i - 1][j]
+                continue
+            }
+            if (j - coins[i] >= 0) {
+                dp[i][j] = dp[i][j - coins[i]] + dp[i - 1][j]
+            } else {
+                dp[i][j] = dp[i - 1][j]
+            }
+        }
+    }
+
+    return dp[len - 1][amount]
+};
+const res = change(5, [1, 2, 5])
 console.log(res)
-
-
