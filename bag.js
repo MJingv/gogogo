@@ -256,8 +256,8 @@ var coinChange1 = function (coins, amount) {
     return dp[amount] === Infinity ? -1 : dp[amount]
 
 }
-const res = coinChange1([1, 2, 5], 11)
-console.log(res)
+// const res = coinChange1([1, 2, 5], 11)
+// console.log(res)
 
 // 518. 零钱兑换 II
 // 请你计算并返回可以凑成总金额的硬币组合数。（不是求最值，把可能都加起来就行）
@@ -302,3 +302,78 @@ var change1 = function (amount, coins) {
 }
 // const res = change1(5, [1, 2, 5])
 // console.log(res)
+
+// 494 题「 目标和」
+// 输入：nums = [1,1,1,1,1], target = 3 输出：5
+var findTargetSumWays3 = function (nums, target) {
+    // 回溯做一遍
+    const len = nums.length
+    let res = 0
+    const helper = (i = 0, sum = 0) => {
+        if (i === len) {
+            if (sum === target) res++
+            return
+        }
+        sum += nums[i]
+        helper(i + 1, sum)
+        sum -= nums[i]
+
+        sum -= nums[i]
+        helper(i + 1, sum)
+        sum += nums[i]
+
+    }
+    helper()
+    return res
+};
+// 输入：nums = [1,1,1,1,1], target = 3 输出：5
+var findTargetSumWays4 = function (nums, target) {
+    // 如果我们把 nums 划分成两个子集 A 和 B，分别代表分配 + 的数和分配 - 的数
+    // sumA-sumB=target
+    // sumA=target+sumB
+    // sumA+sumA=target+sumB+sumA
+    // 2*sumA=target+sum
+    // sumA = (target + sum) / 2
+    // 转换问题，变成找sumA为(target + sum) / 2
+    const len = nums.length
+    const sum = nums.reduce((i, p) => i + p)
+    if ((target + sum) % 2) return 0
+    const n = (target + sum) / 2
+    // 前i个数字满足j的组合数量
+    /* 计算 nums 中有几个子集的和为 n */
+    const dp = Array(len + 1).fill(0).map(i => Array(n + 1).fill(0))
+
+
+    // for (let i = 1; i <= n; i++) {
+    //     for (let j = 0; j <= sum; j++) {
+    //         if (j >= nums[i - 1]) {
+    //             dp[i][j] = dp[i - 1][j] + dp[i - 1][j - nums[i - 1]];
+    //         } else {
+    //             dp[i][j] = dp[i - 1][j]
+    //         }
+    //     }
+    // }
+    dp[0][0] = 1
+    for (let i = 1; i <= len; i++) {
+        for (let j = 0; j <= n; j++) {
+            // if (i === 0) {
+            //     //如果nums[0]在背包范围内,即第0个物品可以放入背包,有一种方法
+            //     if (j === nums[0]) dp[i][j] = 1
+            //     continue
+            // }
+            // if (j === 0) {
+            //     dp[i][j] = 1
+            //     continue
+            // }
+            if (j - nums[i - 1] >= 0) {
+                dp[i][j] = dp[i - 1][j] + dp[i - 1][j - nums[i - 1]]
+            } else {
+                dp[i][j] = dp[i - 1][j]
+            }
+        }
+    }
+    return dp
+
+}
+const res = findTargetSumWays4([1, 1, 1, 1, 1], 3)
+console.log(res)
