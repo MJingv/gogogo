@@ -271,5 +271,18 @@ var change = function (amount, coins) {
 
     return dp[len - 1][amount]
 };
-const res = change(5, [1, 2, 5])
+var change1 = function (amount, coins) {
+    const len = coins.length
+    const dp = Array(amount + 1).fill(0)
+    dp[0] = 1
+    for (let i = 0; i < len; i++) {
+        for (let j = 1; j <= amount; j++) {
+            if (j - coins[i] >= 0) {
+                dp[j] = dp[j] + dp[j - coins[i]]
+            }
+        }
+    }
+    return dp[amount]
+}
+const res = change1(5, [1, 2, 5])
 console.log(res)
