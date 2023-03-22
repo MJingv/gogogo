@@ -239,9 +239,25 @@ var coinChange = function (coins, amount) {
     }
     return dp[len - 1][amount] === Infinity ? -1 : dp[len - 1][amount]
 };
-// const res = coinChange([1, 2, 5], 11)
-// console.log(res)
 
+
+// 计算并返回可以凑成总金额所需的 最少的硬币个数
+var coinChange1 = function (coins, amount) {
+    const len = coins.length
+    const dp = Array(amount + 1).fill(Infinity)
+    dp[0] = 0
+    for (let i = 0; i < len; i++) {
+        for (let j = 1; j <= amount; j++) {
+            if (j - coins[i] >= 0) {
+                dp[j] = Math.min(dp[j], dp[j - coins[i]] + 1)
+            }
+        }
+    }
+    return dp[amount] === Infinity ? -1 : dp[amount]
+
+}
+const res = coinChange1([1, 2, 5], 11)
+console.log(res)
 
 // 518. 零钱兑换 II
 // 请你计算并返回可以凑成总金额的硬币组合数。（不是求最值，把可能都加起来就行）
@@ -284,5 +300,5 @@ var change1 = function (amount, coins) {
     }
     return dp[amount]
 }
-const res = change1(5, [1, 2, 5])
-console.log(res)
+// const res = change1(5, [1, 2, 5])
+// console.log(res)
