@@ -40,3 +40,16 @@ and urges him to give all the black man and woman the right to vote.
 in 1863,president lincoln declared freedom of all slaves.
 D becomes the 1st african-american citizen to hold a high US gov rank.
 
+only then will you be able to see the sun of enlightment
+the young man was greatful for this wisdom  and left feeling inspired
+he realized that the enlightment was not sth to be achieved
+but rather the state of mind that could be accessed by let go of the distraction and  being  fool present in the moment.
+from that day on,the young man practice mindfulness and meditation.
+
+and he gradually began to experience moment of enlightment.
+he realized that the journey to enlightment was not the destination but the way of life.
+and the key to unlocking it was to fully present of moment.
+let go of the distractions
+you see in life your life
+you can not achieve the enlightment.
+it is state of mind that can't be accessed so let you go the clouds or your disch and be the present in the moment.
