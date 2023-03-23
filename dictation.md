@@ -40,12 +40,13 @@ and urges him to give all the black man and woman the right to vote.
 in 1863,president lincoln declared freedom of all slaves.
 D becomes the 1st african-american citizen to hold a high US gov rank.
 
-only then will you be able to see the sun of enlightment
-the young man was greatful for this wisdom  and left feeling inspired
-he realized that the enlightment was not sth to be achieved
-but rather the state of mind that could be accessed by let go of the distraction and  being  fool present in the moment.
-from that day on,the young man practice mindfulness and meditation.
+---
 
+only then will you be able to see the sun of enlightment
+the young man was greatful for this wisdom and left feeling inspired
+he realized that the enlightment was not sth to be achieved
+but rather the state of mind that could be accessed by let go of the distraction and being fool present in the moment.
+from that day on,the young man practice mindfulness and meditation.
 and he gradually began to experience moment of enlightment.
 he realized that the journey to enlightment was not the destination but the way of life.
 and the key to unlocking it was to fully present of moment.
@@ -53,3 +54,38 @@ let go of the distractions
 you see in life your life
 you can not achieve the enlightment.
 it is state of mind that can't be accessed so let you go the clouds or your disch and be the present in the moment.
+
+---
+
+two american back safe in the US.and two others had found died after the kn in mexico
+a professor say the full when cross border because one person was scheduled undergo a cosmatic precedure.
+there's then called in the crossfire of two river groups
+x over million american travel mexico for medical procegers
+how safe is that kind of medical towords distinct from what happen in this case just in general
+i think a lot of people gonna to think twice before traveling to border towns and having this precedureds done.
+not just in terms of they can't get benefit of but also there's person safety what happening dm last week
+but the truth of this j that we have 114 travel for dm for years now.
+this is not sth new
+it's also true for the all the destination next to mexico. and people realizes that it's overall it's still safe travel
+in mexico
+there so balance part of teritary that under control criminal oranizations where you get calling the cross fire like
+this pool american did on friday.
+and consequence can be felo
+but for the most part i think,people have gonnten used to normolize v mexico and have fun way to leave on that
+and you touch the band of this topic we spoken on monday
+but how going to a little more detail if you will are the ct is it drugs ,is it human trafficing,is it both,how do the c
+up rate there
+it conbination of everything.they control drug trafficing ,hunman trafficing,estoration,keepns
+and they grow to this nans criminal enterprice,and exmenly prefectable
+and so how they have this power to grow up , to buy the weapons
+most weapons see buy so sm over around 70-80 percent gone from the us
+and that allow them to control teritery in mexico become so dangerous.
+and that's requset of what explains what happening in dm last week.what happens every week
+of this's got different demation and tension because of the effects that full was the city was involved
+but unfortunately it happenes every week to mexico citizen.
+and it's never ends the same way
+us l source believes the golf vt responsible for the tack on the american victoms
+
+        
+
+

@@ -15,5 +15,34 @@ var lengthOfLIS = function (nums) {
     }
     return res
 };
-const res = lengthOfLIS([4, 10, 4, 3, 8, 9])
+// const res = lengthOfLIS([4, 10, 4, 3, 8, 9])
+// console.log(res)
+
+// 1425. 带限制的子序列和 hard
+
+// 368. 最大整除子集
+// 给你一个由 无重复 正整数组成的集合 nums ，请你找出并返回其中最大的整除子集 answer ，子集中每一元素对 (answer[i], answer[j]) 都应当满足：
+// answer[i] % answer[j] == 0 或 answer[j] % answer[i] == 0
+// 输入：nums = [1,2,3] 输出：[1,2] 解释：[1,3] 也会被视为正确答案。
+var largestDivisibleSubset = function (nums) {
+    const len = nums.length
+    const dp = Array(len).fill(1).map(i => [])
+    nums.sort()
+
+    for (let i = 0; i < len; i++) {
+        dp[i].push(nums[i])
+        for (let j = 0; j < i; j++) {
+            if (nums[i] % nums[j] === 0) {
+                if (dp[i - 1].length < dp[j].length + 1) {
+                    dp[i].push(nums[j])
+                }
+            }
+        }
+    }
+    return dp
+
+};
+const res = largestDivisibleSubset([1, 2, 3, 4, 8])
 console.log(res)
+
+// 剑指 Offer II 091. 粉刷房子
