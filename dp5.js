@@ -25,24 +25,31 @@ var lengthOfLIS = function (nums) {
 // answer[i] % answer[j] == 0 或 answer[j] % answer[i] == 0
 // 输入：nums = [1,2,3] 输出：[1,2] 解释：[1,3] 也会被视为正确答案。
 var largestDivisibleSubset = function (nums) {
+    // a了少一半
     const len = nums.length
-    const dp = Array(len).fill(1).map(i => [])
-    nums.sort()
+    if (len === 1) return nums
+    const dp = Array(len).fill(1)
+    const list = Array(len).fill(0).map(i => [])
+    let max = 1
 
     for (let i = 0; i < len; i++) {
-        dp[i].push(nums[i])
+        list[i].push(nums[i])
         for (let j = 0; j < i; j++) {
             if (nums[i] % nums[j] === 0) {
-                if (dp[i - 1].length < dp[j].length + 1) {
-                    dp[i].push(nums[j])
+                dp[i] = Math.max(dp[i - 1], dp[j] + 1)
+                max = Math.max(dp[i], max)
+                if (dp[i - 1] > dp[j] + 2) {
+                    list[i] = list[i - 1]
+                } else {
+                    list[i] = [...list[j], nums[i]]
                 }
             }
         }
     }
-    return dp
-
+    const res = list.find(item => item.length === max)
+    return list
 };
-const res = largestDivisibleSubset([1, 2, 3, 4, 8])
+const res = largestDivisibleSubset([3, 4, 16, 8])
 console.log(res)
 
 // 剑指 Offer II 091. 粉刷房子
