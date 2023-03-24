@@ -57,34 +57,54 @@ it is state of mind that can't be accessed so let you go the clouds or your disc
 
 ---
 
-two american back safe in the US.and two others had found died after the kn in mexico
-a professor say the full when cross border because one person was scheduled undergo a cosmatic precedure.
-there's then called in the crossfire of two river groups
-x over million american travel mexico for medical procegers
-how safe is that kind of medical towords distinct from what happen in this case just in general
-i think a lot of people gonna to think twice before traveling to border towns and having this precedureds done.
-not just in terms of they can't get benefit of but also there's person safety what happening dm last week
-but the truth of this j that we have 114 travel for dm for years now.
+two americans are back safe in the US.and two others had been found died after a kidnapping in mexico
+official say the 4 went cross border because one person was scheduled undergo a cosmetic procedure.
+there's then caught in the crossfire of two rival groups.
+E, over million americans travel to mexico for medical procedure.
+how safe is that kind of medical tourism distinct from what happen in this case just in general.
+i think a lot of people are going to think twice before traveling to border towns and having this procedure done.
+not just in terms of the economic benefit of but also there's person safety after what happening dm last week
+but the truth is ,John that we have a level 4 travel for dm for years now.
 this is not sth new
-it's also true for the all the destination next to mexico. and people realizes that it's overall it's still safe travel
-in mexico
-there so balance part of teritary that under control criminal oranizations where you get calling the cross fire like
-this pool american did on friday.
-and consequence can be felo
-but for the most part i think,people have gonnten used to normolize v mexico and have fun way to leave on that
-and you touch the band of this topic we spoken on monday
-but how going to a little more detail if you will are the ct is it drugs ,is it human trafficing,is it both,how do the c
-up rate there
-it conbination of everything.they control drug trafficing ,hunman trafficing,estoration,keepns
-and they grow to this nans criminal enterprice,and exmenly prefectable
-and so how they have this power to grow up , to buy the weapons
-most weapons see buy so sm over around 70-80 percent gone from the us
-and that allow them to control teritery in mexico become so dangerous.
-and that's requset of what explains what happening in dm last week.what happens every week
-of this's got different demation and tension because of the effects that full was the city was involved
-but unfortunately it happenes every week to mexico citizen.
+it's also true for the all the destination in mexico. and people realizes that it's overall it's still safe travel
+in mexico.
+there pockets of violence parts of territory that under control criminal organizations where you get caught in the
+crossfire like this 4 american did on friday.
+and consequence can be fatal.
+but for the most part i think,people have gotten used to normalize violence mexico and have fun way to leave on that
+Eg,and you touch upon of this topic when we spoke on monday.
+but how going to a little more detail if you will are the cartels is it drugs ,is it human trafficking,is it both,how do
+the cartels operate there.
+it's a combination of everything.they control drug trafficking ,human trafficking,extortion,kidnappings.
+and they grow to this immense criminal enterprises,and extremely profitable.
+and so how they have this power to corrupt , to buy the weapons.
+most weapons they buy some estimates say around 70% or 80% come from the us.
+and that allow them to control territory in mexico become so dangerous.
+and that's part of what explains what happening in dm last week.what happens every week.
+of course this has gotten different sort of dimension and attention because of the fact that 4 american citizen were
+involved.
+but unfortunately it happens every week to mexican citizen.
 and it's never ends the same way
-us l source believes the golf vt responsible for the tack on the american victoms
+us law enforcement source says investigators believes the CC one of the oldest crime groups in mexico is responsible for
+the attack on the american victims.
+
+what happenes if by the ministration deg cater as terise orginization
+in practical,turn into what happenes is that us turn force would be allowed to operate in mexico teritery to fight this
+what would be then turn the orignization.
+there's a lot of bad pred for direct doing as new tar inetervention in american.
+i don't think there's a morden precedence what's that look like in mexico.
+but i think before taking that steps long makers policy markers in us have to recognize 3 facts.
+first the us has the largest illegal drugs and assumption market in the world.
+that needs to be dressed public gs
+that 70% already gs x mexico come from the us that also needs to be dressed.
+the sogo wo and drugs have been policy fired.
+
+
+
+
+
+
+
 
         
 

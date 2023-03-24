@@ -72,5 +72,30 @@ var minCost = function (costs) {
     }
     return Math.min(...costs[len - 1])
 };
-const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
+// const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
+// console.log(res)
+
+// 剑指 Offer II 010 和为k的子数组
+// 给定一个整数数组和一个整数 k ，请找到该数组中和为 k 的连续子数组的个数。
+// 输入:nums = [1,1,1], k = 2 输出: 2 解释: 此题 [1,1] 与 [1,1] 为两种不同的情况
+var subarraySum = function (nums, k) {
+    const len = nums.length
+
+    // 以nums[i]结尾的和为k的子数字个数
+    const dp = Array(len).fill(0)
+    for (let i = 0; i < len; i++) {
+        if (nums[i] > k) continue
+        if (nums[i] === k) {
+            dp[i] = 1
+        }
+        let sum = 0
+        for (let j = 0; j < i; j++) {
+            if (sum === k) dp[i] += 1
+
+
+        }
+    }
+    return dp
+};
+const res = subarraySum([1, 2, 3], 3)
 console.log(res)
