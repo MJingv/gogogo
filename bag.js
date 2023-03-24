@@ -362,5 +362,3 @@ var findTargetSumWays4 = function (nums, target) {
 }
 // const res = findTargetSumWays4([1, 1, 1, 1, 1], 3)
 // console.log(res)
-
-

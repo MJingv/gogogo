@@ -75,3 +75,25 @@ var minCost = function (costs) {
 // const res = minCost([[17, 2, 17], [16, 16, 5], [14, 3, 19]])
 // console.log(res)
 
+
+// 返回 两栋 颜色 不同 房子之间的 最大 距离。
+// 2078 两栋颜色不同且距离最远的房子
+// 输入：colors = [1,1,1,6,1,1,1] 输出：3
+// 输入：colors = [1,8,3,8,3] 输出：4
+var maxDistance = function (colors) {
+    // 暴力法
+    const len = colors.length
+    if (len === 2 && colors[0] !== colors[1]) return 1
+    const n = Math.ceil(len / 2)
+    let max = 0
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < len; j++) {
+            if (colors[i] !== colors[j]) {
+                max = Math.max(max, Math.abs(i - j))
+            }
+        }
+    }
+    return max
+};
+const res = maxDistance([1, 8, 3, 8, 3])
+console.log(res)
