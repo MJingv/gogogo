@@ -25,31 +25,39 @@ var lengthOfLIS = function (nums) {
 // answer[i] % answer[j] == 0 或 answer[j] % answer[i] == 0
 // 输入：nums = [1,2,3] 输出：[1,2] 解释：[1,3] 也会被视为正确答案。
 var largestDivisibleSubset = function (nums) {
-    // a了少一半
+    // a了少一半 max对，list不对
     const len = nums.length
     if (len === 1) return nums
     const dp = Array(len).fill(1)
-    const list = Array(len).fill(0).map(i => [])
     let max = 1
-
+    list[0] = [nums[0]]
+    nums.sort((a, b) => a - b)
     for (let i = 0; i < len; i++) {
-        list[i].push(nums[i])
         for (let j = 0; j < i; j++) {
             if (nums[i] % nums[j] === 0) {
-                dp[i] = Math.max(dp[i - 1], dp[j] + 1)
+                list[i].push(nums[i])
+                dp[i] = Math.max(dp[j] + 1, dp[i - 1])
                 max = Math.max(dp[i], max)
-                if (dp[i - 1] > dp[j] + 2) {
+                if (dp[i - 1] > dp[j] + 1) {
                     list[i] = list[i - 1]
                 } else {
                     list[i] = [...list[j], nums[i]]
                 }
+            } else {
+                if (j === i - 1 && list[i].length === 0) {
+                    list[i] = list[i - 1]
+                }
             }
         }
     }
+    console.log(max, list)
     const res = list.find(item => item.length === max)
-    return list
+    return res
 };
-const res = largestDivisibleSubset([3, 4, 16, 8])
-console.log(res)
+// const res = largestDivisibleSubset([1, 2, 4, 8, 16])
+// console.log(res)
 
 // 剑指 Offer II 091. 粉刷房子
+var minCost = function (costs) {
+
+};
