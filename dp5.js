@@ -129,34 +129,64 @@ var wordBreak = function (s, wordDict) {
 // 221. 最大正方形
 // 在一个由 '0' 和 '1' 组成的二维矩阵内，找到只包含 '1' 的最大正方形，并返回其面积。
 var maximalSquare = function (matrix) {
+    // 不能从左上角开始，因为可能会变大，但是左上角不再变
     const [m, n] = [matrix.length, matrix[0].length]
-    matrix = matrix.map(i => i.map(j => Number(j)))
+    let max = 0
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
 
-    for (let i = 0; i < m - 1; i++) {
-        for (let j = 0; j < n; j++) {
-            if (matrix[i][j]) {
-                if (matrix[i + 1][j] && matrix[i][j + 1] && matrix[i + 1][j + 1]) {
-                    matrix[i][j] += 1
-                    // matrix[i + 1][j] = matrix[i][j]
-                    // matrix[i][j + 1] = matrix[i][j]
-                    // matrix[i + 1][j + 1] = matrix[i][j]
-                }
+    for (let i = 0; i < m; i++) {
+        dp[i][0] = Number(matrix[i][0])
+        if (matrix[i][0] === '1') max = 1
+    }
+    for (let j = 0; j < n; j++) {
+        dp[0][j] = Number(matrix[0][j])
+        if (matrix[0][j] === '1') max = 1
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (matrix[i][j] === '1') {
+                dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+                max = Math.max(max, dp[i][j])
             }
         }
     }
-    return matrix
+
+    return max * max
 
 };
-// 输入：matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
-const res = maximalSquare([
-    ["1", "0", "1", "0", "0"],
-    ["1", "0", "1", "1", "1"],
-    ["1", "1", "1", "1", "1"],
-    ["1", "0", "0", "1", "0"]])
-console.log(res)
+// const res = maximalSquare([
+//     ["1", "1", "1", "1", "0"],
+//     ["1", "1", "1", "1", "0"],
+//     ["1", "1", "1", "1", "1"],
+//     ["1", "1", "1", "1", "1"],
+//     ["0", "0", "1", "1", "1"]])
+// console.log(res)
 
 // 343. 整数拆分
+
+
 // 576. 出界的路径数
+// 给你一个大小为 m x n 的网格和一个球。球的起始坐标为 [startRow, startColumn] 。你可以将球移到在四个方向上相邻的单元格内（可以穿过网格边界到达网格之外）。你 最多 可以移动 maxMove 次球。
+// 给你五个整数 m、n、maxMove、startRow 以及 startColumn ，找出并返回可以将球移出边界的路径数量。因为答案可能非常大，返回对 109 + 7 取余 后的结果。
+// 输入：m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0 输出：6
+var findPaths = function (m, n, maxMove, startRow, startColumn) {
+    // dfs不行 超时
+    if (!maxMove) return 0
+    let res = 0
+    const helper = (left = maxMove, row = startRow, col = startColumn) => {
+        if (left === 0) return res
+        if (row >= m || col >= n || row < 0 || col < 0) return 1
+        let sum = 0
+        sum += helper(left - 1, row, col - 1) + helper(left - 1, row - 1, col) + helper(left - 1, row + 1, col) + helper(left - 1, row, col + 1)
+        return sum
+
+    }
+    return helper()
+};
+
+const res = findPaths(2, 2, 2, 0, 0)
+console.log(res)
+
 // 63. 不同路径 II
 // 91. 解码方法
 // 剑指 Offer II 097. 子序列的数目
