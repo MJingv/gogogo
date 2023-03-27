@@ -99,6 +99,24 @@ that needs to be dressed public gs
 that 70% already gs x mexico come from the us that also needs to be dressed.
 the sogo wo and drugs have been policy fired.
 
+---
+impositive highbrctive ennetantive distractalbe.there's all able that a associate with the attention defsive
+highbritivity for disorder.
+and u developmental disorder usually diaosting in childhood that ofen already persist into two d.
+people who is edhd have a high choice facing issues conserning family,relationship,education,implement,and more.
+prom to excidence
+many people with edhd are disaster prom,m things,droping items and overall can be the norm if you this condition
+it's common for edhd to struggle the concentration.it's common to have troble stick to one task anb being easily to
+distractive with can lead to unfortunitive result.
+in fact ,people with eahd report more excident and ennery accroding studying by j ,e and s . it's even high when looking
+at patient recid when they're unegnoze and untd.
+it's seems studying has shown incresing of thycology thruma in those adhd. as the result of this accident higher than
+general public.
+while some accident can harmless and funny and retrispect. in other cases there're huge and sometime life will return
+event.
+inclunation to subtinse abuse.
+    
+
 
 
 
