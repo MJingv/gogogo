@@ -120,13 +120,41 @@ var wordBreak = function (s, wordDict) {
     }
     return dp[n]
 };
-const res = wordBreak('applepenapple', ["apple", "pen"])
-console.log(res)
+// const res = wordBreak('applepenapple', ["apple", "pen"])
+// console.log(res)
 // 输入: s = "applepenapple", wordDict = ["apple", "pen"]
 // 输入: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"] 输出: false
 
 
 // 221. 最大正方形
+// 在一个由 '0' 和 '1' 组成的二维矩阵内，找到只包含 '1' 的最大正方形，并返回其面积。
+var maximalSquare = function (matrix) {
+    const [m, n] = [matrix.length, matrix[0].length]
+    matrix = matrix.map(i => i.map(j => Number(j)))
+
+    for (let i = 0; i < m - 1; i++) {
+        for (let j = 0; j < n; j++) {
+            if (matrix[i][j]) {
+                if (matrix[i + 1][j] && matrix[i][j + 1] && matrix[i + 1][j + 1]) {
+                    matrix[i][j] += 1
+                    // matrix[i + 1][j] = matrix[i][j]
+                    // matrix[i][j + 1] = matrix[i][j]
+                    // matrix[i + 1][j + 1] = matrix[i][j]
+                }
+            }
+        }
+    }
+    return matrix
+
+};
+// 输入：matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+const res = maximalSquare([
+    ["1", "0", "1", "0", "0"],
+    ["1", "0", "1", "1", "1"],
+    ["1", "1", "1", "1", "1"],
+    ["1", "0", "0", "1", "0"]])
+console.log(res)
+
 // 343. 整数拆分
 // 576. 出界的路径数
 // 63. 不同路径 II
