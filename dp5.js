@@ -170,16 +170,12 @@ var maximalSquare = function (matrix) {
 // 给你五个整数 m、n、maxMove、startRow 以及 startColumn ，找出并返回可以将球移出边界的路径数量。因为答案可能非常大，返回对 109 + 7 取余 后的结果。
 // 输入：m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0 输出：6
 var findPaths = function (m, n, maxMove, startRow, startColumn) {
-    // dfs不行 超时
+    // dfs不行 超时 没过
     if (!maxMove) return 0
-    let res = 0
     const helper = (left = maxMove, row = startRow, col = startColumn) => {
-        if (left === 0) return res
+        if (left === 0) return 0
         if (row >= m || col >= n || row < 0 || col < 0) return 1
-        let sum = 0
-        sum += helper(left - 1, row, col - 1) + helper(left - 1, row - 1, col) + helper(left - 1, row + 1, col) + helper(left - 1, row, col + 1)
-        return sum
-
+        return helper(left - 1, row, col - 1) + helper(left - 1, row - 1, col) + helper(left - 1, row + 1, col) + helper(left - 1, row, col + 1)
     }
     return helper()
 };
