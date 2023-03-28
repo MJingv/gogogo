@@ -170,17 +170,31 @@ var maximalSquare = function (matrix) {
 // 给你五个整数 m、n、maxMove、startRow 以及 startColumn ，找出并返回可以将球移出边界的路径数量。因为答案可能非常大，返回对 109 + 7 取余 后的结果。
 // 输入：m = 2, n = 2, maxMove = 2, startRow = 0, startColumn = 0 输出：6
 var findPaths = function (m, n, maxMove, startRow, startColumn) {
-    // dfs不行 超时 没过
+    // time out
     if (!maxMove) return 0
-    const helper = (left = maxMove, row = startRow, col = startColumn) => {
-        if (left === 0) return 0
+    const helper = (left, row, col) => {
         if (row >= m || col >= n || row < 0 || col < 0) return 1
-        return helper(left - 1, row, col - 1) + helper(left - 1, row - 1, col) + helper(left - 1, row + 1, col) + helper(left - 1, row, col + 1)
+        if (left === 0) return 0
+        return helper(left - 1, row + 1, col) + helper(left - 1, row - 1, col) + helper(left - 1, row, col + 1) + helper(left - 1, row, col - 1)
+    }
+    return helper(maxMove, startRow, startColumn)
+};
+const findPaths1 = function (m, n, maxMove, startRow, startColumn) {
+    if (!maxMove) return 0
+    const memo = Array(m).fill(0).map(i => Array(n).fill(0).map((j) => Array(maxMove + 1).fill(0)))
+    const helper = (left = maxMove, i = startRow, j = startRow) => {
+        if (i < 0 || j < 0 || i >= m || j >= n) return 1 //从这里累加
+        if (!left) return 0
+        if (memo[i][j][left]) return memo[i][j][left]
+        const res = helper(left - 1, i - 1, j) + helper(left - 1, i + 1, j) + helper(left - 1, i, j - 1) + helper(left - 1, i, j + 1)
+        memo[i][j][left] = res % 1000000007
+        return memo[i][j][left]
     }
     return helper()
-};
+}
 
-const res = findPaths(2, 2, 2, 0, 0)
+
+const res = findPaths1(2, 2, 2, 0, 0)
 console.log(res)
 
 // 63. 不同路径 II
