@@ -115,6 +115,27 @@ general public.
 while some accident can harmless and funny and retrispect. in other cases there're huge and sometime life will return
 event.
 inclunation to subtinse abuse.
+
+---
+this is a case for plenty of people with undiagnosed adhd there innate distractibility forgetfulness and poor
+organization skills can lead low job performance.
+according to children and adults with attention deficit hyperactivity disorder,otherwise known as child high school
+graduated with adhd are about 17% last and appeared.
+because of this there likely experience negative long term mental health impacts such as anxiety ,depression, lower life
+satisfaction and financial trauma.trauma following in intense to experience where you can not support yourself
+financially.
+and the society build around working in finance this adds the extreme amount stress of someone that differs.
+low self-esteem.
+having adhd can feel like no one understands you. it can be easier for people with the condition feel jealous over others because they seem like they have sth you don't
+a person with adhd tends to have self-esteem and diminishes over time.
+in the beginning,you may have just one of the normal life.soon realize you are in volunteer actions are the one creation complecation in your  relationship and goals.
+you may feel continuously upset.claiming everything is your fault. you may consider yourself hopeless person.
+resulting to reckless and harmful acts gop. fighting  with trauma with more possible causes of trauma.
+adhd can make functioning extremely difficult and increase you likely head of  experience some type of trauma even more so when you goes a noticied.
+fortunitely  it's possible turn save to  treat  and find strategy to adapt to it
+there're many people with adhd that they're incrediablely successful and they've learnt to utillze their uniqe to advantage.
+with some claiming that adhd is their superpower.seeking out the  results and strategy can help reduce the negative feature of this condition.and let you focus on the positive so you can grow better than ever.
+
     
 
 
