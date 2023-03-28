@@ -226,7 +226,21 @@ var minimumTotal = function (triangle) {
     }
     return Math.min(...dp[len - 1])
 };
-const res = minimumTotal([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
+var minimumTotal1 = function (triangle) {
+    // 看不懂
+    const len = triangle.length
+    const dp = Array(len).fill(Infinity)
+    dp[0] = triangle[0][0]
+    for (let i = 1; i < len; i++) {
+        dp[i] = dp[i - 1] + triangle[i][i]
+        for (let j = i - 1; j >= 1; j--) {
+            dp[j] = Math.min(dp[i], dp[j - 1] + triangle[i][j])
+        }
+    }
+    return dp[len - 1]
+}
+
+const res = minimumTotal1([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
 console.log(res)
 
 
