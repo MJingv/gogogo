@@ -182,7 +182,7 @@ var findPaths = function (m, n, maxMove, startRow, startColumn) {
 const findPaths1 = function (m, n, maxMove, startRow, startColumn) {
     if (!maxMove) return 0
     const memo = Array(m).fill(0).map(i => Array(n).fill(0).map((j) => Array(maxMove + 1).fill(0)))
-    const helper = (left = maxMove, i = startRow, j = startRow) => {
+    const helper = (left = maxMove, i = startRow, j = startColumn) => {
         if (i < 0 || j < 0 || i >= m || j >= n) return 1 //从这里累加
         if (!left) return 0
         if (memo[i][j][left]) return memo[i][j][left]
@@ -194,7 +194,7 @@ const findPaths1 = function (m, n, maxMove, startRow, startColumn) {
 }
 
 
-const res = findPaths1(2, 2, 2, 0, 0)
+const res = findPaths1(1, 3, 3, 0, 1)
 console.log(res)
 
 // 63. 不同路径 II
