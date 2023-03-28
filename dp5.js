@@ -240,8 +240,8 @@ var minimumTotal1 = function (triangle) {
     return dp[len - 1]
 }
 
-const res = minimumTotal1([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
-console.log(res)
+// const res = minimumTotal1([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
+// console.log(res)
 
 
 // 63. 不同路径 II
@@ -249,3 +249,26 @@ console.log(res)
 
 // 91. 解码方法
 // 剑指 Offer II 097. 子序列的数目
+
+
+// 输入：nums = [1,7,3,6,5,6] 输出：3 解释：
+var pivotIndex = function (nums) {
+    // 没通过
+    const len = nums.length
+    let res = -1
+    const sum = nums.reduce((i, p) => i + p)
+    if (sum === 0) return 0
+    const getSum = (list = []) => {
+        if (!list.length) return 0
+        return list.reduce((i, p) => i + p)
+    }
+    for (let i = 0; i < len; i++) {
+        const s1 = nums.slice(0, i - 1)
+        const s2 = nums.slice(i, len)
+        console.log(s1, getSum(s1), s2, getSum(s2))
+        if (getSum(s1) === getSum(s2)) return i - 1
+    }
+    return res
+};
+const res = pivotIndex([-1, -1, -1, -1, -1, 0])
+console.log(res)
