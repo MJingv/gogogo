@@ -192,11 +192,46 @@ const findPaths1 = function (m, n, maxMove, startRow, startColumn) {
     }
     return helper()
 }
+// const res = findPaths1(1, 3, 3, 0, 1)
+// console.log(res)
 
 
-const res = findPaths1(1, 3, 3, 0, 1)
+// 剑指 Offer II 100. 三角形中最小路径之和
+// 给定一个三角形 triangle ，找出自顶向下的最小路径和。
+// 每一步只能移动到下一行中相邻的结点上。相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。也就是说，如果正位于当前行的下标 i ，那么下一步可以移动到下一行的下标 i 或 i + 1 。
+// 输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
+// 输出：11
+// 解释：如下面简图所示：
+//    2
+//   3 4
+//  6 5 7
+// 4 1 8 3
+// 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。
+var minimumTotal = function (triangle) {
+    const len = triangle.length
+    const dp = Array(len).fill(Infinity).map(i => Array(len).fill(Infinity))
+
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < triangle[i].length; j++) {
+            if (i === 0) {
+                dp[0][0] = triangle[0][0]
+                continue
+            }
+            if (j === 0) {
+                dp[i][j] = dp[i - 1][j] + triangle[i][j]
+                continue
+            }
+            dp[i][j] = Math.min(dp[i][j], Math.min(dp[i - 1][j], dp[i - 1][j - 1]) + triangle[i][j])
+        }
+    }
+    return Math.min(...dp[len - 1])
+};
+const res = minimumTotal([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
 console.log(res)
 
+
 // 63. 不同路径 II
+
+
 // 91. 解码方法
 // 剑指 Offer II 097. 子序列的数目
