@@ -404,5 +404,21 @@ var detectCapitalUse = function (word) {
     return res
 
 };
-const res = detectCapitalUse("FlaG")
+// const res = detectCapitalUse("FlaG")
+// console.log(res)
+
+//557
+var reverseWords = function (s) {
+    const list = s.split(' ')
+    const len = list.length
+    let res = ''
+    for (let i = 0; i < len; i++) {
+        const r = list[i].split('').reverse().join('')
+        res += r + (i === len - 1 ? '' : ' ')
+
+    }
+    return res
+
+};
+const res = reverseWords("Let's take LeetCode contest")
 console.log(res)
