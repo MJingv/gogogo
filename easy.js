@@ -144,5 +144,29 @@ var romanToInt = function (s) {
     return res
 };
 // 输入: s = "MCMXCIV" 输出: 1994 解释: M = 1000, CM = 900, XC = 90, IV = 4.
-const res = romanToInt('MCMXCIV')
+// const res = romanToInt('MCMXCIV')
+// console.log(res)
+
+// 58
+var lengthOfLastWord = function (s) {
+    const list = s.split(' ')
+    for (let i = list.length - 1; i >= 0; i--) {
+        if (list[i]) {
+            return list[i].length
+        }
+    }
+
+};
+// const res = lengthOfLastWord('Hello World')
+// console.log(res)
+
+// 67
+var addBinary = function (a, b) {
+    const a1 = BigInt('0b' + a)
+    const b1 = BigInt('0b' + b)
+    const sum = a1 + b1
+    return sum.toString(2)
+};
+const res = addBinary("1010", "1011")
 console.log(res)
+// 输入：a = "1010", b = "1011" 输出："10101"
