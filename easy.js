@@ -335,5 +335,31 @@ var countSegments = function (s) {
     }
     return res
 };
-const res = countSegments('Of all the gin joints in all the towns in all the world,   ')
+// const res = countSegments('Of all the gin joints in all the towns in all the world,   ')
+// console.log(res)
+
+//409
+// 给定一个包含大写字母和小写字母的字符串 s ，返回 通过这些字母构造成的 最长的回文串 。
+var longestPalindrome = function (s) {
+    if (!s) return 0
+    const len = s.length
+    if (len === 1) return 1
+    const map = new Map()
+    let res = 0
+    for (let i = 0; i < len; i++) {
+        map.set(s[i], (map.get(s[i]) || 0) + 1)
+    }
+    let k = 0
+    map.forEach((val, key) => {
+        if (val % 2) {
+            res += val === 1 ? 0 : val - 1
+            k++
+        } else {
+            res += val
+        }
+    })
+
+    return k ? res + 1 : res
+};
+const res = longestPalindrome('abccccdd')
 console.log(res)
