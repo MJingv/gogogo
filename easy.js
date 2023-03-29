@@ -303,5 +303,25 @@ var firstUniqChar = function (s) {
     return res
 };
 // 输入: s = "loveleetcode" 输出: 2
-const res = firstUniqChar('loveleetcode')
+// const res = firstUniqChar('loveleetcode')
+// console.log(res)
+
+
+var thirdMax = function (nums) {
+    nums.sort((a, b) => b - a)
+    const len = nums.length
+    const set = new Set([...nums])
+    if (len < 3 || set.size < 3) return nums[0]
+    let list = [nums[0]]
+    for (let i = 1; i < len; i++) {
+        if (nums[i] !== list[list.length - 1]) {
+            list.push(nums[i])
+        }
+        if (list.length === 3) return list[list.length - 1]
+
+    }
+    return -1
+
+};
+const res = thirdMax([1, 1, 2])
 console.log(res)
