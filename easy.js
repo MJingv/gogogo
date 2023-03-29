@@ -167,6 +167,13 @@ var addBinary = function (a, b) {
     const sum = a1 + b1
     return sum.toString(2)
 };
-const res = addBinary("1010", "1011")
-console.log(res)
+// const res = addBinary("1010", "1011")
+// console.log(res)
 // 输入：a = "1010", b = "1011" 输出："10101"
+
+// 191
+var hammingWeight = function (n) {
+    return n.toString(2).replace(/0+/g, '').length;
+};
+const res = hammingWeight('00000000000000000000000000001011')
+console.log(res)
