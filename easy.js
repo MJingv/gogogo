@@ -440,6 +440,6 @@ var findMaxConsecutiveOnes = function (nums) {
     }
     return res
 };
-const res = findMaxConsecutiveOnes([1, 1, 0])
-console.log(res)
+// const res = findMaxConsecutiveOnes([1, 1, 0])
+// console.log(res)
 // 输入：nums = [1,1,0,1,1,1] 输出：3
