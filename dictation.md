@@ -126,19 +126,74 @@ satisfaction and financial trauma.trauma following in intense to experience wher
 financially.
 and the society build around working in finance this adds the extreme amount stress of someone that differs.
 low self-esteem.
-having adhd can feel like no one understands you. it can be easier for people with the condition feel jealous over others because they seem like they have sth you don't
+having adhd can feel like no one understands you. it can be easier for people with the condition feel jealous over
+others because they seem like they have sth you don't
 a person with adhd tends to have self-esteem and diminishes over time.
-in the beginning,you may have just one of the normal life.soon realize you are in volunteer actions are the one creation complecation in your  relationship and goals.
+in the beginning,you may have just one of the normal life.soon realize you are in volunteer actions are the one creation
+complecation in your relationship and goals.
 you may feel continuously upset.claiming everything is your fault. you may consider yourself hopeless person.
-resulting to reckless and harmful acts gop. fighting  with trauma with more possible causes of trauma.
-adhd can make functioning extremely difficult and increase you likely head of  experience some type of trauma even more so when you goes a noticied.
-fortunitely  it's possible turn save to  treat  and find strategy to adapt to it
-there're many people with adhd that they're incrediablely successful and they've learnt to utillze their uniqe to advantage.
-with some claiming that adhd is their superpower.seeking out the  results and strategy can help reduce the negative feature of this condition.and let you focus on the positive so you can grow better than ever.
+resulting to reckless and harmful acts gop. fighting with trauma with more possible causes of trauma.
+adhd can make functioning extremely difficult and increase you likely head of experience some type of trauma even more
+so when you goes a noticied.
+fortunitely it's possible turn save to treat and find strategy to adapt to it
+there're many people with adhd that they're incrediablely successful and they've learnt to utillze their uniqe to
+advantage.
+with some claiming that adhd is their superpower.seeking out the results and strategy can help reduce the negative
+feature of this condition.and let you focus on the positive so you can grow better than ever.
 
-    
+---
 
-
+work is not the same as three years for many americans.
+many companies have remote and high bright options.
+so what motivate the people to go back to the office after the flexibility and comfort working at home.
+jp just say she is a global director of workplace research against which is global designer an architecture from.
+j welcome,so what's the ideal workplace look like?
+you know,ideal workplaces when have choice simple w in offers employees they pick what spaces they work that in.
+so it's base like coming together working at teams not fortulely in a person.
+but it's also it's ability to be work alone. to be order to focus without distraction and eruption or noise.
+so lots of flexibility relish.
+so what is bringing people back to office.
+what's they seeing as the prime motivation.
+in our late survey,we actually fount across 9 countries 40,000 x workers.
+we found that to focus on my work is now no.1.
+that i'm not surprised
+i right work at home but children ps all of the things.
+it's excelectly
+you know focus on your work also means individual as with as team and so being able to get work down in the effect way.
+but also they want great experience.
+//let's talk about that.
+so this's all comcpt are making the workplace a destination. you think about destination holiday.
+so what's the elements of the destination workplaces.
+you think about it's not a application it's completing that name.
+so do you think creating the experience that people can get remotely,you know it feel tireful as a individual feeling
+longing,feeling like a part of sth special.
+and especially from well being same p.  it's creating space that feel house in nature .they feel like it's a fun place to be.
+got some medite right there.
+high and fine forcility ,excellent food,flexicible living room spaces.to all spaces to flex to recharge to refill.
+and you can get that at home.and s get it. working with colleges in the nerborhood.
+you have an eting workplace.
+right
+a destination workplace.
+so what do you think this high bright modal looks like in the furture.
+we can center thing.as  high we've been noable
+in fact, we've always working in that office.we've been measure since t 17
+and we thought that the most innovate were in the office about 67% of the week.
+now as  we measure it.people are back about have their time.
+j,what do you ideal need in the x measure your ptibity.you know what i told this.no.
+about 20 a week.
+the most enervative right bakc to the p
+let me just ask to you, what's the 20 of the week in the op of w in the highbride.
+you can't  think about 4 days, you should need to think about it's ideal parical day ,you're not in office ,it's also part of  flexibility.
+because  we've spent time were claming ,were traveling.we're doing all the other things, city are open to back up.
+and so have been flexibility to do that come and go really work for you for that , and take advantage m l , as a  exction of the work.
+what's your surprised she's most about the thinking about the  evolution of the workplace.
+i think what's surprised me the most is the fact the people say they  ideally  need  the workplace.
+communicate,isn't it?
+in a lot of ways to secound communicate.
+it is .and i think there was lonely as a core for people working from home.
+and so sitting with you.one-one visions as soon  calls.
+so much better.it worth.
+yes i agree.jp 3q 
 
 
 
