@@ -143,55 +143,60 @@ feature of this condition.and let you focus on the positive so you can grow bett
 
 ---
 
-work is not the same as three years for many americans.
-many companies have remote and high bright options.
-so what motivate the people to go back to the office after the flexibility and comfort working at home.
-jp just say she is a global director of workplace research against which is global designer an architecture from.
+going to work is not the same as it was three years for many americans.
+many companies have remote and hybrid options.
+so what motivate the people to go back to the office after the flexibility and comfort of working at home.
+jp joins us.
+she is a global director of workplace research at G which is global design and an architecture firm.
 j welcome,so what's the ideal workplace look like?
-you know,ideal workplaces when have choice simple w in offers employees they pick what spaces they work that in.
-so it's base like coming together working at teams not fortulely in a person.
-but it's also it's ability to be work alone. to be order to focus without distraction and eruption or noise.
-so lots of flexibility relish.
+you know,ideal workplaces is one that have choice and offers employees to pick what spaces actually they work best in.
+so it's base like coming together working at teams,both virtually or in a person.
+but it's also it's ability to be work alone. to be order to focus without distraction and interruption or noise.
+so lots of flexibility really.
+exactly.
 so what is bringing people back to office.
-what's they seeing as the prime motivation.
-in our late survey,we actually fount across 9 countries 40,000 x workers.
+what's they saying as the prime motivation.
+in our latest survey,we actually fount across 9 countries 14,000 office workers.
 we found that to focus on my work is now no.1.
-that i'm not surprised
-i right work at home but children ps all of the things.
-it's excelectly
-you know focus on your work also means individual as with as team and so being able to get work down in the effect way.
-but also they want great experience.
-//let's talk about that.
-so this's all comcpt are making the workplace a destination. you think about destination holiday.
+why is that i'm not surprised
+i right work at home but children pets all of those things.
+it's exactly.
+you know focus on your work also means individual as with as team and so being able to get work down in the effective
+way. but also they want a great experience.
+let's talk about that.
+so this whole concept of making the workplace a destination. you think about destination holidays.
 so what's the elements of the destination workplaces.
-you think about it's not a application it's completing that name.
-so do you think creating the experience that people can get remotely,you know it feel tireful as a individual feeling
-longing,feeling like a part of sth special.
-and especially from well being same p.  it's creating space that feel house in nature .they feel like it's a fun place to be.
-got some medite right there.
-high and fine forcility ,excellent food,flexicible living room spaces.to all spaces to flex to recharge to refill.
-and you can get that at home.and s get it. working with colleges in the nerborhood.
-you have an eting workplace.
-right
+you think about it's not a obligation. it's compelling destiny.
+so do you think creat the experience that people can get remotely,you know it feel care for as a individual feeling
+belonging,feeling like a part of sth special.
+and especially from well-being standpoint. it's creating space that feel hospitality in nature .they feel like it's a
+fun place to be.
+got some amenities right there.
+high-end fine fitness ,excellent food,flexibility living room spaces.to all spaces to reflect to recharge to refuel.
+and you can get that at home.especially and get it working with colleges in the neighborhood.
+you have an enticing workplace.
+right.
 a destination workplace.
-so what do you think this high bright modal looks like in the furture.
-we can center thing.as  high we've been noable
-in fact, we've always working in that office.we've been measure since t 17
+so what do you think this hybrid model looks like in the future.
+it's interesting thing.as hybrid new we've been mobile
+in fact, we've always working in that office.we've been measureing since 2016
 and we thought that the most innovate were in the office about 67% of the week.
-now as  we measure it.people are back about have their time.
-j,what do you ideal need in the x measure your ptibity.you know what i told this.no.
-about 20 a week.
-the most enervative right bakc to the p
-let me just ask to you, what's the 20 of the week in the op of w in the highbride.
-you can't  think about 4 days, you should need to think about it's ideal parical day ,you're not in office ,it's also part of  flexibility.
-because  we've spent time were claming ,were traveling.we're doing all the other things, city are open to back up.
-and so have been flexibility to do that come and go really work for you for that , and take advantage m l , as a  exction of the work.
-what's your surprised she's most about the thinking about the  evolution of the workplace.
-i think what's surprised me the most is the fact the people say they  ideally  need  the workplace.
-communicate,isn't it?
-in a lot of ways to secound communicate.
-it is .and i think there was lonely as a core for people working from home.
-and so sitting with you.one-one visions as soon  calls.
+now as we measure it.people are back about half their time.
+j,what do you ideal need in maximize your productivity.you know what i told this.no.
+about 2/3 a week.
+the most innovative right back to the pre-pandemic.
+let me just ask to you, what's the sweet spots 2/3 of the week in the office of w in the hybrid.
+you can't think about full days, you should need to think about it's ideal partial day ,you're in and out the office
+,it's also part of flexibility.
+because we've spending time with clients ,were traveling.we're doing all the other things, city are open to back up.
+and so have been flexibility to do that come and go really work where you were best and take advantage of the amenities
+in the neighborhood as an extension of the work.
+what's sort of surprised you most about the thinking about the evolution of the workplace.
+i think what's surprised me the most is the fact the people say they ideally need the workplace.
+community,isn't it?
+in a lot of ways to second community.
+it is .and i think there was loneliness and isolation that occurred with a lot of people working from home.
+and so sitting with you.one-one versus as zoom call
 so much better.it worth.
 yes i agree.jp 3q 
 
