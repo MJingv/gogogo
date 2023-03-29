@@ -264,5 +264,21 @@ var containsNearbyDuplicate = function (nums, k) {
     return res
 
 };
-const res = containsNearbyDuplicate([99, 99], 2)
+// const res = containsNearbyDuplicate([99, 99], 2)
+// console.log(res)
+
+//326
+var isPowerOfThree = function (n) {
+    if (!n) return false
+    if (n === 1) return true
+    if (n % 3) return false
+
+    while (n) {
+        n = n / 3
+        if (n === 1) return true
+    }
+    return false
+
+};
+const res = isPowerOfThree(9)
 console.log(res)
