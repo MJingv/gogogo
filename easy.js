@@ -380,5 +380,29 @@ var repeatedSubstringPattern = function (s) {
     })
     return res
 };
-const res = repeatedSubstringPattern('abcabcabcabc')
+// const res = repeatedSubstringPattern('abcabcabcabc')
+// console.log(res)
+
+// 520
+var detectCapitalUse = function (word) {
+    const len = word.length
+    let a = 0
+    let b = 0
+    let firstBig = false
+    // 大写字母A-Z对应的ASCII码值是65-90
+    // 小写字母a-z对应的ASCII码值是97-122
+    for (let i = 0; i < len; i++) {
+        const v = word[i]
+        const n = v.charCodeAt()
+        if (n >= 65 && n <= 90) {
+            if (i === 0) firstBig = true
+            a++
+        }
+        if (n >= 97 && n <= 122) b++
+    }
+    const res = a === len || b === len || a === 1 && firstBig
+    return res
+
+};
+const res = detectCapitalUse("FlaG")
 console.log(res)
