@@ -253,22 +253,10 @@ var minimumTotal1 = function (triangle) {
 
 // 输入：nums = [1,7,3,6,5,6] 输出：3 解释：
 var pivotIndex = function (nums) {
+
+
     // 没通过
-    const len = nums.length
-    let res = -1
-    const sum = nums.reduce((i, p) => i + p)
-    if (sum === 0) return 0
-    const getSum = (list = []) => {
-        if (!list.length) return 0
-        return list.reduce((i, p) => i + p)
-    }
-    for (let i = 0; i < len; i++) {
-        const s1 = nums.slice(0, i - 1)
-        const s2 = nums.slice(i, len)
-        console.log(s1, getSum(s1), s2, getSum(s2))
-        if (getSum(s1) === getSum(s2)) return i - 1
-    }
-    return res
+
 };
 const res = pivotIndex([-1, -1, -1, -1, -1, 0])
 console.log(res)

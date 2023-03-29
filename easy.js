@@ -106,8 +106,43 @@ var luckyNumbers = function (matrix) {
 // console.log(res)
 
 var squareIsWhite = function (coordinates) {
-    const l=coordinates.split('')
+    const l = coordinates.split('')
 
 };
-const res = squareIsWhite('h3')
+// const res = squareIsWhite('h3')
+// console.log(res)
+
+// 13 罗马数字转整数
+// I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
+// X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。
+// C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
+// I 1 V 5 X 10 L 50 C 100 D 500 M 1000
+var romanToInt = function (s) {
+    if (!s) return 0
+    const map = new Map()
+    map.set('I', 1)
+    map.set('V', 5)
+    map.set('X', 10)
+    map.set('L', 50)
+    map.set('C', 100)
+    map.set('D', 500)
+    map.set('M', 1000)
+    map.set('a', 4)
+    map.set('b', 9)
+    map.set('c', 40)
+    map.set('d', 90)
+    map.set('e', 40)
+    map.set('f', 900)
+
+    s = s.replace('IV', "a").replace('IX', 'b').replace('XL', 'c').replace('XC', 'd').replace('CD', 'e').replace('CM', 'f')
+
+    s = s.split('')
+    let res = 0
+    s.map(i => {
+        res += map.get(i)
+    })
+    return res
+};
+// 输入: s = "MCMXCIV" 输出: 1994 解释: M = 1000, CM = 900, XC = 90, IV = 4.
+const res = romanToInt('MCMXCIV')
 console.log(res)
