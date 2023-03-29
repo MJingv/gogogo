@@ -323,5 +323,17 @@ var thirdMax = function (nums) {
     return -1
 
 };
-const res = thirdMax([1, 1, 2])
+// const res = thirdMax([1, 1, 2])
+// console.log(res)
+
+var countSegments = function (s) {
+    if (Number(s) === 0) return 0
+    s = s.split(' ')
+    let res = 0
+    for (let i = 0; i < s.length; i++) {
+        if (Number(s[i]) !== 0) res++
+    }
+    return res
+};
+const res = countSegments('Of all the gin joints in all the towns in all the world,   ')
 console.log(res)
