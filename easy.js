@@ -280,5 +280,28 @@ var isPowerOfThree = function (n) {
     return false
 
 };
-const res = isPowerOfThree(9)
+// const res = isPowerOfThree(9)
+// console.log(res)
+
+// 387
+var firstUniqChar = function (s) {
+    const len = s.length
+    s = s.split('')
+    const map = new Map()
+    let res = 0
+    for (let i = 0; i < len; i++) {
+        if (!map.has(s[i])) {
+            map.set(s[i], 1)
+        } else {
+            map.set(s[i], map.get(s[i]) + 1)
+        }
+    }
+    for (let i = 0; i < len; i++) {
+        if (map.get(s[i]) === 1) return res = i
+    }
+
+    return res
+};
+// 输入: s = "loveleetcode" 输出: 2
+const res = firstUniqChar('loveleetcode')
 console.log(res)
