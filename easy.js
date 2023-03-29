@@ -240,5 +240,29 @@ var summaryRanges = function (nums) {
 };
 // 输入：nums = [0,1,2,4,5,7] 输出：["0->2","4->5","7"]
 // 输入：nums = [0,2,3,4,6,8,9] 输出：["0","2->4","6","8->9"]
-const res = summaryRanges([-1])
+// const res = summaryRanges([-1])
+// console.log(res)
+
+
+// 219
+// 给你一个整数数组 nums 和一个整数 k ，判断数组中是否存在两个 不同的索引 i 和 j ，满足 nums[i] == nums[j] 且 abs(i - j) <= k 。如果存在，返回 true ；否则，返回 false 。
+var containsNearbyDuplicate = function (nums, k) {
+    const len = nums.length
+    if (!k) return false
+    const set = new Set([...nums])
+    const size = set.size
+    if (size === len) return false
+    let res = false
+    for (let i = 0; i < len; i++) {
+        for (let j = i + 1; j < len; j++) {
+            if (nums[i] === nums[j]) {
+                const diff = Math.abs(j - i)
+                if (diff <= k) return res = true
+            }
+        }
+    }
+    return res
+
+};
+const res = containsNearbyDuplicate([99, 99], 2)
 console.log(res)
