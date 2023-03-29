@@ -420,5 +420,26 @@ var reverseWords = function (s) {
     return res
 
 };
-const res = reverseWords("Let's take LeetCode contest")
+// const res = reverseWords("Let's take LeetCode contest")
+// console.log(res)
+
+// 485
+var findMaxConsecutiveOnes = function (nums) {
+    // 没过
+    const len = nums.length
+    if (len === 1) return nums[0] === 1 ? true : false
+    if (!nums.includes(1)) return false
+    let [i, j] = [0, 0]
+    let res = 0
+    while (j < len) {
+        while (nums[i] !== 1) i++
+        j = i + 1
+        while (nums[j] === 1) j++
+        res = Math.max(res, j - i)
+        i++
+    }
+    return res
+};
+const res = findMaxConsecutiveOnes([1, 1, 0])
 console.log(res)
+// 输入：nums = [1,1,0,1,1,1] 输出：3
