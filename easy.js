@@ -196,5 +196,49 @@ var isHappy = function (n) {
     }
     return true
 };
-const res = isHappy(2)
+// const res = isHappy(2)
+// console.log(res)
+
+// 342
+var isPowerOfFour = function (n) {
+    if (n === 1) return true
+    if (n % 4) return false
+
+    while (n) {
+        n = n / 4
+        if (n === 1) return true
+    }
+    return false
+};
+// const res = isPowerOfFour(16)
+// console.log(res)
+
+var summaryRanges = function (nums) {
+    const len = nums.length
+    if (!len) return []
+    if (len === 1) return [nums[0] + '']
+    const res = []
+    let path = [nums[0]]
+    for (let i = 1; i <= len; i++) {
+        if (nums[i - 1] + 1 === nums[i]) {
+            path.push(nums[i])
+        } else {
+            res.push(path)
+            path = [nums[i]]
+        }
+    }
+    const list = []
+    res.map(i => {
+        if (i.length === 1) {
+            list.push(String(i[0]))
+        } else {
+            list.push(`${i[0]}->${i[i.length - 1]}`)
+        }
+
+    })
+    return list
+};
+// 输入：nums = [0,1,2,4,5,7] 输出：["0->2","4->5","7"]
+// 输入：nums = [0,2,3,4,6,8,9] 输出：["0","2->4","6","8->9"]
+const res = summaryRanges([-1])
 console.log(res)
