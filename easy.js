@@ -361,5 +361,24 @@ var longestPalindrome = function (s) {
 
     return k ? res + 1 : res
 };
-const res = longestPalindrome('abccccdd')
+// const res = longestPalindrome('abccccdd')
+// console.log(res)
+
+// 459
+// 输入: s = "abcabcabcabc" 输出: true
+var repeatedSubstringPattern = function (s) {
+    // 没过 不理解
+    const len = s.length
+    if (len === 1) return true
+    const map = new Map()
+    let res = true
+    for (let i = 0; i < len; i++) {
+        map.set(s[i], (map.get(s[i]) || 0) + 1)
+    }
+    map.forEach((val, key) => {
+        if (val % 2) res = false
+    })
+    return res
+};
+const res = repeatedSubstringPattern('abcabcabcabc')
 console.log(res)
