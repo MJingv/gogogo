@@ -243,11 +243,33 @@ var minimumTotal1 = function (triangle) {
 // const res = minimumTotal1([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
 // console.log(res)
 
-
 // 63. 不同路径 II
 
 
 // 91. 解码方法
+// 给你一个只含数字的 非空 字符串 s ，请计算并返回 解码 方法的 总数 。
+var numDecodings = function (s) {
+    // 又不能全a 好复杂...
+    const len = s.length
+    if (len === 0) return 0
+    const isValid = (str = '') => {
+        if (!str) return false
+        if (str[0] === '0') return false
+        const n = Number(str)
+        if (n >= 1 && n <= 26) return true
+    }
+    if (len === 1) return isValid(s[0]) ? 1 : 0
+    const dp = Array(len).fill(0)
+    dp[0] = isValid(s[0]) ? 1 : 0
+    dp[1] = dp[0] + (isValid(`${s[0]}${s[1]}`) ? 1 : 0)
+    for (let i = 2; i < len; i++) {
+        dp[i] = dp[i - 1] + (isValid(`${s[i - 1]}${s[i]}`) ? 1 : 0)
+    }
+    return dp[len - 1]
+};
+const res = numDecodings('10')
+console.log(res)
+
 // 剑指 Offer II 097. 子序列的数目
 
 
@@ -344,5 +366,5 @@ var reverseBits = function (num) {
     }
     return max
 };
-const res = reverseBits(-1)
-console.log(res)
+// const res = reverseBits(-1)
+// console.log(res)
