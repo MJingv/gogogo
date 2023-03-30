@@ -522,5 +522,19 @@ var isIsomorphic = function (s, t) {
     return true
 
 };
-const res = isIsomorphic('egg', 'add')
+// const res = isIsomorphic('egg', 'add')
+// console.log(res)
+
+// 832
+// 输入：image = [[1,1,0],[1,0,1],[0,0,0]] 输出：[[1,0,0],[0,1,0],[1,1,1]]
+var flipAndInvertImage = function (image) {
+    image = image.map(i => i.reverse())
+    image = image.map(i => i.map(j => j === 0 ? 1 : 0))
+    return image
+};
+const res = flipAndInvertImage([
+    [1, 1, 0],
+    [1, 0, 1],
+    [0, 0, 0]]
+)
 console.log(res)
