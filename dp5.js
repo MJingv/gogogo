@@ -244,7 +244,35 @@ var minimumTotal1 = function (triangle) {
 // console.log(res)
 
 // 63. 不同路径 II
+// 只能向下或者向右移动一步
+// 现在考虑网格中有障碍物。那么从左上角到右下角将会有多少条不同的路径？
+var uniquePathsWithObstacles = function (obstacleGrid) {
+    const [m, n] = [obstacleGrid.length, obstacleGrid[0].length]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(0))
+    dp[0][0] = obstacleGrid[0][0] === 1 ? 0 : 1
+    for (let i = 0; i < m; i++) {
+        dp[i][0] = obstacleGrid[i][0] === 1 ? 0 : 1
+        if (obstacleGrid[i][0] === 1) break
+    }
+    for (let j = 0; j < n; j++) {
+        dp[0][j] = obstacleGrid[0][j] === 1 ? 0 : 1
+        if (obstacleGrid[0][j] === 1) break
+    }
 
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (obstacleGrid[i][j] === 1) {
+                dp[i][j] = 0
+            } else {
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+
+            }
+        }
+    }
+    return dp[m-1][n-1]
+};
+const res = uniquePathsWithObstacles([[0,1],[0,0]])//2
+console.log(res)
 
 // 91. 解码方法
 // 给你一个只含数字的 非空 字符串 s ，请计算并返回 解码 方法的 总数 。
@@ -267,8 +295,8 @@ var numDecodings = function (s) {
     }
     return dp[len - 1]
 };
-const res = numDecodings('10')
-console.log(res)
+// const res = numDecodings('10')
+// console.log(res)
 
 // 剑指 Offer II 097. 子序列的数目
 
