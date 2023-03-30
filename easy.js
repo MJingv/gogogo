@@ -501,5 +501,26 @@ var reverseVowels = function (s) {
     return s.join('')
 
 };
-const res = reverseVowels('leetcode')
+// const res = reverseVowels('leetcode')
+// console.log(res)
+
+// 205
+// 输入：s = "egg", t = "add" 输出：true
+var isIsomorphic = function (s, t) {
+    const sl = s.length
+    const tl = t.length
+    if (sl !== tl) return false
+    const map1 = new Map()
+    const map2 = new Map()
+    for (let i = 0; i < sl; i++) {
+        if (map1.has(s[i]) || map2.has(t[i])) {
+            if (map1.get(s[i]) !== map2.get(t[i])) return false
+        }
+        map1.set(s[i], i)
+        map2.set(t[i], i)
+    }
+    return true
+
+};
+const res = isIsomorphic('egg', 'add')
 console.log(res)
