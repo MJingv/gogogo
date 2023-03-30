@@ -325,7 +325,16 @@ var massage = function (nums) {
 
 // 05.03
 var reverseBits = function (num) {
-    // 没看懂
+    let r = num
+    if (num < 0) {
+        num = (parseInt(num) >>> 0).toString(2)
+    } else {
+        num = num.toString(2)
+    }
+    if (!String(num).includes('0')) {
+        if (r > 0) return num.length + 1
+        return num.length
+    }
     const list = String(num).split('0')
     const len = list.length
     if (!len) return 0
@@ -335,5 +344,5 @@ var reverseBits = function (num) {
     }
     return max
 };
-const res = reverseBits(11011101111)
+const res = reverseBits(-1)
 console.log(res)
