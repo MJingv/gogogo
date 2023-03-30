@@ -269,37 +269,12 @@ var uniquePathsWithObstacles = function (obstacleGrid) {
             }
         }
     }
-    return dp[m-1][n-1]
+    return dp[m - 1][n - 1]
 };
-const res = uniquePathsWithObstacles([[0,1],[0,0]])//2
-console.log(res)
-
-// 91. 解码方法
-// 给你一个只含数字的 非空 字符串 s ，请计算并返回 解码 方法的 总数 。
-var numDecodings = function (s) {
-    // 又不能全a 好复杂...
-    const len = s.length
-    if (len === 0) return 0
-    const isValid = (str = '') => {
-        if (!str) return false
-        if (str[0] === '0') return false
-        const n = Number(str)
-        if (n >= 1 && n <= 26) return true
-    }
-    if (len === 1) return isValid(s[0]) ? 1 : 0
-    const dp = Array(len).fill(0)
-    dp[0] = isValid(s[0]) ? 1 : 0
-    dp[1] = dp[0] + (isValid(`${s[0]}${s[1]}`) ? 1 : 0)
-    for (let i = 2; i < len; i++) {
-        dp[i] = dp[i - 1] + (isValid(`${s[i - 1]}${s[i]}`) ? 1 : 0)
-    }
-    return dp[len - 1]
-};
-// const res = numDecodings('10')
+// const res = uniquePathsWithObstacles([[0,1],[0,0]])//2
 // console.log(res)
 
-// 剑指 Offer II 097. 子序列的数目
-
+// 剑指 Offer II 097. 子序列的数目 hard
 
 // 输入：nums = [1,7,3,6,5,6] 输出：3 解释：
 var pivotIndex = function (nums) {
@@ -396,3 +371,28 @@ var reverseBits = function (num) {
 };
 // const res = reverseBits(-1)
 // console.log(res)
+
+// 91. 解码方法
+// 给你一个只含数字的 非空 字符串 s ，请计算并返回 解码 方法的 总数 。
+var numDecodings = function (s) {
+    // 还是要想明白为什么 dp[i]=dp[i-1]+dp[i-2]
+    if (!s) return 0
+    s = ' ' + s // 为什么要加一个空，可能dp[1]的时候不好算
+    const len = s.length
+    if (!len) return 0
+    const dp = Array(len).fill(0)
+    dp[0] = 1
+    for (let i = 1; i < len; i++) {
+        if (Number(s[i]) >= 1) dp[i] += dp[i - 1]
+        if (i > 1) {
+            const tmp = `${s[i - 1]}${s[i]}`
+            const n = Number(tmp)
+            if (n >= 10 && n <= 26) {
+                dp[i] += dp[i - 2]
+            }
+        }
+    }
+    return dp[len-1]
+};
+const res = numDecodings('2101')
+console.log(res)
