@@ -253,10 +253,27 @@ var minimumTotal1 = function (triangle) {
 
 // 输入：nums = [1,7,3,6,5,6] 输出：3 解释：
 var pivotIndex = function (nums) {
-
-
     // 没通过
 
 };
-const res = pivotIndex([-1, -1, -1, -1, -1, 0])
+// const res = pivotIndex([-1, -1, -1, -1, -1, 0])
+// console.log(res)
+
+//119 杨辉三角
+// 给定一个非负索引 rowIndex，返回「杨辉三角」的第 rowIndex 行。在「杨辉三角」中，每个数是它左上方和右上方的数的和。
+// 输入: rowIndex = 3 输出: [1,3,3,1]
+var getRow = function (rowIndex) {
+    if (rowIndex === 0) return [1]
+    const dp = Array(rowIndex + 1).fill(1).map((i, index) => Array(index + 1).fill(1))
+    dp[0] = [1]
+    dp[1] = [1, 1]
+    for (let i = 2; i <= rowIndex; i++) {
+        for (let j = 1; j < dp[i].length - 1; j++) {
+            dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j]
+        }
+    }
+    return dp[rowIndex]
+
+};
+const res = getRow(3)
 console.log(res)
