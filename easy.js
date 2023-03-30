@@ -532,9 +532,31 @@ var flipAndInvertImage = function (image) {
     image = image.map(i => i.map(j => j === 0 ? 1 : 0))
     return image
 };
-const res = flipAndInvertImage([
-    [1, 1, 0],
-    [1, 0, 1],
-    [0, 0, 0]]
-)
+// const res = flipAndInvertImage([
+//     [1, 1, 0],
+//     [1, 0, 1],
+//     [0, 0, 0]]
+// )
+// console.log(res)
+
+// 917
+// 输入：s = "a-bC-dEf-ghIj"
+var reverseOnlyLetters = function (s) {
+    const len = s.length
+    s = s.split('')
+    let [i, j] = [0, len - 1]
+    const swap = (list, a, b) => [list[a], list[b]] = [list[b], list[a]]
+    while (i < j) {
+        while ((/[^a-zA-Z]/).test(s[i])) i++
+        while ((/[^a-zA-Z]/).test(s[j])) j--
+        if (i > j) return s.join('')
+        swap(s, i, j)
+        i++
+        j--
+    }
+    return s.join('')
+
+};
+// 输入：s = "Test1ng-Leet=code-Q!" 输出："Qedo1ct-eeLg=ntse-T!"
+const res = reverseOnlyLetters("Test1ng-Leet=code-Q!")
 console.log(res)
