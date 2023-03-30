@@ -392,7 +392,56 @@ var numDecodings = function (s) {
             }
         }
     }
-    return dp[len-1]
+    return dp[len - 1]
 };
 const res = numDecodings('2101')
 console.log(res)
+
+// does the word toxic create the very specific image in your mind?
+// do you think over friend,parent or a next?
+// sometimes it's hard to tell if someone in your life is toxic.
+// do motiable people often say the same negative things about this one person
+// do you agree with the k common sense.
+// or you still aren't sure
+// here are 6 ways to recognize the toxic person in your life
+// no.1 they're disrespect for you time
+// time is  much pretty the most valueable thing we have
+// is this person consistent ll?
+// when they do showoff,they don't give you a apolige.
+// or do they talk over you in tired time.
+// you feel like it's not possible to get word in
+// toxic people often make everything about themselves.
+// you may feel like break whole. otherwise,it's too week to conversation
+// if you find this is happening to you ,maybe try spending more time with other people.
+// no2.lack of bounce
+// if the person toxic,they may also devalue your vandrs.
+// remember that it's ok to say no
+// you should never be feel guilty for needing day wave for everything.
+// in many cases, it's can be intg to mental healthy
+// if this person call and taix you muitable time  asking to spend time with you complete ignore your request of dating yourself. let's cut the toxic.
+// your day doesn't revolve around one single person and shouldn't.
+// it's important to place bounce especial at start of new  friendship or new relationship.
+// no3.jealous your success
+// when  your do well in the test or get promoted at the work. there's thing should be celebrated and cheered on
+// when you talk  person about your achievement,did they believe it?
+// do you feel worse about yourself after have told them
+// people are jealous of success will go out of their way  to critisize of you and your work.
+// it can be especially difficult to handle when it's go friend or close family member.
+// choices are the person is trying to nq down the pack  because they won't complelish a similar goal
+// jealous people of project their failure and incequlity on to others
+// no4. feel like you're walking on next shze
+// if your have ever to walk on an  shze around someone means you have to be very very careful.
+// are you in relationship with someone who make you feel like that way.
+// it can be nothing sort of exthusting
+// relationship where the romantic oplitonic are built on the same bad rock of principle
+// thst and exthusti .if you don't have either.the relationship simitely  isn't substingsble
+// do you have second guess everything you say and do around them.
+// it's not healthy.ignore is fare to you .
+// no5 not takeing responsibility
+// as human being ,we all make mistakes.
+//
+
+
+
+
+
