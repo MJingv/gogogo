@@ -479,5 +479,27 @@ var findDisappearedNumbers1 = function (nums) {
     }
     return res
 }
-const res = findDisappearedNumbers1([4, 3, 2, 7, 8, 2, 3, 1])
+// const res = findDisappearedNumbers1([4, 3, 2, 7, 8, 2, 3, 1])
+// console.log(res)
+
+// 345
+// 元音字母包括 'a'、'e'、'i'、'o'、'u'，且可能以大小写两种形式出现不止一次。
+var reverseVowels = function (s) {
+    const len = s.length
+    let [i, j] = [0, len - 1]
+    s = s.split('')
+    const swap = (array, a, b) => [array[a], array[b]] = [array[b], array[a]]
+
+    while (i < j) {
+        while (!(/a|e|i|o|u|A|E|I|O|U/g).test(s[i])) i++
+        while (!(/a|e|i|o|u|A|E|I|O|U/g).test(s[j])) j--
+        if (i >= j) return s.join('')
+        swap(s, i, j)
+        i++
+        j--
+    }
+    return s.join('')
+
+};
+const res = reverseVowels('leetcode')
 console.log(res)
