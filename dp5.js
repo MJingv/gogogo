@@ -320,5 +320,20 @@ var massage = function (nums) {
     }
     return dp[len - 1]
 };
-const res = massage([2, 7, 9, 3, 1])
+// const res = massage([2, 7, 9, 3, 1])
+// console.log(res)
+
+// 05.03
+var reverseBits = function (num) {
+    // 没看懂
+    const list = String(num).split('0')
+    const len = list.length
+    if (!len) return 0
+    let max = 0
+    for (let i = 0; i < len - 1; i++) {
+        max = Math.max(list[i].length + list[i + 1].length + 1, max)
+    }
+    return max
+};
+const res = reverseBits(11011101111)
 console.log(res)
