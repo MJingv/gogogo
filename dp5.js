@@ -275,5 +275,34 @@ var getRow = function (rowIndex) {
     return dp[rowIndex]
 
 };
-const res = getRow(3)
+// const res = getRow(3)
+// console.log(res)
+
+//1137
+// T0 = 0, T1 = 1, T2 = 1, 且在 n >= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+2
+// T_4 = 1 + 1 + 2 = 4
+var tribonacci = function (n) {
+    const dp = Array(n + 1).fill(0)
+    dp[1] = 1
+    dp[2] = 1
+    for (let i = 3; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
+    }
+    return dp[n]
+};
+var tribonacci1 = function (n) {
+    if (n === 0) return 0
+    if (n === 1) return 1
+    if (n === 2) return 1
+    let [a, b, c] = [0, 1, 1]
+    for (let i = 3; i <= n; i++) {
+        const tmp = a + b + c
+        a = b
+        b = c
+        c = tmp
+    }
+    return c
+}
+
+const res = tribonacci1(4)
 console.log(res)
