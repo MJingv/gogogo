@@ -425,21 +425,29 @@ var reverseWords = function (s) {
 
 // 485
 var findMaxConsecutiveOnes = function (nums) {
-    // 没过
     const len = nums.length
     if (len === 1) return nums[0] === 1 ? true : false
     if (!nums.includes(1)) return false
-    let [i, j] = [0, 0]
     let res = 0
-    while (j < len) {
-        while (nums[i] !== 1) i++
-        j = i + 1
-        while (nums[j] === 1) j++
-        res = Math.max(res, j - i)
-        i++
-    }
+    nums = nums.join('').split('0')
+    nums.map(i => res = Math.max(res, i.length))
+
     return res
 };
-// const res = findMaxConsecutiveOnes([1, 1, 0])
-// console.log(res)
+const findMaxConsecutiveOnes1 = (nums) => {
+    const len = nums.length
+    let n = 0
+    let res = 0
+    for (let i = 0; i < len; i++) {
+        if (nums[i] === 1) {
+            n++
+            res = Math.max(res, n)
+        } else {
+            n = 0
+        }
+    }
+    return res
+}
+const res = findMaxConsecutiveOnes1([1, 1, 0, 1, 1, 1])
+console.log(res)
 // 输入：nums = [1,1,0,1,1,1] 输出：3
