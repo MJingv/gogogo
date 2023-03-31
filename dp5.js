@@ -276,13 +276,6 @@ var uniquePathsWithObstacles = function (obstacleGrid) {
 
 // 剑指 Offer II 097. 子序列的数目 hard
 
-// 输入：nums = [1,7,3,6,5,6] 输出：3 解释：
-var pivotIndex = function (nums) {
-    // 没通过
-
-};
-// const res = pivotIndex([-1, -1, -1, -1, -1, 0])
-// console.log(res)
 
 //119 杨辉三角
 // 给定一个非负索引 rowIndex，返回「杨辉三角」的第 rowIndex 行。在「杨辉三角」中，每个数是它左上方和右上方的数的和。
@@ -396,12 +389,35 @@ var numDecodings = function (s) {
     }
     return dp[len - 1]
 };
-const res = numDecodings('2101')
+// const res = numDecodings('2101')
+// console.log(res)
+
+// 输入：nums = [1,7,3,6,5,6] 输出：3 解释：
+var pivotIndex = function (nums) {
+    // 没通过
+
+};
+// const res = pivotIndex([-1, -1, -1, -1, -1, 0])
+// console.log(res)
+
+// 647 回文子串
+//给你一个字符串 s ，请你统计并返回这个字符串中 回文子串 的数目。
+var countSubstrings = function (s) {
+    const len = s.length
+    const dp = Array(len).fill(1)
+    const ifHW = (str = '') => str.split('').reverse().join('') === str
+    for (let i = 1; i < len; i++) {
+        dp[i] += dp[i - 1]
+        for (let j = i - 1; j >= 0; j--) {
+            const str = s.slice(j, i + 1)
+            if (ifHW(str)) dp[i] += 1
+        }
+    }
+    return dp[len-1]
+
+};
+const res = countSubstrings('abc')
 console.log(res)
-
-
-
-
 
 
 
