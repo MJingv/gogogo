@@ -413,12 +413,77 @@ var countSubstrings = function (s) {
             if (ifHW(str)) dp[i] += 1
         }
     }
-    return dp[len-1]
+    return dp[len - 1]
 
 };
-const res = countSubstrings('abc')
+// const res = countSubstrings('abc')
+// console.log(res)
+
+
+// 376 摆动序列
+// 给你一个整数数组 nums ，返回 nums 中作为 摆动序列 的 最长子序列的长度
+// 子序列 可以不连续
+var wiggleMaxLength = function (nums) {
+    const len = nums.length
+    if (!len) return 0
+    if (len === 1) return 1
+    let [up, down] = [1, 1]
+    for (let i = 1; i < len; i++) {
+        if (nums[i] > nums[i - 1]) {
+            up = down + 1
+        }
+        if (nums[i] < nums[i - 1]) {
+            down = up + 1
+        }
+    }
+    return Math.max(down, up)
+
+};
+// const res = wiggleMaxLength([1, 17, 5, 10, 13, 15, 10, 5, 16, 8])
+// console.log(res)
+
+// 413
+var numberOfArithmeticSlices = function (nums) {
+    const len = nums.length
+    let [cur, res] = [0, 0]
+    for (let i = 2; i < len; i++) {
+        if (nums[i] - nums[i - 1] === nums[i - 1] - nums[i - 2]) {
+            cur++
+            res += cur
+        } else {
+            cur = 0
+        }
+    }
+    return res
+};
+// const res = numberOfArithmeticSlices([1, 2, 3, 4])
+// console.log(res)
+
+// 931. 下降路径最小和
+// 给你一个 n x n 的 方形 整数数组 matrix ，请你找出并返回通过 matrix 的下降路径 的 最小和 。
+var minFallingPathSum = function (matrix) {
+    const n = matrix.length
+    if (n === 1) return matrix[0]
+    const dp = Array(n).fill(Infinity).map(i => Array(n).fill(-Infinity))
+    dp[0][0] = matrix[0][0]
+    for (let i = 1; i < n; i++) {
+        dp[i][0] = dp[i - 1][0] + matrix[i][0]
+        dp[0][i] = matrix[0][i]
+    }
+    // 注意边界
+    for (let i = 1; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + matrix[i][j]
+            if (j > 0) {
+                dp[i][j] = Math.min(dp[i - 1][j - 1] + matrix[i][j], dp[i][j])
+            }
+            if (j < n - 1) {
+                dp[i][j] = Math.min(dp[i][j], dp[i - 1][j + 1] + matrix[i][j])
+            }
+
+        }
+    }
+    return Math.min(...dp[n - 1])
+};
+const res = minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]]) //13
 console.log(res)
-
-
-
-
