@@ -200,7 +200,64 @@ and so sitting with you.one-one versus as zoom call
 so much better.it worth.
 yes i agree.jp 3q 
 
-
+---
+does the word toxic create the very specific image in your mind?
+do you think over friend,parent or a next?
+sometimes it's hard to tell if someone in your life is toxic.
+do motiable people often say the same negative things about this one person
+do you agree with the k common sense.
+or you still aren't sure
+here are 6 ways to recognize the toxic person in your life
+no.1 they're disrespect for you time
+time is  much pretty the most valueable thing we have
+is this person consistent ll?
+when they do showoff,they don't give you a apolige.
+or do they talk over you in tired time.
+you feel like it's not possible to get word in
+toxic people often make everything about themselves.
+you may feel like break whole. otherwise,it's too week to conversation
+if you find this is happening to you ,maybe try spending more time with other people.
+no2.lack of bounce
+if the person toxic,they may also devalue your vandrs.
+remember that it's ok to say no
+you should never be feel guilty for needing day wave for everything.
+in many cases, it's can be intg to mental healthy
+if this person call and taix you muitable time  asking to spend time with you complete ignore your request of dating yourself. let's cut the toxic.
+your day doesn't revolve around one single person and shouldn't.
+it's important to place bounce especial at start of new  friendship or new relationship.
+no3.jealous your success
+when  your do well in the test or get promoted at the work. there's thing should be celebrated and cheered on
+when you talk  person about your achievement,did they believe it?
+do you feel worse about yourself after have told them
+people are jealous of success will go out of their way  to critisize of you and your work.
+it can be especially difficult to handle when it's go friend or close family member.
+choices are the person is trying to nq down the pack  because they won't complelish a similar goal
+jealous people of project their failure and incequlity on to others
+no4. feel like you're walking on next shze
+if your have ever to walk on an  shze around someone means you have to be very very careful.
+are you in relationship with someone who make you feel like that way.
+it can be nothing sort of exthusting
+relationship where the romantic oplitonic are built on the same bad rock of principle
+thst and exthusti .if you don't have either.the relationship simitely  isn't substingsble
+do you have second guess everything you say and do around them.
+it's not healthy.ignore is fare to you .
+no5 not taking responsibility
+as human being ,we all make mistakes.
+at a meeting  your for sth is never fun,but it can make your mind body and  soul feel whole lot light.
+a toxic person on the other hand,is someone who never  takes responsibility.
+this comes all forms ,maybe they put a blame on you for their actions or they make up exauses.
+at their way we feel to take responsibility as one of the key threat of toxic person.
+no6.their motionally threading
+if a person is motionally threading on you.it's super imperytive that you take a stop of it.
+toxic person were often launch on to others like paraside.
+a paraside needs another holds to survive.
+on comtress level you may have already include in to fact that they are toxic
+they're definite reason for this. on the phone the battery you drain faster when there're mutiple apps and tabs open.
+a toxic will feel like multiple apps all at once.
+closing this will keep you phone running faster and longer
+apply this principle to your life
+give it a try
+3q so much to watching
 
 
 
