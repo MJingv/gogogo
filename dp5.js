@@ -364,6 +364,8 @@ var reverseBits = function (num) {
     const len = list.length
     if (!len) return 0
     let max = 0
+
+
     for (let i = 0; i < len - 1; i++) {
         max = Math.max(list[i].length + list[i + 1].length + 1, max)
     }
@@ -437,9 +439,24 @@ console.log(res)
 // thst and exthusti .if you don't have either.the relationship simitely  isn't substingsble
 // do you have second guess everything you say and do around them.
 // it's not healthy.ignore is fare to you .
-// no5 not takeing responsibility
+// no5 not taking responsibility
 // as human being ,we all make mistakes.
-//
+// at a meeting  your for sth is never fun,but it can make your mind body and  soul feel whole lot light.
+// a toxic person on the other hand,is someone who never  takes responsibility.
+// this comes all forms ,maybe they put a blame on you for their actions or they make up exauses.
+// at their way we feel to take responsibility as one of the key threat of toxic person.
+// no6.their motionally threading
+// if a person is motionally threading on you.it's super imperytive that you take a stop of it.
+// toxic person were often launch on to others like paraside.
+// a paraside needs another holds to survive.
+// on comtress level you may have already include in to fact that they are toxic
+// they're definite reason for this. on the phone the battery you drain faster when there're mutiple apps and tabs open.
+// a toxic will feel like multiple apps all at once.
+// closing this will keep you phone running faster and longer
+// apply this principle to your life
+// give it a try
+// 3q so much to watching
+
 
 
 
