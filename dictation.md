@@ -186,8 +186,26 @@ in 2020 study publish in the jounery social research  report finding that mornin
 a large contribute fact to that is morning lack of get better social support  as they feed better in to the majority of sociaty that is most active in daytime.
 night owl on the hand often have a tough time intergarge into sociaty  partsh because they may not have the most familiar relationships.
 as they may miss on the family time with their sleep stagy.
-in the m .there's
-
+in the morning last word place.there able to be productive right from ggo.in approrite of easily and stander 9-5 hours and n morning s couple of world.
+no2,who's smarter?
+accroding to study publish in the jounery personality and individual diffiences .9 hours are often find  to be  more intilengen than mor locks .as the post to be common saying early bird get worms.
+this study states the result indicate that the country to  conventional focus with them evening types are more likely to hav higher intilligence scores.
+9 hours were also find have better process speed and better memory retention in morning locks.
+in sty of universal of leage and b.they find that both morning and night  are productive  after awaking them naturally.but morning x productivity fall off after 15% hours a week
+9 hours prove to be more consistent with focus and productive with fast reaction time.however,9 proform poorly acdemicly but 9 hours are disadvantage consider to school always start really.
+no3 who's more creative?
+both early riser and late riser do experience both of creative ideas. 
+study show that early riser do not have as much as 9 hours,it could be possible be linked to morning usually going by routine.
+in contrast,9 hours who have to learn early on to be creative to adapt to their out of living style
+a 2020 study on art students in taiwan p in the international journey of art and design education find that more half of the art students felt more creative after 10pm
+gtivity strike most drive when mind's wonders 9 hours are often left alone to quite atmosphere without the hussy and bussy of the city allowing their mind to feel alone
+so what's your sleep stategy over well about you
+take everything to great result of thoughts.there's very little research and much need to study on sleep personility and behavior
+and most of us are not just morning alike or night,but middle of both
+what's most important regardless of this sleep stegy  is that you have good circle of light and deep sleep
+and you can awake perfation feeling your best.
+do you feel you are mix of 2
+or are you simple a night owl or *napper* or woodcock sleeper?
 
 
         
