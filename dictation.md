@@ -166,45 +166,45 @@ watching
 
 ---
 
-some of us should get up the morning without the help of alarm clock .well others only have the pillow it's end.
-so what really dictates your choose of sleep stagy. 
-this's resocate  of your body is responsible for regulate your sleep pattens.
-genetic ways less than half of your pref  in your sleep stagy and it's enviromental social and personal fact that make up the rest of your sleep stagy.
-accroding to research report in the ins 2022.there're 6 distinct types of sleepers.
-morning likers or most productive from 9am to 11am.
-afternooner being the most active 11 to 5pm
-nighter wake up late.but as a deep gross energy endouse before reenergy with by mid-afternoon.
-night owl tends to sleep much later.
-swiper are those super robots are lute for the whole day until the natural for asleep
-and finally the last type are wood cocks.
-those're consisent running on  5% of bed's capacity from the moment they wake up to bed time.
-what's choose your sleep stagy review about you
-here's comparasing of 2 extremes. a morning lock and night owl.
+some of us *shoot*  up at 7am  without the help of an alarm clock .well others only have the pillow at 7am.
+so what really dictates your choice of sleep *schedule*. 
+the *Circadian* *rhythm* of your body is responsible for regulate your sleep pattens.
+genetic *weights* less than half of your *preference*  in your sleep schedule and its enviromental social and personal factors that make up the rest of your sleep schedule.
+according to research reported in the insider 2022.there are 6 distinct types of sleepers.
+morning *larks* are most productive from 9am to 11am.
+afternooners being the most active 11 to 5pm
+*nappers* wake up *alert*.but as a day progresses their energy *dwindles* before re-energizing  by mid-afternoon.
+night owls tends to sleep much later.
+swifts are those super robots are *alert* for the whole day until the naturally fall asleep
+and finally the last type are woodcocks.
+those are constantly running on  5% of their *battery's* capacity from the moment they wake up to bedtime.
+so what does your choice of sleep schedule *reveal* about you
+here's *comparison* of 2 extremes. a morning *lark* and night owl.
 which one are you.
 no1 who's happier
-in 2020 study publish in the jounery social research  report finding that morning are often happier and have higher life satisfaction compare to their night owl comterpart
-a large contribute fact to that is morning lack of get better social support  as they feed better in to the majority of sociaty that is most active in daytime.
-night owl on the hand often have a tough time intergarge into sociaty  partsh because they may not have the most familiar relationships.
-as they may miss on the family time with their sleep stagy.
-in the morning last word place.there able to be productive right from ggo.in approrite of easily and stander 9-5 hours and n morning s couple of world.
+in 2008 study published in the *journal* social indicators research found that morning larks are often happier and have higher life satisfaction compared to their night owl counter part.
+a large contributing factor to that is morning larks get better social support  as they fit better in to the majority of society that is most active in daytime.
+night owl on the hand often have a tough time intergrating into society.partially because they may not have the best familiar relationships.
+as they may miss on the family time with their sleep schedule.
+in the morning lark's workplace.they able to be productive right from get-go and *operate* easily in the standard 9-5 hours and as such  morning larks tend to *thrive* in a *corporate* of world.
 no2,who's smarter?
-accroding to study publish in the jounery personality and individual diffiences .9 hours are often find  to be  more intilengen than mor locks .as the post to be common saying early bird get worms.
-this study states the result indicate that the country to  conventional focus with them evening types are more likely to hav higher intilligence scores.
-9 hours were also find have better process speed and better memory retention in morning locks.
-in sty of universal of leage and b.they find that both morning and night  are productive  after awaking them naturally.but morning x productivity fall off after 15% hours a week
-9 hours prove to be more consistent with focus and productive with fast reaction time.however,9 proform poorly acdemicly but 9 hours are disadvantage consider to school always start really.
+according to study published in the *journal* of personality and individual differences .9 owls are often found  to be  more *intelligent* than morning larks .as *opposed* to be common saying early birds get the worm.
+this study states the result indicate that the contrary to  conventional *folk* wisdom  evening types are more likely to have higher intelligent scores.
+night owls were also find have better processing speed and better memory retention than morning larks.
+in a *separate* of university of *liege* in b.they found that both morning larks and night owls are productive  after waking up them naturally.but morning larks;s productivity falls off after 10.5 hours being awake.
+night owls proved to be more consistent with their focus and productive with fast reaction time.however,night owls *perform* poorly academiclly but night owls are at a disadvantage considering to school always starts early.
 no3 who's more creative?
-both early riser and late riser do experience both of creative ideas. 
-study show that early riser do not have as much as 9 hours,it could be possible be linked to morning usually going by routine.
-in contrast,9 hours who have to learn early on to be creative to adapt to their out of living style
-a 2020 study on art students in taiwan p in the international journey of art and design education find that more half of the art students felt more creative after 10pm
-gtivity strike most drive when mind's wonders 9 hours are often left alone to quite atmosphere without the hussy and bussy of the city allowing their mind to feel alone
-so what's your sleep stategy over well about you
-take everything to great result of thoughts.there's very little research and much need to study on sleep personility and behavior
-and most of us are not just morning alike or night,but middle of both
-what's most important regardless of this sleep stegy  is that you have good circle of light and deep sleep
-and you can awake perfation feeling your best.
-do you feel you are mix of 2
+both early riser and late riser do experience *burst* of creative ideas. 
+study show that early riser do not have as much as night owls,it could be possible be linked to morning larks usually going by a routine.
+in contrast,night owl who have to learn early on to be creative to adapt to their out-of-norm living style
+a 2008 study on art students in taiwan published in the international journal of art and design education found that more than half of the art students felt more creative after 10pm
+creativity strikes most  when the mind  *wanders* night owls are often left alone to a quite atmosphere without the hustle and bustle of the city allowing their minds to freely *roam*
+so what's your sleep schedule *reveal* about you
+take everything with a *grain* of *salt* .there's very little research and much needed studied on sleep personality and behavior
+and most of us are not just morning larks or night owls,but a *mix* of both
+what's most important regardless of this sleep schedule is that you have good circle of light and deep sleep.
+and you can awake *refreshed* feeling your best.
+do you feel you are a mix of 2
 or are you simple a night owl or *napper* or woodcock sleeper?
 
 
