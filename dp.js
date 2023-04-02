@@ -642,4 +642,4 @@ const res = maximalSquare(
         ["1", "0", "0", "1", "0"],
     ]
 )
-// console.log(res)
+console.log(res)
