@@ -262,27 +262,33 @@ give it a try
 3q so much to watching
 
 ---
-on those cold rainy day,when you forget your rain jacket or umbralar and you want to stay as dry as possible, should you walk and spend more in the rain?
+on those cold rainy day,when you forget your rain jacket or umbralar and you want to stay as dry as possible, should you
+walk and spend more in the rain?
 or should you run which means you be hitting more range out of the side
 assuming you haven't be flip so c yet and you are junmping in the podals
 the answer is simple
 as you move out of the way one of falling rain drop you move into the way of another.
-so the much  rain hitting top of you is constant regardless how fa you're going
-to see this,you can picture the rain drop itself are stationary and you and benis you are moving operate through the rain.
-and since of all you pa p that's 3 p doesn't depend on the sland.and no matter how fast you move h the same r of rain on top you  each second.
+so the much rain hitting top of you is constant regardless how fa you're going
+to see this,you can picture the rain drop itself are stationary and you and benis you are moving operate through the
+rain.
+and since of all you pa p that's 3 p doesn't depend on the sland.and no matter how fast you move h the same r of rain on
+top you each second.
 now if you're not moving ,the rain from the top is all you'll get.
 but if you're moving,you're also running to the range out of the side,and you get wetter.
 so any give second,you stay dry by standing still.
 and the faster you move the wetter you become
-but if you try to  get from point a to point b.then standing still won't do you much good.
-and on road from point a to point b. it's total not of r running into from the side. has nothing to do how fast you're going.
+but if you try to get from point a to point b.then standing still won't do you much good.
+and on road from point a to point b. it's total not of r running into from the side. has nothing to do how fast you're
+going.
 just like how the snode plude will p the same not of ndoe from tr road regardless the except of drives
 in the case of running through the rain,you can figure out using the paroll pap again.
 so over giving period of time the same amount of rain will x the top regardless how fast going
 and over giving distance you hit the same rain from the side ,again regardless how fast going
-so you're total wet miss  is equal to the west  per second rain for the top .time you're spending for rain plus the  time is the meter you travel
-so stay wet getting one point to another .you should try to minimize the out of water phone of you on to you from above
-and quite simple that means getting out of the rain as fast as possible
+so you're total wet miss is equal to the west per second rain for the top .time you're spending for rain plus the time
+is the meter you travel.
+so stay *driest* getting one point to another .you should try to minimize the amount of water *falling* onto you from
+above
+and quite *simply* that means getting out of the rain as fast as possible
 
 
 
