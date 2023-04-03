@@ -640,9 +640,8 @@ var maxPathSum = function (root) {
 var pathWithObstacles = function (obstacleGrid) {
     const [m, n] = [obstacleGrid.length, obstacleGrid[0].length]
     if (obstacleGrid[0][0] === 1 || obstacleGrid[m - 1][n - 1] === 1) return []
-
-    const [res, path] = [[], []]
-    const helper = (i = 0, j = 0) => {
+    const res = []
+    const helper = (path = [], i = 0, j = 0) => {
         if (i === m - 1 && j === n - 1) {
             path.push([i, j])
             return res.push(path.slice())
@@ -650,16 +649,45 @@ var pathWithObstacles = function (obstacleGrid) {
         if (i === m || j === n || obstacleGrid[i][j] === 1) return;
 
         path.push([i, j])
-        helper(i + 1, j)
-        path.pop()
-
-        path.push([i, j])
-        helper(i, j + 1)
-        path.pop()
+        obstacleGrid[i][j] = 1
+        helper(path.slice(), i + 1, j)
+        helper(path.slice(), i, j + 1)
     }
     helper()
-    return res[0] || -1
+    return res.length ? res[0] : []
 };
 // 输入: [ [0,0,0], [0,1,0], [0,0,0] ] 输出: [[0,0],[0,1],[0,2],[1,2],[2,2]]
-const res = pathWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+// const res = pathWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+// console.log(res)
+
+// 面试题 08.13 堆箱子
+// 箱子宽 wi、深 di、高 hi。箱
+// 搭出最高的一堆箱子。箱堆的高度为每个箱子高度的总和。
+var pileBox = function (box) {
+    const len = box.length
+    box.sort((a, b) => a[0] - b[0])
+    const dp = Array(len).fill(0)
+    dp[0] = box[0][2]
+    for (let i = 1; i < len; i++) {
+        dp[i] = box[i][2];
+        for (let j = 0; j < i; j++) {
+            if (box[j][0] < box[i][0] && box[j][1] < box[i][1] && box[j][2] < box[i][2]) {
+                dp[i] = Math.max(dp[i], dp[j] + box[i][2]);
+            }
+        }
+    }
+    return Math.max(...dp)
+};
+// const res = pileBox([[1, 1, 1], [2, 3, 4], [2, 6, 7], [3, 4, 5]]) //10
+// console.log(res)
+
+// 面试题 17.23 最大黑方阵
+// 返回一个数组 [r, c, size] ，其中 r, c 分别代表子方阵左上角的行号和列号，size 是子方阵的边长。若有多个满足条件的子方阵，返回 r 最小的，若 r 相同，返回 c 最小的子方阵。若无满足条件的子方阵，返回空数组。
+var findSquare = function (matrix) {
+    const [m, n] = [matrix.length, matrix[0].length]
+
+
+};
+// 输入: [ [1,0,1], [0,0,1], [0,0,1] ] 输出: [1,0,2] 解释: 输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
+const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
 console.log(res)
