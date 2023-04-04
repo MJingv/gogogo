@@ -292,6 +292,50 @@ so stay *driest* getting one point to another.you should try to minimize the amo
 above
 and quite *simply* that means getting out of the rain as fast as possible
 
+--- 
+2.5 million years old ago,we first begin to eat meat.
+*prior* to that our *ancestors* ate the *vegan* *diet* of the *berries* and flowers.and only when early *hominins* begin
+to eat more seeds and nuts therefore taking in higher *level* of fat and less *fiber*did our bodies begin to adapt to
+handle the meat.
+but what would happen now if you only ate meat?
+without fiber-rich foods like *lentils* beats and broccoli,you're gonna feel *constipated* and uncomfortable
+not to mention the simplest way of your body to make energy is to *convert* *carbohydrates* into *glucose*
+in the absence of *carbs*,your body will have to burn *fat* and break down important proteins.
+creating glucose from protein is known as gluconeogenesis and it *occurs* in the *liver* creating a *nitrogen* waste
+that is converted into *urea*.
+too much can lead to protein *poisoning* which includes some lovely *symptoms* like *nausea* *diarrhoea* and
+*potentially* death.
+it's even been documented that if you only ate *lean* meat like *rabbit* which can hardly any fat you could eat and eat
+and eat and still end up wasting away.
+another potential killer could be lack of *vitamin* c.
+human are only one of few animals that aren't able to *synthesise* the vitamin on their own.
+without the easy access way to vitamin from food and *veggies*, your body will be unable to *effectively* create
+*collagen* ,a *structure* protein found in your *tendons*, *ligaments* and skin.
+this will put you at high risk of *scurvy* and cause you to have a poor *wound* *healing*. *rotting* *gums* and
+personally changes.
+if not treated you'll die from *infections* or bleeding
+but eating raw meat could be the way of around this.
+the cooking of meat *degrades*  most of vitamin c,but raw *thick* *chewy* *collagen*.rich skin and *blubber* and
+*whales* can take in 36 *milligrams* vitamin c per 100 grams serving,way more than 10 milligrams need to fight off
+*scurvy*.
+this brings us to an interesting case.
+*shaped* by low temperature and *stark* *environment*.a traditional *inuit* *diet*  consisted of what was
+hunted and fished with little, if any *plant* food, *dairy* products or *carbohydrates*.
+despite this, *cardiac* *death* rates were half that of other americans and canadians
+how can you be health on the *fatty* diet without any fruits and vegetables.
+you can *snack* on *organ* meat like liver to get your *recommended* vitamin a which is *vital* for your eyes and bones
+and vd for your bones too. and oil fish rich in omega-3 fatty *acids* will benefit your heart and *vascular* system.
+in your body have to adapt to manage gluconeogenesis by having a larger liver and increased *volumes* of *urine* to
+get rid of extra urea.
+our recent genetic study investigated that *genome* of greeland inuit are found a selection for *variants* that create
+a productive effect against *cholesterol* and *triglycerides*.
+so it's possible to *thrive* on only meat, but it's important to remember that the *northern* communities have relied on
+animal food at *circumstance* and *necessity*.
+there's high fat *diet* was intended to keep weight on for days of hurting and when the food was *insecure*,not loss
+weight like the modern low carb diets
+*unless* you're planning on eating raw whale blubber,organ meat and have genetic on your side.consider sticking to
+the balance diet of all the *major* food groups
+
 
 
 

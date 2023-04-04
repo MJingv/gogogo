@@ -681,13 +681,45 @@ var pileBox = function (box) {
 // const res = pileBox([[1, 1, 1], [2, 3, 4], [2, 6, 7], [3, 4, 5]]) //10
 // console.log(res)
 
-// 面试题 17.23 最大黑方阵
-// 返回一个数组 [r, c, size] ，其中 r, c 分别代表子方阵左上角的行号和列号，size 是子方阵的边长。若有多个满足条件的子方阵，返回 r 最小的，若 r 相同，返回 c 最小的子方阵。若无满足条件的子方阵，返回空数组。
-var findSquare = function (matrix) {
-    const [m, n] = [matrix.length, matrix[0].length]
+// 面试题 17.13 恢复空格
+// 设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。
+// dictionary = ["looked","just","like","her","brother"] sentence = "jesslookedjustliketimherbrother"
+var respace = function (dictionary, sentence) {
+    const len = dictionary.length
+    const n = sentence.length
+    if (!len || !n) return n
+    const dp = Array(n + 1).fill(0)
+    for (let i = 1; i <= n; i++) {
+        dp[i] = dp[i - 1] + 1
+        for (let j = 0; j < len; j++) {
+            const word = dictionary[j].length
+            const tmp = sentence.substring(i - word, i)
+            if (dictionary[j] === tmp && i >= word) {
+                console.log(tmp)
+                dp[i] = Math.min(dp[i], dp[i - word])
+            }
+        }
+    }
+    return dp[n]
+}
+// const res = respace(["potimzz"], "potimzzpotimzz")
+// console.log(res)
 
+// 剑指 Offer II 104. 排列的数目
+// 给定一个由 不同 正整数组成的数组 nums ，和一个目标整数 target 。请从 nums 中找出并返回总和为 target 的元素组合的个数。数组中的数字可以在一次排列中出现任意次，但是顺序不同的序列被视作不同的组合。
+var combinationSum4 = function (nums, target) {
+    const len = nums.length
+    if (!len) return 0
+    const dp = Array(target + 1).fill(0)
 
+    for (let i = 1; i <= target; i++) {
+        for (let j = 0; j < len; j++) {
+            if (!(i % nums[j])) dp[i] += 1
+            if (dp[i - nums[j]]) dp[i] += dp[i - nums[j]]
+        }
+    }
+    return dp
 };
-// 输入: [ [1,0,1], [0,0,1], [0,0,1] ] 输出: [1,0,2] 解释: 输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
-const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
+// 输入：nums = [1,2,3], target = 4 输出：7 解释： 所有可能的组合为： (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) 请注意，顺序不同的序列被视作不同的组合。
+const res = combinationSum4([1, 2, 3], 4)
 console.log(res)

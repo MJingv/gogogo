@@ -31,3 +31,16 @@ var rotatedDigits = function (n) {
 };
 // const res = rotatedDigits(10)
 // console.log(res)
+
+
+// 面试题 17.23 最大黑方阵
+// 返回一个数组 [r, c, size] ，其中 r, c 分别代表子方阵左上角的行号和列号，size 是子方阵的边长。若有多个满足条件的子方阵，返回 r 最小的，若 r 相同，返回 c 最小的子方阵。若无满足条件的子方阵，返回空数组。
+var findSquare = function (matrix) {
+    // 看不懂
+    const [m, n] = [matrix.length, matrix[0].length]
+
+
+};
+// 输入: [ [1,0,1], [0,0,1], [0,0,1] ] 输出: [1,0,2] 解释: 输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
+// const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
+// console.log(res)
