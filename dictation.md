@@ -207,7 +207,74 @@ and you can awake *refreshed* feeling your best.
 do you feel you are a mix of 2
 or are you simple a night owl or *napper* or woodcock sleeper?
 
+---
+one habit double my productivity  over the  last few years. *allowing* *me* to complete *dergee* of *mechanical* *engineering*
+*reach* a million subscribe on youtube  learn animation and improve my writing.
+and it's surprising simple *habit* one that's easy overlook and *underestimate*  ,the power hour.
+after i get up in the  morning,for the first hour,before i do anything else.i find a nice quiet place without my phone and without anyone else around.
+and i work on the most difficult and most *impactful* project to my life.
+in the world of *shinny* new apps and " *scientifically-backed*  *hack*.the power hour looks like quite *plain* ,but it's very *plainness* in my mind,it's *virtue*
+in the daodejing, the classic book of wisdom .laozi wrote trifles  and dainties *attract* the passing people ,while laozi are unnoticed when look that it's not much to see
+and he also said the great way is very *plain*,so the *proud* perfer the *bypaths*.
+the power hour is not much to look at,but *out* of all the apps, tips,tricks and i've tried over the last few years as a student ,a working professional and *enterpreneur* 
+nothing has been more effective for me than the power hour.
+i slice an hour out of each day and make *actual* progress *towards* my goals.
+and everyone has goal but how many people actually act on them.
+everyone wants to make great journey,they want to make money.get their dream job,graduate with *honours*,*invent* sth ,create sth,be someone.
+everyone wants to arrive at the great destination,but how many people actually want to  take a step *towards* that destination.
+how many people speed most of their time preparing to make a journey that never *embark*.
+how many of them look for the right clothes, the right  bag, the right  level of motivation, the right   video, the right  song , the right *tools* or  the right time
+instead of looking for the right time to be productive,the power hour forces me be productive at the right time. 
+do i have a lot of thing to think about?
+i'll think about it after my hours is over.
+do i have a lot of relationship to *maintain*.
+i'll deal with them after.
+do i have multiple project to work on.
+i'll get start on the most important during my hour.
+do i pro *procrastinate*?
+one hour is easy enough to each day,and i can *relax* after.
+do i get tried in the evenings.
+i'll schedule my power hour first thing in the morning when i most energy.
+the power hour solve the great *obstacle* to productive inaction.
+the mind find clever way to not take action and  the mind's clever secret is  product the *procrastination*.
+it doesn't tell itself that's being inactive
+rather,it finds thing that are *pseudo*-productive thing to do,and take a *pleasure* in doing them.
+the mind wants to clean house before working.
+or wants to *manage* its to-do list.
+or wants to *organize* the computer or notion folder.
+it wants to make it template and spreadsheets.
+it wants to answer the emails.
+it wants to set up a new app or *calendar*
+it wants to do a little reading before working.
+it wants to find the right music.
+it wants to set a dest properly without right *tools*.
+it wants to find productivity video to watch first.
+but mind can create an infinite number of tasks and problems for itself. 
+how many folders should there be on the desktop.
+how should the folders be names.
+how should i  organize them within each other
+what should each folder contain.
+how should i tag each folder.
+and it's can go on forever with anything.
+the mind love to productive procrastinate.
+it gets the *pleasure* of working without actually having to do any.
+the mind love to set around *sharping* it's *axe*,but it never wants to *hack* the tree.
+the power hour is commitment to take the axe as it is  and start chopping.
+the sharpening of the axe,the gathering of other tools,working on other things around the house can all take place after.
+before this first hour,i'll do nothing but chopping the trees.
+i'll *go* directly to the  most *pressing* problem in my life.and i'll find most difficult most impactful action that *might* *solve* it. and i'll do that.
+sj once said,the focusing was about saying no.
+the first hour of my day is *sacred* *solitary* *reverent* unadorned and above all is about saying no.
+there's no *incense* or special tea or medication or cold shower or quick body workouts.
+no *millionaire* or *billionaire* morning routine that never actually amount to anything.
+no productive distractions.
+no productive procrastination.
+just me,my axe and tree.
 
-        
+
+
+
+
+
 
 
