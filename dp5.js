@@ -1,3 +1,22 @@
+class TreeNode {
+    constructor(val) {
+        this.val = val
+        this.left = null
+        this.right = null
+    }
+}
+
+const t0 = new TreeNode(0)
+const t1 = new TreeNode(1)
+const t2 = new TreeNode(2)
+const t3 = new TreeNode(3)
+const t4 = new TreeNode(4)
+t1.left = t0
+t1.right = t3
+t3.left = t2
+t3.right = t4
+
+
 // 力扣第 300 题「 最长递增子序列」
 // 输入：nums = [10,9,2,5,3,7,101,18] 输出：4 解释：最长递增子序列是 [2,3,7,101]，因此长度为 4 。
 var lengthOfLIS = function (nums) {
@@ -485,5 +504,222 @@ var minFallingPathSum = function (matrix) {
     }
     return Math.min(...dp[n - 1])
 };
-const res = minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]]) //13
+// const res = minFallingPathSum([[2, 1, 3], [6, 5, 4], [7, 8, 9]]) //13
+// console.log(res)
+
+// 473 火柴拼正方形
+// 每根火柴棒必须 使用一次
+// 如果你能使这个正方形，则返回 true ，否则返回 false 。
+var makesquare = function (matchsticks) {
+    const len = matchsticks.length
+    const sum = matchsticks.reduce((i, p) => i + p)
+    if (sum % 4) return false
+    const target = sum / 4
+    matchsticks.sort((a, b) => b - a)
+    if (matchsticks[0] > target) return false
+    // backtrace
+    const side = Array(4).fill(0)
+    const helper = (j = 0) => {
+        if (j === len) return true
+        for (let i = 0; i < 4; i++) {
+            if (side[i] + matchsticks[j] > target || j && side[i] === side[i - 1]) {
+                continue
+            }
+            side[i] += matchsticks[j]
+            if (helper(j + 1)) return true
+            side[i] -= matchsticks[j]
+        }
+        return false
+    }
+    return helper()
+
+};
+// const res = makesquare([3, 3, 3, 3, 4])
+// console.log(res)
+
+// 「剑指 Offer 60. n个骰子的点数」
+// 你需要用一个浮点数数组返回答案，其中第 i 个元素代表这 n 个骰子所能掷出的点数集合中第 i 小的那个的概率。
+// 输入: 2 输出: [0.02778,0.05556,0.08333,0.11111,0.13889,0.16667,0.13889,0.11111,0.08333,0.05556,0.02778]
+var dicesProbability = function (n) {
+    const [min, max] = [n, n * 6]
+    const dp = Array(n + 1).fill(0).map(i => Array(max + 1).fill(0))
+    const res = []
+    for (let i = 1; i <= 6; i++) {
+        dp[1][i] = 1
+    }
+    // 第n个骰子
+    for (let i = 1; i <= n; i++) {
+        // 摇中j点
+        for (let j = i; j <= n * 6; j++) {
+            // 第二个骰子摇中了k点
+            for (let k = 1; k <= 6; k++) {
+                // 上一个骰子摇中j-k
+                if (dp[i - 1][j - k]) {
+                    dp[i][j] += dp[i - 1][j - k]
+                }
+            }
+            if (i === n) {
+                res.push(dp[i][j] / 6 ** n);
+            }
+        }
+
+    }
+    return res
+};
+// const res = dicesProbability(2)
+// [0.02778,0.05556,0.08333,0.11111,0.13889,0.16667,0.13889,0.11111,0.08333,0.05556,0.02778]
+// console.log(res)
+
+
+// 剑指 Offer II 107. 矩阵中的距离
+// 请输出一个大小相同的矩阵，其中每一个格子是 mat 中对应位置元素到最近的 0 的距离。
+var updateMatrix = function (mat) {
+    const [m, n] = [mat.length, mat[0].length]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(Infinity))
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (mat[i][j] === 0) dp[i][j] = 0
+        }
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (i - 1 >= 0) dp[i][j] = Math.min(dp[i][j], dp[i - 1][j] + 1)
+            if (j - 1 >= 0) dp[i][j] = Math.min(dp[i][j], dp[i][j - 1] + 1)
+        }
+    }
+    for (let i = m - 1; i >= 0; i--) {
+        for (let j = n - 1; j >= 0; j--) {
+            if (i + 1 < m) dp[i][j] = Math.min(dp[i][j], dp[i + 1][j] + 1)
+            if (j + 1 < n) dp[i][j] = Math.min(dp[i][j], dp[i][j + 1] + 1)
+
+        }
+    }
+    return dp
+};
+// 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
+// const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
+// console.log(res)
+
+// 剑指 Offer II 89. 房屋偷盗
+//如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+// 输入：nums = [1,2,3,1] 输出：4 解释：偷窃 1 号房屋 (金额 = 1) ，然后偷窃 3 号房屋 (金额 = 3)。 偷窃到的最高金额 = 1 + 3 = 4 。
+var rob = function (nums) {
+    const len = nums.length
+    const dp = Array(len).fill(0)
+    dp[0] = nums[0]
+    dp[1] = Math.max(nums[0], nums[1])
+    if (len < 3) return dp[len - 1]
+    for (let i = 2; i < len; i++) {
+        dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i])
+    }
+    return dp[len - 1]
+};
+// const res = rob([1, 2, 3, 1])
+// console.log(res)
+
+// 剑指 Offer II 51. 节点之和最大的路径
+var maxPathSum = function (root) {
+    // 看不懂
+    if (!root) return
+    let res = 0
+    const helper = (node) => {
+        if (!node) return null
+        const left = helper(node.left)
+        const right = helper(node.right)
+        const maxSum = Math.max(node.val, left + node.val, right + node.val);
+        return Math.max(res, left + node.val + right, maxSum)
+    }
+    return helper(root)
+
+};
+// const res = maxPathSum(t1)
+// console.log(res)
+
+// 面试题 08.02 迷路的机器人
+// 返回一条可行的路径，路径由经过的网格的行号和列号组成。左上角为 0 行 0 列。如果没有可行的路径，返回空数组。
+var pathWithObstacles = function (obstacleGrid) {
+    const [m, n] = [obstacleGrid.length, obstacleGrid[0].length]
+    if (obstacleGrid[0][0] === 1 || obstacleGrid[m - 1][n - 1] === 1) return []
+    const res = []
+    const helper = (path = [], i = 0, j = 0) => {
+        if (i === m - 1 && j === n - 1) {
+            path.push([i, j])
+            return res.push(path.slice())
+        }
+        if (i === m || j === n || obstacleGrid[i][j] === 1) return;
+
+        path.push([i, j])
+        obstacleGrid[i][j] = 1
+        helper(path.slice(), i + 1, j)
+        helper(path.slice(), i, j + 1)
+    }
+    helper()
+    return res.length ? res[0] : []
+};
+// 输入: [ [0,0,0], [0,1,0], [0,0,0] ] 输出: [[0,0],[0,1],[0,2],[1,2],[2,2]]
+// const res = pathWithObstacles([[0, 0, 0], [0, 1, 0], [0, 0, 0]])
+// console.log(res)
+
+// 面试题 08.13 堆箱子
+// 箱子宽 wi、深 di、高 hi。箱
+// 搭出最高的一堆箱子。箱堆的高度为每个箱子高度的总和。
+var pileBox = function (box) {
+    const len = box.length
+    box.sort((a, b) => a[0] - b[0])
+    const dp = Array(len).fill(0)
+    dp[0] = box[0][2]
+    for (let i = 1; i < len; i++) {
+        dp[i] = box[i][2];
+        for (let j = 0; j < i; j++) {
+            if (box[j][0] < box[i][0] && box[j][1] < box[i][1] && box[j][2] < box[i][2]) {
+                dp[i] = Math.max(dp[i], dp[j] + box[i][2]);
+            }
+        }
+    }
+    return Math.max(...dp)
+};
+// const res = pileBox([[1, 1, 1], [2, 3, 4], [2, 6, 7], [3, 4, 5]]) //10
+// console.log(res)
+
+// 面试题 17.13 恢复空格
+// 设计一个算法，把文章断开，要求未识别的字符最少，返回未识别的字符数。
+// dictionary = ["looked","just","like","her","brother"] sentence = "jesslookedjustliketimherbrother"
+var respace = function (dictionary, sentence) {
+    const len = dictionary.length
+    const n = sentence.length
+    if (!len || !n) return n
+    const dp = Array(n + 1).fill(0)
+    for (let i = 1; i <= n; i++) {
+        dp[i] = dp[i - 1] + 1
+        for (let j = 0; j < len; j++) {
+            const word = dictionary[j].length
+            const tmp = sentence.substring(i - word, i)
+            if (dictionary[j] === tmp && i >= word) {
+                console.log(tmp)
+                dp[i] = Math.min(dp[i], dp[i - word])
+            }
+        }
+    }
+    return dp[n]
+}
+// const res = respace(["potimzz"], "potimzzpotimzz")
+// console.log(res)
+
+// 剑指 Offer II 104. 排列的数目
+// 给定一个由 不同 正整数组成的数组 nums ，和一个目标整数 target 。请从 nums 中找出并返回总和为 target 的元素组合的个数。数组中的数字可以在一次排列中出现任意次，但是顺序不同的序列被视作不同的组合。
+var combinationSum4 = function (nums, target) {
+    const len = nums.length
+    if (!len) return 0
+    const dp = Array(target + 1).fill(0)
+
+    for (let i = 1; i <= target; i++) {
+        for (let j = 0; j < len; j++) {
+            if (!(i % nums[j])) dp[i] += 1
+            if (dp[i - nums[j]]) dp[i] += dp[i - nums[j]]
+        }
+    }
+    return dp
+};
+// 输入：nums = [1,2,3], target = 4 输出：7 解释： 所有可能的组合为： (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) 请注意，顺序不同的序列被视作不同的组合。
+const res = combinationSum4([1, 2, 3], 4)
 console.log(res)
