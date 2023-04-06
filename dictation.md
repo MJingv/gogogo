@@ -166,41 +166,54 @@ watching
 
 ---
 
-some of us *shoot*  up at 7am  without the help of an alarm clock .well others only have the pillow at 7am.
-so what really dictates your choice of sleep *schedule*. 
+some of us *shoot*  up at 7am without the help of an alarm clock .well others only have the pillow at 7am.
+so what really dictates your choice of sleep *schedule*.
 the *Circadian* *rhythm* of your body is responsible for regulate your sleep pattens.
-genetic *weights* less than half of your *preference*  in your sleep schedule and its enviromental social and personal factors that make up the rest of your sleep schedule.
+genetic *weights* less than half of your *preference*  in your sleep schedule and its enviromental social and personal
+factors that make up the rest of your sleep schedule.
 according to research reported in the insider 2022.there are 6 distinct types of sleepers.
 morning *larks* are most productive from 9am to 11am.
 afternooners being the most active 11 to 5pm
-*nappers* wake up *alert*.but as a day progresses their energy *dwindles* before re-energizing  by mid-afternoon.
+*nappers* wake up *alert*.but as a day progresses their energy *dwindles* before re-energizing by mid-afternoon.
 night owls tends to sleep much later.
 swifts are those super robots are *alert* for the whole day until the naturally fall asleep
 and finally the last type are woodcocks.
-those are constantly running on  5% of their *battery's* capacity from the moment they wake up to bedtime.
+those are constantly running on 5% of their *battery's* capacity from the moment they wake up to bedtime.
 so what does your choice of sleep schedule *reveal* about you
 here's *comparison* of 2 extremes. a morning *lark* and night owl.
 which one are you.
 no1 who's happier
-in 2008 study published in the *journal* social indicators research found that morning larks are often happier and have higher life satisfaction compared to their night owl counter part.
-a large contributing factor to that is morning larks get better social support  as they fit better in to the majority of society that is most active in daytime.
-night owl on the hand often have a tough time intergrating into society.partially because they may not have the best familiar relationships.
+in 2008 study published in the *journal* social indicators research found that morning larks are often happier and have
+higher life satisfaction compared to their night owl counter part.
+a large contributing factor to that is morning larks get better social support as they fit better in to the majority of
+society that is most active in daytime.
+night owl on the hand often have a tough time intergrating into society.partially because they may not have the best
+familiar relationships.
 as they may miss on the family time with their sleep schedule.
-in the morning lark's workplace.they able to be productive right from get-go and *operate* easily in the standard 9-5 hours and as such  morning larks tend to *thrive* in a *corporate* of world.
+in the morning lark's workplace.they able to be productive right from get-go and *operate* easily in the standard 9-5
+hours and as such morning larks tend to *thrive* in a *corporate* of world.
 no2,who's smarter?
-according to study published in the *journal* of personality and individual differences .9 owls are often found  to be  more *intelligent* than morning larks .as *opposed* to be common saying early birds get the worm.
-this study states the result indicate that the contrary to  conventional *folk* wisdom  evening types are more likely to have higher intelligent scores.
+according to study published in the *journal* of personality and individual differences .9 owls are often found to be
+more *intelligent* than morning larks .as *opposed* to be common saying early birds get the worm.
+this study states the result indicate that the contrary to conventional *folk* wisdom evening types are more likely to
+have higher intelligent scores.
 night owls were also find have better processing speed and better memory retention than morning larks.
-in a *separate* of university of *liege* in b.they found that both morning larks and night owls are productive  after waking up them naturally.but morning larks;s productivity falls off after 10.5 hours being awake.
-night owls proved to be more consistent with their focus and productive with fast reaction time.however,night owls *perform* poorly academiclly but night owls are at a disadvantage considering to school always starts early.
+in a *separate* of university of *liege* in b.they found that both morning larks and night owls are productive after
+waking up them naturally.but morning larks;s productivity falls off after 10.5 hours being awake.
+night owls proved to be more consistent with their focus and productive with fast reaction time.however,night owls *
+perform* poorly academiclly but night owls are at a disadvantage considering to school always starts early.
 no3 who's more creative?
-both early riser and late riser do experience *burst* of creative ideas. 
-study show that early riser do not have as much as night owls,it could be possible be linked to morning larks usually going by a routine.
+both early riser and late riser do experience *burst* of creative ideas.
+study show that early riser do not have as much as night owls,it could be possible be linked to morning larks usually
+going by a routine.
 in contrast,night owl who have to learn early on to be creative to adapt to their out-of-norm living style
-a 2008 study on art students in taiwan published in the international journal of art and design education found that more than half of the art students felt more creative after 10pm
-creativity strikes most  when the mind  *wanders* night owls are often left alone to a quite atmosphere without the hustle and bustle of the city allowing their minds to freely *roam*
+a 2008 study on art students in taiwan published in the international journal of art and design education found that
+more than half of the art students felt more creative after 10pm
+creativity strikes most when the mind  *wanders* night owls are often left alone to a quite atmosphere without the
+hustle and bustle of the city allowing their minds to freely *roam*
 so what's your sleep schedule *reveal* about you
-take everything with a *grain* of *salt* .there's very little research and much needed studied on sleep personality and behavior
+take everything with a *grain* of *salt* .there's very little research and much needed studied on sleep personality and
+behavior
 and most of us are not just morning larks or night owls,but a *mix* of both
 what's most important regardless of this sleep schedule is that you have good circle of light and deep sleep.
 and you can awake *refreshed* feeling your best.
@@ -208,23 +221,31 @@ do you feel you are a mix of 2
 or are you simple a night owl or *napper* or woodcock sleeper?
 
 ---
-one habit double my productivity  over the  last few years. *allowing* *me* to complete *dergee* of *mechanical* *engineering*
-*reach* a million subscribe on youtube  learn animation and improve my writing.
+one habit double my productivity over the last few years. *allowing* *me* to complete *dergee* of *mechanical* *
+engineering*
+*reach* a million subscribe on youtube learn animation and improve my writing.
 and it's surprising simple *habit* one that's easy overlook and *underestimate*  ,the power hour.
-after i get up in the  morning,for the first hour,before i do anything else.i find a nice quiet place without my phone and without anyone else around.
+after i get up in the morning,for the first hour,before i do anything else.i find a nice quiet place without my phone
+and without anyone else around.
 and i work on the most difficult and most *impactful* project to my life.
-in the world of *shinny* new apps and " *scientifically-backed*  *hack*.the power hour looks like quite *plain* ,but it's very *plainness* in my mind,it's *virtue*
-in the daodejing, the classic book of wisdom .laozi wrote trifles  and dainties *attract* the passing people ,while laozi are unnoticed when look that it's not much to see
+in the world of *shinny* new apps and " *scientifically-backed*  *hack*.the power hour looks like quite *plain* ,but
+it's very *plainness* in my mind,it's *virtue*
+in the daodejing, the classic book of wisdom .laozi wrote trifles and dainties *attract* the passing people ,while laozi
+are unnoticed when look that it's not much to see
 and he also said the great way is very *plain*,so the *proud* perfer the *bypaths*.
-the power hour is not much to look at,but *out* of all the apps, tips,tricks and i've tried over the last few years as a student ,a working professional and *enterpreneur* 
+the power hour is not much to look at,but *out* of all the apps, tips,tricks and i've tried over the last few years as a
+student ,a working professional and *enterpreneur*
 nothing has been more effective for me than the power hour.
 i slice an hour out of each day and make *actual* progress *towards* my goals.
 and everyone has goal but how many people actually act on them.
-everyone wants to make great journey,they want to make money.get their dream job,graduate with *honours*,*invent* sth ,create sth,be someone.
-everyone wants to arrive at the great destination,but how many people actually want to  take a step *towards* that destination.
+everyone wants to make great journey,they want to make money.get their dream job,graduate with *honours*,*invent* sth
+,create sth,be someone.
+everyone wants to arrive at the great destination,but how many people actually want to take a step *towards* that
+destination.
 how many people speed most of their time preparing to make a journey that never *embark*.
-how many of them look for the right clothes, the right  bag, the right  level of motivation, the right   video, the right  song , the right *tools* or  the right time
-instead of looking for the right time to be productive,the power hour forces me be productive at the right time. 
+how many of them look for the right clothes, the right bag, the right level of motivation, the right video, the right
+song , the right *tools* or the right time
+instead of looking for the right time to be productive,the power hour forces me be productive at the right time.
 do i have a lot of thing to think about?
 i'll think about it after my hours is over.
 do i have a lot of relationship to *maintain*.
@@ -236,7 +257,7 @@ one hour is easy enough to each day,and i can *relax* after.
 do i get tried in the evenings.
 i'll schedule my power hour first thing in the morning when i most energy.
 the power hour solve the great *obstacle* to productive inaction.
-the mind find clever way to not take action and  the mind's clever secret is  product the *procrastination*.
+the mind find clever way to not take action and the mind's clever secret is product the *procrastination*.
 it doesn't tell itself that's being inactive
 rather,it finds thing that are *pseudo*-productive thing to do,and take a *pleasure* in doing them.
 the mind wants to clean house before working.
@@ -249,20 +270,22 @@ it wants to do a little reading before working.
 it wants to find the right music.
 it wants to set a dest properly without right *tools*.
 it wants to find productivity video to watch first.
-but mind can create an infinite number of tasks and problems for itself. 
+but mind can create an infinite number of tasks and problems for itself.
 how many folders should there be on the desktop.
 how should the folders be names.
-how should i  organize them within each other
+how should i organize them within each other
 what should each folder contain.
 how should i tag each folder.
 and it's can go on forever with anything.
 the mind love to productive procrastinate.
 it gets the *pleasure* of working without actually having to do any.
 the mind love to set around *sharping* it's *axe*,but it never wants to *hack* the tree.
-the power hour is commitment to take the axe as it is  and start chopping.
-the sharpening of the axe,the gathering of other tools,working on other things around the house can all take place after.
+the power hour is commitment to take the axe as it is and start chopping.
+the sharpening of the axe,the gathering of other tools,working on other things around the house can all take place
+after.
 before this first hour,i'll do nothing but chopping the trees.
-i'll *go* directly to the  most *pressing* problem in my life.and i'll find most difficult most impactful action that *might* *solve* it. and i'll do that.
+i'll *go* directly to the most *pressing* problem in my life.and i'll find most difficult most impactful action that *
+might* *solve* it. and i'll do that.
 sj once said,the focusing was about saying no.
 the first hour of my day is *sacred* *solitary* *reverent* unadorned and above all is about saying no.
 there's no *incense* or special tea or medication or cold shower or quick body workouts.
@@ -274,6 +297,73 @@ just me,my axe and tree.
 
 
 
+
+---
+social situation can be tough.
+there always seems to be a way that we should handle the interaction with people
+it gets overwhelm
+learn how to b o and can help to understand why people behavior in certain ways and to with to do in responds for making
+a good first impression to win arguments.
+where here to let you in on couple the secrets.
+but what kinds of tips and tricks can you use in everyday situations?
+are you curious on how you can begin people?
+here are 7 psychologic tricks that actually work
+one,make a better first impression by going first or last.
+here is a good tip when you come to make and awesome first impression
+go first or last
+it's only works when you in the group, but it's definite worth remembering
+know as the serious position fact
+this is one people remember you much more clearly,if the first or the last in the list
+this is very helpful job interviews,when you're meeting a person and want to make a last impression.
+two,the best way to get someone to do you a favor.
+there's number of ways to ask for a favor,but the most fact of method are rooted in the psychology.
+the nest time you ask freiends to help you out.consider making use of the rest procity of affect.
+simply put,people are more likely to do a favor if you're already done sth for them in the past.
+please don't make this the only reason why you help people.
+but the people you help will much likely to return a favor later on when you find yourself in the pch
+the good you put out in the world wil event come back to you.
+3.when ask a friend for help,tagging a enduring first
+convencing a single person to help you is hardly enough,but when you over end in a tire group is almost impossible at
+times
+but if you'rs smart,you use the best stander affect to you advantage.
+human are much less likely to help endividule in need if there's part of a group or croud
+because of this,you have much more success if you approch members of group individulely
+gradually convincing everyone and getting the help you need.
+4.how to find of someone really likes.
+it's always interesting to figure out the strongest connection between people.
+and in any group,there's always a few people who show a much deeper connection with each other comparing to the others.
+sometimes this deeper connection can be romantic ones.
+
+often it's little difficult to spot the strong connection ,but lasfter could be the answer.
+studies have shown that when we laught together in a group,we'll automaticly look at those we have re-micro relation
+with.
+we don't always glace to a person we like most in the group,but it's always someone we have a good relation with.
+5,the power of mirror
+mirror is one people magmake each other's meaner than behaviors usually during conversation.
+most of time ,we do the subconcious ,but if you're really be a trust ,you may want to give the relationship a little
+nage with the power of mirror
+try not when they nog during the conversation or use your hand convery your words in the similar style
+but don't do it medicately or you'll do abvious.
+research has shown , this task build trust and make other person feel comfortable around you
+6,when we're in a argument,just be faster
+when in a argument it's not always easy,and sometimes it help to have a car of your slive
+when the most effective meathod why we're want to be the simplest ,we also just talk faster.
+research has shown,when people speak quite,there's general thing has been more knowledgeable.
+it's hard for people to refuse quite fire point because there's might has a recard to interact what we're saying
+7,remember the people their fear to do whatever they want and there're be likely to do what you want.
+people don't like feeling if they have no choice.
+i'll always hate when i was forced to do sth against my will ,7 years piano
+so if you can create that illusion of choice,you're generally have a better chance of convincing someone to do sth
+you're not even lying to them,you're simply reminding them that they fear to do whatever they want
+of course thing,new this deep done
+but reminding them the effect,make you seem less pussy and increase the chances of them grooming with you
+it's simple trick,that's totally honest and non-multiple.
+and research shown,that the works wonders
+now we'll quick you the 7 simple psychology tricks.it's time to go out in to the real world and try them out.
+but remember we gain the power of come great with responsibility ,try not to be monipu or mland with this tricks
+have you try any of this method before
+what's some psychology tricks you've used in social situation.
+let's konw on the comments below.
 
 
 

@@ -751,16 +751,35 @@ var countSubstrings = function (s) {
 // console.log(res)
 
 // 剑指 Offer II 92. 翻转字符
+// 926
 // 返回使 s 单调递增 的最小翻转次数。
 // 输入：s = "00110" 输出：1 解释：我们翻转最后一位得到 00111.
 var minFlipsMonoIncr = function (s) {
     const len = s.length
-    const dp = Array(len).fill(Infinity)
-    let flag = s[0]
-    for (let i = 0; i < len; i++) {
+    // 值是0or1翻转最少次数
+    const dp = Array(len).fill(0).map(i => Array(2).fill(Infinity))
+    dp[0][0] = s[0] === '0' ? 0 : 1
+    dp[0][1] = s[0] === '1' ? 0 : 1
 
+    for (let i = 1; i < len; i++) {
+        dp[i][0] = dp[i - 1][0] + (s[i] === '0' ? 0 : 1)
+        dp[i][1] = Math.min(dp[i - 1][1], dp[i - 1][0]) + (s[i] === '1' ? 0 : 1)
     }
+    return Math.min(...dp[len - 1])
+}
+//
+// const res = minFlipsMonoIncr('010110')
+// console.log(res)
+
+// 剑指 Offer II 95. 最长公共子序列
+// 两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。
+var longestCommonSubsequence = function (text1, text2) {
+    const [n1, n2] = [text1.length, text2.length]
+    if (!n1 || !n2) return 0
+    const dp = []
+    return dp
 
 };
-const res = minFlipsMonoIncr('00110')
+// 输入：text1 = "abcde", text2 = "ace" 输出：3 解释：最长公共子序列是 "ace" ，它的长度为 3 。
+const res = longestCommonSubsequence('abcde', 'ace')
 console.log(res)
