@@ -711,15 +711,56 @@ var combinationSum4 = function (nums, target) {
     const len = nums.length
     if (!len) return 0
     const dp = Array(target + 1).fill(0)
+    dp[0] = 1
 
     for (let i = 1; i <= target; i++) {
         for (let j = 0; j < len; j++) {
-            if (!(i % nums[j])) dp[i] += 1
             if (dp[i - nums[j]]) dp[i] += dp[i - nums[j]]
         }
     }
-    return dp
+    return dp[target]
 };
 // 输入：nums = [1,2,3], target = 4 输出：7 解释： 所有可能的组合为： (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) 请注意，顺序不同的序列被视作不同的组合。
-const res = combinationSum4([1, 2, 3], 4)
+// const res = combinationSum4([1, 2, 3], 4)
+// console.log(res)
+
+// 剑指 Offer II 20. 回文子字符串的个数
+// 647
+// 输入：s = "aaa"
+// 输出：6
+// 解释：6个回文子串: "a", "a", "a", "aa", "aa", "aaa"
+var countSubstrings = function (s) {
+    const n = s.length
+    if (!n) return 0
+    if (n === 1) return 1
+    const dp = Array(n).fill(0)
+    dp[0] = 1
+    const isHW = s => s.split('').reverse().join('') === s
+    for (let i = 1; i < n; i++) {
+        for (let j = i; j >= 0; j--) {
+            const tmp = s.slice(j, i + 1)
+            if (isHW(tmp)) {
+                dp[i] += 1
+            }
+        }
+    }
+    const res = dp.length ? dp.reduce((i, p) => i + p) : 0
+    return res
+};
+// const res = countSubstrings('abc')
+// console.log(res)
+
+// 剑指 Offer II 92. 翻转字符
+// 返回使 s 单调递增 的最小翻转次数。
+// 输入：s = "00110" 输出：1 解释：我们翻转最后一位得到 00111.
+var minFlipsMonoIncr = function (s) {
+    const len = s.length
+    const dp = Array(len).fill(Infinity)
+    let flag = s[0]
+    for (let i = 0; i < len; i++) {
+
+    }
+
+};
+const res = minFlipsMonoIncr('00110')
 console.log(res)
