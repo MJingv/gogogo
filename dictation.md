@@ -294,76 +294,76 @@ no productive distractions.
 no productive procrastination.
 just me,my axe and tree.
 
-
-
-
-
 ---
-social situation can be tough.
+social situations can be tough.
 there always seems to be a way that we should handle the interaction with people
-it gets overwhelm
-learn how to b o and can help to understand why people behavior in certain ways and to with to do in responds for making
-a good first impression to win arguments.
-where here to let you in on couple the secrets.
+it gets overwhelming
+learning how to *brain* operate can help to understand why people are behavioring in certain ways and what to do with to
+do in response from making a good first impression to winning an argument.
+we're here to let you in on a couple the secrets.
 but what kinds of tips and tricks can you use in everyday situations?
-are you curious on how you can begin people?
-here are 7 psychologic tricks that actually work
+are you curious on how you can begin to *read* people?
+here are 7 *psychological* tricks that actually work
 one,make a better first impression by going first or last.
-here is a good tip when you come to make and awesome first impression
+here is a good tip when it comes to making an awesome first impression
 go first or last
-it's only works when you in the group, but it's definite worth remembering
-know as the serious position fact
-this is one people remember you much more clearly,if the first or the last in the list
-this is very helpful job interviews,when you're meeting a person and want to make a last impression.
+it's only works when you in the group, but it's definitely worth remembering
+know as the serious position *effect*
+this is *when* people remember you much more clearly,if the first or the last in the list
+this is very helpful in job interviews,when you're meeting a person and want to make  *lasting* impression.
 two,the best way to get someone to do you a favor.
-there's number of ways to ask for a favor,but the most fact of method are rooted in the psychology.
-the nest time you ask freiends to help you out.consider making use of the rest procity of affect.
+there's a number of ways to ask for a favor,but the most *effective*  methods are rooted in the psychology.
+the nest time you ask a freiend to help you out.consider making use of the *reciprocity* of effect.
 simply put,people are more likely to do a favor if you're already done sth for them in the past.
 please don't make this the only reason why you help people.
-but the people you help will much likely to return a favor later on when you find yourself in the pch
-the good you put out in the world wil event come back to you.
-3.when ask a friend for help,tagging a enduring first
-convencing a single person to help you is hardly enough,but when you over end in a tire group is almost impossible at
-times
-but if you'rs smart,you use the best stander affect to you advantage.
-human are much less likely to help endividule in need if there's part of a group or croud
-because of this,you have much more success if you approch members of group individulely
+but the people you help be much likely to return a favor later on when you find yourself in the *pinch*
+the good you put out in the world wil *eventually* come back to you.
+3.when ask a group of friends for help,tagging *individuals* first
+*convincing* a single person to help you is hard enough,but when you over end an *entire* group is almost impossible at
+times.
+but if you're smart,you'll use by  *stander* effect to you advantage.
+humans are much less likely to help an individual in need if they're part of a group or *crowd*
+because of this,you have much more success if you *approach* members of group individually
 gradually convincing everyone and getting the help you need.
-4.how to find of someone really likes.
+4.how to find out who someone really likes.
 it's always interesting to figure out the strongest connection between people.
-and in any group,there's always a few people who show a much deeper connection with each other comparing to the others.
+and in any group,there's always a few people who *share* a much deeper connection with each other compared to the
+others.
 sometimes this deeper connection can be romantic ones.
-
-often it's little difficult to spot the strong connection ,but lasfter could be the answer.
-studies have shown that when we laught together in a group,we'll automaticly look at those we have re-micro relation
+often it's little difficult to spot the strong connection ,but *laughter* could be the answer.
+studies have shown that when we laugh together in a group,we'll *automatically* look at those we have an *amicable*
+relation
 with.
-we don't always glace to a person we like most in the group,but it's always someone we have a good relation with.
-5,the power of mirror
-mirror is one people magmake each other's meaner than behaviors usually during conversation.
-most of time ,we do the subconcious ,but if you're really be a trust ,you may want to give the relationship a little
-nage with the power of mirror
-try not when they nog during the conversation or use your hand convery your words in the similar style
-but don't do it medicately or you'll do abvious.
-research has shown , this task build trust and make other person feel comfortable around you
+we don't always *glance* at a person we like the most in the group,but it's always someone we have a good relation with.
+5,the power of mirroring
+mirroring is *when* people *mimic* each other's *mannerisms* and behaviors usually during conversation.
+most of the time ,we do this *subconsciously* ,but if you're really *build* a trust ,you may want to give the
+relationship a little *nudge* with the power of mirror
+try *nodding* when they nod during the conversation or use your hand *convey* your words in the similar style
+but don't do it *immediately* or you'll do *obvious*.
+research has shown that this *technique* builds trust and make other person feel more comfortable around you.
 6,when we're in a argument,just be faster
-when in a argument it's not always easy,and sometimes it help to have a car of your slive
-when the most effective meathod why we're want to be the simplest ,we also just talk faster.
-research has shown,when people speak quite,there's general thing has been more knowledgeable.
-it's hard for people to refuse quite fire point because there's might has a recard to interact what we're saying
-7,remember the people their fear to do whatever they want and there're be likely to do what you want.
+*winning*  a argument it's not always easy,and sometimes it help to have a *card* up your *sleeve*
+one of the most effective methods *might* also be one of the simplest ,just talk faster.
+research has shown,when people speak quitely,there's general *seen* as been more knowledgeable.
+it's harder for people to refuse quite fire points because there's *mind* has to work harder to *interrupt* what we're
+saying
+7,remember the people their *free* to do whatever they want and they'll be more likely to do what you want.
 people don't like feeling if they have no choice.
-i'll always hate when i was forced to do sth against my will ,7 years piano
+i'll always hated when i was forced to do sth against my will ,7 years of piano
 so if you can create that illusion of choice,you're generally have a better chance of convincing someone to do sth
-you're not even lying to them,you're simply reminding them that they fear to do whatever they want
-of course thing,new this deep done
-but reminding them the effect,make you seem less pussy and increase the chances of them grooming with you
-it's simple trick,that's totally honest and non-multiple.
+you're not even lying to them,you're simply reminding them that they're *free* to do whatever they want
+of course they *know* this deeper *down*
+but reminding them of the fact make you seem less *pushy* and it increases the chances of them *agreeing* with you
+it's simple trick,that's totally honest and not *manipulative*.
 and research shown,that the works wonders
-now we'll quick you the 7 simple psychology tricks.it's time to go out in to the real world and try them out.
-but remember we gain the power of come great with responsibility ,try not to be monipu or mland with this tricks
-have you try any of this method before
-what's some psychology tricks you've used in social situation.
-let's konw on the comments below.
+now we've *equipped* you the 7 simple psychology tricks.it's time to go out in to the real world and try them out.
+but remember with  *great*  power comes great with responsibility ,try not to be *manipulative* or *malevolent* with
+this tricks
+have you try any of this methods before
+what are some psychology tricks you've used in social situation.
+let's know in the comments below.
+if you like this video,please give us a like and hit subscribe. 
 
 
 

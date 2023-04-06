@@ -42,5 +42,5 @@ var findSquare = function (matrix) {
 
 };
 // 输入: [ [1,0,1], [0,0,1], [0,0,1] ] 输出: [1,0,2] 解释: 输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
-// const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
-// console.log(res)
+const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
+console.log(res)
