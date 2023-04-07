@@ -363,7 +363,24 @@ this tricks
 have you try any of this methods before
 what are some psychology tricks you've used in social situation.
 let's know in the comments below.
-if you like this video,please give us a like and hit subscribe. 
+if you like this video,please give us a like and hit subscribe.
+
+---
+today i wanted to talk a little bit about those little thing that you can say to help you during in the english
+conversation.
+so let's say you have a conversation with someone and they're talking about sth that you find interesting.
+a *neat* way to make the conversation *flow* better , it's to say thing like that's *neat* or that's cool or that's
+interesting.
+and if you som time to think ,you can even *stretch* it out and say thing like i find that interesting, pretty *neat*,i
+find that fascinating.
+another suggestion to help conversion with english speakers go better is to simply *ask* them a question
+people love talking about themselves
+so you can ask question like how many times did you do it? how long were you gone for ?or did you enjoy yourself?or
+describe that to me a bit it's s *fascinating*
+which leads me to the last example ,you can combine the two.
+so you want to get comfortable saying thing like this that's *neat* i find that fascinating,how long were you gone for?
+or that's really interesting, so you like *camping*.or i find that's pretty neat,i've always wanted to start this,was it
+hard to get started.
 
 
 
