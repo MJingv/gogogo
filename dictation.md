@@ -382,6 +382,38 @@ so you want to get comfortable saying thing like this that's *neat* i find that 
 or that's really interesting, so you like *camping*.or i find that's pretty neat,i've always wanted to start this,was it
 hard to get started.
 
+---
+a japanese *method* to relax 5 minutes.
+every day you're  stressed about too many things,work relationship family bills other people's *opinions*.
+a certain amount of stress normal and even necessary ,but excessive stress can take a *toll* on your life and health.
+you're not going to  believe what i am tell you next.
+you can get rid of stress in no time at all.
+all you need to *cope* with anxiety and headache is just one method,a unique *ancient* janpanese technique.
+it takes less than 5 minutes and can be done about anywhere.
+to practice this technique,you should first understand that each finger of your hand represent the different feelings or attitude.
+let's see exactly what.
+here's your hand,*thumb*,index,middle,ring and *pinkie*.
+the thumb help *combat* emotions like anxiety and worry.
+the index can help you *combat* fear.
+the middle finger can help you control angry and *resentment*.
+the ring finger can  help you find depression and sadness also it's responsible for making you more *decisive*.
+and  pinkie help calm anxiety and increses optimism and confidence.this finger represent self-esteem.
+let's repeat it again.
+thumb anxiety ,index fear ,middle angry ring sadness ,pinkie self-esteem.
+keep repeating it *till* you remember it.
+now let's see how this unusual methods works.
+to *harmonise* the life *energy* in the body,grasp the finger with the *opposite* hand ,*wrapping* all the finger and thumb around it.
+now hold each finger for 1 to 2 minutes.
+you'll know it's working when you feel a *pulsating* sensation.
+if you want to *calm* your mind,*slightly* press in the center of the *palm* with the thumb of the opposite hand and hold it for at least 1 minutes.
+it'll help you *relieve* stress get rid of negative thoughts,and get *peace* of mind in the middle of hustle and bustle.
+practice this technique every day to stay calm and reestablish the balance within yourself.
+remember that there are many other ways to cope with stress,exercise ,*yoga* ,*massage* ,meeting friends,good music and others.
+however,this japanese technique is one of the best methods to revive yourself  quickly.
+this method is absolute works wonder for everyone regardless the *age* and gender.
+have you already try it?
+how does it work for you 
+
 
 
 
