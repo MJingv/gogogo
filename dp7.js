@@ -74,7 +74,7 @@ var knightDialer1 = function (n) {
 // const res = knightDialer1(2)//20
 // console.log(res)
 
-// 72. Edit Distance
+// 72. Edit Distance hard
 // 给你两个单词 word1 和 word2， 请返回将 word1 转换成 word2 所使用的最少操作数 。
 // 插入一个字符,删除一个字符,替换一个字符
 var minDistance = function (word1, word2) {
@@ -244,7 +244,15 @@ var findCheapestPrice1 = function (n, flights, src, dst, k) {
     }
     return helper(dst, k + 1)
 }
-const res = findCheapestPrice1(3, [[0, 1, 100], [1, 2, 100], [0, 2, 500]], 0, 2, 1)
+// const res = findCheapestPrice1(3, [[0, 1, 100], [1, 2, 100], [0, 2, 500]], 0, 2, 1)
+// console.log(res)
+
+// 312. 戳气球
+// 输入：nums = [3,1,5,8] 输出：167
+// 求所能获得硬币的最大数量。
+var maxCoins = function (nums) {
+
+
+};
+const res = maxCoins([3, 1, 5, 8])
 console.log(res)
-
-
