@@ -137,9 +137,27 @@ var minDistance1 = function (word1, word2) {
 
     return dp[m][n]
 }
-
-const res = minDistance1("horse", "ros")
 // horse -> rorse (将 'h' 替换为 'r') rorse -> rose (删除 'r') rose -> ros (删除 'e')
-console.log(res)
+
+// const res = minDistance1("horse", "ros")
+// console.log(res)
 
 // 97. 交错字符串
+var isInterleave = function (s1, s2, s3) {
+    const [l1, l2, l3] = [s1.length, s2.length, s3.length]
+    const helper = (i, j, k) => {
+        console.log(i, j, k)
+        if (i > l1) return s2.slice(j, l2) === s3.slice(k, l3)
+        if (j === l2) return s1.slice(i, l1) === s3.slice(k, l3)
+        if (s1[i] === s3[k]) {
+            helper(i + 1, j, k + 1)
+        }
+        if (s2[j] === s3[k]) {
+            helper(i, j + 1, k + 1)
+        }
+    }
+    return helper(0, 0, 0)
+};
+// 输入：s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
+const res = isInterleave('aabcc', 'dbbca', 'aadbbcbcac')
+console.log(res)
