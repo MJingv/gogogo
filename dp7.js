@@ -144,20 +144,107 @@ var minDistance1 = function (word1, word2) {
 
 // 97. 交错字符串
 var isInterleave = function (s1, s2, s3) {
+    // timeout 递归
     const [l1, l2, l3] = [s1.length, s2.length, s3.length]
-    const helper = (i, j, k) => {
-        console.log(i, j, k)
-        if (i > l1) return s2.slice(j, l2) === s3.slice(k, l3)
-        if (j === l2) return s1.slice(i, l1) === s3.slice(k, l3)
-        if (s1[i] === s3[k]) {
-            helper(i + 1, j, k + 1)
-        }
-        if (s2[j] === s3[k]) {
-            helper(i, j + 1, k + 1)
-        }
+    if (l1 + l2 !== l3) return false
+    const helper = (i, j) => {
+        const k = i + j
+        if (k === l3) return true
+        let res = false
+        if (i < l1 && s1[i] === s3[k]) res = helper(i + 1, j)
+        if (j < l2 && s2[j] === s3[k]) res = res || helper(i, j + 1)
+        return res
     }
-    return helper(0, 0, 0)
+    return helper(0, 0)
 };
+var isInterleave1 = function (s1, s2, s3) {
+    const [l1, l2, l3] = [s1.length, s2.length, s3.length]
+    if (l1 + l2 !== l3) return false
+    const memo = Array(l1 + 1).fill(0).map(i => Array(l2 + 1).fill(-1))
+    const helper = (i, j) => {
+        const k = i + j
+        if (k === l3) return true
+        if (memo[i][j] !== -1) return memo[i][j]
+        let res = false
+        if (i < l1 && s1[i] === s3[k]) res = helper(i + 1, j)
+        if (j < l2 && s2[j] === s3[k]) res = res || helper(i, j + 1)
+        memo[i][j] = res
+        return res
+
+    }
+    return helper(0, 0)
+
+}
 // 输入：s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
-const res = isInterleave('aabcc', 'dbbca', 'aadbbcbcac')
+// const res = isInterleave1('aabcc', 'dbbca', 'aadbbcbcac')
+// console.log(res)
+
+// 787. K 站中转内最便宜的航班
+// 你的任务是找到出一条最多经过 k 站中转的路线，使得从 src 到 dst 的 价格最便宜 ，并返回该价格。 如果不存在这样的路线，则输出 -1。
+// n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]] src = 0, dst = 2, k = 1 输出: 200
+var findCheapestPrice = function (n, flights, src, dst, k) {
+    // timeout
+    if (!n) return 0
+    const map = new Map()
+    flights.map(item => {
+        const [to, from, price] = [item[1], item[0], item[2]]
+        if (!map.has(to)) {
+            map.set(to, [])
+        }
+        map.set(to, [...map.get(to), [from, price]])
+    })
+    // 定义：从 src 出发，k 步之内到达 s 的最短路径权重
+    const helper = (s, k) => {
+        if (s === src) return 0
+        if (k === 0) return -1
+        let res = Infinity
+        if (map.has(s)) {
+            const list = map.get(s)
+            list.map(item => {
+                const [from, price] = item
+                const sub = helper(from, k - 1)
+                if (sub !== -1) {
+                    res = Math.min(res, sub + price)
+                }
+            })
+
+        }
+        return res === Infinity ? -1 : res
+    }
+    return helper(dst, k + 1)
+};
+var findCheapestPrice1 = function (n, flights, src, dst, k) {
+    const len = flights.length
+    if (!len || !n) return -1
+    const map = new Map()
+    flights.map(item => {
+        const [from, to, price] = item
+        if (!map.has(to)) map.set(to, [])
+        map.get(to).push([from, price])
+    })
+    const memo = Array(n).fill(0).map(i => Array(k + 2).fill(666))
+
+    const helper = (s, k) => {
+        if (s === src) return 0
+        if (k === 0) return -1
+        let res = Infinity
+        if (memo[s][k] !== 666) return memo[s][k]
+        if (map.has(s)) {
+            const list = map.get(s)
+            list.map(item => {
+                const [from, price] = item
+                const sub = helper(from, k - 1)
+                if (sub !== -1) {
+                    res = Math.min(sub + price, res)
+                }
+            })
+        }
+        memo[s][k] = res === Infinity ? -1 : res
+        return memo[s][k]
+    }
+    return helper(dst, k + 1)
+}
+const res = findCheapestPrice1(3, [[0, 1, 100], [1, 2, 100], [0, 2, 500]], 0, 2, 1)
 console.log(res)
+
+
