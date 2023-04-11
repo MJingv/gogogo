@@ -268,3 +268,37 @@ var maxCoins = function (nums) {
 };
 // const res = maxCoins([3, 1, 5, 8])
 // console.log(res)
+
+
+// 486. 预测赢家
+// 877. 石子游戏
+var PredictTheWinner = function (nums) {
+    const n = nums.length
+    // [i...j] 先后 的最大值
+    // 求 [0,n-1] 的最大值
+    const dp = Array(n).fill(0).map(i => Array(n).fill(0).map(i => Array(2).fill(0)))
+    for (let i = 0; i < n; i++) {
+        dp[i][i][0] = nums[i]
+    }
+    // i从n-1...0，j从i...n-1
+    for (let i = n - 1; i >= 0; i--) {
+        for (let j = i + 1; j < n; j++) {
+            const left = nums[i] + dp[i + 1][j][1]   // 先手选左边,
+            const right = nums[j] + dp[i][j - 1][1]// 先手选右边,
+            if (left >= right) {
+                // 先手选左边，后手
+                dp[i][j][0] = left
+                dp[i][j][1] = dp[i + 1][j][0]
+            } else {
+                dp[i][j][0] = right
+                dp[i][j][1] = dp[i][j - 1][0]
+
+            }
+        }
+    }
+    const [f, s] = dp[0][n - 1]
+    return f >= s
+};
+// const res = PredictTheWinner([2, 8, 3, 5])//false
+// console.log(res)
+
