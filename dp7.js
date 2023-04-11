@@ -247,12 +247,24 @@ var findCheapestPrice1 = function (n, flights, src, dst, k) {
 // const res = findCheapestPrice1(3, [[0, 1, 100], [1, 2, 100], [0, 2, 500]], 0, 2, 1)
 // console.log(res)
 
-// 312. 戳气球
-// 输入：nums = [3,1,5,8] 输出：167
-// 求所能获得硬币的最大数量。
+// 312. 戳气球 hard
+// 输入：nums = [3,1,5,8] 输出：167 求所能获得硬币的最大数量。
+// 转化子问题，倒着思考，如果就剩一个气球反推
 var maxCoins = function (nums) {
+    const n = nums.length
+    nums.push(1)
+    nums.unshift(1)
+    // 戳i到j之间气球得最高分，求dp[0][n+1]的值
+    const dp = Array(n + 2).fill(0).map(i => Array(n + 2).fill(0))
 
-
+    for (let i = n; i >= 0; i--) {
+        for (let j = i + 1; j < n + 2; j++) {
+            for (let k = i + 1; k < j; k++) {
+                dp[i][j] = Math.max(dp[i][j], dp[i][k] + dp[k][j] + nums[i] * nums[j] * nums[k])
+            }
+        }
+    }
+    return dp[0][n + 1]
 };
-const res = maxCoins([3, 1, 5, 8])
-console.log(res)
+// const res = maxCoins([3, 1, 5, 8])
+// console.log(res)
