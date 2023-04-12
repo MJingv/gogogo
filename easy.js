@@ -558,5 +558,35 @@ var reverseOnlyLetters = function (s) {
 
 };
 // 输入：s = "Test1ng-Leet=code-Q!" 输出："Qedo1ct-eeLg=ntse-T!"
-const res = reverseOnlyLetters("Test1ng-Leet=code-Q!")
+// const res = reverseOnlyLetters("Test1ng-Leet=code-Q!")
+// console.log(res)
+
+
+// lcp 66 最小展台数量
+// demand[i][j] 表示第 i 天展览时第 j 个展台的类型。
+// 请返回后勤部需要准备的 最小 展台数量。
+// 同一展台在不同天中可以重复使用。
+var minNumBooths = function (demand) {
+    const len = demand.length
+    if (!len) return ''
+    const map = new Map()
+    demand.map(i => {
+        let tmp = new Map()
+        i.split('').map(j => {
+            tmp.set(j, (tmp.get(j) || 0) + 1)
+
+        })
+        i.split('').map(j => {
+            const sum = Math.max(map.get(j) || 0, tmp.get(j))
+            map.set(j, sum)
+        })
+    })
+    let res = 0
+    for (let item of map.values()) {
+        res += item
+
+    }
+    return res
+};
+const res = minNumBooths(["acd", "bed", "accd"])
 console.log(res)

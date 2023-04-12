@@ -302,3 +302,13 @@ var PredictTheWinner = function (nums) {
 // const res = PredictTheWinner([2, 8, 3, 5])//false
 // console.log(res)
 
+
+
+
+
+
+// 64. 最小路径
+// 剑指 Offer II 099. 最小路径之和
+var minPathSum = function(grid) {
+
+};

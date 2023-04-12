@@ -108,3 +108,21 @@ depression
 - getting problem *diagnosed* and *treated* ,both in your *physical* and mental health is great *first*  step to ge your
   life back on track.
 - there you can get *access* to resource and strategy to better your situation.
+
+sleep
+---
+
+- what comes to mind when you think of things affect your mental health
+- do you think of child trama or obuse.
+- it's true that this advance have some obvious affect on your mental health
+- did you know that even small thing can also impact you they might even be more track,because you don't recognize them
+  to help you avoid some of them.
+- here are 6 small but harmful things that destroy your mental health
+- no.1 bad passion
+- let's be honest.passion m be the last thing at night when you think of mental health but it matters accroding to a
+  study from dn behavior therpy and experience cgatrue,a person terrible paster does have an impact on your mood this
+  experience shows that people with bad passion are put high stress level and low mood and low to stand up hood when put
+  in the same difficult situation those with strict passion are put improved mood ,high self-esteem and reduce fotige in
+  the same dif situation good and obright paasion also provide focus and attention even in stress situation and combrust
+  confidence not a mention the house benefit when you physically no2.clata m c or co says that we only need to keep
+  thing that a d
