@@ -344,28 +344,23 @@ var calculateMinimumHP = function (dungeon) {
     return helper()
 };
 var calculateMinimumHP1 = function (dungeon) {
+    // 再做这道题，重点是想明白为什么从右下角开始，而不是一般的左上角
+    //  我从左上角开始，拿不到cur需要的值
     // dp
     const [m, n] = [dungeon.length, dungeon[0].length]
     // 走到[i,j]时需要的最少血量时dp[i][j]
-    const dp = Array(m).fill(0).map(i => Array(n).fill(Infinity))
-    dp[0][0] = dungeon[0][0] > 0 ? 1 : 1 - dungeon[0][0]
-    for (let i = 1; i < m; i++) {
-        const tmp = dp[i - 1][0] - dungeon[i][0]
-        dp[i][0] = tmp <= 0 ? 1 : tmp
-    }
-    for (let j = 1; j < n; j++) {
-        const tmp = dp[0][j - 1] - dungeon[0][j]
-        dp[0][j] = tmp <= 0 ? 1 : tmp
-    }
-    for (let i = 1; i < m; i++) {
-        for (let j = 1; j < n; j++) {
-            const tmp = Math.min(dp[i - 1][0], dp[i][j - 1]) - dungeon[i][j]
-            dp[i][j] = tmp <= 0 ? 1 : tmp
+    // 求dp[0][0]
+    const dp = Array(m + 1).fill(0).map(i => Array(n + 1).fill(Infinity))
+    // bad case
+    dp[m][n - 1] = 1
+    dp[m - 1][n] = 1
+    for (let i = m - 1; i >= 0; i--) {
+        for (let j = n - 1; j >= 0; j--) {
+            dp[i][j] = Math.max(1, Math.min(dp[i + 1][j], dp[i][j + 1]) - dungeon[i][j])
         }
     }
 
-
-    return dp
+    return dp[0][0]
 }
 const res = calculateMinimumHP1([[-2, -3, 3], [-5, -10, 1], [10, 30, -5]]) //7
 console.log(res)
