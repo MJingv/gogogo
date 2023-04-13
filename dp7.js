@@ -303,12 +303,69 @@ var PredictTheWinner = function (nums) {
 // console.log(res)
 
 
-
-
-
-
 // 64. 最小路径
 // 剑指 Offer II 099. 最小路径之和
-var minPathSum = function(grid) {
+// 输入：grid = [[1,3,1],[1,5,1],[4,2,1]] 输出：7
+var minPathSum = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(Infinity))
+    dp[0][0] = grid[0][0]
+    for (let i = 1; i < m; i++) {
+        dp[i][0] = dp[i - 1][0] + grid[i][0]
+    }
+    for (let j = 1; j < n; j++) {
+        dp[0][j] = dp[0][j - 1] + grid[0][j]
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j]
+        }
 
+    }
+    return dp[m - 1][n - 1]
 };
+// const res = minPathSum([[1, 3, 1], [1, 5, 1], [4, 2, 1]])
+// console.log(res)
+
+
+// 174. 地下城游戏 hard
+var calculateMinimumHP = function (dungeon) {
+    // 递归
+    const [m, n] = [dungeon.length, dungeon[0].length]
+    const memo = Array(m).fill(0).map(i => Array(n).fill(Infinity))
+    const helper = (i = 0, j = 0) => {
+        if (i === m - 1 && j === n - 1) return dungeon[i][j] >= 0 ? 1 : 1 - dungeon[i][j]
+        if (i >= m || j >= n) return Infinity
+        if (memo[i][j] !== Infinity) return memo[i][j]
+        const tmp = Math.min(helper(i + 1, j), helper(i, j + 1)) - dungeon[i][j]
+        memo[i][j] = tmp <= 0 ? 1 : tmp
+        return memo[i][j]
+    }
+    return helper()
+};
+var calculateMinimumHP1 = function (dungeon) {
+    // dp
+    const [m, n] = [dungeon.length, dungeon[0].length]
+    // 走到[i,j]时需要的最少血量时dp[i][j]
+    const dp = Array(m).fill(0).map(i => Array(n).fill(Infinity))
+    dp[0][0] = dungeon[0][0] > 0 ? 1 : 1 - dungeon[0][0]
+    for (let i = 1; i < m; i++) {
+        const tmp = dp[i - 1][0] - dungeon[i][0]
+        dp[i][0] = tmp <= 0 ? 1 : tmp
+    }
+    for (let j = 1; j < n; j++) {
+        const tmp = dp[0][j - 1] - dungeon[0][j]
+        dp[0][j] = tmp <= 0 ? 1 : tmp
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            const tmp = Math.min(dp[i - 1][0], dp[i][j - 1]) - dungeon[i][j]
+            dp[i][j] = tmp <= 0 ? 1 : tmp
+        }
+    }
+
+
+    return dp
+}
+const res = calculateMinimumHP1([[-2, -3, 3], [-5, -10, 1], [10, 30, -5]]) //7
+console.log(res)

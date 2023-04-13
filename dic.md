@@ -109,7 +109,7 @@ depression
   life back on track.
 - there you can get *access* to resource and strategy to better your situation.
 
-sleep
+mental health
 ---
 
 - what comes to mind when you think of things affect your mental health
@@ -124,5 +124,53 @@ sleep
   experience shows that people with bad passion are put high stress level and low mood and low to stand up hood when put
   in the same difficult situation those with strict passion are put improved mood ,high self-esteem and reduce fotige in
   the same dif situation good and obright paasion also provide focus and attention even in stress situation and combrust
-  confidence not a mention the house benefit when you physically no2.clata m c or co says that we only need to keep
-  thing that a d
+  confidence not a mention the house benefit when you physically
+- no2.clata
+- mc or all well known orginaze comsultants says that we only need to keep thing that about drvie
+- declutting has increase popularity of this years.
+- and accroding to a study rbs,rearchs from x journey claims that clutter is highly relative to the procrastination
+- when you're surround by over whelming mess,you tend to put off cleaning before you know it.
+- it just f i to orginaze ,this circle of lead to fastrition which in term affect your mental health
+- another study from journey of personality and social psychology show that clutter increase the cutter the level years
+  the home
+- reorginazing is not just for a static ,it can also improve out mental health.
+- no3.self-deprecating jokes
+- laughter is the best medicine,but when you are the joke,it's a different story
+- self-d jokes are undervaluing or blame yourself though hulmer.
+- research from university of gnd ,such a study, it's a sort of self witness,and the person is not taking themselves
+  seriously.
+- it can also be sight of great well being in small dous
+- when you do it too often and it becomes the habit self-d jokes can be detrimental to your mental health.
+- constant self-deprediting jokes can create codi distortions.
+- when you start to believe that your jokes or you,it creates a different notion of yourself affect your identity and it
+  does link to your depresion and disoya.
+- a balance of how and when to make it fun to find yourself is the key to health hulmer and mental health.
+- no4.selfy
+- but first ,let me take it a selfy,says it a famous song in the 2010 pop area.
+- the self has become such a culture icon,many social medium platforms are sent to arount it.
+- it's a also a fun to do ,but the negative affects of this everyday activity can be detrimental.
+- several of studies have already shown that the consequence of selfy on body image and mental health.
+- it new study by m in 2018,let's conclusion is even expended says that even selfy said that re oken and retouch for a
+  better result ,still resulting in the negative self-image.
+- they show similar body conjustnice and anxity to those who did not added or retouch the images
+- no5.mulity tasking
+- multiy tasking is highly valued.
+- company hire those who can multy tasks to increase productivity and droven new.
+- accomplish a lot feel good,mulity tasking has its negative affects on mental health
+- multy tasking is c relate to irut ability and oro low a mood .
+- because you take on so many activities at once ,you put yourself in highly stressful situation.
+- this can make being productive error honictily hoda and sarcifise the quality of work
+- some times,it's best to focus on one thing at a time.
+- no6,venting or complaining
+- venting or complaining has its benefits.
+- being open about your motion can help you express your mind.
+- because laught can be hurts sometimes ,but when you do it too much and too often,it can have detrimental affects on
+  your mental health.
+- accroding to your experts ,venting is part of your body emotional responds.
+- in sth is not right,it is your body's way to satisfy your emotional need.
+- venting will help you find other perspective about certain matters.
+- by doing even too much,you might loss sights of another perspective that might have to provide the bad ideas.
+- you block cogtive of susion and you loss your trival in negative thoughts effecting your mental health.
+- scientists also believe that too much venting or open the ways for you to put string on your relationships.
+- a good balance of speaking and listening is balance you need to have when you vent.
+- as more as they things may same ,they can have a huge affect in your mental health.
