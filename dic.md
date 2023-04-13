@@ -112,65 +112,71 @@ depression
 mental health
 ---
 
-- what comes to mind when you think of things affect your mental health
-- do you think of child trama or obuse.
-- it's true that this advance have some obvious affect on your mental health
-- did you know that even small thing can also impact you they might even be more track,because you don't recognize them
-  to help you avoid some of them.
+- what comes to mind when you think of things affecting your mental health?
+- do you think of childhood *trauma* or *abuse*?
+- it's true that these *events* have *severe*  *effects* on your mental health
+- but did you know that even small thing can also impact you
+- they might even be more *tricky*,because you don't recognize them to help you avoid some of them.
 - here are 6 small but harmful things that destroy your mental health
-- no.1 bad passion
-- let's be honest.passion m be the last thing at night when you think of mental health but it matters accroding to a
-  study from dn behavior therpy and experience cgatrue,a person terrible paster does have an impact on your mood this
-  experience shows that people with bad passion are put high stress level and low mood and low to stand up hood when put
-  in the same difficult situation those with strict passion are put improved mood ,high self-esteem and reduce fotige in
-  the same dif situation good and obright paasion also provide focus and attention even in stress situation and combrust
-  confidence not a mention the house benefit when you physically
-- no2.clata
-- mc or all well known orginaze comsultants says that we only need to keep thing that about drvie
-- declutting has increase popularity of this years.
-- and accroding to a study rbs,rearchs from x journey claims that clutter is highly relative to the procrastination
-- when you're surround by over whelming mess,you tend to put off cleaning before you know it.
-- it just f i to orginaze ,this circle of lead to fastrition which in term affect your mental health
+- no.1 bad *posture*
+- let's be honest.*posture* might be the last thing in mind when you think of mental health, but it matters.
+- according to a study from dn of behavior *therapy* and experience *psychiatry*,a person's terrible posture does have
+  an impact on your mood.
+- this experience shows that people with bad posture  *report* *higher* stress levels and a lower mood and low and those
+  who stand up tall when put in these same difficult situations.
+- those with *straighter* postures *report* an improved mood ,higher self-esteem and reduced *fatigue* in the same
+  difficult situation.
+- good and *upright* posture also provide focus and attention even in stressful situations and can *boost* confidence.
+- not to mention the *health* benefits when you physically
+- no2.*clutter*
+- mc a well-known organizing *consultant* says that we only need to keep thing that *spark* *joy*
+- *decluttering* has increased popularity over the years.
+- and according to a study ,*rightfully so*,research from the *current* *psychology* journey claims that clutter is
+  highly relative to the procrastination
+- when you're surrounded by overwhelming mess,you tend to put off cleaning before you know it.
+- it just feels impossible to organize ,this circle often leads to *frustration* which in *turn* affects your mental
+  health.
 - another study from journey of personality and social psychology show that clutter increase the cutter the level years
   the home
-- reorginazing is not just for a static ,it can also improve out mental health.
-- no3.self-deprecating jokes
+- reorganizing is not just for *aesthetics* ,it can also improve our mental health.
+- no3.self-deprecatign jokes
 - laughter is the best medicine,but when you are the joke,it's a different story
-- self-d jokes are undervaluing or blame yourself though hulmer.
-- research from university of gnd ,such a study, it's a sort of self witness,and the person is not taking themselves
-  seriously.
-- it can also be sight of great well being in small dous
-- when you do it too often and it becomes the habit self-d jokes can be detrimental to your mental health.
-- constant self-deprediting jokes can create codi distortions.
-- when you start to believe that your jokes or you,it creates a different notion of yourself affect your identity and it
-  does link to your depresion and disoya.
-- a balance of how and when to make it fun to find yourself is the key to health hulmer and mental health.
-- no4.selfy
-- but first ,let me take it a selfy,says it a famous song in the 2010 pop area.
-- the self has become such a culture icon,many social medium platforms are sent to arount it.
+- self-deprecating jokes are undervaluing or *belittling* yourself though *humor*.
+- research from university of gnd ,*suggests* that it's a *sign* of *self-awareness*,and that a person is not taking
+  themselves seriously.
+- it can also be *sign* of great well-being in small *doses*
+- when you do it too often and it becomes the habit self-deprecating jokes can be detrimental to your mental health.
+- constant self-deprecating jokes can create *cognitive* distortions.
+- when you start to believe that your jokes or you,it creates a different notion of yourself affect your sefl-identity
+  and it is linked to your depression and *dysphoria*.
+- a balance of how and when to make fun of yourself is the key to health *humor* and mental health.
+- no4.*selfie*
+- but first ,let me take it a selfie,says it a famous song in the 2010s pop *era*.
+- the selfie has become such a culture icon,where many social *media* platforms are *censored*  arount it.
 - it's a also a fun to do ,but the negative affects of this everyday activity can be detrimental.
-- several of studies have already shown that the consequence of selfy on body image and mental health.
-- it new study by m in 2018,let's conclusion is even expended says that even selfy said that re oken and retouch for a
-  better result ,still resulting in the negative self-image.
-- they show similar body conjustnice and anxity to those who did not added or retouch the images
-- no5.mulity tasking
-- multiy tasking is highly valued.
-- company hire those who can multy tasks to increase productivity and droven new.
-- accomplish a lot feel good,mulity tasking has its negative affects on mental health
-- multy tasking is c relate to irut ability and oro low a mood .
-- because you take on so many activities at once ,you put yourself in highly stressful situation.
-- this can make being productive error honictily hoda and sarcifise the quality of work
-- some times,it's best to focus on one thing at a time.
+- several of studies have already shown that the consequence of selfies on body image and mental health.
+- in a new study by m in 2018,this conclusion is even expended showing that even selfies that retaken and retouched for
+  a better result ,still resulted in the negative self-image.
+- they show similar body *consciousness* and anxiety to those who did not *edit* or retouch the images
+- no5.multitasking
+- multitasking is highly valued.
+- company hire those who can multitasking to increase productivity and *revenue*.
+- while *accomplishing* a lot feels good,multitasking has its negative effects on mental health
+- multitasking is *correlated*  to *irritability*  and *overall* lower mood.
+- because you take on so many activities at once ,you put yourself in highly stress full situation.
+- this can make being productive *ironically* *harder*  and *sacrifice* the quality of work
+- sometimes,it's best to focus on one thing at a time.
 - no6,venting or complaining
 - venting or complaining has its benefits.
-- being open about your motion can help you express your mind.
-- because laught can be hurts sometimes ,but when you do it too much and too often,it can have detrimental affects on
+- being open about your emotions can help you express your mind.
+- because *life* can be *hard* sometimes ,but when you do it too much and too often,it can have detrimental effects on
   your mental health.
-- accroding to your experts ,venting is part of your body emotional responds.
-- in sth is not right,it is your body's way to satisfy your emotional need.
+- according to your experts ,venting is part of your body emotional responds.
+- *when* sth is not right,it is your body's way to satisfy your emotional needs.
 - venting will help you find other perspective about certain matters.
-- by doing even too much,you might loss sights of another perspective that might have to provide the bad ideas.
-- you block cogtive of susion and you loss your trival in negative thoughts effecting your mental health.
-- scientists also believe that too much venting or open the ways for you to put string on your relationships.
+- but when you *vent* even too much,you might lose sight of another perspective that might have to provide a *better*
+  ideas.
+- you block *cognitive* *soothing* and you lose your *trail* in negative thoughts affecting your mental health.
+- scientists also believe that too much venting or open the ways for you to put a *strain* on your relationships.
 - a good balance of speaking and listening is balance you need to have when you vent.
-- as more as they things may same ,they can have a huge affect in your mental health.
+- as *small* as these things may *seem* ,they can have huge effect on your mental health.

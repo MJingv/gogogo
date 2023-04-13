@@ -362,5 +362,14 @@ var calculateMinimumHP1 = function (dungeon) {
 
     return dp[0][0]
 }
-const res = calculateMinimumHP1([[-2, -3, 3], [-5, -10, 1], [10, 30, -5]]) //7
+// const res = calculateMinimumHP1([[-2, -3, 3], [-5, -10, 1], [10, 30, -5]]) //7
+// console.log(res)
+
+// 514. 自由之路 hard
+// 输入: ring = "godding", key = "godding" 输出: 13
+
+var findRotateSteps = function (ring, key) {
+
+};
+const res = findRotateSteps('godding', 'godding')
 console.log(res)
