@@ -371,5 +371,41 @@ var calculateMinimumHP1 = function (dungeon) {
 var findRotateSteps = function (ring, key) {
 
 };
-const res = findRotateSteps('godding', 'godding')
+// const res = findRotateSteps('godding', 'godding')
+// console.log(res)
+
+
+// 198. 打家劫舍
+// 如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+// 给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。
+var rob = function (nums) {
+    const len = nums.length
+    const dp = Array(len).fill(0)
+    dp[0] = nums[0]
+    dp[1] = Math.max(nums[0], nums[1])
+    for (let i = 2; i < len; i++) {
+        dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i])
+    }
+    return dp[len - 1]
+
+};
+// 213. 打家劫舍 II
+// 每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈
+var rob2 = function (nums) {
+    // 不对
+    const len = nums.length
+    let [s1, s2] = [0, 0]
+    for (let i = 0; i < len; i++) {
+        if (i % 2) {
+            s2 += nums[i]
+        } else {
+            if (i !== len - 1) {
+                s1 += nums[i]
+            }
+        }
+    }
+
+    return Math.max(s1, s2)
+};
+const res = rob2([2, 3, 2])
 console.log(res)
