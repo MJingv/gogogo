@@ -376,6 +376,7 @@ var findRotateSteps = function (ring, key) {
 
 
 // 198. 打家劫舍
+// 剑指 Offer II 089. 房屋偷盗
 // 如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
 // 给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。
 var rob = function (nums) {
@@ -390,6 +391,7 @@ var rob = function (nums) {
 
 };
 // 213. 打家劫舍 II
+// 剑指 Offer II 090. 环形房屋偷盗
 // 每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈
 var rob2 = function (nums) {
     // 不对
@@ -407,5 +409,10 @@ var rob2 = function (nums) {
 
     return Math.max(s1, s2)
 };
-const res = rob2([2, 3, 2])
-console.log(res)
+// const res = rob2([2, 3, 2])
+// console.log(res)
+
+
+// 337. 打家劫舍 III
+var rob2 = function (nums) {
+}

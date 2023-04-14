@@ -180,3 +180,56 @@ mental health
 - scientists also believe that too much venting or open the ways for you to put a *strain* on your relationships.
 - a good balance of speaking and listening is balance you need to have when you vent.
 - as *small* as these things may *seem* ,they can have huge effect on your mental health.
+
+grows
+---
+growing in anike capacity can seem like an visible passes
+when growing up,have you ever measure yourself  to find that you're much taller than you're before
+much like your physical grows,changes can happen emotional as well.
+this differences can be hard to   spot ,and you may not realize that small ways that you've progressed.
+so what is personal grows?
+it's subjective and looks different for everyone
+one spercific theory for personal grows, and its objective is self-accuralization
+german new orligist ,cort gold stain, developed the theory,but it was popular as a hm
+both talk about the idea that self-accuralization was first to the realization one's protential,  which is process of self-formant big experience and life appreciation
+m p this into a param ship of  diagram dit each step to achieving this
+you're looking ahead.
+life is unpredict  at time  mess  you ,and it can be hard to think for the ahead than dinner time, when you're in the situation that on steadible,i need your constant  attention
+when the endless things to do in most time ,you may feel lost
+however ,finding yourself feeling that the feature is not full of worries and tradgies can be sign of personal grows
+you're now in the place where you' r  comfortable ,  steadible ,and ready to take on a new challenge.
+psychologist doctor gb describe this is having a good self-governents,being balance to your a to take care of your needs will also be able to appreciate the world around you.
+you're able to live your life without being overwhelmed.
+you'll find yourself excited when you wake up for  what day will bring,  and have control over your situation ,so that everything will not cromable around you.
+maybe you're not  quite up this  point yeet ,and that's ok
+even the little things like looking for the right next buffle or dinner day with friends are steps for the right direction
+you're excepting
+while you maybe execiting about the feature looking forward to what's to come ,you will also may find yourself living in the present
+the feature is great at all,but things is going good right now,and you're going to enjoy well. let's here
+you also cogniz your past and see how the part of your history fit together today
+this doesn't mean that you've even struggled or minimize the bad ,but you can now expect what's happened
+futher more,self-excepting is one of the point in mater parament of self-accurateion
+mbg explain this point as the  ability to except core and desire  without meeting to apologyzie  for them
+you're more and emotional intelligent
+how would you to describe your ability to handle your emotions?
+are you able to process them  better than before?
+do you  have a better handle on strong feeling like anger, can hold yourself back from lashing out
+being your signs or hire a high emotional intelligence or eq
+luckily ,eq is highly menliyable ,so even if you get overwhelmed easily ,there are strategy to build up a point of this skills through mindfulness and entrospection
+c psychologist doctor pt ,discuss this how high eq is associated with emotional regulation,  empethy and wellness of yourself and others
+being skills in this area means you're better be able manage your relationship and yourself
+you konw ,you're still growing
+personal grows is continue process and there's no finish line
+you can grow on motive ways some faster than others
+however ,when it's biggest factor to feature progress is having a  growth man set
+it's believing that you're able to improve yourself and your ability no matter where you're  at
+a fixed men side on the other hand ,is opposide
+you believe you can only improve so much ,if at all
+psy today explain that how some study having shown that having this menside    resulting positive  affect on  student gpa
+but understanding you can improve yourself you're keeping yourself open to learn new thing for this closing new things of all forever
+self grows is individual process,an you may not  realize all the ways ,you've progressed until you look back
+all progress is progress
+so even ignore that sth has improved slightly ,it's stand upon on direction
+of course,personal growth is journey ,and there are steps you can take to improve you further
+this is  be from taking time to introspect,talking with theropy or coming up with plan to improve different area of your life
+the are many ways to do this that you're unique
