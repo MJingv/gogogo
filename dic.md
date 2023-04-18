@@ -233,3 +233,33 @@ so even ignore that sth has improved slightly ,it's stand upon on direction
 of course,personal growth is journey ,and there are steps you can take to improve you further
 this is  be from taking time to introspect,talking with theropy or coming up with plan to improve different area of your life
 the are many ways to do this that you're unique
+
+--- 
+ bd can help when you get hurt but what if the wondens you can not say
+ emotionally abuse may not be visible, being constantly wondered emotionally where you're out,living scurs internally.
+ emotionally abuse can have a trematic impact on the nerve system
+ we search now in the impact from  emotionally abuse at cpthd or cp post-tramatic disorder ,a variation of pthd  that happens because of the trama that on going and where you can't leave the situation
+ here's the list of signs that you've been emotionally abuse to help with the early indentification the abuse of relationships
+ no1.a kingdom of isolation
+ whether it's more partners or even parents emotionally abuse have a tendency to l you feeling upset
+ research their eyes ,their emotionally abuse may contribute to  the develop of condition such as cronic fortigue and drunk
+ living each day working on extra shos  leave you feel driven,emotionally abuse people with driven to feel safe
+ you begin to drive social interaction of any kind
+ as you have a little string to an to any conversation,you had or an action you took that abuse did not prove up.
+ you can take a phone of varsolation where you don't go out or speak to anybody
+ it may also be to try to avoid becoming visible to abuse a hope of abuse stop
+ no2.the ring of forlessness
+ the emotionally abuse can alter your proception
+ you can spend years thinking your worthless
+ i'm not good enough that all matter
+ emotionally abuse that victoms to play this store on vipid
+ research have demostracted that emotionally abuse is strongly associate to low self-esteem
+ more soul than other form of abuse ,the in soul and critisism gradualy eat  away that victoms sense of self-worse
+ you begin to see yourself through the eyes of all those ensannuation,even bleam your for the abuse
+ no3 a fortrance of some videms
+ rolling up the strict play controlling of envirnment ,you struggle with being vernerable
+ you learn to use secret behavior as the escape bra to avoid comphlic
+ a study shows that this individual adopt avoident touchment style
+ you've touched a disregard uncomfortable feeling and as a result ,you now quite to avoid such a situation even as a  doubt
+ you avoid connection whenever  possible to minimize for the hurt, it's difficult for you to open up to someone.
+ research shows ,this can take a toll on your relationship ,as you try to brush everything on the other drug instead of driving the essential.
