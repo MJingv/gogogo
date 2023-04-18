@@ -82,6 +82,8 @@ const two = (nums, target) => {
     if (!len) return
     let [left, right] = [0, len - 1]
 
+
+
     while (left <= right) {
         const mid = (right + left) >> 2
         if (nums[mid] === target) {

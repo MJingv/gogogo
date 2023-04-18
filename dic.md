@@ -183,83 +183,128 @@ mental health
 
 grows
 ---
-growing in anike capacity can seem like an visible passes
-when growing up,have you ever measure yourself  to find that you're much taller than you're before
-much like your physical grows,changes can happen emotional as well.
-this differences can be hard to   spot ,and you may not realize that small ways that you've progressed.
-so what is personal grows?
-it's subjective and looks different for everyone
-one spercific theory for personal grows, and its objective is self-accuralization
-german new orligist ,cort gold stain, developed the theory,but it was popular as a hm
-both talk about the idea that self-accuralization was first to the realization one's protential,  which is process of self-formant big experience and life appreciation
-m p this into a param ship of  diagram dit each step to achieving this
-you're looking ahead.
-life is unpredict  at time  mess  you ,and it can be hard to think for the ahead than dinner time, when you're in the situation that on steadible,i need your constant  attention
-when the endless things to do in most time ,you may feel lost
-however ,finding yourself feeling that the feature is not full of worries and tradgies can be sign of personal grows
-you're now in the place where you' r  comfortable ,  steadible ,and ready to take on a new challenge.
-psychologist doctor gb describe this is having a good self-governents,being balance to your a to take care of your needs will also be able to appreciate the world around you.
-you're able to live your life without being overwhelmed.
-you'll find yourself excited when you wake up for  what day will bring,  and have control over your situation ,so that everything will not cromable around you.
-maybe you're not  quite up this  point yeet ,and that's ok
-even the little things like looking for the right next buffle or dinner day with friends are steps for the right direction
-you're excepting
-while you maybe execiting about the feature looking forward to what's to come ,you will also may find yourself living in the present
-the feature is great at all,but things is going good right now,and you're going to enjoy well. let's here
-you also cogniz your past and see how the part of your history fit together today
-this doesn't mean that you've even struggled or minimize the bad ,but you can now expect what's happened
-futher more,self-excepting is one of the point in mater parament of self-accurateion
-mbg explain this point as the  ability to except core and desire  without meeting to apologyzie  for them
-you're more and emotional intelligent
-how would you to describe your ability to handle your emotions?
-are you able to process them  better than before?
-do you  have a better handle on strong feeling like anger, can hold yourself back from lashing out
-being your signs or hire a high emotional intelligence or eq
-luckily ,eq is highly menliyable ,so even if you get overwhelmed easily ,there are strategy to build up a point of this skills through mindfulness and entrospection
-c psychologist doctor pt ,discuss this how high eq is associated with emotional regulation,  empethy and wellness of yourself and others
-being skills in this area means you're better be able manage your relationship and yourself
-you konw ,you're still growing
-personal grows is continue process and there's no finish line
-you can grow on motive ways some faster than others
-however ,when it's biggest factor to feature progress is having a  growth man set
-it's believing that you're able to improve yourself and your ability no matter where you're  at
-a fixed men side on the other hand ,is opposide
-you believe you can only improve so much ,if at all
-psy today explain that how some study having shown that having this menside    resulting positive  affect on  student gpa
-but understanding you can improve yourself you're keeping yourself open to learn new thing for this closing new things of all forever
-self grows is individual process,an you may not  realize all the ways ,you've progressed until you look back
-all progress is progress
-so even ignore that sth has improved slightly ,it's stand upon on direction
-of course,personal growth is journey ,and there are steps you can take to improve you further
-this is  be from taking time to introspect,talking with theropy or coming up with plan to improve different area of your life
-the are many ways to do this that you're unique
+growing in anike capacity can seem like an visible passes when growing up,have you ever measure yourself to find that
+you're much taller than you're before much like your physical grows,changes can happen emotional as well. this
+differences can be hard to spot ,and you may not realize that small ways that you've progressed. so what is personal
+grows? it's subjective and looks different for everyone one spercific theory for personal grows, and its objective is
+self-accuralization german new orligist ,cort gold stain, developed the theory,but it was popular as a hm both talk
+about the idea that self-accuralization was first to the realization one's protential, which is process of self-formant
+big experience and life appreciation m p this into a param ship of diagram dit each step to achieving this you're
+looking ahead. life is unpredict at time mess you ,and it can be hard to think for the ahead than dinner time, when
+you're in the situation that on steadible,i need your constant attention when the endless things to do in most time ,you
+may feel lost however ,finding yourself feeling that the feature is not full of worries and tradgies can be sign of
+personal grows you're now in the place where you' r comfortable , steadible ,and ready to take on a new challenge.
+psychologist doctor gb describe this is having a good self-governents,being balance to your a to take care of your needs
+will also be able to appreciate the world around you. you're able to live your life without being overwhelmed. you'll
+find yourself excited when you wake up for what day will bring, and have control over your situation ,so that everything
+will not cromable around you. maybe you're not quite up this point yeet ,and that's ok even the little things like
+looking for the right next buffle or dinner day with friends are steps for the right direction you're excepting while
+you maybe execiting about the feature looking forward to what's to come ,you will also may find yourself living in the
+present the feature is great at all,but things is going good right now,and you're going to enjoy well. let's here you
+also cogniz your past and see how the part of your history fit together today this doesn't mean that you've even
+struggled or minimize the bad ,but you can now expect what's happened futher more,self-excepting is one of the point in
+mater parament of self-accurateion mbg explain this point as the ability to except core and desire without meeting to
+apologyzie for them you're more and emotional intelligent how would you to describe your ability to handle your
+emotions? are you able to process them better than before? do you have a better handle on strong feeling like anger, can
+hold yourself back from lashing out being your signs or hire a high emotional intelligence or eq luckily ,eq is highly
+menliyable ,so even if you get overwhelmed easily ,there are strategy to build up a point of this skills through
+mindfulness and entrospection c psychologist doctor pt ,discuss this how high eq is associated with emotional
+regulation, empethy and wellness of yourself and others being skills in this area means you're better be able manage
+your relationship and yourself you konw ,you're still growing personal grows is continue process and there's no finish
+line you can grow on motive ways some faster than others however ,when it's biggest factor to feature progress is having
+a growth man set it's believing that you're able to improve yourself and your ability no matter where you're at a fixed
+men side on the other hand ,is opposide you believe you can only improve so much ,if at all psy today explain that how
+some study having shown that having this menside resulting positive affect on student gpa but understanding you can
+improve yourself you're keeping yourself open to learn new thing for this closing new things of all forever self grows
+is individual process,an you may not realize all the ways ,you've progressed until you look back all progress is
+progress so even ignore that sth has improved slightly ,it's stand upon on direction of course,personal growth is
+journey ,and there are steps you can take to improve you further this is be from taking time to introspect,talking with
+theropy or coming up with plan to improve different area of your life the are many ways to do this that you're unique
 
 --- 
- bd can help when you get hurt but what if the wondens you can not say
- emotionally abuse may not be visible, being constantly wondered emotionally where you're out,living scurs internally.
- emotionally abuse can have a trematic impact on the nerve system
- we search now in the impact from  emotionally abuse at cpthd or cp post-tramatic disorder ,a variation of pthd  that happens because of the trama that on going and where you can't leave the situation
- here's the list of signs that you've been emotionally abuse to help with the early indentification the abuse of relationships
- no1.a kingdom of isolation
- whether it's more partners or even parents emotionally abuse have a tendency to l you feeling upset
- research their eyes ,their emotionally abuse may contribute to  the develop of condition such as cronic fortigue and drunk
- living each day working on extra shos  leave you feel driven,emotionally abuse people with driven to feel safe
- you begin to drive social interaction of any kind
- as you have a little string to an to any conversation,you had or an action you took that abuse did not prove up.
- you can take a phone of varsolation where you don't go out or speak to anybody
- it may also be to try to avoid becoming visible to abuse a hope of abuse stop
- no2.the ring of forlessness
- the emotionally abuse can alter your proception
- you can spend years thinking your worthless
- i'm not good enough that all matter
- emotionally abuse that victoms to play this store on vipid
- research have demostracted that emotionally abuse is strongly associate to low self-esteem
- more soul than other form of abuse ,the in soul and critisism gradualy eat  away that victoms sense of self-worse
- you begin to see yourself through the eyes of all those ensannuation,even bleam your for the abuse
- no3 a fortrance of some videms
- rolling up the strict play controlling of envirnment ,you struggle with being vernerable
- you learn to use secret behavior as the escape bra to avoid comphlic
- a study shows that this individual adopt avoident touchment style
- you've touched a disregard uncomfortable feeling and as a result ,you now quite to avoid such a situation even as a  doubt
- you avoid connection whenever  possible to minimize for the hurt, it's difficult for you to open up to someone.
- research shows ,this can take a toll on your relationship ,as you try to brush everything on the other drug instead of driving the essential.
+
+- bd can help when you get hurt but what if the wondens you can not say
+- emotionally abuse may not be visible, being constantly wondered emotionally where you're out,living scurs internally.
+- emotionally abuse can have a trematic impact on the nerve system
+- we search now in the impact from emotionally abuse at cpthd or cp post-tramatic disorder ,a variation of pthd that
+  happens because of the trama that on going and where you can't leave the situation
+- here's the list of signs that you've been emotionally abuse to help with the early indentification the abuse of
+  relationships
+- no1.a kingdom of isolation
+- whether it's more partners or even parents emotionally abuse have a tendency to l you feeling upset
+- research their eyes ,their emotionally abuse may contribute to the develop of condition such as cronic fortigue and
+  drunk
+- living each day working on extra shos leave you feel driven,emotionally abuse people with driven to feel safe
+- you begin to drive social interaction of any kind
+- as you have a little string to an to any conversation,you had or an action you took that abuse did not prove up.
+- you can take a phone of varsolation where you don't go out or speak to anybody
+- it may also be to try to avoid becoming visible to abuse a hope of abuse stop
+- no2.the ring of forlessness
+- the emotionally abuse can alter your proception
+- you can spend years thinking your worthless
+- i'm not good enough that all matter
+- emotionally abuse that victoms to play this store on vipid
+- research have demostracted that emotionally abuse is strongly associate to low self-esteem
+- more soul than other form of abuse ,the in soul and critisism gradualy eat away that victoms sense of self-worse
+- you begin to see yourself through the eyes of all those ensannuation,even bleam your for the abuse
+- no3 a fortrance of some videms
+- rolling up the strict play controlling of envirnment ,you struggle with being vernerable
+- you learn to use secret behavior as the escape bra to avoid comphlic
+- a study shows that this individual adopt avoident touchment style
+- you've touched a disregard uncomfortable feeling and as a result ,you now quite to avoid such a situation even as a
+  doubt
+- you avoid connection whenever possible to minimize for the hurt, it's difficult for you to open up to someone.
+- research shows ,this can take a toll on your relationship ,as you try to brush everything on the other drug instead of
+  dressing the essential.
+- no4.a none stop playing game
+- it's n for you to apology to anemate object like a chair or soft after you accidently bompt to it.
+- do you blame yourself for thing out of your control
+- research shown that,an abuse often try to shift all blame and guilt on to the victims ,making you believe that the
+  abuse of your fault.
+- at this to the supposed renforcement of outside the event,the victims come to believe that they are the cost for
+  everything,and so automaticly apology for anything goes wrong even when they no way to control or know about the
+  situation at all
+- no5.a battle of frequent outbirth
+- it's so hard pay this holo when someone close to as constantly bless this hot in cold,serving as a tool for
+  intermidation.
+- according to research ,this emotionally push and pull can leave you feeling rejected abuse and frastrated -you become
+  extremely high prevegelent,being afraid to make even the smallest mistake
+- you overland everything to try to minimize chances of conflict
+- the anxity of keeping things control leave you feeling extremely wonder up
+- and so you can break down,even the slight hand of thing going off
+- it can also be express of angry instead of sadness ,although surprised motion of valiation develop through out of
+  abuse come out when you feel like all your effort went to waste
+- in the mercy,continue ,don't feel.
+- does it seem like your movie through the motion life with little to no enjoyment
+- or do you feel like you can't connect with people normally because you just don't feel like yourself
+- every word fly to world you rejustle the dut on your emotions
+- it bring interperate emotion abuse as drama ,and hand trigger macanazon to help you cop
+- one such a cop macanazon is emotionally nameness
+- start to show the people who're emotion abuse to this children are more likely to experience a emotionally
+  disregulation including a emotionally naming as an adult
+- victims use this as a skip which for the distressing situation face and emotionally abuse relationship
+- you learn to see the way your feeling the attempt protect yourself and touch from painful feeling relate to this
+  situation
+- it's scared to reject for help but it's the best way to end the circle of abuse and get your life back and you value
+  it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
