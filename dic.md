@@ -297,7 +297,15 @@ self love
 - it's mean being trusting respectful and forgiving to yourself
 - vking in this area can not only affect the mental step but also influence your relationship
 - so how can your lack of self-love affect your relationship
--
+- let's take a look
+- you have difficulty to see what's your really think
+- have a great self-esteem allow you to express your needs to others without taking your personally if they don't for
+  you agree
+- lacking in this area can make it difficult to communicate what those needs are and led to a lessful relationship
+- you may find yourself jumping through hoop to apprese your partner instead of being open what is bothering you
+- license c professor consulter cn f states that many cases having a low sonse of love come from childhood
+- prehaps you didn't feel that they doubly your lif be in you ,or you won't give a health modal like how to be self of
+  short
 
 
 
