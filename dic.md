@@ -288,18 +288,16 @@ theropy or coming up with plan to improve different area of your life the are ma
 - it's scared to reject for help but it's the best way to end the circle of abuse and get your life back and you value
   it
 
+self love
+---
 
-
-
-
-
-
-
-
-
-
-
-
+- what's self love?
+- according to psychology today,self love is none brilliar term for different access love we preform to x ourself
+  ,physically and no physically
+- it's mean being trusting respectful and forgiving to yourself
+- vking in this area can not only affect the mental step but also influence your relationship
+- so how can your lack of self-love affect your relationship
+-
 
 
 
