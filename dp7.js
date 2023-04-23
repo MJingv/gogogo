@@ -391,28 +391,51 @@ var rob = function (nums) {
 
 };
 // 213. 打家劫舍 II
-// 剑指 Offer II 090. 环形房屋偷盗
 // 每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈
 var rob2 = function (nums) {
-    // 不对
     const len = nums.length
-    let [s1, s2] = [0, 0]
-    for (let i = 0; i < len; i++) {
-        if (i % 2) {
-            s2 += nums[i]
-        } else {
-            if (i !== len - 1) {
-                s1 += nums[i]
-            }
+    if (len === 1) return nums[0]
+    const helper = (start = 0, end = 0) => {
+        if (start < 0 || end > len - 1) return
+        let d1 = 0, d2 = 0, d = 0
+        for (let i = end; i >= start; i--) {
+            d = Math.max(d1 + nums[i], d2)
+            d1 = d2
+            d2 = d
         }
+        return d
     }
-
-    return Math.max(s1, s2)
+    return Math.max(helper(0, len - 2), helper(1, len - 1))
 };
 // const res = rob2([2, 3, 2])
 // console.log(res)
 
 
 // 337. 打家劫舍 III
-var rob2 = function (nums) {
+// 剑指 Offer II 090. 环形房屋偷盗
+// 二叉树不相邻最大值
+var rob3 = function (root) {
+    // timeout
+    const memo = new Map();
+    if (root === null) {
+        return 0;
+    } // 利用备忘录消除重叠子问题
+    if (memo.has(root)) {
+        return memo.get(root);
+    } // 抢，然后去下下家
+    let do_it = root.val + ((root.left === null) ? 0 : rob(root.left.left) + rob(root.left.right)) + ((root.right === null) ? 0 : rob(root.right.left) + rob(root.right.right)); // 不抢，然后去下家
+    let not_do = rob(root.left) + rob(root.right);
+    let res = Math.max(do_it, not_do);
+    memo.set(root, res);
+    return res;
 }
+const res = rob3([2, 3, 2])
+console.log(res)
+
+// 2560. 打家劫舍 4
+var minCapability = function (nums, k) {
+
+// 看不太懂
+};
+// const res = minCapability([2, 3, 5, 9], 2)
+// console.log(res)
