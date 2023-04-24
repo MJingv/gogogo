@@ -1,3 +1,20 @@
+
+function TreeNode(val, left, right) {
+    this.val = (val === undefined ? 0 : val)
+    this.left = (left === undefined ? null : left)
+    this.right = (right === undefined ? null : right)
+}
+
+const t1 = new TreeNode(1)
+const t0 = new TreeNode(0)
+t1.left = t0
+// t0.left = new TreeNode(0)
+const t3 = new TreeNode(3)
+t3.left = new TreeNode(2)
+t3.right = new TreeNode(4)
+t1.right = t3
+
+
 // 139. 单词拆分
 var wordBreak = function (s, wordDict) {
     const [n, len] = [s.length, wordDict.length]
@@ -429,7 +446,23 @@ var rob3 = function (root) {
     memo.set(root, res);
     return res;
 }
-const res = rob3([2, 3, 2])
+var rob31 = function (root) {
+    if (!root) return 0
+    const helper = (node = root) => {
+        let res = [0, 0]
+        if (!node) return res
+        const left = helper(node.left)
+        const right = helper(node.right)
+        console.log(right)
+        res[0] = Math.max(...left) + Math.max(...right)
+        res[1] = node.val + left[0] + right[0]
+        return res
+    }
+    const res = helper()
+    return Math.max(res[0], res[1])
+}
+
+const res = rob31(t1)
 console.log(res)
 
 // 2560. 打家劫舍 4
