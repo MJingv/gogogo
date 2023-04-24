@@ -296,65 +296,68 @@ self love
   ourselves ,physically and non-physically
 - this means being trusting respectful and forgiving to yourself
 - *lacking* in this area can not only affect the mental *state* but also influence your relationships
-- so how can your lack of self-love affect your relationship
+- so how can your lack of self-love affect your relationships?
 - let's take a look
-- you have difficulty to see what's your really think
-- have a great self-esteem allow you to express your needs to others without taking your personally if they don't for
-  you agree
-- lacking in this area can make it difficult to communicate what those needs are and led to a lessful relationship
-- you may find yourself jumping through hoop to apprese your partner instead of being open what is bothering you
-- license c professor consulter cn f states that many cases having a low sonse of love come from childhood
-- prehaps you didn't feel that they doubly your lif be in you ,or you won't give a health modal like how to be self of
-  short
-- whenever the case maybe,you may find the problems you raise your relationship ,you're unable to probablely address
+- you have difficulty *saying* what your really think
+- have a great self-esteem allow you to express your needs to others without taking your personally if they don't
+  *fully* you agree
+- lacking in this area can make it difficult to communicate what those needs are and led to a less *fulfilling*
+  relationship
+- you may find yourself jumping through hoop to *appease* your partner instead of being open with what is bothering you
+- license *clinical* professor *counselor* cf states that in many cases having a low *sensitive* of self-love come from
+  childhood
+- *perhaps* you didn't feel that the *adults* in your life believed in you ,or you weren't given a health modal like how
+  to be self *assured*
+- whenever the case maybe,you may find the problems you raise your relationship ,you're unable to *properly* address
   them.
-- you do not enforce boundries
-- it's difficult to say no to someone ,you're about how to react or if they'll leave you.
-- it's can make it so bad you overlook your partner bad habits at fewer that they react poorly if you dress it
-- doctor ls a psychologist author state that it's called rejection thetivity
-- reject thetivity call you to act ways to avoid any kinds of rejections ,will or preceived and it can happen at your
-  own spend
-- doctor cf states that niglighting your boundries can lead to the further issues like resenment stress and even
-  problems with your physical house
-- setting boundry is health part of any relationship,and allows you to be clear with others on what you are and not
-  comfortable it
-- having a lack of self-love can lead you to neglating your needs and put other buf on you
-- does it make same keep relationship from feeling,it's make it difficult for you to fill for fullfilt and also create
-  room to be taken advantage of
+- you do not enforce *boundaries*
+- it's difficult to say no to someone ,you *worry* about how they react or if they'll leave you.
+- this can make it so bad that you overlook your partner bad habits out of  *fear* that they'll react poorly if you
+  address it
+- doctor ls a psychologist author state that it's called rejection *sensitivity*
+- reject sensitivity *cause* you to act ways to avoid any kinds of rejections ,*real* or *perceived* and it can happen
+  at your own *expense*
+- doctor *got* *further* states that *neglecting* your boundaries can lead to the further issues like *resentment*
+  stress and even problems with your physical *health*
+- setting boundaries is a healthy part of any relationship,and allows you to be clear with others on what you are and
+  not comfortable *with*
+- having a lack of self-love can lead you to neglect your needs and put others *above*  you
+- though this *may* *seeming* keep relationship from *failing*,it's make it difficult for you to fill for *fulfilled*
+  and also create room to be taken advantage of
 - trying to be someone,you're not
-- in your relationship,a lack of self love may make it tough to b your true self
-- you may put a lot of efforts in how you look and how someone else preserves you
-- for example ,you may play a part of your personality to another person that you won't around other people,to make
-  yourself seem more positive talkitive or loveheache
-- there's still words states that many cases this is copy macniza for someone sensitive to how others preserve them
-- to repeace the person around them,they create posona that other people will like to avoid rejection
-- it's impossible to when anybody over your may find being athetic to yourself ,it's much more fullfilling and posing
-  closer relationship even if they're favoire
-- bans for times and futher wonders that many you can believe in the enauthtic ways can lead to feel of self-doubt and
-  feature uncertainty
-- the pharse be yourself is biggest takeaway
+- in a relationship,a lack of self-love may make it tough to be your true self
+- you may put a lot of effort in how you look and how someone else *perceives* you
+- for example ,you might play *up* part of your personality to another person that you won't around other people,to make
+  yourself seem more positive *talkative* or *level-headed*
+- *therapist* sf states that many cases this is copying *mechanism* for someone sensitive to how others perceive them
+- to *appease* the people around them,they create a *persona* that other people will like to avoid rejection
+- while it's impossible to *win* anybody over your may find being *authentic* to yourself ,it's much more fulfilling and
+  pulls in closer relationship even if they're *fewer*
+- f further *warns* that many *who* *continue* to live in an *inauthentic* ways can lead to feelings of self-doubt and
+  *future* uncertainty
+- the *phrase* be yourself is biggest takeaway
 - you're constantly worried about your position in the relationship
-- and the relationship low self esteem of self love with lack of can lead to jealous and insecurity
-- you may doubt your words in the relationship and assume it's coincident that they like you
-- people who lack of self love often worry about that their partner would be attracted by someone else or that they
-  leave the relationship at any moment
-- and article from circle life turns this as relationship anxity ,this's where you worry about your different aspect of
-  your relationship and put mind stress on yourself
-- this stots can brude and over power you ,making your relationship unplesant
-- it's important to have confidence in yourself enter partner to trust each other
-- in the end ,feeling insecurity in relationship can further hurted rather than address in the weeks
-- settling for whatever come to your way,people would lack of self love are usually ready to commit the first person you
-  shows any interests them
+- in the relationship low self-esteem and lack of self-love can lead to jealous and insecurity
+- you may doubt your *worth* in the relationship and assume it's coincident that they like you
+- people who lack of self-love often worry about that their partner would be attracted by someone else or that they'll
+  leave their relationship at any moment
+- an article from phychalive *terms* this as relationship *anxiety*,this's where you worry about your different aspect
+  of your relationship and put *immense* stress on yourself
+- this *thoughts* can *brood* and overpower you ,making your relationship  *unpleasant*
+- it's important to have confidence in yourself and your partner to trust each other
+- in the end ,feeling *insecure* in relationship can further hurt it rather than address in the weaknesses
+- settling for whatever come to your way,people *with* lack of self-love are usually ready to commit the first person
+  who shows any interests them
 - and they lose lo of thoughts and opinions when they come to who they choose to be in the relationship with
 - it's can lead to settling for behavior that you are not ok with
 - many people do this out of fear losing their relationship and being alone
-- however,doctor jw from psychology today states that meataining high stander will benefit you, as you have more control
-  over getting what you want to bf
-- she states this will help with your self esteem and it'll make it easier to step a way from bad situation
-- it's important to know your value and up all them
-- even though it maybe difficult and you may feel rejection,you will find that it will be more for feeling to be in the
-  company of someone cares or settling for last
-- self love is important for your will being and intern important for the relationship in your life
+- however,doctor jw from psychology today states that *maintaining* high *standards* will benefit you, as you have more
+  control over getting what you want *out of life*
+- she states this will help with your self-esteem and it'll make it easier to step *away* from bad situation
+- it's important to know your value and *uphold* them
+- even though it may be difficult and you may *face* rejection,you will find that it will be more fulfilling to be in
+  the company of someone cares *versus* settling for *less*
+- self-love is important for your will-being and in turn important for the relationship in your life
 - improving this skill can be difficult
 
 
