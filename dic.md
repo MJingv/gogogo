@@ -306,6 +306,35 @@ self love
 - license c professor consulter cn f states that many cases having a low sonse of love come from childhood
 - prehaps you didn't feel that they doubly your lif be in you ,or you won't give a health modal like how to be self of
   short
+- whenever the case maybe,you may find the problems you raise your relationship ,you're unable to probablely address
+  them.
+- you do not enforce boundries
+- it's difficult to say no to someone ,you're about how to react or if they'll leave you.
+- it's can make it so bad you overlook your partner bad habits at fewer that they react poorly if you dress it
+- doctor ls a psychologist author state that it's called rejection thetivity
+- reject thetivity call you to act ways to avoid any kinds of rejections ,will or preceived and it can happen at your
+  own spend
+- doctor cf states that niglighting your boundries can lead to the further issues like resenment stress and even
+  problems with your physical house
+- setting boundry is health part of any relationship,and allows you to be clear with others on what you are and not
+  comfortable it
+- having a lack of self-love can lead you to neglating your needs and put other buf on you
+- does it make same keep relationship from feeling,it's make it difficult for you to fill for fullfilt and also create
+  room to be taken advantage of
+- trying to be someone,you're not
+- in your relationship,a lack of self love may make it tough to b your true self
+- you may put a lot of efforts in how you look and how someone else preserves you
+- for example ,you may play a part of your personality to another person that you won't around other people,to make
+  yourself seem more positive talkitive or loveheache
+- there's still words states that many cases this is copy macniza for someone sensitive to how others preserve them
+- to repeace the person around them,they create posona that other people will like to avoid rejection
+- it's impossible to when anybody over your may find being athetic to yourself ,it's much more fullfilling and posing
+  closer relationship even if they're favoire
+- bans for times and futher wonders that many you can believe in the enauthtic ways can lead to feel of self-doubt and
+  feature uncertainty
+- the pharse be yourself is biggest takeaway
+- you're constantly worried about your position in the relationship
+- 
 
 
 
