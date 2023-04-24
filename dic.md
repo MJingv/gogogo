@@ -292,10 +292,10 @@ self love
 ---
 
 - what's self love?
-- according to psychology today,self love is none brilliar term for different access love we preform to x ourself
-  ,physically and no physically
-- it's mean being trusting respectful and forgiving to yourself
-- vking in this area can not only affect the mental step but also influence your relationship
+- according to psychology today,self-love is an *umbrella* term for different *acts* of love we preform *towords*
+  ourselves ,physically and non-physically
+- this means being trusting respectful and forgiving to yourself
+- *lacking* in this area can not only affect the mental *state* but also influence your relationships
 - so how can your lack of self-love affect your relationship
 - let's take a look
 - you have difficulty to see what's your really think
@@ -334,7 +334,28 @@ self love
   feature uncertainty
 - the pharse be yourself is biggest takeaway
 - you're constantly worried about your position in the relationship
-- 
+- and the relationship low self esteem of self love with lack of can lead to jealous and insecurity
+- you may doubt your words in the relationship and assume it's coincident that they like you
+- people who lack of self love often worry about that their partner would be attracted by someone else or that they
+  leave the relationship at any moment
+- and article from circle life turns this as relationship anxity ,this's where you worry about your different aspect of
+  your relationship and put mind stress on yourself
+- this stots can brude and over power you ,making your relationship unplesant
+- it's important to have confidence in yourself enter partner to trust each other
+- in the end ,feeling insecurity in relationship can further hurted rather than address in the weeks
+- settling for whatever come to your way,people would lack of self love are usually ready to commit the first person you
+  shows any interests them
+- and they lose lo of thoughts and opinions when they come to who they choose to be in the relationship with
+- it's can lead to settling for behavior that you are not ok with
+- many people do this out of fear losing their relationship and being alone
+- however,doctor jw from psychology today states that meataining high stander will benefit you, as you have more control
+  over getting what you want to bf
+- she states this will help with your self esteem and it'll make it easier to step a way from bad situation
+- it's important to know your value and up all them
+- even though it maybe difficult and you may feel rejection,you will find that it will be more for feeling to be in the
+  company of someone cares or settling for last
+- self love is important for your will being and intern important for the relationship in your life
+- improving this skill can be difficult
 
 
 
