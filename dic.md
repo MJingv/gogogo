@@ -360,10 +360,64 @@ self love
 - self-love is important for your will-being and in turn important for the relationship in your life
 - improving this skill can be difficult
 
+tired
+---
 
-
-
-
-
-
-
+- you often find yourself staying in bed all day
+- does your body feel heavy and your *mind* totally *blank*
+- having low energy is not an uncommon problem,but it's still a tough one,*dealing* with this *exhaustion*, it makes you
+  feel tired even thinking about it
+- but what could it be that makes you feel tired all the time
+- let's begin
+- a tired mind
+- often fatigue maybe *byproduct* of a *psychological* problem, *especial* depression
+- *psychiatrist* and sleep medicine expert em,said fatigue and depression can look quite similar
+- 2018 study even estimate that over 90% of people living with depression have *symptoms* of fatigue
+- doctor emmy said for insider that this may happen because of *brain* chemistry
+- she said that *dopamine* *serotonic*  and *norepinephrine* play a important role in *regulating* not only in your mood
+  but also energy levels
+- so when you depressed ,your body may feel heavy and slow ,making it hard to do even the simplest tasks,such as
+  showering and getting dressed
+- anxiety is another psychological issue that could play a role in your fatigue
+- while you're in the depths of anxiety, the *racing* *heart*,and quickened breath might keep you *awake*,but after the
+  worst is over, you are *hit* with a *post-anxiety* crush
+- ma who have a *bachelor* of *science* in psychology *wrote* for cc that anxiety is like being a high *alert*,but once
+  the *adrenaline* run out ,your body goes through a crush that can leave you feel drained
+- you may also feel exhaust because of the *tension* in your muscles or *racing*  thoughts that bother you throughout
+  the day
+- mental *illness*  could definitely make you more tired,but sometimes the problem maybe more be different
+- let's explore why your nutrition maybe the reason why you're so sleepy all the time
+- what's on your *plate*?
+- do you know that feeling when your eat delicious meal and suddenly you feel so sleepy?
+- you just *wanna* get under a warm blanket and take an afternoon nap ,it's *awesome* when it's sunday in your home
+- but if you're at work or school,and what if the tiredness *persists* the entire day
+- well,the food you eat may be responsible for this *grogginess*,especially *carbohydrates*
+- according to *harvard's* school of *public* *health* ,eating too many *carbs* make your *blood* sugar *spike*,creating
+  a short term energy rush
+- your body then release *insulin* and cost the remove of carbs into your muscle and *organs*
+- now you *blood* sugar goes back down leaving you *lethargic* and tired
+- sugar and sweets may have a similar effect
+- in the study published in the journey *appetite* in 2016, people who eat a diet high in *refined* sugar had higher
+  scores for the depressive  *symptoms* and fatigue than those who eat diet high whole *grains* and low in sugar
+- yes,we know that chocolate cake is the best but science is clear on this one
+- what you drink may play a role in your energy level as well
+- do you often reach for coffee when you're tired
+- it seems logical to try *cure* your tiredness with a amount of coffee but researches shows it may not be the best idea
+- a 2016 study published in the journey nutrition showed that drinking one cup too many is linked to increase nighttime
+  worrying sleeplessness and increasing nighttime awakening ,decreased total crease total sleep time and daytime
+  weakness
+- tips and tricks to feel less tired
+- you must be wondering well what do i do
+- how can i stop feeling tired all the time
+- to give you some tips and tricks ,let's *see* what saya did when he has some similar problems
+- well,he started with small steps and dies
+- doctor em *wrote* on her  *webpage* that *nutrient*-rich food may provide an *abundance* of energy
+- that's why saya now make sure to eat balance and nutrition meals. high quality protein, lots of veges,especially green
+  such like *spinach* and *broccoli* and low sugar food
+- for example,strawberries and blackberries
+- snack times are quite a challenge ,since he love eating chocolate ,but d m said that the entire block of chocolate is
+  not a good idea for a *pick-me-up* snack
+- he still eat chocolate but only a small piece
+- next,saya makes sure to drink enough water throughout a day ,when he doesn't skip exercise anymore
+- he read a 2013 research study publish in the journey fatigue,*biomedicine* healthy and behavior,and learn that only 20
+  minutes of *low* to *moderate* and *intensity* exercise can reduce fatigue and increase energy
