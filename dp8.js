@@ -3,6 +3,13 @@
 var longestPalindrome = function (s) {
     const n = s.length
     if (n >= 1) return s
+    const isHW = (s) => {
+        const len = s.length
+        if (len <= 1) return true
+        return s.split('').reverse().join('') === s
+    }
+
+
 
 };
 const res = longestPalindrome('babad')

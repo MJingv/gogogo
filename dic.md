@@ -426,39 +426,41 @@ monk
 ---
 
 - once upon a time,in a dense forest,a man was walking alone a narrow pass ,carrying a large bag on his back
-- he was on a mission,to find a shamen who was known to pocess powerful healing abilities
-- the man has heard that the shamen could heal any illness no matter how sever
+- he was on a mission,to find a shaman who was known to *possess* powerful healing abilities
+- the man has heard that the shaman could heal any *aliment* no matter how *severe*
 - and he was eager to seek for help
-- as he walked ,the man came across a monk who was sitting by the side of pass,deep and meditation
-- the man stop and asked the monk if he know where the shamen could be found
-- the monk open his eyes and looked at the man
-- the shamen you seek you see is not far,he said
-- but be careful ,for the tigers in this woods ,his fear is unpredictable,and you must be on your garde
-- then man thanked the monk and continue on his way,keep the sharp eyes on for the tigers
-- evently,he came across the shamen who welcome him warmly and offer to help with his illment
-- but just as the shamen was about to begin to heal his retrue ,the man heard the loud grow
-- turning around ,he saw the tiger emerging from the bush,its eyes fix on him
-- the man paniced and ran,dropping his bag and see flight
-- but the shamen seeing the man this dress ,understood what was happening
-- he know the tiger was not after the man ,but after the bag,inside the bag was a piece of meat,that the man had brude
-  and offering for the shamen
-- the shamen quickly through the bag towards the tiger who ponds on eagerly
-- as the tiger face on the meat,the shamen turned to the man and smiled
-- you see,he said,you buzzled and misunderstanding,the tiger was never after you ,it simply want the the food that
-  you're carrying
-- the man was stunded ,he has been so cold up his fear and anxiety ,but he has completely misunderstand the situation
-- but the shamen was resinated with him ,and he begin to see how was on his position and believe, has shaped the
+- as he walked ,the man came across a monk who was sitting by the side of pass,deep in meditation
+- the man stopped and asked the monk if he knew where the shaman could be found
+- the monk opened his eyes and looked at the man
+- the shaman you seek you see is not far,he said
+- but be careful ,for there's a tigers in these woods ,he is *fierce* and unpredictable,and you must be on your *guard*
+- then man thanked the monk and continued on his way,keeping a sharp eyes out for the tiger
+- *eventually*,he came across the shaman who welcome him warmly and offered to help with his aliment
+- but just as the shaman was about to begin his heal *ritual* ,the man heard the loud *growl*
+- turning around ,he saw the tiger emerging from the bush,its eyes fixed on him
+- the man *panicked* and ran,dropping his bag as he *fled*
+- but the shaman seeing the man's *distress* ,understood what was happening
+- he knew the tiger was not after the man ,but after the bag,inside the bag was a piece of meat,that the man had brought
+  as an offering for the shaman
+- the shaman quickly *threw* the bag towards the tiger who *pounced* on it eagerly
+- as the tiger *feasted* on the meat,the shaman turned to the man and smiled
+- you see,he said,it was all a misunderstanding,the tiger was never after you ,it simply wanted the food that you're
+  carrying
+- the man was *stunned* ,he has been so *caught* up his own fear and anxiety ,that he has completely misunderstood the
+  situation
+- but the shaman was *resonated* with him ,and he began to see how his own *perceptions* and believe, has shaped the
   experience
-- and so ,the man left forest with new found of understanding of teaching of buddha
-- he realized that our experiences are shaped by our proceptions,and that's only p and go,proconcived motions and
-  bices,we can truely see the world as it is
+- and so ,the man left forest with a newfound understanding of teachings of the buddha
+- he realized that our experiences are shaped by our *perceptions*,and that's only by *letting* go, of our *
+  preconceived*
+  motions and *biases*,we can truly see the world as it is
 - he also understood the importance of compassion and empathy
-- for his only through shaman understanding and quick thinking,he was able to avoid the situation danger situation
-- as he walked away ,the man felt a sense of peace and lightment ,but he was never experience before
-- until now ,he was carrying this lesson with him for the rest of his life
+- for his only through shaman understanding and quick thinking,he was able to avoid a *potentially* danger situation
+- as he walked away ,the man felt a sense of peace and *enlightenment* ,but he had never experienced before
+- and he knew ,he would carry this lesson with him for the rest of his life
 - you see life in your life
-- your experience are shaped by how you enterperate and understand the world around you
-- it's important to let it go if your proconceived notions and biases
+- your experience are shaped by how you interpret and understand the world around you
+- it's important to let it go if your *preconceieved* notions and biases
 - to see the things as they truly are
-- always strive understand others and with kindness and compassion,and always leave in the present moment with the open
-  and compassion heart
+- always strive to understand others and *act* with kindness and compassion,and always live in the present moment with
+  an open *compassionate* heart
