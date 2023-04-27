@@ -501,14 +501,15 @@ narcissism
 - no2.speak up
 - are you able to speak your mind when your with them
 - *narcissist* will often try to silent you as a way to gain control over you
-- by being aware of this ,you can remind yourself to speak up and make you hearted,because of once they know that the
-  can't silent you,they may give up on their efforts to influence you
-- no3. healthy distance
-- one of the best way to avoid vonlun into *narcissism* trap is to keep them as arms like
-- the last time you spend with them,the last opportunity they have to via vill into their web of life and
-- so if you find you around *narcissism* person ,try to slowly distance yourself from them
+- by being aware of this ,you can remind yourself to speak up and make yourself heard,because once they know that the
+  can't silent you,they may give up on their *efforts* to influence you
+- no3. healthy distancing
+- one of the best way to avoid *failling* into *narcissist* trap is to keep them at an arm's *length*
+- the last time you spend with them,the *less* opportunity they have to *weave* you into their web of *lies* and *
+  deceit*
+- so if you find yourself around *narcissist* person ,try to slowly distance yourself from them
 - no4. get help
-- if you're relationship with na and require help ,there are some resouces and therapy aviliable ,who grill specific
-  with ,*narcissism* abuse ,find mental help provider ,or scrope near you that deal with this topic if you feel like you
-  need it
-- have you ever interact with *narcissism* before?
+- if you're relationship with narcissist and require help ,there are some resouces and therapy *available* ,who *deal*
+  *specifically* with *narcissism* abuse ,find a mental *health* provider ,or  *supoort* near you
+- that deals with this topic if you feel like you need it
+- have you ever interact with *narcissist* before?
