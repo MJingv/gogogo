@@ -464,3 +464,51 @@ monk
 - to see the things as they truly are
 - always strive to understand others and *act* with kindness and compassion,and always live in the present moment with
   an open *compassionate* heart
+
+narcissism
+---
+
+- do you know that there're many types of *narcissism*
+- because we're so used to that glaringly obvious *displays* of *overt* narcissist who are of *attention-seeking* loud
+  and in you *face*
+- it's easy to overlook other types of *narcissism* , *particularly* that kind or the *covert* *narcissism* to avoid me
+  fooled by their *outwardly* kind nature
+- what's the kind *narcissism*?
+- kind *narcissists* describe those who have the general quality of narcissism such as a lack of empathy or desire for
+  attention but who come *off* nice understanding thoughtful
+- there's still self-serving,and will approach things by looking at what and who they can use to benefit themselves the
+  most
+- and because of the *appearance* they put up ,it's often difficult to *notice* and realize that you're really dealing
+  with a *narcissist*
+- even if you realize, it maybe too late since their *facade* may crack when they can no longer contain and control
+  their sense of *entitlement* and *selfish* behaviors , appearance can be deceiving
+- so what should you look out for?
+- *signs* of kind *narcissism*
+- according to tl a psychotherapist ,this type of *narcissism* often manifest itself in a few ways
+- including not doing their *fair* *share* of housework,insisting that their needs are more important than your,and
+  being resistant and reluctant to spend time or resources on things you enjoy
+- perhaps ,they promise that they change or will put in more *efforts* in the relationship,but slack *off* in the end
+- kind *narcissism* are the one who know exactly what to say and what to do to get on your good side and convince you
+  that what you're doing is good and right
+- so if you don't want to get sweet-talked into their hands ,here are 5 things you can do when you with them
+- no1. set boundaries
+- are you able to tell them no
+- *narcissism* often won't care about respecting your time and space
+- it's a reason it's important to set boundaries and remain *steadfast* about keeping them
+- it's a way to communicate your principles and values and to show them what you are and are not comfortable with
+- by remaining *vigilant* about respecting your boundaries ,you also show them that their strategies and *methods* to
+  *undermine* or *manipulate* you won't work
+- no2.speak up
+- are you able to speak your mind when your with them
+- *narcissist* will often try to silent you as a way to gain control over you
+- by being aware of this ,you can remind yourself to speak up and make you hearted,because of once they know that the
+  can't silent you,they may give up on their efforts to influence you
+- no3. healthy distance
+- one of the best way to avoid vonlun into *narcissism* trap is to keep them as arms like
+- the last time you spend with them,the last opportunity they have to via vill into their web of life and
+- so if you find you around *narcissism* person ,try to slowly distance yourself from them
+- no4. get help
+- if you're relationship with na and require help ,there are some resouces and therapy aviliable ,who grill specific
+  with ,*narcissism* abuse ,find mental help provider ,or scrope near you that deal with this topic if you feel like you
+  need it
+- have you ever interact with *narcissism* before?
