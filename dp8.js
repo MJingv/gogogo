@@ -10,7 +10,6 @@ var longestPalindrome = function (s) {
     }
 
 
-
 };
 const res = longestPalindrome('babad')
 console.log(res)
