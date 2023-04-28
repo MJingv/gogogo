@@ -518,57 +518,57 @@ factory
 ---
 
 - once upon a time,there was a young man who worked at a factory
-- his mentor,an old tacenation,talked him to talk less do more ,and never stop developing his skills, and never aspect
-  of facting re-operation
-- ten years later,the old man retired and the young man became tacenation himself
-- he continue to do his wor with same dedication and diligent as he was told
+- his mentor,an old *technician*,*taught* him to talk less do more ,and never stop developing his skills, *in every*
+  aspect of *factory's* operation
+- ten years later,the old man retired and the young man became *technician* himself
+- he continued to do his work with same dedication and diligent as he was *taught*
 - one day ,he visited his mentor
-- the old man sew that he seemed unhappy and asked what was troubling him
-- the young man said, import his heart doubt
-- i have been following in your instructions exactly old these years
+- the old man *saw* that he seemed unhappy and asked what was *troubling* him
+- the young man *signed* and *poured* his heart out
+- i have been following in your instructions exactly *all* these years
 - no matter what i worked on ,i keep quiet and focus on the job
 - i know i've done good work at factory and have learned all the skills that can be learned there
-- what i don't understand is that the guy who don't have my experience or capability have all be promoted while i'm
-  still making as little as before when i was your prints
-- the old man as are you positive that you've become independ to the factory
+- what i don't understand is that the guys who don't have my experience or capability have all be promoted while i'm
+  still making as little as i did before when i was your *apprentice*
+- the old man asked are you positive that you've become *indispensable* to the factory
 - the young man nodded yes
-- the old man pays back and frosted to think
+- the old man *paced* back and *forth* to think
 - after a while ,he turned to the young man, you must request a day off using whatever reason you like ,it's time for
   you to give yourself a break
 - the young man was surprised by this advice
 - but the more he thought about it,the more it makes sense
-- he thanked his teacher and left quickly to make a time of request
+- he thanked his teacher and left quickly to make a *time-off* request
 - when he return to work after his day off,the manager called him into the office to tell him that things did not go
   well in the factory while he was gone
 - others encountered many problems that normally that would be handled by him and he had no idea how to solve them
-- realizing his importance ,the manager decided to promote him to the position of senior technation to thank and
+- realizing his importance ,the manager decided to promote him to the position of senior *technician* to thank and
   encourage him to keep up his good work
 - the young man was grateful for his mentor's wisdom
 - surly he thought,this was a secret to success
-- from that point on ,whenever the young man felt like he desired more than what he was getting,he would task a day
-  off,when he came back the next day ,the situation would improve his satisfaction
-- this part continued for months
+- from that point on ,whenever the young man felt like he *deserved* more than what he was getting,he would task a day
+  off,when he came back the next day ,the situation would improve to his satisfaction
+- this *pattern* continued for months
 - one day,the young man found that he was blocked from going into the factory ,much to his shock ,he found out his
-  employment was terminated
+  employment was *terminated*
 - he could not believe it
 - not knowing what else to do ,he went back to see his mentor to try to figure out how things had gone so wrong
-- why did i loss my job he asked with a mood depressed
-- did i not to do everything was you instructed
-- actually you did not,because you heard only half of the lesson,the old man shake head
-- you understood right away that no one pay any attentions to a light bob that always on,it's only when it's go off that
-  people suddenly take notices and realize they've been take for grounded
-- you're so eager to apply and understanding you left before hearing the second half
+- why did i *lose* my job he asked with a *wounded* *pride*
+- did i not do everything *as* you instructed
+- actually you did not,because you heard only half of the lesson,the old man *shook* his head
+- you understood right away that no one pay any attentions to a light *bulb* that is always on,it's only when it goes
+  off that people suddenly take notices and realize they've been taking for *granted*
+- you're so eager to apply this understanding you left before hearing the second half
 - second half?
-- it began to dn the young man that perhaps he made a big mistake
+- it began to *dawn on*  the young man that perhaps he made a big mistake
 - but what was the second half?
 - the man spoke slowly to make his points,the second half is more important than the first ,it's the realization that if
-  the light bob go off frequently and sooner or later it'll be replaced with one that one is more reliable
-- who wants light bob that no one can count onto provide innuminaciton
-- you seeing life in your life
-- do you hear friends and family numbers that your take for grounded that they're alwasy there for you
+  the light *bulb* go off frequently and sooner or later it'll be replaced with one that one is more reliable
+- who wants light bulb that no one can count on to provide *illumination*
+- you see in life, in your life
+- do you *have* friends and family numbers that your take for granted that they're alwasy there for you
 - what happened if one day they're no loner there
-- do not wait for such a day,do not suddenly how important they are
-- if thanks today for the good forturn of having mnewr life
-- also don't let yourself been taken for grounded
+- do not wait for such a day,to suddenly realize how important they are
+- *give* thanks today for the good *fortune* of having them *in your life*
+- also don't let yourself been taken for granted
 - but the same time do your work and don't stop everything you do just because it doesn't go the way you want to go
 - find the balance and life and life will reward you with giving you the balance back
