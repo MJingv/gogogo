@@ -612,53 +612,54 @@ food
 - *oxidative* stress will *mess* you up
 - it's a activity handle you body and ability to *detox*  and repeal itself and can actually change your brain structure
 - it's also been link to other *baddies* like *Alzheimer's* ALS and multiple *sclerosis*
-- so here's with food and veges super hero are coming
-- that's anti-oxident weapon nutrilize that hantch them anxiety
-- the hanchment causes the balance and anti-oxident restore the balance
-- evil plant fyd
-- you can grow up on this with bears living green beats and bonas dark chocolates
-- with that chocolates
-- no3,to be well ,have some betwill and bnight
-- yes,we meet vitamen b9 as a fall gusad,not benight
-- although,if you like the panic ,we'll take it
-- seriously though,fal acide and b12 are both neccessory for the production of saro tonon
-- seri-toner a mood stablizer is one of the 5 happy harmons
+- so here's with fruit and *veggie* *superheroes* come in
+- that's antioxidant weapon *neutralizes* that henchman's activities
+- the henchman causes an *imbalance* and antioxidant restore the balance
+- evil plan *foiled*
+- you can *gear* up on this with *berries* *leafy* green *beets* and *bonus* dark chocolates
+- yep,we said chocolates
+- no3,to be well ,have some b12 and b9
+- yes,we meet *vitamin* b9 as a *folic* *acid*,not *benign*
+- although,if you like the *pun* ,we'll take it
+- seriously though,*folic* *acid*  and b12 are both *necessary* for the production of *sarotonin*
+- *sarotonin* a mood *stabilizer* is one of the 5 happy *hormones*
 - so you definitely want that production going smoothly
-- seri-toner is produce in the god
-- so when you feeding yourself full like acid and be tw rich foods ,there're feeding it too
-- so have some proch types ,cheese maybe banana and be happy
-- no4 love the green as hole
-- did you know that green has lears
-- you've got the outside beat called the hole that farbery beat called brand
-- under that this startch and inte most b called the germ
-- now we get right the hole because it's not really edible and from the brand to the germ ,that is whole green getness
-- much of shining bright foods we can from the store like white bread all can contain startch and germs
-- the couple of brand lear
-- that grand lear got good ,like b-vitamin and miniros
-- well,being inclusive of the green as a hole,is a big part of diets like mediterian and alter health eating index
-  diet,and has being shown to reduce the rest of depress sometimes
-- the mediterian diets includes some of the prior mentioned helpful foods ,and consist whole green vegetables ,gog foods
-  nuts seeds and species
-- no5.consider taking a minoo acides
-- m-a may sound al-sitiy but not worry ,they're simple
-- so imply in fact ,they're building blocks ,there the building blocks that make proteins
+- *sarotonin* is produced in the *gut*
+- so when you're feeding yourself *folic* acid and b12 rich foods ,they're feeding it too
+- so have some *poached* *eggs* ,cheese maybe a banana and be happy
+- no4 love the green as *whole*
+- did you know that green has *layers*
+- you've got the outside *bit* called the *hull* than a  *fibery* bit called bran
+- under that this *starches* and *innermost*  bit called the *germ*
+- now we get *rid* of the *hull* because it's not really edible and from the bran to the germ ,that is whole *grain* *
+  goodness*
+- much of shining bright foods we can from the store like white bread all can contain *starches* and germs
+- they got rid of *bran layer*
+- that gran layer got goods ,like b-vitamin and *minerals*
+- well,being inclusive of the green as a whole,is a big part of diets like *mediterranean* and *alternative* health
+  eating index diet,and has being shown to reduce the *risk* of depressive *symptoms*
+- the *mediterranean* diets includes some of the *previously* mentioned helpful foods ,and consist whole green
+  vegetables ,*legumes* *fruits* nuts seeds and species
+- no5.consider taking a *amino* acids
+- amino acid may sound all sciency but not to worry ,they're simple
+- so simple in fact ,they're building blocks ,there the building blocks that make proteins
 - we need them,yet our body don't produce them,so we have to eat them
-- one of the those we need it,but don't make it m-aci is script fine
-- chipfan is center to make serious toner
-- so you need enou of this,you've h about it how chifan is in all sorts of foods from chicken to turkey to tofu,so eat
-  it up
-- foods like kiiwa,eggs and red meat contain all m-aci
-- so take care of your god and dig in
-- and no6,goal low sugar
+- one of those we need it,but don't make it amino acid is *tryptophan*
+- *tryptophan* is center to make *serotonin*
+- so you need enough of this,you've heard about it how *tryptophan* is in all sorts of foods from chicken to turkey to
+  tofu,so eat up
+- foods like *quinoa*,eggs and red meat contain all the amino acid
+- so take care of your *gut* and dig in
+- and no6,*go* low sugar
 - cutting back on sugar has become popular trend nowadays and for good reason
-- taking in and over bounding sugar are not only limit colleague production ,but can also impact your mental healthy
-- unlike the helper mention before,sugar increase the information making the depressive sometimes worse
+- taking in and overboundance sugar are not only limit colleague production ,but can also impact your mental healthy
+- unlike the helper mention before,sugar increase the *inflammation* making the depressive sometimes worse
 - sugar's hard to avoid though,because of sort of everywhere
 - the good news is that's not real sugar that you have to watch out for
-- it's the glass make it index you want to keep it low
-- the g make index is a measure of how quickly of food makes sugar raise
-- the gi can even change depending on how food prepared like a big potato have a high gi than a boiled one
-- a quick check on the food g make it index will help in your journey helping eating
-- you're what what you eat,we know this ,we're often forgotten that our body are not sole instrument but whole choros,
-  operate and ocastra working together
-- it's only make sense that what we digest will have a diminor effect on everything else
+- it's the *glycemic* index you want to keep low
+- the *glycemic* index is a measure of how quickly a food makes blood sugar raise
+- the gi can even change depending on how food prepared like a *baked* potato having a higher gi than a boiled one
+- a quick check on the food *glycemic*  index will help in your journey of helping eating
+- you're what you eat,we know this ,and yet we're often forget that our body are not sole instrument but whole *chorus*,
+  *opera* and *orchestra* working together
+- it's only make sense that what we digest will have a *domino* effect on everything else
