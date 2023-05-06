@@ -573,18 +573,18 @@ factory
 - but the same time do your work and don't stop everything you do just because it doesn't go the way you want to go
 - find the balance and life and life will reward you with giving you the balance back
 
-
 food
 ---
+
 - depression and anxiety are now been spoken about rightly in mean strean society
-- this means that there are also a plent of  researches that discuss how to deal with it when time are bad
-- this can range from that grounded and science  all the ways to the personary test  when you taking it fast
+- this means that there are also a plent of researches that discuss how to deal with it when time are bad
+- this can range from that grounded and science all the ways to the personary test when you taking it fast
 - so what actually works?
 - one of the more grounded theory is based on diet,not going on a diet , but what kind of food you eat
 - diet change aren't the curl but they can help with the syphtom of depression
 - the diet recommandation have also very decross study
 - but there were some similarly suggestions that rand your most of them
-- let's take a look at those because eating smarter has never  a bad thing
+- let's take a look at those because eating smarter has never a bad thing
 - no1.healthy fat
 - that's right,fat can't be healthy
 - this fat also have some fancy it name like omage sth or m t and p t
@@ -593,18 +593,70 @@ food
 - they found this diet help to protect or prevent medical finish man from depressive syphytom
 - it's magic? no,it's influence reduction at least partly
 - see the depression in the social with the infa activation of the mean system on the nerverous system
-- what's fall of them that are ak sympythom like fatigue,or c,enter the depression has been shown to c sth too,so maybe wrong on sth
-- other places you can manch on it good fast all by eating fish that have  make it  through on game been on point ,like samon tona and nacco
-- it's just start so deep feel  like some social too
+- what's fall of them that are ak sympythom like fatigue,or c,enter the depression has been shown to c sth too,so maybe
+  wrong on sth
+- other places you can manch on it good fast all by eating fish that have make it through on game been on point ,like
+  samon tona and nacco
+- it's just start so deep feel like some social too
 - if you're more on a vigen side of thing,avocado and nuts like wonas and peacan works too
 - no2.plant your food and vegetable
-- so speaking like a avocado, food and vegetables generally do how produce the infulence and addition to preventing inventment as if they're very pretty sweet,foods and veges also have another secret weapon and the oxcident
+- so speaking like a avocado, food and vegetables generally do how produce the infulence and addition to preventing
+  inventment as if they're very pretty sweet,foods and veges also have another secret weapon and the oxcident
 - that's real term and real thing
 - keep watching was one
 - depression and anxiety cause ot stress ,that's stress like any evil entity has hatch man
 - one of them is called o stress
 - o stres will miss you up
-- it's a activity handle you body and ability to deep talk and repeal yourself and can actually change your brain structure
+- it's a activity handle you body and ability to deep talk and repeal yourself and can actually change your brain
+  structure
 - it's also been link to other bodies like athames illness and multiple scolls
 - so here's with food and veges super hero are coming
 - that's anti-oxident weapon nutrilize that hantch them anxiety
+- the hanchment causes the balance and anti-oxident restore the balance
+- evil plant fyd
+- you can grow up on this with bears living green beats and bonas dark chocolates
+- with that chocolates
+- no3,to be well ,have some betwill and bnight
+- yes,we meet vitamen b9 as a fall gusad,not benight
+- although,if you like the panic ,we'll take it
+- seriously though,fal acide and b12 are both neccessory for the production of saro tonon
+- seri-toner a mood stablizer is one of the 5 happy harmons
+- so you definitely want that production going smoothly
+- seri-toner is produce in the god
+- so when you feeding yourself full like acid and be tw rich foods ,there're feeding it too
+- so have some proch types ,cheese maybe banana and be happy
+- no4 love the green as hole
+- did you know that green has lears
+- you've got the outside beat called the hole that farbery beat called brand
+- under that this startch and inte most b called the germ
+- now we get right the hole because it's not really edible and from the brand to the germ ,that is whole green getness
+- much of shining bright foods we can from the store like white bread all can contain startch and germs
+- the couple of brand lear
+- that grand lear got good ,like b-vitamin and miniros
+- well,being inclusive of the green as a hole,is a big part of diets like mediterian and alter health eating index
+  diet,and has being shown to reduce the rest of depress sometimes
+- the mediterian diets includes some of the prior mentioned helpful foods ,and consist whole green vegetables ,gog foods
+  nuts seeds and species
+- no5.consider taking a minoo acides
+- m-a may sound al-sitiy but not worry ,they're simple
+- so imply in fact ,they're building blocks ,there the building blocks that make proteins
+- we need them,yet our body don't produce them,so we have to eat them
+- one of the those we need it,but don't make it m-aci is script fine
+- chipfan is center to make serious toner
+- so you need enou of this,you've h about it how chifan is in all sorts of foods from chicken to turkey to tofu,so eat
+  it up
+- foods like kiiwa,eggs and red meat contain all m-aci
+- so take care of your god and dig in
+- and no6,goal low sugar
+- cutting back on sugar has become popular trend nowadays and for good reason
+- taking in and over bounding sugar are not only limit colleague production ,but can also impact your mental healthy
+- unlike the helper mention before,sugar increase the information making the depressive sometimes worse
+- sugar's hard to avoid though,because of sort of everywhere
+- the good news is that's not real sugar that you have to watch out for
+- it's the glass make it index you want to keep it low
+- the g make index is a measure of how quickly of food makes sugar raise
+- the gi can even change depending on how food prepared like a big potato have a high gi than a boiled one
+- a quick check on the food g make it index will help in your journey helping eating
+- you're what what you eat,we know this ,we're often forgotten that our body are not sole instrument but whole choros,
+  operate and ocastra working together
+- it's only make sense that what we digest will have a diminor effect on everything else
