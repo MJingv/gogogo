@@ -572,3 +572,39 @@ factory
 - also don't let yourself been taken for granted
 - but the same time do your work and don't stop everything you do just because it doesn't go the way you want to go
 - find the balance and life and life will reward you with giving you the balance back
+
+
+food
+---
+- depression and anxiety are now been spoken about rightly in mean strean society
+- this means that there are also a plent of  researches that discuss how to deal with it when time are bad
+- this can range from that grounded and science  all the ways to the personary test  when you taking it fast
+- so what actually works?
+- one of the more grounded theory is based on diet,not going on a diet , but what kind of food you eat
+- diet change aren't the curl but they can help with the syphtom of depression
+- the diet recommandation have also very decross study
+- but there were some similarly suggestions that rand your most of them
+- let's take a look at those because eating smarter has never  a bad thing
+- no1.healthy fat
+- that's right,fat can't be healthy
+- this fat also have some fancy it name like omage sth or m t and p t
+- where you find them
+- look at fines,they have diet on fish and chick and cheese that low in the bad fat group
+- they found this diet help to protect or prevent medical finish man from depressive syphytom
+- it's magic? no,it's influence reduction at least partly
+- see the depression in the social with the infa activation of the mean system on the nerverous system
+- what's fall of them that are ak sympythom like fatigue,or c,enter the depression has been shown to c sth too,so maybe wrong on sth
+- other places you can manch on it good fast all by eating fish that have  make it  through on game been on point ,like samon tona and nacco
+- it's just start so deep feel  like some social too
+- if you're more on a vigen side of thing,avocado and nuts like wonas and peacan works too
+- no2.plant your food and vegetable
+- so speaking like a avocado, food and vegetables generally do how produce the infulence and addition to preventing inventment as if they're very pretty sweet,foods and veges also have another secret weapon and the oxcident
+- that's real term and real thing
+- keep watching was one
+- depression and anxiety cause ot stress ,that's stress like any evil entity has hatch man
+- one of them is called o stress
+- o stres will miss you up
+- it's a activity handle you body and ability to deep talk and repeal yourself and can actually change your brain structure
+- it's also been link to other bodies like athames illness and multiple scolls
+- so here's with food and veges super hero are coming
+- that's anti-oxident weapon nutrilize that hantch them anxiety
