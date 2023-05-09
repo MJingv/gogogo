@@ -667,56 +667,59 @@ food
 horror fiction
 ---
 
-- horror is most popular fiction geners today
-- big name like it, sow ,and lost of us prove over and over that many people to be scared for entertainment
-- this may raise a question ,what makes quippy clons, massive shock and brain eating zoombes , such popular topic in the
-  world fiction
-- the rush
-- what do mass finals talking to a crash and sland man having in common
-- there are effect injuce afiya and even thou this experience may all be different,your body produce very similar
-  reaction
-- accroding to medical news today when you feel vcher in danger ,your bring trager fight or flight response,your purple
-  dialate ,your heart beat faster ,and your bleed pressure increase
-- this irrelution response that help you stay alert when the body seems in danger ahead
-- by exposing you to scray images ,horror movie and games have a way making your mind believe that in danger which
-  create a crash of d and feeling s and excitment
-- but of course it's important that real danger is captial that bee which brings us to safety nt
-- imaging be night god at family pt rest,your chief stops from midnight to 6am ,your job is to sit in the room and w to
-  4 and motranike that come to life a room and that around the restrount
-- you turn your eyes away from the canera for 2s,when suddendly the fox and mtnic run to your room and stop traking
-- if this will happen in real life,will this situation may exciting
+- horror is one of the most popular fiction *genres* today
+- big name like it, *saw* ,and *last* of us prove over and over that many people *love* to be scared for entertainment
+- this might raise a question ,what makes *creepy*  *clowns*, massive *sharks* and brain eating *zombies* , such popular
+  topics in the world fiction
+- the *rush*
+- what do *math* finals talking to a *crush* and *slender* man having in common
+- there are *effective* in *inducing* *fear* and even though these experience may all be different,your body produce
+  very similar reaction
+- *according* to medical news today when you feel *you're* in danger ,your bring *triggers* fight or flight
+  response,your *pupils* *dilate* ,your heart beat faster ,and your *blood* pressure increases
+- this're *evolution* response that help you stay alert when the body seems danger ahead
+- by exposing you to *scary* images ,horror movie and games have a way of making your mind believe that's in danger
+  which create a *rush* of *adrenaline* and feeling of *fear* and *excitement*
+- but of course it's important that real danger is *kept* at *bay* which brings us to safety *net*
+- imaging being a night *guard* at a family *pizza* *restaurant*,your *shift* *starts* from midnight to 6am ,your job is
+  to sit in the room and *monitor*  4 and *animatronics* that come to life a room and that around the restaurant
+- you turn your eyes away from the *camera* for 2s,when *suddenly* the fox *animatronic* run into your room and stop *
+  shrieking*
+- if this were to happen in real life,will this situation be exciting
 - probably not
-- but of course, if you know this was just a game, you would know it's safe even though the senoria was terrify
+- but of course, if you know this was just a game, you would know it's safe even though the *scenario* was terrify
 - and this is the main difference between real and fake danger
-- in his book the danger is edge phychologist ma expores how people find excietment from extrem activity
-- he theory taht p raise the level of exciemnet from whisy activity by having just enough safety nigty activity from
-  being liver or fitle
-- this is how people can enjoy roll costers, bg jumping or even horror moives
-- the fact that terr behind the screen isn't real creat the safety night for the view while maximize the level of
-  excietment
-- edge and genda
-- who do you think would be more likely enjoy the horror movies or games,you teenager brother or your grandma
-- research in the class jonson tempts to answer the question in 2020
-- they conduct the unline survey amount 1070 indivials and ask them questions about personality trends, gender, age ,and
-  their feelings about the horror movies
+- in his book the *dangerous* edge *psychologist* ma *explores* how people find excitement from *extreme* activity
+- he theorized that people raise the level of excitement from *risky* activity by having just enough safety *net*
+  activity from being *lethal* or *fatal*
+- this is how people can enjoy roller *coasters*, *bungee* jumping or even horror movies
+- the fact that the *terror* behind the screen isn't real creat the safety net for the *viewer* while maximizing the
+  level of *excitement*
+- age and *gender*
+- who do you think would be more likely enjoy the horror movies or games,you teenage brother or your grandma
+- research c and jonson *attempted* to answer this question in 2020
+- they conduct an *online* survey amount 1070 *individuals* and ask them questions about personality *traits*, gender,
+  age ,and their feelings about the horror movies
 - so what did they find?
-- they find that people who enjoy horror movies tends to have vw imagination long e and strong believe in the paranormal
-- the research also know to start the male are more likely to enjoy the h movies in females
-- this study also shows that these was a negative corroalation between enjoyment of horror and age
-- this means that if you're going to play a horror game make sure that you paly with your teenager bro and not with your
+- they *found* that people who enjoy horror movies tends to have *vivid* imagination *low neuroticism* and strong
+  *belief* in the *paranormal*
+- the research also *notice* that the males are more likely to enjoy the horror movies in females
+- this study also shows that these was a negative *correlation* between enjoyment of horror and age
+- this means that if you're going to play a horror game make sure that you play with your teenage bro and not with your
   grandma
-- the nerative
+- the *narrative*
 - have you ever enjoy the scary movie or game even if you typically don't enjoy horror
 - what make it enjoyable?
-- plsy lc believes that there's sth far more significent than js that join people to the j of horror
-- in his book,the phylogy of horror,c argues that what outtely drive people to the horror more than anything else is
-  curiosity
-- what's the right narrotive, the horror genors able to raise curiosity amonunt the aduits and compare the peole not
-  only watch the movies, but even come up with the own s of story
-- while horror might not your favorite,you may be surprised for the right movies or games that can clear your curiosity
-  ,drive you in with this fasinating story
-- so how about a good horror phone for your next movie night
+- *philosopher* lc believes that there's sth far more significant than *jump scares* that *draws* people to the *genre*
+  of horror
+- in his book,the *philosopher* of horror,c argues that what *ultimately* *draw* people to the horror more than anything
+  else is curiosity
+- what's the right *narrative*, the horror genre is able to raise curiosity among the *audience* and *compel* the peole
+  not only watch the movies, but even come up with their own theory of story
+- while horror might not your favorite,you may be surprised for the right movies or games that can *play* your curiosity
+  ,*draw* you in with this *fascinating* story
+- so how about a good horror *film* for your next movie night
 - what about you
 - are you a big fan of horror
 - what's your favorite horror movies or games?
-- if not,what makes your dislike the genra
+- if not,what makes your dislike the *genre*
