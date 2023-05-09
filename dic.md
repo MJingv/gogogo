@@ -691,3 +691,32 @@ horror fiction
 - in his book the danger is edge phychologist ma expores how people find excietment from extrem activity
 - he theory taht p raise the level of exciemnet from whisy activity by having just enough safety nigty activity from
   being liver or fitle
+- this is how people can enjoy roll costers, bg jumping or even horror moives
+- the fact that terr behind the screen isn't real creat the safety night for the view while maximize the level of
+  excietment
+- edge and genda
+- who do you think would be more likely enjoy the horror movies or games,you teenager brother or your grandma
+- research in the class jonson tempts to answer the question in 2020
+- they conduct the unline survey amount 1070 indivials and ask them questions about personality trends, gender, age ,and
+  their feelings about the horror movies
+- so what did they find?
+- they find that people who enjoy horror movies tends to have vw imagination long e and strong believe in the paranormal
+- the research also know to start the male are more likely to enjoy the h movies in females
+- this study also shows that these was a negative corroalation between enjoyment of horror and age
+- this means that if you're going to play a horror game make sure that you paly with your teenager bro and not with your
+  grandma
+- the nerative
+- have you ever enjoy the scary movie or game even if you typically don't enjoy horror
+- what make it enjoyable?
+- plsy lc believes that there's sth far more significent than js that join people to the j of horror
+- in his book,the phylogy of horror,c argues that what outtely drive people to the horror more than anything else is
+  curiosity
+- what's the right narrotive, the horror genors able to raise curiosity amonunt the aduits and compare the peole not
+  only watch the movies, but even come up with the own s of story
+- while horror might not your favorite,you may be surprised for the right movies or games that can clear your curiosity
+  ,drive you in with this fasinating story
+- so how about a good horror phone for your next movie night
+- what about you
+- are you a big fan of horror
+- what's your favorite horror movies or games?
+- if not,what makes your dislike the genra
