@@ -723,3 +723,13 @@ horror fiction
 - are you a big fan of horror
 - what's your favorite horror movies or games?
 - if not,what makes your dislike the *genre*
+
+tesla
+---
+
+- tesla is coming out with all new electrical viacal with more budge friendly price tag
+- this's cv is one of the theory's millions of modals that'll assume avilible in the us
+- tesla's more affordable next g velcal is on ticipteto go on sale next year
+- it's start price will between 25000 and 30000 dollars,currently the cheapest tesla modal cost's around 43000
+  dollars,doesn't include the sale driving package
+-
