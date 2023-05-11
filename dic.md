@@ -727,9 +727,49 @@ horror fiction
 tesla
 ---
 
-- tesla is coming out with all new electrical viacal with more budge friendly price tag
-- this's cv is one of the theory's millions of modals that'll assume avilible in the us
-- tesla's more affordable next g velcal is on ticipteto go on sale next year
-- it's start price will between 25000 and 30000 dollars,currently the cheapest tesla modal cost's around 43000
-  dollars,doesn't include the sale driving package
--
+- tesla is coming out with all new electric *vehicle* with a more budge friendly price tag
+- this's ev is one of the *series* of *nearly* *announced* *models* that'll *soon*  be *available* in the us
+- tesla's more affordable next-gen *vehicle* is *anticipated* go on sale next year
+- it's starting price will between 25000 and 30000 dollars,currently the cheapest tesla model costs around 43000
+  dollars,that doesn't include the *self-driving*  package
+- *joining us* now it's tn ,head or lead *equity* *analyst* for global  *autos* at rbc capital markets
+- tom,thanks very much for being with us appreciated it
+- so,tesla's coming out with cheaper cars
+- gm and another *startup* of called of fisker *also* *releasing* *electric* *vehicles* over the next year also expect
+  the cost round 30000 dollars
+- so why are production is going up and price going down,right about now
+- i means this is a actually *anticipated* at tesla capital market *day* a month ago
+- he didn't *officially* say it, but he did say that, the costs were coming down by as much as of 50%
+- really setting up for what had been *teased* years before which is this *kind* of lower price car
+- the reason why now we'll say it's not just them, you *also* see a *volkswagen* ,*announced* they are going to do sth
+  similar by *mid-decade*
+- the reason why you starting to see more *automakers*  talk about low priced, *vehicle* is *margins* are starting to *
+  improve*
+  for these electric vehicle
+- you remember when they start to come out ,these *automakers*  were losing money on them
+- but now as we're finding out, you know,we got government support that *always* help
+- but also,*these* companies are achieving more *scale* more cars being able to be produced
+- *battery* prices are starting to come down ,especially with some raw *materials* getting more you konw,prices coming
+  down
+- so that's really why,it's just now we've *scaled* to the point where we can start thinking about kind of the next step
+  in the evolution of ev's
+- thanks you *hinted* a little bit at this *incentives* that are there for the company from the government
+- but this car price as i understand don't factor in the *inflation* reduction acts breaks for people own electric
+  vehicles
+- i understand that goes as high as 7500 dollars
+- who can benefit from this and am i right that you konw,that would be discount on top
+- so what would be even less than 30000 to 25000 dollars
+- *no* that's absolute right,it's on top of it
+- now keep in mind not everybody's gonna qualify for 35000 dollars
+- you have to prove you're producing a lot of components of the cars in the us obviously
+- so many  *automakers* even don't quality some of the cars
+- so tesla we think is actually to best position here,even though they are model free,there is a *variant* that
+  doesn't *fully* quality
+- but for the most part ,it's on top of the existing price we're seeing
+- and the reason why is ev's actually if battery price is coming down ,they actually cost less to make for car maker
+  ,it's less part right
+- and so for that reason down the *road* ,it's no surprise that the price we'll come down you see more low price
+  *variants*
+- all right,getting us *closer* to cutting down those *emissions* that target *dates* that the *administration* has put
+  forward
+- tom ran thank you so much 
