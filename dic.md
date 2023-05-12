@@ -772,4 +772,36 @@ tesla
   *variants*
 - all right,getting us *closer* to cutting down those *emissions* that target *dates* that the *administration* has put
   forward
-- tom ran thank you so much 
+- tom ran thank you so much
+
+empathy
+---
+
+- impacts are kind caring nartary and loyal friends
+- these seems man's dependable and trust were they because they make others feel safe
+- but being exposed to other people's motions at all time is exthousting
+- this gives high bro empathy have negative satisfacts
+- not only you can become emotional exthusted but also you can become so absoluted and another people emotion's you
+  forget to take care of around
+- this are 5 negative side of being impacted
+- no1.their actions may seem fosted
+- in efforts to keep the peace and words conflicted ,some empathy be performative
+- they may say your do things,they do not believe
+- they're like to be kind,warm and platmatic
+- how,they may be going through the motions
+- as impact ,you will days where do you not feel emotions keep able of being your ideal,warm super supportive
+  understanding self,that's ok
+- after all ,you are human too
+- it's important to remind of yourself ,your emotional need matter
+- so set time inside to the gap to yourself
+- if someone need your support,you can still be there for them
+- but set boundaries for help present vaste of you are willing to be there for that moment
+- no2.they make take advantages of their ability
+- there are always 2 sides to everything
+- when they empathy personality merge with personality from the dark tryad,they bpcome a dark empathy
+- it may enationlay sound like sth out of side f movie or dark fanticy novels
+- but dark empathy so real,a dark empathy uses their ability read people
+- so they can minipulate and take advantages of them
+- dark empathy use anipaty to draw people close and mind information out of them
+- a dark empathy can look kind and warm on the out side
+- but in ,an 
