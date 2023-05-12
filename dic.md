@@ -804,4 +804,39 @@ empathy
 - so they can minipulate and take advantages of them
 - dark empathy use anipaty to draw people close and mind information out of them
 - a dark empathy can look kind and warm on the out side
-- but in ,an 
+- but in reality,are unfeeling and calcutive,but cute focus and position ,they learn what make people takes and can
+  influence others to act the way they want
+- no3,they experience frequent about paranoya
+- all human possess m n, but researches suggess that am i in ass and of impass of more response
+- this hypposi can lead to some ampathy to experience more enthusted and paramoya
+- according to doctor nlof ,anxiety and paranoya are resulted rather than symptom of being empathy
+- if you're empathy experience frequent and anxiety,try to understand your emotions,journey or working with the psypist
+  can help you adjust to your own emotions,and your emotion you may have absorbed from those around you
+- no4.this experience coginative disnance
+- coginative disonance is state having inconsistent thoughts believes or altitudes
+- it's mental discomfort ,you may experience when you're hamble too conflicting ideas
+- for example,you may do sth that's not aline with your co-believe
+- for and past ,you may look like indesision,but it's form of self perservation
+- there're several ways of dealing with conflicting believes
+- one way is provide enough evidence for the support of believe,doing so will help you out way ,the disinent that you
+  feel
+- for example,if your passion about climate change, but feel that your out-dated car goes out your believes,work to
+  words ,thought your car for more environment friendly option or ride your bike get around town
+- do things to support what's you believing
+- and no5.they can be frequent liers
+- sometimes,to avoid hear other people's feelings,then pass lier
+- they say lies as a way of maintain harmonie and avoid conflicts
+- at times,they may body their feelings and thoughts to comply with popular opinion
+- however,this tag can have a middle negative affects
+- not only do the society teach us lying is bad because the harms are relationship,but lies can also prevent us from
+  relating to others
+- research led by jl from university of moshigen ,found that lies low your ampathatic acusicy
+- what did this mean to impact
+- whether the lie they tell us to tact or not ,and in path at that moment is unable to identify the other people's
+  emotions,and they would likely to continue lies
+- if you're empathy who was result to lies to maintain harmonie
+- it's time to be honest,not just for the seek of your relationship,but also for yourself
+- the dark side of empathy is no boring out of malise
+- sometimes,it isn't means of self-preservation
+- however,it does not mean that any of this trace are defansible
+- if you're empathy and recognize some of the tricks of near yourself,seek ,talk with consislar if you need assistants
