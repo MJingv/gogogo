@@ -840,3 +840,62 @@ empathy
 - sometimes,it isn't means of self-preservation
 - however,it does not mean that any of this trace are defansible
 - if you're empathy and recognize some of the tricks of near yourself,seek ,talk with consislar if you need assistants
+
+hard
+---
+
+- it's some poins,your life's gonna hard,you're can not see the way out
+- everything that can't happen will happen
+- you'll be deversted ,you'll be destroy,and you'll think this is it for me ,this is the end
+- but at that moment you have choice,you can either stay down, or you can get up and fight one more time
+- if you can pull yourself together ,and go out again ,you can get through it,you will get through it
+- you just get the side,the tna can not quite
+- that's what happen in life, all you do,fall down ,get back up again,that how you win
+- things can get harder,things can get tougher,this the way life works
+- so what you need to do,is you need to get harder and you need to do tougher
+- if you can pick yourself up every single time you get knock down ,you can make it
+- even if you're in the middle of disaster,you can use that disaster,you can use that disaster for direction
+- it's through the disaster,through the adversity that s the develop
+- if everything with the way you want to go ,you won't have anything to excise by s the amazing of life where you get
+  the work out the resistance and find out the life about yourself ,then you didn't know
+- i'm stronger than that i thought i was,i'm all res than i thought i was
+- life keep changing,and life keep changing,and season keep changing,and circumstances keep changing
+- you get be flexible out,xx xx,have switches this way,have turn back this way,and if dont' make the right switch,you
+  find yourself suck
+- the things you need to win the re,you can't difference,because you can't never sth didn't work when you didn't have a
+  try
+- x take time,it takes time to build your brain,life,carrer,you get prepare to get thousand nodes to get one year
+- so stop feeling sorry for yourself over what challenge or throughout you
+- it's part of process,it's part of journey
+- how will you ever grow,if you never have any pressure
+- you should be thanking the universe for putting you through this because this is a problem you're having this is a
+  great opportunity to get stronger
+- when you committed,invested,alin,you can through it out,you can just walk away
+- cause you're quite when you get some xx,you're just walk away easy ,you don't valliate the c with this tough cause you
+  get some xx
+- when you all have nothing to invest,it's easy to walk away
+- see sometimes,some people,only wanted is without struggle
+- but if you're serious about real it is ,you have to put some efforts
+- get up ,complete,mi complete,imaf,complete
+- lost, compared back,it's you'll given 30
+- and you won't forget the people who's given sweater,bleed,tear,you won't with this pay for and free
+- i'm not for n still but for n will
+- i will not give up ,surrender,quite ,your problem will give up for it
+- i mean efforts for me
+- i mean the match whatever efforts enemy put enough ,whoever your enemy is , ms the dog app
+- all most everybody can stay exciting for 2 or 3 months,a few people can stay exciting for 2 or 3 years
+- but where is stay exciting forever
+- people want to follow a lead ,that's power aggressive,associated,tall
+- they have change the world can't d the determination
+- their attitude are burn it out ,their tough the better
+- they understand you don't get what you want or what you love the hell,life give what you only sell
+- if you only be yourself and ordinary ,that's exactly what's your gotter get
+- but when you back to win ,they the man did happiness and success and for failure
+- they always have can do attitude
+- you turn your life around while you change attitude ,you change your attitude,you change altitude
+- the reason you can stop is cause you maybe so close
+- when the be a shame for you to quite when you're this close
+- when to be a shame for you to walk away when you come this far
+- when it be horrible for you to build out when you just is close to victory
+- you can work by where you see,you can give up cause you don't feel good
+- you can like people talk to other thing,you can like their motions,suffer for move forward
