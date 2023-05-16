@@ -844,32 +844,33 @@ empathy
 hard
 ---
 
-- it's some poins,your life's gonna hard,you're can not see the way out
-- everything that can't happen will happen
-- you'll be deversted ,you'll be destroy,and you'll think this is it for me ,this is the end
-- but at that moment you have choice,you can either stay down, or you can get up and fight one more time
+- *at* some point,your life iss gonna get hard,you're not *going to* see a way out
+- everything that *can* happen will happen
+- you'll be *devastated* ,you'll be *distraught*,and you'll think this is it for me ,this is the end
+- but *in* that moment you'll have a choice,you can either stay down, or you can get up and fight one more time
 - if you can pull yourself together ,and go out again ,you can get through it,you will get through it
-- you just get the side,the tna can not quite
+- you just get to *decide* that you're not going to quite
 - that's what happen in life, all you do,fall down ,get back up again,that how you win
-- things can get harder,things can get tougher,this the way life works
+- things can get harder,things can get tougher,that's the way life works
 - so what you need to do,is you need to get harder and you need to do tougher
-- if you can pick yourself up every single time you get knock down ,you can make it
-- even if you're in the middle of disaster,you can use that disaster,you can use that disaster for direction
-- it's through the disaster,through the adversity that s the develop
-- if everything with the way you want to go ,you won't have anything to excise by s the amazing of life where you get
-  the work out the resistance and find out the life about yourself ,then you didn't know
-- i'm stronger than that i thought i was,i'm all res than i thought i was
-- life keep changing,and life keep changing,and season keep changing,and circumstances keep changing
-- you get be flexible out,xx xx,have switches this way,have turn back this way,and if dont' make the right switch,you
-  find yourself suck
-- the things you need to win the re,you can't difference,because you can't never sth didn't work when you didn't have a
-  try
-- x take time,it takes time to build your brain,life,carrer,you get prepare to get thousand nodes to get one year
-- so stop feeling sorry for yourself over what challenge or throughout you
+- if you can pick yourself up every single time you get knocked down ,you can make it
+- even if you're in the middle of disaster,you can use that disaster for *direction*
+- it's through the disaster,through the *adversity* that *strength* is developed
+- if everything *went* the way you want it to go ,you won't have anything to *exercise* by, it's the *gymnasium* of life
+  where you get the workout, the resistance you find out the things about yourself ,then you didn't know
+- i'm stronger than that i thought i was,i'm all *resilient* than i thought i was
+- life keep changing,and as life keep changing,and season keep changing,and circumstances keep changing
+- you get be flexible *enough* to change on *dime* and switches this way,and turn back this way,and if you don't make
+  the right switch,you find yourself *stuck*
+- the things you need to win the *resilience*,you can't just keep trying difference *stuff*,because you can never sth
+  didn't work when you didn't have a try
+- *greatness* takes time,it takes time to build your *brand*,life,*career*,you get prepare to get a thousand *nos* to
+  get one *yes*
+- so stop feeling sorry for yourself over what challenges or *thrown at* you
 - it's part of process,it's part of journey
 - how will you ever grow,if you never have any pressure
-- you should be thanking the universe for putting you through this because this is a problem you're having this is a
-  great opportunity to get stronger
+- you should be thanking the universe for putting you through this, because *these* problems you're having these are the
+  greatest opportunity to get stronger
 - when you committed,invested,alin,you can through it out,you can just walk away
 - cause you're quite when you get some xx,you're just walk away easy ,you don't valliate the c with this tough cause you
   get some xx
