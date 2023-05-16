@@ -871,32 +871,33 @@ hard
 - how will you ever grow,if you never have any pressure
 - you should be thanking the universe for putting you through this, because *these* problems you're having these are the
   greatest opportunity to get stronger
-- when you committed,invested,alin,you can through it out,you can just walk away
-- cause you're quite when you get some xx,you're just walk away easy ,you don't valliate the c with this tough cause you
-  get some xx
-- when you all have nothing to invest,it's easy to walk away
+- when you committed,invested,*all in*,you can *throw in the towel* ,you can just walk away
+- cause you're quite when you get some *skin* the game,you won't just walk away easy ,you don't *violate* the *covenant*
+  when things get tough cause you get some *skin* in the game
+- when you don't have nothing to invest,it's easy to walk away
 - see sometimes,some people,only wanted is without struggle
-- but if you're serious about real it is ,you have to put some efforts
-- get up ,complete,mi complete,imaf,complete
-- lost, compared back,it's you'll given 30
-- and you won't forget the people who's given sweater,bleed,tear,you won't with this pay for and free
-- i'm not for n still but for n will
-- i will not give up ,surrender,quite ,your problem will give up for it
-- i mean efforts for me
-- i mean the match whatever efforts enemy put enough ,whoever your enemy is , ms the dog app
-- all most everybody can stay exciting for 2 or 3 months,a few people can stay exciting for 2 or 3 years
-- but where is stay exciting forever
-- people want to follow a lead ,that's power aggressive,associated,tall
-- they have change the world can't d the determination
-- their attitude are burn it out ,their tough the better
-- they understand you don't get what you want or what you love the hell,life give what you only sell
-- if you only be yourself and ordinary ,that's exactly what's your gotter get
-- but when you back to win ,they the man did happiness and success and for failure
-- they always have can do attitude
-- you turn your life around while you change attitude ,you change your attitude,you change altitude
-- the reason you can stop is cause you maybe so close
-- when the be a shame for you to quite when you're this close
-- when to be a shame for you to walk away when you come this far
-- when it be horrible for you to build out when you just is close to victory
-- you can work by where you see,you can give up cause you don't feel good
-- you can like people talk to other thing,you can like their motions,suffer for move forward
+- but if you're serious about *reeling* it is ,you have to put some effort
+- get up ,compete,*many of you are not* *competing*,i need effort,*compete*
+- many of you have lost your competitive,edge ,get your competitive edge back,you're not giving 120,you're giving
+  70,60,50
+- and you want what these people who've given *sweat* *blood*,tears,you want what they pay for and it ain't free
+- i'm not *phenomenally*  *skilled* but *phenomenally* willed
+- i will not give up ,surrender,quite ,your problem is you've given up to easy
+- i *meet* efforts *from* you
+- i need you to match whatever effort the enemy putting up ,whoever your enemy is , *match* the *doggone* *effort*
+- all most everybody can stay excited for 2 or 3 months,a few people can stay excited for 2 or 3 years
+- but *winner* will stay excited forever
+- people want to follow a lead that's *positive* aggressive,*enthusiastic*,*tough*
+- they have change the world *kind of* *desire* and determination
+- their attitude is *bring* it on ,their tougher the better
+- they understand you don't get what you want or what you'd love the *have*,life gives you what you'll *accept*
+- if you'll *accept* being *average* and ordinary ,that's exactly what's you're gonna get
+- but when the *winners* they *expect* to win ,they *demand* for *themself*  happiness and success and *fulfillment*
+- they always have can-do attitude
+- you can turn your life around if you change attitude ,you change your attitude,you change altitude
+- the reason you can't stop is cause you maybe so close
+- *wouldn't it be*  a shame for you to *quit* when you're this close
+- *wouldn't it be*  a shame for you to walk away when you come this far
+- *wouldn't it be*  horrible for you to *bail* out when you just this close to victory
+- you can't *walk* by waht you see,you can't give up cause it doesn't feel good
+- you can't let people talk you out of it,you can't let your emotions,*stop* from moving forward
