@@ -901,3 +901,38 @@ hard
 - *wouldn't it be*  horrible for you to *bail* out when you just this close to victory
 - you can't *walk* by waht you see,you can't give up cause it doesn't feel good
 - you can't let people talk you out of it,you can't let your emotions,*stop* from moving forward
+
+ceo
+---
+
+- we know that millions of american many of you watching have you find you weekly pay check just this is no match for
+  the rest cost of living
+- meanwhile,many of the country's top ceo continue to collect huge bonus massive salary and more
+- the medium cooperate meter of records of list of 100 best paid ceo make record 223.2 million do in million dollars in
+  2022, that's up from 30.8 million dollars in 2020
+- meanwhile,the typical full time workers last year may about 53000 dollars
+- some about itself with quite depressing,let's get into it
+- you gonna frustration growing for those focus watching who see the inflation eating their pay check,who and then they
+  watching ceo salary jump ,this boss give themselves raise
+- do what cause the happening recalls what's happening
+- we've seen quite a lot of push back,especially not just set beh writer strick that on going
+- a lot of writer so make the point,you know,the pay package of just 8 of top studio has they amount with they gonna pay
+  one year with cover double the cost of everything the rest they can for and and new contract
+- there's massive of disprrity and we gonna acturally we also be putting about this week and begin to see about google
+  which layoff about 12,000 people early this year
+- it turns out that google ceo give himself for the bill give him 10% raise that same year
+- so there's definitely a lot of push back,actually sth quote notes in the rate of support
+- these thing you know,the racial the typical worker makes,with the typical ceo makes continue to grow,grow ,grow and
+  people are notice thing that they're not happy
+- no happy ,obviously we're taking about private company here,no one's been forsake a job
+- is there at this point no government over set of this kind of ennacle some sort of regulation to baby, even out that x
+  just a bit
+- you know for years the regulation has been going the other,we have been taken away rules and protection for some
+  workers
+- there's been a little worker ,for instance stock is a huge reason that this people don't have so much money,stock is a
+  really big part of componsation and stock is actually taxes for less than salary for people
+- you know,if somebody work to get 200 million dollars salary they would pay a lot of tax on that,if they get stock for
+  taxes are much smaller which is another ensentive for company to pay the ceo in stock
+- so we've seen someone just to increase the panoty on stock by that which is sort of distance of company room trying to
+  infalate the star price
+-
