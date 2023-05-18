@@ -905,51 +905,54 @@ hard
 ceo
 ---
 
-- we know that millions of american many of you watching have you find you weekly pay check just this is no match for
-  the rest cost of living
+- we know that millions of american many of you watching have find you weekly paycheck just this is no match for the *
+  rising* cost of living
 - meanwhile,many of the country's top ceo continue to collect huge bonus massive salary and more
-- the medium cooperate meter of records of list of 100 best paid ceo make record 223.2 million do in million dollars in
-  2022, that's up from 30.8 million dollars in 2020
-- meanwhile,the typical full time workers last year may about 53000 dollars
-- some about itself with quite depressing,let's get into it
-- you gonna frustration growing for those focus watching who see the inflation eating their pay check,who and then they
-  watching ceo salary jump ,this boss give themselves raise
-- do what cause the happening recalls what's happening
-- we've seen quite a lot of push back,especially not just set beh writer strick that on going
-- a lot of writer so make the point,you know,the pay package of just 8 of top studio has they amount with they gonna pay
-  one year with cover double the cost of everything the rest they can for and and new contract
-- there's massive of disprrity and we gonna acturally we also be putting about this week and begin to see about google
-  which layoff about 12,000 people early this year
-- it turns out that google ceo give himself for the bill give him 10% raise that same year
-- so there's definitely a lot of push back,actually sth quote notes in the rate of support
-- these thing you know,the racial the typical worker makes,with the typical ceo makes continue to grow,grow ,grow and
-  people are notice thing that they're not happy
-- no happy ,obviously we're taking about private company here,no one's been forsake a job
-- is there at this point no government over set of this kind of ennacle some sort of regulation to baby, even out that x
-  just a bit
-- you know for years the regulation has been going the other,we have been taken away rules and protection for some
+- the *median* cooperate *leader* on *equilar's* of list of 100 best paid ceo make a record 22.3 million dollars in
+  2022, that's up from 13.8 million dollars in 2020
+- meanwhile,the typical full time workers last year may about 56,000 dollars
+- some of this *stuff* though,is quite depressing,let's get into it
+- you've got frustration growing for those *folks* watching who see the inflation eating up their paycheck, and then
+  watching as ceo salary jump ,these boss give themselves raises
+- do *workers* have any recourse here, what's happening
+- we're seeing quite a lot of pushback,especially *now* just *cite* the hollywood writer *strike* that's ongoing
+- a lot of writer have made the point,you know,the pay package of just 8 of top studio *heads* they amount that they get
+  paid one year would cover double the cost of everything they're asking for in the new contract.
+- there's massive of *disparity* and we've got actually ,they've also been *reporting* out this week in cnbc about
+  google which layoff about 12,000 people earlier this year
+- it turns out that google's ceo give himself or the *board* give him 10% raise that same year
+- so there's definitely a lot of push back,and it's actually sth *equal* our notes in the write-up of this report
+- they're saying you know,the *ratio* of what the typical worker makes,with the typical ceo makes continue to grow,grow
+  ,grow and people are noticing this and they're not happy
+- they're not happy ,obviously we're taking about private company here,no one's being *forced* to take a job anywhere.
+- but is there at this point no government over sight of this kind of *inequity* some sort of regulation to *maybe*,
+  even out that *disparity* just a bit
+- you know, for years the regulation has been going the other ways,we have been taken away rules and protection for some
   workers
-- there's been a little worker ,for instance stock is a huge reason that this people don't have so much money,stock is a
-  really big part of componsation and stock is actually taxes for less than salary for people
-- you know,if somebody work to get 200 million dollars salary they would pay a lot of tax on that,if they get stock for
-  taxes are much smaller which is another ensentive for company to pay the ceo in stock
-- so we've seen someone x just to increase the panoty on stock by that which is sort of distance of company room trying
-  to inflate the star price
-- sth else that's just late from they're actually by the codition build and sand of introduce d a mouth ago ,specially
-  looking at bank ceo that they would all through for the regulate to clock back any excess compensation
-- so that's real and recent by cordision development not take it all,at case in the bank fell, about as we say fell
-  back,fell lately
-- let's help it ,it get some work
-- and the house you have ill see magt,a green to possible wake comgress's people shouldn't unstock
-- cause it's a sense the system mis against the regular working people who's making 56000 but still work very hard
-- we've watched ceo composition just jump through the ceiling wall,work productivity edge it up,the composition isn't
-  keeping pay with it
+- there's been a little bit of worker on the edges through,so for instance, stock is a huge reason. that this people
+  don't have so much money,stock is a really big part of componsation and stock is actually taxes for less than salary
+  for people
+- you know,if somebody were to get 2 million dollars salary they would pay a lot of tax on that,if they get that in
+  stock, the taxes are much smaller which is another *incentive* for company to pay the ceo in stock
+- so we've seen some *legislation* to increase the *penalty* on stock *buybacks* which would sort of distance company
+  from trying to inflate the *stock* price
+- sth else on the  *legislative* *front* ,theres's actually been a  *bipartisan* *bill* in the senate introduce a couple
+  months ago ,specially looking at bank ceo that they would *authorize* federal regulate to *claw* back any excess
+  compensation
+- that they got in the case that a bank fails as we say fell back,fell lately
+- let's help it get *somewhere*
+- yeah and the house you have aoc,mg,*agreeing* to *pass a bill* where comgress people shouldn't *own stock*
+- cause there's this sense that the system is *stacked* against the regular working people who's making 56,000 but still
+  working very hard
+- we've watched ceo composition just jump through the ceiling ,while,work productivity *inches*  up, but their
+  compensation isn't keeping *pace* with it
 - how do we explain that?
-- is it about great ceo
-- well,the conimme swoft say,they're not great,they just try to do whatever they do can get away with which is whatever
-  human will do ,you know ,any worker tries to burn as much as they're able to get payed
-- and if they can earn much then they might go out swear
-- but the problem that the formers will tell you that the rule has been stock against regular workers
-- you know,we're not the ones necessarily don't eating to the company who have a year of politation, that's other people
-- so x,just to say gap in to know that's continue to grow
-- how a lot people happy ,thanks you so much
+- is it about *greedy* ceo
+- well,*economist* will say,they're not *greedy*,they're just trying to do whatever they do can get away with which is
+  what *any* human would do ,you know ,any worker tries to *earn* as much as they're able to get paied
+- and if they can earn much then they might go *elsewhere*
+- but the problem ,but *reformers* will tell you is that the rule has been *stacked* against regular workers
+- you know,we're not the ones necessarily *donating* to *campaigns* and who have the *ear* of *politicians*, that's
+  other people
+- *sobering*,through,just to see that gap and to know that's continue to grow
+- you can certainly see how a lot people are unhappy ,thanks you so much
