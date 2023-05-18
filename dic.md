@@ -933,6 +933,23 @@ ceo
   really big part of componsation and stock is actually taxes for less than salary for people
 - you know,if somebody work to get 200 million dollars salary they would pay a lot of tax on that,if they get stock for
   taxes are much smaller which is another ensentive for company to pay the ceo in stock
-- so we've seen someone just to increase the panoty on stock by that which is sort of distance of company room trying to
-  infalate the star price
--
+- so we've seen someone x just to increase the panoty on stock by that which is sort of distance of company room trying
+  to inflate the star price
+- sth else that's just late from they're actually by the codition build and sand of introduce d a mouth ago ,specially
+  looking at bank ceo that they would all through for the regulate to clock back any excess compensation
+- so that's real and recent by cordision development not take it all,at case in the bank fell, about as we say fell
+  back,fell lately
+- let's help it ,it get some work
+- and the house you have ill see magt,a green to possible wake comgress's people shouldn't unstock
+- cause it's a sense the system mis against the regular working people who's making 56000 but still work very hard
+- we've watched ceo composition just jump through the ceiling wall,work productivity edge it up,the composition isn't
+  keeping pay with it
+- how do we explain that?
+- is it about great ceo
+- well,the conimme swoft say,they're not great,they just try to do whatever they do can get away with which is whatever
+  human will do ,you know ,any worker tries to burn as much as they're able to get payed
+- and if they can earn much then they might go out swear
+- but the problem that the formers will tell you that the rule has been stock against regular workers
+- you know,we're not the ones necessarily don't eating to the company who have a year of politation, that's other people
+- so x,just to say gap in to know that's continue to grow
+- how a lot people happy ,thanks you so much
