@@ -956,3 +956,57 @@ ceo
   other people
 - *sobering*,through,just to see that gap and to know that's continue to grow
 - you can certainly see how a lot people are unhappy ,thanks you so much
+
+lion
+---
+
+- we'll hear the tail of midy lion who's bond to live behind a great legacy,and tiny mouth who still feel his own legacy
+  out
+- well, the midy lion was sleep,a tiny mouse scgry over his pow
+- the lion mediately awoke,in grab the mouse by his tail
+- how dare you disturb my sleep ,said the lion bearing his teeth
+- i was just looking for some food,said the mouse
+- i've not eaten in days,and i thought this cave might have sth for me to nibolone
+- i'm so sorry if i disturb your sleep
+- if you let me go,i'll find way to make it up for you,i promise
+- the lion laugh a little mouse play,find it humor ,the tiny creature thought it could offer sth value to someone is
+  mediy ezone itself
+- do you know who i am ,little one?
+- yes,said the mouse
+- you're the midy lion,you're afraid by all who konw you and your scranked is on matched
+- all of animals see you as a protector of this jungle,and because of you we'll one day all be free
+- your name will surly be remembered for generation to come
+- that's right ,said the lion
+- i'm greatness in corning
+- how could you a tiny little mouse,offer sth value to me
+- my legacy in yours will not be the same
+- because of me everyone hear will be afraid
+- but you,what do you of the world
+- the mouse frosted
+- you speak true words,sir
+- i'm just the tiny mouse who offers nothing to this world
+- maybe it would be better of you with me than i can part of you in your legacy
+- the lion put the mouse down
+- even that it's sth you can not do ,little mouse
+- your body would not provide enough energy for lion as mediy as me
+- so go ,go out and find your legacy,cause it's not here
+- the little mouse skery out of the cave
+- the very next day ,the lion found himself caught in the trap,a net has been set by some hunters
+- the lion roared for help,apond hearing the lion roar,the little mouse came skery
+- the mouse began to t the lion evently he set the lion free
+- without you,midy lion the jungle could not satisfy
+- but without me,you could not be satisfy
+- maybe that's my legacy to make your legacy possible
+- the smallest actions have the biggest consequences
+- when we think of great people and great legacy,we often think of big hor actions ,like those of lion who set the
+  jungle free
+- but rarely do we think of the small actions,like those of the mouse, who set the lion free ,they play just as big role
+  and shipping our colorful future
+- without the lion,the jungle could not be satisfy
+- but without the mouse,the lion could not be satisfy
+- so who's legacy is greater?
+- it's impossible to say
+- we often think that the big project we have are the ones are determine our legacy ,but maybe our ture legacy will
+  determined by the small thing we do
+- so next time you open door for stranger,help someone walk across the street ,or act kindly to someone you never meet
+  again,you just might be set sth revolutionary emotion
