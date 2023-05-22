@@ -1010,3 +1010,74 @@ lion
   determined by the small thing we do
 - so next time you open door for stranger,help someone walk across the street ,or act kindly to someone you never meet
   again,you just might be set sth revolutionary emotion
+
+waste time
+---
+
+- life is short,it's a phrase we've heard all the time
+- if you probably heard some point with each day that passes time thing's go by faster
+- when thing slow down,or we find ourselves in the right,you can feel like we're wasting our lives
+- so without being that said,here are 5 ways you can stop with in your life right now
+- help someone
+- sometime we struggle to see the value.our life be seen the world
+- no matter how much you believe you're wastering your life we wont you know that, your life have trasic value, and that
+  you have the positive impact on somebody just by existing
+- if you've been reason someone doing sth nice for you,just for the seek of it,you're knowing how good of you if you to
+  be helpful for some way
+- even if you wishes complement or someone staring launch with you,it probably stock with you
+- you might say that helper have positive impact even if with small,you can have positive impact as well by helping
+  people
+- look out for people in need and help them without expecting any thing in return
+- if you feel like you're not complate you life goal or your existing in the state of perfect t ,get nothing done,try to
+  spend your time on so a
+- at 2020 study on the pinfic given,some happen nicely,happier people give more and given makes people happier, such
+  that happiness and given may operate in the positive feed back loop
+- walk a word a ago
+- where were to bed that s in your life,it's sth be or do so badly that consuming all your thoughts
+- maybe you're cheating that thing,maybe that dream just went puff
+- here you got stuck by sth else or disillusion as you come to the realization that thing isn't what you thought would
+  be
+- for example,how many kids when it be fly fighter
+- as the girl go up and realize that the job is hard and risk
+- finally,there's amount of rest of us who know the truth,cheating a dream is difficult
+- by just because you might not become asher and actor doesn't mean you're wasting your life
+- you can start with small goals
+- maybe you've always dreamed to have soinpo or really nice computer or specific pad
+- let it dream got you
+- chasing the dream with everything you have
+- where you find isn't increasing self believe
+- you may become more stress depending on the goal,but strive to achieve sth teach you that you're capabile of achieving
+  your goals
+- as doc.l describes reading about your goal is extremely important
+- it always your way to revalue and gain prospective on your life
+- be social
+- sometimes we find pops in our friends,sometimes help is we are isn't up to us as we focus working or studying
+- prehaps you're still in the possess of finding a job,and you feel like you're wasting time just searching for job but
+  getting no way
+- years this time,to see the people you love,go out with your friends and family,it doesn't have to be expensive even if
+  you just visit them and talk
+- and the research telling them and p them,explaining that here's increasing a life satisfaction amount the relages and
+  vidus
+- this's attribute effect that they have space to be social as well as build social network and not base on the relagion
+  itself
+- if you aren't relagions ,it's many ways to build social networks and find community
+- experience as much as possible
+- it sounds like a huge task under gard
+- remember,the keyword head is possible
+- if you confiu to travel for example,with you don't have enough money or enough time,don't worry,pockets on what you
+  can experience
+- see local spend play a life ,spend a day in nature
+- week by week,try different coffee place and find your favorite one
+- there's infinate amount of experience to be had in single human life time
+- even thing on the flow, stear on your ceiling and find some one you love is an experience
+- not every experience will be positive one but every experience can live an impact
+- a research from journey positive psychology suggest that people do not seek out the experience as much as they do
+  material goods ,because of the value we place on them ,we value material goods the more
+- because they value is easy to understand ,but the value of experience is abstract
+- they experience will lost for everything as memories ,a life for the good memory can be a way
+- you can't put the press that and this list for the last point
+- get about the wasting your life
+- unless you can make it hormory cream,no life is wasting,your life is valuable
+- we go through time is stress,bored,loneliness,it happens to everyone
+- the code by mc rains true, time even drive wasting is not waste time
+- and easy life is not necessary a good life,but nez is a hard life
