@@ -1086,51 +1086,58 @@ waste time
 flights
 ---
 
-- if you're looking for europe get away the summer ,you'd better do it quick
-- online searches for flights to europe are searging
-- popular website kiwi are searching for traveling europe summer up 30% last year
-- a travel agency hp says,searches by us customers for flights to europe were up to 9% from the same period in 2019
-- just to start, what's other free stop over ,how can you build this into europe vocation
-- special was the price been what they are is a very good deal at then
-- that every airline,for,tear is information ,but they offer
-- so for example, fuel flight turkish airline anyone in the london,their flights for more destination than airline in
-  the world
-- you gonna be going in ably for estanbur
-- so if you in the coach,they gonna if you ask for word,there gonna give you free stop over this move the two night in
-  the hotel
-- if your flight busiest night,it gives you anther night hotel
-- not a big deal
-- if you flight like a bear,we can go through medread,same thing there,let's just step 7 or 10 days with no additional
-  air fear
-- if discount hotels and more even better,they through on a free trans ,all public tran free
-- island bear has stop over this well
-- for those people older member years in 60 to 70 ,eb stops over the what year
+- if you're looking for europe *getaway* the summer ,you'd better do it quick
+- online searches for flights to europe are *surging*
+- *travel* website kayak *saw* searches for traveling europe ,this summer *are* up *77*% *from* last year
+- and travel agency hp says,searches by us customers for flights to europe were up to 9% from the same *period* in 2019
+- just to start, what are *these*  free *stopovers* ,how can you build this into europe vocation
+- especially was the price being what they are, is a very good deal
+- *not* every airline *volunteers* this information ,but they offer it
+- so for example, *if you're* flying turkish airlines *anywhere* in the *world*,they happen to fly to more destination
+  than airline in the world
+- you're going to be going *inevitably* *through* *istanbul*
+- so if you're in coach,they're going to say if you ask for it,they're going to give you a free stopover in istanbul for
+  two nights they *throw* in the hotel
+- if your flight *business* *class*,they give you another night at the hotel
+- not a *bad* deal
+- if you're flying in *iberia*,you're going through *madrid*,same thing there,*they're* going to let you stay up to 7 or
+  10 days with no additional  *airfare*
+- they're going to give you *discount* on hotels and more even better,they *throw* in a free *transportation pass* ,all
+  public transportation free
+- *iceland* *air* has *stopovers* as well
+- for those people *who* old *enough* to remember iceland here in the 60s to 70s ,eb stops over there on the way to
+  europe
 - now you can it for free
-- and of course you have a cutter air
-- cutter air and dongha same thing
-- big room at night work,give you hotel while you stay there, 5 star hotel for 30 dollars at night ,you can have x
-- so but you have to ask,enough to b
-- it all sounds too good to be true when i was about to this stop over 5 hours ,it's incredible
-- now you can stand it up to 30 a day
-- incredible,when summer festival approaching what's the best ideals for europe travel
-- while,right now,you know,the northland is heavily competitive ,new airline is coming in,the airline call play from the
-  iceland,or northland from the scand
-- you're not gonna ,the largest travel caring int the world ,the double traveling down on europe destination
-- so the compatation there is forcing fear to come lower the introduction prices
-- we've seen some air fierce,air langes competing on this tap air purge ago
-- we've seen some air fierce low as 380 dollars run trip from europe to london,that's for summer to get book it now
-- if you're looking this on money,what's some hating gem in locations people can look to go
-- the hating gems is really base on the power of us dollars get us another foreign currency
-- so if you take a look at lv,hotel there like ridiculous cheap
-- r,b,again poor to go, a dinner for 2, 3 quters dinner for 2 is about 45 dollars,anther qu is one by the way
-- but the point this,it's all relevant
-- for you getting basic 20% to 40% discount on you stop on the ground just base on the power of dollars for this year
-- it sounds unbelievable,i always heard the best day to search for flights is tuesday or wednesday,is that true?
-- that was true is changed,now is sunday night
-- sun night at midnight
-- but don't just go on line pick up the phone and call the airline cause what's you see on your screen is not what the
-  see on their screen
-- as lot discounts fierce didn't get porches can flight back in, it show up on their screen,talk them first,always
-  research online but have a conversation
-- and i'll always get the extra fees that
-- well,that's anytime with day night yes
+- and then of course you have a **qatar* air
+- qatar air and doha same thing
+- the big *route* *network*,they'll give you a hotel while you stay there, a 5-star hotel for 77 dollars a night ,you
+  can't *beat* it
+- so but you have to ask,they're not going to *volunteer* it
+- it all sounds too good to be true, and i would have *thought* this stopover were like 5 hours ,it's incredible
+- now you can *extend* it up to 7 to 10 days
+- incredible,when summer *fast* approaching what are some of the best *deals* for european travel
+- well,right now,you know,the north *atlantic* is heavily competitive ,new airline are coming in,an airline called play
+  from the iceland,or north atlantic from the sclvia
+- united airlines now is the largest travel *carrier* int the world ,they're doubling and triping down on europe
+  destination
+- so the *competition* there is forcing *fares* to come lower on introduction prices
+- we've seen some *airfares*,air lingus is competing in this tap air,there aer a lot in *portugal*
+- we've seen some *airfares* low as 318 dollars *round* trip from new york to london,that's for summer but you get book
+  it now
+- if you're looking to *save* on money,what are some *hidden* *gems* in europe,some locations people can look to go
+- the *hidden* gems are really base on the power of us dollars *against* the *euro* and other foreign *currencies*
+- so if you take a look at *lithuania*,hotels there are like ridiculous cheap
+- romania,bulgaria,again portugal, a dinner for 2, 3 *course* dinner for 2 is about 45 dollars,and that *includes*
+  *wine* by the way, not that you're drinking right now
+- but the point this,it's all *relative*
+- for you're getting basically 20% to 40% discount on your *stuff* on the ground just base on the power of dollars
+  *versus* the *euro*
+- it's unbelievable,i've always heard the best day to search for flights is tuesday or wednesday,is that true?
+- that was true, it's changed,now is sunday night
+- sunday night at midnight
+- but don't just go online pick up the phone and call the airline cause what you see on your screen is not what they're
+  seeing on their screen
+- as a lot of discounts *fares* didn't get *purchased* *come* *flooding* back in, it shows up on their screen,talk to
+  them first,always research online but have a conversation
+- and always *look out* for those extra feess that
+- well,that *goes* at anytime of the day or night yes
