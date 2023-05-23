@@ -1082,3 +1082,45 @@ waste time
 - we go through times of stress,*boredom*,loneliness,it happens to everyone
 - the *quote* by mc rings true, time you  *enjoy* wasting is not waste time
 - and easy life is not necessary a good life,but *neither* is a hard life
+
+flights
+---
+
+- if you're looking for europe get away the summer ,you'd better do it quick
+- online searches for flights to europe are searging
+- popular website kiwi are searching for traveling europe summer up 30% last year
+- a travel agency hp says,searches by us customers for flights to europe were up to 9% from the same period in 2019
+- just to start, what's other free stop over ,how can you build this into europe vocation
+- special was the price been what they are is a very good deal at then
+- that every airline,for,tear is information ,but they offer
+- so for example, fuel flight turkish airline anyone in the london,their flights for more destination than airline in
+  the world
+- you gonna be going in ably for estanbur
+- so if you in the coach,they gonna if you ask for word,there gonna give you free stop over this move the two night in
+  the hotel
+- if your flight busiest night,it gives you anther night hotel
+- not a big deal
+- if you flight like a bear,we can go through medread,same thing there,let's just step 7 or 10 days with no additional
+  air fear
+- if discount hotels and more even better,they through on a free trans ,all public tran free
+- island bear has stop over this well
+- for those people older member years in 60 to 70 ,eb stops over the what year
+- now you can it for free
+- and of course you have a cutter air
+- cutter air and dongha same thing
+- big room at night work,give you hotel while you stay there, 5 star hotel for 30 dollars at night ,you can have x
+- so but you have to ask,enough to b
+- it all sounds too good to be true when i was about to this stop over 5 hours ,it's incredible
+- now you can stand it up to 30 a day
+- incredible,when summer festival approaching what's the best ideals for europe travel
+- while,right now,you know,the northland is heavily competitive ,new airline is coming in,the airline call play from the
+  iceland,or northland from the scand
+- you're not gonna ,the largest travel caring int the world ,the double traveling down on europe destination
+- so the compatation there is forcing fear to come lower the introduction prices
+- we've seen some air fierce,air langes competing on this tap air purge ago
+- we've seen some air fierce low as 380 dollars run trip from europe to london,that's for summer to get book it now
+- if you're looking this on money,what's some hating gem in locations people can look to go
+- the hating gems is really base on the power of us dollars get us another foreign currency
+- so if you take a look at lv,hotel there like ridiculous cheap
+- r,b,again poor to go, a dinner for 2, 3 quters dinner for 2 is about 45 dollars,anther qu is one by the way
+- but the point this,it's all relevant
