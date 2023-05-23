@@ -1124,3 +1124,13 @@ flights
 - so if you take a look at lv,hotel there like ridiculous cheap
 - r,b,again poor to go, a dinner for 2, 3 quters dinner for 2 is about 45 dollars,anther qu is one by the way
 - but the point this,it's all relevant
+- for you getting basic 20% to 40% discount on you stop on the ground just base on the power of dollars for this year
+- it sounds unbelievable,i always heard the best day to search for flights is tuesday or wednesday,is that true?
+- that was true is changed,now is sunday night
+- sun night at midnight
+- but don't just go on line pick up the phone and call the airline cause what's you see on your screen is not what the
+  see on their screen
+- as lot discounts fierce didn't get porches can flight back in, it show up on their screen,talk them first,always
+  research online but have a conversation
+- and i'll always get the extra fees that
+- well,that's anytime with day night yes
