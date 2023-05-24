@@ -1141,3 +1141,45 @@ flights
   them first,always research online but have a conversation
 - and always *look out* for those extra feess that
 - well,that *goes* at anytime of the day or night yes
+
+deposit
+---
+
+- a new survey from galip showed that nearly half of american are either very or morderly worry about the bank deposit
+  in the second elmic climite
+- the survey was conducted after the failure of cov b and signature bank
+- so here was a discuss amili p ,she is a market correspond for akcu,good to see you
+- what does the gap of survey signore about american confidence in the us finance system
+- confidence is vorboly centrally the survey point to an american public to that is i mean worried about the finance
+  state failure right now
+- worry should be about definitely worry about their bank deposit or money behaving other finance institution
+- so most people like they have their money in fdic protect bank accounts
+- so should people be considered or can make sleep esasy at night
+- people can definitely sleep easy at night
+- more than 99% of customer account banks are just you said protected by fdic instrance
+- the maxim amount of gardranty is 250,000 dollars
+- i bet most of people watching right now have less mind the bank american,the fdic has never lost of a penny of a money
+  since instrance system got start more than 90 years ago
+- and they are also considered about this un insure deposit the ones over the 250,000 dollars limit
+- and what i can say about that is we cut 3 banks failure so far this year which is a lot
+- the in those cases the un insure deposit also were made whole
+- so acrroding to the poll republic incident independent are more worried than denmicras
+- why is that is just like a general mistrust of system
+- yes,so that that's sth we see a lot of different polls about acnomic condition
+- these is tendency if these is denmicras office republic thing be acanimy is worse than denmicras do
+- if these is public office than democias tendency be comnimy is more shift
+- so it appears st apply to this galip survey about bank deposit,republic are more likely about their money right now
+  than demicreas now
+- in just for people who maybe looking back through the years dokly at last time bank failure last time they're s s
+  market around the banking and of course back to 2008, the clock borthers and others
+- you know the banks are too big to fail,that's my company was too big to fail,how is that
+- how was the experience now we're saying that different for man just for people to understand
+- it's really interesting galip only to do the survey in the time of economic stress
+- so the last time they did it was in 2008 when things are really mounting down
+- and at that time american were slightly last worry than they're now which sort of interesting
+- i think that's about 55% in 2008 they were worry about their bank deposit that's 48% now
+- so and than those worry decrease a little bit once the fidu government step in and start doing very risky funding in
+  2008 crises things kind of calm down
+- so glip suggest that these is high level of disdress in their no exactly normal
+- so i would say these are similar level of disdress now than they was back oa
+- so far i mean the economy over all holding on is much more better position the move word back than
