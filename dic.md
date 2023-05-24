@@ -1145,41 +1145,41 @@ flights
 deposit
 ---
 
-- a new survey from galip showed that nearly half of american are either very or morderly worry about the bank deposit
-  in the second elmic climite
-- the survey was conducted after the failure of cov b and signature bank
-- so here was a discuss amili p ,she is a market correspond for akcu,good to see you
-- what does the gap of survey signore about american confidence in the us finance system
-- confidence is vorboly centrally the survey point to an american public to that is i mean worried about the finance
-  state failure right now
-- worry should be about definitely worry about their bank deposit or money behaving other finance institution
-- so most people like they have their money in fdic protect bank accounts
-- so should people be considered or can make sleep esasy at night
+- a new survey from gallup showed that nearly half of american are either very or *moderately* worry about the bank
+  deposit in the second *economic* *climate*
+- the survey was conducted after the failure of s *valley* bank and signature bank
+- so here *with us to* discuss amili p ,she is a market correspond for axios,good to see you
+- what does the gallup of survey *signal* about american confidence in the us *financial* system
+- confidence is *wobbly* *essentially* the survey point to an american public that is, i mean ,worried about the *
+  financial state of *affairs* we're right now
+- worry should be about definitely worry about their bank deposit or money *they have* in other finance institution
+- so most people *likely* have their money in fdic protected bank accounts
+- so should people be considered or can make sleep easy at night
 - people can definitely sleep easy at night
-- more than 99% of customer account banks are just you said protected by fdic instrance
-- the maxim amount of gardranty is 250,000 dollars
-- i bet most of people watching right now have less mind the bank american,the fdic has never lost of a penny of a money
-  since instrance system got start more than 90 years ago
-- and they are also considered about this un insure deposit the ones over the 250,000 dollars limit
-- and what i can say about that is we cut 3 banks failure so far this year which is a lot
-- the in those cases the un insure deposit also were made whole
-- so acrroding to the poll republic incident independent are more worried than denmicras
-- why is that is just like a general mistrust of system
-- yes,so that that's sth we see a lot of different polls about acnomic condition
-- these is tendency if these is denmicras office republic thing be acanimy is worse than denmicras do
-- if these is public office than democias tendency be comnimy is more shift
-- so it appears st apply to this galip survey about bank deposit,republic are more likely about their money right now
-  than demicreas now
-- in just for people who maybe looking back through the years dokly at last time bank failure last time they're s s
-  market around the banking and of course back to 2008, the clock borthers and others
-- you know the banks are too big to fail,that's my company was too big to fail,how is that
-- how was the experience now we're saying that different for man just for people to understand
-- it's really interesting galip only to do the survey in the time of economic stress
+- more than 99% of customer account banks are just you said protected by fdic  *insurance*
+- the *maximum* amount of *guaranteed* is 250,000 dollars
+- i bet most people watching right now have less *than that in their*  bank *accounts*,the fdic has never lost of a
+  penny of american money since the *insurance* system got *its* start more than 90 years ago
+- and there's also *concern* about these uninsured deposit the ones over the 250,000 dollars limit
+- and what i can say about that is we've *had* 3 banks failure so far this year which is a lot
+- the in those cases the uninsured deposit also were made whole
+- so *according* to the *polling* republicans and independent are more worried than *democrats*
+- why is that? it's just like a general mistrust of system
+- yes,so that's sth we see a lot of different polls about *economic* condition
+- these is tendency if these is *democrat* in office republic *think* the *economy* is worse than *democrats* do
+- if these is public in office than *democrats* tend be think *economy* is *worse* *shape*
+- so it appears the *same trends* apply to this gallup survey about bank deposit,republic are more likely to be worried
+  about their money right now than *democrats* now
+- just for people who may be looking back through the years *historically* at last time bank fail last time they're
+  uncertainly in the around banking ,of course back to 2008, the *collapse* of lehman borthers and others
+- you know the banks are too big to fail,*investment* company was too big to fail,how is that
+- how is what we're experiencing now what we're seeing that different *from then* just for people to understand
+- it's really interesting gallup only *seems to* do the survey in times of economic stress
 - so the last time they did it was in 2008 when things are really mounting down
-- and at that time american were slightly last worry than they're now which sort of interesting
-- i think that's about 55% in 2008 they were worry about their bank deposit that's 48% now
-- so and than those worry decrease a little bit once the fidu government step in and start doing very risky funding in
-  2008 crises things kind of calm down
-- so glip suggest that these is high level of disdress in their no exactly normal
-- so i would say these are similar level of disdress now than they was back oa
-- so far i mean the economy over all holding on is much more better position the move word back than
+- and at that time american were slightly *less* worry than they're now which is sort of interesting
+- i think that's about 45% in 2008 *said* they were worry about their bank deposit *versus* 48% now
+- so and than those worry decrease a little bit once the *federal* government step in and start doing *various* *rescue*
+  funding in 2008 *crisis* things kind of calm down
+- so gallup suggest that these are high level of *distress* in their no exactly normal
+- so i would say these are similar level of distress now than they was back in 2008
+- but so far i mean the economy overall is holding up is much more better position the *we were* back than
