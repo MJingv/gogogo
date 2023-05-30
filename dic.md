@@ -1192,45 +1192,71 @@ fake friend
 - are you wondering if you have fake friend in your life?
 - here are *7* things that only fake friend *would* do
 - 1.they talk about you behind your back
-- do you find that person gossiping about you behind your back and spreading your secrets to everyone
-- no matter how juicy the rumor is or how popular it may make them,the true friend will never jepodize your friendship
-  or humiliat you like that by step your in the back
+- do you find this person gossiping about you behind your back and spreading your secrets to everyone
+- no matter how juicy the rumor is or how popular it may make them,the true friend will never *jeopardize* your
+  friendship or *humiliate* you like that by *stabbing* your in the back
 - but fake friend will talk trash about you and spread rumors about you when you're not looking
-- 2 they throw you on the bus
-- when the going gets tough fake friends are willing to just throw you on the bus and pain the bless on you if it means
-  their saying own skin
-- they don't w for you,they don't take you side and they serious don't get up for you when someone is hurting or
-  bleeding you
-- the truth is they don't think you or your friendship is worth putting themselves at worse core
+- 2 they throw you *under* the bus
+- when the going gets tough fake friends are willing to just throw you *under* the bus and *pin* the *blame* on you if
+  it means *saving* their own skin
+- they don't *vouch* for you,they don't take *your* side and they *certainly* don't *stick* up for you when someone is
+  hurting or *belittling* you
+- the truth is they don't think you or your friendship is worth putting themselves at *risk for*
 - 3 they constantly cancel on you
-- have you speed a week plan a trip only for your friends to cancel on you at the last minute
-- was there sth you're looking forward to doing with them but they never even bother to show up
-- no matter how many times you keep your minding about it,you're so called friend never keep their word
-- you have to learn a hard way over and over again that you can't ever count on them to come through for you
+- have you spent a week planning a trip only for your friends to cancel on you at the last minute
+- was there sth you're looking forward to doing with them, but they never even bother to show up
+- no matter how many times you keep your *reminding* about it,you're *so-called* friend never keep their word
+- you've had to learn a hard way over and over again that you can't ever count on them to come through for you
 - 4 they exclude you from their plans
-- do they seem to convinently forget to invite you to thing
-- do you feel excludly from group activities more often than not
-- even if you go out of way to invite them or tell them about your plan,they just don't do the same for you
-- 5 they call just ask you to for favors
-- does this situation sound family to you,hi,listen,i know we haven't talk for a while,i need really a big favor,do you
-  think you could help me ?please
+- do they seem to *conveniently* forget to invite you to things
+- do you feel *excluded* from group activities more often than not
+- even if you go out of way to invite them or tell them about your plans,they just don't do the same for you
+- 5 they call just to ask you to for favors
+- does this situation sound *familiar* to you,hi,listen,i know we haven't talk in a while,i need really a big favor,do
+  you think you could help me? please
 - if this friend only ever call you up to ask for your help,then they're probably a fake friend
-- fake friends think it's ok to go through for weeks
-- only to papa being ask your for a favor ,they don't even bother to ask you how're you doing because really they're
+- fake friends think it's ok to *ghost* you for weeks
+- only to *pop up* and ask your for a favor ,they don't even bother to ask you how're you doing because really they're
   just using you to help fix their problem
-- and the moment you gut what they want,and the other of life once were
-- 6 they give you back in the complement
-- have you ever said thing to you like,you did the prize well or that was better than i was expecting from you
-- or maybe you're x so much better than usually do
-- a back hand of complement of sth a fake friend do to settle put you down by making a song like prezi
-- it's a way to critisize you without being to obvious about it
-- it shows that there are jerous of you that they judge you more harshy than they want let it on
-- what they really want to do is take a dig of you and pass off the bit of let it hurt tezing the between friends
+- and the moment you *give them* what they want,and the other of life once *more*
+- 6 they give you back in the *compliments*
+- have they ever said things to you like,you did *surprisingly* well or that was better than i expected from you
+- or maybe you *look* so much better than usually do
+- a *backhand*  *compliment* is sth fake friends do to *subtly* put you down by making it *sounds* like *praise*
+- it's a way to *criticize* you without being *too* obvious about it
+- it shows that they are *jealous* of you that they judge you more *harshly* than they want let on
+- what they really want to do is to take a dig at you and pass it off as a bit of *lighthearted* *harshly*  between
+  friends
 - 7 they only talk about themselves
-- do they go on in all the only themselves their problems and whatever else is going on their own life
+- do they go on and  *on* *about* only themselves their problems and whatever else is going on their own life
 - do they brush you off when you want to talk about your thoughts and feelings
-- does it seem like they don't pay attention to any topic that doesn't envolve them
-- the communication between you two feel largely one sided because fake friends are selfish absorbed and inconsidered
+- does it seem like they don't pay attention to any topic that doesn't *involve* them
+- the communication between you two feel largely one sided because fake friends are *self-absorbed* and inconsiderate
 - they don't care much about you or what you have to say
-- like any other kind of relationship all relationships need honest,trust,care,and mul respect to thrive and survive
-- when it comes to fake friends,you know this that all the thing are sorry missing
+- like any other kind of relationship all relationships need honest,trust,care,and *mutual* respect to thrive and
+  survive
+- but when it comes to fake friends,you'll *notice*  that all the thing are *sorely* missing
+
+introvert
+---
+
+- what comes to your mind when your hear the word introvert
+- is it that shy vow flower day dreaming in the social gathering
+- or the cd kid who really spoke in the class
+- but wait
+- did you know that there are more the discase introvert than just there socialize frequency or lack there off
+- there are even different types of introvert
+- new know,right?
+- by defination ,introvert need time by themselves to recharge in avoide becoming the emotional drained
+- but according to researches by psychology profe wc ,there are 4 types of introvert
+- this type taking it into account the very personality introvert and the ecoknowledge that interversion is a spythom
+- without being said here are the 4 types of introvert
+- 1.social introvert
+- social introvert? yeah,you heard that right
+- social introvert are both the most outgoing and the most private of the 4 types
+- they don't feel shy or anxiety in the social setting and they may even enjoy them,but they feel emotional drained if
+  they stay off too long
+- well,so in like spending time alone,they still want to feel close friend,they can depend on
+- and they attend to be the most social when they're amount a group of friend
+- someone who doesn't know them might even assume they're extrovert, if you meet them when they hang out with their
+  close friends
