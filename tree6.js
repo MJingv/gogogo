@@ -67,7 +67,7 @@ const maxDepth1 = (root) => {
 // console.log(res)
 
 const preorder = (root) => {
-    // 遍历
+    // 遍历，for里helper
     if (!root) return
     const res = []
     const helper = (node) => {
@@ -80,7 +80,7 @@ const preorder = (root) => {
     return res
 }
 const preorder1 = (root) => {
-    // 分解
+    // 分解,利用结果做事情
     if (!root) return
     const res = []
     res.push(root.val)
@@ -88,5 +88,24 @@ const preorder1 = (root) => {
     res.push(...preorder(root.right))
     return res
 }
-const res = preorder1(t1)
+// const res = preorder1(t1)
+// console.log(res)
+
+const levelTraverse = (root) => {
+    if (!root) return
+    const [res, q] = [[], [root]]
+    while (q.length) {
+        const size = q.length
+        const level = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            level.push(cur.val)
+            if (cur.left) q.push(cur.left)
+            if (cur.right) q.push(cur.right)
+        }
+        res.push(level)
+    }
+    return res
+}
+const res = levelTraverse(t1)
 console.log(res)
