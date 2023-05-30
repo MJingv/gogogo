@@ -37,12 +37,29 @@ const fn = (arr) => {
 
 // 输入：nestedList = [[1,1],2,[1,1]] 输出：[1,1,2,1,1]
 
-
 const maxDepth = (root) => {
     if (!root) return 0
     const left = maxDepth(root.left)
     const right = maxDepth(root.right)
-    return Math.max(left, right)+1
+    return Math.max(left, right) + 1
 }
-const res = maxDepth(t1)
+const maxDepth1 = (root) => {
+    if (!root) return
+    let max = 0
+    let depth = 0
+    const helper = (node) => {
+        if (!node) {
+            max = Math.max(max, depth)
+            return
+        }
+        depth++
+        helper(node.left)
+        helper(node.right)
+        depth--
+    }
+    helper(root)
+    return max
+}
+
+const res = maxDepth1(t1)
 console.log(res)
