@@ -1257,42 +1257,43 @@ introvert
 - they don't feel shy or anxiety in the social setting and they may even enjoy them,but they feel emotional drained if
   they *stay out* too long
 - while social introvert like spending time alone,they still want *a few* close friend,they can depend on
-- and they attend to be the most social when they're amount a group of friend
-- someone who doesn't know them might even assume they're extrovert, if you meet them when they hang out with their
+- and they *tend* to be the most social when they're *among* this group of friends
+- someone who doesn't know them might even assume they're extrovert, if you meet them when they hanging out with their
   close friends
-- but social introverts won't show much about themselves to anyone other than their close friends
+- but social introverts won't *share* much about themselves to anyone other than their *closest* friends
 - 2 thinking introverts
-- here you can condrively image the day dreaming vow flowers
-- thinking introverts also don't mind socializing but they realize do so because they are lost and they're alone in the
-  world
-- they often find themselves day dreaming in may seem a lof to those don't know them
-- thinking introverts are also very introspective in their for more in turm with their feelings than the apzhi person
-- other people m h a h time to connecting thinking introverts because they have unique propose in prefer to experience
-  their thoughts rather than take the time energy to explain them to others
+- here you can *conjure* the image the daydreaming wallflower
+- thinking introverts also don't mind *socializing* but they *rerely* do so because they are lost in the *own* *little*
+  the world
+- they often find themselves daydreaming and may seem a *aloof* to those don't know them
+- thinking introverts are also very introspective in  *therefore* more in *turn* with their feelings than the *average*
+  person
+- other people may have a hard time to connecting with thinking introverts because they have unique *process* in prefer
+  to experience their thoughts rather than taking the time and energy to explain them to others
 - 3 anxiety introverts
-- they may know someone who may replay social in in their head and think about what they said or did in what they could
-  tend differently
-- perhaps a better able for the anxiety introvert is the shy introvert
-- to disfrize anxiety introvert from anxiety disorders ,anxiety introverts crave solitude even when they're with their
-  close friends
-- their extremely and uncomfortably a new or large situation and analyze or room on their behavior whenever they're in
-  public
+- *do you know* someone who may replay social *encounters* in their head and think about what they said or did and what
+  they could *done* differently
+- perhaps a better *label* for the anxiety introvert is the shy introvert
+- to *differentiate* anxiety introvert from anxiety disorders ,anxiety introverts crave solitude even when they're with
+  their close friends
+- they're extremely uncomfortably in new or large social situation and *analyze* or *ruminate* on their behavior
+  whenever they' re in public
 - but it's important to look out for social anxiety disorders and not have the two mixed
-- in the extreme cases ,this version to social situations may develop into social anxiety
+- in the extreme cases ,this *aversion* to social situations may develop into social anxiety
 - although any introverts types, introverts extroverts or ambiverts can experience social anxiety or other anxiety
   disorders
 - but if you avoid necessary social situation,because you have a strong physical reactions such as shaking ,increase
-  heart rate,or n d them ,it's sand of so anxiety not shyness and require profession attention
+  heart rate,or *nausea* during them ,it's *sign* of social anxiety and not shyness and require professional attention
 - and 4 restrained introverts
-- now it is your introverts next store kind of type
-- they gonna comfortable they feel rush into situation as specially social ones
-- restrained introverts are reserved lap and don't like change
-- they'll go out if they plan far enough for a bands,but they would rather be relax by themselves,x the different shows
-  reading or doing yoga
+- now it is your introverts next *door* kind of type
+- they get uncomfortable if they feel rushed into situations as specially social ones
+- restrained introverts are reserved *thoughtful* and don't like change
+- they'll go out if they've planned for it far enough for *advance*,but they would rather be relaxing by themselves,
+  *bingeing* their *favorite* shows reading or doing yoga
 - restrained introverts find comfort in their routine and may also find difficult to get their mind and body moving
-  right after they weak up
-- they through in their routine and appreciate ample for warning
-- if you think you're introverts but didn't relate to any of this 4 types,you maybe ambiverts or close to the extra side
-  the personality respect
-- learning more about your personality type help you communicate your needs to people who different personality type,and
-  string thing into personality relationship
+  right after they *wake* up
+- they *thrive* in their routine and appreciate ample *forewarning*
+- if you think you're introverts but didn't relate to any of this 4 types,you maybe an ambivert or close to the
+  extrovert side the personality *spectrum*
+- learning more about your personality type help you communicate your needs to people *with* different personality
+  type,and *strengthens*  interpersonal relationship
