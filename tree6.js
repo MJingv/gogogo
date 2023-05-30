@@ -38,12 +38,14 @@ const fn = (arr) => {
 // 输入：nestedList = [[1,1],2,[1,1]] 输出：[1,1,2,1,1]
 
 const maxDepth = (root) => {
+    // 分解
     if (!root) return 0
     const left = maxDepth(root.left)
     const right = maxDepth(root.right)
     return Math.max(left, right) + 1
 }
 const maxDepth1 = (root) => {
+    // 遍历
     if (!root) return
     let max = 0
     let depth = 0
@@ -61,5 +63,30 @@ const maxDepth1 = (root) => {
     return max
 }
 
-const res = maxDepth1(t1)
+// const res = maxDepth1(t1)
+// console.log(res)
+
+const preorder = (root) => {
+    // 遍历
+    if (!root) return
+    const res = []
+    const helper = (node) => {
+        if (!node) return
+        res.push(node.val)
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return res
+}
+const preorder1 = (root) => {
+    // 分解
+    if (!root) return
+    const res = []
+    res.push(root.val)
+    res.push(...preorder(root.left))
+    res.push(...preorder(root.right))
+    return res
+}
+const res = preorder1(t1)
 console.log(res)
