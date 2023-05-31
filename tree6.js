@@ -1,3 +1,12 @@
+// 解题思路
+// 1.遍历（一遍+外部变量存结果）
+// 2.分解（返回值是答案+分解子问题）
+
+// 节点思考
+// 1.对单独节点做什么
+// 2.在什么位置（前/中/后）做
+
+
 function TreeNode(val, left, right) {
     this.val = (val === undefined ? 0 : val)
     this.left = (left === undefined ? null : left)
@@ -37,6 +46,7 @@ const fn = (arr) => {
 
 // 输入：nestedList = [[1,1],2,[1,1]] 输出：[1,1,2,1,1]
 
+// 104. 二叉树的最大深度
 const maxDepth = (root) => {
     // 分解
     if (!root) return 0
@@ -91,6 +101,7 @@ const preorder1 = (root) => {
 // const res = preorder1(t1)
 // console.log(res)
 
+
 const levelTraverse = (root) => {
     if (!root) return
     const [res, q] = [[], [root]]
@@ -108,5 +119,34 @@ const levelTraverse = (root) => {
     return res
 
 }
-const res = levelTraverse(t1)
+
+// const res = levelTraverse(t1)
+// console.log(res)
+
+
+var quickSort = function (nums, l = 0, r = nums.length - 1) {
+    if (l <= r) {
+        const pivot = helper(nums, l, r)
+        quickSort(nums, l, pivot - 1)
+        quickSort(nums, pivot + 1, r)
+    }
+    return nums
+}
+const helper = (arr, l, r) => {
+    let cur = arr[l]
+    while (l < r) {
+        while (l < r && arr[l] < cur) l++
+        swap(arr, l, r)
+        while (l < r && arr[r] >= cur) r--
+        swap(arr, l, r)
+    }
+    return l
+}
+const swap = (arr, a, b) => {
+    [arr[a], arr[b]] = [arr[b], arr[a]]
+}
+const res = quickSort([48, 1, 0, 21, 3, 999, 10])
 console.log(res)
+
+
+
