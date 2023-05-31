@@ -1297,3 +1297,41 @@ introvert
   extrovert side the personality *spectrum*
 - learning more about your personality type help you communicate your needs to people *with* different personality
   type,and *strengthens*  interpersonal relationship
+
+ants
+---
+
+- as the sun begin to set off the city,alcs made his way the park
+- he walked slowly taking in the set and sound of the bus lings around him
+- the hooking of car horns,the chat of people ,and smelt street of food felt his senses
+- but he remained focus on this destination
+- the park was piece of witness in the middle of carve of the city
+- as he walked through the lauch greenery,he felt his mind begin to come
+- he found a banch near upon and set down to reflect on his life
+- alcs always be ambitious,he has a big dream of becoming a successful enterperner,but he often found himself get in set
+  tracked by the distraction and temptation of life
+- he knew he that need to refocus his priority if he wanted to achieve his goals
+- as he sat there,he noticed a group of ants walking tiredly nearby
+- they're moving in perfect unision each one playing its part in building the column that was larger than themselves
+- alcs watched it all as the ants walked tiredly ,they're tiny but strong legs moving in the blur as they carry to it
+  and leaves to build their home
+- he realized that like the ants he need stay focused and walk tiredly towards goal if he want to achieved them
+- he thought about the time he has been distracted about the moment when he has lost set of his dreams
+- he realized that those moments of only setting in back and that if he want to succeed he need to reminded commit to
+  his goals
+- with a renew energy and focus,alcs return to his work
+- he put a long hours day after day after day and face setback and obstical along the way
+- but he remained stay fast in his determination to achieve his dream
+- years later,alcs's hard work and focus payed off
+- he has build a successful business enperier and he had become a roll module for respall enterperner
+- looking back on his journey ,he realized that staying focus and committed has been the key to success
+- seeing life in your life
+- alcs's story is remained that success is not achieved overnight
+- it required patient hard work and determination
+- you see time passes anyway so remind the pass where you focus on your goal instead of just waste your time
+- like the end of the park,we must remind focus and walked tiredly towards our goals once upon time
+- don't play the game to win ,play the game to play
+- as alcs rose from the bench ,he felt sense of piece wash over him
+- he knew that he still have much to do
+- but he's ready to face whatever challenges lay ahead
+- he waled back towards the city his mind clear and his heart was full of the determination
