@@ -123,17 +123,16 @@ const levelTraverse = (root) => {
 // const res = levelTraverse(t1)
 // console.log(res)
 
-
-var quickSort = function (nums, l = 0, r = nums.length - 1) {
-    if (l <= r) {
-        const pivot = helper(nums, l, r)
-        quickSort(nums, l, pivot - 1)
-        quickSort(nums, pivot + 1, r)
+const quickSort = (nums, l = 0, r = nums.length - 1) => {
+    if (l <= r) { // 重要啊
+        const p = helper(nums, l, r)
+        quickSort(nums, l, p - 1)
+        quickSort(nums, p + 1, r)
     }
     return nums
 }
 const helper = (arr, l, r) => {
-    let cur = arr[l]
+    const cur = arr[l]
     while (l < r) {
         while (l < r && arr[l] < cur) l++
         swap(arr, l, r)
@@ -142,9 +141,7 @@ const helper = (arr, l, r) => {
     }
     return l
 }
-const swap = (arr, a, b) => {
-    [arr[a], arr[b]] = [arr[b], arr[a]]
-}
+const swap = (arr, a, b) => [arr[a], arr[b]] = [arr[b], arr[a]]
 const res = quickSort([48, 1, 0, 21, 3, 999, 10])
 console.log(res)
 
