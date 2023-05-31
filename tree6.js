@@ -106,6 +106,7 @@ const levelTraverse = (root) => {
         res.push(level)
     }
     return res
+
 }
 const res = levelTraverse(t1)
 console.log(res)
