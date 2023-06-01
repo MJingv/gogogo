@@ -170,5 +170,36 @@ const merge = (left, right) => {
 
     return res
 }
-const res = mergeSort([48, 48, 1, 0, 21, 3, 999, 10])
+const bubbleSort = (arr) => {
+    const len = arr.length
+    for (let i = 0; i < len - 1; i++) {
+        for (let j = 0; j < len - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) swap(arr, j, j + 1)
+        }
+    }
+    return arr
+}
+// const res = bubbleSort([48, 48, 1, 0, 21, 3, 999, 10])
+// console.log(res)
+
+const levelNum = (root) => {
+    if (!root) return
+    const helper = (node, level = 1) => {
+        if (!node) return
+        console.log(node.val, '--in--', level, '--level')
+        helper(node.left, level + 1)
+        helper(node.right, level + 1)
+    }
+    helper(root)
+}
+const kids = (root) => {
+    if (!root) return 0
+    const left = kids(root.left)
+    const right = kids(root.right)
+    console.log(root.val, '-have-', left + right, '--kids')
+    const res = left + right + 1
+    return res
+}
+const res = kids(t1)
 console.log(res)
+
