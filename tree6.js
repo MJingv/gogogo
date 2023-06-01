@@ -143,8 +143,32 @@ const helper = (arr, l, r) => {
 }
 const swap = (arr, a, b) => [arr[a], arr[b]] = [arr[b], arr[a]]
 
-const res = quickSort([48, 48, 1, 0, 21, 3, 999, 10])
+
+const mergeSort = (arr) => {
+    const len = arr.length
+    if (len < 2) return arr
+    const mid = Math.floor(len / 2)
+    const left = arr.slice(0, mid)
+    const right = arr.slice(mid)
+    return merge(mergeSort(left), mergeSort(right))
+}
+const merge = (left, right) => {
+    let res = []
+    while (left.length && right.length) {
+        if (left[0] <= right[0]) {
+            res.push(left.shift())
+        } else {
+            res.push(right.shift())
+        }
+    }
+    if (left.length) {
+        res = [...res, ...left]
+    }
+    if (right.length) {
+        res = [...res, ...right]
+    }
+
+    return res
+}
+const res = mergeSort([48, 48, 1, 0, 21, 3, 999, 10])
 console.log(res)
-
-
-
