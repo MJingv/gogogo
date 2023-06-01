@@ -205,4 +205,18 @@ const kids = (root) => {
 
 
 // 力扣第 543 题「 二叉树的直径」
-
+var diameterOfBinaryTree = function (root) {
+    // 算出每个节点的直径，求最大值
+    let max = 0
+    const helper = (node) => {
+        if (!node) return 0
+        const left = helper(node.left)
+        const right = helper(node.right)
+        max = Math.max(left + right, max)
+        return Math.max(left, right) + 1
+    }
+    helper(root)
+    return max
+};
+const res = diameterOfBinaryTree(t1)
+console.log(res)
