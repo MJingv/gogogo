@@ -1354,3 +1354,28 @@ ai
 - but the legal system still haven't figure out who own the output
 - g7 leader have agree that the nations should adoubt risk based ai regulation
 - european long makers are also in a harry to introduce ai art to enforce rules on tools like chat-gpt
+
+google
+---
+
+- his only look out what's to come for ai in such
+- google is bringing more artificial intelligence to his core search products
+- at the an io conference in california ones day,the tec johns unvearl this revent such angen which can craf through
+  response to open and require
+- for example rather than just be able to find out what's the weather like,it can assume will be able to ask what to
+  when
+- ceo of google parent alpha beta sp
+- we're happy to make ai even more helpful for people ,business ,community,everyone
+- us consumers will be able to gain excess to a travel version of google revent such angen called search gex experience
+  at the wait list
+- google upgrades as used generate ai which create brand new contents like 44 text images and code using past data will
+  be integrate to exist products
+- consumers can look forward to ai drafting message on g-email and more advance photo additing on go photos
+- google's former generate ai comes after the star of open ai introduce chat-gpt in late 2022 which launch a fear
+  founding risk amount what would competitive
+- open ai bought by billions dollars microsoft has becoming many the faults version of generate ai
+- users have use it to spend 10 papers contract travel x even in 10 novels
+- since chat-gpt roll up google has found his proach as a top p to the inst in question that's stage google estimate 286
+  billion dollars and search and market
+- at monday conference google also took the rap of this new photo pixel phone, and the new middle range smart phone of
+  pixel 78
