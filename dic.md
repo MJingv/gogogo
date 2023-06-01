@@ -1341,41 +1341,41 @@ ants
 ai
 ---
 
-- this is germen photo middle artist ad ,his name hit the headline when he was refused to except sony word photograph
-  award for this ai generated image submitted
+- this is *german* photo *media* artist be,his name hit the headline when he refused to except sony word photograph
+  award for this ai generated image he submitted
 - by entering his work,ad said he wanted to start a conversation about the risk and possibility of ai technology in
   photograph
-- his question is this are we prepare for the world with more ecthatic images than real ones
-- to better dress the topic of ai in the feature,ad he said he liked to see a changing terminology form photograph to
-  prompt photograph ,a word that previer photographer create wen came up with
+- his question is this are we prepare for the world with more *inauthentic* images than real ones
+- to better *address* the topic of ai in the feature,ad he said he'd like to see a changing in terminology form
+  photograph to promptphotograph ,a word that p photographer cv came up with
 - a prompt is a code text or image used to crete ai content
-- his stand in ap king as a new ai program like chat-gpt have smash rocks for user group and simplize to transport
-  human's expression
+- his *stunt* in *april* came as new ai programs like chat-gpt have smashed *records* for user *growth* and *seem
+  poised* to transform human's expression
 - but the legal system still haven't figure out who own the output
-- g7 leader have agree that the nations should adoubt risk based ai regulation
-- european long makers are also in a harry to introduce ai art to enforce rules on tools like chat-gpt
+- g7 leader have agreed that the nations should *adopt* risk-based ai regulation
+- european *law* makers are also in a harry to introduce ai art to enforce rules on tools like chat-gpt
 
 google
 ---
 
-- his only look out what's to come for ai in such
+- *here's* *early* look out what's to come for ai in *search*
 - google is bringing more artificial intelligence to his core search products
-- at the an io conference in california ones day,the tec johns unvearl this revent such angen which can craf through
-  response to open and require
-- for example rather than just be able to find out what's the weather like,it can assume will be able to ask what to
-  when
-- ceo of google parent alpha beta sp
-- we're happy to make ai even more helpful for people ,business ,community,everyone
-- us consumers will be able to gain excess to a travel version of google revent such angen called search gex experience
-  at the wait list
-- google upgrades as used generate ai which create brand new contents like 44 text images and code using past data will
-  be integrate to exist products
-- consumers can look forward to ai drafting message on g-email and more advance photo additing on go photos
-- google's former generate ai comes after the star of open ai introduce chat-gpt in late 2022 which launch a fear
-  founding risk amount what would competitive
-- open ai bought by billions dollars microsoft has becoming many the faults version of generate ai
-- users have use it to spend 10 papers contract travel x even in 10 novels
-- since chat-gpt roll up google has found his proach as a top p to the inst in question that's stage google estimate 286
-  billion dollars and search and market
-- at monday conference google also took the rap of this new photo pixel phone, and the new middle range smart phone of
-  pixel 78
+- at the *annual* i/o conference in california wednesday ,the tech *giants* *unveiled* its *revamped* *search* *engine*
+  which can *craft*  response to *open-ends*  *queries*
+- for example rather than just being able to find out what's the weather like,*a consumer*  will be able to ask what to
+  *wear*
+- ceo of google parents alphabet sp
+- we *have an* *opportunity* to make ai even more helpful for people ,business ,community,everyone
+- us consumers will be able to gain excess to a *trail* version of google *revamped* such *engine* called search
+  *generative* experience in the coming weeks wait list
+- google's upgrade *introducing* generate ai which create brand new contents like *fully formed* text images and code
+  using past data will be integrated to existing products
+- consumers can look forward to ai drafting message on g-email and more advanced photo *editing* on google photos
+- google's *foray* into generative ai comes after the startup openai introduce chat-gpt in late 2022 which launched a
+  *furious* *funding* *race* *among*  would be competitors
+- open ai *backed* by billions dollars from microsoft has become for many the *defaults* version of generative ai
+- users have used it to *spin up* *term* papers contract travel *itinerary* even in *entire* novels
+- since chat-gpt *rollout* google has found *its* *perch* as the top *portal* to the *internet* in question and *at
+  stake* is google estimate 286 billion dollars and search *ads* market
+- at monday conference google also took the *wrap* off *its* new *foldable* pixel phone, and *its* new mid-range
+  smartphone of pixel 7a

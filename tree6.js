@@ -200,6 +200,9 @@ const kids = (root) => {
     const res = left + right + 1
     return res
 }
-const res = kids(t1)
-console.log(res)
+// const res = kids(t1)
+// console.log(res)
+
+
+// 力扣第 543 题「 二叉树的直径」
 
