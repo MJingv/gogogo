@@ -192,6 +192,27 @@ const levelNum = (root) => {
     }
     helper(root)
 }
+const levelNum1 = (root) => {
+    if (!root) return
+    const res = []
+    const helper = (node, level = 0) => {
+        if (!node) return
+        if (res?.[level]) {
+            res[level].push(node.val)
+        } else {
+
+            res[level] = [node.val]
+        }
+        helper(node.left, level + 1)
+        helper(node.right, level + 1)
+
+    }
+    helper(root)
+    return res
+}
+const res = levelNum1(t1)
+console.log(res)
+
 const kids = (root) => {
     if (!root) return 0
     const left = kids(root.left)
@@ -203,20 +224,37 @@ const kids = (root) => {
 // const res = kids(t1)
 // console.log(res)
 
-
 // 力扣第 543 题「 二叉树的直径」
 var diameterOfBinaryTree = function (root) {
     // 算出每个节点的直径，求最大值
+    // 好好再想想
     let max = 0
     const helper = (node) => {
         if (!node) return 0
         const left = helper(node.left)
         const right = helper(node.right)
         max = Math.max(left + right, max)
-        return Math.max(left, right) + 1
+        return Math.max(left, right) + 1 // 注意
     }
     helper(root)
     return max
 };
-const res = diameterOfBinaryTree(t1)
-console.log(res)
+// const res = diameterOfBinaryTree(t1)
+// console.log(res)
+
+// 124 二叉树中的最大路径和 hard
+var maxPathSum = function (root) {
+    if (!root) return
+    let max = -Infinity
+    const helper = (node) => {
+        if (!node) return 0
+        const left = helper(node.left)
+        const right = helper(node.right)
+        max = Math.max(left + right + node.val, max)
+        return max
+    }
+    helper(root)
+    return max
+};
+// const res = maxPathSum(t1)
+// console.log(res)
