@@ -1337,3 +1337,20 @@ ants
 - he knew that he still have much to do
 - but he's ready to face whatever challenges lay ahead
 - he waled back towards the city his mind clear and his heart full of the determination
+
+ai
+---
+
+- this is germen photo middle artist ad ,his name hit the headline when he was refused to except sony word photograph
+  award for this ai generated image submitted
+- by entering his work,ad said he wanted to start a conversation about the risk and possibility of ai technology in
+  photograph
+- his question is this are we prepare for the world with more ecthatic images than real ones
+- to better dress the topic of ai in the feature,ad he said he liked to see a changing terminology form photograph to
+  prompt photograph ,a word that previer photographer create wen came up with
+- a prompt is a code text or image used to crete ai content
+- his stand in ap king as a new ai program like chat-gpt have smash rocks for user group and simplize to transport
+  human's expression
+- but the legal system still haven't figure out who own the output
+- g7 leader have agree that the nations should adoubt risk based ai regulation
+- european long makers are also in a harry to introduce ai art to enforce rules on tools like chat-gpt
