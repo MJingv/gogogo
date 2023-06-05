@@ -210,8 +210,8 @@ const levelNum1 = (root) => {
     helper(root)
     return res
 }
-const res = levelNum1(t1)
-console.log(res)
+// const res = levelNum1(t1)
+// console.log(res)
 
 const kids = (root) => {
     if (!root) return 0
@@ -258,3 +258,16 @@ var maxPathSum = function (root) {
 };
 // const res = maxPathSum(t1)
 // console.log(res)
+
+// 力扣第 226 题「 翻转二叉树
+var invertTree = function (root) {
+    if (!root) return null
+    const left = invertTree(root.left)
+    const right = invertTree(root.right)
+    root.left = right
+    root.right = left
+    return root
+
+};
+const res = invertTree(t1)
+console.log(res)
