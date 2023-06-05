@@ -269,5 +269,57 @@ var invertTree = function (root) {
     return root
 
 };
-const res = invertTree(t1)
+const invertTree1 = (root) => {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        const tmp = node.left
+        node.left = node.right
+        node.right = tmp
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return root
+}
+
+// const res = invertTree1(t1)
+// console.log(res)
+
+// 力扣第 116 题「 填充每个二叉树节点的右侧指针」
+
+var connect = function (root) {
+    if (!root) return null
+    const helper = (a, b) => {
+        if (!a || !b) return
+        a.next = b
+        helper(a.left, a.right)
+        helper(b.left, b.right)
+        helper(a.right, b.left)
+    }
+    helper(root.left, root.right)
+    return root
+
+};
+// const res = connect(t1)
+// console.log(res)
+
+// 114 题「 将二叉树展开为链表
+var flatten = function (root) {
+    if (!root) return null
+    flatten(root.left)
+    flatten(root.right)
+    const left = root.left
+    const right = root.right
+
+    root.left = null
+    root.right = left
+
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+    p.right = right
+};
+const res = flatten(t1)
 console.log(res)
