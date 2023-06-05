@@ -1379,3 +1379,45 @@ google
   stake* is google estimate 286 billion dollars and search *ads* market
 - at monday conference google also took the *wrap* off *its* new *foldable* pixel phone, and *its* new mid-range
   smartphone of pixel 7a
+
+mold
+---
+
+- you're all ready to make the *sandwich* of your dreams
+- turkey tomatoes *swiss* on the bed of *romaine lettuce*, sandwiched between two slices of *sourdough*
+- *classic*,but don't know
+- what's this
+- *mold*? but look,good news,the mold's only on the part of the bread
+- so i *could* just cut that away, and be fine right
+- there's no such thing as a clean part of the moldy bread
+- that's because mold is *fungus* like mushrooms
+- *the* caps on the surface are easy enough to spot but *there's*  a vast network of *subterranean* roots that called
+  *hyphae* you can't see
+- so let's take another look at the bread of yours
+- disgusting,make maybe *you* can just grab another piece from the same loaf
+- well,that's not such a good idea either
+- because by the time the mold *sprouts* its *fuzzy* head ,what you're really *seeing* is reproductive part of mold
+  called *sporangiums*
+- each *sporangiums* *releases* tens thousands of *spores*
+- so even you can't see it that *entire* loaf could be the *teeming* with *fungus*
+- but it seems like such a waste to just throw it out
+- after all,you eat more on purpose all the time like the mold *goes* into making cheese ,*soy sauce*  and even life
+  saving *antibiotics* like *penicillin*
+- eating a little bit on your bread *can't* be that bad
+- right,well ,*ultimately*,it's a gamble
+- just like eating a *wild* mushrooms,many are *fine*, but some can be *deadly*
+- mold is the same way
+- there are thousands of different *species* of mold ,many of which are harmless to humans ,but since so many types can
+  *sprout* up on food, *it's* nearly impossible to know if what you're eating is safe
+- *cladosporium* for example can sometimes *trigger* *allergies*,but *is* generally harmless
+- *whereas*,others molds like p c produce harmful poisons called micle *toxin*
+- and elder couple in 2005 for example,*was* admitted to hospital after eating a *can* of soap *contaminated* with this
+  kind of mold
+- they have a sever muscle *tremors* but eventually recovered
+- but other molds like rl can have *permanent* effects ,and you may recognize this mold since it commonly grows on bread
+  blue-green with black *splotches* and super *fuzzy*
+- *in rare * cases can prompt *deadly* *infection* called zaggle which *causes* your blood to clod and can *ultimately*
+  *starve* your *cells* of *oxygen* to the point that they die
+- and it's not like *bacteria* where a little heat will *eliminate* the *threat* because high *temperatures* won't break
+  down the micle toxin
+- *and* since you have not clue which one  *you're* about put in your mouth ,ask yourself,is it really *worth* a risk
