@@ -1421,3 +1421,39 @@ mold
 - and it's not like *bacteria* where a little heat will *eliminate* the *threat* because high *temperatures* won't break
   down the micle toxin
 - *and* since you have not clue which one  *you're* about put in your mouth ,ask yourself,is it really *worth* a risk
+
+life
+---
+
+- once upon a time ,there was a young called nate
+- nate always felt like sth was missing in his life
+- he had a good job,a loving family and loyrol friends
+- but he couldn't shake the feeling that he was mend for more
+- he wanted to make a difference in the world,to live a life that mattered
+- one day,as he was driving home from work ,nate made a decision
+- he was going to start taking responsibility for his life and his relationships
+- he was going to be intentional about how he spending his time and what kind of feature he wanted for himself and those
+  around him
+- he wasn't going settle for midiyagote or stagination any longer
+- night began by setting goals for himself ,both personal and professional
+- he started exercising regularly, eat healthier and spending more time with his family and friends
+- he also made conscious effects to be more present in his relationships and to actively work on improving them
+- as he made progress towards his goals ,nate found that he was happier and more full felt and he had never been before
+- he had a sense of propose and direction in his life and he felt like he was making a positive impact on those around
+  him
+- they also noticed the positive changes in him ,and began to make positive changes in their own lives
+- they started to take responsibility for their own happiness and success just like nate's done
+- years later ,as nate looked back on his life,he was grateful for the decision he had made all those years ago
+- he knew that he had been the turing point, but has setting on the past the world was more meaningful for the existence
+- he had learned that life is what we make of it,and that with right mind set of altitude ,we can achieve anything we
+  set ours mind to
+- we've seeing life in your life
+- are you ready play one
+- playing this game of life,play to play not to win,but play with propose
+- you've all the power to take a charge in your and creating meaningful system for yourself ,it takes courage dedication
+  hard work ,but the the rewards well worth it
+- by setting goals ,taking responsibility for your relationships and actively working to improve yourself and those
+  around
+- you can create a life that you're proud of and at the end of day when you look back you can say ,it was a life worths
+  living
+- start by making a positive impact on the world by making a positive impact on yourself
