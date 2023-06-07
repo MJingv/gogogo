@@ -287,7 +287,7 @@ const invertTree1 = (root) => {
 // console.log(res)
 
 // 力扣第 116 题「 填充每个二叉树节点的右侧指针」
-
+// 遍历三叉树
 var connect = function (root) {
     if (!root) return null
     const helper = (a, b) => {
