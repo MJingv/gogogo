@@ -1,52 +1,54 @@
 red flags
 
-- there's core from tv shows bg wrote by show runner rf bw agos when you look at someone to wear rose color glasses,all
-  the red flag just like fire
-- and that *original* context talks about our flag,the romantic relationship the same can certainly be true for
-  ourselves too ,don't you think
-- because it's hard it is sometimes to spot the warning signs in our relationship and the people we love in might be
-  even harder to spot them in ourselves
-- be our tendency's to *emphasize* and bushinize with our own choices and actions
-- but that's it,here are 6 right flag you need to look out for yourself according to experts
-- no1.unconstructive talk
-- *psychologist* doctor ls defined negative self talk as any inner dialogs you have put yourself that maybe limit the
-  may to believe your and your own ability until ret potential
+- there's *quote* from tv shows bg wrote by show runner rf bw *goes* when you look at someone *through*  rose color
+  glasses,all the red flag just like *flags*
+- and *through* the *original* context talks about red flags,the romantic relationship the same can certainly be true
+  for ourselves too ,don't you think
+- because *as* hard as it is sometimes to spot the warning signs in our relationships and in the people we love,it might
+  be even harder to spot them in ourselves
+- because of our tendencies to *emphasize* and *rationalize* with our own choices and actions
+- *with that said* here are 6 red flags you need to look out for in yourself according to experts
+- no1.unconstructive self-talk
+- *psychologist* doctor ls defined negative self talk as any inner *dialogue* you have *with* yourself that maybe limit
+  *your* believe in yourself and your own ability and to *reach* potential
 - in fact,researches by x found negative self talk increase the risk of mental health problems, such as depress
-  motivation, feeling helpless and even depression
-- so if you're guilty of constantly b yourself down and have a lot of d self dep thoughts even when you past jokes ,
-  then talking to professional or plan a cbt ticnic
-- for example, thoughts stopping mindfulness etc,can help you minimize this
-- no2.nerconid for social valildation
-- do you feel there are too much for people place here
-- did you self esteem often go up and down depending on other people's opinions and feelings towards to
-- perhaps you feel a strong need to always get everyone else's to like you,regardless it's whether or not you even like
-  them
-- all of this are sense that you may have a no need for social validation
-- ans this is a red flag,because according to mental healthy psychology x , people would too high and need for social
-  validation often have low self esteem and staying, or you can chase after unhealthy one-side friendship and
-  relationship
-- neo need for control
-- constantly needing to fix other people's problems for them,running to their risks even you don't want them , the
-  micromanage everyone around you are not a red flag but t tell sense that you may hava a neo control
-- according doctor xx,in an article for psychology today, people who's struggling with this most likely grable strong
-  feelings of helpless into cop becoming overly demanding in their ways of relating other people
-- no4.toxin professional
-- relate to the early points,doctor x also talks about sth she calls self control fisk, or what is more coming known as
-  toxin professional
-- the problem ,according to doctor x, is that people likes this expect themselves to preform perfectly and without air
-  and such are only setting them up for failure and disappointment
-- this is not only a definite red flag and weakness but harmful for your mental healthy
-- no5.avoiding to touchment
-- and the article for better help which was medical review by lesson clinical social worker apo justice,people would
-  avoid a touchment style tend to be emotional in closed off
-- they often feel uncomfortable with long terms closeness and intimecy relationships
-- as result , they're n to avoid other people or manifest other self savo behaviors,such as cheating and gos ,and never
-  ask for help , instead of communicating with other people and colleberating on solving issues with them
-- and no6 social median addiction
-- anther red flag you may not realize you have is social median addiction
-- researches like who and anthers found in 2019 study,negative affect collage students mental healthy and academic
-  performance
-- an article from healthy line written by medical helper professional doctor x,found that some possible done size of too
-  much social median can assumption are low self esteem
-- increased feelings of *loneliness*  ,*anxiety* your depression ,the on side of social anxiety disorder, disrupt 3
-  parts, decress physical activity , ignore realize and for relationship and reduce the ability to emphasize with others
+  motivation, feeling of helpless and even depression
+- so if you're guilty of constantly *putting* yourself down and have a lot of *deprecating* thoughts even *the ones* you
+  pass off as jokes , then talking to professional or *applying* *effective* cbt *techniques*
+- for example, thought stopping mindfulness etc,can help you minimize this
+- no2.*neurotic* need for social valildation
+- do you feel you're too much for people *pleaser*
+- does you self esteem often go up and down depending on other people's opinions and feelings towards *you*
+- perhaps you feel a strong need to always get everyone else to like you,regardless of whether or not you even like them
+- all of *these* are *signs* that you may have a *neurotic* need for social validation
+- ans this is a red flag,because according to mental healthy psychology x , people *with* too high a need for social
+  validation often have low self esteem and *stay in*, or *even*  chase after unhealthy one-side friendship and
+  relationships
+- *neurotic* need for control
+- constantly needing to fix other people's problems for them,running to their *rescue* even when you don't want to , the
+  micromanage everyone around you are *all* not a red flag but *telltale* *signs* that you may hava a *neurotic* need
+  for control
+- according doctor xx,in an article for psychology today, people who struggle with this most likely *grapple* with
+  strong feelings of helpless and to  *cope* become overly demanding in their ways of relating other people
+- no4.*toxic* *perfectionism*
+- relate to the early points,doctor x also talks about sth she calls self control *freaks*, or what is more *commonly*
+  known as *toxic* *perfectionism*
+- the problem ,according to doctor x, is that people likes this expect themselves to preform perfectly and without
+  *error* and as such are only setting themselves up for failure and disappointment
+- this is not only a definite red flag and weakness but harmful *habit* for your mental healthy
+- no5.*avoidant attachment*
+- in an article *from* better help which was medical review by *license* clinical social worker, *april* justice,people
+  *with* *avoidant* *attachment* style tend to be emotionally detached in closed off
+- they often feel uncomfortable with long terms closeness and *intimacy* relationships
+- as a result, their *knee-jerk* *response* is to avoid other *person* or *manifest* other  *self-sabotaging*
+  behaviors,such as cheating and *ghosting* ,and never asking for help , instead of communicating with other *person*
+  and *collaborating* on resolving issues with them
+- and no6 social media addiction
+- anther red flag you may not realize you have is social media addiction
+- researches like hou and anthers found in 2019 study,that *it* negative affected collage students mental healthy and
+  academic performance
+- an article from healthy line written by medical heath *practitioners* doctor x,found that some possible *downsides*
+  of too much social media consumption are low self-esteem
+- increased feelings of *loneliness*  ,*anxiety* *or* depression,the *onset* of social anxiety disorder, disrupt *sleep*
+  *patterns*, *decreased* physical activity , ignore *real life* relationship and reduce the ability to emphasize with
+  others
