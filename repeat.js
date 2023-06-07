@@ -14,6 +14,7 @@ t3.right = new TreeNode(4)
 t1.right = t3
 
 // 力扣第 116 题「 填充每个二叉树节点的右侧指针」
+// 遍历
 var connect = function (root) {
     if (!root) return
     const helper = (node1, node2) => {
@@ -31,13 +32,23 @@ var connect = function (root) {
 // console.log(res)
 
 // 114 题「 将二叉树展开为链表
+// 分解
+
 var flatten = function (root) {
     if (!root) return
-    flatten(root.left) //拉平左边
-    flatten(root.right) //拉平右边
-    root.left.right = root.right
-    root.right = root.left
+    flatten(root.left) //拉平左孩子
+    flatten(root.right)
+    const left = root.left
+    const right = root.right
     root.left = null
+    root.right = left
+    // 把原来right接到现在的right后面
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+    p.right = right
+
 }
 const res = flatten(t1)
 console.log(res)
