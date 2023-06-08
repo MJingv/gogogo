@@ -50,5 +50,5 @@ var flatten = function (root) {
     p.right = right
 
 }
-const res = flatten(t1)
-console.log(res)
+// const res = flatten(t1)
+// console.log(res)

@@ -321,5 +321,21 @@ var flatten = function (root) {
     }
     p.right = right
 };
-const res = flatten(t1)
+// const res = flatten(t1)
+// console.log(res)
+
+// 剑指 Offer 26. 树的子结构
+var isSubStructure = function (A, B) {
+    const helper = (a, b) => {
+        if (!b) return true
+        if (!a) return false
+        if (a.val !== b.val) return false
+        return helper(a.left, b.left) && helper(a.right, b.right)
+    }
+
+    if (!A || !B) return false
+    return helper(A, B) || helper(A.left, B) || helper(A.right, B)
+};
+const res = isSubStructure(t1, new TreeNode(1))
 console.log(res)
+// 剑指 Offer 27. 二叉树的镜像
