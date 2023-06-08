@@ -326,6 +326,7 @@ var flatten = function (root) {
 
 // 剑指 Offer 26. 树的子结构
 var isSubStructure = function (A, B) {
+    // 分解
     const helper = (a, b) => {
         if (!b) return true
         if (!a) return false
@@ -336,6 +337,34 @@ var isSubStructure = function (A, B) {
     if (!A || !B) return false
     return helper(A, B) || helper(A.left, B) || helper(A.right, B)
 };
-const res = isSubStructure(t1, new TreeNode(1))
-console.log(res)
+// const res = isSubStructure(t1, new TreeNode(1))
+// console.log(res)
+
+
 // 剑指 Offer 27. 二叉树的镜像
+// 分解
+var mirrorTree = function (root) {
+    if (!root) return null
+    const left = mirrorTree(root.left)
+    const right = mirrorTree(root.right)
+    root.left = right
+    root.right = left
+    return root
+};
+// 遍历
+var mirrorTree1 = function (root) {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        const tmp = node.left
+        node.left = node.right
+        node.right = tmp
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return root
+}
+
+const res = mirrorTree1(t1)
+console.log(res)
