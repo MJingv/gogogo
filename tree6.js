@@ -366,5 +366,20 @@ var mirrorTree1 = function (root) {
     return root
 }
 
-const res = mirrorTree1(t1)
+// 654. 最大二叉树
+// 创建一个根节点，其值为 nums 中的最大值。
+// 递归地在最大值 左边 的 子数组前缀上 构建左子树。
+// 递归地在最大值 右边 的 子数组后缀上 构建右子树。
+var constructMaximumBinaryTree = function (nums) {
+    const len = nums.length
+    if (!len) return
+    const max = Math.max(...nums)
+    const root = new TreeNode(max)
+
+
+
+    return root
+
+};
+const res = constructMaximumBinaryTree([3, 2, 1])
 console.log(res)

@@ -52,3 +52,16 @@ red flags
 - increased feelings of *loneliness*  ,*anxiety* *or* depression,the *onset* of social anxiety disorder, disrupt *sleep*
   *patterns*, *decreased* physical activity , ignore *real life* relationship and reduce the ability to emphasize with
   others
+
+mental healthy
+
+- image this，you're the go to person for solving problems that working taking care of others but recently you've been
+  feel over wholmed and stressed
+- how even caring for your mental health lately
+- one day you wake up feel anxiety, you're mind are receiving with worry about work deadline family responsibilities and
+  personal challenges and you realize you're been glutting in the mid of your busy life
+- as the day goes on ,you know just the mood is affecting your interactions with others
+- you feel eariable and short tempored,snap your coli and loved ones
+- you struggle to focus on your work and your productivity suffers
+- you realized that your mental healthy is not impacting you,but also those are around you
+- that evening to impove it
