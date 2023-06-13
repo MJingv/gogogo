@@ -64,4 +64,38 @@ mental healthy
 - you feel eariable and short tempored,snap your coli and loved ones
 - you struggle to focus on your work and your productivity suffers
 - you realized that your mental healthy is not impacting you,but also those are around you
-- that evening to impove it
+- that evening you'll reflect on the importance of the priority doing your mental health and identity 3 daily retrials
+  to improve it
+- let's all of them
+- soft afformation and soft celebration
+- did you know that soft a and soft celebration can have a profound impact on your mental health
+- according to psychology expert ,doc x ,positive afformation can forst self exceptions ,increase self value and promote
+  psychology well beings
+- start your days with power and information like,i'm proud of who i am or i except myself fully for than all
+- they're all the day take a time to ignore and celebrate your complishments ,big or small
+- breathing self pride and own yourself to leads to improvement of login , eating your journey towards helistic help and
+  happiness
+- daily acts of self care
+- imaging starting each day feeling your refresh to managed with clear mind and positive outlook ,sounds wonderful
+- according to hormen expert and author of the hormen reset died doc x,in cooperating acts self care in your daily
+  routain of is crucial for maintaining abnormal physical emotional and mental well being
+- it's not just about panpare yourself for the d trace but rather making self care i can assist part of your daily life
+- priority self care is not selfish ,but it's central practice of self compassion, it's about value yourself enough to
+  priority well being a meets to life
+- by making self care priority using powerful message to yourself and others that you desire care
+- you maybe thinking,but i'm so busy ,how can i find time for self care
+- remember that self care doesn't have to be time consuming or exdrviggent
+- small acts like deep breath, time spend with bats or reading can contain self care
+- consistent and entionary your key even the missing times
+- reflection and gratitude
+- have you ever consider that powerful impact and reflection and gratitude can have on your mental health and well being
+- in you phy and auther doc ,has highlight the benefit of this practice
+- when you reflect on your thoughts feelings and behavior with self compassion,your prochure self kind of understanding
+  rather than self critision
+- by konwleging hour and enprofaction and forze,enpractice gratitude,you can recognize your efforts ,growth and you need
+  quality,boost positive self concept
+- plus enbrath self exceptions meaning understanding your flaws are part of your journey and do not define your words
+- you're considently avoiding and learning and profection don't make you any less valualbe or worthy as individious
+- by caltivating self exception and encoperating reflection and gratitude in to your life ,you can develop a positive
+  outlook towards yourself in your life
+
