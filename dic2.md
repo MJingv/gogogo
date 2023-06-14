@@ -54,48 +54,55 @@ red flags
   others
 
 mental healthy
+---
 
-- image this，you're the go to person for solving problems that working taking care of others but recently you've been
-  feel over wholmed and stressed
-- how even caring for your mental health lately
-- one day you wake up feel anxiety, you're mind are receiving with worry about work deadline family responsibilities and
-  personal challenges and you realize you're been glutting in the mid of your busy life
-- as the day goes on ,you know just the mood is affecting your interactions with others
-- you feel eariable and short tempored,snap your coli and loved ones
+- *imagine* this，you're the go-to person for solving problems at work and taking care of others but recently you've been
+  feeling *overwhelmed* and stressed
+- how have you *been* caring for your mental health lately
+- one day you wake up feeling anxiety, your mind  *racing* with worried about work deadlines family responsibilities and
+  personal challenges and you realize you've been *neglecting* your mental health in the *midst* of your busy life
+- as the day goes on ,you *notice* *that* your mood is affecting your interactions with others
+- you feel *irritable* and short *tempered*,snapping at your *colleagues* and loved ones
 - you struggle to focus on your work and your productivity suffers
-- you realized that your mental healthy is not impacting you,but also those are around you
-- that evening you'll reflect on the importance of the priority doing your mental health and identity 3 daily retrials
+- you realized that your mental healthy is not only impacting you,but also those are around you
+- that evening you'll reflect on the importance of the *prioritizing*  your mental health and identity 3 daily *rituals*
   to improve it
-- let's all of them
-- soft afformation and soft celebration
-- did you know that soft a and soft celebration can have a profound impact on your mental health
-- according to psychology expert ,doc x ,positive afformation can forst self exceptions ,increase self value and promote
-  psychology well beings
-- start your days with power and information like,i'm proud of who i am or i except myself fully for than all
-- they're all the day take a time to ignore and celebrate your complishments ,big or small
-- breathing self pride and own yourself to leads to improvement of login , eating your journey towards helistic help and
-  happiness
-- daily acts of self care
-- imaging starting each day feeling your refresh to managed with clear mind and positive outlook ,sounds wonderful
-- according to hormen expert and author of the hormen reset died doc x,in cooperating acts self care in your daily
-  routain of is crucial for maintaining abnormal physical emotional and mental well being
-- it's not just about panpare yourself for the d trace but rather making self care i can assist part of your daily life
-- priority self care is not selfish ,but it's central practice of self compassion, it's about value yourself enough to
-  priority well being a meets to life
-- by making self care priority using powerful message to yourself and others that you desire care
-- you maybe thinking,but i'm so busy ,how can i find time for self care
-- remember that self care doesn't have to be time consuming or exdrviggent
-- small acts like deep breath, time spend with bats or reading can contain self care
-- consistent and entionary your key even the missing times
+- let's *outline* them
+- soft *affirmation* and soft celebration
+- did you know that *practicing* *self-affirmation* and  *self-celebration* can have a profound impact on your mental
+  health
+- according to psychology expert ,doc x ,positive *affirmation* can *foster* self *acceptance* ,increase self *worth*
+  and promote psychology well-being
+- start your days with *empowering* and *affirmation* like,i'm proud of who i am or i *accept* myself fully *flaws*
+  and all
+- *throughtout* the day, take time to *acknowledge* and celebrate your *accomplishments* ,big or small
+- *embracing* self-pride and *honoring* yourself leads to improved mental *well-being* , *aiding* your journey towards
+  *holistic* *health* and happiness
+- daily acts of self-care
+- *imagine* starting each day feeling your refreshed to *energized* with a clear mind and positive outlook ,sounds
+  wonderful
+- according to *hormone* expert and author of the hormone reset *diet* doc x,*incorporating* acts self-care in your
+  daily *routine*  is crucial for maintaining *optimal* physical emotional and mental well-being
+- it's not just about *pampering* yourself with *occasional* *treats* but rather making self-care a consistent part of
+  your daily life
+- prioritizing self-care is not selfish ,but it's *essential* practice of self-compassion, it's about valuing yourself
+  enough to priority well-being *amidst* life's *demands*
+- by making self-care priority,*you send a* powerful message to yourself and others that you desire care
+- you may be thinking,but i'm so busy ,how can i find time for self-care
+- remember that self-care doesn't have to be time consuming or *extravagant*
+- small acts like deep breathing, time spend with a pet or reading can *count as* self-care
+- *consistency* and *intentionality* are key even in busy times
 - reflection and gratitude
-- have you ever consider that powerful impact and reflection and gratitude can have on your mental health and well being
-- in you phy and auther doc ,has highlight the benefit of this practice
-- when you reflect on your thoughts feelings and behavior with self compassion,your prochure self kind of understanding
-  rather than self critision
-- by konwleging hour and enprofaction and forze,enpractice gratitude,you can recognize your efforts ,growth and you need
-  quality,boost positive self concept
-- plus enbrath self exceptions meaning understanding your flaws are part of your journey and do not define your words
-- you're considently avoiding and learning and profection don't make you any less valualbe or worthy as individious
-- by caltivating self exception and encoperating reflection and gratitude in to your life ,you can develop a positive
-  outlook towards yourself in your life
+- have you ever consider that powerful impact and reflection and gratitude can have on your mental health and well-being
+- *neuroscientist* and *author* doc r ,has *highlighted* the benefits of this practice
+- when you reflect on your thoughts feelings and behaviors with self-compassion,your *approach* yourself with kindness
+  of understanding rather than self-*criticism*
+- by *acknowledging* our and *imperfections* and *flaws*,*practicing* gratitude,you can recognize your efforts ,growth
+  and *unique*  qualities,*fostering* a positive self-concept
+- plus *embracing* self-acceptance means understanding that your flaws are part of your journey and do not define your
+  *worth*
+- you're *constantly* *envolving* and learning and your *imperfection* don't make you any less valuable or worthy as
+  *individual*
+- by *cultivating* self-acceptance and *incoperating* reflection and gratitude in to your life ,you can develop a
+  positive outlook towards yourself and your life
 
