@@ -371,15 +371,13 @@ var mirrorTree1 = function (root) {
 // 递归地在最大值 左边 的 子数组前缀上 构建左子树。
 // 递归地在最大值 右边 的 子数组后缀上 构建右子树。
 var constructMaximumBinaryTree = function (nums) {
-    const len = nums.length
-    if (!len) return
+    if (!nums.length) return null
     const max = Math.max(...nums)
-    const root = new TreeNode(max)
-
-
-
-    return root
-
+    const index = nums.indexOf(max)
+    const node = new TreeNode(max)
+    node.left = constructMaximumBinaryTree(nums.slice(0, index))
+    node.right = constructMaximumBinaryTree(nums.slice(index + 1))
+    return node
 };
 const res = constructMaximumBinaryTree([3, 2, 1])
 console.log(res)
