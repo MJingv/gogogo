@@ -106,3 +106,31 @@ mental healthy
 - by *cultivating* self-acceptance and *incoperating* reflection and gratitude in to your life ,you can develop a
   positive outlook towards yourself and your life
 
+love yourself
+---
+
+- do you ever feel this way
+- if you do ,it's ok to have this feelings,but feelings are not affects
+- in psychologist doc m wants you to know ,no ,human isn't entirely unlovable
+- see ,you don't have to ever accept this feeling, but this feeling is bolid and very rare for you and for many others
+  and we want to help you understand why
+- because by understanding the psychology root calls of why you feeling loveable ,you can become to heal and experience
+  love
+- and early to finding moments
+- according to the psy group healing therpy,x is leading calls of docs feeling unloveable,and research of euro and
+  touchment theory supports this view
+- psy lg explain that you're born in this world why are you need to connection
+- all babies need sb for their survive
+- but if they need meet this missle in difference or deney ,that extinction need to reach out,is replace for the feeling
+  and confusion making their baby or young child to same engage and with thrum
+- the essentially you may have to learn to fear wanting or needing someone
+- and if this experience has happened often enough in your childhood ,they emotionally meaning center in your brain
+  became to in coding memory that reaching out and needing connection equals pain
+- this becoming the unconcious memory that can distort your preception and make you believe that no one can love you,
+  explained linda
+- rejection and abuse
+- when was the first time you thought you were unloveable
+- was this because you told yourself that or was that someone else told you through their words or actions and you
+  believe them
+- when that things back, his com with memory of friends and banding his, teachers's believing to anything in marketing
+  laughter from his first crash
