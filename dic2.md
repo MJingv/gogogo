@@ -134,3 +134,33 @@ love yourself
   believe them
 - when that things back, his com with memory of friends and banding his, teachers's believing to anything in marketing
   laughter from his first crash
+
+smart
+---
+
+- how do you yet when your hear your friend's sister with a access of 4.0 cgpa in her exam
+- publicly,she is smart
+- but let's see you watch torest not living in a tip for the restaurants staff while traveling in the another country,do
+  you have the same way?
+- and what about when someone talks to you about their motions and explains why they feel the way they feel
+- this is where book smart,stress smart,and emotional comes into the picture
+- ox ford dictionary defines book smart is been highly knowledgeable about acdemic subjects ,but only know and little
+  about real life people and interactions
+- on the other hand ,some people might refer to stress smart as common sense or having tagged
+- as also know in the science team community as social intelligence
+- psychologist x explains that social intelligence is understanding other people managing them ,enacting properly in
+  social situations
+- being emotional smart is when you're aware of your emotions and can control express your motions while also mean
+  capable of managing into personally relationship in with empathy
+- with right habits you can become acdemiclly , emotional or socially smarter
+- with that said,here are 5 habits that will help you to become smarter
+- curiosity doesn't kill the cat
+- is your mind of always searching for answering to this questions
+- what's that? who made it
+- how does it work
+- if so you've curious mind and always feel the need to dig deeper of the need of surfaces
+- researches published and journey near on conclude that the curiosity is linked the better memory and learning capacity
+- through words are gotten and brains become active when you're curious
+- you're more likely to learn in routain information when the rewards system interacts with your habit campus ,a brain
+  regain responsible for former memories
+- curiosity makes your passio
