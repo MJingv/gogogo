@@ -383,6 +383,7 @@ var constructMaximumBinaryTree = function (nums) {
 // console.log(res)
 
 // 力扣第 105 题「从前序和中序遍历序列构造二叉树」
+// 输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] 输出: [3,9,20,null,null,15,7]
 var buildTree = function (preorder, inorder) {
     if (!preorder.length || !inorder.length) return null
     const cur = preorder.shift()
@@ -394,6 +395,20 @@ var buildTree = function (preorder, inorder) {
     return node
 };
 
-// 输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] 输出: [3,9,20,null,null,15,7]
-const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+// const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+// console.log(res)
+
+
+// 力扣第 106 题「从后序和中序遍历序列构造二叉树」
+// 输入：inorder = [9,3,15,20,7], postorder = [9,15,7,20,3] 输出：[3,9,20,null,null,15,7]
+var buildTree1 = function (inorder, postorder) {
+    if (!inorder.length || !postorder.length) return null
+    const cur = postorder.pop()
+    const node = new TreeNode(cur)
+    const index = inorder.indexOf(cur)
+    node.left = buildTree1(inorder.slice(0, index), postorder, node)
+    node.right = buildTree1(inorder.slice(index + 1), postorder, node)
+    return node
+};
+const res = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
 console.log(res)
