@@ -163,4 +163,48 @@ smart
 - through words are gotten and brains become active when you're curious
 - you're more likely to learn in routain information when the rewards system interacts with your habit campus ,a brain
   regain responsible for former memories
-- curiosity makes your passio
+- curiosity makes your passionate and interested in subject，so memorizing the information about becoming easier
+- mental exercise -reading is to the mind what exercise is to the body
+- scientist sc and c conducted a study of identical twins age 7 to 16 ,where they discover that differences in reading
+  during their childhood years influence their interacture development
+- and in anther words when you read more ,you improve your reading skills and can learn more com plus malige
+- reading does not only make you acdemicly smart but it can make you emotional smart as well
+- in 2020,studies psychologist dc and mc,demonstrate reading literature fiction help readers understand other people's
+  emotions better
+- each twins in turn allows readers to dove into mind of others and think critically about them
+- empathy,creative thinking and vocabulary are all develop through this mental exercise
+- write your feelings
+- if write it is ,is dush at the paper of freeze ,the swap of brash
+- as the question for jw ask herself back in 1923 as he wrote in her personal diary
+- one fasinating thing is about the english author was that she's cronicy to write process on the regular bases
+- she loved to document her feelings and thoughts while she was working on the novel
+- emulating this daily heavy practiced by jw helps you be conscious of amazing things while empthen out of your mind
+- according to research cc and ab,writing your experience in the journey improve your working memory capacity
+- when you write ,you're consistently jerven to think about reason lev events and their outcome as you try to express
+  them logically
+- research jp maker also explain that through journey attention is paid to emotional experience,which means create and
+  understanding of your motions
+- when you journey,you can express your motions and safe soft direct environment ,and enabling you to become more where
+  how you feel and think
+- listen to silence
+- as you meditate a dream voice from pad cast gay to you
+- whatever thoughts come and go in your ,simply observe them as if from distance
+- mindfulness meditation empathizing being awared of what's thinking while being in the passive moment
+- a study conduct by near scientist sl and c has proved that long term meditate had more great matter in the fore
+  cotax,a brain regain that make exactly decisions and is involved working memory
+- working memory affects many covement functions such as understanding language , reasoning and problems solving
+- and what's interesting
+- fd meditator has the same amount of great matter as 25 years old
+- becoming a people watcher
+- organizational psychologist rg,says that people who are strain smart now had a play vary social roles
+- being observent of social interaction in the settle social kills will help you understand unspoken social null in
+  community
+- pay attention to have other people's behaviors and what they say,to help you read other people's thoughts and feelings
+  ,also develop help watching how people in different culture and nacity interact
+- so you can also be cultural aware and sensitive
+- keep mind and being smart is not restricted to do in well academically
+- smart is also meant you're tu into your social environment than the feelings around you
+- be proud of the progress you make you cultivate this habit to become smarter
+- whether you go as to be more motionally sensitive or navigate better in social environments ,you truly capible,and
+  remember you matter
+ 
