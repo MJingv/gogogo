@@ -411,5 +411,35 @@ var buildTree1 = function (inorder, postorder) {
 
     return node
 };
-const res = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
-console.log(JSON.stringify(res))
+// const res = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
+// console.log(JSON.stringify(res))
+
+
+// 652. 寻找重复的子树
+var findDuplicateSubtrees = function (root) {
+    const res = []
+    const map = new Map()
+    const helper = (node) => {
+        if (!node) return '#'
+        const left = helper(node.left)
+        const right = helper(node.right)
+        const str = `${node.val}-${left}-${right}`
+        if (!map.has(str)) {
+            map.set(str, 1)
+        } else {
+            map.set(str, map.get(str) + 1)
+        }
+        if (map.get(str) === 2) {
+            res.push(node)
+        }
+        return str
+    }
+    helper(root)
+    return res
+
+};
+const res = findDuplicateSubtrees(t1)
+console.log(res)
+
+
+// 第 230 题「二叉搜索树中第 K 小的元素」
