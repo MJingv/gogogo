@@ -406,9 +406,10 @@ var buildTree1 = function (inorder, postorder) {
     const cur = postorder.pop()
     const node = new TreeNode(cur)
     const index = inorder.indexOf(cur)
-    node.left = buildTree1(inorder.slice(0, index), postorder, node)
     node.right = buildTree1(inorder.slice(index + 1), postorder, node)
+    node.left = buildTree1(inorder.slice(0, index), postorder, node)
+
     return node
 };
 const res = buildTree1([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
-console.log(res)
+console.log(JSON.stringify(res))
