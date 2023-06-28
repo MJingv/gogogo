@@ -207,4 +207,61 @@ smart
 - be proud of the progress you make you cultivate this habit to become smarter
 - whether you go as to be more motionally sensitive or navigate better in social environments ,you truly capible,and
   remember you matter
- 
+
+jealous
+----
+
+- in harry poter and half bland prince,m gets firience when she saw wrong kiss love and bland
+- she cast the store that cost the flak of bird to fly aggressive towards wrong ,almost hurting him
+- like hm case,jealous can drive our to do some pretty impossive and sometimes wild thing
+- for jealous is not always this obvious in real life,it's specially across x the highlight
+- according to a study by doc x,as university al ,some touchment style in personality can affect how they act when
+  they're jealous
+- we'll talk about the different way that people express jealous and how they spot them in your crash
+- so if you think you're cush maybe jealous ,keep watch into find out if they've shown any signs
+- compansite risteration
+- as your cusban extral come to you lately,i'll give you a lot more attention than usual
+- if so this could be their way for responding to jealous ,do you componsade risteration
+- in another words,instead focusing on the person they're jealous up, they're trying to dis their relationship with you
+- according to study published in west in journey communication ,compansite risteration is common pro social respond to
+  jealous meaning it can be positive and helpful
+- maybe you know that's your cross ask you to hang out and taxi you more often, or they start complaining you a lot
+- they may even try to thing to improve themself to get your attention,like dress little nicer when they know you'll be
+  in the party
+- but some reacitons to jealous,are not always so pleasant
+- let's look at some the other signs,you crash maybe jealous but express in different ways
+- keep your friends close and your enemies closer?
+- another sign you cross jealous is that you've been talking down about someone you know, although as known as arrive
+  deragatino
+- at 2018 published in community method in messure identify,river focused communication as one of the specific signs of
+  jealous
+- this could look like name calling or the same thing to make you believe that so called river aka the person that
+  jealous up isn't a good person
+- if they try to highlight the jealous ,they may suddenly point out the person's bad qualities
+- q is always late
+- it can be so considered sometimes
+- it crossmade also engage in river contact or talking to the person they're jealous up
+- this contact doesn't always have to be confentational
+- if you notice that you cross spending a system spices amount of time with their supposed arrive,or suddenly try to
+  profend them ,it could be a settle way of cope with jealous
+- they freeze out
+- as your crash has given your the cold shoulder lately ,and you can't figure out why
+- well,they just maybe try to hide their jealous
+- doc lg ,professor at u in the university in to collegue,indicate that study show that the viodence is another major
+  sign jealous
+- if your crash is ingaging in the viodence,they may not only community with you last,but strongly deney that their
+  jealous and completely shut down if you burn it up
+- if your crash went unusual distance and avoid the topic about jealous when you them about it ,they could be try to
+  help the distance from you
+- keeping tabs
+- is your crash suddenly checking in on you,observing your behavior and asking where are your doing a little too often
+- don't worry,we're not reference to stock behavior like joy from the naplet show ,you
+- we just mean asking you maybe feel about details than usual about where you were and what you're doing,otherwise known
+  as servilance
+- if your crash keeping tabs on you and they didn't do this before, they maybe jealous and try to hide it
+- according to a study conduct by clinical psychologist doc x,a researcher that university of clision ,servilance can be
+  a sign that your relationship means a lot of crash
+- however in the same study,sivilion was also link to room nation,meaning the person focus too much on negative jealous
+  thoughts
+- in this can lead to law relationship satisfaction
+- it could be helpful to keep this mind if your crush's been engaging in sivilion behaviors in lately
