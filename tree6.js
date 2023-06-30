@@ -438,8 +438,19 @@ var findDuplicateSubtrees = function (root) {
     return res
 
 };
-const res = findDuplicateSubtrees(t1)
-console.log(res)
+// const res = findDuplicateSubtrees(t1)
+// console.log(res)
 
 
 // 第 230 题「二叉搜索树中第 K 小的元素」
+var kthSmallest = function (root, k) {
+    const helper = (node) => {
+        if (!node) return null
+        helper(node.left)
+        if (!k) return node.val
+        helper(node.right)
+    }
+    return helper(root)
+};
+const res = kthSmallest(t1, 1)
+console.log(res)

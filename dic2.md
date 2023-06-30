@@ -265,3 +265,38 @@ jealous
   thoughts
 - in this can lead to law relationship satisfaction
 - it could be helpful to keep this mind if your crush's been engaging in sivilion behaviors in lately
+
+tree
+---
+
+- a tree that stands alone in the field is stronger than the tree that stands in the frost because the solitary trees
+  have to be develop deep roots to support itself, when the life hard wind blow
+- for all those who want to give up,don't give up now,you're closer than you think ,you have to find alone ,and this is
+  how you become strong everyday
+- you're alone and that's fight
+- fight for your dreams ,for your life,and who you're spear to be
+- learn,grow,share,and meet people,but always push yourself
+- the most powerful wolf is the lone wolf ,the rejected one
+- i'm not wolf in shape closing ,i'm wolf in wolf's closing,i'm just fighting my fights
+- nobody needed ,no one wants in the way,no explination needed
+- i walk lonely road,the only road that i ever known where i goes
+- but it's home to me and i walk alone
+- because of the struggle i have caricter that most i'll never know,where i walk ,i walk alone,where i fight,i fight
+  alone
+- i'm a leader not a farmer worker,i'm strong alone
+- this strongest thoughts are sear with pain, and scars,my destination to the sun and the end ,no diviation
+- i came alone and i'll die alone
+- i'm alone but i'm strong
+- lonliness tag me real life
+- pain makes me stronger
+- lonliness is not my weakness is my strength
+- now i can control my emotions ,angriness ,feelings,lonliness is my best friend
+- when you believe in you,no moutains too tall
+- when you believe in you,no problem is too big
+- when you believe in you,there is no obstical you can overcome
+- when you believe in you ,the can't is replaced with can
+- when you believe in you,these is nothing you can't achieve
+- when you be believe in you,you're only the limit let the vision dear to dream
+- i'm proud of who i am ,who i become
+- i'm proud i still true to myself because now i can live as myself with respect from others
+- and most importantly,pride and respect for myself
