@@ -300,3 +300,56 @@ tree
 - i'm proud of who i am ,who i become
 - i'm proud i still true to myself because now i can live as myself with respect from others
 - and most importantly,pride and respect for myself
+
+lose weight
+
+- medications that have a side affect of weight lose have sign a recent inflect popularity
+- some manufactor are saying they're having difficult to keep in crast man up that the meditation become more normorlize
+  as a way of lose weight even know that's not a primary propose for them
+- one of the most popular,which
+
+come-out
+---
+
+- do you believe in come-out
+- it's a concept that suggest your actions and intentions have consequence ,both positive and negative ,it can impact
+  your future
+- it's believe found in handerazion, budisim ,and other east religion,and empsize this idea that,you're responsible for
+  your own destiny
+- american psychologist doc pa,let's conductive research on the emotions and their expression
+- in his book,emotions reviewed,recognize faces in feeling to improve communication and emotional life ,doc highlights
+  how your actions and intentions can have long last consequence that shape your life in significant ways
+- what i've said,here are the 4 universal lose of come-out,that'll change your life
+- the law of cost and affect
+- have your ever consider how every choice you make has the potential for positive or negative outcomes
+- there's actually study by bms,that looked at concept the of self-control and it's relations with our actions and
+  consequences
+- they found that people who practice self-control and one area of their life or more like to exercise self-control in
+  other areas well
+- 3 searches suggest that the energy created by self-control can expire over in two other parts to our lives,just pretty
+  cool ,do you think about it
+- it's not just about you though,a law of cost and affect also apply your relationship with others
+- i treating with other with kindness and respect ,you can cultivate positive relationships and create support social
+  network
+- in contract,negative behaviors and attitudes like hostility and gration ,can harm your relationship ,and you need to
+  conflict
+- so be mindful of the choices you make ,and the impact you have on yourself and those around you
+- the law of creation
+- have your ever stop and consider how your thoughts and believes can impact your experience and altermitely shape your
+  reality
+- now is of law of creation,it's concept has been extensive study in psychology
+- doc aa,a promonent psychologist and founder of russian a motive therapy , strongly believed the power of your believes
+  to influence your experience
+- doc aa argues that your thoughts and believes determinate your emotions reactions to avent your life and can either
+  limit or expand your potential for success
+- research in psychology and support this ideas,showing that the positive self-talk and cognitive believe therapy can
+  have significant impact on mental health and performance
+- the law of creation teaches that you have the ability to create your destiny by shaping your thoughts and believes
+- by double positive believes and thought pantans ,you can improve your experience ,and create more for feeling life
+- so have you ever consider how you can use this law to shape your own reality and create the life you truly desire
+- the law of humility
+- how can you embrace the love humility in your daily life
+- this principle teaches that exceptions and humility are essential for growth and personal development
+- instead of fighting against the things you can not change ,this law encorages you to except them for what they are and
+  learn from them
+- doc sh, argues that the expect ,which is able and manage challenge emotions
