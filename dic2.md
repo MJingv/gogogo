@@ -353,3 +353,22 @@ come-out
 - instead of fighting against the things you can not change ,this law encorages you to except them for what they are and
   learn from them
 - doc sh, argues that the expect ,which is able and manage challenge emotions
+- doc sh arrange psychologist and founder of expect and commitment therapy, argues that the expect is crucial component
+  of psychological fix ability,which is able to use to adapt to new situation and manage challenge emotions
+- i expect all aspects of your experience ,even the painful or unpleasant one ,you can move forward and focus on what is
+  truly matters to you
+- to how can you cultivate the exceptions and humility in your own life
+- for lose of growth
+- how do you feel about personal growth and self improvement
+- the lose of growth,emphasize the importance of continues self improvement and personal development in your life
+- it encorages you to embrance new experience and changes that come your way
+- as the personality for growth and learning,psychologist doc cd,emphasize the importance of having a growth mind side
+  which he believe your ability and intelligence can be develop through hard work, dedication and person views
+- this mind side encorages you to embrance challenges
+- learn from failure and achieve your goals,so strive to be open to new experience ,challenges and opportunity for
+  growth
+- as you can continue your journey of self discovering and personal development ,apply the universal lose of common
+  daily can help you create positive and for feeling life
+- it's importance to remember that the consequence of your actions both good and bad come back to you
+-     therefore,it's importance to choose your actions carefully and within intention, you can create the life that you can be proud of
+- how can you incorerate this idea into your daily routain and decision making
