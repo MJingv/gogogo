@@ -370,5 +370,61 @@ come-out
 - as you can continue your journey of self discovering and personal development ,apply the universal lose of common
   daily can help you create positive and for feeling life
 - it's importance to remember that the consequence of your actions both good and bad come back to you
--     therefore,it's importance to choose your actions carefully and within intention, you can create the life that you can be proud of
+- therefore,it's importance to choose your actions carefully and within intention, you can create the life that you can
+  be proud of
 - how can you incorerate this idea into your daily routain and decision making
+
+attraction
+---
+
+- what does mature attraction look like in real life
+- if you're attracted to someone then you're wondering if the feeling is mature where give you more clearity
+- no1.direction
+- when you think about the attraction you may picture the obvious indicators like lots of eye contract or smiling often
+- but did you know that the direction your crushes facing could be indicator of mature attraction as well
+- in the article published in up journey ab circle psychologist therapist at mind by design,says that if your body are
+  facing each other or if you turn towards one than other often, it's a sign that you're both to each other
+- the reason for this is explained article published in psychology today by doc rg ,he pointed out that facing the same
+  direction in someone shows you're been inviting
+- and he encourages other person to connect with you is also a good indicator that they trust you
+- try to say if you know the sign body language ,the next time you watch the *bachelor* or 90 feonce
+- no2.mirroring
+- mirroring also known as mimmecle is strongly associate with attraction
+- according to a study published by ma collage,when you're around your crush,try and pay attention to their movements
+  and compare them to yours
+- if you find that you attend to namagate postures, expressions,leaving the ways of speaking ,then you're feeling them
+  just by mature
+- m and collage highlight that marry or manigrate isn't a fe behavior meaning the standary build stronger relationship
+  with someone
+- in other words, your crush may mix you order to that you like them and former close your bond
+- however,mirroring isn't always intentional ,it can be subconscious changes in the body language that helps people
+  build trust and former relationships
+- so keep look out for this cue when you're crush ,they may not even be aware when you're doing it
+- no3.excuse,excuse
+- imaging your collage doing,hang out the campus with your crush and some friends
+- you tell everyone that you have to go to the class ,your crush says ,hi,my class is that way too
+- why don't we just walk together
+- is that just from the justure or could they be making any excuse to hang out with you
+- because the feeling is mature, well wonder the situations like this aren't enough to tell if you become the partner
+  then you find your crush consistently make excuses,talk to you or spend time with you and you do the same,then your
+  attractions to them could be mature
+- according to 2018 study published in psychology beloten ,direct body language like be facing close to one other, hang
+  out more,or talking to each other more often than you do to others is more strongly relate to attraction then in
+  direct behaviors like mimigra
+- turn out , it's just might be easier than you think to tell if you're mature connection with someone
+- no4.*pheromones*
+- have you ever wonder what cost people to be attracted to each other right away and experience loved for side
+- according to better help ,this instance chemenstary us happens because of pheromone
+- pheromone are chemecal that we detact through our sense of smell
+- they influence both sexual behavior and rose which play a big role in the attraction
+- depending on your genetic makeup,your pheromone can make you at to certain people
+- in the class t-shirt study conducted by wc and collage in 1995, research had man worth the same t-shirt for 2 nights
+  with or other artificial sense
+- than they asked woman to read how each t-shirts smell and found that woman prefer the sand of t-shirts warm by man who
+  is mhc gene ,differ from theirs
+- according to bbs, that the msh gene is also known as a muse system gene
+- if two people who have very differ amuse system , start family together,their kids would have genetic advantage
+- because they would like be able to fight out more types of disice affectively,they take away from scientific
+  perspective ,pheromone can help to tell you whether you crush are good match for you or not
+- if someone compliment you and how you smell and you like their sign too,this is a good sign that your mature attracted
+  to each other or release on by a logic level
