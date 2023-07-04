@@ -377,54 +377,57 @@ come-out
 attraction
 ---
 
-- what does mature attraction look like in real life
-- if you're attracted to someone then you're wondering if the feeling is mature where give you more clearity
+- what does *mutual* attraction look like in real life
+- if you're attracted to someone *and* you're wondering if the feeling is *mutual* *we're here to* give you more
+  *clarity*
 - no1.direction
 - when you think about the attraction you may picture the obvious indicators like lots of eye contract or smiling often
-- but did you know that the direction your crushes facing could be indicator of mature attraction as well
-- in the article published in up journey ab circle psychologist therapist at mind by design,says that if your body are
-  facing each other or if you turn towards one than other often, it's a sign that you're both to each other
-- the reason for this is explained article published in psychology today by doc rg ,he pointed out that facing the same
-  direction in someone shows you're been inviting
-- and he encourages other person to connect with you is also a good indicator that they trust you
-- try to say if you know the sign body language ,the next time you watch the *bachelor* or 90 feonce
+- but did you know that the direction your crushes *is* facing could be indicator of *mutual* attraction as well
+- in the article published *on* up journey ab *psychotherapist and clinical director*  at mind by design,says that if
+  your bodies are facing each other or if you're turning towards one *another*  often, it's a sign that you're both to
+  each other
+- the reason for this is *explained* in an article published in psychology today by doc rg ,he pointed out that facing
+  the same direction *as* someone shows you're been inviting
+- and *it* *encourages* the other person to connect with you, it's also a good indicator that they trust you
+- try to *see* if you *notice* the sign in body language ,the next time you watch the *bachelor* or 90 *day* *fiance*
 - no2.mirroring
-- mirroring also known as mimmecle is strongly associate with attraction
-- according to a study published by ma collage,when you're around your crush,try and pay attention to their movements
+- mirroring also known as *mimicry* is strongly associated with attraction
+- according to a study published by ma collage,when you're around your crush,try *paying* attention to their movements
   and compare them to yours
-- if you find that you attend to namagate postures, expressions,leaving the ways of speaking ,then you're feeling them
-  just by mature
-- m and collage highlight that marry or manigrate isn't a fe behavior meaning the standary build stronger relationship
-  with someone
-- in other words, your crush may mix you order to that you like them and former close your bond
+- if you find that you *tend* to *mimic* each other's postures, expressions,*even ways* of speaking ,then you're feeling
+  for them just *might be*  *mutual*
+- m and collage highlight that *mirroring* or *mimicry* *is* a *affiliative* behavior meaning *it's done to*  build
+  stronger relationship with someone
+- in other words, your crush *mimics* you *in order to* get you to like them and *form* a *closer* bond
 - however,mirroring isn't always intentional ,it can be subconscious changes in the body language that helps people
   build trust and former relationships
-- so keep look out for this cue when you're crush ,they may not even be aware when you're doing it
+- so keep a lookout for this cue in your crush ,they may not even be aware when you're doing it
 - no3.excuse,excuse
-- imaging your collage doing,hang out the campus with your crush and some friends
+- imaging your collage *students* ,hanging out on campus with your crush and some friends
 - you tell everyone that you have to go to the class ,your crush says ,hi,my class is that way too
 - why don't we just walk together
-- is that just from the justure or could they be making any excuse to hang out with you
-- because the feeling is mature, well wonder the situations like this aren't enough to tell if you become the partner
-  then you find your crush consistently make excuses,talk to you or spend time with you and you do the same,then your
-  attractions to them could be mature
-- according to 2018 study published in psychology beloten ,direct body language like be facing close to one other, hang
-  out more,or talking to each other more often than you do to others is more strongly relate to attraction then in
-  direct behaviors like mimigra
-- turn out , it's just might be easier than you think to tell if you're mature connection with someone
+- is that just *a friend gesture* or could they be making *an* excuse to hang out with you
+- because the feeling is *mutual*, *while* *one or two*  situations like this aren't enough to tell if  *it* become the
+  *pattern* and you find your crush *constantly* making excuses to talk to you or spend time with you and you do the
+  same,then your attractions for them could be *mutual*
+- according to 2018 study published in psychology *bulletin* ,direct body language like *being* *psysically* close to
+  one another, hanging out more,or talking to each other more often than you do with others is more strongly relate to
+  attraction than *indirect* behaviors like *mimicry*
+- turns out , it just might be easier than you think to tell if you have a mutual connection with someone
 - no4.*pheromones*
-- have you ever wonder what cost people to be attracted to each other right away and experience loved for side
-- according to better help ,this instance chemenstary us happens because of pheromone
-- pheromone are chemecal that we detact through our sense of smell
-- they influence both sexual behavior and rose which play a big role in the attraction
-- depending on your genetic makeup,your pheromone can make you at to certain people
-- in the class t-shirt study conducted by wc and collage in 1995, research had man worth the same t-shirt for 2 nights
-  with or other artificial sense
-- than they asked woman to read how each t-shirts smell and found that woman prefer the sand of t-shirts warm by man who
-  is mhc gene ,differ from theirs
-- according to bbs, that the msh gene is also known as a muse system gene
-- if two people who have very differ amuse system , start family together,their kids would have genetic advantage
-- because they would like be able to fight out more types of disice affectively,they take away from scientific
-  perspective ,pheromone can help to tell you whether you crush are good match for you or not
-- if someone compliment you and how you smell and you like their sign too,this is a good sign that your mature attracted
-  to each other or release on by a logic level
+- have you ever wonder what *causes* people to be attracted to each other right away and experience love at first sight
+- according to better help ,this instance *chemistry* usually happens because of pheromones
+- pheromone are *chemicals* that we *detect* through our sense of smell
+- they influence both sexual behavior and *arousal* which play a big role in the attraction
+- depending on your genetic makeup,your pheromone can make you more attractive to certain people
+- in the class t-shirt study conducted by wc and collage in 1995, research had *men* *wear* the same t-shirt for 2
+  nights *in a row* with *no deodorant or* other artificial *scents*
+- than they asked woman to *rate* how each t-shirts smells and found that woman prefered the *scent* of t-shirts *worn*
+  by men *whose* mhc gene ,differ from theirs
+- according to bbs, that the msh gene is also known as a *immune* system gene
+- if two people who have very different *immune* system , start a family together,their kids would have genetic
+  advantage
+- because they would like be able to fight *off* more types of *diseases* *effectively*,the takeaway from scientific
+  perspective ,pheromone can help to tell you whether your crush is a good match for you or not
+- if someone complimnets you on and how you smell and you like their *scent* too,this is a good sign that you're
+  *mutual* attracted to each other or *build least* on a biologic level
