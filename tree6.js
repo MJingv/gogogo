@@ -456,3 +456,24 @@ var kthSmallest = function (root, k) {
 };
 // const res = kthSmallest(t1, 1)
 // console.log(res)
+
+// 95.不同的二叉搜索树2
+// 给你一个整数 n ，请你生成并返回所有由 n 个节点组成且节点值从 1 到 n 互不相同的不同 二叉搜索树 。可以按 任意顺序 返回答案。
+var generateTrees = function (n) {
+    const res = []
+
+    const helper = (start, end) => {
+        if (start > end) return null
+        const val = (start + end) / 2
+        const node = new TreeNode(val)
+        node.left = helper(start, val - 1)
+        node.right = helper(val + 1, end)
+        return node
+    }
+
+    res.push(helper(1, 3))
+
+    return res
+};
+const res = generateTrees(3)
+console.log(res)
