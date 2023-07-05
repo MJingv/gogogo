@@ -462,21 +462,25 @@ var kthSmallest = function (root, k) {
 var generateTrees = function (n) {
     if (n < 1) return []
     const helper = (start, end) => {
-        if (start > end) return []
         const list = []
+        if (start > end) {
+            list.push(null)
+            return list
+        }
 
-        for (let val = start; val < end; val++) {
-            const lefts = helper(start, val - 1)
-            const rights = helper(val + 1, end)
-            for (const l of lefts) {
-                for (const r of rights) {
-                    const node = new TreeNode(val)
+        for (let i = start; i <= end; i++) {
+            const lefts = helper(start, i - 1)
+            const rights = helper(i + 1, end)
+            for (let l of lefts) {
+                for (let r of rights) {
+                    const node = new TreeNode(i)
                     node.left = l
                     node.right = r
                     list.push(node)
                 }
             }
         }
+        return list
     }
     return helper(1, n)
 
