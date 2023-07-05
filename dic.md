@@ -1463,70 +1463,72 @@ life
 productivity
 ---
 
-- one habit double my productivity over the last few years along mid compliment degree the chemical engining ,which
-  million subscribers on youtube learn animation and improve my writing
-- and it's surprisingly simple happened,one that easy overlook and underestimate,the power hour
+- one habit doubled my productivity over the last few years *allowing* *me to* *complete* my degree in the *mechanical*
+  *engineering* ,*reach a* million subscribers on youtube, learn animation and improve my writing
+- and it's surprisingly simple *habit*,one that's easy overlook and underestimate,the power hour
 - after i get up in the morning for the first hour before i do anything else ,i find a nice quiet place without my phone
-  without any else around,and i worked on my most difficult and most impact in my life
-- in the world of shinning new ax and quote,centificly bad tags ,the power hour looks quite pleat,but it's very pleaness
-  in my mind ,it's virtu
-- in the daodejin the classic book with window,lao write,try food and x attract passing people while the dao goes on
-  notice when looked that it's not much to see
-- and they also said ,the great way is very plain so the proud prefer the bypass
-- the po is not much to look at ,but all the apps ,types and tracks had tried over the last as a student working
-  prefessional and enterpernier,nothing has been more affect to me in the power hour
-- i slice hours out of each day and make actual process towards my goals
-- and everyone has goals ,but how many people actually act them
-- everyone want make great journey,they want make money ,get their dream job,graduate with honor,event something, create
-  something ,be someone
-- everyone wants to arrive at the great destination,but how many people actually want to take a step towards that
+  without *anyone* else around,and i worked on my most difficult and most *impactful* in my life
+- in the world of *shiny* new *apps* and "*scientifically-backed* " *hackss* ,the power hour looks quite plain,but this
+  very *plainness* in my mind ,it's *virtue*
+- in the daodejin the classic book with *wisdom*,lao write,*trifles and dainties* attract passing people while the dao
+  goes  *unnoticed* when looked *at* , it's not much to see
+- and they also said ,the great way is very plain, so the proud prefer the *bypaths*
+- the power hour is not much to look at ,but *out of* all the apps ,*tips* and *tricks* *i've* tried over the last few
+  years, as a student working *professional* and *entrepreneur*,nothing has been more *effective* for me than the power
+  hour
+- i slice *an* hours out of each day and make actual process towards my goals
+- and everyone has goals ,but how many people actually act *on* them
+- everyone wants to make great journey,they want to make money ,get their dream job,graduate with *honours*,*invent*
+  something, create something ,be someone
+- everyone wants to arrive at a the great destination,but how many people actually want to take a step towards that
   destination
-- how many people spend most their time preparing to make a journey that they never embra come
-- how many of them look for the right clothes ,bag,level of modivation,right video ,songs,words,tools,or the right time
-- instead of looking for the right time to be productive ,the power hour forces mean to be productive the right time
-- you have a lot of things to think about
-- well,i also think about them after my hours over
-- you have lots of relationship to meantain
+- how many people spend most their time preparing to make a journey that they never *embark on*
+- how many of them look for the right clothes ,bag,level of *motivation*,right video ,songs,words,tools,or the right
+  time
+- instead of looking for the right time to be productive ,the power hour forces *me*  to be productive at the right time
+- *do i* have a lot of things to think about
+- well,i'll think about them after my hour over
+- *do i*  have lots of relationship to *maintain*
 - i'll deal them after
-- you have multiple projects to work on
+- *do i* have multiple projects to work on
 - i'll get start on the most important one during my hour
-- do i procrastiney
-- one hour is easy enough to do each day and i can relask after
+- do i *procrastinate*
+- one hour is easy enough to do each day, and i can *relax* after
 - do i get tired in the evening
 - i schedule my power hour first thing in the morning when i have the most energy
-- the power hour solves the greatest obstical to productivity in action
-- the mind find clever ways to not take action ,and the mind most clever secret is product procrastination
-- it doesn't tell itself that's been in active
-- rather,you find things that sude productive to do and take pleasure in doing them
-- the mind wants to clean the house before working or wants to manage it todolist or wants to organize computer or
-  notion folders
-- it wants make it template and sprech
+- the power hour solves the greatest *obstacle* to productivity *inaction*
+- the mind finds clever ways to not take action ,and the mind most clever secret is product procrastination
+- it doesn't tell itself that's being *inactive*
+- rather,*it* finds things that *pseudo-productive*  to do and takes pleasure in doing them
+- the mind wants to clean the house before working or wants to manage *its* todolist or wants to organize *its* computer
+  or notion folders
+- it wants make it template and *spreadsheets*
 - it wants to answer emails
-- it wants to set up a upper or calendar
+- it wants to set up a *app* or calendar
 - it wants to do a little reading before working
 - it wants to find right music
-- it wants to set desk properly without right tools
+- it wants to *get the* desk  *set up* properly *with all the* right tools
 - it wants to find productivity video to watch first
-- but the mind can create infinitive number of tasks and problems itself
-- how many folder should there be on the desktop
-- how should the folder be named
-- how should i organize them with each other
+- but the mind can create *infinite* number of tasks and problems for itself
+- how many folders should there be on the desktop
+- how should the folders be named
+- how should i organize them *within* each other
 - what should each folder contain
 - how should i tag each folder
 - and its can go on forever with anything
-- the man loves to productively procrastine
+- the man loves to productively *procrastinate*
 - it gets the pleasure of working without actually having to do any
-- the man loves set around and sharp his axs but never wants to chop the tree
-- the power hour is commitment to take the axes x and start chopping
-- the sharping of the axes,the gathering of other tools working on the other things around the house can all take place
+- the *mind* loves to *sit* around and *sharpening* *its* axs but it never wants to *hack* the tree
+- the power hour is  *a* commitment to take the axes *as it is* and start chopping
+- the sharpening of the axe,the gathering of other tools working on the other things around the house can all take place
   after
-- but the first hour i'll do nothing but chop the tree
-- i'll good dirctly to most pressing problems in my life,and found most difficult and most impactful action that i'll
-  solved it and i'll do that
+- but fot the this first hour i'll do nothing but chop at the tree
+- i'll *go* *directly* to most pressing problems in my life,and i'll find most difficult and most impactful action that
+  *might* solved it and i'll do that
 - sj once said that focusing was about saying no
-- the first hour of my day secret,solitery,revern,unnerdone,and above all ,it's about saying no
-- there's no inscent or special teas, meditation ,clod shower, quick body work out
-- no million or billion morning routine that never actually among to anything
+- the first hour of my day is *sacred*,*solitary*,*reverent*,*unadorned*,and above all ,it's about saying no
+- there's no *incense* or special teas, meditations ,clod showers, quick body *workouts*
+- no *millionaire* or *billionaire* morning routines that never actually *amount* to anything
 - no productive distractions
 - no productive procrastination
-- just me,my ax and tree
+- just me,my axe and the tree
