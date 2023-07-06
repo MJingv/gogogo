@@ -431,3 +431,60 @@ attraction
   perspective ,pheromone can help to tell you whether your crush is a good match for you or not
 - if someone complimnets you on and how you smell and you like their *scent* too,this is a good sign that you're
   *mutual* attracted to each other or *build least* on a biologic level
+
+communication
+---
+
+- have you ever talk with your friends about the problem only to realize that he just doesn't seem to grasp why the
+  issue is so important to you
+- have you ever present an idea to a group and it matters with other confusion
+- or maybe you've been in an argument when other person suddenly acuse you of not listening to what they're saying at
+  all
+- what's going on here
+- the answer is mis-communication
+- and in the some former or others, we've all experienced,it can lead to confusion ,animaciy , misunderstanding or even
+  crush a mouty million dollars probe into the surface of malls
+- the fact is even when face to face with another person in the very same room and speaking the same language,human
+  communication is incredibly complex
+- but the good news is that the basic understanding of what happened when you communicate can help us prevent
+  mis-communication
+- for decades ,researches have asked what happens when we communicate
+- one interpertation ,call transmission model ,views communication as a message that moves directly from one person to
+  an ,similar to someone talking sth at all and walking away
+- but in reality ,this impliscate model doesn't account for communication complexcity
+- enter the transaction model which acknowledges that many added challenges of the communicating
+- with this model ,it's more accurate to think communication between people as a game of catch
+- as we communicate or message, we've received faceback from other party
+- through the transaction,we create meaning together
+- but from the success change ,forther complication arise
+- it's not like the star track universe or some caricter can vocan mind mile , falling sharing froze and feelings
+- as humans ,we can't help but send and receive messages through our own subjective lances
+- when communicating one person express her interpretation of message and the person she's communicating with,here's his
+  own interpretation of that message
+- our preception filter continuing shift meaning and interpretations
+- remember that game of catch
+- imaging it with lomp of clam
+- as each person touch as it ,they shape to feed their own unique perception based on any number of variable ,like
+  knowledge ,or pass experience, ages, ,race, gender ,asnicity,relation or family background
+- simutinancely ,every person inteperate the message they'll receive,based on their relationship with other person ,and
+  their unique understanding of semantic and conetations of exact words of be a news
+- they can also be distract by other simulate such as traffic or grama stomach
+- even the emotion my cloud are understanding
+- and by adding more people into the conversation each with their own subjectivity ,the complacity communication grows
+  expanational
+- so as the longb of clib goes back and forth from one person to anther,reworded ,reships and always changing,it's no
+  wonder are the messages sometimes turning into a mush of mis-communication
+- but luckily,it are some simple practices that can help us all navigate are daily interactions for better communication
+- one recognize that passive hearing and active listening are not the same
+- engage actively with the verb and non-verb *feedback* of others and justice your message to fercility greater
+  understanding
+- two listen with your eyes and ears as well as with your god
+- remember that communication is more just a words
+- three take time to understand as you try to understood
+- in the russia to express yourself ,it's easy to forget that communication is two way streets
+- to open to what the other person might say
+- and finally four,be aware of your personal perceptional filters
+- elements of your experiences including your culture,community and family influence how you see the world
+- see ,this is how i see the problem ,but how do you see it
+- don't assume that your perception is objective truth ,that will help you work towards sharing a dialog with others to
+  reach common understanding together

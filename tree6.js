@@ -485,5 +485,14 @@ var generateTrees = function (n) {
     return helper(1, n)
 
 };
-const res = generateTrees(3)
+// const res = generateTrees(3)
+// console.log(res)
+
+// 96.不同的二叉搜索树
+
+var numTrees = function (n) {
+    if (n <= 2) return n
+
+};
+const res = numTrees(3)
 console.log(res)
