@@ -489,10 +489,49 @@ var generateTrees = function (n) {
 // console.log(res)
 
 // 96.不同的二叉搜索树
-
 var numTrees = function (n) {
+    // 没做成
     if (n <= 2) return n
+    let res = 0
 
+    const helper = (start, end) => {
+        if (start > end) return []
+
+        for (let i = start; i <= end; i++) {
+            const lefts = helper(start, i - 1)
+            const rights = helper(i + 1, end)
+            for (let l of lefts) {
+                for (let r of rights) {
+                    res++
+
+                }
+            }
+        }
+        return res
+    }
+    helper(1, n)
+    return res
 };
-const res = numTrees(3)
+// const res = numTrees(3)
+// console.log(res)
+
+// 96.验证二叉搜索树
+var isValidBST = function (root) {
+    if (!root) return false
+    let res = true
+    let tmp = -Infinity
+    const helper = (node) => {
+        if (!node) return
+        helper(node.left)
+        if (node.val > tmp) {
+            tmp = node.val
+        } else {
+            return res = false
+        }
+        helper(node.right)
+    }
+    helper(root)
+    return res
+};
+const res = isValidBST(t1)
 console.log(res)
