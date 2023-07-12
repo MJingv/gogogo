@@ -533,5 +533,25 @@ var isValidBST = function (root) {
     helper(root)
     return res
 };
-const res = isValidBST(t1)
+// const res = isValidBST(t1)
+// console.log(res)
+
+// 96.翻转二叉树
+var invertTree = function (root) {
+    if (!root) return null
+    if (root.left || root.right) {
+        const tmp = invertTree(root.left)
+        root.left = invertTree(root.right)
+        root.right = tmp
+    }
+    return root
+};
+// const res = invertTree(t1)
+// console.log(res)
+
+// 104.二叉树的最大深度
+var maxDepth = function (root) {
+
+};
+const res = maxDepth(t1)
 console.log(res)
