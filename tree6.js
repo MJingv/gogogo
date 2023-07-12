@@ -550,8 +550,18 @@ var invertTree = function (root) {
 // console.log(res)
 
 // 104.二叉树的最大深度
-var maxDepth = function (root) {
+var maxDepth11 = function (root) {
+    if (!root) return 0
+    return Math.max(maxDepth11(root.left), maxDepth11(root.right)) + 1
 
 };
-const res = maxDepth(t1)
+// 111.二叉树的最小深度
+var minDepth = function (root) {
+    if (!root) return 0
+    const left = minDepth(root.left)
+    const right = minDepth(root.right)
+    if (root.left && root.right) return Math.min(left, right) + 1
+    return (left || right) + 1
+};
+const res = minDepth(t1)
 console.log(res)
