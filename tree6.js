@@ -563,5 +563,26 @@ var minDepth = function (root) {
     if (root.left && root.right) return Math.min(left, right) + 1
     return (left || right) + 1
 };
-const res = minDepth(t1)
+// const res = minDepth(t1)
+// console.log(res)
+
+var levelOrder = function (root) {
+    if (!root) return []
+    const [q, res] = [[root], []]
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.push(path)
+
+    }
+    return res
+
+};
+const res = levelOrder(t1)
 console.log(res)
