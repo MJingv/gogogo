@@ -488,3 +488,44 @@ communication
 - see ,this is how i see the problem ,but how do you see it
 - don't assume that your perception is objective truth ,that will help you work towards sharing a dialog with others to
   reach common understanding together
+
+mean
+---
+
+- can you think back to the last time someone said did sth that upset you so much were basicly speachless?
+- sth were you brain says ,rude
+- it's not just been blunter seen things that are argue,it's those things that servers no proposes other than to hurt
+  and mean others,and we don't have the in l to snap the x
+- so what did you do
+- well,we're on your side ,and we have some comeback that can helpfully help with the defused that mean spark
+- no1.hi,you seems look upset,is that everything ok
+- what you do to deal with fire
+- you dump it,after the smallest down of course,and sth mean it's very fairy
+- there're fly up all over the place , setting a light,anyone who come close
+- everyone was kindling ,even you're not fire back been in normal
+- seriously,the study shows that ongoing interactions like nagociate with rude people increase the other party rudeness
+  there after
+- so this parse is like a fire blanket
+- it's dimpner,the discoure ,just the spread
+- it's force the other person to take a pause and provide inside,showing that you're listening and care ,not just get
+  swap up in the forst
+- benefit for you, knowing the wine,and give you tools and control to make a better decision like virperion
+- no2.let's start the conversation over
+- it is where the conversation start it off far and more than to argue nearly ankle soon
+- many times it's because of the emotions grow until both sides lose empathy for each other
+- all either side can seen is you're not thinking of my point of you
+- in the hidden of the moment we forget this truth
+- my feelings are valid,and there are equally valid which means we forget to consider the answer to this questions
+- do i know or have a eye-consider there point for you
+- so it's phrase help you communicate the entire things might start with understanding in your open to the new point of
+  you
+- no4.i don't allow people to talk to me like that
+- this is you respecting yourself and balance you have site
+- this is your and yours x, no one have the right to change it or stop on it
+- some people will certainly try though
+- you may recognize this in target it put down and any comment that pay you as last than them
+- you have no obligation to let them digtate your validita
+- this phrase is telling them ,you know who you are, and using your pain to brust themselves ,is not their right ,noise
+  than exceptible
+- if the person is emplify meanness,with no hit to grow,you have the right to walk away ,you don't need that noise
+- 

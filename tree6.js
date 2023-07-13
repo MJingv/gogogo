@@ -582,7 +582,15 @@ var levelOrder = function (root) {
 
     }
     return res
+};
+// const res = levelOrder(t1)
+// console.log(res)
+
+var hasPathSum = function (root, targetSum) {
+    if (!root) return false
+    const res = []
+    const q = [root]
 
 };
-const res = levelOrder(t1)
+const res = hasPathSum(t1, 6)
 console.log(res)
