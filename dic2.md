@@ -528,4 +528,32 @@ mean
 - this phrase is telling them ,you know who you are, and using your pain to brust themselves ,is not their right ,noise
   than exceptible
 - if the person is emplify meanness,with no hit to grow,you have the right to walk away ,you don't need that noise
-- 
+- or let's just take a few minutes to calm down before it gets worse and come back this later
+- you can rewrite this in several weeks ,but you're essentially say if you notice that it's not the best you wanna
+  take,and better discussions what's happening before
+- this phrase is like a reset button, so you can hopefully reload at a safe point before the conversation turn into
+  fight,but it's still have all the progress you may during the compart conversation
+- of course,arguing towards yourself like i'm feeling very emotional, i need a settle please ,may work better ,showing
+  that you're software and care about others not just press your point , telling you're already a emotional person, you
+  need to calm down usually the opposite
+- and no5.you need to revaliate the way you speak to people
+- speaking of careful phrases,you might wanna see,this particular one for when the mean or rude person is blamed out of
+  line,or they ask you to strip up
+- why do people react this way to me
+- we say be careful because saying you need to consende like order,which could flar at defence response ,even if you're
+  not the target
+- but their consedentely s than to everyone else,this phrases even if true, may not be received well, if they're not
+  ready to hear it
+- on the other hand ,it can certainly help you understand where and why they are the way they are,they could have many
+  pifuny of i never know i came out that way
+- or they could double down progleeing that everyone's else problem and then start healing in thoughts at you
+- and vary to this ,maybe you find yourself uncover the situation or the person isn't being meaned,being blamed and
+  gueesed like by those who are complain about
+- mean people exist ,but they're not all the same
+- each of the phrases give the person the chance to show you what they are made of
+- are they the blevse of use to how they sound,or is there deep story where you're the only seen the type of the ice
+  block
+- they're all the those who are incapible of being crutils because they're lack of the capacity to take care others and
+  take responsibility for themself
+- that not on you,noise your responsibility to except poor treatment
+    
