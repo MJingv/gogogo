@@ -586,11 +586,38 @@ var levelOrder = function (root) {
 // const res = levelOrder(t1)
 // console.log(res)
 
+// 112.路径总和
 var hasPathSum = function (root, targetSum) {
     if (!root) return false
     const res = []
     const q = [root]
 
 };
-const res = hasPathSum(t1, 6)
+// 113.路径总和2
+var hasPath = function (root, targetSum) {
+    if (!root) return false
+    const res = []
+    const path = []
+    let sum = 0
+    const helper = (node) => {
+        if (!node) return sum = 0
+        sum += node.val
+        path.push(node.val)
+        if (sum === targetSum) {
+            res.push(path)
+            sum = 0
+        }
+        if (node.left) {
+            helper(node.left)
+        }
+        if (node.right) {
+            helper(node.right)
+        }
+
+    }
+    helper(root)
+    return res
+
+};
+const res = hasPath(t1, 6)
 console.log(res)

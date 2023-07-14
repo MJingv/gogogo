@@ -556,4 +556,21 @@ mean
 - they're all the those who are incapible of being crutils because they're lack of the capacity to take care others and
   take responsibility for themself
 - that not on you,noise your responsibility to except poor treatment
-    
+
+flight delay
+---
+
+- but we began are report with more dangerous air quality
+- millions are under alerts
+- there you see chicago on the upper lap cover and pains also right here in new york city were 3 weeks ago ,the sky
+  turned orange
+- the air is fine now,but expect to reach on a health level,nyc thursday
+- we have a much more on that in a moment
+- meanwhile another day a server whether in the north ways with cast cost,thousands of flight delay and canclation had a
+  july forth weekend
+- string the passengers have been forced to either pay for a hotel or sleep near the gate
+- passenger brace for impact deal to the fight 1092 skit to a stop on its nose ,but sd international airport
+- it sounds like a wild start and scrimp of madal
+- no one was injected
+- and sd apoligize calling the rare corance
+- according to company,another type of flight frastration more than 7000 and cancel nearly 3000 ,
