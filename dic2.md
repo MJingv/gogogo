@@ -574,3 +574,29 @@ flight delay
 - no one was injected
 - and sd apoligize calling the rare corance
 - according to company,another type of flight frastration more than 7000 and cancel nearly 3000 ,
+
+negative self talk
+---
+
+- how often do you talk this way to yourself
+- i'm so down ,i'm so useless,i'm so ugly
+- whatever you're going through,you're not alone
+- the way we talk to herself can either bring energy to our life or torast pieces
+- it begains when we are young
+- even through our parents love in care deeply about us , they're not perfect ,and they're own pay and trama are often
+  passed on us on attentional
+- our pain grows when the interaction with others,hurts seeds deeply which been internaze with negative self talk
+- and breaking the circle of harsh ,self valuation can goon a week,month,or even years
+- and the longer we critisize ourselves,the more we feel like we're falling into a deep ,dark,tanal
+- but still ,we're main strong
+- in order to break the negative self talk,we ,we meditate,we read self help books to move forward in the dark tarnal
+- and with each step of self care ,we make progress on the way through the dark tarnal of the inner cradic
+- sometimes even fot the strongest of us can feel lonely to keep up with self *routines*
+- and when everything feel overwhelming,we began to wonder ,is there any help for us after all
+- are we simply doom to walk alone and endless turnal with negative self talk
+- for there is a *glimpse* of hope
+- when we feel lonely of the journey,unsure of where to go ,frastrited with our progress,our loved ones,guide us through
+  the turnal ,help us navigate through the darkness ,and their dark are trying times when we harsh cridic
+- in our dark moments,their present protect us from own cruel words,and even though you may hurt each other without
+  meaning to
+-

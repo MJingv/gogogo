@@ -600,19 +600,15 @@ var hasPath = function (root, targetSum) {
     const path = []
     let sum = 0
     const helper = (node) => {
-        if (!node) return sum = 0
-        sum += node.val
-        path.push(node.val)
-        if (sum === targetSum) {
-            res.push(path)
-            sum = 0
-        }
-        if (node.left) {
-            helper(node.left)
-        }
-        if (node.right) {
-            helper(node.right)
-        }
+        if (!node) return
+        if (!node.left && !node.right && sum === targetSum) return res.push(path.slice())
+
+        helper(node.left)
+        path.pop()
+        sum -= node.val
+
+        path.push()
+        helper(node.right)
 
     }
     helper(root)
