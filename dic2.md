@@ -579,24 +579,38 @@ negative self talk
 ---
 
 - how often do you talk this way to yourself
-- i'm so down ,i'm so useless,i'm so ugly
+- i'm so *dumb* ,i'm so useless,i'm so ugly
 - whatever you're going through,you're not alone
-- the way we talk to herself can either bring energy to our life or torast pieces
-- it begains when we are young
-- even through our parents love in care deeply about us , they're not perfect ,and they're own pay and trama are often
-  passed on us on attentional
-- our pain grows when the interaction with others,hurts seeds deeply which been internaze with negative self talk
-- and breaking the circle of harsh ,self valuation can goon a week,month,or even years
-- and the longer we critisize ourselves,the more we feel like we're falling into a deep ,dark,tanal
-- but still ,we're main strong
-- in order to break the negative self talk,we ,we meditate,we read self help books to move forward in the dark tarnal
-- and with each step of self care ,we make progress on the way through the dark tarnal of the inner cradic
-- sometimes even fot the strongest of us can feel lonely to keep up with self *routines*
-- and when everything feel overwhelming,we began to wonder ,is there any help for us after all
-- are we simply doom to walk alone and endless turnal with negative self talk
+- the way we talk to *ourselves* can either bring energy to our *lives* or *terrorists to*  pieces
+- it begins when we are young
+- even though our parents love in care deeply about us , they're not perfect ,and *their* own *pain* and *trauma* are
+  often passed on us *unintentionally*
+- our pain grows when the interaction with others,hurts *us* deeply which *we* *internalize* with negative self talk
+- and breaking the *cycle* of harsh ,self *evaluation* can go on for weeks,months,or even years
+- and the longer we *criticize* ourselves,the more we feel like we're falling into a deep ,dark,*tunnel*
+- but still ,we *remain* strong
+- in order to break the negative self talk,we take long walks ,we meditate,we read self-help books to move forward in
+  the dark *tunnel*
+- and with each step of self-care ,we make progress on the way through the dark *tunnel* of the inner *critic*
+- sometimes even for the strongest of us,*it* can feel lonely to keep up with self-care *routines*
+- and when everything feels overwhelming,we began to wonder ,is there any *hope* for us after all
+- or are we simply doomed to walk alone in this endless *tunnel* of negative self talk
 - for there is a *glimpse* of hope
-- when we feel lonely of the journey,unsure of where to go ,frastrited with our progress,our loved ones,guide us through
-  the turnal ,help us navigate through the darkness ,and their dark are trying times when we harsh cridic
-- in our dark moments,their present protect us from own cruel words,and even though you may hurt each other without
+- in these dark and trying times,when we become our own harshest *critic*,when we feel *alone* in the journey,unsure of
+  where to go ,*frustrated* with our progress,our loved ones,guide us through the *tunnel* ,helping us navigate through
+  the darkness
+- in our darkest moments,their presence protect us from own cruel words,and even though you may hurt each other without
   meaning to
--
+- we learn to accept forgive and care
+- they remind us that regardless of what happened in the pass,we're not the harsh words we *say* to ourselves
+- instead,they remind us that we're loved,we're cared for,and we're worthy
+- their words are the *rays* of sunshine that *pierce* through the *thick* *clouds* of self judgement and bring light
+  into our darkness
+- and the moments when we can't bring up the *courage* to be kind to ourselves ,the only help we have is each other
+- because if there *is* just one person that cares ,it *plants* to a *seed* of *assurance* that,maybe,just maybe we're
+  not the words that we say to ourselves
+- just maybe,we're not defined *by* the ruthless words of our inner *critic*
+- so to anyone who may be suffering from negative self-talk and harsh inner *criticism*,you're not alone ,please reach
+  out
+- and if you feel like there is no one around you,we want to tell you,you're braver than you believe ,stronger than seem
+  ,and smarter than you think
