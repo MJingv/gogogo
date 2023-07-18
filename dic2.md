@@ -663,27 +663,28 @@ negative self talk
 ai travel
 
 - ai could possibly help you plan your next big trip
-- travel company start to inter chatgpt and other ai tack into their platform assist to travel with booking flights and
-  crafts internal vary
-- j gets now for more is j fight for his year and chef of *entrepreneur* *magazine*
-- this is surely entrepreneur your think ,with could with entrepreneur with the business too
-- so explain how this works and if there is any limitation
-- well,you can put some entrepreneur that business you could also create some new entrepreneur
+- travel company start to *integrate* chatgpt and other ai *tech* into their platform to assist *travelers* with booking
+  flights and *crafting* *itinerary*
+- *joining* us now for more is jf, *he's the editor-in-chief of* *entrepreneur* *magazine*
+- this is surely an entrepreneurial thing ,*but* it could *put some*  entrepreneurs out of business too
+- so explain *to us* how this works and if *it has* any limitation
+- well,you can put some entrepreneur *out* of business ,it could also create some new entrepreneur
 - so let me start with an example
-- i'm currently on vacation in bcr,so last night i went on chatgpt and i said, my wife is food sn ,which is true she
-  addimate herself,i said my wife is food s ,where can i take her for nice *restaurant* date night in bcr
+- i'm currently on vacation in bcr,so last night i went on chatgpt and i said, my wife is food *snob* ,which is true,
+  she *would admit* herself,i said my wife is food *snob* ,where can i take her for a nice *restaurant* date night in
+  bcr
 - it came back with six options immediately i show them to my wife she said,not bad, and this is the beginning
-- this tools can create entire iterate vary for you ,that's the reason why the industry is so interesting and it start
-  to *integrate* chatgpt
-- there're a lots of stores start up doing it ,but also a big player that can spit your creating chat bowls ,you can uss
-  to plan your next trip
-- so that's very interesting use ai
-- i was tell again for spring b trip ,i actually might through 3 options are *available*
-- we plan ourselves and then we also hire a travel agent
-- and i also find the app,there was an ai app in to plan the inter for me ,and alternately we end up scape the travel
-  agent and the ai app did really durable for me
-- because part of the joy of getting ready for vacation is the weeks and weeks planning for me
-- so i'd like to network
+- this tools can create entire *itinerary*  for you ,that's the reason why the industry is so interested and they're
+  starting to *integrate* chatgpt
+- there are a lots of  *startup* doing it ,but also a big player *like Expedia* that are creating chat *bots* ,you can
+  uss to plan your next trip
+- so that's very interesting use *of* ai
+- i was telling ed for spring *break* trip ,i actually might through 3 options are *available*
+- we planned *it* ourselves,*but* then we also hire a travel agent
+- and i also find the app,there was an ai app to plan the *itinerary* for me ,and *ultimately* we end up *scrapping* the
+  travel agent and the ai app *didn't* really *do it* for me
+- because part of the joy of getting ready for vacation is the weeks and weeks of planning for me
+- so i'd like *doing that work*
 - i want to ask you why would someone choose to use ai to plan your vacation
 - well,it's fiction,and let's be clear ,no body including people who make artificial intelligent tools is saying,this is
   the only thing you need,or it is going to replace everything
@@ -727,4 +728,6 @@ ai travel
   are traveling
 - so i think we gonna we're gonna to see some changes in the industry,but i don't think that it's a still glum ,i think
   that a lot of opportunities
-- i like that glasses have for ,perspective my friend ,j,thank you very much 
+- i like that glasses have for ,perspective my friend ,j,thank you very much
+- that's unterprener spiece ,i preciate it
+- it's true
