@@ -615,7 +615,10 @@ flight delay
 -     and now it's all about trying to demonstrate to pain customers ,you know how frastrate it is trying to get somewhere and have the inability to get you there,it's all about the delivery on that  contract  customers have with the airline
 - just a very stress moment for everyone
 - only to bring every ounce or patience you can muscle of yourself your friends,your family and everyone you have known
--
+- we'll be touched of this
+- you know we're about to that travel life is well
+- airport nek with the importance the information to pass your patience from the new libric international airprot
+- thank you
 
 negative self talk
 ---
@@ -656,3 +659,72 @@ negative self talk
   out
 - and if you feel like there is no one around you,we want to tell you,you're braver than you believe ,stronger than seem
   ,and smarter than you think
+
+ai travel
+
+- ai could possibly help you plan your next big trip
+- travel company start to inter chatgpt and other ai tack into their platform assist to travel with booking flights and
+  crafts internal vary
+- j gets now for more is j fight for his year and chef of *entrepreneur* *magazine*
+- this is surely entrepreneur your think ,with could with entrepreneur with the business too
+- so explain how this works and if there is any limitation
+- well,you can put some entrepreneur that business you could also create some new entrepreneur
+- so let me start with an example
+- i'm currently on vacation in bcr,so last night i went on chatgpt and i said, my wife is food sn ,which is true she
+  addimate herself,i said my wife is food s ,where can i take her for nice *restaurant* date night in bcr
+- it came back with six options immediately i show them to my wife she said,not bad, and this is the beginning
+- this tools can create entire iterate vary for you ,that's the reason why the industry is so interesting and it start
+  to *integrate* chatgpt
+- there're a lots of stores start up doing it ,but also a big player that can spit your creating chat bowls ,you can uss
+  to plan your next trip
+- so that's very interesting use ai
+- i was tell again for spring b trip ,i actually might through 3 options are *available*
+- we plan ourselves and then we also hire a travel agent
+- and i also find the app,there was an ai app in to plan the inter for me ,and alternately we end up scape the travel
+  agent and the ai app did really durable for me
+- because part of the joy of getting ready for vacation is the weeks and weeks planning for me
+- so i'd like to network
+- i want to ask you why would someone choose to use ai to plan your vacation
+- well,it's fiction,and let's be clear ,no body including people who make artificial intelligent tools is saying,this is
+  the only thing you need,or it is going to replace everything
+- instead ,it's a great tool
+- you should think of chatgpt like the microwave in your your *kitchen* which is to say it's an incredibly impressive
+  technology
+- it can make things very fast ,but you don't make goods with milk ,you can everything with it
+- and that's the case with this
+- so it's fun with play around for example with the prompts
+- you know,if you tap in "show me some family friendly vacation ideas in bnc" ,you can get a whole bundle of random
+  staffs
+- but you start to very incredibly specific,i have 2 boys 8 ages and 4 ,they're very energetic and like to run around,
+  where can i take them to board in brc
+- you may get some good starting points,and you can use the starting points to do your own research and talk to people
+  and do all the things that are really very fun when you're planning travel
+- right,so take the ground work at the v,then you just left the fun staff
+- no,i like microwave energy
+- that a good way of explain how old we say i take acknowledge could altermately help all of us one way and other,listen
+  a good way
+- there have been of course a lot of delay and *cancellation* lately json ,because of the weather ,because of the staff
+  issues across the airline industry
+- is there any ai technology you have to help the actual assist in rescheduling ,either travel or vacation plan
+- well ,that staffs is starting to come online
+- the main things people use with chatgpt is very lately far behind because it have knowledge cut off ,it doesn't no
+  things after september of 2021
+- so that's not the place you're gonna to get the latest information on how to get out the travel ,j
+- but they're also a tool that gonna to do help you identify the right terry or maybe some to do ,you don't know where
+  else to go
+- but this is a kind of staff that is coming ,this are very early days,you said the beginning of the segments,there are
+  opportunities for entrepreneurs,and i would like to say there are a lot of people how to create solution for just that
+- and i would that my h the question to you is where to see this going
+- yes,it's a early days,but ,you know ,what's next
+- a lot of people are predicting that this is kind of staff is gonna put people out of work,and i just don't see that to
+  be true
+- people predict the end of travel agent since beginning of the internet ,they're still very useful,and the reason for
+  that is because we often think new technology as replacing human and jom that not actually what happened
+- instead what happens is that changing jobs into create new opportunities
+- so you can imaging,world and reach artificial intelligence makes travel more *efficient* to plan ,and because of its
+  more *efficient*,cheaper,and because of its cheaper
+- so more people start traveling ,and because of more people start traveling ,you need more jobs to serve the people who
+  are traveling
+- so i think we gonna we're gonna to see some changes in the industry,but i don't think that it's a still glum ,i think
+  that a lot of opportunities
+- i like that glasses have for ,perspective my friend ,j,thank you very much 
