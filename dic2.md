@@ -685,49 +685,49 @@ ai travel
   travel agent and the ai app *didn't* really *do it* for me
 - because part of the joy of getting ready for vacation is the weeks and weeks of planning for me
 - so i'd like *doing that work*
-- i want to ask you why would someone choose to use ai to plan your vacation
-- well,it's fiction,and let's be clear ,no body including people who make artificial intelligent tools is saying,this is
-  the only thing you need,or it is going to replace everything
+- i want to ask you ,why would someone choose to use ai to plan your vacation
+- well,it's *efficient*,and let's be clear ,nobody including people who make artificial intelligent tools is saying,this
+  is the only thing you need,or it is going to replace everything
 - instead ,it's a great tool
 - you should think of chatgpt like the microwave in your your *kitchen* which is to say it's an incredibly impressive
   technology
-- it can make things very fast ,but you don't make goods with milk ,you can everything with it
+- it can make things very fast ,but you don't make *gourmet meals* with it,you *don't do* everything with it
 - and that's the case with this
 - so it's fun with play around for example with the prompts
-- you know,if you tap in "show me some family friendly vacation ideas in bnc" ,you can get a whole bundle of random
-  staffs
-- but you start to very incredibly specific,i have 2 boys 8 ages and 4 ,they're very energetic and like to run around,
-  where can i take them to board in brc
-- you may get some good starting points,and you can use the starting points to do your own research and talk to people
-  and do all the things that are really very fun when you're planning travel
-- right,so take the ground work at the v,then you just left the fun staff
-- no,i like microwave energy
-- that a good way of explain how old we say i take acknowledge could altermately help all of us one way and other,listen
-  a good way
-- there have been of course a lot of delay and *cancellation* lately json ,because of the weather ,because of the staff
-  issues across the airline industry
-- is there any ai technology you have to help the actual assist in rescheduling ,either travel or vacation plan
-- well ,that staffs is starting to come online
-- the main things people use with chatgpt is very lately far behind because it have knowledge cut off ,it doesn't no
-  things after september of 2021
-- so that's not the place you're gonna to get the latest information on how to get out the travel ,j
-- but they're also a tool that gonna to do help you identify the right terry or maybe some to do ,you don't know where
-  else to go
-- but this is a kind of staff that is coming ,this are very early days,you said the beginning of the segments,there are
+- you know,if you tap in "show me some family friendly vacation ideas in bnc" ,you're going to get a whole *bunch* of
+  random *stuff*
+- but *if* you start to *be incredibly* specific,i have 2 boys 8 ages and 4 ,they're very energetic and like to run
+  around, where can i take them to board in brc
+- you might get some good starting points,and then you can use the starting points to do your own research and talk to
+  people and do all the things that are really very fun when you're planning travel
+- right,so take the *grunt* work out of it ,then you're just left the fun stuff
+- no,i like microwave *technology*
+- that's a good way of explaining how *all of this ai technology* could *ultimately* help all of us one way ors
+  another,*at least* in the a good ways
+- there have been of course a lot of delays and *cancellation* lately ,j ,because of the weather ,because of the
+  *staffing* issues across the airline industry
+- is there any ai technology *yet* *that's* helping the actually assist in rescheduling ,*in* travel or vacation plan
+- well ,that *stuff* is starting to come online
+- the main things people use with chatgpt is very *literally* far behind because it has a knowledge cut off ,it doesn't
+  know things after September of 2021
+- so that's  *certainly* not the place you're gonna to get the latest information on how to get out the *travel jam*
+- but there are also tools that gonna to do help you identify the right *carriers* or maybe sth to do when you *stuck*
+  in al and you don't know where else to go
+- but this is a kind of stuff that is coming ,there are very early days,you said the beginning of the segments,there are
   opportunities for entrepreneurs,and i would like to say there are a lot of people how to create solution for just that
-- and i would that my h the question to you is where to see this going
+- and my *follow-up*  question to you is where *do you* see this going
 - yes,it's a early days,but ,you know ,what's next
 - a lot of people are predicting that this is kind of staff is gonna put people out of work,and i just don't see that to
   be true
 - people predict the end of travel agent since beginning of the internet ,they're still very useful,and the reason for
-  that is because we often think new technology as replacing human and jom that not actually what happened
-- instead what happens is that changing jobs into create new opportunities
-- so you can imaging,world and reach artificial intelligence makes travel more *efficient* to plan ,and because of its
-  more *efficient*,cheaper,and because of its cheaper
-- so more people start traveling ,and because of more people start traveling ,you need more jobs to serve the people who
+  that is because we often think new technology as replacing human and *jobs* that not actually what happened
+- instead what happens is that it *changes* jobs and it create new opportunities
+- so you can *imagine*,a world in which artificial intelligence makes travel more *efficient* to plan ,and because of
+  its more *efficient*,cheaper,and because of its cheaper
+- more people start traveling ,and because of more people start traveling ,you need more jobs to serve the people who
   are traveling
-- so i think we gonna we're gonna to see some changes in the industry,but i don't think that it's a still glum ,i think
-  that a lot of opportunities
-- i like that glasses have for ,perspective my friend ,j,thank you very much
-- that's unterprener spiece ,i preciate it
+- so i think we gonna we're gonna to see some changes in the industry,but i don't think that it's *doom and gloom* ,i
+  think that a lot of opportunities
+- i like that *glasses is half full* perspective my friend ,j,thank you very much
+- that's entrepreneurial *spirit* ,i *appreciate your helping*
 - it's true
