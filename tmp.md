@@ -31,8 +31,8 @@
     - 流程
         - incoming(外部输入):data,etc
         - poll(轮训)：
-        - check
-        - timer(定时器检测阶段)
+        - check：setImmediate执行
+        - timer(定时器检测阶段)：执行定时器
         - I/O Callbacks,几乎所有回调
         - Idle Prepare(闲置阶段)
 

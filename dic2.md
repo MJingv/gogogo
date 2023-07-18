@@ -573,7 +573,49 @@ flight delay
 - it sounds like a wild start and scrimp of madal
 - no one was injected
 - and sd apoligize calling the rare corance
-- according to company,another type of flight frastration more than 7000 and cancel nearly 3000 ,
+- across to company,another type of flight frastration ,delay more than 7000 and cancel nearly 7000 , leaving
+- across to company,another type of flight frastration ,so this stores this week for airplane delay more than 37000 and
+  cancel nearly 7000 , leaving screw and passengers screned
+- from huston to nashnew,nashnew to motomor ,motomor to long
+- while trying to stay same
+-     most lose is last lage
+- exacebate matters ,airline crew ,out of presation and passenger seperate from their luggage
+- i have 3 bags and have valuable things in them had gone somewhere,and i have no ideas where they are
+- meanwhile customers are left to figure out how to be made a whole again
+- as right now,how much conponsition have you been offered
+- airline in the us are not required to reinbrith the hotels due to the weather
+- travel lines books green books says ,consider traveling insurance
+- if you want to get the insurance ,do not upload on the online
+- cruel travel get them to work if that policy,or you maybe buy at least in your keys ,words for insurance
+- and a,join us at online right now,you know the picture behind you set all and all the people that you spoke with the
+  man's frastraiton
+- with all the delays and canclelation errors,all ready this week,how the airline and airports are cross the country
+  preparing for the upcoming weekends rush
+- it's a great question
+- i think because of what you see around me .it's less about how airline are preparing ,and more about how they'll re
+  plan the fight schedules,with so many palas,flight crews, out of place, passengers ,strengthed,and this focus next
+  mile at all ,have flight canceled
+- the baggage claim line,they try to find out where the baggage is, if they can get them on hands on it
+- one gentleman just told me he is on the hold customers service,5h try to get board of his lejustic
+- so the questions now become for airlines,right before we experience thursday,which is expected to be the busiest
+  travel the holiday ,we can fight
+- it's more about how airline can manigate the lose and risk with so much chaos ,pretifc end with unit state pass
+- really all and lines ,feeling this pronch and cronch right now
+- absolutely air,you know the fia have more flight into new york ,mutual area,to the summer could be a little bit of
+  more chaos than usual, can you explain why that is ?
+- i think the fia is trying to manage the expectations
+- keep in mind that engency has been with out of pum and admit strength out from number of years
+- the temperate is strained right now
+- they have had staff issues can control towers
+- that has been one component of his reducing,it's ability to do this job
+- but they what we have airlines to reduce some of slots into apples and requesting the airlines,fly few plains that
+  they can carry more passengers
+- the airline try to prepare for this by hiring up during the pandemic
+-     it's not forget,many of the airlines are received billions of dollars of funding from the government during the covid
+-     and now it's all about trying to demonstrate to pain customers ,you know how frastrate it is trying to get somewhere and have the inability to get you there,it's all about the delivery on that  contract  customers have with the airline
+- just a very stress moment for everyone
+- only to bring every ounce or patience you can muscle of yourself your friends,your family and everyone you have known
+-
 
 negative self talk
 ---
