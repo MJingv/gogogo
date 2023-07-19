@@ -661,6 +661,7 @@ negative self talk
   ,and smarter than you think
 
 ai travel
+---
 
 - ai could possibly help you plan your next big trip
 - travel company start to *integrate* chatgpt and other ai *tech* into their platform to assist *travelers* with booking
@@ -731,3 +732,29 @@ ai travel
 - i like that *glasses is half full* perspective my friend ,j,thank you very much
 - that's entrepreneurial *spirit* ,i *appreciate your helping*
 - it's true
+
+suit
+---
+
+- the suit may one day help you feel the media virtual
+- researches are one of the world top science university are trying to create a media suit
+- the aim is that this technology could take virtual react to the next level,are using soft artificial muscles meant to
+  feel the live and nature
+- so sth we integrate is that you can let a bird lied on your hand and feel it because the muscle are contracted on the
+  suit
+- it's developer that eta reserve hope this suit could be used in movie making to help masmatic movement ,or even hope
+  someone suffer from pakensen to keep working
+- the madison is being developed by 8 meganic engineer students using the technology called hisol ,high drolic self
+  healing electronic state ,but it sort of like a zip tiny bag that it can spend with small electronic crurant
+- it's amazing ,like the first new try for new ,i can try other technology,we all have to love ,because amazing
+  feel,which was sth i never feel before
+- you're entirely order environment to could be a morse and you feel sth ,it's real
+- basic the goal is that is overcoming limitation of current vr device,this are often based on revisions,can be quite
+  expensive
+- this solutions instead can be moved by signals sent tools , and then send it own signals to more closer capture a
+  user's movement
+- the s is that are often used more exist motions capture for films and games,or to restart the frozen gat,a simple p d
+  that require prompts to help patient move
+- the cool things is that the access is heated of quite similar human muscle
+- it's also the reason why we use them ,because we have a natural feeling when using halso on the suit is very important
+  that is similar true to human muscle and some sense
