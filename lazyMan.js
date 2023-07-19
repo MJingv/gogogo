@@ -1,4 +1,6 @@
 // https://www.clloz.com/programming/front-end/js/2022/05/07/lazyman/
+// https://www.cnblogs.com/ensnail/p/9866130.html
+
 
 // 实现一个LazyMan，可以按照以下方式调用：
 // LazyMan('Hank')，输出：
@@ -32,21 +34,51 @@
 
 class _LazyMan {
     constructor(name) {
-        this.name = name
+        this.taskList = []
+        this.sayHi(name)
+    }
+
+    run() {
+        setTimeout(async () => {
+            for (let fun of this.taskList) {
+                await fun()
+            }
+        })
+        this.taskList = []
+        return this // ！！链式调用的关键
+    }
+
+    sayHi(name) {
+        this.taskList.push(() => console.log(`Hi, This is ${name}!`))
+        return this.run()
     }
 
     eat(food) {
-        return console.log(`Eat ${food}`)
+        this.taskList.push(() => console.log(`Eat ${food}`))
+        return this.run()
+
+    }
+
+    sleep(ms) {
+        this.taskList.push(new Promise(() => {
+            setTimeout(() => {
+                console.log(`Weak up after ${ms}`)
+            }, ms)
+        }))
+        return this.run()
+    }
+
+    sleepFirst() {
+
     }
 }
 
-const LazyMan = (name) => {
-
-    const man = new _LazyMan(name)
-    console.log(`Hi, This is ${name}!`)
-
-}
+const lazyMan = name => new _LazyMan(name)
 
 
-LazyMan('Hank').eat('dinner')
+// lazyMan('Hank');
+lazyMan('Hank').sleep(10).eat('dinner');
+// lazyMan('Hank').eat('dinner').eat('supper');
+// lazyMan('Hank').sleepFirst(5).eat('supper');
+
 
