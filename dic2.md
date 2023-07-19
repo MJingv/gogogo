@@ -758,3 +758,61 @@ suit
 - the cool things is that the access is heated of quite similar human muscle
 - it's also the reason why we use them ,because we have a natural feeling when using halso on the suit is very important
   that is similar true to human muscle and some sense
+
+anxiety
+---
+
+- is your mind turing over just about everything
+- anxiety can cause you to do so many difference things without your realizing it
+- and this coupling macanazion may end up being worse and worse for your physical mind health
+- so if you find some of the involuntary behaviors from anxiety becoming self disgrative and harming your mental health
+  ,here are sth to look out for
+- no1.consistent scrolling
+- do you endless scroll through tiktok,re,and ins, real skip anxiety thoughts
+- you're not alone
+- however,social media addiction link to anxiety and other mental issues
+- according to university of tenercy study ,excessive social media can lead to reduce productivity , un help to
+  sleep,worse your mental health
+- according 2018 pan university study ,replacing an social use with healthier habits like journey ,can break the circle
+  and leviate sometimes depression and anxiety
+- we understand how easy can be to get called up mindless scrolling
+- but if you ever feel like it's taking a tool on your mental healthy ,maybe consider pick up a pan instead
+- priority your mental well-being is so important and take a small step like this,can really make a difference
+- no2.people placing
+- people placing,can be training even through it maybe unconscious habit ,it can destroy your mental healthy by causing
+  you put to others before yourself
+- according to psychology concellor ml,well,people placing provide people with a way to hire their feeling of nanokeci
+  and anxiety and others,it can also contribute to worry pan to their life
+- this may mean doing everything you can to keep others happy,including but not limit to working alone for others
+  ,always reaching others expectation,and doing whatever others ask to do regardless whether you want or not
+- psychologist m also states that people plays can cost you about your pain to others and prevent communicate your
+  anxiety to others like pretend everything is going on is right even when it's not
+- no one is struggling through this feel alone which is why the happen is so important to break
+- no3.self isolation
+- were you ever so overwhelmed do you want to high during the social interaction
+- has this feeling ever stuck to you for days or even weeks on end?
+- or were you feeling anxiety,sometimes are you want to do is high for mothers
+- according clinical psychologist sg phd,it's instingetive, even protective,to douge what we are ,aversive to
+- in the case of anxiety,isolation to avoid social situation is a natural happened in responds to fear
+- people with social an may withdraw to avoid any circumstance that avokes their fight or fly respond,even through the
+  situation they avoid are the very thing that can help overcome their fear
+- well,self and social isolation may come across as comforting to some,the central for desist control prevention show
+  that it can lead farther preserve loneliness and increase the risk of pressure and substance of abuse
+- remember that human are social beings, and socialize with others can sometimes be necessity for your well-being
+- no4.avoiding procrastination
+- procrastination can go hand in hand with anxiety
+- the feeling is putting off sth for later might be familiar feeling for some especially when you're anxiety
+- for example ,might doing work or study even ask a question might be the thing you best do any have other than now
+- a study on academic biocrastination in students by research at dy patal school,a physical therapy, found positive
+  coralation between testing anxiety and procrastination
+- the stresses of doing some tasks might make you begin to roommate ,making it difficult to start the work
+- procrastination can make your anxiety even worse,especially when there's a deadline to meet
+- one thing might help according to doctor es is allowing yourself to start with small steps
+- for example,writing one or two sentences,or exercise for two minutes,allowing yourself to stop after those steps ,it's
+  a good way to reduce the preaysss of getting started
+- in the end it's always helpful to make sure you're well rasted and priority your needs
+- so,make sure you taking care of yourself
+- do you ever do this thing
+- anxiety can cost you to form habits that detrimental to your well-being
+- who addresses some of this habits it maybe helpful to identify important underline cost within yourself
+- before taking the next step,your habits should not defined and take control of the wellness
