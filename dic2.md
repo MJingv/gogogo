@@ -816,3 +816,46 @@ anxiety
 - anxiety can cost you to form habits that detrimental to your well-being
 - who addresses some of this habits it maybe helpful to identify important underline cost within yourself
 - before taking the next step,your habits should not defined and take control of the wellness
+
+
+- get this word help organization now classify the low calery sweet aspartame as a possible c sinigen
+- if you used it in several soda you will know,but it's also found in ice cream, chewing gums and syrup
+- *despite* the new classfication, however the agency didn't change this recommendation on daily ，in take,which means as
+  40 program as aspartame for kilogram are fully wait
+- the who release a state saying *quote* safety is the major considered, and the douces which is comely use,x affect
+  ,need to be investigate by more and better sadis
+- on x o joins us now,he is healthy colnony who writes about food and nutrition for the wst pose
+- so first of all ,just what's the new about this
+- because we know the dangers pretentiously of large dozes of aspartame for years
+- is there sth that kuanpt this same particular
+- yes,so there's been desks of rumors and conspeculation concern about as particular it's risk to cancer
+- but there's been couple of news, study of les , some of obsevitional studies,and some animal studies that has break
+  the new concerns
+- and the world help organization decide to take another fresh look at aspartame
+- and actually 2 commits the world help organization that rude in with sort of conflicting opinions
+- irk is one agency that said that aspartame has the *potential* to case cancer especial liber cancer
+- and another expert commity on ediat said it's actually doesn't seem to case any potential harm and seem to be safe
+- so complete c in there
+- that's part of trouble
+- exactly ,so what we do with this information
+- because as we mentioned the who didn't change its recommendation for our daily intake
+- so break down for where the old places you can find this ,and how much we should have
+- so aspartame has been around for decades,and it has really exposed in our food supply
+- in part because there are so much considered about added sugar or real sugar in food,so companies has been taken sugar
+  out of food in replace with artificial sweets as aspartame
+- so you can find in main stage,like dc ,dp,dr, but also in the tp,pc s,it's central 85% of all sweet and beverage it's
+  d and drinks
+- so anything in label, low sugar or low *calorie* ,or free may actually contain aspartame or other artificial sweet
+- so bring up other artificial sweetness,it seems like in recent years it has been a movement tools, spring up which is
+  socolos
+- there are also some other artificial sweetness as we see, natual sweetness's like a groove we see increasingly in
+  things
+- do we know anything about whether one is better than another
+- how do they all compare
+- yes ,i think there's few things to take away here,no1,the world health organization early these years, actually said ,
+  the reason most people turn to a s is because the low zero calorie
+- and they do it in part of help control their weight,but the world health organization said that they really no good
+  evidence that this thing help you control your weight
+- and you know the cancer link ,there's a lot of debates about that ,and it's not entirely clear ,and potential for
+  harms
+-
