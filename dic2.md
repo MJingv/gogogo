@@ -871,8 +871,6 @@ harm
 - it's a classic phrase that mentor provide comfort in difficult time
 - but did it really
 - we expose why it seemly why se can mi someone's pain and en their motions
-
-
 - we've exposed why it seemly why seen can actually minimize someone's pain invalidate their motions
 - it's time to rethink this well intention but hurt for platitude
 - now,let's move on the phrase no2. i know exactly how you feel
