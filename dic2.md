@@ -858,4 +858,53 @@ anxiety
   evidence that this thing help you control your weight
 - and you know the cancer link ,there's a lot of debates about that ,and it's not entirely clear ,and potential for
   harms
+
+harm
+---
+
+- today we're talking the topic that close to our hearts,comforting phrase that actually hurtful
+- you know those moments when someone try to offer solace,but ends up on intentionally more pains
+- yep,we've all been there,but few to know
+- we shot light on several phrases that may seem comforting on the surface but can actually stick like a bee
+- all right,let's get started
+- we begin with the phrase no1 ,everything happens for a reason
+- it's a classic phrase that mentor provide comfort in difficult time
+- but did it really
+- we expose why it seemly why se can mi someone's pain and en their motions
+
+
+- we've exposed why it seemly why seen can actually minimize someone's pain invalidate their motions
+- it's time to rethink this well intention but hurt for platitude
+- now,let's move on the phrase no2. i know exactly how you feel
+- do mention and come belows if you've been on the receiving dis phrase many times
+- it's natural for us to emphasize and connect with others
+- but clean to understand someone's unique experience can unintentionally dismiss their individual journey
+- in this segments,we'll share all alternative approaches that fast *genuine* amplicy and support without undermine
+  struggles
+- next,phrase no3 ,just think positive
+- positivity,such a wonderful thing,right?
+- but when it use to one side ,feeds all solutions ,it can be incredibly dismissing
+- we'll discuss the importance of technology invalidating negative motions,we can still finding healthy ways to navigate
+  through them
+- it's time to redefine the positivity and create space for authentic healing
+- moving right along to no4 ,you should be grateful for what you have
+- gratitude is *undoubtedly* a powerful practice ,but when it used to silence someone's pain ,it becomes a wonpoon of
+  all
+- we'd like to expire the delicate balance between acknowledge hardship and embrace gratitude in the way that play
+  rather than the deminete
+- phrase yourself for no5,time heals all warns
+- the concept of time that a magic healing
+- well,it's true that time can console the edge of pain,it's not institine of sick
+- well ,doubt the importance of allowing individual to grave and heal their own pains ,without imposing unrealistic
+  expectations
+- together,let's create the support of environment that own the healing journey
+- and now let's taggle phrase no6 ,just let it go
+- if only would that easy,right
+- well, dig into the complacticy of emotional healing in offer alternative approaches support someone on their pass to
+  let it go in the way that they feel authentic in power
+- last but definately not least,phrase no7,you're too sensitive
+- those words can cut dig
+- in this segments we'll dress the harmful implecation of labeling som as too sensitive ,instead celebrate the strength
+  and beauty of sensitivity
+- let's create the world where emporcy and compassion flourish
 -
