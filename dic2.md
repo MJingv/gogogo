@@ -907,4 +907,6 @@ harm
 - in this segments we'll dress the harmful implecation of labeling som as too sensitive ,instead celebrate the strength
   and beauty of sensitivity
 - let's create the world where emporcy and compassion flourish
--
+- we've cover a lot of ground today,exploring 7 seeming comforting phrases that can actually cause harm
+- remember,it's all about frusted generally understanding,*empathy* and support for one and another
+- together,we can transform the way we communicate and create spaces of healing and connection
