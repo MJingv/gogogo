@@ -908,3 +908,60 @@ harm
 - we've cover a lot of ground today,exploring 7 seeming comforting phrases that can actually cause harm
 - remember,it's all about frusted generally understanding,*empathy* and support for one and another
 - together,we can transform the way we communicate and create spaces of healing and connection
+
+need
+---
+
+- have you ever feel like you've been super needed
+- it's not uncommon for people to worry about be as needed when express their needs
+- but it's important to understand that there's difference between general neediness and simply fulfilling basic human
+  needs
+- seeking a emotional support
+- picture this,you're dealing with stressful situation network and it's taken a toll on your mental healthy
+- one evening you decided called your closed friend for support,as a conversation on fold ,you become feel lighter and
+  more supported,your friend empathy and understanding helps you raking perspective and remember you that you're alone,
+  in your struggles
+- they're times when life through your coveable ,leaving you feeling down or overwhelmed
+- in those moment,it's completely natural to see comfort and understanding from others family or loved ones
+- don't worry ,reach out for support doesn't make your need
+- instead,it shows that you understand the importance of connection and validation which are essential aspect of emotion
+  well-being
+- research professor doctor bb highlight the significance of vonerbility in connection in her work
+- when you open to others,you're not only faster deep connections,but also build resilians and sense belongs
+- doc b research suggest that seeking comfort and understanding from others journey tough time is foundimental expect of
+  your emotion living
+- so the next time you find yourself guilty or worry about the appearing needy,remember that it's perfect natural and
+  healthy to line on your support work
+- design clear communication
+- imagining this,you have a conversation with close friends about reasons and disagreements
+- instead of keeping your feeling bloomed up,you decide to openly express your thoughts and see clearity about what let
+  them understand
+- as you both share your perspective ,you begin to understand each other better,and conversation helps to strength your
+  bones
+- when you want to express your thoughts and feelings or see clearity in your interactions,it doesn't mean you're needy
+- it's simply reflection your designer for strong communication and *mutual* understanding
+- psychologist and relationship *expert* doc jg, highlight the importance of effective communication in his research on
+  relationship to ability
+- by engaging on you can fast your trust conne with those around you
+- by engaging in the open on this conversation you can fast your trust understanding and stronger connections with those
+  around you
+- doc c research support the idea that open communication is crucial for healthy relationships
+- so the next time you fe the need to express your thoughts or see the clearity your remember that it's not sign of
+  meaningness ,rather indication of your commitment to nurtrie your con with others
+- valuing quality time
+- imaging this,you've been feeling a little disconnected from close friends due to your busy schedule
+- one day,you decide to rejoy and suggest waiting up for coffee or going for walk together
+- during show your time together,you reconnect ,show your stories and laugh,feeling the bundle between you girls
+  stronger
+- spending quality time with people you care about is essential for maintaining strong bones and nature relationships
+- when you enjoy been with your loved ones and indication ask them to hang out ,it's not a sign of neediness
+- instead,it shows that you value your relationship and are willing to invest time and energy in them
+- doc sj,a clinical psychologist and developer of emotionally focus therpy,aft,i like the importance of nutrual
+  emotional connections in harry search on touchment in relationships
+- spending time together helps to strength the bones you shared with your loved ones and contributes to your overall
+  well-being
+- doc j research underscores of significance of investing tim and en into our relationship
+- so the next time you're worried about the period needy when asking time to spend with loved ones remember that ,it's a
+  healthy and nature to nuture the connection that are important to you
+
+
