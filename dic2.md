@@ -964,4 +964,62 @@ need
 - so the next time you're worried about the period needy when asking time to spend with loved ones remember that ,it's a
   healthy and nature to nuture the connection that are important to you
 
+ff
+---
 
+- hi,i'm cz
+- with being describe as a serious crisis for europe for our first topic today,the disbute directly involve spain and
+  moraco
+- spain is a part of europe union
+- moraco is not and many african have tried to enter europe by going from moraco to spain
+- a little more the 5 years ago,a migrate crisis begin in europe
+- hundreds and thousands of people from middle east ,south asian,and north africa either enter or try to get into europe
+- some of them to tremindist risk to do it
+- many were running from terrier and war in their home countries
+- many were looking for a better life
+- the north african nation in mocaco in the south west europe nation of spain are *separated* by a water way called jb
+- but there are cities on the moraco side that street the board mocrco but they're physically part of spain ,in monday
+  or tuesday more than 7000 people try to illegally across from moraco into the sp cities many by swimming
+- it's the first time this happen
+- it is the first that so many across in such a short period of time
+- why
+- we don't know exactly
+- but intention between spain and moraco did increase recently
+- a rob lead who is fall moraco government has been treated at a spain hospital
+- that made moraco angry,those maraco enphcia had said the surgery of migrate had nothing to do with it
+- some experts have suggested maybe did
+- spain's office meanwhile are under pressure to deal with the illegal border acrossing and prevent new ones
+- exhausted and cold,thousands of moraco migrate swam their way to spain on the cleaver sailtor in north africa
+- some waiting to sure,others breaching a border fans
+- many of them manners and they need medical attention
+- some enter sudden therte at th beach
+- but most can through north therto at bz beach
+- it was just a short swim around break waters which m borders up one side and down to another to reach threator a
+  spanish government spokesman said
+- risking their life,many came under the cover of darkness, some ate by flotation devices ,but life to the end turn out
+  to be spanish thrity
+- police in force as migrates survived many of the breath
+- one moraco man drank,the government said
+- some were jebulen ,is it random sell to town,but it would be a short vist for many of them
+- the spanish t minister's saying,thousands of had already been sent back
+- we'll be strong into defending our borders
+- spain prime administer announced the visit to therter and spain other on clinic ,miliya on moroco north crost and
+  thanks europe union for its support
+- we'll restrict order with the greatest spit
+- we'll be formed to guranteed the security of our citizen against any challenge under any circumstances
+- true x were deployed to back up place and keep the situation contain while increasing border security ,a officer said
+- the president siter home to 85,000 spanish call the situation on president demanding help
+- slow moving stores have so part of taix in la in this week and millions of people in the region around flad flash
+  watch into thursday
+- relinless rain in summer air is more than food is only part of story
+- strong wind have also blow over trees and damage some buildings
+- the power without for 100,000 test and home and business *wednesday* morning,by the afternoon that number had been
+  reduce to 29,000
+- in *neighbor* la,at less 4 debts has been blow on the weather this week,and with more rain in the forecast in
+  friday,some areas in the local home and a s are also on the lookout for the by possible flad flas
+- in us flush flas kill more people than turnital hurrican or lightning
+- ff create the rush of the moving water,it can swept a group of man off the feet ,the car off the road,and even your
+  entire home out off its foundation
+- when the ground begin to so sechrate that water can no longer safe to into the source ,it begin to run off quickly
+  into the river,into stream ,in this cost,it raise in water and it flash
+- high for water 
