@@ -1030,49 +1030,50 @@ reject
 - there *isn't* more beautiful warm feeling than loving someone deeply
 - until of course, you realize *it's* *one-sized*, and no matter how far away we wish to run from *unrequited*  love
   the *truth* is, sometimes we're not everyone's a cup of tea
-- when we try to close to someone who doesn't like us *back*,we might just think *they're* *imagining* that we like them
-  and hope we *aren't*
-- when that happens ,realizing where you stands can be helpful both of you, it can avoid *awkward* conversation and fear
-  for help
-- keep watching to learn about some senses,they might not be in to you
-- the missing rude book
-- trying to figure out if someone likes us,often lay uncertainty
-- dip down you might feel they don't like you,but when they smile at you,your heart just smiles
-- once again,you don't know what to think,even though someone would say the plan is cool is sn of
-  affection,sometimes,the meaning of this confusing ,behavior actually means the opposite
-- professor of psychology enuor ml,explained how being the one would reject someone is a tough job
+- when we try to close to someone who doesn't like us *back*,*they* might just think *they're* *imagining* that we like
+  them and hope we *aren't*
+- when that happens ,realizing where you stand can be helpful both of you, it can avoid *awkward* conversation and
+  *free* you of *false* help
+- keep watching to learn about some *signs*,they might not be into you
+- the missing  *rulebook*
+- trying to figure out if someone likes us,often *ends in*  uncertainty
+- *deep* down you might feel they don't like you,but when they smile at you,and your heart just *melt*
+- once again,you don't know what to think,even though some would say the *playing it* cool is *sing* of
+  affection,sometimes,the meaning of this confusing ,behavior actually means the *opposite*
+- professor of psychology *neuroscience* ml,explained how being the one *who* reject someone is a tough job
 - love songs and romantic movies give us guideline on how to act when we're in love ,but nobody said anything about how
   to reject someone nicely
-- that's why if your crush hope you don't like them romantic,it might send signals
-- maybe they act cool and interested disberry you force hope ,but later they don't want to see ruder cool ,so they soft
-  the alphabet
-- the best way to tell for sure is watch out for some other's tell-tell sense that that they're not interested
-- goes town
-- are your consistently rock your brain to come up with the prefect text to send their way
-- a meaning to make them laugh, or romantic sound attract is way to of their feet,or thought provoke news artical to
-  show off your inteact
-- you way with bred breath for their reply ,but all you get is the sound of cracks
-- no respond,no explianation,just radio silence
+- that's why if your crush hope you don't like them *romantically*,it might send *mixed* signals
+- maybe they act *cold* and *uninterested* *to spare* you *false* hope ,but later they don't want to *seem rude or
+  cruel*,so they soft *up a bit*
+- the best way to tell for sure is watch out for some other  *telltale* *signs* that they're not interested
+- *ghost-town*
+- are your *constantly* *wracking* your brain to come up with the prefect text to send their way
+- a *meme* to make them laugh, or romantic *soundtrack*  to *sweep them off*  their feet,or a thought provoke news
+  *article* to show off your *intellect*
+- you *wait* with *baited* breath for their reply ,but all you get is the sound of *crickets*
+- no response,no *explanation*,just radio silence
 - friend,it seems like you've been ghosted
-- in 2021 studies psychologist ask dating up users ,why they ghost others users?
-- the reason for their unresponess is pretty clear,they let sth about their *pretentious* dates and ghost with *
-  strategy* to signal their uninterested
-- so if you've been left on red for long a time,it's probably a sign that there's just not that in to you
-- to get some support,share with us your worse go story in the comments
+- in 2021 studies psychologist asked, dating *apps* users ,why they ghost others users?
+- the reason for their *unresponsiveness* is pretty clear,they *didn't like sth*  about their *potential* dates and
+  ghosting was a *strategy* to signal they were uninterested
+- so if you've been left on *read* for long a time,it's probably a sign that they're just not that into you
+- to get some support,share with us your *worst* ghost story in the comments
 - small talk
-- even they do reapply ,if they hope you don't like them,their text might sound plain and dry
-- usually according to psychologist theory self disclosure,we attend to sure about ourselves with the one we like,we
-  tell them about our favorite bands,youtubers and hobbies,and even some deep stuff like hope and fear
-- doc js retired fbi agent with phd in psychology,says this kind of deep conversation often increase attraction
+- even if they do *reply* ,if they hope you don't like them,their text might sound plain and dry
+- usually according to psychologist theory self disclosure,we *tend* to *share* about ourselves with the ones we like,we
+  tell them about our favorite bands,youtubers and hobbies,and even some deep stuff like hopes and fears
+- doc js a retired fbi agent with a phd in psychology,says this kinds of deep conversation often increase attraction
 - but do you feel like your conversations actually lack this
-- if talking about the weather is most interesting topic you two had in while,it might be trying to keep their distance
+- if talking about the weather is the most interesting topic you two had in a while,it might be trying to keep their
+  distance
 - silence language
 - let's not forget about none digital communication
-- if you see your crush face to face like school or work,you might still have chances right?
+- if you see your crush face to face like at school or work,you might still have chances right?
 - well,it depends
-- international consultant speaker and best sale author,ak, talked in none verbal that might tell you of they don't feel
-  the same way
+- international consultant speaker and best sale author,ak, talked to *insider* and *revealed* some none verbal signs
+  that might tell you if they don't feel the same way
 - for example,do they really stand or sit near you
-- do they have way look your way from more than a few seconds
-- or maybe they across their arm when talking to you,while,trying to focus and fix smile
-- even if they don't say what's the words ,their body will tell you what you need to know
+- do they *avoid*  looking your way for more than a few seconds
+- or maybe they cross their arms when talking to you,while,trying to focus *a fake* smile
+- even if they don't say it with their words ,their body will tell you what you need to know
