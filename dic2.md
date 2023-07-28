@@ -1022,4 +1022,39 @@ ff
   entire home out off its foundation
 - when the ground begin to so sechrate that water can no longer safe to into the source ,it begin to run off quickly
   into the river,into stream ,in this cost,it raise in water and it flash
-- high for water 
+- high for water
+
+reject
+---
+
+- there's more beautiful warm feeling than love someone deeply
+- until the first you realize this one set and no matter how far away we wish to run from on no quit the love true is,
+  sometimes we're not everyone's a cup of tea
+- when we try to close to someone who doesn't like our aspect,we might just think there's managing that we like them and
+  hope we are
+- when that happens ,realizing where you stands can be helpful both of you, it can avoid *awkward* conversation and fear
+  for help
+- keep watching to learn about some senses,they might not be in to you
+- the missing rude book
+- trying to figure out if someone likes us,often lay uncertainty
+- dip down you might feel they don't like you,but when they smile at you,your heart just smiles
+- once again,you don't know what to think,even though someone would say the plan is cool is sn of
+  affection,sometimes,the meaning of this confusing ,behavior actually means the opposite
+- professor of psychology enuor ml,explained how being the one would reject someone is a tough job
+- love songs and romantic movies give us guideline on how to act when we're in love ,but nobody said anything about how
+  to reject someone nicely
+- that's why if your crush hope you don't like them romantic,it might send signals
+- maybe they act cool and interested disberry you force hope ,but later they don't want to see ruder cool ,so they soft
+  the alphabet
+- the best way to tell for sure is watch out for some other's tell-tell sense that that they're not interested
+- goes town
+- are your consistently rock your brain to come up with the prefect text to send their way
+- a meaning to make them laugh, or romantic sound attract is way to of their feet,or thought provoke news artical to
+  show off your inteact
+- you way with bred breath for their reply ,but all you get is the sound of cracks
+- no respond,no explianation,just radio silence
+- friend,it seems like you've been ghosted
+- in 2021 studies psychologist ask dating up users ,why they ghost others users?
+- the reason for their unresponess is pretty clear,they let sth about their *pretentious* dates and ghost with *
+  strategy* to signal their uninterested
+- 
