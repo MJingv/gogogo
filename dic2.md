@@ -1027,11 +1027,11 @@ ff
 reject
 ---
 
-- there's more beautiful warm feeling than love someone deeply
-- until the first you realize this one set and no matter how far away we wish to run from on no quit the love true is,
-  sometimes we're not everyone's a cup of tea
-- when we try to close to someone who doesn't like our aspect,we might just think there's managing that we like them and
-  hope we are
+- there *isn't* more beautiful warm feeling than loving someone deeply
+- until of course, you realize *it's* *one-sized*, and no matter how far away we wish to run from *unrequited*  love
+  the *truth* is, sometimes we're not everyone's a cup of tea
+- when we try to close to someone who doesn't like us *back*,we might just think *they're* *imagining* that we like them
+  and hope we *aren't*
 - when that happens ,realizing where you stands can be helpful both of you, it can avoid *awkward* conversation and fear
   for help
 - keep watching to learn about some senses,they might not be in to you
@@ -1057,4 +1057,22 @@ reject
 - in 2021 studies psychologist ask dating up users ,why they ghost others users?
 - the reason for their unresponess is pretty clear,they let sth about their *pretentious* dates and ghost with *
   strategy* to signal their uninterested
-- 
+- so if you've been left on red for long a time,it's probably a sign that there's just not that in to you
+- to get some support,share with us your worse go story in the comments
+- small talk
+- even they do reapply ,if they hope you don't like them,their text might sound plain and dry
+- usually according to psychologist theory self disclosure,we attend to sure about ourselves with the one we like,we
+  tell them about our favorite bands,youtubers and hobbies,and even some deep stuff like hope and fear
+- doc js retired fbi agent with phd in psychology,says this kind of deep conversation often increase attraction
+- but do you feel like your conversations actually lack this
+- if talking about the weather is most interesting topic you two had in while,it might be trying to keep their distance
+- silence language
+- let's not forget about none digital communication
+- if you see your crush face to face like school or work,you might still have chances right?
+- well,it depends
+- international consultant speaker and best sale author,ak, talked in none verbal that might tell you of they don't feel
+  the same way
+- for example,do they really stand or sit near you
+- do they have way look your way from more than a few seconds
+- or maybe they across their arm when talking to you,while,trying to focus and fix smile
+- even if they don't say what's the words ,their body will tell you what you need to know
