@@ -1064,7 +1064,7 @@ reject
 - usually according to psychologist theory self disclosure,we *tend* to *share* about ourselves with the ones we like,we
   tell them about our favorite bands,youtubers and hobbies,and even some deep stuff like hopes and fears
 - doc js a retired fbi agent with a phd in psychology,says this kinds of deep conversation often increase attraction
-- but do you feel like your conversations actually lack this
+- but do you feel like your conversation actually lack this
 - if talking about the weather is the most interesting topic you two had in a while,it might be trying to keep their
   distance
 - silence language
