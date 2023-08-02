@@ -1077,3 +1077,31 @@ reject
 - do they *avoid*  looking your way for more than a few seconds
 - or maybe they cross their arms when talking to you,while,trying to focus *a fake* smile
 - even if they don't say it with their words ,their body will tell you what you need to know
+
+hand
+---
+
+- soon you'll be able to pay for gro s at every wholefood in us with just swap other hand
+- amazon said that pay by pamp technology will be at all those stores nation w by the end of this year
+- customer just have to hover their hand over the device to pay
+- this method is already be used to 200 whole food occation across 20 states and you can also find another places stores
+  like pb
+- hardware editor ab heat joins the branch
+- let's jsut start of ,tell us ,how this technology works
+- sure,in terms of the actually romance process, the first time you go to one of this amazon,one location ,you wave the
+  hand over at that
+- well,roll,you in the program and you associate that with a credit card that you have on fire
+- in terms of the actual underline technology behinded ,it's not actually getting your read of the porm itself which you
+  know,i think,it's most people expect
+- that's fasnating, i mean ,i think anybody who cares about the story immediately goes to quest about the safety ,*
+  privacy* ,the data that has been collected
+- amazon has been criticized in the past for some data that they're collecting where they 're not notify customer about
+  that
+- what if gaz is amazon taking
+- sure,the primary one is all of this is going through amazon clouds survey, it's incrpt information
+- amazon is gernuously done a good job of protecting *privacy* through the clouds itself
+- that's store locally on the device itself ,you know,,one of the big concerned is around specificlly, unlike the bio
+  data that you've given on for your phone ,for example
+- this is going up into the clouds ,but theorically,some could potentially grab that data ,but it's intensily difficult
+  ,
+- all right,very interesting stuff,fp thank you
