@@ -1107,3 +1107,19 @@ hand
 - this is going up into the clouds ,*so like* *theoretically*,some could potentially grab that data ,but it's
   *intensely* difficult
 - all right,very interesting stuff,bp thank you
+
+
+- new academic data shows that the labor market remain strong with weakly job last claim di across the us
+- that's right ,according to labor apartment 200,000 people fall new applyment claim last week,let's see on you screen
+  ,that's down 20,000 from previous week,still well below p pandenmi levels
+- here's a interesting statistic,generation a says people in 40s to late 50s ,make about a quter of all employment
+  people
+- according to glassdoor,that dimegraph makes the most of new unemployment over the last half year
+- joins us now,it's ss,he's a reporter of political and recent he also call office morning money news letter,thanks for
+  speaking with us about this
+- i feel fegenic,because as melanew,i notice that m,j and baby boom attend a boo oxigen in the room we've taking
+  about,what is generation is going through
+- so let's speak to the pain the ga feeling right now,why they've been hit disporpotion hard
+- well,i think there's numbers of affects
+- i mean,first ,it's back up for second ,that's a really good number
+- 
