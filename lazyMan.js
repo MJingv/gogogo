@@ -52,6 +52,7 @@ class _LazyMan {
         this.taskList.push(() => console.log(`Hi, This is ${name}!`))
         return this.run()
     }
+    //
 
     eat(food) {
         this.taskList.push(() => console.log(`Eat ${food}`))
