@@ -1122,4 +1122,3 @@ hand
 - so let's speak to the pain the ga feeling right now,why they've been hit disporpotion hard
 - well,i think there's numbers of affects
 - i mean,first ,it's back up for second ,that's a really good number
-- 
