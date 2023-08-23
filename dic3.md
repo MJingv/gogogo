@@ -35,3 +35,17 @@
   tired and low energy
 - jigh ,a clinical psychologist,warn that spend too much time indoors or in areas with low level of natural light can
   navigate impact your physical and mental health
+- and it's important to know that inadequate explore to sunlight can even result an defecioncy of vitamin d which has
+  been link to depression and other mental healthy issues
+- but don't worry ,there's always to combine this negative effects
+- you can try use the light thripy lamp that imitate natural sunlight ,this lamp produce bright light with blue wave
+  lines that similar to the sunlight which can regular your body internal clock
+- interestingly,the study conducted in 2016 by miss and colics, found light therapy can even be helpful in training
+  sleep disturbing season all summer's patient
+- so invest the light therapy lamp could a small move if you're looking for a nature way to improve your sleep and weak
+  cycle
+- clatter
+- have your ever notice that your clatter living or workspace can leave you feel overwhelm and stressed out
+- study has shown too much clatter around can actually effect your mental healthy and cognitive functioning ,making it
+  harder to focus and be productive
+-
