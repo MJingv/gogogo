@@ -23,3 +23,15 @@
 - it happens that many of us falling into ,it can lead us to feel mentally strain and emotional exhausted ,doctor snh a
   leading psychology expert and the author of woman who think too much,such as increase stress, anxiety and even
   depression
+- when you overthinking ,it can consume your mental energy and leave you feeling deplayed ,breaking this habit can be
+  challenging ,but their technique can help
+- mindful practice ,such as deep breathing and meditation can help calm your mind and reduce overthinking
+- by helping you focus on the present moment,and let it go of negative thoughts and worries by cooperating mindfulness
+  technic into your daily routines,you can start your reduce your overthinking and improve your en levels
+- you may take some times to practice
+- but it can help your feel more centered and on control
+- not mushroom
+- did your know that not get enough some like of sleeping that can disrupt nature sleep week cycle ,and lead to feel
+  tired and low energy
+- jigh ,a clinical psychologist,warn that spend too much time indoors or in areas with low level of natural light can
+  navigate impact your physical and mental health
