@@ -48,4 +48,9 @@
 - have your ever notice that your clatter living or workspace can leave you feel overwhelm and stressed out
 - study has shown too much clatter around can actually effect your mental healthy and cognitive functioning ,making it
   harder to focus and be productive
--
+- clutter can also create a sense of disorganization and chaos,which can contribute to feel stress and anxiety
+- in fact, clutter can be physically manifest of emotional stress waiting to obfetions cycle of clutters and stress
+- fortun , there's ways to of combine negative effects of clear, taking time to declock your space can involve getting
+  new item you no longer need,or your belongs,and find new system to help your keep your space tidy
+- by doing so you can create a more con and productive environments that helps you reduce the stress and ps levels
+- sounds like takes a step toward a more peaceful and organized life
