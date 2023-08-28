@@ -54,3 +54,22 @@
   new item you no longer need,or your belongs,and find new system to help your keep your space tidy
 - by doing so you can create a more con and productive environments that helps you reduce the stress and ps levels
 - sounds like takes a step toward a more peaceful and organized life
+
+
+- do you feel ampethy dispect the fact you do all the things you supposed to do
+- so you don't feel this ,do you feel like there's no reason for you to feel as lonely as last as you do,or the
+  everything in your life is just super facial
+- psychologist has long sins emphsize the importance of having close positive relationship in our life,as well as engage
+  full feeling work activities or habits or passion about
+- but if you have people in your life, a meaningful career,and more,and you're still don't feel happy,it maybe because
+  you're cover avoiding your own life
+- what is cover avoidance
+- in the mental healthy block,the creepy childhood fever ,wellness coach and cptsd research provider awk defined cover
+  avoidance as a lose of deep cd's former of avoidance
+- common for people with advice childhood experience such as abuse abandon, ,and emotional niglict
+- cover avoidance isn't obvious to people,and sometimes it maybe not even obvious to you, that's why those have can
+  doing everything right,,but still nothing they're looking for
+- and because in childhood they most likely learn to become avoid and protectively themselves emotionally and
+  psychologically
+
+
