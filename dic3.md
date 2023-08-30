@@ -71,5 +71,12 @@
   doing everything right,,but still nothing they're looking for
 - and because in childhood they most likely learn to become avoid and protectively themselves emotionally and
   psychologically
-
-
+- but doing so,ar explained,stands our cycle of emotional development and keep us frozen,as frugried children for ever
+  terrified of judgement and abandenment
+- so we grow up and learn to build up our life around the ferries ,avoid anything that may trigger them
+- and that means not for main deep emotional touch with people,going af a dream job or taking that risks we always want
+  to
+- another words that means living our lives from the outsides looking in,and pretending that we're find it with them
+  ,example of covid avoids
+-
+-
