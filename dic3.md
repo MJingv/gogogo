@@ -78,5 +78,8 @@
   to
 - another words that means living our lives from the outsides looking in,and pretending that we're find it with them
   ,example of covid avoids
--
--
+- according to lessons cycle method theory as boom and doctor ag,covid avoid behaviors give us temporarily from anxiety
+  shy and other uncomfortable feelings with cared with us since our childhood truma
+- but it's unhealthy form of copy that can help us treat mentle and unintended consequence
+- example of covid avoid includes,feeling tired all the time, can make your choice like going to bed early or exercise
+  regularly
