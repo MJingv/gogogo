@@ -83,3 +83,14 @@
 - but it's unhealthy form of copy that can help us treat mentle and unintended consequence
 - example of covid avoid includes,feeling tired all the time, can make your choice like going to bed early or exercise
   regularly
+- seeing,you're too busy to spend time with people and attend to your relationships when really you just shine anyone
+  else , needing to socially making connection with someone
+- finding and unhealthy escape from uncomfortable feelings such as substance use, drinking, excess partying,and other
+  reckless behaviors,proneck procrastination even the things you know you're enjoying like social gathering with friends
+- always setting long term goal for yourself without celebrate your progress,thinking that once you have this or do that
+  and not be happy
+- how to overcome covid avoidance
+- covid avoidance is really about control explain boen and doctor gg
+- we want to control as much as our life to avoid uncomfortable feelings that may arise from emotional a
+  touchmants,because our childhood truma has last us fragile
+- but the more we try to avoid ,the smaller and smaller our life become
