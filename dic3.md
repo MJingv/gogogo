@@ -55,6 +55,8 @@
 - by doing so you can create a more con and productive environments that helps you reduce the stress and ps levels
 - sounds like takes a step toward a more peaceful and organized life
 
+avoid
+----
 
 - do you feel ampethy dispect the fact you do all the things you supposed to do
 - so you don't feel this ,do you feel like there's no reason for you to feel as lonely as last as you do,or the
@@ -94,3 +96,23 @@
 - we want to control as much as our life to avoid uncomfortable feelings that may arise from emotional a
   touchmants,because our childhood truma has last us fragile
 - but the more we try to avoid ,the smaller and smaller our life become
+- the good news is that once we find healthy ways that satisfied our need for control,the easy it will be overcome the
+  struggles with the avoidance
+- so how do we accomplish this
+- well,according to expert like ab, and doctor b,it's a good place to start is getting to know your pattern of avoidance
+  ,first and then doing sth different
+- making a comchase choice deliver life more gorgeously
+- another alternative the doctor lb scope license psychologist calls active copying
+- a dress is a problem directly as a main to leviate stress,unlike the avoidance copying with the temporary life with it
+- but it eventually worth it
+- this can to done to your behaviors
+- actually doing sth about the problems or your thoughts,refreaming your prospective and process your motions about it
+- so the next time you experience sth stressful, don't just try to avoid from it,why not take a control,ask is this
+  actually a problem
+- and if so ,what can i do about it
+- changing your behavior doesn't come quickly or easily,but it would be worth it ,cause you can't keep it avoidance your
+  life forever
+- avoidance is temporary and ineffective solution tha only leave feeling more avoidable and alone
+- so psychologist doctor jb, the longer you stay secondly , the more power or hold over you over life
+- so now is the time to take back control and stop doing things at fear ,and step to start building a more meaningful
+  life for your life,so one small step at a time
