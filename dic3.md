@@ -116,3 +116,24 @@ avoid
 - so psychologist doctor jb, the longer you stay secondly , the more power or hold over you over life
 - so now is the time to take back control and stop doing things at fear ,and step to start building a more meaningful
   life for your life,so one small step at a time
+
+touch
+----
+
+- do you often feel a strong long for physical affect
+- is so,you may be experiencing touching starvation
+- touch starvation also known as skin hungry is a really phenomina that can affect anyone as described by psychologist
+  like method hurting sting
+- we want to help you to spot this theaphy of starvation
+- so you can understand that you're not be meedy
+- by becoming more awared of this sense,you can take some the necessary steps to address your need for touch,improve
+  your well beings,and nurture healthy your relationships
+- increase the feeling of loneliness and isolation
+- are you constantly feeling lonely and disconnected from others
+- even when you surrounded by friends and family,do you still feel a sense of loneliness and disconnection
+- it can be a po and unsettling feeling ,leading you questing why are you feeling this way despite be in the present
+  people who generally care about you ,this could be indication that your experience touch starvation,
+- human touch,as psychologist tf from the touch research and studio at university miami has discovered,is a incredible
+  powerful way to create connections build a sense of belonging
+- the absence of physical affection such as hug or gentle touches,entencify feeling isolation ,make it difficult to feel
+  emotional connection those around you
