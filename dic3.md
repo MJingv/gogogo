@@ -137,3 +137,20 @@ touch
   powerful way to create connections build a sense of belonging
 - the absence of physical affection such as hug or gentle touches,entencify feeling isolation ,make it difficult to feel
   emotional connection those around you
+- heat sancitivity to touch
+- do to react intency to causal physical contact ,such as hug or pat on the bag
+- put yourself to the social gathering observe friend and acquentance,casual engaging in friendly touches like hugs and
+  gentle pats
+- do you find yourself experiencing in suddenly surge of emotion or overwhelm desire to be included in this interactions
+- when you touch starved ,it's not uncommon for your body to become more sensitive even the slightly physical contact
+- doctor cf,a communicate professor at the university of ezn,who research the affection,explain that this height
+  sensitivity can manifest as a longing for touch or to casual physical contact
+- like someone hold your hands or when they rap their arm shoulder to make you feel you're not alone
+- show balance and moved twice
+- did you know that physical touching release ox toxin ,or horman that promote responding and reduce stress
+- when you're going through a rough day feeling stressed and longing for comfort ,but not having the physical connection
+  you need to suit your emotions
+- it's just hard and overwhelming ,it's important to remember that it's perfect normal to experience this feelings,and
+  that dress your touch starvation can significantly improve your emotional well-being
+- touch starvation can take a toll on your emotional well-beings, sometimes leading to mosilin ,your ability and even
+  increase anxiety or depression
