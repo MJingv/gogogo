@@ -154,3 +154,7 @@ touch
   that dress your touch starvation can significantly improve your emotional well-being
 - touch starvation can take a toll on your emotional well-beings, sometimes leading to mosilin ,your ability and even
   increase anxiety or depression
+- hf and ep expert on love and relationships explained that when we lack touch our ox toxin levels may decrease which
+  can turn our emotional balance off
+- craving none intimate touch
+- have you ever been yarning for none intimate forms of touch lately
