@@ -52,7 +52,21 @@ https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html
 ### useEffect()的用法
 
 - useEffect 的作用就是一个side effect函数
-- 组件每渲染一次，改函数自动执行一次 
+- 组件每渲染一次，改函数自动执行一次
+- 按条件渲染，不想每次都渲染就加第二个参数（数组）。只有依赖变化，才会重新渲染
+- 第二个是空数组，只会渲染一次
+- 用途
+    - 获取数据
+    - 事件监听/订阅
+    - 改变dom
+    - 输出日志
+- 可以返回一个函数，用于清理side effect。是在每次副效应函数重新运行之前，会清理上一次的副效应。
+- 如果多个 side effect 要用多个useEffect，不要写一起
 
 
+https://www.ruanyifeng.com/blog/2019/09/react-hooks.html
 
+### redux作者dan总结组件class的缺点
+- 大型组件难拆分和重构，也难测试
+- 逻辑分散在各个方法中，导致重复逻辑
+- 组件类引入复杂的编程模式，render，props 和高阶组件
