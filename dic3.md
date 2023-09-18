@@ -158,3 +158,19 @@ touch
   can turn our emotional balance off
 - craving none intimate touch
 - have you ever been yarning for none intimate forms of touch lately
+
+mature
+---
+
+- what's sth you hated hearing as a kid
+- we'll go first
+- you understand when you're older,notes and phrases has a fear will decace
+- many psychologists like ee,for example have told us that we develop in the stages
+- as children, our brains haven't develop enough to handle the complicated situations that willing cope as a adult
+- that births the g tree
+- now,let our adults that act like children
+- we usually re in mature but what do you call someone that doesn't understand or cope well with the service hevid topic
+  constantly
+- that's what we'll call inmersh mature
+- native explore fall sight that someone might be inmershly mature
+- impossibly
