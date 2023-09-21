@@ -174,3 +174,60 @@ mature
 - that's what we'll call inmersh mature
 - native explore fall sight that someone might be inmershly mature
 - impossibly
+
+waste time
+----
+
+- there are just not enough hours in the day
+- s said as he looked at his todo list
+- it's almost on the end of work day and he's feeling frustrated
+- there are so many tasks he did not finish
+- it seems impossible to find time for himself and keep up with all the responsibility
+- maybe you tend to be procrastinate or feel like you're busy all time but aren't get enough time
+- by the way this video will help you figure you out how you're wasting time
+- so you can spend on the thing you love
+- if you can measure it ,you can master it
+- let's be honest,we've all set on your phones scrolling to tiktok for hours without realizing how much time it cost by
+- if you're not aware of what you're spending your time on, then you may be wasting it
+- after all,how do you know when you're wasting time if you're not even conscious of it
+- according to a study by v and c,many people believe them don't use their time productively
+- so by becoming more aware of your time,you can stop wasting it
+- in the study participates ,we'll show how long they're using different apps on their computer
+- because they thought this information ,they waste less time on things like social media ,checking emails ,embrace the
+  internet
+- plus,they're reported they can focus better on their work
+- one easy way to become more aware of time,it's going to the setting on your phone ,and look at your screen time
+- how much time do you spend on social media everyday
+- or there any apps that you're surprised you waste time on
+- show on the comments below
+- people playing,take a moment to think about what you did over the past week
+- did you spend time on activities that you didn't have to do ,but did to come your approve to others
+- according to social worker sk,you could be wasting time by doing task,now ,because you enjoy them,but because you want
+  others to like and value you more
+- knowing your value can help you better prioritize your time on things you generally enjoy ,instead of wasting time on
+  people places
+- you're valuable and loved ,you don't need to prove your value to anyone
+- time as currency
+- as bf once said,time is money
+- and we all know that one of the simplest thing you can do to save money is cutting down you speed on things you don't
+  really need
+- have you ever thought about that feeling time is currency
+- it's what psychologist c suggest to stop to wasting your time
+- time is one of the most valuable thing we have in this life ,and can't be replaced
+- for this reason,l says that if you don't to do sth,you shouldn't do it unless you truly need to
+- maybe you have a habit of taking on task that's really important for those give second time thought,or spend time with
+  people who don't bring your joy
+- whenever that's possible ,void taking on necessary obligations that yuo don't have the band voice for
+- consider the things and people that value your valuable time
+- what vs how
+- according professor pg ,if you focus on what you need to do without planning how you're going to do it ,you could be
+  wasting you time
+- he suggests if then planning to make your schedule more realistic
+- for example instead of saying i'll finish my assignment on the monday,you could say if i finish my background research
+  on monday morning then i start writing my assignment in the afternoon
+- todo list disaster
+- todo list can be a great way to plan ahead and save time
+- as long as it organized
+- professor ma says,if you writing down tasks on the same places like a calendar on the laptop,a app on the phone and on
+  paper,it can waste time and make you less productive
+- instead ,a recommends keeping your task organized in one place ,so it's easier to track of

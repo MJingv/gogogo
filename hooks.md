@@ -70,3 +70,17 @@ https://www.ruanyifeng.com/blog/2019/09/react-hooks.html
 - 大型组件难拆分和重构，也难测试
 - 逻辑分散在各个方法中，导致重复逻辑
 - 组件类引入复杂的编程模式，render，props 和高阶组件
+
+
+### hook 的含义
+- 组件尽量是纯函数，如果需要外部功能和副作用，用 hooks
+- 钩子用 use 前缀，usexxx
+
+useState
+- 状态钩子
+- 定义 ```const [btnText,setBtnText] = useState(defaultValue)```
+- 使用 ```setBtnText(newValue)```
+
+
+useContext
+- 共享状态钩子
