@@ -63,24 +63,84 @@ https://www.ruanyifeng.com/blog/2020/09/react-hooks-useeffect-tutorial.html
 - 可以返回一个函数，用于清理side effect。是在每次副效应函数重新运行之前，会清理上一次的副效应。
 - 如果多个 side effect 要用多个useEffect，不要写一起
 
-
 https://www.ruanyifeng.com/blog/2019/09/react-hooks.html
 
 ### redux作者dan总结组件class的缺点
+
 - 大型组件难拆分和重构，也难测试
 - 逻辑分散在各个方法中，导致重复逻辑
 - 组件类引入复杂的编程模式，render，props 和高阶组件
 
-
 ### hook 的含义
+
 - 组件尽量是纯函数，如果需要外部功能和副作用，用 hooks
 - 钩子用 use 前缀，usexxx
 
 useState
+
 - 状态钩子
 - 定义 ```const [btnText,setBtnText] = useState(defaultValue)```
 - 使用 ```setBtnText(newValue)```
 
-
 useContext
-- 共享状态钩子
+
+- 共享组件间状态钩子
+- ```const AppContext = React.createContext({})```
+- ```<AppContext.Provider value={{}}><div>xxxxx</dive></AppContext.Provider>```
+- ```const {username}=useContext(AppContext)```
+
+useReduce
+
+- action 钩子 ```(state,action)=>newState```
+- ```const [state,dispatch]=useReducer(reducer,initialState)```
+- 此 hooks 可以提供共享状态和 reducer 函数，但没有 redux 的 middleware 和 time travel
+
+useEffect
+
+- 副作用钩子，向服务器请求数据，`componentDidMount` 代码可以放在 useEffect 中
+- ``` useEffect(()=>{},[dependencies])```
+- 每当 dependencies 变化时，useEffect 会执行。
+- 第一次渲染时，useEffect 也会执行
+
+自定义hooks
+
+- 上面的 hooks 可以封装成自定义 hook，便于共享
+
+``` 
+const usePerson=(personId)=>{
+  const [loading,setLoading]=useState(true)
+  const [person,setPerson]=useState({})
+  useEffect(()=>{
+    setLoading(true)
+    fetch('xxx')
+      .then(response=>response.json())
+      .then(data=>{
+        setPerson(data)
+        setLoading(false)  
+      })
+  },[personId])
+  return [loading,person]
+}
+```
+
+以上就是一个自定义钩子，可以封装引用：
+
+```
+const Person=({personId})=>{
+  const [loading,person]=usePerson(personId)
+  if(loading === true) return <p> loading... </p>
+  return <dive>{person.name}</dive>
+}
+```
+
+react 的自定义 hooks 和 vue 的 mixin 有什么异同？
+
+- 同：解决组件间的逻辑复用问题
+- 异：react 的 hooks 在代码组织，重名冲突解决，状态共享等方面有优势
+    1. 逻辑复用和组织：React的自定义Hook允许你在不改变组件结构的情况下复用状态逻辑，而Vue的Mixin则是通过混入方法、生命周期钩子等到Vue组件中来实现逻辑复用。
+    2. 冲突解决：在使用Mixin时，如果不同的Mixin包含同名的方法或生命周期钩子，可能会导致命名冲突，而React的自定义Hook则不存在这个问题，因为每个Hook都是独立的函数。
+    3. 代码可读性：React的自定义Hook可以更好地保持代码的可读性和可维护性。因为Hook直接在组件中使用，可以清楚地看到其依赖关系和执行时机。而Vue的Mixin则可能会降低代码的可读性，
+       因为Mixin的内容在其他文件中定义，可能需要在多个文件之间跳转才能理解完整的逻辑。
+    4. 状态共享：React的自定义Hook可以共享状态，而Vue的Mixin则无法做到这一点。这意味着使用React
+       Hook，你可以在不同的组件之间共享和同步状态，而在Vue中，你可能需要使用Vuex或其他状态管理库来实现这一功能。
+
