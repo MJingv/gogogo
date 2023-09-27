@@ -232,3 +232,28 @@ waste time
 - professor ma says,if you're writing down in *multiple places*  like a calendar on the laptop,a app on the phone and on
   paper,it can waste time and make you less productive
 - instead ,a recommends keeping your task organized in one place ,so that it's easier to track of
+
+trust
+----
+
+- how can i *paint* with this color when my world feel so gray
+- i wish i could trust like that again
+- trust is like painting
+- it's a journey
+- see,trust isn't always permanent ,but every moment,every strop every color can lead to beautiful masterpiece
+- but how do i know i won't get hurt again
+- you don't ,but avoiding trust also means of avoiding the brightest color of life
+- it feels like a step
+- how do i move pass that
+- by remembering that one person's action ,don't find everyone
+- for every dark shadow,there's a bright one waiting
+- when i was betrayed ,i found strained and forgiveness
+- i found saw his sense self-love
+- i realized that trust myself was the first step to trust others
+- i still can't find the right color for trust,that's because trust isn't just one color
+- it's mixed experience,emotions and moment
+- i've been heart you
+- but together maybe you can find the bright shades
+- i realize trust is an ever involve art,sometimes it's miss ,sometimes it's clear,but it always have the potential to
+  be beautiful
+- you're masterpiece is just beginning
