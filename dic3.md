@@ -257,3 +257,18 @@ trust
 - i realize trust is an ever involve art,sometimes it's miss ,sometimes it's clear,but it always have the potential to
   be beautiful
 - you're masterpiece is just beginning
+
+retirement
+---
+
+- some new data is showing just how much life event use kind of uf is american getting away of saving for retirement
+- research form goldment said,they stock cut financial voice test can cut retire saving upto 37% that includes
+  everything from mall stones like x family,or plan like divorce and also going to die
+- joining us now is lisa v ,she contributes for market watch pics ,so ,lisa,good to see you
+- so,it's getting trick to safer retirement ,students loan ,payment are resuming,interest rate are high,credit card date
+  is sooner,how should people manage this obstious
+- the financial work test is basicly unpredictablely,you know, externer effector that can serious impact someone's
+  retirement
+- and so the goal would be still,one person's salary of a month, just as base,and to really build from area,if you're
+  able to save more ,that's great
+- 
