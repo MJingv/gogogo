@@ -271,4 +271,29 @@ retirement
   retirement
 - and so the goal would be still,one person's salary of a month, just as base,and to really build from area,if you're
   able to save more ,that's great
-- 
+- and the early you start,there's a simple magic of conpound interests ,and that can really benefits someone later on in
+  retirement
+- what's the for one key,if you have option for company match,it's a great idea to take an advantange of that
+- it's really no bringer and turns of saving free money ecentrelly
+- life events can be bed,they can be good,but you want to keep and come,because of life is death of that ,that's gonna
+  solution
+- so if you're still live and f to live,let's just take a that one percent of bring
+- bring out ,let very toy
+- life event is that most all of that have to gonna to the life,when the die is ,one time ,it happens one time,it's on
+  someone else
+- if you're alive,and you know lot of reviews are,how much should they save above that one percent, person to person
+- so your circumancetance is not your neighbor your friends ,how do you tailor it for your particular life been lived
+- so you're gonna need to look at what your life costs, and basically you know,and back do back adn calculation to see
+  what your speed every month ,where you're able to save
+- that might mean cutting back ,that might mean picking up extra work and income
+- it really depends,person to person
+- so you really just want to sure that your at least saving small p, which will in the long round, add up and overtime
+  make your retirement much more enjoyable
+- so you say someone about people ,they in who they never plan to retirement,they gonna to keep on working for 70 and
+  80,would your ad still play for them
+- sounds like my dad/me
+- you'll gonna to retire late,but life can be recurable,so you never really know,if you can't full retire ,you can look
+  at part-time job,
+- there's certain size ,, very indistrite,,that's actually cater to order people small time jobs
+- yo5u can't catch up the contribution to for on case ,if you're over 50,the normal limit is 22,500 a year
+- and you're over 50 ,you can add the additional 750 to that annually
