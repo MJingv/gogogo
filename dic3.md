@@ -297,3 +297,29 @@ retirement
 - there's certain size ,, very indistrite,,that's actually cater to order people small time jobs
 - yo5u can't catch up the contribution to for on case ,if you're over 50,the normal limit is 22,500 a year
 - and you're over 50 ,you can add the additional 750 to that annually
+
+words harm
+
+- our words hold great power,and it's central to offer a general empathy and understanding to those in need
+- have you ever try to comfort sb with this phrases and actually really they're doing more harm than good
+- everything happens for a reason
+- this p can dismiss sb pain by emplaying this suffering is justifized
+- you get over eventually
+- this minimize the person's current feeling and suggest they should quickly move on
+- don't worry,i know how you feel
+- invalidate the unique emotions you by assuming you full understand
+- just stay positive,over simplify this struggle and this regard the complicity of the emotions
+- time heals all room,implice that they should simply way for the they wait all address it
+- you're so strong,you'll be fine ,but push them on them foundability and suffering
+- it would be worse,invalidate their pain by comparing them to other experience
+- i know exactly how you should handle this,let's assume a one size fits all with all understanding the situations
+- just think happy thoughts ,ignorize the death feelings and complecity of this situation
+- you're over reacting,this miss the emotions and make thing feel guilty for the feel the way they do
+- at least you know the long this ,minimize this pain by pointing out that or other's suffering too
+- you should be grateful for what you have,invalidate the negative feelings by blinding you shouldn't feel bad
+- just let it go.over simplifize this struggle and ignorize the poses of healing
+- i told you so .limze them for the situation and make them feel judged
+- you're too sensitive. invalidate same emotions and make them feel woring for feeling deep
+- go on the understand when you roll up,this miss the feelings and suggest they're too inmerture to comprehend
+- don't be so negative,invalide the emotions and imply they should surpress their true feelings
+- you're been too emotional
