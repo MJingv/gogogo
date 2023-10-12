@@ -322,4 +322,14 @@ words harm
 - you're too sensitive. invalidate same emotions and make them feel woring for feeling deep
 - go on the understand when you roll up,this miss the feelings and suggest they're too inmerture to comprehend
 - don't be so negative,invalide the emotions and imply they should surpress their true feelings
-- you're been too emotional
+- you're been too emotional, enminishize the feelings by implying the enrushinal
+- why can't you just move on,minimize the pain by suggesting they should just easily move pass on
+- things would get back soon,this most the current feeling and often the sick promo solve improvement
+- it's not that a big deal ,minimize the feeling ,imply the pain is insignificant
+- just be thankful,it's not worse,invalidate their pain by comparing to protencial words and thnorise
+- soup to valing on it,it's regard same important of protaining and healing from the emotions
+- you need to tough and enough,imply the the emotions sensetivity is a weakness
+- you make a mountain out of ox,mini their feelings by suggesting their exhausting emotions
+- remember,all intention is key
+- but so it's our approach,let's continue to learn and grow together,build stronger connections through empathy and
+  understanding
