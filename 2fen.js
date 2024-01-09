@@ -16,5 +16,5 @@ var isSubsequence = function (s, t) {
     return a === len1
 
 };
-// const res = isSubsequence('abc', 'ahbgdc')
-// console.log(res)
+const res = isSubsequence('abc', 'ahbgdc')
+console.log(res)

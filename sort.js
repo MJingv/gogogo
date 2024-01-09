@@ -79,6 +79,7 @@ const parition = (array, left, right) => {
     }
     return i
 }
+// todo 这个有问题
 const fn4 = (array, left = 0, right = array.length - 1) => {
     if (array.length > 1) {
         const index = parition(array, left, right)
@@ -121,7 +122,7 @@ const fn7 = () => {
 
 
 const list = [3, 0, 5, 2, 4, 1, 1, 4, 99]
-const res = fn6(list)
+const res = fn4(list)
 console.log(res)
 
 
