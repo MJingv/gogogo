@@ -2,8 +2,8 @@ import './App.css';
 import {useState, useEffect, useRef} from "react";
 
 export default function App() {
-    const [val, setVal] = useState('init')
-    const myInput = useRef();
+    const [val, setVal] = useState<String>('init')
+    const myInput = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         setVal('start')
