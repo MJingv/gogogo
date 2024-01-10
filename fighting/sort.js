@@ -1,6 +1,7 @@
 const swap = (list, a, b) => [list[a], list[b]] = [list[b], list[a]]
 const arr = [3, 0, 5, 2, 4, 1, 1, 4, 99];
 
+// 选个pivot，左边比我大，右边比我小，递归2边的数
 const quickSort = (arr) => {
     const len = arr.length
     if (len <= 1) return arr
@@ -19,7 +20,7 @@ const quickSort = (arr) => {
 };
 // const res = quickSort(arr);
 
-
+// 遍历2次，小的交换到前面
 const bubbleSort = (arr = []) => {
     const len = arr.length
     if (len <= 1) return arr
@@ -30,6 +31,22 @@ const bubbleSort = (arr = []) => {
     }
     return arr
 }
-const res = bubbleSort(arr)
+// const res = bubbleSort(arr)
+
+// 遍历选择最小的放已排好的后面
+const selectSort = (arr = []) => {
+    const len = arr.length
+    if (len <= 1) return arr
+
+    for (let i = 0; i < len - 1; i++) {
+        let minIndex = i
+        for (let j = i + 1; j < len; j++) {
+            if (arr[j] < arr[minIndex]) minIndex = j
+        }
+        if (minIndex !== i) swap(arr, i, minIndex)
+    }
+    return arr
+}
+const res = selectSort(arr)
 
 console.log(res); // 输出：[0, 1, 1, 2, 3, 4, 4, 5, 99]
