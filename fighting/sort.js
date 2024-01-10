@@ -49,11 +49,11 @@ const selectSort = (arr = []) => {
 }
 // const res = selectSort(arr)
 
-
 const merge = (left = [], right = []) => {
-    let i = 0, j = 0
     const res = []
-    const len1 = left.length, len2 = right.length
+    const len1 = left.length
+    const len2 = right.length
+    let i = 0, j = 0
     while (i < len1 && j < len2) {
         if (left[i] < right[j]) {
             res.push(left[i++])
@@ -65,7 +65,6 @@ const merge = (left = [], right = []) => {
     while (j < len2) res.push(right[j++])
     return res
 }
-// 左和右分别排序并merge
 const mergeSort = (arr = []) => {
     const len = arr.length
     if (len <= 1) return arr
@@ -74,7 +73,6 @@ const mergeSort = (arr = []) => {
     const right = arr.slice(mid)
     return merge(mergeSort(left), mergeSort(right))
 }
-
 const res = mergeSort(arr)
 
 console.log(res); // 输出：[0, 1, 1, 2, 3, 4, 4, 5, 99]
