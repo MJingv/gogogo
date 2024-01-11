@@ -32,6 +32,28 @@ const twoSum1 = (arr = [], target) => {
     }
     return []
 }
-const res = twoSum1([2, 7, 11, 15], 9)
+// const res = twoSum1([2, 7, 11, 15], 9)
 
+// 多个满足target的组合
+const twoSum2 = (arr, target) => {
+    const len = arr.length
+    const res = []
+    if (!len) return res
+
+    arr.sort()
+    let i = 0, j = len - 1
+    while (i <= j) {
+        const sum = arr[i] + arr[j]
+        if (sum === target) { //死循环
+            res.push([i, j])
+        } else if (sum < target) {
+            i++
+        } else if (sum > target) {
+            j--
+        }
+    }
+    return res
+
+}
+const res = twoSum2([1, 3, 1, 2, 2, 3], 4)
 console.log(res)
