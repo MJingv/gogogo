@@ -23,13 +23,14 @@ const twoSum = (arr, target) => {
 
 const twoSum1 = (arr = [], target) => {
     const len = arr.length
-    if (!len) return [-1, -1]
+    if (!len) return []
     const map = new Map()
     for (let i = 0; i < len; i++) {
-        if (!map.has(arr[i])) map.set(arr[i], i)
-        if (map.has(target - arr[i])) return [i, map.get(target - arr[i])]
+        const partner = target - arr[i]
+        if (map.has(partner)) return [i, map.get(partner)]
+        map.set(arr[i], i)
     }
-    return [-1, -1]
+    return []
 }
 const res = twoSum1([2, 7, 11, 15], 9)
 
