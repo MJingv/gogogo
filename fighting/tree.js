@@ -139,13 +139,26 @@ const invertTree = (root) => {
     if (!root) return null
     const helper = (node) => {
         if (!node) return null
-        let tmp = helper(node.left)
-        node.left = helper(node.right)
-        node.right = tmp
+        const left = helper(node.left)
+        const right = helper(node.right)
+        node.left = right
+        node.right = left
         return node
     }
     return helper(root)
 
 }
-const res = invertTree(t1)
+// const res = invertTree(t1)
+
+
+// 力扣第 116 题「填充每个二叉树节点的右侧指针」
+const connect = (root) => {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+    }
+    return helper(root)
+
+}
+const res = connect(t1)
 console.log(res)
