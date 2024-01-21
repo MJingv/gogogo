@@ -34,8 +34,52 @@ const preOrder = (root = null) => {
     }
     helper(root)
     return res
-
 }
+// const res = preOrder(t1)
 
-const res = preOrder(t1)
+// 1、如果把根节点看做第 1 层，如何打印出每一个节点所在的层数？
+const atLevelNum = (root) => {
+    if (!root) return 0
+    const helper = (node, level = 1) => {
+        if (!node) return level
+        console.log(node.val, level, '----')
+        helper(node.left, level + 1)
+        helper(node.right, level + 1)
+
+    }
+    helper(root)
+}
+// const res = atLevelNum(t1)
+
+// 2、如何打印出每个节点的左右子树各有多少节点？
+const sumChildren = (root) => {
+    if (!root) return 0
+    const helper = (node) => {
+        if (!node) return 0
+        const leftSum = helper(node.left)
+        const rightSum = helper(node.right)
+        console.log(node.val, '---l', leftSum, '---r', rightSum)
+        return leftSum + rightSum + 1
+    }
+    helper(root)
+}
+// const res = sumChildren(t1)
+
+// 第 543 题「二叉树的直径」
+const diameterOfBinaryTree = (root) => {
+    // 左右最大深度之和,不包含自己
+    if (!root) return 0
+    let max = 0
+    const helper = (node) => {
+        if (!node) return 0
+        const left = helper(node.left)
+        const right = helper(node.right)
+        max = Math.max(max, left + right)
+        return Math.max(left, right) + 1
+    }
+    helper(root)
+    return max
+};
+const res = diameterOfBinaryTree(t1)
+
 console.log(res)
