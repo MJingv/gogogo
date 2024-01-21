@@ -131,5 +131,21 @@ const levelTraverse = (root) => {
 
     return res
 }
-const res = levelTraverse(t1)
+// const res = levelTraverse(t1)
+
+
+// 力扣第 226 题「翻转二叉树」
+const invertTree = (root) => {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        let tmp = helper(node.left)
+        node.left = helper(node.right)
+        node.right = tmp
+        return node
+    }
+    return helper(root)
+
+}
+const res = invertTree(t1)
 console.log(res)
