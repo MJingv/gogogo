@@ -1,3 +1,8 @@
+// - 动态规划，分解问题，关注【子树】
+// - 回溯，遍历，关注【树枝】
+// - dfs，遍历，关注【节点】
+
+
 function TreeNode(val, left, right) {
     this.val = (val === undefined ? 0 : val)
     this.left = (left === undefined ? null : left)
@@ -80,6 +85,51 @@ const diameterOfBinaryTree = (root) => {
     helper(root)
     return max
 };
-const res = diameterOfBinaryTree(t1)
+// const res = diameterOfBinaryTree(t1)
 
+
+// 第一个例子，给你一棵二叉树，请你用分解问题的思路写一个 count 函数，计算这棵二叉树共有多少个节点。
+const count = (root) => {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return 0
+        return helper(node.left) + helper(node.right) + 1
+    }
+    return helper(root)
+}
+// const res = count(t1)
+
+// 给你一棵二叉树，请你用遍历的思路写一个 traverse 函数，打印出遍历这棵二叉树的过程
+
+const traverse = (root) => {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        console.log(node.val)
+        traverse(node.left)
+        traverse(node.right)
+    }
+    return helper(root)
+}
+// const res = traverse(t1)
+
+const levelTraverse = (root) => {
+    if (!root) return []
+    const res = []
+    const q = [root]
+    while (q.length) {
+        const size = q.length
+        const path = []
+        for (let i = 0; i < size; i++) {
+            const cur = q.shift()
+            path.push(cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.push(path)
+    }
+
+    return res
+}
+const res = levelTraverse(t1)
 console.log(res)
