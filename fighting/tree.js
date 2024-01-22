@@ -154,11 +154,17 @@ const invertTree = (root) => {
 // 力扣第 116 题「填充每个二叉树节点的右侧指针」
 const connect = (root) => {
     if (!root) return null
-    const helper = (node) => {
-        if (!node) return null
+    const helper = (a, b) => {
+        if (!a || !b) return
+        a.next = b
+        helper(a.left, a.right)
+        helper(b.left, b.right)
+        helper(a.right, b.left)
     }
-    return helper(root)
-
+    helper(root.left, root.right)
+    return root
 }
+
+
 const res = connect(t1)
 console.log(res)
