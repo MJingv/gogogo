@@ -233,9 +233,25 @@ const mergeSort = (list = []) => {
     const b = list.slice(mid)
     return merge(mergeSort(a), mergeSort(b))
 }
+// const res = mergeSort([9, 1, 5, 2, -2, 100, 0, 99, 100, 2])
 
 
-const res = mergeSort([9, 1, 5, 2, -2, 100, 0, 99, 100, 2])
+// 654. 最大二叉树
+const constructMaximumBinaryTree = (list) => {
+    const len = list.length
+    if (!len) return null
+    if (len === 1) return new TreeNode(list[0])
+    const max = Math.max(...list)
+    const maxIndex = list.indexOf(max)
 
+    const cur = new TreeNode(max)
+    list.splice(maxIndex, 1)
+    const left = list.slice(0, maxIndex)
+    const right = list.slice(maxIndex)
+    cur.left = constructMaximumBinaryTree(left)
+    cur.right = constructMaximumBinaryTree(right)
+    return cur
+}
+const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
 
 console.log(res)
