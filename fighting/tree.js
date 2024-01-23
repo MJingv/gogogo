@@ -213,5 +213,31 @@ const mergeSort = (list = []) => {
 }
 
 
-const res = mergeSort([9, 1, 5, 2, -2, 100, 0, 99, 100])
-console.log(res)
+// const res = mergeSort([9, 1, 5, 2, -2, 100, 0, 99, 100])
+
+
+// 114. 二叉树展开为链表
+// 向右展开
+const flatten = (root) => {
+    if (!root) return null
+
+    flatten(root.left)
+    flatten(root.right)
+    const left = root.left
+    const right = root.right
+
+    root.left = null
+    root.right = left
+
+
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+    p.right = right
+    return root
+
+
+}
+const res = flatten(t1)
+console.log(JSON.stringify(res))
