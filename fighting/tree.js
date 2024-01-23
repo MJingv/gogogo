@@ -169,53 +169,6 @@ const connect = (root) => {
 // const res = connect(t1)
 
 
-const quickSort = (list) => {
-    const len = list.length
-    if (!len) return []
-    const left = [], right = [], equal = []
-    const pivot = Math.floor(len / 2)
-    for (let i = 0; i < len; i++) {
-        const target = list[pivot]
-        const cur = list[i]
-        if (cur === target) equal.push(cur)
-        if (cur > target) right.push(cur)
-        if (cur < target) left.push(cur)
-    }
-
-    return [...quickSort(left), ...equal, ...quickSort(right)]
-}
-
-
-const merge = (a = [], b = []) => {
-    const res = []
-    const len1 = a.length
-    const len2 = b.length
-    let i = 0, j = 0
-    while (i < len1 && j < len2) {
-        if (a[i] < b[j]) {
-            res.push(a[i++])
-        } else {
-            res.push(b[j++])
-        }
-    }
-    while (i < len1) res.push(a[i++])
-    while (j < len2) res.push(b[j++])
-    return res
-}
-
-const mergeSort = (list = []) => {
-    const len = list.length
-    if (len <= 1) return list
-    const mid = Math.floor(len / 2)
-    const left = list.slice(0, mid)
-    const right = list.slice(mid)
-    return merge(mergeSort(left), mergeSort(right))
-}
-
-
-// const res = mergeSort([9, 1, 5, 2, -2, 100, 0, 99, 100])
-
-
 // 114. 二叉树展开为链表
 // 向右展开
 const flatten = (root) => {
@@ -239,5 +192,50 @@ const flatten = (root) => {
 
 
 }
-const res = flatten(t1)
-console.log(JSON.stringify(res))
+// const res = JSON.stringify(flatten(t1))
+
+const quickSort = (list = []) => {
+    const len = list.length
+    if (len <= 1) return list
+    const left = [], right = [], equal = []
+    const pivot = Math.floor(len / 2)
+    for (let i = 0; i < len; i++) {
+        const cur = list[i]
+        const mid = list[pivot]
+        if (cur === mid) equal.push(cur)
+        if (cur < mid) left.push(cur)
+        if (cur > mid) right.push(cur)
+    }
+    return [...quickSort(left), ...equal, ...quickSort(right)]
+}
+
+const merge = (a = [], b = []) => {
+    const l1 = a.length, l2 = b.length
+    const res = []
+    let i = 0, j = 0
+    while (i < l1 && j < l2) {
+        if (a[i] < b[j]) {
+            res.push(a[i++])
+        } else {
+            res.push(b[j++])
+        }
+    }
+    while (i < l1) res.push(a[i++])
+    while (j < l2) res.push(b[j++])
+    return res
+}
+
+const mergeSort = (list = []) => {
+    const len = list.length
+    if (len <= 1) return list
+    const mid = Math.floor(len / 2)
+    const a = list.slice(0, mid)
+    const b = list.slice(mid)
+    return merge(mergeSort(a), mergeSort(b))
+}
+
+
+const res = mergeSort([9, 1, 5, 2, -2, 100, 0, 99, 100, 2])
+
+
+console.log(res)
