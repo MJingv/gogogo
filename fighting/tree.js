@@ -245,13 +245,26 @@ const constructMaximumBinaryTree = (list) => {
     const maxIndex = list.indexOf(max)
 
     const cur = new TreeNode(max)
-    list.splice(maxIndex, 1)
     const left = list.slice(0, maxIndex)
-    const right = list.slice(maxIndex)
+    const right = list.slice(maxIndex + 1)
     cur.left = constructMaximumBinaryTree(left)
     cur.right = constructMaximumBinaryTree(right)
     return cur
 }
-const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
+// const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
 
+
+// 力扣第 105 题「从前序和中序遍历序列构造二叉树」
+const buildTree = (preorder = [3, 9, 20, 15, 7], inorder = [9, 3, 15, 20, 7]) => {
+    const l1 = preorder.length
+    if (!l1) return null
+    if (l1 === 1) return new TreeNode(preorder[0])
+    const cur = preorder.shift()
+    const index = inorder.indexOf(cur)
+    const node = new TreeNode(cur)
+    node.left = buildTree(preorder, inorder.slice(0, index))
+    node.right = buildTree(preorder, inorder.slice(index + 1))
+    return node
+};
+const res = buildTree()
 console.log(res)
