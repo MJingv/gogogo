@@ -266,5 +266,21 @@ const buildTree = (preorder = [3, 9, 20, 15, 7], inorder = [9, 3, 15, 20, 7]) =>
     node.right = buildTree(preorder, inorder.slice(index + 1))
     return node
 };
-const res = buildTree()
+
+// 第 106 题「从后序和中序遍历序列构造二叉树」：
+const buildTree1 = (inorder = [9, 3, 15, 20, 7], postorder = [9, 15, 7, 20, 3]) => {
+    const len = postorder.length
+    const len1 = inorder.length
+    if (!len || !len1) return null
+    if (len === 1) return new TreeNode(postorder[0])
+    const val = postorder.pop()
+    const index = inorder.indexOf(val)
+    const node = new TreeNode(val)
+    node.right = buildTree1(inorder.slice(index + 1), postorder)
+    node.left = buildTree1(inorder.slice(0, index), postorder)
+    return node
+}
+
+
+const res = buildTree1()
 console.log(res)
