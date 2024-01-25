@@ -280,7 +280,91 @@ const buildTree1 = (inorder = [9, 3, 15, 20, 7], postorder = [9, 15, 7, 20, 3]) 
     node.left = buildTree1(inorder.slice(0, index), postorder)
     return node
 }
+// const res = buildTree1()
 
 
-const res = buildTree1()
+// serialize
+const serialize = (root) => {
+    // 前序
+    const tag = '#'
+    if (!root) return tag
+    let res = ''
+    const helper = (node) => {
+        if (!node) return res += tag
+        res += node.val
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return res
+}
+const deserialize = (s) => {
+    if (!s) return null
+    const helper = (list = []) => {
+        const len = list.length
+        if (!len) return null
+        if (len === 1) return new TreeNode(list[0])
+        const val = list.shift()
+        if (val === '#') {
+            return null
+        }
+        const node = new TreeNode(val)
+        node.left = helper(list)
+        node.right = helper(list)
+        return node
+    }
+
+    return helper(s.split(''))
+}
+// const res = deserialize('10##32##4##')
+
+
+const serialize1 = (root) => {
+    // 后序
+    if (!root) return ''
+    let res = ''
+    const helper = (node) => {
+        if (!node) return res += '#'
+        helper(node.left)
+        helper(node.right)
+        res += node.val
+    }
+    helper(root)
+    return res
+
+}
+// const res = serialize1(t1)
+const deserialize1 = (s) => {
+    if (!s) return null
+    const helper = (list = []) => {
+        const len = list.length
+        if (!len) return null
+        if (len === 1) return new TreeNode(list[0])
+        const val = list.shift()
+        if (val !== '#') {
+            const node = new TreeNode(val)
+            node.left = helper(list)
+            node.right = helper(list)
+            return node
+        }
+
+    }
+
+    return helper(s.split(''))
+}
+const res = deserialize1('##0##2##431')
+
+
+
+
+
+// 652. 寻找重复的子树
+// const findDuplicateSubtrees = (root) => {
+//     if (!root) return null
+//
+// }
+// t0.left = new TreeNode(3)
+// const res = findDuplicateSubtrees(t1)
+
+
 console.log(res)
