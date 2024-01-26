@@ -347,24 +347,38 @@ const deserialize1 = (s) => {
             node.right = helper(list)
             return node
         }
-
     }
 
     return helper(s.split(''))
 }
-const res = deserialize1('##0##2##431')
-
-
-
+// const res = deserialize1('##0##2##431')
 
 
 // 652. 寻找重复的子树
-// const findDuplicateSubtrees = (root) => {
-//     if (!root) return null
-//
-// }
-// t0.left = new TreeNode(3)
-// const res = findDuplicateSubtrees(t1)
+const findDuplicateSubtrees = (root) => {
+    const res = []
+    const map = new Map()
+    const helper = (node) => {
+        if (!node) return '#'
+        const left = helper(node.left)
+        const right = helper(node.right)
+        const str = `${node.val}-${left}-${right}`
+        if (!map.has(str)) {
+            map.set(str, 1)
+        } else {
+            map.set(str, map.get(str) + 1)
+        }
+        if (map.get(str) === 2) {
+            res.push(node)
+        }
+        return str
+    }
+    helper(root)
+    return res
+
+}
+t0.left = new TreeNode(4)
+const res = findDuplicateSubtrees(t1)
 
 
 console.log(res)
