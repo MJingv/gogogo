@@ -377,8 +377,173 @@ const findDuplicateSubtrees = (root) => {
     return res
 
 }
-t0.left = new TreeNode(4)
-const res = findDuplicateSubtrees(t1)
+// t0.left = new TreeNode(4)
+// const res = findDuplicateSubtrees(t1)
+
+//315 看不懂高
+var countSmaller = function (nums = []) {
+    const len = nums.length
+    const res = {}
+    if (!len) return []
+
+    const merge = (a = [], b = []) => {
+        const l1 = a.length, l2 = b.length
+        const res1 = []
+        let i = 0, j = 0
+        while (i < l1 && j < l2) {
+            if (a[i] > b[j]) {
+                res[a[i]] = (res[a[i]] || 0) + b.length - j;
+                res1.push(b[j++]);
+            } else {
+                res1.push(a[i++]);
+            }
+        }
+        while (i < l1) res1.push(a[i++])
+        while (j < l2) res1.push(b[j++])
+        return res1
+    }
+    const mergeSort = (list = []) => {
+        const len = list.length
+        if (!len) return []
+        if (len === 1) return list
+        const pivot = Math.floor(len / 2)
 
 
+        const left = mergeSort(list.slice(0, pivot))
+        const right = mergeSort(list.slice(pivot))
+
+        return merge(left, right)
+    }
+    mergeSort(nums)
+    const a = []
+    nums.map((i, index) => {
+        a[index] = res[i] || 0
+    })
+    return res
+};
+// const res = countSmaller([5, 2, 6, 1])
+
+
+// 力扣第 230 题「二叉搜索树中第 K 小的元素」
+// （从 1 开始计数）
+var kthSmallest = function (root, k) {
+    if (!root || !k) return 0
+    let res = 0
+    const helper = (node) => {
+        if (!node) return null
+        helper(node.left)
+        if (k-- === 1) return res = node.val
+        helper(node.right)
+    }
+    helper(root)
+    return res
+};
+// const res = kthSmallest(t1, 3)
+
+
+// 538. 把二叉搜索树转换为累加树1038
+
+var convertBST = function (root) {
+    if (!root) return 0
+    let n = 0
+
+    const helper = (node) => {
+        if (!node) return null
+        helper(node.right)
+        n += node.val
+        node.val = n
+        helper(node.left)
+        return node
+    }
+    return helper(root)
+
+};
+
+// const res = convertBST(t1)
+
+// 力扣第 98 题「验证二叉搜索树」
+var isValidBST = function (root) {
+    if (!root) return false
+
+    const helper = (node, min = null, max = null) => {
+        if (!node) return true
+
+        if (min && node.val <= min.val) return false
+        if (max && node.val >= max.val) return false
+
+
+        const left = helper(node.left, min, node)
+        const right = helper(node.right, node, max)
+
+        return left && right
+    }
+    return helper(root)
+
+};
+// const res = isValidBST(t1)
+
+
+// 力扣第 700 题「二叉搜索树中的搜索」
+var searchBST = function (root, val) {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        if (node.val === val) return node
+        if (node.val > val) return helper(node.left)
+        if (node.val < val) return helper(node.right)
+    }
+    return helper(root)
+
+};
+// const res = searchBST(t1, 3)
+
+// 在 BST 中插入一个数
+const insertBST = (root, val) => {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return new TreeNode(val)
+        if (node.val < val) {
+            node.right = helper(node.right, val)
+        }
+        if (node.val > val) {
+            node.left = helper(node.left.val)
+        }
+        return node
+    }
+    return helper(root)
+}
+// const res = insertBST(t1, -1)
+
+const getMin = (node) => {
+    // right min
+    while (node.left) node = node.left
+    return node
+
+}
+
+const deleteBST = (node, val) => {
+    if (!node) return node
+    if (node.val === val) {
+        // if (!node.left && !node.right) node = null
+        if (!node.left) return node.right
+        if (!node.right) return node.left
+
+        let min = getMin(node.right)
+        node.right = deleteBST(node.right, min.val)
+        min.left = node.left
+        min.right = node.right
+        node = min
+
+    }
+
+    if (node.val > val) {
+        node.left = deleteBST(node.left, val)
+    }
+    if (node.val < val) {
+        node.right = deleteBST(node.right, val)
+    }
+
+    return node
+}
+const res = deleteBST(t1, 1)
 console.log(res)
