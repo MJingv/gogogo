@@ -545,5 +545,23 @@ const deleteBST = (node, val) => {
 
     return node
 }
-const res = deleteBST(t1, 1)
+// const res = deleteBST(t1, 1)
+
+
+// 力扣第 96 题「不同的二叉搜索树」，
+// dp[3] = dp[0]*dp[2] + dp[1]*dp[1] + dp[2]*dp[0]
+
+// 不是太理解，记住吧用dp
+var numTrees = function (n) {
+    const dp = new Array(n + 1).fill(0);
+    dp[0] = 1;
+    for (let i = 2; i <= n; i++) {
+        for (let j = 1; j <= i; j++) {
+            dp[i] += dp[j - 1] * dp[i - j]
+        }
+    }
+    return dp
+};
+const res = numTrees(3)
+
 console.log(res)
