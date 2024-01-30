@@ -549,19 +549,63 @@ const deleteBST = (node, val) => {
 
 
 // 力扣第 96 题「不同的二叉搜索树」，
-// dp[3] = dp[0]*dp[2] + dp[1]*dp[1] + dp[2]*dp[0]
-
-// 不是太理解，记住吧用dp
 var numTrees = function (n) {
-    const dp = new Array(n + 1).fill(0);
-    dp[0] = 1;
-    for (let i = 2; i <= n; i++) {
-        for (let j = 1; j <= i; j++) {
-            dp[i] += dp[j - 1] * dp[i - j]
-        }
-    }
-    return dp
-};
-const res = numTrees(3)
+    if (n <= 1) return n
 
+    let count = 0
+    for (let i = 1; i <= n; i++) {
+        const left = numTrees(i - 1)
+        const right = numTrees(n - i)
+        count += left * right
+    }
+    return count
+
+};
+// const res = numTrees(3)
+
+
+// 912
+
+// 溢出
+var sortArray = function (nums) {
+    const len = nums.length
+    if (len <= 1) return nums
+    const p = Math.floor(len / 2)
+    const left = [], right = [], equal = []
+    for (let i = 0; i < len; i++) {
+        const cur = nums[i]
+        const mid = nums[p]
+        if (cur === mid) equal.push(cur)
+        if (cur < mid) left.push(cur)
+        if (cur > mid) right.push(cur)
+    }
+    return [...sortArray(left), ...equal, ...sortArray(right)]
+
+};
+// const res = sortArray([5, 2, 3, 1])
+
+// 215 数组中的第k个最大元素
+// 输入: [3,2,1,5,6,4], k = 2 输出: 5
+const findKthLargest = (nums, k) => {
+    const len = nums.length
+    if (!len) return -1
+
+    const quickSort = (list = []) => {
+        const len = list.length
+        if (!len) return []
+        const p = Math.floor(len / 2)
+        const mid = list[p]
+        const left = [], right = [], equal = []
+        for (let i = 0; i < len; i++) {
+            if (mid === list[i]) equal.push(list[i])
+            if (mid > list[i]) left.push(list[i])
+            if (mid < list[i]) right.push(list[i])
+        }
+        return [...quickSort(left), ...equal, ...quickSort(right)]
+    }
+
+    const res = quickSort(nums)
+    return res[len - k]
+}
+const res = findKthLargest([3, 2, 1, 5, 6, 4], 2)
 console.log(res)
