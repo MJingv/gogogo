@@ -21,5 +21,10 @@ const deepClone = (obj, hash = new WeakMap()) => {
     return cloneObj
 
 }
-const res = deepClone({a: 2, b: {c: 3}})
+const res = deepClone({
+    a: 1, b: [{pp: {val: 1111}}, 3, 99, 'ss'],
+    d: {c: false},
+    kk: 0,
+    d1d: {}
+})
 console.log(res)
