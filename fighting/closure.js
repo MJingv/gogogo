@@ -33,8 +33,17 @@ setTimeout(() => {
 }, 2000)
 
 
-const debounce = () => {
-    // 防抖 强制停止1s后再执行。eg.输入300ms后才能再输入
+const debounce = (fn, delay) => {
+    let timer = null
+    return (...args) => {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+            fn.apply(args)
+        }, delay)
+    }
 }
+
+
+
 
 
