@@ -15,7 +15,7 @@ const deepClone = (obj, hash = new WeakMap()) => {
 
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
-            cloneObj[key] = deepClone(obj[key])k
+            cloneObj[key] = deepClone(obj[key])
         }
     }
 

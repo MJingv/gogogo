@@ -607,5 +607,29 @@ const findKthLargest = (nums, k) => {
     const res = quickSort(nums)
     return res[len - k]
 }
-const res = findKthLargest([3, 2, 1, 5, 6, 4], 2)
+// const res = findKthLargest([3, 2, 1, 5, 6, 4], 2)
+
+
+// 341. 扁平化嵌套列表迭代器
+const fn = (list = []) => {
+    const len = list.length
+    if (!len) return list
+    const res = []
+    const helper = (list) => {
+        const len = list.length
+        if (!len) return
+        for (let i = 0; i < len; i++) {
+            const val = list[i]
+            if (Array.isArray(val)) {
+                helper(val)
+            } else res.push(val)
+
+        }
+    }
+    helper(list)
+    return res
+}
+
+
+const res = fn([[1, 1], 2, [1, 1]])
 console.log(res)
