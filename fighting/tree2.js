@@ -97,11 +97,33 @@ var buildTree = function (preorder, inorder) {
     return helper(preorder, inorder)
 
 };
-const res = buildTree([1, 0, 3, 2, 4], [0, 1, 2, 3, 4])
-console.log(res)
+// const res = buildTree([1, 0, 3, 2, 4], [0, 1, 2, 3, 4])
 // 106. Construct Binary Tree from Inorder and Postorder Traversal
+
+
 // 108. Convert Sorted Array to Binary Search Tree
+
+
 // 110. Balanced Binary Tree
+var isBalanced = function (root) {
+    let res = true
+    if (!root) return res
+    const helper = (node) => {
+        if (!node) return 0
+        const left = helper(node.left)
+        const right = helper(node.right)
+        if (Math.abs(left - right) > 1) return res = false
+
+        return Math.max(left, right) + 1
+
+    }
+    helper(root)
+    return res
+
+};
+const res = isBalanced(t1)
+
+
 // 111. Minimum Depth of Binary Tree
 // 112. Path Sum
 // 113. Path Sum II
@@ -120,6 +142,9 @@ console.log(res)
 // 700. Search in a Binary Search Tree
 // 701. Insert into a Binary Search Tree
 // 938. Range Sum of BST
+
+
+console.log(res)
 
 
 
