@@ -121,12 +121,106 @@ var isBalanced = function (root) {
     return res
 
 };
-const res = isBalanced(t1)
+// const res = isBalanced(t1)
 
 
 // 111. Minimum Depth of Binary Tree
+
+var minDepth = function (root) {
+    if (!root) return 0
+    const helper = (node) => {
+        if (!node) return 0
+        const left = helper(node.left)
+        const right = helper(node.right)
+        if (!left) return right + 1
+        if (!right) return left + 1
+
+        return Math.min(left, right) + 1
+    }
+    return helper(root)
+
+};
+// const res = minDepth(t1)
+
 // 112. Path Sum
+
+
+var hasPathSum = function (root, targetSum) {
+    if (!root) return false
+    let res = false
+    const helper = (node, sum) => {
+        if (!node) return
+        if (!node.left && !node.right && sum === targetSum) return res = true
+        node.left && helper(node.left, sum + node.left.val)
+        node.right && helper(node.right, sum + node.right.val)
+        return false
+
+    }
+    helper(root, root.val)
+    return res
+};
+
+const hasPathSum1 = (root, sum) => {
+    if (!root) return false
+    if (!root.left && !root.right) return sum === root.val
+    return hasPathSum1(root.left, sum - root.val) || hasPathSum1(root.right, sum - root.val)
+
+
+}
+const hasPathSum2 = (root, targetSum) => {
+    // 没ac
+    if (!root) return false
+    let res = false
+    let sum = 0
+    const helper = (node) => {
+        if (!node) return
+        sum += node.val
+        if (sum === targetSum) return res = true
+        helper(node.left)
+        sum -= node.val
+
+
+        sum += node.val
+        helper(node.right)
+        sum -= node.val
+
+    }
+    helper(root)
+    return res
+
+}
+// const res = hasPathSum2(t1, 6)
+
+
 // 113. Path Sum II
+var pathSum = function (root, targetSum) {
+    let res = []
+    if (!root) return res
+    let path = []
+    let sum = 0
+    const helper = (node) => {
+        if (!node) return
+        sum += node.val
+        path.push(node.val)
+        if (!node.left && !node.right && sum === targetSum) res.push(path.slice())
+
+        helper(node.left)
+        sum -= node.val
+        path.pop()
+
+        sum += node.val
+        path.push(node.val)
+        helper(node.right)
+        sum -= node.val
+        path.pop()
+    }
+
+    helper(root)
+    return res
+}
+const res = pathSum(t1, 6)
+
+
 // 114. Flatten Binary Tree to Linked List
 // 116. Populating Next Right Pointers in Each Node
 // 124. Binary Tree Maximum Path Sum
