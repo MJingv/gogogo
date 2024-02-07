@@ -261,10 +261,29 @@ var connect = function (root) {
 
 
 };
-const res = connect(t1)
+// const res = connect(t1)
 
 
 // 124. Binary Tree Maximum Path Sum
+var maxPathSum = function (root) {
+    if (!root) return 0
+    let max = -Infinity
+
+    const helper = (node) => {
+        if (!node) return 0
+        const left = Math.max(0, helper(node.left))
+        const right = Math.max(0, helper(node.right))
+        const cur = node.val + left + right
+        max = Math.max(max, cur)
+        return node.val + Math.max(left, right)
+    }
+    helper(root)
+    return max
+
+};
+const res = maxPathSum(t1)
+
+
 // 129. Sum Root to Leaf Numbers
 // 144. Binary Tree Preorder Traversal
 // 145. Binary Tree Postorder Traversal
