@@ -176,6 +176,7 @@ const hasPathSum2 = (root, targetSum) => {
         if (!node) return
         sum += node.val
         if (sum === targetSum) return res = true
+
         helper(node.left)
         sum -= node.val
 
@@ -218,11 +219,51 @@ var pathSum = function (root, targetSum) {
     helper(root)
     return res
 }
-const res = pathSum(t1, 6)
-
+// const res = pathSum(t1, 6)
 
 // 114. Flatten Binary Tree to Linked List
+
+var flatten = function (root) {
+    if (!root) return
+    flatten(root.left)
+    flatten(root.right)
+    const left = root.left
+    const right = root.right
+    root.right = left
+    root.left = null
+
+    let p = root
+    while (p.right) {
+        p = p.right
+    }
+
+    p.right = right
+    return root
+};
+// const res = flatten(t1)
+
 // 116. Populating Next Right Pointers in Each Node
+var connect = function (root) {
+    if (!root) return null
+
+    const helper = (left, right) => {
+        if (!right || !left) return null
+
+        left.next = right
+        helper(left.left, left.right)
+        helper(right.left, right.right)
+        helper(left.right, right.left)
+
+
+    }
+    helper(root.left, root.right)
+    return root
+
+
+};
+const res = connect(t1)
+
+
 // 124. Binary Tree Maximum Path Sum
 // 129. Sum Root to Leaf Numbers
 // 144. Binary Tree Preorder Traversal
