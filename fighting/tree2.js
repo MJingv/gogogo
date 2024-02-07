@@ -271,21 +271,72 @@ var maxPathSum = function (root) {
 
     const helper = (node) => {
         if (!node) return 0
+
         const left = Math.max(0, helper(node.left))
         const right = Math.max(0, helper(node.right))
         const cur = node.val + left + right
         max = Math.max(max, cur)
-        return node.val + Math.max(left, right)
+        return node.val + Math.max(left, right) // 注意这里，返回节点的最大贡献值
     }
     helper(root)
     return max
 
 };
-const res = maxPathSum(t1)
-
+// const res = maxPathSum(t1)
 
 // 129. Sum Root to Leaf Numbers
+var sumNumbers = function (root) {
+    // 回溯
+    if (!root) return 0
+    let sum = 0
+    let tmp = []
+    const helper = (node) => {
+        if (!node) return
+        tmp.push(node.val)
+
+        if (!node.left && !node.right) sum += Number(tmp.join(''))
+
+        helper(node.left)
+        tmp.pop()
+
+        tmp.push(node.val)
+        helper(node.right)
+        tmp.pop()
+    }
+    helper(root)
+    return sum
+};
+const sumNumbers1 = (root) => {
+    if (!root) return 0
+    let res = 0
+    const helper = (node, str = '') => {
+        if (!node) return ''
+        str += node.val
+        if (!node.left && !node.right) res += Number(str)
+        helper(node.left, str)
+        helper(node.right, str)
+    }
+    helper(root)
+    return res
+}
+// const res = sumNumbers1(t1)
 // 144. Binary Tree Preorder Traversal
+var preorderTraversal = function (root) {
+    if (!root) return []
+    const res = []
+    const helper = (node) => {
+        if (!node) return
+        res.push(node.val)
+        helper(node.left)
+        helper(node.right)
+    }
+    helper(root)
+    return res
+
+};
+const res = preorderTraversal(t1)
+
+
 // 145. Binary Tree Postorder Traversal
 // 226. Invert Binary Tree
 // 230. Kth Smallest Element in a BST
