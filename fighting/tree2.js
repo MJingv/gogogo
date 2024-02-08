@@ -334,15 +334,99 @@ var preorderTraversal = function (root) {
     return res
 
 };
-const res = preorderTraversal(t1)
+// const res = preorderTraversal(t1)
 
 
 // 145. Binary Tree Postorder Traversal
+var postorderTraversal = function (root) {
+    if (!root) return []
+    const res = []
+    const helper = (node) => {
+        if (!node) return
+        helper(node.left)
+        helper(node.right)
+        res.push(node.val)
+
+    }
+    helper(root)
+    return res
+};
+// const res = postorderTraversal(t1)
+
 // 226. Invert Binary Tree
+
+var invertTree = function (root) {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return null
+        const left = helper(node.left)
+        const right = helper(node.right)
+        node.left = right
+        node.right = left
+        return node
+    }
+    helper(root)
+    return root
+};
+// const res = invertTree(t1)
+
 // 230. Kth Smallest Element in a BST
+var kthSmallest = function (root, k) {
+    if (!root) return null
+    let res = 0
+    const helper = (node) => {
+        if (!node) return
+        helper(node.left,)
+        k--
+        if (k === 0) return res = node.val
+        helper(node.right)
+
+    }
+    helper(root)
+    return res
+};
+// const res = kthSmallest(t1, 2)
+
 // 236. Lowest Common Ancestor of a Binary Tree
+var lowestCommonAncestor = function (root, p, q) {
+    // 记住吧，不太好理解
+    if (!root) return null
+    if (p === root || q === root) return root
+    const left = lowestCommonAncestor(root.left, p, q)
+    const right = lowestCommonAncestor(root.right, p, q)
+    if (left && right) return root
+    if (!left) return right
+    if (!right) return left
+};
+// const res = lowestCommonAncestor(t1, t0, t3)
+
 // 297. Serialize and Deserialize Binary Tree
+
+
 // 617. Merge Two Binary Trees
+var mergeTrees = function (root1, root2) {
+    if (!root1) return root2
+    if (!root2) return root1
+
+    const helper = (t1, t2) => {
+        if (!t1 && !t2) return null
+        if (!t1) return t2
+        if (!t2) return t1
+
+        const left = helper(t1.left, t2.left)
+        const right = helper(t1.right, t2.right)
+
+        t1.val += t2.val
+        t1.left = left
+        t1.right = right
+
+        return t1
+
+    }
+    helper(root1, root2)
+    return root1
+};
+const res = mergeTrees(t1, t1)
 // 654. Maximum Binary Tree
 // 700. Search in a Binary Search Tree
 // 701. Insert into a Binary Search Tree
