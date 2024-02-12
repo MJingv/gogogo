@@ -436,22 +436,74 @@ var constructMaximumBinaryTree = function (nums) {
     const helper = (nums) => {
         const len = nums.length
         if (!len) return null
-        const max=Math.max(...nums)
-        const node=new TreeNode(max)
-        const index=nums.indexOf(max)
-        const left=helper(nums.slice(0,index))
-        const right=helper(nums.slice(index+1))
-        node.left=left
-        node.right=right
+        const max = Math.max(...nums)
+        const node = new TreeNode(max)
+        const index = nums.indexOf(max)
+        const left = helper(nums.slice(0, index))
+        const right = helper(nums.slice(index + 1))
+        node.left = left
+        node.right = right
         return node
     }
     return helper(nums)
 
 };
-const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
+// const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
 // 700. Search in a Binary Search Tree
+
+var searchBST = function (root, val) {
+    if (!root) return null
+    const helper = (node) => {
+        if (!node) return
+        const cur = node.val
+        if (cur === val) return node
+        if (cur < val) return helper(node.right)
+        if (cur > val) return helper(node.left)
+    }
+
+    return helper(root) || null
+};
+// const res = searchBST(t1, 5)
+
 // 701. Insert into a Binary Search Tree
+var insertIntoBST = function (root, val) {
+    if (!root) return new TreeNode(val)
+    const helper = (node) => {
+        if (!node) return new TreeNode(val)
+        const cur = node.val
+        if (cur < val) {
+            node.right = helper(node.right)
+        } else {
+            node.left = helper(node.left)
+        }
+        return node
+    }
+
+    root = helper(root)
+    return root
+
+};
+// const res = insertIntoBST(t1, -1)
+
 // 938. Range Sum of BST
+
+
+var rangeSumBST = function (root, low, high) {
+    if (!root) return null
+    let sum = 0
+    const helper = (node) => {
+        if (!node) return
+        const cur = node.val
+        if (cur >= low &&cur <= high) sum += cur
+        helper(node.left)
+        helper(node.right)
+
+
+    }
+    helper(root)
+    return sum
+};
+const res = rangeSumBST(t1, 1, 3)
 
 // 993
 var isCousins = function (root, x, y) {
