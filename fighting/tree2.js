@@ -431,8 +431,24 @@ var mergeTrees = function (root1, root2) {
 // 654. Maximum Binary Tree
 
 var constructMaximumBinaryTree = function (nums) {
+    const len = nums.length
+    if (!len) return null
+    const helper = (nums) => {
+        const len = nums.length
+        if (!len) return null
+        const max=Math.max(...nums)
+        const node=new TreeNode(max)
+        const index=nums.indexOf(max)
+        const left=helper(nums.slice(0,index))
+        const right=helper(nums.slice(index+1))
+        node.left=left
+        node.right=right
+        return node
+    }
+    return helper(nums)
 
 };
+const res = constructMaximumBinaryTree([3, 2, 1, 6, 0, 5])
 // 700. Search in a Binary Search Tree
 // 701. Insert into a Binary Search Tree
 // 938. Range Sum of BST
@@ -463,7 +479,7 @@ var isCousins = function (root, x, y) {
 
     return res
 };
-const res = isCousins(t1, 2, 4)
+// const res = isCousins(t1, 2, 4)
 
 
 console.log(res)
