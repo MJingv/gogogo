@@ -426,11 +426,44 @@ var mergeTrees = function (root1, root2) {
     helper(root1, root2)
     return root1
 };
-const res = mergeTrees(t1, t1)
+// const res = mergeTrees(t1, t1)
+
 // 654. Maximum Binary Tree
+
+var constructMaximumBinaryTree = function (nums) {
+
+};
 // 700. Search in a Binary Search Tree
 // 701. Insert into a Binary Search Tree
 // 938. Range Sum of BST
+
+// 993
+var isCousins = function (root, x, y) {
+    if (!root) return false
+    let res = false
+    let d1 = 0, d2 = 0, f1 = null, f2 = null
+
+
+    const helper = (node, deep = 0, father) => {
+        if (!node) return
+        if (node.val === x) {
+            d1 = deep
+            f1 = father
+        }
+        if (node.val === y) {
+            d2 = deep
+            f2 = father
+        }
+        helper(node.left, deep + 1, node)
+        helper(node.right, deep + 1, node)
+    }
+
+    helper(root)
+    if (d1 === d2 && JSON.stringify(f1) !== JSON.stringify(f2)) res = true
+
+    return res
+};
+const res = isCousins(t1, 2, 4)
 
 
 console.log(res)
