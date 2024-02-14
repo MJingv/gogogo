@@ -16,3 +16,41 @@
 // for 状态2 in 状态2的所有取值：
 // for ...
 // dp[状态1][状态2][...] = 求最值(选择1，选择2...)
+
+// 力扣第 322 题「零钱兑换」
+// 输入：coins = [1, 2, 5], amount = 11 输出：3 解释：11 = 5 + 5 + 1
+var coinChange = function (coins, amount) {
+    const len = coins.length
+    if (!len) return 0
+
+    const dp = Array(amount + 1).fill(Infinity)
+    dp[0] = 0
+    for (let i = 1; i <= amount; i++) {
+        for (let j = 0; j < len; j++) {
+            if (coins[j] <= i) dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1)
+        }
+
+    }
+    return dp[amount] === Infinity ? -1 : dp[amount]
+};
+
+// const res = coinChange([1, 2, 5], 11)
+
+
+// 509. 斐波那契数
+
+var fib = function (n) {
+    if (n === 1 || n === 0) return n
+    let x = 0, y = 1, res = 0
+    for (let i = 2; i <= n; i++) {
+        res = x + y
+        x = y
+        y = res
+    }
+
+    return res
+};
+const res = fib(4)
+
+
+console.log(res)
