@@ -21,11 +21,10 @@ t1.right = t3
 
 const postOrder = (root) => {
     if (!root) return []
-    const res = []
-    let cur = root
-    let lastVisited = null
-    const stack = []
-    while (cur || stack.length > 0) {
+    const res = [], stack = []
+    let cur = root, lastVisited = null
+
+    while (cur || stack.length) {
         while (cur) {
             stack.push(cur)
             cur = cur.left
@@ -39,16 +38,16 @@ const postOrder = (root) => {
         } else {
             cur = cur.right
         }
+
     }
     return res
 }
-// const res = postOrder(t1)
+const res = postOrder(t1)
 const preOrder = (root) => {
     if (!root) return []
-    const res = []
-    const stack = []
+    const res = [], stack = []
     let cur = root
-    while (stack.length || cur) {
+    while (cur || stack.length) {
         while (cur) {
             res.push(cur.val)
             stack.push(cur)
@@ -58,6 +57,7 @@ const preOrder = (root) => {
         cur = cur.right
     }
     return res
+
 }
 // const res = preOrder(t1)
 const inOrder = (root) => {
@@ -74,10 +74,9 @@ const inOrder = (root) => {
         cur = stack.pop()
         res.push(cur.val)
         cur = cur.right
+
     }
-
-
     return res
 }
-const res = inOrder(t1)
+// const res = inOrder(t1)
 console.log(res)
