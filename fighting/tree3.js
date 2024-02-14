@@ -42,5 +42,22 @@ const postOrder = (root) => {
     }
     return res
 }
-const res = postOrder(t1)
+// const res = postOrder(t1)
+const preOrder = (root) => {
+    if (!root) return []
+    const res = []
+    const stack = []
+    let cur = root
+    while (stack.length || cur) {
+        while (cur) {
+            res.push(cur.val)
+            stack.push(cur)
+            cur = cur.left
+        }
+        cur = stack.pop()
+        cur = cur.right
+    }
+    return res
+}
+const res = preOrder(t1)
 console.log(res)
