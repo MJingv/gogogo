@@ -18,6 +18,7 @@
 // dp[状态1][状态2][...] = 求最值(选择1，选择2...)
 
 // 力扣第 322 题「零钱兑换」
+// 剑指 Offer II 103. 最少的硬币数目
 // 输入：coins = [1, 2, 5], amount = 11 输出：3 解释：11 = 5 + 5 + 1
 var coinChange = function (coins, amount) {
     const len = coins.length
@@ -50,7 +51,7 @@ var fib = function (n) {
 
     return res
 };
-const res = fib(4)
+// const res = fib(4)
 
 
 console.log(res)
