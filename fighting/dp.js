@@ -65,5 +65,28 @@ var lengthOfLIS = function (nums) {
     }
     return Math.max(...dp)
 };
-const res = lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])
+// const res = lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])
+
+
+// 力扣第 931 题「下降路径最小和」
+var minFallingPathSum = function (matrix) {
+    const x = matrix.length
+    if (!x) return 0
+    const y = matrix[0].length
+    const dp = []
+    for (let i = 0; i < x; i++) {
+        dp[i] = Array(y).fill(Infinity)
+        for (let j = 0; j < y; j++) {
+            dp[0][j] = matrix[0][j]
+        }
+    }
+    for (let i = 1; i < x; i++) {
+        for (let j = 0; j < y; j++) {
+            dp[i][j] = matrix[i][j] + Math.min(dp[i - 1][j - 1] || Infinity, dp[i - 1][j], dp[i - 1][j + 1] || Infinity)
+        }
+    }
+    return Math.min(...dp[x - 1])
+
+};
+const res = minFallingPathSum([[-19, 57], [-40, -5]])
 console.log(res)
