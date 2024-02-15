@@ -53,5 +53,17 @@ var fib = function (n) {
 };
 // const res = fib(4)
 
-
+// 300. 最长递增子序列
+var lengthOfLIS = function (nums) {
+    const len = nums.length
+    if (!len) return 0
+    const dp = Array(len).fill(1) // 以我结尾的最长递增子序列
+    for (let i = 1; i < len; i++) {
+        for (let j = 0; j < i; j++) {
+            if (nums[j] < nums[i]) dp[i] = Math.max(dp[i], dp[j] + 1)
+        }
+    }
+    return Math.max(...dp)
+};
+const res = lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18])
 console.log(res)
