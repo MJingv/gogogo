@@ -42,7 +42,7 @@ const postOrder = (root) => {
     }
     return res
 }
-const res = postOrder(t1)
+// const res = postOrder(t1)
 const preOrder = (root) => {
     if (!root) return []
     const res = [], stack = []
@@ -79,4 +79,28 @@ const inOrder = (root) => {
     return res
 }
 // const res = inOrder(t1)
+
+
+var levelOrderBottom = function (root) {
+    if (!root) return []
+    const res = []
+    const q = [root]
+    while (q.length) {
+        const len = q.length
+        const level = []
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            level.push(cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.unshift(level)
+
+    }
+
+    return res
+};
+
+const res = levelOrderBottom(t1)
+
 console.log(res)
