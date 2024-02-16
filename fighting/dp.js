@@ -125,5 +125,63 @@ var wordBreak = function (s, wordDict) {
     return dp[m]
 
 };
-const res = wordBreak("leetcode", ["leet", "code"])
+// const res = wordBreak("leetcode", ["leet", "code"])
+
+
+// 力扣第 53 题「最大子序和」
+var maxSubArray = function (nums) {
+    const len = nums.length
+    if (len === 1) return nums[0]
+    const dp = Array(len).fill(0)
+    dp[0] = nums[0]
+    for (let i = 1; i < len; i++) {
+        dp[i] = Math.max(dp[i - 1] + nums[i], nums[i])
+    }
+    return Math.max(...dp)
+};
+const maxSubArray1 = (nums) => {
+    const len = nums.length
+    if (!len) return 0
+    if (len === 1) return nums[0]
+    let res = 0
+    let a = nums[0], b = 0
+    for (let i = 1; i < len; i++) {
+        b = Math.max(nums[i], a + nums[i])
+        a = b
+        res = Math.max(res, a)
+    }
+    return res
+}
+// const res = maxSubArray1([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+// 输入：nums = [-2,1,-3,4,-1,2,1,-5,4] 输出：6 解释：连续子数组 [4,-1,2,1] 的和最大，为 6 。
+
+
+// 1143. 最长公共子序列
+var longestCommonSubsequence = function (text1, text2) {
+    const [m, n] = [text1.length, text2.length]
+    if (!m || !n) return 0
+    let res = 0
+    const dp = Array(m).fill(0).map(() => Array(n).fill(0))
+    dp[0][0] = text1[0] === text2[0] ? 1 : 0
+    for (let i = 1; i < m; i++) {
+        dp[i][0] = Math.max(dp[i - 1][0], text1[i] === text2[0] ? 1 : 0)
+    }
+    for (let j = 1; j < n; j++) {
+        dp[0][j] = Math.max(dp[0][j - 1], text1[0] === text2[j] ? 1 : 0)
+    }
+
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (text1[i] === text2[j]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
+            }
+
+        }
+    }
+    return dp[m - 1][n - 1]
+};
+// 输入：text1 = "abcde", text2 = "ace" 输出：3 解释：最长公共子序列是 "ace" ，它的长度为 3 。
+const res = longestCommonSubsequence('abcde', 'ace')
 console.log(res)
