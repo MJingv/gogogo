@@ -90,7 +90,28 @@ var findTargetSumWays = function (nums, target) {
     return dp[aim] || 0
 
 };
-const res = findTargetSumWays([1, 1, 1, 1, 1], 3)//5
+
+var findTargetSumWays1 = function (nums, target) {
+    const len = nums.length
+    let res = 0
+    const helper = (i = 0, s = 0) => {
+        if (i === len) {
+            if (s === target) res++
+            return
+        }
+        s += nums[i]
+        helper(i + 1, s)
+        s -= nums[i]
+
+        s -= nums[i]
+        helper(i + 1, s)
+        s += nums[i]
+    }
+    helper()
+    return res
+}
+
+const res = findTargetSumWays1([1, 1, 1, 1, 1], 3)//5
 
 
 console.log(res)
