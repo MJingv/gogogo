@@ -32,8 +32,6 @@ var change = function (amount, coins) {
 };
 // const res = change(5, [1, 2, 5])
 
-// 416. 分割等和子集
-// 剑指 Offer II 101. 分割等和子集
 
 // 474. Ones and Zeroes
 // 输入：strs = ["10", "0001", "111001", "1", "0"], m = 5, n = 3 输出：4
@@ -111,7 +109,29 @@ var findTargetSumWays1 = function (nums, target) {
     return res
 }
 
-const res = findTargetSumWays1([1, 1, 1, 1, 1], 3)//5
+// const res = findTargetSumWays1([1, 1, 1, 1, 1], 3)//5
 
+
+// 416. 分割等和子集
+// 剑指 Offer II 101. 分割等和子集
+var canPartition = function (nums) {
+    const len = nums.length
+    if (!len) return false
+    const sum = nums.reduce((a, b) => a + b)
+    if (sum % 2) return false
+    const target = sum / 2
+    const dp = Array(target + 1).fill(false)
+    dp[0] = true
+    for (let i = 0; i < len; i++) {
+        for (let j = target; j >= nums[i]; j--) {
+            dp[j] = dp[j] || dp[j - nums[i]]
+        }
+    }
+
+
+    return dp[target]
+};
+const res = canPartition([1, 2, 3, 5])
+// 输入：nums = [1,5,11,5] 输出：true 解释：数组可以分割成 [1, 5, 5] 和 [11] 。
 
 console.log(res)
