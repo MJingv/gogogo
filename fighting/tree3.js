@@ -101,6 +101,37 @@ var levelOrderBottom = function (root) {
     return res
 };
 
-const res = levelOrderBottom(t1)
+// const res = levelOrderBottom(t1)
+
+var rob = function (root) {
+    if (!root) return 0
+    const q = [root]
+    const res = []
+    while (q.length) {
+        const len = q.length
+        const level = []
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            level.push(cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.push(level)
+    }
+    let res0 = 0, res1 = 0
+    res.map((value, index) => {
+        if (index % 2) {
+            res1 += value.reduce((a, b) => a + b)
+        } else {
+            res0 += value.reduce((a, b) => a + b)
+
+        }
+
+    })
+    return Math.max(res0, res1)
+
+
+};
+const res = rob(t1)
 
 console.log(res)
