@@ -110,6 +110,20 @@ var numDistinct = function (s, t) {
     }
     return dp[m][n];
 };
-const res = numDistinct('babgbag', 'bag')
+// const res = numDistinct('babgbag', 'bag')
+// 力扣第 139 题「单词拆分」
+var wordBreak = function (s, wordDict) {
+    const m = s.length, n = wordDict.length
+    const dp = Array(m + 1).fill(false)
+    dp[0] = true
+    for (let i = 1; i <= m; i++) {
+        for (let j = 0; j < i; j++) {
+            const tmp = s.slice(j, i)
+            if (dp[j] && wordDict.includes(tmp)) dp[i] = true
+        }
+    }
+    return dp[m]
 
+};
+const res = wordBreak("leetcode", ["leet", "code"])
 console.log(res)
