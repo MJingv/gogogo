@@ -37,7 +37,6 @@ var change = function (amount, coins) {
 
 // 474. Ones and Zeroes
 // 输入：strs = ["10", "0001", "111001", "1", "0"], m = 5, n = 3 输出：4
-
 var findMaxForm = function (strs, m, n) {
     const len = strs.length
     if (!len) return 0
@@ -63,8 +62,35 @@ var findMaxForm = function (strs, m, n) {
 
     return dp[m][n]
 };
-const res = findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3)
+// const res = findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3)
+
+
 // 494. Target Sum
+// 输入：nums = [1,1,1,1,1], target = 3 输出：5
+var findTargetSumWays = function (nums, target) {
+    // 正数和p，负数和n
+    // p+n=sum
+    // p-n=target
+    // p= (sum+target)/2
+    const len = nums.length
+    if (!len) return 0
+    const sum = nums.reduce((a, b) => a + b)
+    if (sum < Math.abs(target) || (sum + target) % 2) return 0
+    const aim = (sum + target) / 2
+    const dp = Array(aim + 1).fill(0) //目标是n的个数
+    dp[0] = 1
+
+    for (let i = 0; i < len; i++) {
+        const cur = nums[i]
+        for (let j = aim; j >= cur; j--) {
+            dp[j] += dp[j - cur]
+        }
+    }
+
+    return dp[aim] || 0
+
+};
+const res = findTargetSumWays([1, 1, 1, 1, 1], 3)//5
 
 
 console.log(res)
