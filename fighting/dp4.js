@@ -119,12 +119,29 @@ const rob = (root) => {
         return res
     }
     return Math.max(...helper(root))
-
-
 }
-const res = rob(t1)
 // 剑指 Offer II 089. 房屋偷盗
 
 // 剑指 Offer II 090. 环形房屋偷盗
 
+// const res = canCompleteCircuit(t1)
+
+
+// -------------------------------------------speedy---------------------------------------------------
+// 贪心
+// 134. 加油站
+// 输入: gas = [1,2,3,4,5], cost = [3,4,5,1,2] 输出: 3
+var canCompleteCircuit = function (gas, cost) {
+    const [m, n] = [gas.length, cost.length]
+    let res = -1
+
+
+
+
+
+    return res
+};
+const res = canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2])
 console.log(res)
+
+

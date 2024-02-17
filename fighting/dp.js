@@ -221,6 +221,34 @@ var longestPalindromeSubseq = function (s) {
     return dp[0][len - 1]
 
 };
-const res = longestPalindromeSubseq('bbbab')
+// const res = longestPalindromeSubseq('bbbab')
 
+// 409 最长回文串
+// 输入:s = "abccccdd" 输出:7 解释: 我们可以构造的最长的回文串是"dccaccd", 它的长度是 7。
+var longestPalindrome = function (s) {
+    const len = s.length
+    if (len <= 1) return len
+    let res = 0
+    const map = new Map()
+    for (let i = 0; i < len; i++) {
+        map.set(s[i], (map.get(s[i]) || 0) + 1)
+    }
+    for (let [key, val] of map) {
+        res += Math.floor(val / 2) * 2
+        if (res % 2 === 0 && val % 2 === 1) res++
+
+    }
+    return res
+};
+// const res = longestPalindrome('abccccdd')
+
+
+// 5 最长回文子串
+// 输入：s = "babad"输出："bab"解释："aba" 同样是符合题意的答案。
+var longestPalindrome = function (s) {
+    const len = s.length
+
+
+};
+const res = longestPalindrome('babad')
 console.log(res)
