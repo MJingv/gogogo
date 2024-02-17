@@ -182,6 +182,45 @@ var longestCommonSubsequence = function (text1, text2) {
     }
     return dp[m - 1][n - 1]
 };
+const longestCommonSubsequence1 = (text1, text2) => {
+    const [m, n] = [text1.length, text2.length]
+    const dp = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0)) //以i结尾的最长数量
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (text1[i - 1] === text2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
+            }
+
+        }
+    }
+    return dp[m][n]
+
+}
 // 输入：text1 = "abcde", text2 = "ace" 输出：3 解释：最长公共子序列是 "ace" ，它的长度为 3 。
-const res = longestCommonSubsequence('abcde', 'ace')
+// const res = longestCommonSubsequence1('abcde', 'ace')
+
+// 516. 最长回文子序列
+// 输入：s = "bbbab" 输出：4 解释：一个可能的最长回文子序列为 "bbbb" 。
+var longestPalindromeSubseq = function (s) {
+    const len = s.length
+    const dp = Array(len).fill(0).map(() => Array(len).fill(0))
+    for (let i = 0; i < len; i++) dp[i][i] = 1
+
+
+    for (let i = len - 1; i >= 0; i--) {
+        for (let j = i + 1; j < len; j++) {
+            if (s[i] === s[j]) {
+                dp[i][j] = dp[i + 1][j - 1] + 2
+            } else {
+                dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1])
+            }
+        }
+    }
+    return dp[0][len - 1]
+
+};
+const res = longestPalindromeSubseq('bbbab')
+
 console.log(res)
