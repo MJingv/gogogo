@@ -41,7 +41,37 @@ var permute = function (nums) {
     return res
 
 };
-const res = permute([1, 2, 3])// 输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+// const res = permute([1, 2, 3])// 输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+
+// 47. 全排列 II
+// 给定一个可包含重复数字的序列 nums ，按任意顺序 返回所有不重复的全排列
+// 输入：nums = [1,1,2] 输出： [[1,1,2], [1,2,1], [2,1,1]]
+var permuteUnique = function (nums) {
+    const len = nums.length
+    const [path, res] = [[], []]
+    nums.sort()
+    const helper = (used = {}) => {
+        if (path.length === len) return res.push(path.slice())
+
+        for (let i = 0; i < len; i++) {
+            if (used[i]) continue
+            if (i > 0 && nums[i - 1] === nums[i] && !used[i - 1]) continue
+            path.push(nums[i])
+            used[i] = true
+            helper(used)
+            path.pop()
+            used[i] = false
+        }
+
+    }
+
+    helper()
+
+    return res
+
+};
+const res = permuteUnique([1, 1, 2])
 
 
 // 剑指 Offer II 083. 没有重复元素集合的全排列
