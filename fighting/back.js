@@ -163,7 +163,33 @@ var combinationSum2 = function (candidates, target) {
     return res
 
 };
-const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)// 输出: [ [1,1,6], [1,2,5], [1,7], [2,6] ]
+// const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)// 输出: [ [1,1,6], [1,2,5], [1,7], [2,6] ]
+
+
+// 扣第 39 题「组合总和」：
+// 输入：candidates = [2,3,6,7], target = 7 输出：[[2,2,3],[7]]
+// candidates 中的 同一个 数字可以 无限制重复被选取 。如果至少一个数字的被选数量不同，则两种组合是不同的。
+var combinationSum = function (candidates, target) {
+    const len = candidates.length
+    const [res, path] = [[], []]
+    const helper = (start = 0, sum = 0) => {
+        if (sum === target) return res.push(path.slice())
+        if (sum > target) return
+        for (let i = start; i < len; i++) {
+            const cur = candidates[i]
+            path.push(cur)
+            sum += cur
+            helper(i, sum) //todo 当前值被无限次利用(tql)
+            path.pop();
+            sum -= cur
+        }
+
+    }
+    helper()
+    return res
+
+};
+const res = combinationSum([2, 3, 6, 7], 7)
 
 // 51. N 皇后
 // 输入：n = 4 输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
