@@ -1,5 +1,8 @@
 // 回溯专题 -排列组合
 
+// 全排列used，子集组合start
+
+
 // 回溯算法是在遍历「树枝」，DFS 算法是在遍历「节点」
 
 // result = []
@@ -114,8 +117,53 @@ var combine = function (n, k) {
     return res
 
 };
-const res = combine(4, 2)//[[2, 4], [3, 4], [2, 3], [1, 2], [1, 3], [1, 4],]
+// const res = combine(4, 2)//[[2, 4], [3, 4], [2, 3], [1, 2], [1, 3], [1, 4],]
 
+// 力扣第 90 题「子集 II」
+// 输入：nums = [1,2,2] 输出：[[],[1],[1,2],[1,2,2],[2],[2,2]]
+var subsetsWithDup = function (nums) {
+    const len = nums.length
+    const [res, path] = [[], []]
+    nums.sort()
+    const helper = (start = 0) => {
+        res.push(path.slice())
+        for (let i = start; i < len; i++) {
+            if (nums[i] === nums[i - 1] && i > start) continue
+            path.push(nums[i])
+            helper(i + 1)
+            path.pop()
+        }
+
+    }
+    helper()
+    return res
+};
+// const res = subsetsWithDup([1, 2, 2])
+
+// 力扣第 40 题「组合总和 II」：
+// candidates 中的每个数字在每个组合中只能使用 一次 。
+var combinationSum2 = function (candidates, target) {
+
+    const len = candidates.length
+    const [path, res] = [[], []]
+    candidates.sort()
+    const helper = (start = 0, sum = 0) => {
+        if (sum === target) return res.push(path.slice())
+        for (let i = start; i < len; i++) {
+            const cur = candidates[i]
+            if (cur > target || sum > target || i > start && cur === candidates[i - 1]) continue
+            path.push(cur)
+            sum += cur
+            helper(i + 1, sum)
+            path.pop()
+            sum -= cur
+        }
+    }
+    helper()
+    return res
+
+};
+const res = combinationSum2([10, 1, 2, 7, 6, 1, 5], 8)// 输出: [ [1,1,6], [1,2,5], [1,7], [2,6] ]
 
 // 51. N 皇后
 // 输入：n = 4 输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
