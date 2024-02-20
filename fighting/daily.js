@@ -47,8 +47,50 @@ const binarySearch1 = (list, key) => {
     }
     return -1
 }
+// const res = binarySearch1([1, 3, 8, 9, 14, 99], 14)
+
+const quickSort1 = (arr = []) => {
+    const len = arr.length
+    if (!len) return []
+    const [left, right, equal] = [[], [], []]
+    const q = Math.floor(len / 2)
+    const cur = arr[q]
+    for (let i = 0; i < len; i++) {
+        if (cur === arr[i]) equal.push(arr[i])
+        if (cur < arr[i]) right.push(arr[i])
+        if (cur > arr[i]) left.push(arr[i])
+    }
+    return [...quickSort1(left), ...equal, ...quickSort1(right)]
 
 
-const res = binarySearch1([1, 3, 8, 9, 14, 99], 14)
+}
+// const res = quickSort1(arr)
+
+
+const merge = (left = [], right = []) => {
+    const [l1, l2] = [left.length, right.length]
+    let [i, j] = [0, 0]
+    const res = []
+    while (i < l1 && j < l2) {
+        if (left[i] < right[j]) {
+            res.push(left[i++])
+        } else {
+            res.push(right[j++])
+        }
+
+    }
+    while (i < l1) res.push(left[i++])
+    while (j < l2) res.push(right[j++])
+    return res
+}
+
+const mergeSort = (arr = []) => {
+    const len = arr.length
+    if (len <= 1) return arr
+    const mid = Math.floor(len / 2)
+    return merge(mergeSort(arr.slice(0, mid)), mergeSort(arr.slice(mid)))
+
+}
+const res = mergeSort(arr)
 
 console.log(res)

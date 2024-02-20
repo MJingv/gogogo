@@ -227,23 +227,11 @@ var updateMatrix = function (mat) {
             if (j < n - 1) dp[i][j] = Math.min(dp[i][j], dp[i][j + 1] + 1)
         }
     }
-
-
     return dp
 };
 // const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
 // 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
 
-
-// LeetCode 207. 课程表
-var canFinish = function (numCourses, prerequisites) {
-
-};
-// const res = canFinish()
-// LeetCode 210. 课程表 II
-var findOrder = function (numCourses, prerequisites) {
-
-};
 
 // LeetCode 994. 腐烂的橘子
 // 输入：grid = [[2,1,1],[1,1,0],[0,1,1]] 输出：4
@@ -281,7 +269,21 @@ var orangesRotting = function (grid) {
     return fresh === 0 ? res : -1
 
 };
-const res = orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]])
+// const res = orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]])
+
+//  LeetCode 207. 课程表
+var canFinish = function (numCourses, prerequisites) {
+
+};
+const res = canFinish()
+
+
+
+// LeetCode 210. 课程表 II
+var findOrder = function (numCourses, prerequisites) {
+
+};
+
 
 console.log(res)
 
