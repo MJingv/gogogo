@@ -17,8 +17,7 @@ var BFS = function (start, target) {
         for (var i = 0; i < sz; i++) {
             var cur = q.shift();
             /* 划重点：这里判断是否到达终点 */
-            if (cur == target)
-                return step;
+            if (cur == target) return step;
             /* 将 cur 的相邻节点加入队列 */
             var adj = cur.adj();
             for (var j = 0; j < adj.length; j++) {
@@ -132,16 +131,96 @@ var openLock = function (deadends, target) {
 };
 // const res = openLock(["0201", "0101", "0102", "1212", "2002"], "0202")
 
-// LeetCode 102. 二叉树的层序遍历
+
 // LeetCode 200. 岛屿数量
-// LeetCode 127. 单词接龙
-// LeetCode 207. 课程表
-// LeetCode 210. 课程表 II
+// 给你一个由 '1'（陆地）和 '0'（水）组成的的二维网格，请你计算网格中岛屿的数量。岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。
+var numIslands = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+    let res = 0
+
+    const helper = (i, j) => {
+        if (i < 0 || j < 0 || i >= m || j >= n || grid[i][j] === '0') return
+        grid[i][j] = '0'
+        helper(i - 1, j)
+        helper(i + 1, j)
+        helper(i, j - 1)
+        helper(i, j + 1)
+    }
+
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === '1') {
+                helper(i, j)
+                res++
+            }
+        }
+    }
+
+    return res
+
+};
+// const res = numIslands([["1", "1", "0", "0", "0"], ["1", "1", "0", "0", "0"], ["0", "0", "1", "0", "0"], ["0", "0", "0", "1", "1"]])
+
+
 // LeetCode 279. 完全平方数
-// LeetCode 994. 腐烂的橘子
-// LeetCode 429. N叉树的层序遍历
+// 给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。
+// 输入：n = 13 输出：2 解释：13 = 4 + 9
+var numSquares = function (n) {
+    if (!n) return 0
+    const dp = Array(n + 1).fill(Infinity)
+    dp[0] = 0
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j * j <= i; j++) {
+            console.log(i, j)
+            dp[i] = Math.min(dp[i - 1], dp[i - j * j]) + 1
+        }
+    }
+
+    return dp[n - 1]
+};
+// const res = numSquares(13)
+
 // LeetCode 515. 在每个树行中找最大值
+
+var largestValues = function (root) {
+    if (!root) return []
+    const [res, q] = [[], [root]]
+    let max = -Infinity
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            max = Math.max(max, cur.val)
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.push(max)
+        max = -Infinity
+    }
+
+    return res
+
+
+};
+const res = largestValues(t1)
+
 // LeetCode 542. 01 矩阵
 
 
+// LeetCode 994. 腐烂的橘子
+
+// LeetCode 127. 单词接龙 hard
+
+// LeetCode 207. 课程表
+var canFinish = function (numCourses, prerequisites) {
+
+};
+// const res = canFinish()
+// LeetCode 210. 课程表 II
+var findOrder = function (numCourses, prerequisites) {
+
+};
+
+
 console.log(res)
+
