@@ -78,17 +78,70 @@ var minDepth2 = function (root) {
     }
     return res
 }
-const res = minDepth2(t1)
+// const res = minDepth2(t1)
 
 // 752. 打开转盘锁
 // 剑指 Offer II 109. 开密码锁
+// 输入：deadends = ["0201","0101","0102","1212","2002"], target = "0202" 输出：6
+
 
 var openLock = function (deadends, target) {
+    const len = deadends.length
+    let res = 0
+    const q = ['0000']
+    const visited = new Set('0000')
+
+    const plusOne = (s, i) => {
+        const list = s.split('')
+        list[i] = list[i] === '9' ? '0' : (Number(list[i]) + 1) + ''
+        return list.join('')
+
+
+    }
+    const minusOne = (s, i) => {
+        const list = s.split('')
+        list[i] = list[i] === '0' ? '9' : (Number(list[i]) - 1) + ''
+        return list.join('')
+
+    }
+
+    while (q.length) {
+        const len = q.length
+        for (let i = 0; i < len; i++) {
+            let cur = q.shift()
+            if (deadends.includes(cur)) continue
+            if (target === cur) return res
+            for (let i = 0; i < 4; i++) {
+                let up = plusOne(cur, i)
+                if (!visited.has(up)) {
+                    q.push(up)
+                    visited.add(up)
+                }
+                let down = minusOne(cur, i)
+                if (!visited.has(down)) {
+                    q.push(down)
+                    visited.add(down)
+                }
+            }
+        }
+        res++
+    }
+
+    return -1
 
 };
+// const res = openLock(["0201", "0101", "0102", "1212", "2002"], "0202")
 
-
-// const res = openLock()
+// LeetCode 102. 二叉树的层序遍历
+// LeetCode 200. 岛屿数量
+// LeetCode 127. 单词接龙
+// LeetCode 207. 课程表
+// LeetCode 210. 课程表 II
+// LeetCode 279. 完全平方数
+// LeetCode 994. 腐烂的橘子
+// LeetCode 429. N叉树的层序遍历
+// LeetCode 515. 在每个树行中找最大值
+// LeetCode 542. 01 矩阵
 
 
 console.log(res)

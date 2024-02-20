@@ -132,6 +132,22 @@ var rob = function (root) {
 
 
 };
-const res = rob(t1)
+// const res = rob(t1)
 
+
+// 105 前序和中序构造二叉树
+// 输入: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] 输出: [3,9,20,null,null,15,7]
+var buildTree = function (preorder, inorder) {
+    // todo buildtree不要helper，改变的是本身
+    const [l1, l2] = [preorder.length, inorder.length]
+    if (!l1 || !l2) return null
+    if (l1 === 1) return new TreeNode(l1[0])
+    const cur = preorder.shift()
+    const node = new TreeNode(cur)
+    const index = inorder.indexOf(cur)
+    node.left = buildTree(preorder, inorder.slice(0, index))
+    node.right = buildTree(preorder, inorder.slice(index + 1))
+    return node
+};
+const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
 console.log(res)
