@@ -231,12 +231,9 @@ var updateMatrix = function (mat) {
 
     return dp
 };
-const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
+// const res = updateMatrix([[0, 0, 0], [0, 1, 0], [1, 1, 1]])
 // 输入：mat = [[0,0,0],[0,1,0],[1,1,1]] 输出：[[0,0,0],[0,1,0],[1,2,1]]
 
-// LeetCode 994. 腐烂的橘子
-
-// LeetCode 127. 单词接龙 hard
 
 // LeetCode 207. 课程表
 var canFinish = function (numCourses, prerequisites) {
@@ -248,6 +245,43 @@ var findOrder = function (numCourses, prerequisites) {
 
 };
 
+// LeetCode 994. 腐烂的橘子
+// 输入：grid = [[2,1,1],[1,1,0],[0,1,1]] 输出：4
+// 值 0 代表空单元格；值 1 代表新鲜橘子；值 2 代表腐烂的橘子。
+// 每分钟，腐烂的橘子 周围 4 个方向上相邻 的新鲜橘子都会腐烂。
+// 返回 直到单元格中没有新鲜橘子为止所必须经过的最小分钟数。如果不可能，返回 -1 。
+var orangesRotting = function (grid) {
+    const [m, n] = [grid.length, grid[0].length]
+    let res = 0, fresh = 0
+    const q = []
+    const dir = [[-1, 0], [1, 0], [0, -1], [0, 1]]
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1) fresh++
+            if (grid[i][j] === 2) q.push([i, j])
+        }
+    }
+
+    while (q.length && fresh) {
+        const len = q.length
+
+        for (let i = 0; i < len; i++) {
+            const [row, col] = q.shift()
+            for (let [dx, dy] of dir) {
+                const x = dx + row, y = dy + col
+                if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] === 1) {
+                    grid[x][y] = 2
+                    q.push([x, y])
+                    fresh--
+                }
+            }
+        }
+        res++
+    }
+    return fresh === 0 ? res : -1
+
+};
+const res = orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]])
 
 console.log(res)
 
