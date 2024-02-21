@@ -62,11 +62,25 @@ var findOrder = function (numCourses, prerequisites) {
 
     return res.reverse()
 };
-const res = findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]])
+// const res = findOrder(4, [[1, 0], [2, 0], [3, 1], [3, 2]])
 
 // 797. 所有可能的路径
+// 有向无环
+// 请你找出所有从节点 0 到节点 n-1 的路径并输出（不要求按特定顺序）
+// 输入：graph = [[1,2],[3],[3],[]] 输出：[[0,1,3],[0,2,3]] 解释：有两条路径 0 -> 1 -> 3 和 0 -> 2 -> 3
 var allPathsSourceTarget = function (graph) {
+    const n = graph.length
+    const res = []
+    const helper = (i, path = []) => {
+        path.push(i)
+        if (i === n - 1) return res.push(path)
+        for (let j of graph[i]) {
+            helper(j, path.slice())
+        }
 
+    }
+    helper(0)
+    return res
 };
-// const res = allPathsSourceTarget()
+const res = allPathsSourceTarget([[1, 2], [3], [3], []])
 console.log(res)
