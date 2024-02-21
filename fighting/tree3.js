@@ -156,14 +156,12 @@ var buildTree = function (preorder, inorder) {
 var buildTree = function (inorder, postorder) {
     const [l1, l2] = [inorder.length, postorder.length]
     if (!l1 || !l2) return null
-    if (l2 === 1) return new TreeNode(postorder[0])
     const cur = postorder.pop()
     const node = new TreeNode(cur)
     const index = inorder.indexOf(cur)
+    node.right = buildTree(inorder.slice(index + 1), postorder)
     node.left = buildTree(inorder.slice(0, index), postorder)
-    node.right = buildTree(inorder.slice(index), postorder)
     return node
 };
-const res = buildTree([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
-
+// const res = buildTree([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
 console.log(res)
