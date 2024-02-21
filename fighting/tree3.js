@@ -141,7 +141,7 @@ var buildTree = function (preorder, inorder) {
     // todo buildtree不要helper，改变的是本身
     const [l1, l2] = [preorder.length, inorder.length]
     if (!l1 || !l2) return null
-    if (l1 === 1) return new TreeNode(l1[0])
+    if (l1 === 1) return new TreeNode(preorder[0])
     const cur = preorder.shift()
     const node = new TreeNode(cur)
     const index = inorder.indexOf(cur)
@@ -149,5 +149,21 @@ var buildTree = function (preorder, inorder) {
     node.right = buildTree(preorder, inorder.slice(index + 1))
     return node
 };
-const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+// const res = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+
+
+// 106 后序和中序构造二叉树
+var buildTree = function (inorder, postorder) {
+    const [l1, l2] = [inorder.length, postorder.length]
+    if (!l1 || !l2) return null
+    if (l2 === 1) return new TreeNode(postorder[0])
+    const cur = postorder.pop()
+    const node = new TreeNode(cur)
+    const index = inorder.indexOf(cur)
+    node.left = buildTree(inorder.slice(0, index), postorder)
+    node.right = buildTree(inorder.slice(index), postorder)
+    return node
+};
+const res = buildTree([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
+
 console.log(res)
