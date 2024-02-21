@@ -271,19 +271,5 @@ var orangesRotting = function (grid) {
 };
 // const res = orangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]])
 
-//  LeetCode 207. 课程表
-var canFinish = function (numCourses, prerequisites) {
 
-};
-const res = canFinish()
-
-
-
-// LeetCode 210. 课程表 II
-var findOrder = function (numCourses, prerequisites) {
-
-};
-
-
-console.log(res)
 
