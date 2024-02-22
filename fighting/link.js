@@ -16,7 +16,6 @@ class ListNode {
 }
 
 const l5 = new ListNode(5)
-
 const l4 = new ListNode(4, l5)
 const l3 = new ListNode(3, l4)
 const l2 = new ListNode(2, l3)
@@ -138,6 +137,107 @@ var middleNode = function (head) {
     return p1
 
 };
-const res = middleNode(l1)
+// const res = middleNode(l1)
+
+const hasCycle = (head) => {
+    let [slow, fast] = [head, head]
+    while (slow && fast && fast.next) {
+        slow = slow.next
+        fast = fast.next.next
+        if (fast === slow) return true
+    }
+    return false
+
+}
+// const res = hasCycle(l1)
+
+// 力扣第 142 题「环形链表 II」
+// 给定一个链表的头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
+
+var detectCycle = function (head) {
+    // 快慢指针判断有无环
+    // 一个从头开始，二次相遇就是起点
+    let [slow, fast] = [head, head]
+
+    while (slow && fast && fast.next) {
+        slow = slow.next
+        fast = fast.next.next
+        if (slow === fast) break
+    }
+    if (!fast || !fast.next) return null
+    slow = head
+    while (slow != fast) {
+        slow = slow.next
+        fast = fast.next
+    }
+    return slow
+
+};
+
+// 力扣第 160 题「相交链表」
+var getIntersectionNode = function (headA, headB) {
+    let [p1, p2] = [headA, headB]
+    while (p1 !== p2) {
+        p1 = p1 ? p1.next : headB
+        p2 = p2 ? p2.next : headA
+    }
+    return p1
+};
+
+// 206. 反转链表
+var reverseList = function (head) {
+    if (!head) return null
+    let pre = null, cur = head
+    while (cur) {
+        let next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+    }
+    return pre
+}
+
+var reverseList = function (head) {
+    // 原地反转
+    if (!head) return null
+    let [cur, pre] = [head, null]
+    while (cur) {
+        let next = cur.next
+        cur.next = pre //反转
+        pre = cur //向后1
+        cur = next //向后1
+    }
+    return pre
+};
+var reverseList1 = function (head) {
+    // 以head为头反转，返回反转后的头节点
+    if (!head || !head.next) return head
+    const h = reverseList1(head.next)
+    head.next.next = head
+    head.next = null
+    return h
+}
+
+// const res = reverseList1(l1)
+
+const reverseN = (head, n) => {
+    let post = null
+    const helper = () => {
+        const h = reverseN(head.next, n - 1)
+        head.next.next = head
+        head.next = post
+    }
+
+
+
+}
+const res = reverseN(l1, 3)
+
+// 92
+var reverseBetween = function (head, left, right) {
+
+
+};
+// const res = reverseBetween(l1, 2, 4)
 
 console.log(res)
