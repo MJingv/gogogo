@@ -42,5 +42,29 @@ var findSquare = function (matrix) {
 
 };
 // 输入: [ [1,0,1], [0,0,1], [0,0,1] ] 输出: [1,0,2] 解释: 输入中 0 代表黑色，1 代表白色，标粗的元素即为满足条件的最大子方阵
-const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
+// const res = findSquare([[1, 0, 1], [0, 0, 1], [0, 0, 1]])
+// console.log(res)
+
+// 887 鸡蛋掉落
+// 给你 k 枚相同的鸡蛋，并可以使用一栋从第 1 层到第 n 层共有 n 层楼的建筑。
+// 请你计算并返回要确定 f 确切的值 的 最小操作次数 是多少？
+// 输入：k = 2, n = 6 输出：3
+var superEggDrop = function (k, n) {
+    let res = Infinity
+    const memo = Array(k + 1).fill(Infinity).map(i => Array(n + 1).fill(Infinity))
+    const help = (K, N) => {
+        if (K === 1) return N //只有一个鸡蛋，最多n次
+        if (N === 0) return 0
+        if (memo[K][N]) return memo[K][N]
+        for (let i = 1; i <= n; i++) {
+            res = Math.min(res, Math.max(help(K, N - i), help(K - 1, i - 1)) + 1)
+            console.log(res)
+        }
+        memo[K][N] = res
+        return res
+    }
+    // console.log(memo)
+    return help(k, n)
+};
+const res = superEggDrop(2, 6)
 console.log(res)
