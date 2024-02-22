@@ -164,4 +164,21 @@ var buildTree = function (inorder, postorder) {
     return node
 };
 // const res = buildTree([9, 3, 15, 20, 7], [9, 15, 7, 20, 3])
+
+// 889 前序+后序构造二叉树
+var constructFromPrePost = function (preorder, postorder) {
+    // 相互找到分割节点
+    const [l1, l2] = [preorder.length, postorder.length]
+    if (!l1 || !l2) return null
+    const cur = preorder.shift()
+    const node = new TreeNode(cur)
+    const index = postorder.indexOf(preorder[0])
+    node.left = constructFromPrePost(preorder, postorder.slice(0, index + 1))
+    node.right = constructFromPrePost(preorder, postorder.slice(index + 1, -1)) //记得把跟删除了
+    return node
+
+};
+const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
+// 输入：preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1] 输出：[1,2,3,4,5,6,7]
+
 console.log(res)
