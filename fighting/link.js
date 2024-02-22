@@ -220,18 +220,35 @@ var reverseList1 = function (head) {
 
 // const res = reverseList1(l1)
 
+// 反转链表前 N 个节点
 const reverseN = (head, n) => {
     let post = null
-    const helper = () => {
-        const h = reverseN(head.next, n - 1)
+    const helper = (head, k) => {
+        if (k === 1) {
+            post = head.next
+            return head
+        }
+        const h = helper(head.next, k - 1)
         head.next.next = head
         head.next = post
+        return h
     }
-
-
-
+    return helper(head, n)
 }
-const res = reverseN(l1, 3)
+const reverseN1 = (head, n) => {
+    if (!head) return null
+    let pre = null, cur = head
+    for (let i = 0; i < n; i++) {
+        let tmp = cur.next
+        cur.next = pre
+        pre = cur
+        cur = tmp
+    }
+    head.next = cur
+    return pre
+}
+
+const res = JSON.stringify(reverseN1(l1, 3))
 
 // 92
 var reverseBetween = function (head, left, right) {

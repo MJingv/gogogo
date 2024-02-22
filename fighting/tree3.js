@@ -178,7 +178,30 @@ var constructFromPrePost = function (preorder, postorder) {
     return node
 
 };
-const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
+// const res = constructFromPrePost([1, 2, 4, 5, 3, 6, 7], [4, 5, 2, 6, 7, 3, 1])
 // 输入：preorder = [1,2,4,5,3,6,7], postorder = [4,5,2,6,7,3,1] 输出：[1,2,3,4,5,6,7]
+
+
+// 2583
+var kthLargestLevelSum = function (root, k) {
+    if (!root || !k) return 0
+    const q = [root]
+    const res = []
+
+    while (q.length) {
+        const len = q.length
+        let sum = 0
+        for (let i = 0; i < len; i++) {
+            const cur = q.shift()
+            sum += cur.val
+            cur.left && q.push(cur.left)
+            cur.right && q.push(cur.right)
+        }
+        res.push(sum)
+    }
+    res.sort((a, b) => b - a)
+    return k > res.length ? -1 : res[k - 1]
+};
+const res = kthLargestLevelSum(t1, 2)
 
 console.log(res)
