@@ -9,13 +9,15 @@
 // 链表的合并和拆分：在处理一些复杂的链表问题时，我们可能需要将链表合并或者拆分。
 
 class ListNode {
-    constructor(val, next) {
+    constructor(val, next = null) {
         this.val = val
-        this.next = next || null
+        this.next = next
     }
 }
 
-const l4 = new ListNode(4)
+const l5 = new ListNode(5)
+
+const l4 = new ListNode(4, l5)
 const l3 = new ListNode(3, l4)
 const l2 = new ListNode(2, l3)
 const l1 = new ListNode(1, l2)
@@ -46,5 +48,82 @@ var mergeTwoLists = function (list1, list2) {
     return dummy.next
 };
 
-const res = mergeTwoLists(l1)
+// const res = mergeTwoLists(l1)
+
+
+// 86
+var partition = function (head, x) {
+    const dummy1 = new ListNode(-1)
+    const dummy2 = new ListNode(-1)
+    let [p1, p2, p] = [dummy1, dummy2, head]
+
+
+    while (p) {
+        if (p.val < x) {
+            p1.next = p
+            p1 = p1.next
+        } else {
+            p2.next = p
+            p2 = p2.next
+        }
+        const tmp = p.next
+        p.next = null
+        p = tmp
+    }
+
+
+    p1.next = dummy2.next
+    return dummy1.next
+
+};
+// const res = JSON.stringify(partition(l1, 0))
+
+
+// 力扣第 23 题「合并K个升序链表」：
+var mergeKLists = function (lists) {
+    const len = lists.length
+    if (!len) return null
+
+};
+// const res = mergeKLists([l1, l3])
+
+const findFromEnd = (head, k) => {
+    let [p1, p] = [head, head]
+
+    for (let i = 0; i < k; i++) {
+        p = p.next
+    }
+
+    while (p) {
+        p = p.next
+        p1 = p1.next
+    }
+    return p1
+}
+
+// const res = findFromEnd(l1, 2)
+
+// 力扣第 19 题「删除链表的倒数第 N 个结点」：
+// 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
+var removeNthFromEnd = function (head, n) {
+    const findFromEnd = (head, k) => {
+        let [p, p1] = [head, head]
+        for (let i = 0; i < k; i++) {
+            p = p.next
+        }
+        while (p) {
+            p = p.next
+            p1 = p1.next
+        }
+        return p1
+    }
+
+    const dummy = new TreeNode(-1)
+    dummy.next = head
+    const x = findFromEnd(dummy, n + 1)
+    x.next = x.next.next
+    return dummy.next
+
+};
+const res = removeNthFromEnd(l1, 2)
 console.log(res)
