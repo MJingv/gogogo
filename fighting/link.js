@@ -248,13 +248,32 @@ const reverseN1 = (head, n) => {
     return pre
 }
 
-const res = JSON.stringify(reverseN1(l1, 3))
+// const res = JSON.stringify(reverseN1(l1, 3))
 
 // 92
 var reverseBetween = function (head, left, right) {
+    if (!head) return null
 
+    const reverseN = (head, n) => {
+        //反转前n个
+        if (!head) return null
+        let pre = null, cur = head
+        for (let i = 0; i < n; i++) {
+            let tmp = cur.next
+            cur.next = pre
+            pre = cur
+            cur = tmp
+        }
+        pre.next = cur
+        return pre
+
+    }
+
+    if (left === 1) return reverseN(head, right)
+    head.next = reverseBetween(head.next, left - 1, right - 1)
+    return head
 
 };
-// const res = reverseBetween(l1, 2, 4)
+const res = JSON.stringify(reverseBetween(l1, 2, 3))
 
 console.log(res)
