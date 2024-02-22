@@ -125,5 +125,19 @@ var removeNthFromEnd = function (head, n) {
     return dummy.next
 
 };
-const res = removeNthFromEnd(l1, 2)
+// const res = removeNthFromEnd(l1, 2)
+
+
+// 力扣第 876 题「链表的中间结点」
+var middleNode = function (head) {
+    let [p1, p2] = [head, head]
+    while (p1 && p2 && p2.next) {
+        p1 = p1.next
+        p2 = p2.next.next
+    }
+    return p1
+
+};
+const res = middleNode(l1)
+
 console.log(res)
