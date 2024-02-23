@@ -124,12 +124,9 @@ var exist = function (board, word) {
         if (row < 0 || row >= m || col < 0 || col >= n) return
         if (i === word.length) return res = true
         if (board[row][col] !== word[i]) return false
-        board[row][col] = -board[row][col]
-        helper(row + 1, col, i + 1)
-        helper(row - 1, col, i + 1)
-        helper(row, col + 1, i + 1)
-        helper(row, col - 1, i + 1)
-        board[row][col] = -board[row][col]
+        board[row][col] = board[row][col] + '-'
+        if ((helper(row + 1, col, i + 1) || helper(row - 1, col, i + 1) || helper(row, col + 1, i + 1) || helper(row, col - 1, i + 1))) return true
+        board[row][col] = board[row][col].slice(0, -1)
     }
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {

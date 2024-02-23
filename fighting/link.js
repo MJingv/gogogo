@@ -274,6 +274,25 @@ var reverseBetween = function (head, left, right) {
     return head
 
 };
-const res = JSON.stringify(reverseBetween(l1, 2, 3))
+// const res = JSON.stringify(reverseBetween(l1, 2, 3))
 
+// 234. 回文链表
+var isPalindrome = function (head) {
+    let cur = head, pre = null
+    while (cur) {
+        const node = new ListNode(cur.val)
+        node.next = pre
+        pre = node // pre返转新的链表
+        cur = cur.next
+    }
+    cur = head
+    while (cur) {
+        if (cur.val !== pre.val) return false
+        cur = cur.next
+        pre = pre.next
+    }
+
+    return true
+};
+const res = isPalindrome(l1)
 console.log(res)
