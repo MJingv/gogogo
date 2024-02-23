@@ -139,5 +139,73 @@ var exist = function (board, word) {
     return res
 
 };
-const res = exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED")
+
+// const res = exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED")
+
+
+class TreeNode {
+    constructor(val, left, right) {
+        this.val = val
+        this.left = left || null
+        this.right = right || null
+    }
+}
+
+const t0 = new TreeNode(0)
+const t2 = new TreeNode(2)
+const t4 = new TreeNode(4)
+const t3 = new TreeNode(3, t2, t4)
+const t1 = new TreeNode(1, t0, t3)
+
+
+// tree
+// 104
+var maxDepth = function (root) {
+    if (!root) return 0
+    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1
+};
+// const res = maxDepth(t1)
+
+//100
+var isSameTree = function (p, q) {
+    if (!q && !p) return true
+    if (!q || !p) return false
+    if (p.val !== q.val) return false
+    return isSameTree(p.left, q.left) && isSameTree(p.right, q.right)
+};
+// const res = isSameTree(t0, t0)
+
+
+var isSymmetric = function (root) {
+    if (!root) return false
+
+    const helper = (left, right) => {
+        if (!left && !right) return true
+        if (!left || !right) return false
+        if (left.val !== right.val) return false
+        return helper(left.left, right.right) && helper(left.right, right.left)
+    }
+
+    return helper(root.left, root.right)
+
+};
+// const res = isSymmetric(t1)
+
+
+// 98
+var isValidBST = function (root) {
+    if (!root) return true
+
+    const cur = root.val
+
+    if (root.left && (root.left >= cur)) return false
+    if (root.right && (root.right <= cur)) return false
+
+    const left = isValidBST(root.left)
+    const right = isValidBST(root.right)
+
+
+    return left && right
+};
+const res = isValidBST(t1)
 console.log(res)
