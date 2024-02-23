@@ -294,5 +294,44 @@ var isPalindrome = function (head) {
 
     return true
 };
-const res = isPalindrome(l1)
+
+const isPalindrome1 = (head) => {
+    // 快慢指针找中点
+    // 反转前面一半
+    // 比较前后2部分
+    if (!head) return null
+    let slow = head, fast = head
+    while (fast && fast.next) {
+        fast = fast.next.next
+        slow = slow.next
+    }
+    if (fast !== null) slow = slow.next
+
+    // slow 为中点，前的反转
+
+    const reverse = (head) => {
+        if (!head) return head
+        let cur = head, pre = null
+        while (cur) {
+            const tmp = cur.next
+            cur.next = pre
+            pre = cur
+            cur = tmp
+        }
+        return pre
+    }
+
+    let p = reverse(slow)
+
+    while (p) {
+        if (p.val !== head.val) return false
+        p = p.next
+        head = head.next
+    }
+    return true
+
+
+}
+
+const res = isPalindrome1(l1)
 console.log(res)
