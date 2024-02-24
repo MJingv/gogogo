@@ -193,19 +193,80 @@ var isSymmetric = function (root) {
 
 
 // 98
-var isValidBST = function (root) {
+var isValidBST = function (root, min = null, max = null) {
+    // todo 在二叉搜索树中，左子节点不仅要小于其父节点，还要小于所有的右祖先节点；同样，右子节点不仅要大于其父节点，还要大于所有的左祖先节点
     if (!root) return true
-
-    const cur = root.val
-
-    if (root.left && (root.left >= cur)) return false
-    if (root.right && (root.right <= cur)) return false
-
-    const left = isValidBST(root.left)
-    const right = isValidBST(root.right)
-
-
-    return left && right
+    if (min && root.val <= min) return false
+    if (max && root.val >= max) return false
+    return isValidBST(root.left, min, root.val) && isValidBST(root.right, root.val, max)
 };
-const res = isValidBST(t1)
+// const res = isValidBST(t1)
+
+// 2476
+var closestNodes = function (root, queries) {
+    // timeout
+    const len = queries.length
+    if (!root || !len) return []
+
+    const res = []
+
+    const helper = (node, key, left = -Infinity, right = Infinity) => {
+        if (!node) return [left === -Infinity ? -1 : left, right === Infinity ? -1 : right]
+        const cur = node.val
+        if (key === cur) return [cur, cur]
+        if (cur > key) {
+            right = Math.min(right, cur)
+            return helper(node.left, key, left, right)
+        }
+        if (cur < key) {
+            left = Math.max(left, cur)
+            return helper(node.right, key, left, right)
+        }
+    }
+    for (let i = 0; i < len; i++) {
+        const r = helper(root, queries[i])
+        res.push(r)
+    }
+    return res
+};
+var closestNodes1 = function (root, queries) {
+    const len = queries.length
+    if (!root || !len) return []
+    const res = [], list = []
+    const helper = (node) => {
+        if (!node) return null
+        helper(node.left)
+        list.push(node.val)
+        helper(node.right)
+    }
+    helper(root)
+
+    const find = (key, list) => {
+        const len = list.length
+        let left = 0, right = len - 1
+        while (left <= right) {
+            const mid = Math.floor((left + right) / 2)
+            const cur = list[mid]
+            if (cur === key) return [key, key]
+            if (cur < key) {
+                left = mid + 1
+            }
+            if (cur > key) {
+                right = mid - 1
+            }
+        }
+
+        return [list[left - 1] || -1, list[left] || -1]
+
+    }
+
+    for (let i = 0; i < len; i++) {
+        const r = find(queries[i], list)
+        res.push(r)
+    }
+    return res
+
+}
+const res = closestNodes1(t1, [0, 3.5, 10])
+
 console.log(res)
