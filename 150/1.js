@@ -308,5 +308,17 @@ var kthSmallest = function (root, k) {
     return res
 
 };
-const res = kthSmallest(t1, 1)
+// const res = kthSmallest(t1, 1)
+
+// 98
+var isValidBST = function (root, min = -Infinity, max = Infinity) {
+    if (!root) return true
+    if (root.val <= min || root.val >= max) return false
+
+    const left = isValidBST(root.left, min, root.val)
+    const right = isValidBST(root.right, root.val, max)
+    return left && right
+
+};
+const res = isValidBST(t1)
 console.log(res)
