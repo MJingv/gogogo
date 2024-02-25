@@ -364,10 +364,21 @@ var searchMatrix = function (matrix, target) {
     return false
 
 };
-const res = searchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 5)
+// const res = searchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 5)
 
 
 //162
+var findPeakElement = function (nums) {
+    const len = nums.length
+    if (!len) return -1
+    if (len === 1) return 0
+    for (let j = 1; j < len - 1; j++) {
+        if (nums[j - 1] < nums[j] && nums[j + 1] < nums[j]) return j
+    }
+    return nums[0] > nums[len - 1] ? 0 : len - 1
+
+};
+const res = findPeakElement([1, 2, 1, 3, 5, 6, 4])
 // 33
 // 34
 // 153
