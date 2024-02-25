@@ -202,6 +202,22 @@ var kthLargestLevelSum = function (root, k) {
     res.sort((a, b) => b - a)
     return k > res.length ? -1 : res[k - 1]
 };
-const res = kthLargestLevelSum(t1, 2)
+// const res = kthLargestLevelSum(t1, 2)
 
+
+var lowestCommonAncestor = function (root, p, q) {
+    if (!root) return null
+    if (q === p) return p
+
+    const helper = (node, father = null) => {
+        if (!node) return null
+        if (node === p || node === q) return node
+        const left = helper(node.left, node)
+        const right = helper(node.right, node)
+        return node
+
+    }
+    return helper(root)
+};
+const res = lowestCommonAncestor(t1, t1, t3)
 console.log(res)
