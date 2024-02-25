@@ -1,4 +1,4 @@
-// 回溯
+// ------------------------------------------------------------------------------------回溯---------------------------------------------------------------
 var letterCombinations = function (digits) {
     const len = digits.length
     const l = digits.split('')
@@ -158,7 +158,7 @@ const t3 = new TreeNode(3, t2, t4)
 const t1 = new TreeNode(1, t0, t3)
 
 
-// tree
+// ------------------------------------------------------------------------------------tree------------------------------------------------------------------------------------
 // 104
 var maxDepth = function (root) {
     if (!root) return 0
@@ -267,6 +267,46 @@ var closestNodes1 = function (root, queries) {
     return res
 
 }
-const res = closestNodes1(t1, [0, 3.5, 10])
+// const res = closestNodes1(t1, [0, 3.5, 10])
 
+
+// ------------------------------------------------------------------------------------二叉搜索树------------------------------------------------------------------------------------
+
+var getMinimumDifference = function (root) {
+    if (!root) return
+    let res = Infinity, pre = null
+    const helper = (node) => {
+        if (!node) return
+        helper(node.left)
+        res = Math.min(res, pre ? node.val - pre.val : Infinity)
+        pre = node
+        helper(node.right)
+
+    }
+    helper(root)
+    return res
+};
+// const res = getMinimumDifference(t1)
+
+// 230
+
+var kthSmallest = function (root, k) {
+    if (!root) return null
+    let i = 0, res = 0
+    const helper = (node) => {
+        if (!node) return
+        helper(node.left)
+        i++
+        if (i === k) {
+            res = node.val
+            return;
+        }
+
+        helper(node.right)
+    }
+    helper(root)
+    return res
+
+};
+const res = kthSmallest(t1, 1)
 console.log(res)
