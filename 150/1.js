@@ -379,6 +379,7 @@ var findPeakElement = function (nums) {
 
 };
 var findPeakElement1 = function (nums) {
+    // 单调+有界 可以二分
     const len = nums.length
     let i = 0, j = len - 1
     while (i < j) {
@@ -393,8 +394,39 @@ var findPeakElement1 = function (nums) {
     return i
 
 }
-const res = findPeakElement1([1, 2, 1, 3, 5, 6, 4])
-// 33
+// const res = findPeakElement1([1, 2, 1, 3, 5, 6, 4])
+
+// 33 搜索旋转排序数组
+var search = function (nums, target) {
+    const len = nums.length
+    let i = 0, j = len - 1
+    while (i <= j) {
+        const mid = Math.floor((i + j) / 2)
+        if (nums[mid] === target) {
+            return mid
+        }
+        if (nums[mid] <= nums[i]) {
+            // mid在第二个递增区间内
+            if (target > nums[mid] && target <= nums[j]) {
+                i = mid + 1;
+            } else {
+                j = mid - 1;
+            }
+        } else {
+            // mid在第一个递增区间内
+            if (target >= nums[i] && target < nums[mid]) {
+                j = mid - 1;
+            } else {
+                i = mid + 1;
+            }
+        }
+
+    }
+    return -1
+
+
+};
+const res = search([4, 5, 6, 7, 0, 1, 2], 0)
 // 34
 // 153
 // 4
