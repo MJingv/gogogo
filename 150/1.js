@@ -378,7 +378,22 @@ var findPeakElement = function (nums) {
     return nums[0] > nums[len - 1] ? 0 : len - 1
 
 };
-const res = findPeakElement([1, 2, 1, 3, 5, 6, 4])
+var findPeakElement1 = function (nums) {
+    const len = nums.length
+    let i = 0, j = len - 1
+    while (i < j) {
+        const mid = Math.floor((i + j) / 2)
+        if (nums[mid] < nums[mid + 1]) {
+            i = mid + 1
+        } else {
+            j = mid
+        }
+
+    }
+    return i
+
+}
+const res = findPeakElement1([1, 2, 1, 3, 5, 6, 4])
 // 33
 // 34
 // 153
