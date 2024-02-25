@@ -501,6 +501,31 @@ var findMin = function (nums) {
 // 66加一
 // 172阶乘后的0
 // 69 x的平方根
+var mySqrt = function (x) {
+    if (!x) return 0
+    if (x < 4) return 1
+    let max = Math.floor(x / 2)
+    let res = 0, i = 2, j = max
+
+    while (i <= j) {
+        const mid = Math.floor((i + j) / 2)
+        const cur = mid * mid
+        if (cur === x) {
+            return mid
+        } else if (cur < x) {
+            i = mid + 1
+        } else if (cur > x) {
+            j = mid - 1
+        }
+    }
+
+
+    return i - 1
+
+};
+// const res = mySqrt(10)
+
+
 // 50 pow（x,n）
 // 149 直线上最多的点数 hard
 
