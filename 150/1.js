@@ -268,7 +268,25 @@ var closestNodes1 = function (root, queries) {
 
 }
 // const res = closestNodes1(t1, [0, 3.5, 10])
+var rangeSumBST = function (root, low, high) {
+    if (!root) return 0
+    if (low > high) return -1
+    if (low === high) return low
+    let res = 0
 
+    const helper = (node) => {
+        if (!node) return 0
+        helper(node.left)
+        if (node.val >= low && node.val <= high) {
+            res += node.val
+        }
+        helper(node.right)
+    }
+    helper(root)
+    return res
+
+};
+const res = rangeSumBST(t1, 1, 3)
 
 // ------------------------------------------------------------------------------------二叉搜索树------------------------------------------------------------------------------------
 
