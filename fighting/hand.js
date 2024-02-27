@@ -13,7 +13,7 @@ function add(x, y) {
 }
 
 var add5 = add.mybind(this, 5);
-console.log(add5(3));
+// console.log(add5(3));
 
 
 // call/apply 立刻执行
@@ -41,15 +41,42 @@ const sayName = function (greeting) {
     console.log(greeting + this.name)
 }
 let p = {name: 'k'}
-const a = sayName.myapply(p, ['hello'])
+// const a = sayName.myapply(p, ['hello'])
 
-// console.log()
-
-
-// 继承
 
 // 节流/防抖
+
+const throttle = (fn, delay) => {
+    // 一秒一个
+    let pre = 0
+    return (...arg) => {
+        let now = Date.now()
+        if (now - pre > delay) {
+            fn.apply(this, arg)
+            pre = now
+        }
+    }
+
+}
+
+
+const debounce = (fn, delay) => {
+    // 只执行最后一个
+    let timer
+    return (...args) => {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+            fun.apply(this, args)
+        }, delay)
+    }
+}
+
+const f1 = console.log(111)
+throttle(f1, 100)
+
 
 // 深度克隆
 //promise
 // event listener
+
+// 继承
