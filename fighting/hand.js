@@ -66,9 +66,10 @@ const debounce = (fn, delay) => {
     return (...args) => {
         clearTimeout(timer)
         timer = setTimeout(() => {
-            fun.apply(this, args)
+            fn.apply(this, args)
         }, delay)
     }
+
 }
 
 const f1 = console.log(111)
