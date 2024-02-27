@@ -72,11 +72,34 @@ const debounce = (fn, delay) => {
 
 }
 
-const f1 = console.log(111)
-throttle(f1, 100)
+// const f1 = console.log(111)
+// throttle(f1, 100)
 
 
 // 深度克隆
+const deepClone = (obj, map = new WeakMap()) => {
+    if (!obj || typeof obj !== 'object') return obj
+
+    if (obj instanceof Date) return new Date(obj)
+    if (obj instanceof RegExp) return new RegExp(obj)
+
+    if (map.has(obj)) return map.get(obj)
+
+    let cloneObj = new obj.constructor
+    map.set(obj, cloneObj)
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            cloneObj[key] = deepClone(obj[key])
+        }
+    }
+    return cloneObj
+}
+const res = deepClone({
+    a: 1, b: [{pp: {val: 1111}}, 3, 99, 'ss'], d: {c: false}, kk: 0, d1d: {}
+})
+console.log(res)
+
+
 //promise
 // event listener
 
