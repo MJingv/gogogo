@@ -91,6 +91,84 @@ const mergeSort = (arr = []) => {
     return merge(mergeSort(arr.slice(0, mid)), mergeSort(arr.slice(mid)))
 
 }
-const res = mergeSort(arr)
+// const res = mergeSort(arr)
 
-console.log(res)
+Function.prototype.mybind = function (context, ...arg1) {
+    let t = this
+    return function (...arg2) {
+        return t.apply(context, [...arg1, ...arg2])
+
+    }
+
+}
+const add = function (a, b) {
+    return a + b
+}
+// const b = add.mybind(this, 3)
+// console.log(b(2))
+
+
+Function.prototype.mycall = function (context, ...arg) {
+    // 改变this指向
+    const func = Symbol('func')
+    context[func] = this
+    const res = context[func](...arg)
+    delete context[func]
+    return res
+
+
+}
+
+const p = {name: 'ppp'}
+const sayHi = function (greeting) {
+    console.log(greeting + this.name)
+}
+
+// sayHi.mycall(p, ['hello'])
+
+
+// throttle
+const throttle = (fn, delay) => {
+    let pre = 0
+    return (...arg) => {
+        const now = Date.now()
+        if (now - pre > delay) {
+            fn.apply(this, arg)
+            pre = now
+        }
+    }
+
+
+}
+// debounce
+
+const debounce = (fn, delay) => {
+    let timer = null
+    return (...arg) => {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+            fn.apply(this, arg)
+        }, delay)
+    }
+}
+
+// deepclone
+
+
+const deepClone = (obj, map = new Map()) => {
+    // bad case
+    if (!obj || typeof obj !== 'object') return obj
+    if (obj instanceof Date) return new Date(obj)
+    if (obj instanceof RegExp) return new RegExp(obj)
+    if (map.has(obj)) return map.get(obj)
+
+    let cloneObj = obj.constructor
+    map.set(obj, cloneObj)
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            cloneObj[key] = deepClone(obj[key])
+        }
+    }
+    return cloneObj
+}
+
