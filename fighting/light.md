@@ -29,13 +29,44 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
 - dart vm 支持jit+aot，保证开发效率
 - 视图数据给skia，再给openg/metal 图形api，最后给gpu渲染
 
-## webkit/blink渲染流程
+## 浏览器的webkit/blink渲染流程
 
 - 解析html生成dom-tree
 - 解析css与dom-tree生成render-tree
 - 给render-tree布局，重排
 - 绘制render-tree，重绘
 - 执行js，可以更改dom
+
+## rn渲染流程
+
+- 当state变化，react的组件tree（vdom）会计算新的组件tree
+- diff，比较新旧tree，计算最小更新操作
+- conciliation，生成一系列更新指令
+- 发送指令到native，通过bridge让native接受信息并改变组件
+- native执行更新。
+
+## flutter渲染流程
+
+## 绘制painting流程
+
+- 遍历渲染树，从root开发，层序遍历
+- 创建图层，对于css动画的节点会创建新的图层
+- 绘制内容，根据属性（颜色、边框、背景色等）绘制
+- 合成，将所有图层按正确顺序合并
+
+## 合成图层流程
+
+- 创建图层tree，根据rendertree创建一个图层tree
+- 计算图层属性，大小，位置，透明度等
+- 创建绘制列表，包含所有绘制命令
+- gpu合成
+
+## flutter渲染
+
+- 创建widget-tree，state变化会创建新的widget-tree
+- 布局layout，遍历widget-tree，root开始从上到下
+- 绘制plaint，从下向上遍历
+- 合成到layer tree，遍历layertree并绘制
 
 # machpro：quickjs+preact+组件+样式+bridge
 
@@ -51,6 +82,8 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
 
 - 之前的方式是solidjs+自建react，无vdom，响应式更新
 - 新方案preact直接操作dom
+
+#
 
 ## js引擎
 
@@ -108,6 +141,9 @@ vue2用Object.defineProperty实现响应式
 vue3用es6的proxy
 
 - 只支持es6，无法polyfill 
+
+
+
 
 
 
