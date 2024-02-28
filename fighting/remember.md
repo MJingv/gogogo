@@ -37,8 +37,26 @@ http缓存：强缓存、协商缓存
 跨域
 
 - schema、host、port3同则同域
-- 不同domain：不能读改对方dom、不对对方cookie/indexdb/localstorage、限制xhr请求
-- 浏览器拦截
+- 不同domain：不能读改对方dom、不对对方cookie/indexdb/localstorage、*限制xhr请求*
+- 浏览器拦截，和前端代码没关系
+
+xhr请求
+
+```js
+
+const xhr = new XMLHttpRequest()
+xhr.open('post', 'xxxx', true)//异步请求
+xhr.onreadystatechange(() => {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    const data = xhr.responseText
+    console.log(data)
+  }
+})
+
+xhr.send()
+
+
+```
 
 安全
 xss(cross site scripting) 跨站脚本攻击
