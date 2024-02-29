@@ -1,3 +1,8 @@
+http1:mac+ip+tcp+http
+https:mac+ip+tcp+ssl/tls+http
+http2:mac+ip+tcp+tls1.2+(hpack/stream)+http
+http3:mac+ip+udp+quic+http
+
 # http
 
 https://juejin.cn/post/6844904100035821575
@@ -143,7 +148,6 @@ jsonp
 
 - *get*请求利用script的scr无限制，兼容性好
 
-
 ```js
 const jsonp = ({url, params, callbackName}) => {
     let path = url + '?'
@@ -169,16 +173,16 @@ jsonp({url: 'xxx', params: {a: 1}}).then(res => {
 ```js
 // 后端
 
-app.get('/',(req,res)=>{
-    const {callback}=req.query
-   res(`${callback}(data)`)
+app.get('/', (req, res) => {
+    const {callback} = req.query
+    res(`${callback}(data)`)
 })
 app.listen(3000)
 ```
 
 nginx
-- 反向代理，跳板机
 
+- 反向代理，跳板机
 
 安全
 xss(cross site scripting) 跨站脚本攻击
@@ -191,5 +195,25 @@ csrf（cross site request forgery） 跨站请求伪造
 - 钓鱼网站，点击它的链接就可以获取个人信息
 - ```<a href="http://...../delete"></a>``` 删除
 
-
 # https
+
+mac+ip+tcp+ssl/tls+http
+
+rsa，
+
+- 传统rsa，建议长度加大，非对称加密
+
+tls1.2
+
+- 精简加密算法
+- 使用*ecdhe*，椭圆取一点做私钥，算公钥，交换公钥，点乘计算秘密值，用秘密值加密
+
+tls1.3+
+
+- *前向*保密
+- 废除rsa，rsa可能会之前都被破解
+
+# http2
+
+- 提升点：头部压缩（用hash+哈夫曼编码压缩）、多路复用（二进制）
+- 新功能：设置请求优先级、服务器push

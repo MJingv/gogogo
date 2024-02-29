@@ -1,3 +1,34 @@
+// 我是函数，我妈是构造函数，妈妈.prototype增加属性给我，我.constructor找到妈妈
+
+// 继承
+
+
+// this指向
+// 在构造函数，指向new的obj
+// 在普通函数，指向调用方
+// 在箭头函数，指向定义方
+// default，global/window(lax),undefined(strict)
+
+function Parent() {
+    this.name = 'parent'
+    this.money = 1000
+}
+
+Parent.prototype.house = 10
+
+function Child() {
+    Parent.call(this) // 用父亲的
+    this.name = 'child'
+}
+
+Child.prototype = new Object(Parent.prototype) //继承祖父的
+Child.prototype.constructor = Child // 你的父亲是我，不是祖父
+
+const c = new Child()
+
+console.log(c.money, c.house, c.constructor)
+
+
 // bind
 Function.prototype.mybind = function (ctx, ...arg1) {
     // 改变this，return 函数
@@ -85,7 +116,7 @@ const deepClone = (obj, map = new WeakMap()) => {
 
     if (map.has(obj)) return map.get(obj)
 
-    let cloneObj = new obj.constructor
+    let cloneObj = new obj.constructor  // obj可以是数组/对象/函数
     map.set(obj, cloneObj)
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
@@ -97,10 +128,10 @@ const deepClone = (obj, map = new WeakMap()) => {
 const res = deepClone({
     a: 1, b: [{pp: {val: 1111}}, 3, 99, 'ss'], d: {c: false}, kk: 0, d1d: {}
 })
-console.log(res)
+// console.log(res)
 
 
 //promise
 // event listener
 
-// 继承
+
