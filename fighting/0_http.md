@@ -29,12 +29,6 @@ http缓存：强缓存、协商缓存
 - private/public
 - 客户端max-stale、min-fresh
 
-跨域
-
-- schema+host+port,3同则同域
-- 不同domain：不能读改对方dom、不对对方cookie/indexdb/localstorage、*限制xhr请求*
-- 浏览器拦截，和前端代码没关系
-
 请求方法
 
 - xhr:xmlhttprequest，只是页面不刷新的异步*http请求能力*
@@ -57,7 +51,7 @@ xhr.onreadystatechange(() => {
     }
 })
 xhr.onerror = (e) => {
-  
+
 }
 xhr.send(data)
 
@@ -103,16 +97,84 @@ import axios from 'axios'
 
 res = axios('url', {key: 1}, {
     cancelToken: source,
-  timeout:5000,
-  proxy:{
-        host:'xxx',prot:9000
-  }
-  
+    timeout: 5000,
+    proxy: {
+        host: 'xxx', prot: 9000
+    }
+
 }).then(res => {
 }).catch(e => {
 
 })
 
+```
+
+简单请求vs非简单请求
+
+- 简单请求：
+    - get、post、head
+    - accept：text/plain、multiple/form-data、application/x-www-form-urlencoded
+    - 浏览器自动+origin，服务器+access-control-allow-origin，浏览器check是否拦截
+- 非简单请求：
+    - 需预请求options，不成功触发error方法
+
+浏览器多进程
+
+- 浏览器主进程：界面展示、交互等
+- 渲染进程：1个tab1个渲染进程
+- 插件进程
+- gpu进程
+- 网络进程
+
+跨域
+
+- schema+host+port,3同则同域
+- 不同domain：不能读改对方dom、不对对方cookie/indexdb/localstorage、*限制xhr请求*
+- 浏览器拦截，和前端代码没关系
+
+解决跨域方法：cors、jsonp、nginx
+
+cors：cross origin resource sharing
+
+- w3c标准，需要浏览器+服务器共同支持
+- access-control-allow-orgin：*
+
+jsonp
+
+- get请求利用script的scr无限制
+
+
+```js
+const jsonp = ({url, obj, callbackName}) => {
+    let path = `${url}?`
+    for (let key in obj) {
+        path += `${key}=${obj[key]}&`
+    }
+    path += `callback=${callbackName}`
+
+
+    return new Promise((res) => {
+        const element = document.createElement('script')
+        element.src = path
+        document.appendChild(element)
+        window[callbackName]=(data)=>{
+            res(data)
+        document.removeChild(element)
+      }
+    })
+}
+jsonp({url: 'xxx', options: {a: 1}}).then(res => {
+    console.log(res)
+})
+
+```
+```js
+// 后端
+app.get('/',(req,res)=>{
+    const {callback,a,b}=req
+    res.end(`${callback}('data')`)
+})
+app.listen(3000)
 ```
 
 安全
