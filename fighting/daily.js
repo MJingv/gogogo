@@ -172,3 +172,22 @@ const deepClone = (obj, map = new Map()) => {
     return cloneObj
 }
 
+// inheritance
+
+function Parent() {
+    this.name = 'parent'
+    this.money = 1000
+}
+
+Parent.prototype.house = 10
+
+function Child() {
+    Parent.call(this)
+    this.name = 'child'
+}
+
+Child.prototype = Object.create(Parent.prototype)
+Child.prototype.constructor = Child
+
+const c = new Child()
+console.log(c.money, c.house, c.constructor)
