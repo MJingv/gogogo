@@ -145,37 +145,37 @@ jsonp
 
 
 ```js
-const jsonp = ({url, obj, callbackName}) => {
-    let path = `${url}?`
-    for (let key in obj) {
-        path += `${key}=${obj[key]}&`
-    }
-    path += `callback=${callbackName}`
-
-
+const jsonp = ({url,params,callbackName}) => {
+let path=url+'?'
+  for (let key in params){
+      path+=`${key}=${params[key]}&`
+  }
+  path+=`callback=${callbackName}`
     return new Promise((res) => {
-        const element = document.createElement('script')
-        element.src = path
-        document.appendChild(element)
-        window[callbackName]=(data)=>{
+        const ele=document.createElement('script')
+      ele.src=path
+      document.body.appendChild(ele)
+      window[callbackName]=(data)=>{
             res(data)
-        document.removeChild(element)
+        document.body.removeChild(ele)
       }
     })
 }
-jsonp({url: 'xxx', options: {a: 1}}).then(res => {
+jsonp({url: 'xxx', params: {a: 1}}).then(res => {
     console.log(res)
 })
-
 ```
+
 ```js
 // 后端
+
 app.get('/',(req,res)=>{
-    const {callback,a,b}=req
-    res.end(`${callback}('data')`)
+    const {callback}=req.query
+   res(`${callback}(data)`)
 })
 app.listen(3000)
 ```
+
 
 安全
 xss(cross site scripting) 跨站脚本攻击
