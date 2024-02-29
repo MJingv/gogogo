@@ -100,8 +100,15 @@ axios请求demo
 
 ```js
 import axios from 'axios'
-res = axios('url', {}).then(res => {
 
+res = axios('url', {key: 1}, {
+    cancelToken: source,
+  timeout:5000,
+  proxy:{
+        host:'xxx',prot:9000
+  }
+  
+}).then(res => {
 }).catch(e => {
 
 })
