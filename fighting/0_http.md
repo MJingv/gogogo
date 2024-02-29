@@ -136,29 +136,29 @@ res = axios('url', {key: 1}, {
 
 cors：cross origin resource sharing
 
-- w3c标准，需要浏览器+服务器共同支持
+- w3c标准，需要浏览器+服务器共同支持,低版本不支持
 - access-control-allow-orgin：*
 
 jsonp
 
-- get请求利用script的scr无限制
+- *get*请求利用script的scr无限制，兼容性好
 
 
 ```js
-const jsonp = ({url,params,callbackName}) => {
-let path=url+'?'
-  for (let key in params){
-      path+=`${key}=${params[key]}&`
-  }
-  path+=`callback=${callbackName}`
+const jsonp = ({url, params, callbackName}) => {
+    let path = url + '?'
+    for (let key in params) {
+        path += `${key}=${params[key]}&`
+    }
+    path += `callback=${callbackName}`
     return new Promise((res) => {
-        const ele=document.createElement('script')
-      ele.src=path
-      document.body.appendChild(ele)
-      window[callbackName]=(data)=>{
+        const ele = document.createElement('script')
+        ele.src = path
+        document.body.appendChild(ele)
+        window[callbackName] = (data) => {
             res(data)
-        document.body.removeChild(ele)
-      }
+            document.body.removeChild(ele)
+        }
     })
 }
 jsonp({url: 'xxx', params: {a: 1}}).then(res => {
@@ -176,6 +176,9 @@ app.get('/',(req,res)=>{
 app.listen(3000)
 ```
 
+nginx
+- 反向代理，跳板机
+
 
 安全
 xss(cross site scripting) 跨站脚本攻击
@@ -187,3 +190,6 @@ csrf（cross site request forgery） 跨站请求伪造
 
 - 钓鱼网站，点击它的链接就可以获取个人信息
 - ```<a href="http://...../delete"></a>``` 删除
+
+
+# https
