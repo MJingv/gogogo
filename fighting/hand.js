@@ -1,7 +1,5 @@
-// 我是函数，我妈是构造函数，妈妈.prototype增加属性给我，我.constructor找到妈妈
-
 // 继承
-
+// 我是函数，我妈是构造函数，妈妈.prototype增加属性给我，我.constructor找到妈妈
 
 // this指向
 // 在构造函数，指向new的obj
@@ -26,8 +24,32 @@ Child.prototype.constructor = Child // 你的父亲是我，不是祖父
 
 const c = new Child()
 
-console.log(c.money, c.house, c.constructor)
+// console.log(c.money, c.house, c.constructor)
 
+// 手写new
+function Person(name, age) {
+    this.name = name
+    this.age = age
+}
+
+function myNew(fn, ...arg) {
+//     创建新obj
+//     执行fn
+//     改变this指向到新obj
+//     return obj
+    const obj = Object.create(fn.prototype) // 创建一个新obj，他的原型是
+    fn.apply(obj, arg)
+    return obj
+}
+
+// const person = new Person('kk', 18)
+const person = myNew(Person, ['kk', 18])
+console.log(person.name, person.age)
+
+// const obj = new Object({a: 1})
+// const obj = myNew({a: 1})
+
+// console.log(obj.a)
 
 // bind
 Function.prototype.mybind = function (ctx, ...arg1) {
@@ -131,7 +153,14 @@ const res = deepClone({
 // console.log(res)
 
 
+// 不同对象创建的区别
+// {} 原型是Obeject.prototype
+// new Foo() 构造函数，继承Foo的prototype
+// Object.create(p) 继承p的proto
+
+
 //promise
 // event listener
+
 
 
