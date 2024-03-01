@@ -79,3 +79,12 @@ event loop
 
 - macrotask宏任务：网络请求/定时器/渲染页面/用户交互/io/js脚本执行
 - microtask微任务：process.nextticket/promise.then/reject/mutationObserver
+
+闭包
+
+- 红宝书定义：有权访问另一个函数作用域中变量的函数
+- es5有2个作用于：函数作用域+全局作用域
+- 表现形式：返回函数，参数函数。用回调就是闭包
+- 
+- 
+- 
