@@ -190,4 +190,90 @@ Child.prototype = Object.create(Parent.prototype)
 Child.prototype.constructor = Child
 
 const c = new Child()
-console.log(c.money, c.house, c.constructor)
+
+// console.log(c.money, c.house, c.constructor)
+
+
+class ListNode {
+    constructor(val, next = null) {
+        this.val = val
+        this.next = next
+    }
+}
+
+const l5 = new ListNode(5)
+const l4 = new ListNode(4, l5)
+const l3 = new ListNode(3, l4)
+const l2 = new ListNode(2, l3)
+const l1 = new ListNode(1, l2)
+
+
+const reverse = (head) => {
+    if (!head) return
+    let cur = head, pre = null
+    while (cur) {
+        let next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+    }
+    return pre
+}
+
+// 前n个
+const reverseN1 = (head, i) => {
+    if (!head || !i) return head
+    let cur = head, pre = null, next = cur.next
+
+    while (cur.next && i >= 0) {
+        next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+        i--
+    }
+    head.next = next
+    return pre
+}
+const reverseN = (head, n) => {
+    let pre = null, cur
+    const helper = (cur, n) => {
+        if (n === 0) {
+
+
+        }
+
+
+        cur.next = helper(cur.next, n - 1)
+        cur.next.next = cur
+        cur.next = pre
+
+
+    }
+
+    const res = helper(head, n)
+    head.next = res
+    return res
+
+}
+
+// const res = JSON.stringify(reverseN(l1, 2))
+// console.log(res)
+
+
+const list = [1, [2, [3, [4, 5]]], 6]
+const helper = (list, res = []) => {
+    const len = list.length
+    if (!len) return
+    for (let i = 0; i < len; i++) {
+        if (Array.isArray(list[i])) {
+            helper(list[i], res)
+        } else {
+            res.push(list[i])
+        }
+    }
+    return res
+
+}
+
+console.log(res)
