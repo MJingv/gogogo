@@ -81,14 +81,11 @@ const reverseBetween = (head, m, n) => {
 
 // 24 两个一组转
 var swapPairs = function (head) {
-
-
     if (!head || !head.next) return head
-    let next = head.next, cur = head
+    let cur = head, next = head.next
     cur.next = swapPairs(next.next)
     next.next = cur
     return next
-
 };
 
 const res = JSON.stringify(swapPairs(l1,))
