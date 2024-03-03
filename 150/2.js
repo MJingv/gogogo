@@ -88,5 +88,20 @@ var swapPairs = function (head) {
     return next
 };
 
-const res = JSON.stringify(swapPairs(l1,))
+// 21 合并两个有序链表
+var mergeTwoLists = function (list1, list2) {
+    if (!list1) return list2
+    if (!list2) return list1
+
+    if (list1.val < list2.val) {
+        list1.next = mergeTwoLists(list1.next, list2)
+        return list1
+    } else {
+        list2.next = mergeTwoLists(list1, list2.next)
+        return list2
+    }
+    return mergeTwoLists(list1, list2)
+};
+
+const res = JSON.stringify(mergeTwoLists(l1, l3))
 console.log(res)
