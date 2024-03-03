@@ -133,9 +133,26 @@ var combinationSum3 = function (k, n) {
     return res
 
 };
-const res = combinationSum3(3, 9)
-// 206
-// 3
+// const res = combinationSum3(3, 9)
+
+// 206 反转链表
+var reverseList = function (head) {
+    if (!head) return null
+    let cur = head, pre = null
+    while (cur) {
+        let next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+    }
+    return pre
+};
+// 3 无重复字符的最长子串
+var lengthOfLongestSubstring = function (s) {
+
+
+};
+const res = lengthOfLongestSubstring('abcabcbb')
 // 236
 // 450
 // 146
