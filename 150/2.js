@@ -32,24 +32,64 @@ const reverse = (head) => {
 
 // 前n
 const reverseN = (head, n) => {
-    if (!head || !n) return null
-    let post = null
-
+    if (!head) return null
+    let next = null
     const helper = (head, n) => {
         if (n === 1) {
-            head.next= post
+            next = head.next
             return head
 
         }
         const h = helper(head.next, n - 1)
         head.next.next = head
-        head.next = post
+        head.next = next
         return h
 
     }
     return helper(head, n)
-
-
 }
-const res = JSON.stringify(reverseN(l1, 2))
+
+//92
+const reverseBetween = (head, m, n) => {
+    if (!head) return null
+
+
+    const reverseN = (head, n) => {
+        if (!head) return
+        let next = null
+        const helper = (head, n) => {
+            if (n === 1) {
+                next = head.next
+                return head
+
+            }
+            const h = helper(head.next, n - 1)
+            head.next.next = head
+            head.next = next
+            return h
+        }
+        return helper(head, n)
+
+    }
+
+    if (m === 1) return reverseN(head, n)
+
+
+    head.next = reverseBetween(head.next, m - 1, n - 1)
+    return head
+}
+
+// 24 两个一组转
+var swapPairs = function (head) {
+
+
+    if (!head || !head.next) return head
+    let next = head.next, cur = head
+    cur.next = swapPairs(next.next)
+    next.next = cur
+    return next
+
+};
+
+const res = JSON.stringify(swapPairs(l1,))
 console.log(res)
