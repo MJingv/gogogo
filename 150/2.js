@@ -29,5 +29,27 @@ const reverse = (head) => {
     head.next = null
     return h
 }
-const res = JSON.stringify(reverse(l1))
+
+// 前n
+const reverseN = (head, n) => {
+    if (!head || !n) return null
+    let post = null
+
+    const helper = (head, n) => {
+        if (n === 1) {
+            head.next= post
+            return head
+
+        }
+        const h = helper(head.next, n - 1)
+        head.next.next = head
+        head.next = post
+        return h
+
+    }
+    return helper(head, n)
+
+
+}
+const res = JSON.stringify(reverseN(l1, 2))
 console.log(res)
