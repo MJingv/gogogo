@@ -290,14 +290,14 @@ var search = function (nums, target) {
 
         if (nums[mid] >= nums[i]) { // =很重要，第一段永远>第二段
             //第一个递增区间内
-            if (nums[mid] > target && target >= nums[i]) {
+            if (nums[mid] > target && target >= nums[i]) { //边=很重要
                 j = mid - 1
             } else {
                 i = mid + 1
             }
         } else {
             //第二个递增区间内
-            if (nums[mid] < target && target <= nums[j]) {
+            if (nums[mid] < target && target <= nums[j]) { //边=很重要
                 i = mid + 1
             } else {
                 j = mid - 1
@@ -312,5 +312,42 @@ var search = function (nums, target) {
 const res = search([4, 5, 6, 7, 0, 1, 2], 0) //4
 
 // 146 lru
+var LRUCache = function (capacity) {
+    this.capacity = capacity
+    this.cache = new Map()
+
+};
+
+/**
+ * @param {number} key
+ * @return {number}
+ */
+LRUCache.prototype.get = function (key) {
+    if (this.cache.has(key)) {
+        const val = this.cache.get(key)
+        this.cache.delete(key)
+        this.cache.set(key, val)
+        return val
+    } else {
+        return -1
+    }
+
+};
+
+/**
+ * @param {number} key
+ * @param {number} value
+ * @return {void}
+ */
+LRUCache.prototype.put = function (key, value) {
+    if (this.cache.get(key) > -1) {
+        this.cache.delete(key)
+    } else if (this.cache.size >= this.capacity) {
+        const oldestKey = this.cache.keys().next().value
+        this.cache.delete(oldestKey)
+    }
+    this.cache.set(key, value)
+
+};
 
 console.log(res)
