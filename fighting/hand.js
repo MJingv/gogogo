@@ -129,6 +129,10 @@ const debounce = (fn, delay) => {
 // throttle(f1, 100)
 
 
+// JSON.Stringify(obj) 环不行、特殊对象不行
+// _.cloneDeep(obj) 包太大，单clone压缩后5.3k
+// js native way: structuredClone 兼容性不行
+
 // 深度克隆
 const deepClone = (obj, map = new WeakMap()) => {
     if (!obj || typeof obj !== 'object') return obj

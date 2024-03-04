@@ -149,15 +149,94 @@ var reverseList = function (head) {
 };
 // 3 无重复字符的最长子串
 var lengthOfLongestSubstring = function (s) {
-
+    // 滑动窗口
+    if (!s) return 0
+    let [left, right] = [0, 0]
+    const length = s.length, window = []
+    let res = 0
+    while (right < length) {
+        const cur = s[right]
+        while (window.includes(cur)) {
+            window.shift()
+            left++
+        }
+        window.push(cur)
+        right++
+        res = Math.max(res, right - left)
+    }
+    return res
 
 };
-const res = lengthOfLongestSubstring('abcabcbb')
-// 236
-// 450
-// 146
-// 53
-// 207
-// 33
-// 56
+// const res = lengthOfLongestSubstring('abcabcbb')
+
+// 236 最新公共祖先
+var lowestCommonAncestor = function (root, p, q) {
+    if (!root) return
+    if (root === p || root === q) return root
+    const left = lowestCommonAncestor(root.left, p, q);
+    const right = lowestCommonAncestor(root.right, p, q);
+    if (left !== null && right !== null) return root;
+    if (left !== null) return left;
+    if (right !== null) return right;
+    return null;
+};
+// const res = lowestCommonAncestor(t1, t0, t4)
+
+
+// 450 删除二叉搜索树的节点
+var deleteNode = function (root, key) {
+    if (!root) return null
+    if (root.val === key) {
+        if (root.left && root.right) {
+            let p = root.right
+            while (p.left) p = p.left
+            p.left = root.left
+            return root.right
+        }
+        return root.left || root.right
+    } else if (root.val < key) {
+        root.right = deleteNode(root.right, key)
+    } else if (root.val > key) {
+        root.left = deleteNode(root.left, key)
+    }
+    return root
+
+};
+// const res = deleteNode(t1, 3)
+
+// 53 最大子数组和
+var maxSubArray = function (nums) {
+    const len = nums.length
+    if (!len) return 0
+    const dp = Array(len).fill(-Infinity)
+    dp[0] = nums[0]
+    let res = -Infinity
+    for (let i = 1; i < len; i++) {
+        dp[i] = Math.max(nums[i], nums[i] + dp[i - 1])
+        res = Math.max(res, dp[i])
+    }
+
+    return res
+
+};
+// const res = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+
+
+// 56 合并区间
+// 输入：intervals = [[1,3],[2,6],[8,10],[15,18]] 输出：[[1,6],[8,10],[15,18]] 解释：区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].
+var merge = function (intervals) {
+
+};
+const res = merge([[1, 3], [2, 6], [8, 10], [15, 18]])
+// 207 课程表
+var canFinish = function (numCourses, prerequisites) {
+
+};
+// 33 搜索旋转排序数组
+var search = function (nums, target) {
+
+};
+
+// 146 lru
+
 console.log(res)
