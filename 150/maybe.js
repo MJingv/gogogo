@@ -62,6 +62,7 @@ var generateTrees = function (n) {
                     node.right = right
                     res.push(node)
                 }
+                s
             }
         }
         return res
@@ -278,11 +279,37 @@ var canFinish = function (numCourses, prerequisites) {
     return !hasCycle
 
 };
-const res = canFinish(2, [[1, 0], [0, 1]])
+// const res = canFinish(2, [[1, 0], [0, 1]])
 // 33 搜索旋转排序数组
 var search = function (nums, target) {
+    const len = nums.length
+    let i = 0, j = len - 1
+    while (i <= j) {
+        const mid = Math.floor((i + j) / 2)
+        if (nums[mid] === target) return mid
+
+        if (nums[mid] >= nums[i]) { // =很重要，第一段永远>第二段
+            //第一个递增区间内
+            if (nums[mid] > target && target >= nums[i]) {
+                j = mid - 1
+            } else {
+                i = mid + 1
+            }
+        } else {
+            //第二个递增区间内
+            if (nums[mid] < target && target <= nums[j]) {
+                i = mid + 1
+            } else {
+                j = mid - 1
+
+            }
+        }
+
+    }
+    return -1
 
 };
+const res = search([4, 5, 6, 7, 0, 1, 2], 0) //4
 
 // 146 lru
 
