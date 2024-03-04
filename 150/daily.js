@@ -1,3 +1,6 @@
+const swap = (list, a, b) => [list[a], list[b]] = [list[b], list[a]]
+const arr = [3, 0, 5, 2, 4, 1, 1, 4, 99];
+
 class ListNode {
     constructor(val, next = null) {
         this.val = val
@@ -165,9 +168,74 @@ const deepClone = (obj, map = new WeakMap()) => {
     return cloneObj
 
 }
-const res = deepClone({
-    a: 1, b: [{pp: {val: 1111}}, 3, 99, 'ss'], d: {c: false}, kk: 0, d1d: {}
-})
+// const res = deepClone({
+//     a: 1, b: [{pp: {val: 1111}}, 3, 99, 'ss'], d: {c: false}, kk: 0, d1d: {}
+// })
+//
 
+
+const quickSort = (list = []) => {
+    const len = list.length
+    if (!len) return []
+    const left = [], right = [], equal = []
+    const mid = Math.floor(len / 2)
+    for (let i = 0; i < len; i++) {
+        const cur = list[i]
+        if (cur === list[mid]) {
+            equal.push(cur)
+        } else if (cur < list[mid]) {
+            left.push(cur)
+        } else if (cur > list[mid]) {
+            right.push(cur)
+        }
+    }
+    return [...quickSort(left), ...equal, ...quickSort(right)]
+}
+
+const binarySearch = (list, target) => {
+    const len = list.length
+    if (!len) return -1
+    let i = 0, j = len - 1
+    while (i <= j) {
+        const mid = Math.floor((i + j) / 2)
+        const cur = list[mid]
+        if (cur === target) {
+            return mid
+        } else if (cur < target) {
+            i = mid + 1
+        } else if (cur > target) {
+            j = mid - 1
+        }
+    }
+    return -1
+}
+// const sortedList = quickSort(arr)
+// const res = binarySearch(sortedList, 4)
+
+const merge = (left = [], right = []) => {
+    const l1 = left.length, l2 = right.length
+    let i = 0, j = 0
+    const res = []
+
+    while (i < l1 && j < l2) {
+        if (left[i] < right[j]) {
+            res.push(left[i++])
+        } else {
+            res.push(right[j++])
+        }
+    }
+
+    while (i < l1) res.push(left[i++])
+    while (j < l2) res.push(right[j++])
+
+    return res
+}
+const mergeSort = (list = []) => {
+    const len = list.length
+    if (len <= 1) return list //keypoint
+    const mid = Math.floor(len / 2)
+    return merge(mergeSort(list.slice(0, mid)), mergeSort(list.slice(mid)))
+}
+const res = mergeSort(arr)
 
 console.log(res)
