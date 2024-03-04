@@ -46,30 +46,27 @@ const reverse = (head) => {
 }
 const reverseN = (head, n) => {
     if (!head) return null
-    let cur = head, next = head.next
+    let cur = head, next = null
     const helper = (head, n) => {
         if (n === 1) {
             next = head.next
             return head
+
         }
         const h = helper(head.next, n - 1)
         head.next.next = head
         head.next = next
         return h
-
     }
-    return helper(cur, n)
+    return helper(head, n)
 }
 
+//92
 const reverseBetween = (head, m, n) => {
-    if (!head || head.next) return head
-
-    if (m === 1) {
-        return reverseN(head, n)
-
-    }
+    if (!head || !head.next) return head
+    if (m === 1) return reverseN(head, n)
     head.next = reverseBetween(head.next, m - 1, n - 1)
     return head
 }
-const res = JSON.stringify(reverseN(l1, 2))
+const res = JSON.stringify(reverseBetween(l1, 2, 5))
 console.log(res)
