@@ -225,13 +225,60 @@ var maxSubArray = function (nums) {
 // 56 合并区间
 // 输入：intervals = [[1,3],[2,6],[8,10],[15,18]] 输出：[[1,6],[8,10],[15,18]] 解释：区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].
 var merge = function (intervals) {
+    // 就是排序后遍历，没什么技巧
+    const len = intervals.length
+    if (len <= 1) return intervals
+    const res = []
+    intervals.sort((a, b) => a[0] - b[0])
+    res.push(intervals[0])
+
+    for (let i = 1; i < len; i++) {
+        const cur = intervals[i]
+        const merged = res[res.length - 1]
+        if (cur[0] > merged[1]) {
+            res.push(cur)
+        } else {
+            merged[1] = Math.max(merged[1], cur[1])
+        }
+    }
+    return res
 
 };
-const res = merge([[1, 3], [2, 6], [8, 10], [15, 18]])
+// const res = merge([[2, 3], [4, 5], [6, 7], [8, 9], [1, 10]])
+
+
 // 207 课程表
 var canFinish = function (numCourses, prerequisites) {
+    // 判断是否有环
+    // 先构建graph，再遍历判断
+    const len = prerequisites.length, n = numCourses
+    if (!len || !n) return false
+    const graph = Array(n).fill(0).map(() => [])
+    for (let [cur, pre] of prerequisites) {
+        graph[pre].push(cur)
+    }
+    let hasCycle = false
+    const visited = Array(n).fill(0)
+    const helper = (i, visited) => {
+        if (visited[i] === -1) return true
+        if (visited[i] === 1) return false
+
+        visited[i] = -1
+        for (let j of graph[i]) {
+            if (helper(j, visited)) return true
+        }
+        visited[i] = 1
+
+    }
+
+    for (let i = 0; i < n; i++) {
+        if (helper(i, visited)) hasCycle = true
+    }
+
+    return !hasCycle
 
 };
+const res = canFinish(2, [[1, 0], [0, 1]])
 // 33 搜索旋转排序数组
 var search = function (nums, target) {
 

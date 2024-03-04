@@ -13,6 +13,7 @@ var canFinish = function (numCourses, prerequisites) {
     }
 
     const helper = (i, visited) => {
+        // -1正在遍历，1已经遍历过
         if (visited[i] === -1) return true
         if (visited[i] === 1) return false
         visited[i] = -1
