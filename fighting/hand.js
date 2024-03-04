@@ -142,7 +142,7 @@ const deepClone = (obj, map = new WeakMap()) => {
 
     if (map.has(obj)) return map.get(obj)
 
-    let cloneObj = new obj.constructor  // obj可以是数组/对象/函数
+    let cloneObj = new obj.constructor()  // obj可以是数组/对象/函数
     map.set(obj, cloneObj)
     for (let key in obj) {
         if (obj.hasOwnProperty(key)) {
