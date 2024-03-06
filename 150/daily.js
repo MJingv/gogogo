@@ -143,7 +143,7 @@ const debounce = function (fn, delay) {
 }
 
 function example(...arg) {
-    console.log(arg);
+    // console.log(arg);
 }
 
 example(1, 2, 3);
@@ -236,6 +236,46 @@ const mergeSort = (list = []) => {
     const mid = Math.floor(len / 2)
     return merge(mergeSort(list.slice(0, mid)), mergeSort(list.slice(mid)))
 }
-const res = mergeSort(arr)
+// const res = mergeSort(arr)
 
-console.log(res)
+
+// promise.all
+
+const promiseAll = (list = []) => {
+    // 入参是数组，return一个promise
+    // 等所有结果都返回再res
+    // 一个rej全部rej
+    return new Promise((res, rej) => {
+        const len = list.length
+        if (!len) res([])
+        let n = 0
+        const resList = []
+
+
+        for (let i = 0; i < len; i++) {
+            list[i].then((r) => {
+                resList[n] = r
+                if (n === len - 1) res(resList)
+                n++
+            }).catch(err => {
+                rej(err)
+            })
+        }
+
+    })
+
+}
+
+const p1 = new Promise((res, rej) => {
+    setTimeout(() => {
+        res('111')
+    }, 10)
+})
+const p2 = new Promise((res, rej) => {
+    setTimeout(() => {
+        res('222')
+    }, 100)
+})
+const list = [p1, p2]
+promiseAll(list).then(res => console.log(res)).catch(err => console.log(err))
+

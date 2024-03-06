@@ -829,12 +829,117 @@ const isInterleave = (s1, s2, s3) => {
     }
     return dp[l1][l2]
 }
-const res = isInterleave("aabcc", "dbbca", "aadbbcbcac")
-// 72编辑距离
-//
-// 123买卖股票的最佳时机 III
-//
-// 188买卖股票的最佳时机 IV
-//
+// const res = isInterleave("aabcc", "dbbca", "aadbbcbcac")
+
+// 121买卖股票的最佳时机
+// 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+var maxProfit1 = function (prices) {
+    // timeout
+    const len = prices.length
+    if (!len) return
+    let res = 0
+
+    for (let i = 0; i < len - 1; i++) {
+        for (let j = i + 1; j < len; j++) {
+            const tmp = prices[j] - prices[i]
+            res = Math.max(tmp, res)
+        }
+    }
+    return res
+};
+var maxProfit2 = function (prices) {
+    // 记录min
+    const len = prices.length
+    let min = prices[0], res = 0
+    for (let i = 1; i < len; i++) {
+        res = Math.max(prices[i] - min, res)
+        min = Math.min(min, prices[i])
+    }
+    return res
+}
+
+
+var maxProfit3 = function (prices) {
+    // 模版法
+    // dp[i][0] 第i天无 卖了 or i-1没有，dp[i][1] 第i天有，买了ori-1就有
+    const len = prices.length
+    const dp = Array(len).fill(0).map(() => Array(2).fill(0)) // 第i天买or卖获得的最大利润
+    dp[0][1] = -prices[0]
+    for (let i = 1; i < len; i++) {
+        dp[i][0] = Math.max(dp[i - 1][1] + prices[i], dp[i - 1][0])
+        dp[i][1] = Math.max(-prices[i], dp[i - 1][1]) //当天有，只能买一次，所以没有之前的利润
+    }
+    return Math.max(...dp[len - 1])
+}
+
+// const res = maxProfit([7, 1, 5, 3, 6, 4]) //润 = 6-1 = 5 。
+
+
+// 122买卖股票的最佳时机
+var maxProfit4 = function (prices) {
+    const len = prices.length
+    const dp = Array(len).fill(0).map(() => Array(2).fill(0))
+    dp[0][1] = -prices[0]
+    for (let i = 1; i < len; i++) {
+        dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i])
+        dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i])
+
+    }
+    return Math.max(...dp[len - 1])
+};
+
+// 123买卖股票的最佳时机,最多2笔交易
+var maxProfit = function (prices) {
+    const len = prices.length
+    const n = 2
+    const dp = Array(len).fill(0).map(() => Array(n + 1).fill(0).map(() => Array(2).fill(0)))
+
+    for (let k = n; k > 0; k--) {
+        for (let i = 0; i < len; i++) {
+            if (i === 0) {
+                dp[i][k][1] = -prices[i]
+            } else {
+                dp[i][k][0] = Math.max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i])
+                dp[i][k][1] = Math.max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i])
+            }
+
+        }
+    }
+    return dp[len - 1][n][0]
+
+};
+// const res = maxProfit([3, 3, 5, 0, 0, 3, 1, 4])//6
+
 // 221最大正方形
+var maximalSquare = function (matrix) {
+    const [m, n] = [matrix.length, matrix[0].length]
+    // 我的左边、上面、左上面都是正方形，取最小边长
+    const dp = Array(m).fill(0).map(() => Array(n).fill(0))
+    let max = 0
+    for (let i = 0; i < m; i++) {
+        dp[i][0] = Number(matrix[i][0])
+        max = Math.max(max, dp[i][0])
+    }
+    for (let j = 0; j < n; j++) {
+        dp[0][j] = Number(matrix[0][j])
+        max = Math.max(max, dp[0][j])
+
+    }
+    for (let i = 1; i < m; i++) {
+        for (let j = 1; j < n; j++) {
+            if (matrix[i][j] === '1') {
+                dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
+                max = Math.max(max, dp[i][j])
+
+            } else {
+                dp[i][j] = 0
+            }
+        }
+    }
+
+    return max * max
+};
+// const res = maximalSquare([["1", "0", "1", "0", "0"], ["1", "0", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]])
+
+// 72编辑距离
 console.log(res)
