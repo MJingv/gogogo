@@ -242,26 +242,20 @@ const mergeSort = (list = []) => {
 // promise.all
 
 const promiseAll = (list = []) => {
-    // 入参是数组，return一个promise
-    // 等所有结果都返回再res
-    // 一个rej全部rej
+    // 入参list，返回promise
+    // 全res才res，一个rej全部rej
     return new Promise((res, rej) => {
         const len = list.length
-        if (!len) res([])
-        let n = 0
         const resList = []
-
-
+        let n = 0
+        if (!len) res([])
         for (let i = 0; i < len; i++) {
-            list[i].then((r) => {
-                resList[n] = r
+            list[i].then(r => {
+                resList[i] = r
                 if (n === len - 1) res(resList)
                 n++
-            }).catch(err => {
-                rej(err)
-            })
+            }).catch(err => rej(err))
         }
-
     })
 
 }
@@ -277,5 +271,17 @@ const p2 = new Promise((res, rej) => {
     }, 100)
 })
 const list = [p1, p2]
+
+const promiseRace = (list = []) => {
+    return new Promise((res, rej) => {
+        const len = list.length
+        if (!len) res(null)
+        for (let i = 0; i < len; i++) {
+            list[i].then(r => res(r)).catch(e => rej(e))
+        }
+    })
+
+}
 promiseAll(list).then(res => console.log(res)).catch(err => console.log(err))
+promiseRace(list).then(res => console.log(res + 'race')).catch(err => console.log(err))
 
