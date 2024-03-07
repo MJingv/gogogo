@@ -373,3 +373,39 @@ const resolvePromise = (result, resolve, reject) => {
     }
 
 }
+
+// 删除老的&没人访问的数据
+class LRUCache {
+    constructor(capacity) {
+        this.capacity = capacity
+        this.cache = new Map()
+    }
+
+    get(key) {
+        // 返回val，将val前置
+        if (this.cache.has(key)) {
+            const res = this.cache.get(key)
+            this.cache.delete(key)
+            this.cache.set(key, res)
+            return res
+        }
+        return -1
+    }
+
+    put(key, val) {
+        // 满了，前置+删最后的
+        // 没满，放最前面
+
+        if (this.cache.has(key)) {
+            this.cache.delete(key)
+        }
+
+        if (this.cache.size === this.capacity) {
+            const oldest = this.cache.keys().next().value
+            this.cache.delete(oldest)
+        }
+        this.cache.set(key, val)
+    }
+}
+
+const c = new LRUCache(3)
