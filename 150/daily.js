@@ -291,85 +291,85 @@ const promiseRace = (list = []) => {
 // then/catch
 // then(res,rej) 链式调用
 
-class MyPromise {
+class myPromise {
     constructor(executor) {
-        this.state = 'pending';
-        this.value = undefined;
-        this.onResolvedCallbacks = [];
-        this.onRejectedCallbacks = [];
-
-        const resolve = (value) => {
+        this.value = undefined
+        this.state = 'pending'
+        this.onResolvedCallbacks = []
+        this.onRejectedCallbacks = []
+        const resolve = (val) => {
             if (this.state === 'pending') {
-                this.state = 'fulfilled';
-                this.value = value;
-                this.onResolvedCallbacks.forEach((callback) => callback());
+                this.state = 'fulfilled'
+                this.value = val
+                this.onResolvedCallbacks.forEach(item => item())
             }
-        };
 
-        const reject = (reason) => {
-            if (this.state === 'pending') {
-                this.state = 'rejected';
-                this.value = reason;
-                this.onRejectedCallbacks.forEach((callback) => callback());
-            }
-        };
-
-        try {
-            executor(resolve, reject);
-        } catch (error) {
-            reject(error);
         }
+        const reject = (val) => {
+            if (this.state === 'pending') {
+                this.state = 'rejected'
+                this.value = val
+                this.onRejectedCallbacks.forEach(item => item())
+            }
+
+        }
+        try {
+            executor(resolve, reject)
+        } catch (e) {
+            reject(e)
+        }
+
     }
 
     then(onFulfilled, onRejected) {
-        onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : (value) => value;
-        onRejected = typeof onRejected === 'function' ? onRejected : (reason) => {
-            throw reason;
-        };
-
-        return new MyPromise((resolve, reject) => {
+        onFulfilled = typeof onFulfilled === 'function' ? onFulfilled : (value) => value
+        onRejected = typeof onRejected === 'function' ? onRejected : (e) => {
+            throw e
+        }
+        return new myPromise((resolve, reject) => {
             const handleResolved = () => {
                 setTimeout(() => {
                     try {
-                        const result = onFulfilled(this.value);
-                        resolvePromise(result, resolve, reject);
-                    } catch (error) {
-                        reject(error);
+                        const res = onFulfilled(this.value, resolve, reject)
+                        resolvePromise(res, resolve)
+                    } catch (e) {
+                        reject(e)
                     }
-                }, 0);
-            };
+                }, 0)
 
-            const handleRejected = () => {
-                setTimeout(() => {
-                    try {
-                        const result = onRejected(this.value);
-                        resolvePromise(result, resolve, reject);
-                    } catch (error) {
-                        reject(error);
-                    }
-                }, 0);
-            };
-
-            if (this.state === 'fulfilled') {
-                handleResolved();
-            } else if (this.state === 'rejected') {
-                handleRejected();
-            } else {
-                this.onResolvedCallbacks.push(handleResolved);
-                this.onRejectedCallbacks.push(handleRejected);
             }
-        });
+            const handleRejected = () => {
+                try {
+                    setTimeout(() => {
+                        const res = onRejected(this.value, resolve, reject)
+                        resolvePromise(res, resolve, reject)
+                    }, 0)
+                } catch (e) {
+                    reject(e)
+                }
+            }
+            if (this.state === 'fulfilled') {
+                handleResolved()
+            } else if (this.state === 'rejected') {
+                handleRejected()
+            } else {
+                this.onRejectedCallbacks.push(onRejected)
+                this.onResolvedCallbacks.push(onFulfilled)
+            }
+        })
+
     }
 
-    catch(onRejected) {
-        return this.then(null, onRejected);
+    catch(e) {
+        return this.then(undefined, e)
     }
 }
 
-function resolvePromise(result, resolve, reject) {
-    if (result instanceof MyPromise) {
-        result.then(resolve, reject);
+const resolvePromise = (result, resolve, reject) => {
+    if (result instanceof myPromise) {
+        result.then(resolve, reject)
     } else {
-        resolve(result);
+        resolve(result)
     }
+
 }
