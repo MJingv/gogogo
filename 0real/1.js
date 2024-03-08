@@ -74,6 +74,47 @@ Array.prototype.group = function (fn, ...arg) {
     return res
 }
 
-const res = array.group(ruleFn)
+// const res = array.group(ruleFn)
 
-console.log(res)
+
+// 计算乘积除当前项
+// 入参 [1,2,3,4] 出参 [24,12,8,6]
+
+const fn = (list = []) => {
+    const len = list.length
+    if (!len) return []
+    const n = list.reduce((a, b) => a * b)
+    const res = []
+    list.forEach(item => res.push(n / item))
+    return res
+}
+// const res = fn([1, 2, 3, 4])
+
+
+// 10s连续输入，每隔2s响应一次
+// 老是忘记
+const throttle = function (fn, delay = 2000) {
+    let pre = null
+    return (...arg) => {
+        const now = Date.now()
+        if (now - pre > delay) {
+            fn.apply(this, arg)
+            pre = now
+        }
+    }
+
+}
+
+// lastpromise 想不出来
+const lastPromise = (promise) => {
+
+};
+const p1 = new Promise((res, rej) => setTimeout(() => {
+    res('suc')
+}, 1000))
+const l1 = lastPromise(p1)
+
+l1.then(res => console.log(111, res)) //无返回
+l1.then(res => console.log(222, res)) //无返回
+l1.then(res => console.log(333, res)) //有返回
+
