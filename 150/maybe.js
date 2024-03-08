@@ -350,4 +350,36 @@ LRUCache.prototype.put = function (key, value) {
 
 };
 
-console.log(res)
+// console.log(res)
+
+// 失败重试，200ms试一次，500ms试一次，不行就返回失败
+const retry = (promise, n, delay) => new Promise((res, rej) => {
+    const fn = (n) => {
+        promise.then(r => res(r)).catch(e => {
+            console.log(n)
+            if (n <= 0) {
+                rej(e)
+            } else {
+                setTimeout(() => {
+                    fn(n - 1)
+                }, delay * Math.pow(2, n))
+            }
+        })
+    }
+    fn(n)
+})
+
+const p = new Promise((res, rej) => {
+    setTimeout(() => {
+        const sucRadio = Math.random()
+        console.log(sucRadio, '-sucRadio')
+        if (sucRadio - 1 >= 0.5) {
+            res('suc')
+        } else {
+            rej('fail')
+        }
+    }, 3000)
+})
+
+
+retry(p, 3, 200).then(res => console.log(res)).catch(e => console.log(e))
