@@ -56,5 +56,24 @@ const findStr = (s) => {
     return {max, start, end: start + max, char}
 
 }
-const res = findStr('fjalsdfffjfkljjjjjjlsfalfffs')
+// const res = findStr('fjalsdfffjfkljjjjjjlsfalfffs')
+
+// 写个group函数，入参是数组，返回对象{odd:[1,3],even:[2,4]}
+
+const array = [0, 1, 2, 3, 4]
+const ruleFn = (item, index, array) => item % 2 === 0 ? 'even' : 'odd'
+
+Array.prototype.group = function (fn, ...arg) {
+    console.log(this)
+    const res = {odd: [], even: []}
+    this.forEach((item) => {
+        const r = fn(item)
+        if (r === 'odd') res.odd.push(item)
+        if (r === 'even') res.even.push(item)
+    })
+    return res
+}
+
+const res = array.group(ruleFn)
+
 console.log(res)
