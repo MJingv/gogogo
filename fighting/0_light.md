@@ -140,7 +140,42 @@ vue2用Object.defineProperty实现响应式
 
 vue3用es6的proxy
 
-- 只支持es6，无法polyfill 
+- 只支持es6，无法polyfill
+
+---
+动画实现
+
+- css3：animation/translate
+- js：setinterval/requestAnimationFrame，操作的是元素
+- canvas
+    - js提供api，canvas渲染，操作的是像素，html5的新元素
+    - 渲染流程
+        - 获取context
+        - 绘制指令（fillrect、filltext、drawimage）
+        - 浏览器优化指令，生成实际像素绘制
+        - 渲染引擎绘制到内存的画布，像素计算、颜色填充、图像贴图等
+        - 显示更新：绘制好的像素信息发给显示设备，完成渲染
+- webgl
+    - 基于opengl es嵌入式系统图形渲染
+    -
+
+threejs
+渲染方式
+
+- webglrenderer
+- css3renderer
+- svgrenderer
+- canvasrenderer
+- raytracingrenderer
+
+立方体全景图实现
+
+- 创建场景scene和相机camera
+- 创建立方体boxgeometry
+- 立方体贴图材质material和网格mesh
+- 反转立方体的面，x=-1
+- 创建渲染器 css3renderer
+- 渲染场景和动画
 
 
 

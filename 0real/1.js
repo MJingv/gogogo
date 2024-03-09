@@ -175,5 +175,8 @@ const fen = (list = [], n) => {
     }
     return res
 }
-const res = fen([1, 2, 3, 4, 5], 2)
+// const res = fen([1, 2, 3, 4, 5], 2)
+
+
+
 console.log(res)
