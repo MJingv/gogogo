@@ -161,7 +161,19 @@ const get = (obj, s) => {
     return cur
 }
 const obj = {a: {b: {c: 2}}}
-const res = get(obj, 'a.b.c')
+// const res = get(obj, 'a.b.c')
 
-
+const fen = (list = [], n) => {
+    const len = list.length
+    if (!n || !len) return list
+    const res = []
+    let i = 0
+    while (i < len) {
+        const tmp = list.slice(i, i + 2)
+        res.push(tmp)
+        i += 2
+    }
+    return res
+}
+const res = fen([1, 2, 3, 4, 5], 2)
 console.log(res)
