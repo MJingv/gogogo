@@ -109,12 +109,42 @@ const throttle = function (fn, delay = 2000) {
 const lastPromise = (promise) => {
 
 };
-const p1 = new Promise((res, rej) => setTimeout(() => {
-    res('suc')
-}, 1000))
-const l1 = lastPromise(p1)
+// const p1 = new Promise((res, rej) => setTimeout(() => {
+//     res('suc')
+// }, 1000))
+// const l1 = lastPromise(p1)
 
-l1.then(res => console.log(111, res)) //无返回
-l1.then(res => console.log(222, res)) //无返回
-l1.then(res => console.log(333, res)) //有返回
+// l1.then(res => console.log(111, res)) //无返回
+// l1.then(res => console.log(222, res)) //无返回
+// l1.then(res => console.log(333, res)) //有返回
 
+
+// flat
+
+const flat = (list = [], res = []) => {
+    // 方法一 list.flat()
+    // return list.flat(1)
+    // 方法二 ...
+    // const len = list.length
+    // const res = []
+    // list.forEach(item => {
+    //     if (Array.isArray(item)) {
+    //         res.push(...item)
+    //     } else {
+    //         res.push(item)
+    //     }
+    // })
+    // 方法三 递归
+    list.forEach(item => {
+        if (Array.isArray(item)) {
+            flat(item, res)
+        } else {
+            res.push(item)
+
+        }
+    })
+    return res
+
+}
+const res = flat([1, 2, 3, [4, 5]])
+console.log(res)
