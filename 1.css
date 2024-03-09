@@ -1,0 +1,47 @@
+body {
+    background-color: #888;
+}
+
+.wrap {
+    width: 200px;
+
+}
+
+.wrap:hover .tip {
+    opacity: 1;
+}
+
+.wrap:hover .tri {
+    opacity: 1;
+}
+
+.tip {
+    opacity: 0;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid red;
+    text-align: center;
+
+
+}
+
+.tri {
+    opacity: 0;
+
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid red;
+    margin-left: 75px;
+
+
+}
+
+.btn {
+    background-color: #61dafb;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}

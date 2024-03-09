@@ -78,7 +78,7 @@ v8执行js过程
 event loop
 
 - macrotask宏任务：网络请求/定时器/渲染页面/用户交互/io/js脚本执行
-- microtask微任务：process.nextticket/promise.then/reject/mutationObserver
+- microtask微任务：process.nextticket/promise/mutationObserver
 
 闭包
 
