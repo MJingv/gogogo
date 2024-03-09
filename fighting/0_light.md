@@ -155,9 +155,8 @@ vue3用es6的proxy
         - 浏览器优化指令，生成实际像素绘制
         - 渲染引擎绘制到内存的画布，像素计算、颜色填充、图像贴图等
         - 显示更新：绘制好的像素信息发给显示设备，完成渲染
-- webgl
+- webgl（graphic library）
     - 基于opengl es嵌入式系统图形渲染
-    -
 
 threejs
 渲染方式
@@ -176,10 +175,40 @@ threejs
 - 反转立方体的面，x=-1
 - 创建渲染器 css3renderer
 - 渲染场景和动画
+- 点击tag的实现
+    - 创建tag的dom，获取点击的第一个tag
+    - 更好的办法是拾取，获取第一个
 
+---
 
+小程序动画选型：lottie+pixi+dom
 
+目的：选择一个动画播放器来提高开发效率
 
+动画播放器选型：svga+lottie
 
+- svga直播动画、stars多、支持ae属性少、数据维度是帧
+- lottie页面动画多、Airbnb、支持ae属性多，数据维度是层
 
+lottie小程序选型：
 
+- lottie-web，h5，复杂场景，整个画布，官方解释器
+- lottie-miniprogram ，ae属性少，小程序，简单场景，部分画布，单个动画
+- pixi-lottie，复杂场景，ae属性多，小程序canvas
+
+页面实现方式
+
+- 盆+树 lottie，一直在动
+- 气泡+宝箱 pixi，可以手写
+- 列表 dom
+
+遇到的问题：
+
+- 白屏/闪退：内存泄漏（iOS的jscore的gc比v8差）
+- 过热：帧率、节流
+
+jscore vs v8 的gc
+
+- 算法：jscore引用计数法，v8分代gc，scavenger
+- 并发：v8并发垃圾回收，js可以执行。jscore停止-复制，垃圾回收的时候js停止执行
+- 内存管理：v8使用了堆内存管理，将内存分为新生代和老生代两个堆。jscore也是堆内存管理
