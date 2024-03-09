@@ -146,5 +146,22 @@ const flat = (list = [], res = []) => {
     return res
 
 }
-const res = flat([1, 2, 3, [4, 5]])
+// const res = flat([1, 2, 3, [4, 5]])
+
+
+// 实现get方法
+const get = (obj, s) => {
+    if (!s) return obj
+    const list = s.split('.')
+    const len = list.length
+    let cur = obj
+    for (let i = 0; i < len; i++) {
+        cur = cur[list[i]]
+    }
+    return cur
+}
+const obj = {a: {b: {c: 2}}}
+const res = get(obj, 'a.b.c')
+
+
 console.log(res)
