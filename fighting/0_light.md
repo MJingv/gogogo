@@ -89,7 +89,7 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
             - 异步渲染、桥通信
     - 原因：js引擎执行慢、react框架执行慢、native和js通信慢
 - machpro如何解决rn问额
-    - js引擎慢：用quickjs，没用jit，用c编写，编译时lexer、parse、字节码，runtime直接run字节码
+    - js引擎慢：用quickjs，没用jit，用c编写，编译时lexer、parse、字节码，runtime直接run字节码,.qbc文件保存字节码
     - react执行慢，preact快30%
     - 通信慢：js在主线程（单线程），不通信
     - 为高达设计多线程

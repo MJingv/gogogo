@@ -350,4 +350,36 @@ LRUCache.prototype.put = function (key, value) {
 
 };
 
+
+// 发布订阅
+class PubSub {
+    constructor() {
+        this.subscribes = {}
+    }
+
+    subscribe(event, callback) {
+        if (!this.subscribes[event]) {
+            this.subscribes[event] = []
+        }
+        this.subscribes[event].push(callback)
+
+    }
+
+    publish(event, data) {
+        if (this.subscribes[event]) {
+            this.subscribes[event].forEach(callback => {
+                callback(data)
+            })
+        }
+
+    }
+
+    unsubscribe(event, callback) {
+        if (this.subscribes[event]) {
+            this.subscribes[event] = this.subscribes[event].filter(cb => cb !== callback)
+        }
+
+    }
+}
+
 // console.log(res)

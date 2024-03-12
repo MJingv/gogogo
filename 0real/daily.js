@@ -3,7 +3,6 @@ function Father(name) {
     this.money = 1000
 }
 
-
 Father.prototype.house = 10
 
 function Child(name) {
@@ -16,4 +15,4 @@ Child.prototype.constructor = Child
 
 const f = new Father('f')
 const c = new Child('c')
-console.log(c, c.house)
+console.log(c, c.house,c.__proto__,Child.prototype)
