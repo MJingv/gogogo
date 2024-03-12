@@ -1,4 +1,9 @@
 https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&amp;sn=0d79797b86e27f6694a23a1ee0289a79&amp;scene=21#wechat_redirect
+---
+营销4ps：product、price、place、promotion、strategy
+用户分类：新客、老客、潜客
+老客：流失、沉默、（成熟、过渡、尝鲜）
+用户生命周期：低潜、高潜、引入、成长、成熟、衰退、流失
 
 # 前端做三件事
 
@@ -70,7 +75,25 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
 
 # machpro：quickjs+preact+yoga布局
 
-- dom api+module api
+- rn渲染机制
+    - js-》vdom-》fiberdom -桥通信- shadowtree-》yoga layout-》 viewtree
+    - 桥通信：异步、耗时大、一批一批执行（fiber）
+
+- rn问题：
+    - 现象：首屏时间长、交互动效卡顿、长列表白屏。
+        - 首屏时间长：mrn提前初始化js引擎和bundle
+        - 交互动效卡顿：
+            - 因为交互是异步的js和native不同线程需要切换，每次手势2次通信（native->js,js ->native）
+            - 解决：阿里bingingx预置表达式（兼容性差）
+        - 长列表白屏
+            - 异步渲染、桥通信
+    - 原因：js引擎执行慢、react框架执行慢、native和js通信慢
+- machpro如何解决rn问额
+    - js引擎慢：用quickjs，没用jit，用c编写，编译时lexer、parse、字节码，runtime直接run字节码
+    - react执行慢，preact快30%
+    - 通信慢：js在主线程（单线程），不通信
+    - 为高达设计多线程
+- 提供给js2个内容：dom api+module api
 
 ## preact
 
@@ -209,34 +232,80 @@ lottie小程序选型：
 - 白屏/闪退：内存泄漏（iOS的jscore的gc比v8差）
 - 过热：帧率、节流
 
-全部dom+css3
+工具-》全部dom+css3
 
-- requestanimationframe（小程序没有）
+生成帧的方式：重排、重绘、合成
 
-- 合成层：
-    - 独立绘制渲染
+动画优化方式3个：刷新&帧率、合成层、gpu硬件加速
+
+刷新&帧率
+
+- requestanimationframe（小程序没有）代替setinterval
+
+合成层：
+
+- 作用：
+    - 独立绘制&渲染：独立的合成层，减少其他元素变化的影响
+    - 图层分离：减少重绘&重排
     - 开启gpu硬件加速，提高动画流畅度和响应性能
-    - 图层分离
     - 硬件优化
-- 小程序触发合成层：wx.createAnimation
-- 浏览器触发合成层:will-change/opacity/translate
+
+- 方法：
+    - 小程序触发合成层：wx.createAnimation
+    - 浏览器触发合成层:will-change/opacity/translate/filter
+
+开启gpu硬件加速：
+
+- 方法
+    - 开启合成层 opacity/will-change/opacity/filter
+    - 3d变换 translate3d/rotate3d/scale3d
+    - canvas/webgl
 
 - 硬件加速可以提高动画性能：
     - 并行处理：硬件加速利用了GPU（图形处理单元）的并行处理能力。GPU是专门用于图形渲染的硬件，具有大量的并行计算单元。通过将动画的计算和渲染任务交给GPU处理，可以充分利用GPU的并行计算能力，加速动画的绘制和渲染过程。
     - 硬件优化：GPU通常会针对图形渲染进行硬件优化，例如使用专门的纹理缓存、顶点缓存等技术，以提高图形渲染的效率和性能。这些硬件优化可以使动画的绘制和渲染更加高效，减少CPU的负载，提高动画的流畅度。
     -
-    减少主线程压力：在硬件加速中，动画的计算和渲染任务通常会在GPU上进行，而不是在主线程上进行。这样可以减轻主线程的压力，使主线程能够更好地处理其他任务，例如用户输入响应、布局计算等。通过减少主线程的负载，可以提高动画的响应性能和流畅度。
+  减少主线程压力：在硬件加速中，动画的计算和渲染任务通常会在GPU上进行，而不是在主线程上进行。这样可以减轻主线程的压力，使主线程能够更好地处理其他任务，例如用户输入响应、布局计算等。通过减少主线程的负载，可以提高动画的响应性能和流畅度。
     - 帧率匹配：硬件加速可以帮助动画的帧率与显示设备的刷新率匹配。显示设备通常有固定的刷新率（例如60Hz），而硬件加速可以确保动画的帧率与刷新率保持一致。这样可以避免动画的撕裂和卡顿现象，提供更流畅的视觉效果。
 
 综上所述，硬件加速通过利用GPU的并行处理能力、硬件优化和减轻主线程压力等方式，可以提高动画的绘制和渲染效率，提供更好的动画性能和流畅度。在前端开发中，合理地使用硬件加速技术，可以改善用户体验，提升应用的质量和性能。
-jscore vs v8 的gc
 
-- 算法：jscore引用计数法，v8分代gc，scavenger
+# gc
+
+- 算法：jscore引用计数法（弱引用+周期检测处理循环引用），v8分代gc，scavenger，quick标记清除法
 - 并发：v8并发垃圾回收，js可以执行。jscore停止-复制，垃圾回收的时候js停止执行
 - 内存管理：v8使用了堆内存管理，将内存分为新生代和老生代两个堆。jscore也是堆内存管理
 
----
-营销4ps：product、price、place、promotion、strategy
-用户分类：新客、老客、潜客
-老客：流失、沉默、（成熟、过渡、尝鲜）
-用户生命周期：低潜、高潜、引入、成长、成熟、衰退、流失
+# 性能优化
+
+关注指标
+
+- fcp-first content paint
+- fmp-first meaning paint
+- ttl-time to interactive
+
+方向：加载资源、请求数据、渲染页面、交互&动效
+
+加载资源
+
+- bundle体积优化：减少包体积、拆包
+- 懒加载：不常用的bundle首页后再加载
+- 图片：宽高限定、提前加载、缓存
+
+接口请求：
+
+- 预请求、
+- 精简请求
+
+页面渲染：
+
+- 分步渲染
+-
+
+交互
+
+- 长列表：虚拟列表、按需加载
+
+
+
+
