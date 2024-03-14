@@ -15,13 +15,16 @@ const reverse1 = (head) => {
     if (!head) return null
     let cur = head, pre = null
     while (cur) {
+        console.log(cur.val)
         const next = cur.next
         cur.next = pre
         pre = cur
         cur = next
     }
-    return pre
+    return head
 }
+const res=JSON.stringify(reverse1(l1))
+
 const reverse = (head) => {
     if (!head || !head.next) return head
     const h = reverse(head.next)
@@ -103,5 +106,5 @@ var mergeTwoLists = function (list1, list2) {
     return mergeTwoLists(list1, list2)
 };
 
-const res = JSON.stringify(mergeTwoLists(l1, l3))
+// const res = JSON.stringify(mergeTwoLists(l1, l3))
 console.log(res)

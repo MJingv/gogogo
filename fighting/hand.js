@@ -19,7 +19,7 @@ function Child() {
     this.name = 'child'
 }
 
-Child.prototype = new Object(Parent.prototype) //继承祖父的
+Child.prototype = Object.create(Parent.prototype) //继承祖父的
 Child.prototype.constructor = Child // 你的父亲是我，不是祖父
 
 const c = new Child()
