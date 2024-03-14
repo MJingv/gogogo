@@ -71,3 +71,32 @@ effects(saga)
 - 异步需要saga
 
 dispatch一个action
+
+# react 更新
+
+reconciliation 是 react核心算法，用于比较vdom差异并更新实际dom
+
+- diff算法：对比新旧vdom，找出差异
+- 更新差异：根据差异类型，操作实际dom，增删改dom或节点
+- 递归处理：处理子节点差异
+
+fiber是react16新协调机制，实现增量更新和优先级调度，是对reconciliation的一种实现方式，之前用stack实现
+
+# react的children diff算法
+
+对比新旧dom，确定更新的部分
+
+- 列表遍历，新旧vdom的孩子列表，对比key和type
+- diff策略
+    - 新旧key和type同，对比&更新属性
+    - 新旧type或type不同，用新
+- diff优化
+    - 尽可能复用，减少dom操作
+    - 使用key跟踪和标识
+
+# react和vue的diff对比
+
+- 算法不同
+    - vue：双端比较算法
+    - react：fiber增量渲染和调度
+

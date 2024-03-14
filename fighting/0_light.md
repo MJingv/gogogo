@@ -86,12 +86,13 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
             - 因为交互是异步的js和native不同线程需要切换，每次手势2次通信（native->js,js ->native）
             - 解决：阿里bingingx预置表达式（兼容性差）
         - 长列表白屏
-            - 异步渲染、桥通信
-    - 原因：js引擎执行慢、react框架执行慢、native和js通信慢
+            - 因为rn是异步渲染、桥通信
+            - 无法从根本上解决
+    - 原因：js引擎执行慢、react框架执行慢、native和js通信慢/切换慢（ui主线程，js单独线程）
 - machpro如何解决rn问额
     - js引擎慢：用quickjs，没用jit，用c编写，编译时lexer、parse、字节码，runtime直接run字节码,.qbc文件保存字节码
     - react执行慢，preact快30%
-    - 通信慢：js在主线程（单线程），不通信
+    - 通信慢：js在主线程，不通信，不切换
     - 为高达设计多线程
 - 提供给js2个内容：dom api+module api
 
@@ -155,6 +156,19 @@ js是解释型语言。
 - compile time。code转为机器码/字节码。进行语法/类型等检查
 - runtime。编译型语言会生成字节码，解释型语言会执行代码
 - just in time。编译同时发生在编译和运行。提高程序效率。
+
+jit功能：js转机器码
+
+v8 jit:baseline jit、turbofan、ignition
+
+- baseline jit 负责快速生成可执行代码
+- turbofan高度优化机器码
+- ignition解析生成中间表示
+
+jscore jit：llint、dfg jit
+
+- llint解析执行js
+- dfg转为高效机器码
 
 # 小程序：jscore定制引擎+kbone
 
@@ -288,24 +302,45 @@ lottie小程序选型：
 
 加载资源
 
-- bundle体积优化：减少包体积、拆包
+- bundle体积优化：减少包体积、拆包、预加载
 - 懒加载：不常用的bundle首页后再加载
-- 图片：宽高限定、提前加载、缓存
+- 图片：宽高限定、提前加载、缓存、
 
 接口请求：
 
 - 预请求、
-- 精简请求
+- 精简请求,减少头及无关的内容
+- https，有条件的http3
 
 页面渲染：
 
 - 分步渲染
--
+- 按需加载
+- 减少重绘/重排
 
 交互
 
+- 动画：合成层/开启gpu硬件加速
 - 长列表：虚拟列表、按需加载
+- 点击，滚动：防抖节流
+- 减少一帧的产生时间
+    - 避免频繁gc：小颗粒对象产生
+    - 减少js执行时间，每次任务不要太久，webworker
 
+小程序特殊
+数据和ui双线程
 
+优势：
 
+- 数据驱动
+- 跨平台
+- 并行计算
+- 响应性能
 
+  问题：
+- 通信耗时，线程竞争，资源占用。
+- 最佳实践
+    - setdata控制大小和更新频率
+    - nextticket和requestanimationframe优化数据更新和渲染时机
+    - createworke创建worker进行耗时计算
+  
