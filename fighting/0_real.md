@@ -24,3 +24,9 @@
     - 主要检测image、text等元素
 
 # sso
+
+- 用户访问一个sp
+- sp身份验证，未登录重定向到ldp
+- 用户在ldp验证身份，产生token，给浏览器
+- 浏览器token给sp
+- sp校验token有效，通过
