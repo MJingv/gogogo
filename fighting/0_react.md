@@ -100,3 +100,20 @@ fiber是react16新协调机制，实现增量更新和优先级调度，是对re
     - vue：双端比较算法
     - react：fiber增量渲染和调度
 
+# rn
+
+virtual dom 最重要的是是*平台无关性*
+
+3个线程：
+
+- js线程：负责逻辑处理，打包js bundle给js引擎执行
+- shadow线程：布局&ui。创建shadowtree模拟react结构树，rn的flex布局native不支持，需要yoga转换
+- ui线程/主线程/native线程：原生渲染和原生能力
+
+渲染：
+
+- js线程把js代码序列化成json
+- 通过bridge给到shadow线程
+- 反序列化生成shadowtree
+- 给yoga生成原生布局信息
+- bridge给ui线程，反序列化，布局，绘制
