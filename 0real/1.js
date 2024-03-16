@@ -323,6 +323,95 @@ var reverseKGroup = function (head, k) {
     a.next = reverseKGroup(b, k)
     return h
 };
-const res = JSON.stringify(reverseKGroup(l1, 2))
+// const res = JSON.stringify(reverseKGroup(l1, 2))
 
+const reverse = (head) => {
+    if (!head) return null
+    let cur = head, pre = null
+    while (cur) {
+        const next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+    }
+    return pre
+}
+
+const reverseN = (head, n) => {
+    if (!head) return head
+    let next = null
+    const helper = (head, n) => {
+        if (n === 1) {
+            next = head.next
+            return head
+        }
+        const h = helper(head.next, n - 1)
+        head.next.next = head
+        head.next = null
+        return h
+    }
+    return helper(head, n)
+}
+
+const reverseBetween = (head, m, n) => {
+    if (!head) return null
+    const reverseN = (head, n) => {
+        if (!head) return head
+        let next = null
+        const helper = (head, n) => {
+            if (n === 1) {
+                next = head.next
+                return head
+            }
+
+            const h = helper(head.next, n - 1)
+            head.next.next = head
+            head.next = next
+            return h
+        }
+
+        return helper(head, n)
+    }
+    if (m === 1) return reverseN(head, n)
+    head.next = reverseBetween(head.next, m - 1, n - 1)
+    return head
+}
+
+
+// 21 合并两个有序链表
+var mergeTwoLists1 = function (list1, list2) {
+    // 难理解
+    if (!list1 && !list2) return null
+    if (!list1) return list2
+    if (!list2) return list1
+    if (list1.val < list2.val) {
+        list1.next = mergeTwoLists(list1.next, list2)
+        return list1
+    } else {
+        list2.next = mergeTwoLists(list2.next, list1)
+        return list2
+    }
+    return mergeTwoLists(list1, list2)
+}
+var mergeTwoLists = function (list1, list2) {
+    let p1 = list1, p2 = list2, dummy = new ListNode(-1)
+    let p = dummy
+    while (p1 && p2) {
+        if (p1.val < p2.val) {
+            p.next = p1
+            p1 = p1.next
+        } else {
+            p.next = p2
+            p2 = p2.next
+        }
+        p = p.next
+    }
+    if (p1) p.next = p1
+    if (p2) p.next = p2
+
+
+    return dummy.next
+}
+
+const res = JSON.stringify(mergeTwoLists(l1, l3))
 console.log(res)
