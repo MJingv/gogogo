@@ -143,7 +143,7 @@ const debounce = function (fn, delay) {
 }
 
 function example(...arg) {
-    // console.log(arg);
+    console.log(arg);
 }
 
 example(1, 2, 3);

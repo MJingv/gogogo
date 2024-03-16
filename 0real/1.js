@@ -178,5 +178,3 @@ const fen = (list = [], n) => {
 // const res = fen([1, 2, 3, 4, 5], 2)
 
 
-
-console.log(res)
