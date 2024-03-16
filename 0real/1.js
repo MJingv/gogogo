@@ -178,26 +178,3 @@ const fen = (list = [], n) => {
 // const res = fen([1, 2, 3, 4, 5], 2)
 
 
-// 2 两数相加
-var addTwoNumbers = function (l1, l2) {
-    let dummyHead = new ListNode(-1)
-    let p = l1, q = l2, cur = dummyHead
-    let carry = 0
-    while (p || q) {
-        let x = p && p.val || 0
-        let y = q && q.val || 0
-        let sum = x + y + carry
-        carry = Math.floor(sum / 10)
-        cur.next = new ListNode(sum % 10)
-        cur = cur.next
-        if (p) p = p.next
-        if (q) q = q.next
-
-    }
-    if (carry > 0) {
-        cur.next = new ListNode(carry)
-    }
-    return dummyHead.next
-};
-
-console.log(res)

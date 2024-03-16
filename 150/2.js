@@ -15,15 +15,13 @@ const reverse1 = (head) => {
     if (!head) return null
     let cur = head, pre = null
     while (cur) {
-        console.log(cur.val)
         const next = cur.next
         cur.next = pre
         pre = cur
         cur = next
     }
-    return head
+    return pre
 }
-const res=JSON.stringify(reverse1(l1))
 
 const reverse = (head) => {
     if (!head || !head.next) return head
@@ -32,6 +30,8 @@ const reverse = (head) => {
     head.next = null
     return h
 }
+const res = JSON.stringify(reverse(l1))
+
 
 // 前n
 const reverseN = (head, n) => {
@@ -107,4 +107,58 @@ var mergeTwoLists = function (list1, list2) {
 };
 
 // const res = JSON.stringify(mergeTwoLists(l1, l3))
+
+// 2 两数相加
+var addTwoNumbers1 = function (l1, l2) {
+    let dummyHead = new ListNode(-1)
+    let p = l1, q = l2, cur = dummyHead
+    let carry = 0
+    while (p || q) {
+        let x = p && p.val || 0
+        let y = q && q.val || 0
+        let sum = x + y + carry
+        carry = Math.floor(sum / 10)
+        cur.next = new ListNode(sum % 10)
+        cur = cur.next
+        if (p) p = p.next
+        if (q) q = q.next
+
+    }
+    if (carry > 0) {
+        cur.next = new ListNode(carry)
+    }
+    return dummyHead.next
+};
+
+const addTwoNumbers = (l1, l2) => {
+    // 没全a
+    const dummyHead = new ListNode(-1)
+    let p1 = l1, p2 = l2, cur = dummyHead
+    let flag = 0
+    while (p1 && p2) {
+        const val = p1.val + p2.val + flag
+        cur.next = new ListNode(val % 10)
+        flag = val >= 10 ? 1 : 0
+        p1 = p1.next
+        p2 = p2.next
+        cur = cur.next
+    }
+    while (p1) {
+        cur.next = p1
+        p1 = p1.next
+        cur = cur.next
+    }
+    while (p2) {
+        cur.next = p2
+        p2 = p2.next
+        cur = cur.next
+    }
+    if (flag) cur.next = new ListNode(1)
+
+
+    return dummyHead.next
+
+}
+// const res = JSON.stringify(addTwoNumbers(l1, l1))
+
 console.log(res)
