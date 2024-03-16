@@ -1,3 +1,33 @@
+class ListNode {
+    constructor(val, next = null) {
+        this.val = val
+        this.next = next
+    }
+}
+
+const l5 = new ListNode(5)
+const l4 = new ListNode(4, l5)
+const l3 = new ListNode(3, l4)
+const l2 = new ListNode(2, l3)
+const l1 = new ListNode(1, l2)
+
+
+function TreeNode(val, left, right) {
+    this.val = (val === undefined ? 0 : val)
+    this.left = (left === undefined ? null : left)
+    this.right = (right === undefined ? null : right)
+}
+
+const t1 = new TreeNode(1)
+const t0 = new TreeNode(0)
+t1.left = t0
+// t0.left = new TreeNode(0)
+const t3 = new TreeNode(3)
+t3.left = new TreeNode(2)
+t3.right = new TreeNode(4)
+t1.right = t3
+
+
 // 失败重试，200ms试一次，500ms试一次，不行就返回失败
 const retry = (promise, n, delay) => new Promise((res, rej) => {
     const fn = (n) => {
@@ -177,4 +207,122 @@ const fen = (list = [], n) => {
 }
 // const res = fen([1, 2, 3, 4, 5], 2)
 
+// lodash.get
+const myGet = (obj, path = '', def) => {
+    const list = path.split('.')
+    const len = list.length
+    let res = ''
+    for (let i = 0; i < len; i++) {
+        res = obj[list[i]]
+    }
+    return res || def
+}
 
+// const res = myGet({a: {obj: {cc: 1}}}, 'a.obj.cc', 1)
+
+// 二叉树最大深度
+const maxDepth = (root) => {
+    if (!root) return 0
+    const left = maxDepth(root.left)
+    const right = maxDepth(root.right)
+    if (left && right) return Math.max(left, right) + 1
+    if (!left || !right) return (left || right) + 1
+
+}
+// const res = maxDepth(t1)
+
+// 岛屿最大面积
+var maxAreaOfIsland = function (grid) {
+    // 用过设置为海水
+    const [m, n] = [grid.length, grid[0].length]
+    let res = 0
+    const helper = (i, j) => {
+        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] === 0) return 0
+        grid[i][j] = 0
+
+        return helper(i + 1, j) + helper(i - 1, j) + helper(i, j + 1) + helper(i, j - 1) + 1
+    }
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] === 1) {
+                res = Math.max(res, helper(i, j))
+            }
+        }
+    }
+    return res
+
+
+};
+// const res = maxAreaOfIsland([[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]])
+
+// 5最长回文子串
+
+var longestPalindrome = function (s) {
+    const len = s.length
+    if (len <= 1) return s
+    const dp = Array(len).fill(0).map(() => Array(len).fill(false))
+    for (let i = 0; i < len; i++) dp[i][i] = true
+    let start = 0, max = 1
+    for (let j = 1; j < len; j++) {
+        for (let i = 0; i < j; i++) { //注意遍历方式
+            if (s[i] === s[j]) {
+                if (j - i < 3 || dp[i + 1][j - 1]) { //注意条件
+                    dp[i][j] = true
+
+                    if (j - i + 1 > max) {
+                        start = i
+                        max = j - i + 1
+                    }
+                }
+            }
+        }
+    }
+    return s.slice(start, start + max)
+
+
+};
+// const res = longestPalindrome('cbbd')
+
+// 最大子数组和
+// 连续子数组
+var maxSubArray = function (nums) {
+    const len = nums.length
+    if (!len) return
+    const dp = Array(len).fill(-Infinity)
+    dp[0] = nums[0]
+    let res = nums[0]
+    for (let i = 1; i < len; i++) {
+        dp[i] = Math.max(nums[i], nums[i] + dp[i - 1])
+        res = Math.max(res, dp[i])
+
+    }
+    return res
+};
+// const res = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+
+// k个一组反转链表
+var reverseKGroup = function (head, k) {
+    if (!head) return head
+    const reverse = (a, b) => {
+        // [a,b)
+        let cur = a, pre = null
+        while (cur !== b) {
+            const next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+        }
+        return pre
+    }
+    let a = head, b = head
+    for (let i = 0; i < k; i++) {
+        if (!b) return head
+        b = b.next
+    }
+    const h = reverse(a, b)
+    a.next = reverseKGroup(b, k)
+    return h
+};
+const res = JSON.stringify(reverseKGroup(l1, 2))
+
+console.log(res)
