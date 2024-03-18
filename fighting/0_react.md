@@ -40,6 +40,13 @@ react hooks hooks好处
 - usecallback 缓存函数click等（性能优化）
 - useref 获取dom引用，多次渲染只有一个，ref会有多个
 
+
+usememo和usecallback
+- 入参，函数+依赖项，根据依赖项数组的编号判断是否重新计算or返回新的函数
+- usememo用于缓存计算结果
+- usecallback缓存回调函数
+- 都可以避免不必要的重复计算和函数创建，提高函数组件的性能
+
 规则：
 
 - hooks不能在循环/嵌套/条件里使用
