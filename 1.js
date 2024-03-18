@@ -21,5 +21,26 @@ const fn = (s = '') => {
     }
     return res
 }
-const res = fn('(()*')
+// const res = fn('(()*')
+// console.log(res)
+
+// 输入：intervals = [[1,3],[2,6],[8,10],[15,18]]
+// 输出：[[1,6],[8,10],[15,18]]
+const fn = (arr = []) => {
+    const len = arr.length
+    if (!len) return []
+    arr.sort((a, b) => a[0] - b[0])
+    const list = [arr[0]]
+    let last = arr[0]
+    for (let i = 1; i < len; i++) {
+        const [a, b] = arr[i]
+        if (a <= last[1]) {
+            list[list.length - 1][1] = b
+        } else {
+            list.push(arr[i])
+        }
+    }
+    return list
+}
+const res = fn([[1, 3], [2, 6], [8, 10], [15, 18]])
 console.log(res)
