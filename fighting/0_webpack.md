@@ -11,4 +11,13 @@ https://juejin.cn/post/7021729340945596424
 - webpack监听文件变化通过websocket发送change
 - 浏览器通过module.hot.accept接口告诉webpack如何替换
 
-详细
+webpack4和5区别
+- 5引入持久化缓存，提高增量构建速度。引入federation特性，实现跨项目共享模块，减少重复打包
+- tree shaking优化，引入sideeffects，更精准的判断哪些模块有副作用
+- 支持es模块
+
+
+
+
+
+

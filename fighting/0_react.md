@@ -24,8 +24,7 @@ error阶段
 - getderivedstatefromerror(error)
 - componentdidcatch(error,info)
 
-react hooks
-hooks好处
+react hooks hooks好处
 
 - 简化代码、副作用、状态管理，可读性好
 - 代码复用、函数式编程
@@ -56,12 +55,7 @@ react复用方法
 redux
 https://juejin.cn/post/6844903870246699022
 
-store
-state
-reduce：纯函数 (action,state)=>state
-action：变更
-dispatch
-effects(saga)
+store state reduce：纯函数 (action,state)=>state action：变更 dispatch effects(saga)
 
 原则
 
@@ -117,3 +111,18 @@ virtual dom 最重要的是是*平台无关性*
 - 反序列化生成shadowtree
 - 给yoga生成原生布局信息
 - bridge给ui线程，反序列化，布局，绘制
+
+react合成事件 在事件处理方面的一种优化机制。底层实现了一套事件系统，用于处理浏览器原生事件的跨浏览器兼容性和性能问题
+
+- 跨浏览器兼容性
+- 性能优化，使用了事件委托，绑定在最外层dom，减少事件监听数量，提高性能
+- 事件池，处理完事件后，将事件对象重置并放回事件池里，以便下次使用。减少内存分配及垃圾回收，提高性能
+- 合成事件属性，提供了额外的属性和方法，event.target 获取出发事件的dom，event.preventDefault 阻止默认事件，stoppropagation停止事件莫啊跑
+
+原生dom事件
+
+- dom level0 html元素直接绑定事件，onclick、onmouseover
+- dom level1 使用addEventListener/removeEventListener 绑定多个事件
+- dom level2 addEventListener 增加冒泡/捕获
+- dom level3 增加自定义事件
+- dom level4 增加inputevent、mutationevent、touchevent等，增加once（一次）、passive（不阻止默认行为）、capture（捕获）
