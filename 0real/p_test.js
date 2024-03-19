@@ -118,9 +118,11 @@
 
 // script start
 // async1 start
+// async2
 // promise1
 // script end
-// async2
+
+
 // async1 end
 // promise2
 // setTimeout
@@ -386,6 +388,18 @@
 // async2 start
 // async2 promise
 // promise1
+// 'script end
+// async1 end
+// promise2
+// promise3
+// setTimeout
+
+
+// script start
+// async1 start
+// async2 start
+// async2 promise
+// promise1
 // script end
 
 // promise2
@@ -394,26 +408,156 @@
 // setTimeout
 
 
-function app() {
-    setTimeout(() => {
-        console.log("1-1");
-        Promise.resolve().then(() => {
-            console.log("2-1");
-        });
-    });
-    console.log("1-2");
-    Promise.resolve().then(() => {
-        console.log("1-3");
-        setTimeout(() => {
-            console.log("3-1");
-        });
-    });
-}
-
-app();
+// function app() {
+//     setTimeout(() => {
+//         console.log("1-1");
+//         Promise.resolve().then(() => {
+//             console.log("2-1");
+//         });
+//     });
+//     console.log("1-2");
+//     Promise.resolve().then(() => {
+//         console.log("1-3");
+//         setTimeout(() => {
+//             console.log("3-1");
+//         });
+//     });
+// }
+//
+// app();
 
 // 1-2
 // 1-3
 // 1-1
 // 2-1
 // 3-1
+
+
+// console.log('script start')
+//
+// async function async1() {
+//     await async2()
+//     console.log('async1 end')
+// }
+// async function async2() {
+//     console.log('async2 end')
+//     return Promise.resolve().then(()=>{
+//         console.log('async2 end1')
+//     })
+// }
+// async1()
+//
+// setTimeout(function() {
+//     console.log('setTimeout')
+// })
+//
+// new Promise(resolve => {
+//     console.log('Promise')
+//     resolve()
+// })
+//     .then(function() {
+//         console.log('promise1')
+//     })
+//     .then(function() {
+//         console.log('promise2')
+//     })
+//     .then(function() {
+//         console.log('promise3')
+//     })
+// Promise.resolve().then(function() {
+//     console.log('promise4')
+// })
+//
+// console.log('script end')
+
+
+async function async1() {
+    console.log('async1 start');
+    await async2();
+    //     new Promise(resolve => {
+    //         resolve(Promise.resolve())
+    //     }).then()
+
+    console.log('async1 end');
+}
+
+async function async2() {
+    console.log('async2 start');
+    return new Promise((resolve, reject) => {
+        resolve();
+        console.log('async2 promise');
+    })
+}
+
+console.log('script start');
+setTimeout(function () {
+    console.log('setTimeout');
+}, 0);
+async1();
+new Promise(function (resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function () {
+    console.log('promise2');
+}).then(function () {
+    console.log('promise3');
+});
+console.log('script end');
+
+
+// script start
+// async1 start'
+// async2 start
+// async2 promise
+// promise1
+
+// promise2
+// promise3
+// script end
+// async1 end todo
+
+// setTimeout
+
+
+// async function async1() {
+//     await new Promise((resolve, reject) => {
+//         resolve()
+//     })
+//     console.log('A')
+// }
+//
+// async1()
+// new Promise((resolve) => {
+//     console.log('B')
+//     resolve()
+// }).then(() => {
+//     console.log('C')
+// }).then(() => {
+//     console.log('D')
+// })
+
+// b a cd
+
+
+// async function async1() {
+//     await async2()
+//     console.log('A')
+// }
+//
+// async function async2() {
+//     return new Promise((resolve, reject) => {
+//         resolve()
+//     })
+// }
+//
+// async1()
+// new Promise((resolve) => {
+//     console.log('B')
+//     resolve()
+// }).then(() => {
+//     console.log('C')
+// }).then(() => {
+//     console.log('D')
+// })
+
+// b c a d
