@@ -33,6 +33,7 @@ const fn = (list, max) => {
     })
 
 }
-const t1 = (val) => new Promise(r => setTimeout(() => console.log(val + '----'), 100))
-const task = [() => t1(1), () => t1(2), () => t1(1)]
-fn(task, 3).then(res => console.log(res)).catch(e => console.log(e))
+// const t1 = (val) => new Promise(r => setTimeout(() => console.log(val + '----'), 100))
+// const task = [() => t1(1), () => t1(2), () => t1(1)]
+// fn(task, 3).then(res => console.log(res)).catch(e => console.log(e))
+
