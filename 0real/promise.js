@@ -70,9 +70,45 @@ const timeout = (i) => {
 
 let urls = Array(10).fill(0).map((v, i) => i)
 console.log(urls);
-(async () => {
-    const res = await asyncPool(3, urls, timeout);
-    console.log(res);
-})()
+// (async () => {
+//     const res = await asyncPool(3, urls, timeout);
+//     console.log(res);
+// })()
 
 
+const f1 = (list, max) => new Promise((res, rej) => {
+    const len = list.length
+    const resList = []
+    let index = 0, cur = 0
+
+    const helper = (task) => {
+        const curIndex = cur
+        index++
+        cur++
+
+        task().then(res => {
+            resList[curIndex] = res
+
+        }).catch(e => {
+            rej(e)
+
+        }).finally(() => {
+            cur--
+            if (index < len) {
+                helper(list[index])
+            } else if (cur === 0) {
+                res(resList)
+            }
+        })
+    }
+
+    const next = () => {
+        if (index >= len || cur >= max) return
+        helper(list[index])
+        next()
+    }
+    next()
+
+})
+
+fn(urls, 3).then(() => console.log('finish'))
