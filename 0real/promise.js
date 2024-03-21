@@ -76,3 +76,33 @@ console.log(urls);
 })()
 
 
+const fn = (list, max) => new Promise((res, rej) => {
+    let index = 0, cur = 0, resList = []
+
+    const helper = (task) => {
+        const curIndex = index
+        index++
+        cur++
+
+        task.then((res) => {
+            resList[curIndex] = res
+        }).catch(e => {
+            rej(e)
+        }).finally(() => {
+            cur--
+            if (index < list.length) {
+                helper(task[index])
+            } else if (cur === 0) res(resList)
+
+        })
+
+
+    }
+
+    const next = () => {
+        if (index >= list.length || cur > max) return
+        helper(list[index])
+        next()
+    }
+    next()
+})
