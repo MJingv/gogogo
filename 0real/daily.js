@@ -67,3 +67,21 @@ const debounce = function (fn, delay) {
     }
 
 }
+
+const concurrent = async (arr, max) => {
+    const cur = []
+    const list = []
+    for (let item of list) {
+        list.push(item)
+        if (max <= arr.length) {
+            const c = item().then(() => {
+                cur.splice(cur.indexOf(c), 1)
+            })
+            cur.push(c)
+            if (cur.length >= max) {
+                await Promise.race(cur)
+            }
+        }
+    }
+    return Promise.all(list)
+}
