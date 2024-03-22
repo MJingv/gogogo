@@ -1,10 +1,14 @@
 # css的100%相对谁
 
 - 相对于其父元素
-- 父元素尺寸相对于其*包含块*
+- 父元素尺寸相对于其*包含块* containing block
 - 普通流，包含块是最近块级祖先元素
 - 绝对定位，最近具有定位属性的祖先
 - 固定定位，包含块是视口
+
+css 100%相对自己的
+
+- translate
 
 # canvas优化
 
@@ -34,6 +38,22 @@ css比js动画块
 
 - 渲染引擎将willchange/transform/opacity属性的图层单独图层，不会涉及到主线程
 - 单独图层占内存，合理使用
+
+# css水平垂直居中
+
+- flex，align-item/justify-content：center
+- absolute+left/right50%+translate（-50%，-50%）
+- absolute+left/right50%+margin top/left(-50%)
+
+# 响应式
+
+- 媒体查询
+- 百分比
+- vw/vh
+- rem
+
+
+
 
 
 

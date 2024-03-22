@@ -14,7 +14,7 @@ react渲染流程
 - 任务的优先级是根据车道模型，将任务进行分类，每一类拥有不同的优先级，所有的分类和优先级都是在react进行枚举
 - scheduler按照优先级执行任务时，会异步执行。灭一个任务执行完成后，会通过*requestIdleCallback*判断下一个任务是否能在当前渲染帧的剩余时间内完成
 - 如果不能完成就中断，把线程的控制权交给浏览器，剩下的任务则在下一个渲染帧内执行
-- 整个reconciler和scheduler的任务执行完后，会生成一个新的workinprogressfiber的新的节点树，之后reconciler触发commit阶段通知render渲染器去进行diff操作，这就是patch
+- 整个reconciler和scheduler的任务执行完后，会生成一个新的 workinprogressfiber 的新的节点树，之后reconciler触发commit阶段通知render渲染器去进行diff操作，这就是patch
 
 单节点diff算法
 
