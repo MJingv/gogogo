@@ -78,8 +78,6 @@ const pool = async (max, arr) => {
         }
     }
     return Promise.all(list)
-
-
 }
 
 
@@ -96,4 +94,4 @@ const su = () => {
     return res
 }
 const res = su()
-console.log(res)
+// console.log(res)

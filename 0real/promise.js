@@ -76,33 +76,52 @@ console.log(urls);
 })()
 
 
-const fn = (list, max) => new Promise((res, rej) => {
-    let index = 0, cur = 0, resList = []
+const pool = async (max, arr) => {
+    const cur = [], list = []
+    for (const item of arr) {
+        list.push(item)
+        if (max <= arr.length) {
+            const p = item.then(() => {
+                cur.splice(cur.indexOf(p), 1)
+            })
+            cur.push(p)
+            if (cur.length >= max) {
+                await Promise.race(cur)
+            }
+        }
+    }
 
-    const helper = (task) => {
+    return Promise.all(list)
+}
+
+
+const fn1 = (max, arr) => new Promise((res, rej) => {
+    const list = []
+    let index = 0, cur = 0
+    const helper = () => {
         const curIndex = index
         index++
         cur++
-
-        task.then((res) => {
-            resList[curIndex] = res
+        arr[curIndex].then((res) => {
+            list[curIndex] = res
         }).catch(e => {
             rej(e)
         }).finally(() => {
             cur--
-            if (index < list.length) {
-                helper(task[index])
-            } else if (cur === 0) res(resList)
-
+            if (index < arr.length) {
+                helper()
+            } else if (cur === 0) {
+                res(list)
+            }
         })
-
 
     }
 
     const next = () => {
-        if (index >= list.length || cur > max) return
-        helper(list[index])
+        if (cur >= max || index >= arr.length) return
+        helper()
         next()
     }
+
     next()
 })
