@@ -47,6 +47,53 @@ const graph = {
     F: ['C', 'E']
 };
 
-const res = fn(graph, 'A', 2)
+// const res = fn(graph, 'A', 2)
 
+
+const useState1 = (initVal) => {
+    let state = initVal
+    const setState = (newVal) => {
+        state = newVal
+        // render()
+
+    }
+    return [state, setState]
+}
+
+
+const pool = async (max, arr) => {
+    const cur = [], list = []
+    for (let item of arr) {
+        let p = item
+        list.push(p)
+
+        if (max <= cur.length) {
+            item().then(() => {
+                cur.splice(cur.indexOf(p), 1)
+            })
+            cur.push(p)
+            if (cur.length >= max) {
+                await Promise.race(cur)
+            }
+        }
+    }
+    return Promise.all(list)
+
+
+}
+
+
+// 100以内素数
+const su = () => {
+    const res = []
+    for (let i = 2; i <= 100; i++) {
+        let flag = true
+        for (let j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j === 0) flag = false
+        }
+        if (flag) res.push(i)
+    }
+    return res
+}
+const res = su()
 console.log(res)

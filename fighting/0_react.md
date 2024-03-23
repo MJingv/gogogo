@@ -1,20 +1,25 @@
 react渲染流程
 
-- 初始化。
-- 组件渲染。
-- 虚拟dom比较。
-- 差异更新。
-- 生命周期方法调用
-- 完成渲染
+- 初始化：React 会创建一个虚拟 DOM 树（Virtual DOM Tree），用于描述组件的结构和属性。
+- 更新：当组件的状态或属性发生变化时，React 会触发更新过程。React 会比较前后两次渲染的虚拟 DOM 树的差异，找出需要更新的部分。
+- 调和（Reconciliation）：React 使用一种称为调和（Reconciliation）的算法，将需要更新的部分映射到实际的 DOM 节点上。这个过程会尽量复用已有的
+  DOM 节点，减少对实际 DOM 的操作。
+- 渲染：React 将更新后的虚拟 DOM 树映射到实际的 DOM 节点上，完成渲染过程。React 使用一种称为批量更新（Batching）的机制，将多次更新合并为一次，以提高性能。
+- 生命周期方法：在渲染过程中，React 会调用组件的生命周期方法，例如 componentDidMount、componentDidUpdate
+  等，允许开发者在特定的时机执行自定义的逻辑。
+- 需要注意的是，React 使用虚拟 DOM 来进行高效的渲染，通过比较差异来减少对实际 DOM
+  的操作。这种方式可以提高性能，但也需要开发者编写高效的组件，避免不必要的渲染和更新。另外，React 还提供了一些优化技术，例如
+  shouldComponentUpdate 方法和 React.memo，用于控制组件的更新过程。
 
 
 - react的scheduler主要用于调度fiber节点的生成和更新任务
 - 当组件更新时，reconciler执行组件的render方法生成一个fiber节点，再递归生成fiber子节点
 - 每个fiber节点生成都是一个单独的任务，会以回调的形式交给scheduler执行调度处理，再scheduler根据任务的优先级执行任务
 - 任务的优先级是根据车道模型，将任务进行分类，每一类拥有不同的优先级，所有的分类和优先级都是在react进行枚举
-- scheduler按照优先级执行任务时，会异步执行。灭一个任务执行完成后，会通过*requestIdleCallback*判断下一个任务是否能在当前渲染帧的剩余时间内完成
+- scheduler按照优先级执行任务时，会异步执行。每一个任务执行完成后，会通过*requestIdleCallback*判断下一个任务是否能在当前渲染帧的剩余时间内完成
 - 如果不能完成就中断，把线程的控制权交给浏览器，剩下的任务则在下一个渲染帧内执行
-- 整个reconciler和scheduler的任务执行完后，会生成一个新的 workinprogressfiber 的新的节点树，之后reconciler触发commit阶段通知render渲染器去进行diff操作，这就是patch
+- 整个reconciler和scheduler的任务执行完后，会生成一个新的 workinprogressfiber
+  的新的节点树，之后reconciler触发commit阶段通知render渲染器去进行diff操作，这就是patch
 
 单节点diff算法
 

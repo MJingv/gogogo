@@ -98,5 +98,18 @@ event loop
 - 封装数据，独立作用域
 - 保持状态，不需要全局变量
 
+es module vs commonjs vs amd/cmd/umd
+不同的模块化规范，管理模块的导入和导出
 
+commonjs
 
+- require+exports
+- 动态，运行时按顺序加载和执行，同步加载
+- 导入对象的值，多次导入多个实例，不会影响原对象
+
+es module
+
+- import+export
+- 静态，编译时确定依赖
+- 导入支持.then动态导入
+- export具名导出是引用地址，会影响原对象。export默认导出是复制值，不会影响
