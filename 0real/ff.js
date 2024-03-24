@@ -1,5 +1,7 @@
 // 按版本号由小到大排序
 
+import {useRef} from "react";
+
 const compareVersions = (list = []) => {
     const len = list.length
     if (!len) return []
@@ -134,9 +136,7 @@ const arr2tree = (arr) => {
 
 
 const arr = [{id: 1, name: 'Node 1', parentId: null}, {id: 2, name: 'Node 2', parentId: 1}, {
-    id: 3,
-    name: 'Node 3',
-    parentId: 1
+    id: 3, name: 'Node 3', parentId: 1
 }, {id: 4, name: 'Node 4', parentId: 2}, {id: 5, name: 'Node 5', parentId: 2}, {id: 6, name: 'Node 6', parentId: 3},];
 // const res = JSON.stringify(arr2tree(arr))
 
@@ -245,3 +245,27 @@ console.log(res)
 
 
 // 实时搜索框组件
+const SearchBox = () => {
+    const [list, setList] = useState([])
+    const lockRef = 0
+    const onInput = async (e) => {
+        lockRef.current += 1
+        const tmp = lockRef.current
+        try {
+            const res = await fetch('xxx', e.target.value) || []
+            if (lockRef.current !== tmp) return
+            setList(res)
+        } catch (e) {
+            console.log(e)
+        }
+    }
+    return <div>
+        <input onInput={onInput}/>
+        {list.length && list.map((item, index) => <div key={item.id + index}>
+            {item.value}
+        </div>)}
+
+    </div>
+
+
+}
