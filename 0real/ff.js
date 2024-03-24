@@ -55,8 +55,26 @@ class redPackage {
 
 }
 
-const r = new redPackage(5, 10)
-const res = r.distribute()
+// const r = new redPackage(5, 10)
+// const res = r.distribute()
 
-const r1 = res.reduce((a, b) => a + b)
+
+// 数字转字符串
+// 1234567890->1,234,567,890
+const toString = (n) => {
+    // return n.toLocaleString()
+    const s = n.toString().split('').reverse()
+    const len = s.length
+    const res = []
+    for (let i = 0; i < len; i++) {
+        if (i && i % 3 === 0) {
+            res.push(',')
+        }
+        res.push(s[i])
+    }
+    return res.reverse().join('')
+
+}
+const res = toString(1234567890)
+console.log(res)
 
