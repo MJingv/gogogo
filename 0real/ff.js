@@ -141,7 +141,84 @@ const arr = [
     {id: 5, name: 'Node 5', parentId: 2},
     {id: 6, name: 'Node 6', parentId: 3},
 ];
-const res = JSON.stringify(arr2tree(arr))
+// const res = JSON.stringify(arr2tree(arr))
 
-console.log(res)
 
+//  同步sleep方法
+
+class LazyLog {
+    log(s) {
+        console.log(s)
+        return this
+    }
+
+    sleep(delay) {
+        let now = Date.now()
+        while (Date.now() - now < delay) {
+
+        }
+        return this
+
+    }
+}
+
+(new LazyLog()).log(1).sleep(2000).log(222)
+
+
+// z字打印矩阵
+function printZMatrix(matrix) {
+    const result = [];
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+    let row = 0;
+    let col = 0;
+    let direction = 1;
+
+    while (result.length < rows * cols) {
+        result.push(matrix[row][col]);
+
+        if (direction === 1) {
+            if (col === 0 || row === rows - 1) {
+                direction = -1;
+                if (row === rows - 1) {
+                    col++;
+                } else {
+                    row++;
+                }
+            } else {
+                row++;
+                col--;
+            }
+        } else {
+            if (row === 0 || col === cols - 1) {
+                direction = 1;
+                if (col === cols - 1) {
+                    row++;
+                } else {
+                    col++;
+                }
+            } else {
+                row--;
+                col++;
+            }
+        }
+    }
+
+    return result;
+}
+
+
+// 示例矩阵
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// const res = printZMatrix(matrix) //[1, 2, 4, 7, 5, 3, 6, 8, 9]
+
+
+// 大数相加
+
+
+// console.log(res)
