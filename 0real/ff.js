@@ -75,6 +75,40 @@ const toString = (n) => {
     return res.reverse().join('')
 
 }
-const res = toString(1234567890)
+// const res = toString(1234567890)
+// console.log(res)
+
+
+// 盛最多水的容器
+const maxArea1 = (list) => {
+    const len = list.length
+    if (len <= 2) return
+    let max = 0
+    for (let i = 0; i < len - 1; i++) {
+        for (let j = i + 1; j < len; j++) {
+            const tmp = (j - i) * Math.min(list[i], list[j])
+            max = Math.max(max, tmp)
+
+        }
+    }
+    return max
+
+}
+const maxArea = (list) => {
+    // 双指针
+    const len = list.length
+    let i = 0, j = len - 1, max = 0
+    while (i < j) {
+        const tmp = (j - i) * Math.min(list[i], list[j])
+        max = Math.max(tmp, max)
+        if (list[i] < list[j]) {
+            i++
+        } else {
+            j--
+        }
+    }
+    return max
+}
+const res = maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])
 console.log(res)
 
