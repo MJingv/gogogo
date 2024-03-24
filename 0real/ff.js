@@ -353,5 +353,74 @@ const mergeTwoLists = (l1, l2) => {
 
 }
 
-const res = mergeTwoLists(l1, l3)
+// const res = mergeTwoLists(l1, l3)
+
+
+const reverse = (head) => {
+    let cur = head, pre = null
+    while (cur) {
+        const next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+
+    }
+    return pre
+
+}
+
+// const res = JSON.stringify(reverse(l1))
+
+
+const reverseN = (head, n) => {
+    if (!head) return
+    let next = null
+    const helper = (head, n) => {
+        if (n === 1) {
+            next = head.next
+            return head
+        }
+        const h = helper(head.next, n - 1)
+        head.next.next = head
+        head.next = next
+        return h
+    }
+    return helper(head, n)
+}
+// const res = JSON.stringify(reverseN(l1, 3))
+
+const reverseBetween = (head, m, n) => {
+    if (!head || !head.next) return head
+    if (m === 1) return reverseN(head, n)
+    head.next = reverseBetween(head.next, m - 1, n - 1)
+    return head
+}
+// const res = JSON.stringify(reverseBetween(l1, 3, 5))
+const reverseKGroup = (head, k) => {
+    if (!head) return head
+    const helper = (a, b) => {
+        // [a,b)
+        if (!head) return head
+        let cur = head, pre = null
+        while (cur !== b) {
+            const next = cur.next
+            cur.next = pre
+            pre = cur
+            cur = next
+        }
+        return pre
+    }
+    let a = head, b = head
+    for (let i = 0; i < k; i++) {
+        if (!b) return head
+        b = b.next
+
+    }
+    const h = helper(a, b)
+    a.next = reverseKGroup(b, k)
+    return h
+
+}
+const res = JSON.stringify(reverseKGroup(l1, 3))
 console.log(res)
+
