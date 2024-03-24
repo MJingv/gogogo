@@ -109,6 +109,39 @@ const maxArea = (list) => {
     }
     return max
 }
-const res = maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])
+// const res = maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7])
+
+
+// 将一个数组转成树状结构
+const arr2tree = (arr) => {
+    const map = {}
+    const res = []
+    for (let item of arr) {
+        map[item.id] = {...item, children: []}
+    }
+
+    for (let item of arr) {
+        if (item.parentId) {
+            map[item.parentId].children.push(map[item.id])
+        } else {
+            res.push(map[item.id])
+        }
+    }
+
+
+    return res
+}
+
+
+const arr = [
+    {id: 1, name: 'Node 1', parentId: null},
+    {id: 2, name: 'Node 2', parentId: 1},
+    {id: 3, name: 'Node 3', parentId: 1},
+    {id: 4, name: 'Node 4', parentId: 2},
+    {id: 5, name: 'Node 5', parentId: 2},
+    {id: 6, name: 'Node 6', parentId: 3},
+];
+const res = JSON.stringify(arr2tree(arr))
+
 console.log(res)
 
