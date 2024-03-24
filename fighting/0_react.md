@@ -20,6 +20,7 @@ react渲染流程
 - 如果不能完成就中断，把线程的控制权交给浏览器，剩下的任务则在下一个渲染帧内执行
 - 整个reconciler和scheduler的任务执行完后，会生成一个新的 workinprogressfiber
   的新的节点树，之后reconciler触发commit阶段通知render渲染器去进行diff操作，这就是patch
+- commit是更新实际dom的操作
 
 单节点diff算法
 
