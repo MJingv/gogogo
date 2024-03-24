@@ -1,7 +1,4 @@
 // 按版本号由小到大排序
-
-import {useRef} from "react";
-
 const compareVersions = (list = []) => {
     const len = list.length
     if (!len) return []
@@ -240,32 +237,51 @@ const findLast = (list, target) => {
     return res
 
 }
-const res = findLast([1, 2, 2, 4, 6, 7, 7, 7, 8, 1000], 7)
-console.log(res)
+// const res = findLast([1, 2, 2, 4, 6, 7, 7, 7, 8, 1000], 7)
+// console.log(res)
 
 
 // 实时搜索框组件
-const SearchBox = () => {
-    const [list, setList] = useState([])
-    const lockRef = 0
-    const onInput = async (e) => {
-        lockRef.current += 1
-        const tmp = lockRef.current
-        try {
-            const res = await fetch('xxx', e.target.value) || []
-            if (lockRef.current !== tmp) return
-            setList(res)
-        } catch (e) {
-            console.log(e)
+// const SearchBox = () => {
+//     const [list, setList] = useState([])
+//     const lockRef = 0
+//     const onInput = async (e) => {
+//         lockRef.current += 1
+//         const tmp = lockRef.current
+//         try {
+//             const res = await fetch('xxx', e.target.value) || []
+//             if (lockRef.current !== tmp) return
+//             setList(res)
+//         } catch (e) {
+//             console.log(e)
+//         }
+//     }
+//     return <div>
+//         <input onInput={onInput}/>
+//         {list.length && list.map((item, index) => <div key={item.id + index}>
+//             {item.value}
+//         </div>)}
+//
+//     </div>
+//
+// }
+
+
+// 多个字符串的最长公共前缀
+const findCommonPrefix = (list = []) => {
+    const len = list.length
+    if (!len) return ''
+    // 找到最短的长度
+    let res = ''
+    const n = list.sort((a, b) => a.length - b.length).length
+    let tmp = ''
+    for (let i = 0; i < n; i++) {
+        tmp += list[0][i]
+        if (list.some(i => !i.startsWith(tmp))) {
+            res = tmp.slice(0, -1)
         }
     }
-    return <div>
-        <input onInput={onInput}/>
-        {list.length && list.map((item, index) => <div key={item.id + index}>
-            {item.value}
-        </div>)}
-
-    </div>
-
-
+    return res
 }
+const res = findCommonPrefix(['abcdef', 'abdefw', 'abc'])
+console.log(res)
