@@ -133,14 +133,11 @@ const arr2tree = (arr) => {
 }
 
 
-const arr = [
-    {id: 1, name: 'Node 1', parentId: null},
-    {id: 2, name: 'Node 2', parentId: 1},
-    {id: 3, name: 'Node 3', parentId: 1},
-    {id: 4, name: 'Node 4', parentId: 2},
-    {id: 5, name: 'Node 5', parentId: 2},
-    {id: 6, name: 'Node 6', parentId: 3},
-];
+const arr = [{id: 1, name: 'Node 1', parentId: null}, {id: 2, name: 'Node 2', parentId: 1}, {
+    id: 3,
+    name: 'Node 3',
+    parentId: 1
+}, {id: 4, name: 'Node 4', parentId: 2}, {id: 5, name: 'Node 5', parentId: 2}, {id: 6, name: 'Node 6', parentId: 3},];
 // const res = JSON.stringify(arr2tree(arr))
 
 
@@ -162,7 +159,7 @@ class LazyLog {
     }
 }
 
-(new LazyLog()).log(1).sleep(2000).log(222)
+// (new LazyLog()).log(1).sleep(2000).log(222)
 
 
 // z字打印矩阵
@@ -209,11 +206,7 @@ function printZMatrix(matrix) {
 
 
 // 示例矩阵
-const matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
+const matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 // const res = printZMatrix(matrix) //[1, 2, 4, 7, 5, 3, 6, 8, 9]
 
@@ -221,4 +214,34 @@ const matrix = [
 // 大数相加
 
 
-// console.log(res)
+// 查询有序数组中数字最后一次出现的位置
+const findLast = (list, target) => {
+    const len = list.length;
+    let [i, j] = [0, len - 1]
+    let res = -1
+    while (i <= j) {
+        const p = Math.floor((i + j) / 2)
+        const mid = list[p]
+        if (mid === target) {
+            // todo 记住
+            if (p === len - 1 || list[p + 1] !== target) {
+                return p
+            } else {
+                j = p + 1
+            }
+        } else if (mid < target) {
+            i = mid + 1
+
+        } else if (mid > target) {
+            j = mid - 1
+
+        }
+    }
+    return res
+
+}
+const res = findLast([1, 2, 2, 4, 6, 7, 7, 7, 8, 1000], 7)
+console.log(res)
+
+
+// 实时搜索框组件
