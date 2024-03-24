@@ -283,5 +283,38 @@ const findCommonPrefix = (list = []) => {
     }
     return res
 }
-const res = findCommonPrefix(['abcdef', 'abdefw', 'abc'])
+// const res = findCommonPrefix(['abcdef', 'abdefw', 'abc'])
+// console.log(res)
+
+
+// 字符串解码
+const decode = (s) => {
+    const len = s.length
+    if (!len) return ''
+    let stack = [];
+    const res = []
+    for (let i = 0; i < len; i++) {
+        if (s[i] !== ']') {
+            stack.push(s[i])
+        } else {
+            let cur = ''
+            while (stack[stack.length - 1] !== '[') {
+                cur = stack.pop() + cur
+            }
+            stack.pop()
+
+            let num = ''
+            while (!isNaN(stack[stack.length - 1])) {
+                num = stack.pop() + num
+            }
+            let tmp = cur.repeat(Number(num))
+            stack.push(tmp)
+
+        }
+    }
+    return stack.join('')
+}
+const res = decode('3[a2[c]]') //accaccacc
+
+
 console.log(res)
