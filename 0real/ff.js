@@ -421,6 +421,84 @@ const reverseKGroup = (head, k) => {
     return h
 
 }
-const res = JSON.stringify(reverseKGroup(l1, 3))
+// const res = JSON.stringify(reverseKGroup(l1, 3))
 console.log(res)
+
+
+const pool = async (max, arr) => {
+    const list = [], cur = []
+    for (let item of arr) {
+        list.push(item)
+        if (max <= arr.length) {
+            const p = item.then(() => {
+                cur.splice(cur.indexOf(p), 1)
+            })
+            cur.push(p)
+            if (cur.length >= max) {
+                await Promise.race(cur)
+            }
+        }
+    }
+    return Promise.all(list)
+}
+
+
+const concurrent = (max, list) => new Promise((res, rej) => {
+    const len = list.length
+    let index = 0, cur = 0, resList = []
+
+    const helper = () => {
+        const curIndex = index
+        index++
+        cur++
+        list[curIndex].then(res => {
+            resList[curIndex] = res
+        }).catch(e => {
+            rej(e)
+        }).finally(() => {
+            cur--
+            if (index < len) {
+                helper()
+            } else if (cur === 0) {
+                res(resList)
+            }
+        })
+    }
+    const next = () => {
+        if (index >= len || cur >= max) return
+        helper()
+        next()
+    }
+    next()
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
