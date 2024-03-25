@@ -30,3 +30,41 @@ const [count, setCount] = useState(0)
 // console.log(count);
 // setCount(1)
 // console.log(count)
+
+
+const Carousel = ({ images, interval = 3000 }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    };
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    };
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        }, interval);
+
+        return () => {
+            clearInterval(timer);
+        };
+    }, [images.length, interval]);
+
+    return (
+        <div className="carousel">
+            <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                {images.map((image, index) => (
+                    <img key={index} src={image} alt={`Image ${index + 1}`} />
+                ))}
+            </div>
+            <button className="carousel-prev" onClick={handlePrev}>Prev</button>
+            <button className="carousel-next" onClick={handleNext}>Next</button>
+        </div>
+    );
+};
+
+
+

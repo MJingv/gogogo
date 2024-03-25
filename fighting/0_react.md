@@ -81,6 +81,12 @@ react hooks hooks好处
 - usecallback 缓存函数click等（性能优化）
 - useref 获取dom引用，多次渲染只有一个，ref会有多个
 
+useeffect触发时机
+
+- 组件挂载后
+- 依赖变化时
+- 组件卸载前
+
 usememo和usecallback
 
 - 入参，函数+依赖项，根据依赖项数组的编号判断是否重新计算or返回新的函数
@@ -166,7 +172,7 @@ react合成事件 在事件处理方面的一种优化机制。底层实现了�
 - 性能优化，使用了事件委托，绑定在最外层dom，减少事件监听数量，提高性能
 - 事件池，处理完事件后，将事件对象重置并放回事件池里，以便下次使用。减少内存分配及垃圾回收，提高性能
 - 提供统一的api使用体验。合成事件属性，提供了额外的属性和方法，event.target 获取出发事件的dom，event.preventDefault
-  阻止默认事件，stoppropagation停止事件莫啊跑
+  阻止默认事件，stoppropagation停止事件
 
 react合成事件的绑定和分发
 
