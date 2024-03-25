@@ -171,3 +171,19 @@ commonjs
 - 引用类型：export具名导出是引用地址，会影响原对象。export默认导出是复制值，不会影响。
 - ESM 的静态特性使得工具可以进行静态分析和优化，例如进行 Tree Shaking（摇树优化）来消除未使用的代码，减小打包体积。
 - ESM 更适用于现代浏览器环境和前端开发。浏览器逐步兼容
+
+安全
+
+- 浏览器/https同源策略，非同源做拦截
+- csp内容安全策略，meta表着或者请求头里返回，指定资源的请求域、资源加载方式
+- xss cross-site-script
+    - dom型，第三方插件恶意改样式
+    - 持久型，通过input存到服务端，其他用户打开后攻击
+    - 反射型，点恶意链接，跳正常页面同时攻击
+    - 主要关注持久型，过滤处理字符串
+- csrf cross-site-request-forgery 跨站点请求伪造
+    - 钓鱼网站，利用cookie伪造请求
+    - get请求用src、href等
+    - 防范：使用post，校验reference、禁止第三方网站请求cookie用samesite、服务器校验token
+
+

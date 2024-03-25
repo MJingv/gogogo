@@ -190,3 +190,10 @@ react合成事件的绑定和分发
 - dom level2 addEventListener 增加冒泡/捕获
 - dom level3 增加自定义事件
 - dom level4 增加inputevent、mutationevent、touchevent等，增加once（一次）、passive（不阻止默认行为）、capture（捕获）
+
+react新特性
+
+- Service Component ：在 React 中，Service Component 是一种特殊的组件类型，用于处理业务逻辑和数据操作，而不负责渲染UI。Service
+  Component 通常用于封装与后端 API 交互、数据处理、状态管理等功能。
+- React 的 Suspense 是一个用于处理异步加载的组件，它可以在等待异步操作完成时显示一个加载状态，以及在异步操作完成后显示异步内容。
+  Suspense 组件的主要作用是在异步加载的组件树中，为等待异步操作的组件提供一个占位符，以便在异步操作完成之前显示一些加载状态或备用内容。
