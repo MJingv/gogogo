@@ -1,4 +1,6 @@
 //感染模型
+import {useRef} from "react";
+
 function bfs(graph, start) {
     const queue = [start]
     const visited = new Set()
@@ -50,17 +52,6 @@ const graph = {
 // const res = fn(graph, 'A', 2)
 
 
-const useState1 = (initVal) => {
-    let state = initVal
-    const setState = (newVal) => {
-        state = newVal
-        // render()
-
-    }
-    return [state, setState]
-}
-
-
 const pool = async (max, arr) => {
     const cur = [], list = []
     for (let item of arr) {
@@ -95,4 +86,20 @@ const su = () => {
 }
 const res = su()
 // console.log(res)
+
+
+const useState = (initVal) => {
+    const value = useRef(initVal)
+    const setState = (newVal) => {
+        if (typeof newVal === 'function') {
+            value.current = newVal(newVal)
+        } else {
+            value.current = newVal
+        }
+    }
+
+    // dispatchAction() 触发组件重新渲染
+    return [value, setState]
+}
+
 
