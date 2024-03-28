@@ -71,6 +71,8 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
 
 # machpro：quickjs+preact+yoga布局
 
+https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&mid=2247484460&idx=1&sn=73efbdc3a3877d3ac0acc36a9ef60471&scene=21#wechat_redirect
+
 - rn渲染机制
     - js-》vdom-》fiberdom -桥通信- shadowtree-》yoga layout-》 viewtree
     - 桥通信：异步、耗时大、一批一批执行（fiber）
@@ -80,7 +82,8 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
         - 首屏时间长：mrn提前初始化js引擎和bundle
         - 交互动效卡顿：
             - 因为交互是异步的js和native不同线程需要切换，每次手势2次通信（native->js,js ->native）
-            - 解决：阿里bingingx预置表达式（兼容性差）
+            - 解决：阿里bindingx预置表达式（兼容性差）
+            - bingdingx,将交互行为以表达式的方式描述，提前预置到native，避免在行为触发时js和native频繁通信
         - 长列表白屏
             - 因为rn是异步渲染、桥通信
             - 无法从根本上解决
@@ -231,3 +234,27 @@ quickjs
     - ios-jsc,android-quickjs,eg.hummer
 - 调试
     - 不带调试的可以 remote js debugging：把js通过websocket传入chrome的web worker里，用v8调试
+
+# 跨端方案选型思路
+
+h5:外链
+rn：千人千面展示页面、一般动画（弹窗、轮播图等）、通用业务组件
+native：原生组件（地图、图片选择）、精细动画、强交互（跟随）、高性能模块（加购）
+
+# 前端vs跨端
+
+指定标准规范协议流程
+
+bundle优化
+
+推动新增worker
+
+开发注意
+
+- 精细化管理，避免过渡绘制（android）：减少背景色重复设置，避免半透明颜色、圆角、阴影
+- 减少通信，减少js线程计算，减少js和ui线程间异步通信
+
+
+bug调试/分享弹窗
+
+
