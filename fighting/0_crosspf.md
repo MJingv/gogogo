@@ -243,9 +243,21 @@ native：原生组件（地图、图片选择）、精细动画、强交互（�
 
 # 前端vs跨端
 
+https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&mid=2247485122&idx=1&sn=5c4c2249a43e741029108c491a29e7bc&chksm=ec2ccaffdb5b43e903a5a68ac97c5ed8403955a071c9befc8b96dc2814c55e3ec6c860b58d32&cur_album_id=1623026943430361089&scene=189#wechat_redirect
 指定标准规范协议流程
 
+- 版本号、兼容性、提测流程等
+
 bundle优化
+
+缩、延、拆
+
+- 缩，缩小bundle总体积，减少js加载和解析时间
+    - 使用analyze插件查看依赖
+    - lodash/moment.js等
+- 延，动态导入，懒加载，按需加载，延迟执行
+- 拆，拆分公共模块和业务模块，避免公共模块重复引入
+    - 公共库common，业务business，抽象复用逻辑
 
 推动新增worker
 
@@ -253,7 +265,19 @@ bundle优化
 
 - 精细化管理，避免过渡绘制（android）：减少背景色重复设置，避免半透明颜色、圆角、阴影
 - 减少通信，减少js线程计算，减少js和ui线程间异步通信
-
+- 编码规范
+    - 减少渲染耗时
+        - 渲染过程
+            - vdom计算，复杂度高，js计算耗时长
+            - 通信，js计算结果json通过bridge给native，复杂高，json大，通信慢
+            - native渲染，递归解析render tree，布局复杂，耗时长
+        - 如何做
+            - 降低ui嵌套
+            - 减少re-render，js截断重绘，减少bridge通信频率和数据量
+            - 首屏native view
+    - 其他细节
+        - 代码抽象&复用
+        - 删除无效逻辑/冗余样式
 
 bug调试/分享弹窗
 
