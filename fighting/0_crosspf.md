@@ -281,4 +281,25 @@ bundle优化
 
 bug调试/分享弹窗
 
+# hit-test（命中测试）
+
+坐标系统不同
+
+- android 左上角为原点的坐标系
+- iOS 左下角为原点的坐标系
+
+事件传递不同
+
+- android 父到子
+- iOS 子到父
+
+view层级
+
+- android 使用 viewgroup 和view 层级架构
+- iOS 使用uiview 和uiviewcontroller 层级架构
+
+事件处理方式
+
+- android 使用事件监听
+- iOS使用手势识别器
 
