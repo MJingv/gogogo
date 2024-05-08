@@ -1,0 +1,56 @@
+<html>
+<header>
+    <link type="text/css" href="column.css" rel="stylesheet">
+</header>
+<body>
+<div class="wrap">
+    <div class="c1 column">
+        <div class="item">111111111111</div>
+        <div class="item">111111111111</div>
+        <div class="item">111111111111</div>
+        <div class="item">111111111111</div>
+
+
+    </div>
+    <div class="c2 column">
+        <div class="item">22222222</div>
+        <div class="item">22222222</div>
+        <div class="item">22222222</div>
+        <div class="item">22222222</div>
+    </div>
+
+</div>
+</body>
+<script>
+    const columns = document.querySelectorAll('.column')
+    const list = [200, 100, 300, 180, 100, 300, 50, 200]
+    let c1 = 0, c2 = 0
+    const getColor = () => {
+        const letters = '0123456789ABCDEF';
+        let color = '#'
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)]
+        }
+        return color
+    }
+
+
+    list.forEach((height, index) => {
+        const newItem = document.createElement('div')
+        newItem.textContent = index
+        newItem.style.height = height + 'px'
+        newItem.style.backgroundColor = getColor()
+        let minColumn = ''
+        if (c1 < c2) {
+            minColumn = columns[0]
+            c1 += height
+        } else {
+            minColumn = columns[1]
+            c2 += height
+        }
+        minColumn.appendChild(newItem)
+    })
+
+
+</script>
+</html>
