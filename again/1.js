@@ -116,3 +116,60 @@ const pool = async (max, arr = []) => {
 
 }
 
+
+const quickSort = (list = []) => {
+    const len = list.length
+    if (!len) return []
+    const left = [], right = [], equal = []
+
+    const p = list[Math.floor(len / 2)]
+    for (let i = 0; i < len; i++) {
+        if (list[i] === p) {
+            equal.push(list[i])
+        } else if (list[i] < p) {
+            left.push(list[i])
+        } else if (list[i] > p) {
+            right.push(list[i])
+        }
+    }
+
+    return [...quickSort(left), ...equal, ...quickSort(right)]
+
+}
+
+const merge = (l1 = [], l2 = []) => {
+    const len1 = l1.length, len2 = l2.length
+    const res = []
+    let i = 0, j = 0
+    while (i < len1 && j < len2) {
+        if (l1[i] < l2[j]) {
+            res.push(l1[i++])
+        } else {
+            res.push(l2[j++])
+        }
+    }
+    while (i < len1) {
+        res.push(l1[i++])
+    }
+    while (j < len2) {
+        res.push(l2[j++])
+    }
+    return res
+
+}
+
+const mergeSort = (list = []) => {
+    const len = list.length
+    if (len <= 1) return list
+    const midIndex = Math.floor(len / 2)
+    const left = list.slice(0, midIndex)
+    const right = list.slice(midIndex)
+    return merge(mergeSort(left), mergeSort(right))
+
+}
+
+
+const list = [2, 4, 0, -99, 100, 2, 0, -1, 4, 222]
+const res = quickSort(list)
+// const res = mergeSort(list)
+console.log(res)
