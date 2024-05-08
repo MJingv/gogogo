@@ -93,5 +93,26 @@ const traverse1 = (root) => {
     }
     return res
 }
-const res = traverse1(t1)
-console.log(res)
+// const res = traverse1(t1)
+// console.log(res)
+
+
+const pool = async (max, arr = []) => {
+    const cur = [], list = []
+
+    for (const item of arr) {
+        list.push(item)
+        if (max <= arr.length) {
+            const p = item.then(() => {
+                cur.splice(cur.indexOf(p), 1)
+            })
+            cur.push(p)
+            if (max <= cur.length) {
+                await Promise.race(cur)
+            }
+        }
+    }
+    return Promise.all(list)
+
+}
+
