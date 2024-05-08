@@ -176,7 +176,22 @@ const list = [2, 4, 0, -99, 100, 2, 0, -1, 4, 222]
 // const res = quickSort(list)
 // const res = mergeSort(list)
 
-
+const findTarget = (list = [], target) => {
+    const len = list.length
+    let i = 0, j = len - 1
+    while (i <= j) {
+        const mid = Math.floor((i + j) / 2)
+        if (target === list[mid]) {
+            return mid
+        } else if (target < list[mid]) {
+            j = mid - 1
+        } else if (target > list[mid]) {
+            i = mid + 1
+        }
+    }
+    return -1
+}
+const res = findTarget([1, 3, 8, 9, 14, 14, 99], 14)
 var mergeTwoLists = function (list1, list2) {
     let p1 = list1, p2 = list2, dummy = new ListNode(-1)
     let p = dummy
@@ -195,5 +210,7 @@ var mergeTwoLists = function (list1, list2) {
 
     return dummy.next
 }
-const res = JSON.stringify(mergeTwoLists(l1, l3))
+// const res = JSON.stringify(mergeTwoLists(l1, l3))
+
+
 console.log(res)
