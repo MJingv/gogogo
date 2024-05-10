@@ -69,6 +69,13 @@ https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&amp;mid=2247484851&amp;idx=1&a
 - 绘制plaint，从下向上遍历
 - 合成到layer tree，遍历layertree并绘制
 
+widget-tree和vdom-tree 区别
+
+- 性能优化：Flutter通过使用Widget Tree的静态结构和自身的渲染引擎来实现高性能的UI渲染。React通过使用VDOM
+  Tree和差异更新算法来实现高效的DOM操作和渲染。
+- Widget Tree和VDOM Tree都是用于描述UI层级结构的概念，但在实现和工作原理上有一些区别。Flutter使用静态的Widget
+  Tree来构建和渲染UI，而React使用动态的VDOM Tree来进行高效的DOM操作。
+
 # machpro：quickjs+preact+yoga布局
 
 https://mp.weixin.qq.com/s?__biz=MzI4OTU0NTU1NA==&mid=2247484460&idx=1&sn=73efbdc3a3877d3ac0acc36a9ef60471&scene=21#wechat_redirect

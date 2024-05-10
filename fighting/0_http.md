@@ -23,11 +23,19 @@ https://juejin.cn/post/6844904100035821575
     - 安全，要用httponly才能改
 - http代理，缓存、安全限流、负载均衡（LRU）
 
-http缓存：强缓存、协商缓存
+http缓存分类：强缓存、协商缓存
 
-- cache-control验证强缓存能不能用
-- 协商缓存，if-modified-since，
-- 协商缓存，if-none-match，etag来协商缓存
+- 强缓存
+    - expires(过期时间)
+    - cache-control(验证强缓存能不能用)
+        - max-age/s-maxage
+        - no-cache/no-store
+        - public/private
+        - only-if-cached
+- 协商缓存
+    - if-modified-since/last-modified
+    - if-none-match/etag
+    - 判断是否304读缓存
 
 缓存代理
 
